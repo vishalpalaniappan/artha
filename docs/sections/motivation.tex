@@ -17,22 +17,22 @@ while (there are books in the basket) {
 }
 \end{minted}
 
-The DAL representation would be as show below (still relatively sudo, working through nuances), engine will reason about this:
+The DAL representation would be as show below, engine will reason about this:
 
 \begin{minted}[linenos, frame=lines, mathescape]{python}
     behavior checkBasket {
         hasBooks = booksInBasket(basket)
         if (hasBooks){
-            goToBehavior("getBookFromBasket")
+            goToBehavior("invoke_getBookFromBasket")
         }
     }
 
-    behavior getBookFromBasket {
-        getBookFromBasket(book)
-        goToBehavior("addBookToShelf")
+    behavior invoke_getBookFromBasket {
+        getBookFromBasket()
+        goToBehavior("invoke_addBookToShelf")
     }
 
-    behavior addBookToShelf {
+    behavior invoke_addBookToShelf {
         addBookToShelf(shelf, book)
     }
 \end{minted}
