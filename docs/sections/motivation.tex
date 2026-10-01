@@ -5,17 +5,37 @@ The narratives will be tokenized and parsed and then they will be automatically 
 Consider the example
 
 \begin{greyquote}
-while there are books in the basket get a book from the basket and add it to the shelf
+while there are books in the basket get a book from the basket and add book to the shelf
 \end{greyquote}
 
 The sudo code of how it will be parsed is presented below:
 
-\begin{greyquote}
-while (there are books in the basket) {\\
-    get a book from the basket\\
-    add it to the shelf\\
+\begin{minted}[linenos, frame=lines, mathescape]{python}
+while (there are books in the basket) {
+    get a book from the basket
+    add book to the shelf
 }
-\end{greyquote}
+\end{minted}
+
+The DAL representation would be as show below (still relatively sudo, working through nuances), engine will reason about this:
+
+\begin{minted}[linenos, frame=lines, mathescape]{python}
+    behavior checkBasket {
+        hasBooks = booksInBasket(basket)
+        if (hasBooks){
+            goToBehavior("getBookFromBasket")
+        }
+    }
+
+    behavior getBookFromBasket {
+        getBookFromBasket(book)
+        goToBehavior("addBookToShelf")
+    }
+
+    behavior addBookToShelf {
+        addBookToShelf(shelf, book)
+    }
+\end{minted}
 
 The meaning of get a book from the basket and add it to the shelf will both be constructed before they are used in this narrative. It is a compositional system that composes meaning.
 
