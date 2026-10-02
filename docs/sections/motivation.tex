@@ -34,6 +34,7 @@ The DAL representation would be as show below, engine will reason about this:
 
     behavior invoke_addBookToShelf {
         addBookToShelf(shelf, book)
+        goToBehavior("checkBasket")
     }
 \end{minted}
 
