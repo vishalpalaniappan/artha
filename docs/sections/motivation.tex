@@ -1,0 +1,44 @@
+The systems that are constructed using Artha are specified as a narrative written using a semantic toolkit. Initially the semantic toolkit consists of the primitives and more meaning is constructed using these primitives. So as part of the definition of the primitives, the way in which narratives can be constructed using them needs to be specified.
+
+The narratives will be tokenized and parsed and then they will be automatically constructed as a computable semantic model. An engine will reason about the narratives of the world and identify missing, incorrect or invalid meaning. Then the computable semantic model will be automatically instrumented and synthesized. Using CLP, the information needed for the engine to diagnose failures in the execution will be preserved. Through root cause analysis, new semantics will be learnt and then the engine will once again reason about the world.
+
+Consider the example
+
+\begin{greyquote}
+while there are books in the basket get a book from the basket and add book to the shelf
+\end{greyquote}
+
+The sudo code of how it will be parsed is presented below:
+
+\begin{minted}[linenos, frame=lines, mathescape]{python}
+while (there are books in the basket) {
+    get a book from the basket
+    add book to the shelf
+}
+\end{minted}
+
+The DAL representation would be as show below, engine will reason about this:
+
+\begin{minted}[linenos, frame=lines, mathescape]{python}
+    behavior checkBasket {
+        hasBooks = booksInBasket(basket)
+        if (hasBooks){
+            goToBehavior("invoke_getBookFromBasket")
+        }
+    }
+
+    behavior invoke_getBookFromBasket {
+        getBookFromBasket()
+        goToBehavior("invoke_addBookToShelf")
+    }
+
+    behavior invoke_addBookToShelf {
+        addBookToShelf(shelf, book)
+        goToBehavior("checkBasket")
+    }
+\end{minted}
+
+The meaning of get a book from the basket and add it to the shelf will both be constructed before they are used in this narrative. It is a compositional system that composes meaning.
+
+So this means that the primitives that I construct will need to specify how they must be parsed and this in turn will establish the narratives that can be constructed. As the developer is writing the narrative, it will be actively validated by this framework. It will be automatically constructed as a computable semantic model and then it will be reasoned about automatically.
+

@@ -1,0 +1,23 @@
+# LaTeX Folders to ignore
+svg-inkscape
+docs/_minted-overview/*
+docs/_minted/*
+
+# LaTeX temporary/build files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.listing
