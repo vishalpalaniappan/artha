@@ -8,7 +8,7 @@ export class PrimitiveParser {
 
         for (const primitive of this.primitivesMeta) {
             const syntax = primitive["syntax"];
-            console.log(syntax);
+            // console.log(syntax);
         }
     }
 }

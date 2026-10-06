@@ -18,7 +18,7 @@ export class ArthaParser {
         this.currPos = 0;
         do {
             const token = this.tokens[this.currPos];
-            console.log("   ", token.type, token.value)
+            console.log(token.type, token.value)
             if (token.type === "FUNCTIONAL") {
                 this.processFunctional(token.value);
             } else if (token.type === "IDENTIFIER") {
@@ -30,7 +30,8 @@ export class ArthaParser {
 
     processFunctional(value) {
         if (value === "if") {
-            console.log("Processing if")
+            console.log("IF")
+            this.processIf();
         } else if (value === "while") {
             console.log("Processing while")
         } else {
@@ -40,5 +41,25 @@ export class ArthaParser {
 
     processIdentifier(value) {
 
+    }
+
+    processIf() {
+        this.accumulator = [];
+         while (++this.currPos < this.tokens.length) {
+            const token = this.tokens[this.currPos];
+
+            if (token.value === "then") {
+                console.log(this.accumulator);
+                console.log("THEN")
+                this.accumulator = [];
+                continue;
+            } else if (token.value === ".") {
+                console.log(this.accumulator);
+                console.log(".")
+                this.accumulator = [];
+                return;
+            }
+            this.accumulator.push(token.value);
+        }
     }
 }

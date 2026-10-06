@@ -65,6 +65,7 @@ export class ArthaLexer {
 
         const token = this.getToken(character);
         if (token) {
+            this.addAccumulatedIdentifierToken();
             this.addToken(token, character);
             return;
         }
