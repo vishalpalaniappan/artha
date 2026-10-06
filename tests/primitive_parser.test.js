@@ -15,5 +15,13 @@ describe("primitive parser", async () => {
         const lexer = new ArthaLexer("if bill is requested then store result of add cost_of_bagel and cost_of_coffee in total_cost.");
         const parser = new ArthaParser(lexer.scannedTokens);
 
+        console.log(parser);
+
+        const grouped_output_path = resolve(__dirname, "./output/primitive_parser/grouped.json")
+        await writeFile(
+            grouped_output_path,
+            JSON.stringify(parser.grouped, null, 4)
+        );
+
     });
 });

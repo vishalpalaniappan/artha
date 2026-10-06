@@ -1,10 +1,10 @@
 import { PrimitiveParser } from "./PrimitiveParser";
-import FUNCTIONAL_IDENTIFIERS from "./FUNCTIONAL";
 
 export class ArthaParser {
 
     constructor (tokens) {
         this.tokens = tokens;
+        this.grouped = [];
         this.processTokens();
     }
 
@@ -13,14 +13,15 @@ export class ArthaParser {
         this.primitives = await this.primitiveParser.processPrimitives();
     }
 
-    async processTokens () {
-        await this.loadPrimitives();
+    processTokens () {
         this.currPos = 0;
         do {
             const token = this.tokens[this.currPos];
-            console.log(token.type, token.value)
+            // console.log(token.type, token.value)
             if (token.type === "FUNCTIONAL") {
+                this.functional = [token.value];
                 this.processFunctional(token.value);
+                this.grouped.push([...this.functional]);
             } else if (token.type === "IDENTIFIER") {
                 this.processIdentifier(token.value);
             }
@@ -30,36 +31,33 @@ export class ArthaParser {
 
     processFunctional(value) {
         if (value === "if") {
-            console.log("IF")
             this.processIf();
-        } else if (value === "while") {
-            console.log("Processing while")
         } else {
-            console.log("Invalid functional identifier at start.")
+            console.log("Unsupported functional identifier.")
         }
     }
 
-    processIdentifier(value) {
-
-    }
-
     processIf() {
+        // Pattern is: IF [meaning] THEN [meaning].
         this.accumulator = [];
-         while (++this.currPos < this.tokens.length) {
+        while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
-
             if (token.value === "then") {
-                console.log(this.accumulator);
-                console.log("THEN")
+                this.functional.push([...this.accumulator]);
+                this.functional.push("then");
                 this.accumulator = [];
                 continue;
             } else if (token.value === ".") {
-                console.log(this.accumulator);
-                console.log(".")
+                this.functional.push([...this.accumulator]);
+                this.functional.push(".");
                 this.accumulator = [];
                 return;
             }
             this.accumulator.push(token.value);
         }
+    }
+
+    processIdentifier(value) {
+        // Process identifier here that exists outside a functional block here.
     }
 }
