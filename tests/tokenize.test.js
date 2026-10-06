@@ -1,7 +1,7 @@
 import { describe, expect, it} from "vitest";
 import { resolve } from "path"
 import { writeFile } from "fs/promises"
-import { ArthaLexer} from "../src/Lexer";
+import { ArthaLexer } from "../dist/index.esm";
 import { ensureDir } from "./utils";
 
 ensureDir("./tests/output")
