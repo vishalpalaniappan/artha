@@ -9,7 +9,7 @@
         },
         {
             "type": "placeholder",
-            "syntax": "addend1"
+            "participant": "addend1"
         },
         {
             "type": "string",
@@ -17,11 +17,11 @@
         },
         {
             "type": "placeholder",
-            "syntax": "addend2"
+            "participant": "addend2"
         },
         {
             "type": "string",
-            "participant": "then"
+            "syntax": "and"
         },
         {
             "type": "string",
@@ -29,7 +29,7 @@
         },
         {
             "type": "string",
-            "participant": "result"
+            "syntax": "result"
         },
         {
             "type": "string",
