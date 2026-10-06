@@ -1,4 +1,4 @@
-import { PrimitiveParser } from "../dist/index.esm";
+import { PrimitiveParser } from "./PrimitiveParser";
 
 export class ArthaParser {
 
@@ -16,6 +16,7 @@ export class ArthaParser {
         await this.loadPrimitives();
         for (const token of this.tokens) {
             console.log(token);
+            console.log(token.value)
         }
     }
 
