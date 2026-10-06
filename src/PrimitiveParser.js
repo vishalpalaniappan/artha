@@ -1,7 +1,6 @@
 export class PrimitiveParser {
 
     constructor () {
-        this.processPrimitives();
     }
 
     async processPrimitives () {
