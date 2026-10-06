@@ -1,4 +1,5 @@
 import TOKENS from "./TOKENS";
+import FUNCTIONAL_IDENTIFIERS from "./FUNCTIONAL";
 
 /**
  * Currently this lexer is just splitting the string into words.
@@ -64,8 +65,7 @@ export class ArthaLexer {
 
         const token = this.getToken(character);
         if (token) {
-            this.addAccumulatedIdentifierToken();
-            this.addToken(token);
+            this.addToken(token, character);
             return;
         }
 
@@ -107,14 +107,17 @@ export class ArthaLexer {
         // Subtract 1 from endColno because we have to reach token
         // to identify that the accumulator is done.
         if (this.accumulatedIdentifier.length > 0) {
+            const value = this.accumulatedIdentifier.join("");
+            const f = FUNCTIONAL_IDENTIFIERS.find((t) => t.name === value);
+
             this.scannedTokens.push({
-                type: "IDENTIFIER",
-                value: this.accumulatedIdentifier.join(""),
+                value: value,
+                type: f?"FUNCTIONAL":"IDENTIFIER",
                 startLineno: this.startLineIdentifier,
                 startColno: this.startColIdentifier,
                 endLineno: this.lineno,
                 endColno: this.colno - 1
-            })
+            });
             this.accumulatedIdentifier = [];
         }
     }
