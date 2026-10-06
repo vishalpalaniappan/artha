@@ -3,8 +3,6 @@ type("primitive")
 
 description("Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.")
 
-
-# Example: add cost_of_bagel and cost_of_coffee in total_cost
 # Example: store result of add cost_of_bagel and cost_of_coffee in total_cost
 syntax(
     [
@@ -47,7 +45,6 @@ syntax(
     ]
 )
 
-
 narrative_structure {
     success_narrative(f"Added {addend1} to {addend2} and resulted in {result}.")
     fail_inv_id_1(f"Failed to add the two numbers because addend1 was not a float or int.")
@@ -85,7 +82,6 @@ behavior add {
 }
 
 run (add)
-
 
 invariants {
     assert({
