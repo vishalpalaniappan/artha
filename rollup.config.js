@@ -1,24 +1,6 @@
 import resolve from "@rollup/plugin-node-resolve";
-import fs from "fs";
-
-// Temporarily using this library, will write my own later.
-// Not a fan of using unofficial libraries that aren't maintained.
-import importGlob from '@jackfranklin/rollup-plugin-import-glob';
-
-function dalLoadPlugin() {
-    return {
-      name: 'dal-load-plugin',
-      transform(code, id) {
-        if (id.endsWith('.dal')) {
-          const text = fs.readFileSync(id, 'utf-8');
-          return {
-            code: `export default ${JSON.stringify(text)};`,
-            map: null,
-          };
-        }
-      },
-    };
-  }
+import json from '@rollup/plugin-json';
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 
 export default {
     input: "src/exports.js",
@@ -35,8 +17,10 @@ export default {
         },
     ],
     plugins: [
+        json(),
         resolve(),
-        importGlob(),
-        dalLoadPlugin()
+        dynamicImportVars({
+          // include patterns if necessary
+        })
     ],
 };

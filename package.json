@@ -21,10 +21,11 @@
     },
     "homepage": "https://github.com/vishalpalaniappan/artha",
     "devDependencies": {
+        "@rollup/plugin-dynamic-import-vars": "^2.1.5",
+        "@rollup/plugin-json": "^6.1.0",
         "@rollup/plugin-node-resolve": "^16.0.3",
         "dal-ast-js": "^0.0.21-dev",
         "rollup": "^4.57.1",
-        "vitest": "^4.0.18",
-        "@jackfranklin/rollup-plugin-import-glob": "^0.1.0"
+        "vitest": "^4.0.18"
     }
 }

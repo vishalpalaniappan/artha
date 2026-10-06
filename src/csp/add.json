@@ -1,11 +1,8 @@
-design("add")
-type("primitive")
-
-description("Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.")
-
-# Example: store result of add cost_of_bagel and cost_of_coffee in total_cost
-syntax(
-    [
+{
+    "name": "add",
+    "type": "primitive",
+    "description":"Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
+    "syntax": [
         {
             "type": "string",
             "syntax": "store"
@@ -43,4 +40,4 @@ syntax(
             "participant": "result"
         }
     ]
-)
+}

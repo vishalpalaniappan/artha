@@ -1,5 +1,4 @@
-import {DalAstGenerator} from "dal-ast-js";
-import * as primitives from 'glob:./csp/*.dal';
+
 
 export class PrimitiveParser {
 
@@ -8,14 +7,20 @@ export class PrimitiveParser {
         this.loadPrimitives()
     }
 
-    loadPrimitives () {
-        for (const primitive in primitives) {
-            const ast = new DalAstGenerator().run(primitives[primitive].default.toString());
-            const name = ast["name"][0].value;
-            console.log("Design:", name);
-            const syntaxObj = ast["body"].find((obj) => obj["command"] === "syntax");
-            const syntax = syntaxObj.args[0].value;
+    async loadPrimitives () {
+        const primitives = await loadPrimitivesFromManifest();
+        for (const primitive of primitives) {
+            const syntax = primitive["syntax"];
             console.log(syntax);
         }
     }
+}
+
+
+async function loadPrimitivesFromManifest() {
+    const manifest = await import('./csp/manifest.json');
+    const modules = await Promise.all(
+      manifest.primitives.map(fileName => import(`./csp/${fileName}.json`))
+    );
+    return modules.map(m => m.default);
 }
