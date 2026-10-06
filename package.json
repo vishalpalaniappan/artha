@@ -6,9 +6,9 @@
     "type": "module",
     "scripts": {
         "build": "rollup -c",
-        "test": "vitest",
-        "test:watch": "vitest --watch",
-        "test:run": "vitest run"
+        "test": "rollup -c && vitest",
+        "test:watch": "rollup -c && vitest --watch",
+        "test:run": "rollup -c && vitest run"
     },
     "repository": {
         "type": "git",
@@ -22,8 +22,9 @@
     "homepage": "https://github.com/vishalpalaniappan/artha",
     "devDependencies": {
         "@rollup/plugin-node-resolve": "^16.0.3",
-        "vitest": "^4.0.18",
+        "dal-ast-js": "^0.0.21-dev",
         "rollup": "^4.57.1",
-        "dal-ast-js": "^0.0.21-dev"
+        "vitest": "^4.0.18",
+        "@jackfranklin/rollup-plugin-import-glob": "^0.1.0"
     }
 }
