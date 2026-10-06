@@ -2,15 +2,11 @@ import { PrimitiveParser } from "./PrimitiveParser";
 
 export class ArthaParser {
 
-    constructor (tokens) {
+    constructor (tokens, primitives) {
         this.tokens = tokens;
         this.grouped = [];
+        this.primitives = primitives;
         this.processTokens();
-    }
-
-    async loadPrimitives () {
-        this.primitiveParser = new PrimitiveParser();
-        this.primitives = await this.primitiveParser.processPrimitives();
     }
 
     processTokens () {
@@ -18,6 +14,7 @@ export class ArthaParser {
         do {
             const token = this.tokens[this.currPos];
             // console.log(token.type, token.value)
+
             if (token.type === "FUNCTIONAL") {
                 this.functional = [token.value];
                 this.processFunctional(token.value);
@@ -43,6 +40,7 @@ export class ArthaParser {
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
             if (token.value === "then") {
+                this.processAccumulator([...this.accumulator]);
                 this.functional.push([...this.accumulator]);
                 this.functional.push("then");
                 this.accumulator = [];
@@ -55,6 +53,10 @@ export class ArthaParser {
             }
             this.accumulator.push(token.value);
         }
+    }
+
+    processAccumulator (value) {
+        // Process the accumulator.
     }
 
     processIdentifier(value) {
