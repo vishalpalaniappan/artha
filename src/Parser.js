@@ -1,4 +1,5 @@
 import { PrimitiveParser } from "./PrimitiveParser";
+import FUNCTIONAL_IDENTIFIERS from "./FUNCTIONAL";
 
 export class ArthaParser {
 
@@ -15,7 +16,20 @@ export class ArthaParser {
     async processTokens () {
         await this.loadPrimitives();
         for (const token of this.tokens) {
-            console.log(token.type, token.value)
+            const f = this.checkFunctionalIdentifier(token.value);
+            if (f) {
+                console.log("   FUNCTIONAL", token.value)
+            } else {
+                console.log(token.type, token.value)
+            }
         }
+    }
+
+    checkFunctionalIdentifier (tokenValue) {
+        return FUNCTIONAL_IDENTIFIERS.find((t) => t.name === tokenValue);
+    }
+
+    checkPrimitiveIdentifier (tokenValue) {
+
     }
 }
