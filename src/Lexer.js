@@ -2,19 +2,13 @@ import TOKENS from "./TOKENS";
 
 /**
  * Currently this lexer is just splitting the string into words.
- * Each word is saved as an identifier, I will parse them in the
- * next stage. 
- * 
- * It may seem like overkill to split a string this way but I will
- * extend this to include other features like using tokens to split
- * the string into sentences. I also think there might be a case to
- * be made for using commas or semicolons in the sentence structure.
- * Implementing the lexer in this way leaves the door open for all
- * of those features.
+ * Each word is saved as an identifier and the tokens are saved
+ * using the token mapping. In the next stage, I will parse this
+ * using the grammar.
  * 
  * Example:
- * if books in basket
- * IDENTIFIER IDENTIFIER IDENTIFIER IDENTIFIER
+ * if books, in basket.
+ * IDENTIFIER IDENTIFIER COMMA IDENTIFIER IDENTIFIER PERIOD
  * 
  * I also save the line/col number (starting and ending). This will be
  * useful for visualization in the workbench.
@@ -68,7 +62,28 @@ export class ArthaLexer {
             return;
         }
 
+        const token = this.getToken(character);
+        if (token) {
+            this.addAccumulatedIdentifierToken();
+            this.addToken(token);
+            return;
+        }
+
         this.addToAccumulator(character);
+    }
+
+    /**
+     * Finds the identifier given the character.
+     * @param {String} character Character from scan.
+     * @returns {String|null} Identifier if valid token, else null.
+     */
+    getToken (character) {
+        for (const [identifier, value] of Object.entries(TOKENS)) {
+            if (value[0] !== character) {
+                continue;
+            }
+            return identifier;
+        }
     }
 
     /**
