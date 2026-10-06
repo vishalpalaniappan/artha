@@ -1,0 +1,117 @@
+design("add")
+type("primitive")
+
+description("Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.")
+
+
+# Example: add cost_of_bagel and cost_of_coffee in total_cost
+# Example: store result of add cost_of_bagel and cost_of_coffee in total_cost
+syntax(
+    [
+        {
+            type: "string"
+            syntax: "store"
+        }
+        {
+            type: "string"
+            syntax: "result"
+        }
+        {
+            type: "string"
+            syntax: "of"
+        }
+        {
+            type: "string"
+            syntax: "add"
+        },
+        {
+            type: "placeholder"
+            participant: "addend1"
+        },
+        {
+            type: "string"
+            syntax: "and"
+        },
+        {
+            type: "placeholder"
+            participant: "addend2"
+        },
+        {
+            type: "string"
+            syntax: "in"
+        },
+        {
+            type: "placeholder"
+            participant: "result"
+        }
+    ]
+)
+
+
+narrative_structure {
+    success_narrative(f"Added {addend1} to {addend2} and resulted in {result}.")
+    fail_inv_id_1(f"Failed to add the two numbers because addend1 was not a float or int.")
+    fail_inv_id_2(f"Failed to add the two numbers because addend2 was not a float or int.")
+}
+
+participants {
+    participant(name="addend1", required="true")
+    participant(name="addend2", required="true")
+    participant(name="resultName", required="true")
+}
+
+returns {
+    participant(
+        name="result",
+        type="float" or "int",
+        description="Result of the addition"
+    )
+}
+
+behavior add {
+    # Get the addends from the world state
+    getFromWorldState(name=addend1, role="addend1")
+    getFromWorldState(name=addend2, role="addend2")
+    getFromWorldState(name=resultName, role="resultName")
+
+    # adds the two values and store result in the value of resultName 
+    _add(result, addend1, addend2)
+
+    # Update the world state
+    updateWorldState(
+        name=resultName,
+        value=result
+    )
+}
+
+run (add)
+
+
+invariants {
+    assert({
+        id:1,
+        participants: ["addend1"],
+        property: "type"
+        condition: "float" || "int"
+        description: "Addend1 must be a whole number or float.",
+        invalidValues: [
+            {
+                value: "string_value"
+                description: "A string is provided as an addend."
+            }
+        ]
+    }),
+    assert({
+        id:2,
+        participants: ["addend2"],
+        property: "type"
+        condition: "float" || "int"
+        description: "Addend2 must be a whole number or float.",
+        invalidValues: [
+            {
+                value: "string_value"
+                description: "A string is provided as an addend."
+            }
+        ]
+    })
+}
