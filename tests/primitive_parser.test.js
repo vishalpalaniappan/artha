@@ -12,7 +12,7 @@ ensureDir("./tests/output/primitive_parser")
 describe("primitive parser", async () => {
 
     it("tests the artha parser", async () => {
-        const lexer = new ArthaLexer("store result of add cost_of_bagel and cost_of_coffee in total_cost");
+        const lexer = new ArthaLexer("if bill is requested, then store result of add cost_of_bagel and cost_of_coffee in total_cost");
         const parser = new ArthaParser(lexer.scannedTokens);
 
     });

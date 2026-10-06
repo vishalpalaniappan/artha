@@ -11,7 +11,7 @@ describe("tokenizer", async () => {
 
     it("basic tokenize", async () => {
         // const lexer = new ArthaLexer("if books, in basket.");
-        const lexer = new ArthaLexer("store result of add cost_of_bagel and cost_of_coffee in total_cost");
+        const lexer = new ArthaLexer("if bill is requested, then store result of add cost_of_bagel and cost_of_coffee in total_cost");
 
         const token_output_path = resolve(__dirname, "./output/tokenizer/tokens.json")
         await writeFile(
