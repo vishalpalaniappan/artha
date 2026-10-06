@@ -15,9 +15,7 @@ export class ArthaParser {
     async processTokens () {
         await this.loadPrimitives();
         for (const token of this.tokens) {
-            console.log(token);
-            console.log(token.value)
+            console.log(token.type, token.value)
         }
     }
-
 }
