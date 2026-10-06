@@ -5,23 +5,11 @@
     "syntax": [
         {
             "type": "string",
-            "syntax": "store"
-        },
-        {
-            "type": "string",
-            "syntax": "result"
-        },
-        {
-            "type": "string",
-            "syntax": "of"
-        },
-        {
-            "type": "string",
             "syntax": "add"
         },
         {
             "type": "placeholder",
-            "participant": "addend1"
+            "syntax": "addend1"
         },
         {
             "type": "string",
@@ -29,7 +17,19 @@
         },
         {
             "type": "placeholder",
-            "participant": "addend2"
+            "syntax": "addend2"
+        },
+        {
+            "type": "string",
+            "participant": "and"
+        },
+        {
+            "type": "string",
+            "syntax": "store"
+        },
+        {
+            "type": "string",
+            "participant": "result"
         },
         {
             "type": "string",
