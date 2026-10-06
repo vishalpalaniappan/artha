@@ -1,15 +1,13 @@
-
-
 export class PrimitiveParser {
 
     constructor () {
-        const manifestPath = "./csp/manifest.json";
-        this.primitives = await loadPrimitivesFromManifest(manifestPath);
-        this.processPrimitives()
+        this.processPrimitives();
     }
 
     async processPrimitives () {
-        for (const primitive of primitives) {
+        this.primitivesMeta = await loadPrimitivesFromManifest();
+
+        for (const primitive of this.primitivesMeta) {
             const syntax = primitive["syntax"];
             console.log(syntax);
         }
@@ -17,8 +15,8 @@ export class PrimitiveParser {
 }
 
 
-async function loadPrimitivesFromManifest(manifestPath) {
-    const manifest = await import(manifestPath);
+async function loadPrimitivesFromManifest() {
+    const manifest = await import("./csp/manifest.json");
     const modules = await Promise.all(
       manifest.primitives.map(fileName => import(`./csp/${fileName}.json`))
     );
