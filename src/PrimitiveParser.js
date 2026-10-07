@@ -8,11 +8,34 @@ export class PrimitiveParser {
         this.parseSyntax()
     }
 
+    /**
+     * Parse the narrative syntax into an array so that
+     * it can be processed by the primitive parser.
+     * 
+     * add {addend1} and {addend2} and store result in {result}
+     * 
+     * add:
+     * {
+     *      type: "string",
+     *      syntax: "add"
+     * }
+     * 
+     * {addend1}:
+     * {
+     *      type: "placeholder",
+     *      participant: "addend1"
+     * }
+     * 
+     * This is used when parsing the construted narrative to access the
+     * meaning it is referencing and the relevant participants.
+     */
     parseSyntax() {
         for (const primitive of this.primitives) {
             const syntax_line = primitive.syntax_line;
             const split = syntax_line.split(" ");
             primitive.syntax = [];
+
+            // Process each word in the 
             for (const word of split) {
                 if (word.charAt(0) === "{") {
                     primitive.syntax.push({

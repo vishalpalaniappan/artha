@@ -19,8 +19,6 @@ export default {
     plugins: [
         json(),
         resolve(),
-        dynamicImportVars({
-          // include patterns if necessary
-        })
+        dynamicImportVars({})
     ],
 };
