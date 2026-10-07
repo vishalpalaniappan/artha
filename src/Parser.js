@@ -41,13 +41,11 @@ export class ArthaParser {
             const token = this.tokens[this.currPos];
             if (token.value === "then") {
                 this.processAccumulator(this.accumulator);
-                this.functional.push([...this.accumulator]);
                 this.functional.push("then");
                 this.accumulator = [];
                 continue;
             } else if (token.value === ".") {
                 this.processAccumulator(this.accumulator);
-                this.functional.push([...this.accumulator]);
                 this.functional.push(".");
                 this.accumulator = [];
                 return;
@@ -58,9 +56,12 @@ export class ArthaParser {
 
     processAccumulator (value) {
         // Process the accumulator.
-        this.primInfo = this.primitives.findPrimitiveGivenIdentifier(value);
-        console.log(this.primInfo);
-        return this.primInfo;
+        const primInfo = this.primitives.findPrimitiveGivenIdentifier(value);
+        if (primInfo && Object.keys(primInfo).length > 0) {
+            this.functional.push([primInfo]);
+        } else {
+            this.functional.push([...this.accumulator]);
+        }
     }
 
     processIdentifier(value) {

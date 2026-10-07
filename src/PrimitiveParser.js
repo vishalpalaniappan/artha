@@ -11,17 +11,16 @@ export class PrimitiveParser {
                 console.error("No identifiers in accumulated sentence");
                 return identifiers;
             } else if (syntax[0].syntax === identifiers[0]) {
-                return this.processAdd(identifiers, syntax);
+                return this.processAdd(identifiers, primitive);
             }
         }
     }
 
     processAdd(identifiers, primitive) {
         let pos = 0;
-        const info = {};
-        console.log(identifiers);
+        const info = {name: primitive.name};
         do {
-            const token = primitive[pos];
+            const token = primitive.syntax[pos];
 
             if (token.type === "placeholder") {
                 info[token.participant] = identifiers[pos];
@@ -29,8 +28,7 @@ export class PrimitiveParser {
 
             }
 
-        } while (++pos < primitive.length);
-
-        return [info];
+        } while (++pos < primitive.syntax.length);
+        return info;
     }
 }
