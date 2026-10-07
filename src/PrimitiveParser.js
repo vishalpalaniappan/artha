@@ -5,6 +5,28 @@ export class PrimitiveParser {
 
     constructor (primitives) {
         this.primitives = primitives;
+        this.parseSyntax()
+    }
+
+    parseSyntax() {
+        for (const primitive of this.primitives) {
+            const syntax_line = primitive.syntax_line;
+            const split = syntax_line.split(" ");
+            primitive.syntax = [];
+            for (const word of split) {
+                if (word.charAt(0) === "{") {
+                    primitive.syntax.push({
+                        type: "placeholder",
+                        participant: word.slice(1,-1)
+                    })
+                } else {
+                    primitive.syntax.push({
+                        type: "string",
+                        syntax: word
+                    })
+                }
+            }
+        }
     }
 
     /**

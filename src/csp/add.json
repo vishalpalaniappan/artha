@@ -2,43 +2,5 @@
     "name": "add",
     "type": "primitive",
     "description":"Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-    "syntax_line": "add {addend1} and {addend2} and store result in {result}",
-    "syntax": [
-        {
-            "type": "string",
-            "syntax": "add"
-        },
-        {
-            "type": "placeholder",
-            "participant": "addend1"
-        },
-        {
-            "type": "string",
-            "syntax": "and"
-        },
-        {
-            "type": "placeholder",
-            "participant": "addend2"
-        },
-        {
-            "type": "string",
-            "syntax": "and"
-        },
-        {
-            "type": "string",
-            "syntax": "store"
-        },
-        {
-            "type": "string",
-            "syntax": "result"
-        },
-        {
-            "type": "string",
-            "syntax": "in"
-        },
-        {
-            "type": "placeholder",
-            "participant": "result"
-        }
-    ]
+    "syntax_line": "add {addend1} and {addend2} and store result in {result}"
 }
