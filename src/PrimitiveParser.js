@@ -65,41 +65,48 @@ export class PrimitiveParser {
             if (identifiers.length === 0) {
                 console.error("No identifiers in accumulated sentence");
                 return identifiers;
-            } else if (primitive.syntax[0].syntax === identifiers[0]) {
-                // TODO: Hard coded to add currently, expand to support more primitives.
-                return this.processAdd(identifiers, primitive);
+            } 
+            
+            const foundPrimitive = this.processPrimitive(identifiers, primitive);
+            if (foundPrimitive) {
+                return foundPrimitive;
             }
         }
     }
 
     /**
-     * Process the add primitive and identify the participants involved.
-     * 
-     * This creates an object which shows the metadata of the primitive.
-     * {
-     *      "name": "add",
-     *      "addend1": "cost_of_bagel",
-     *      "addend2": "cost_of_coffee",
-     *      "addResult": "total_cost"
-     * }
+     * Process the identifiers with the given primitive. Find if the syntax
+     * matches and if it does, return the name of the participants.
      * 
      * @param {Array} identifiers 
      * @param {Object} primitive 
      * @returns 
      */
-    processAdd(identifiers, primitive) {
+    processPrimitive(identifiers, primitive) {
+
+        // The syntax length and the parsed identifier length doesn't match.
+        if (identifiers.length !== primitive.syntax.length) {
+            return null;
+        }
+        
+        const info = {
+            name: primitive.name
+        };
         let pos = 0;
-        const info = {name: primitive.name};
+
+        // Loop through all the primitives
         do {
             const token = primitive.syntax[pos];
-
             if (token.type === "placeholder") {
                 info[token.participant] = identifiers[pos];
             } else if (token.type === "string") {
-                // TODO: Check that the syntax used was correct
+                if (identifiers[pos] !== token.syntax) {
+                    // Syntax is incorrect.
+                    return null;
+                }
             }
-
         } while (++pos < primitive.syntax.length);
+
         return info;
     }
 }
