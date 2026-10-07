@@ -66,6 +66,7 @@ export class PrimitiveParser {
                 console.error("No identifiers in accumulated sentence");
                 return identifiers;
             } else if (primitive.syntax[0].syntax === identifiers[0]) {
+                // TODO: Hard coded to add currently, expand to support more primitives.
                 return this.processAdd(identifiers, primitive);
             }
         }
@@ -73,6 +74,15 @@ export class PrimitiveParser {
 
     /**
      * Process the add primitive and identify the participants involved.
+     * 
+     * This creates an object which shows the metadata of the primitive.
+     * {
+     *      "name": "add",
+     *      "addend1": "cost_of_bagel",
+     *      "addend2": "cost_of_coffee",
+     *      "addResult": "total_cost"
+     * }
+     * 
      * @param {Array} identifiers 
      * @param {Object} primitive 
      * @returns 
