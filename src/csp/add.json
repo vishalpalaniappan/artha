@@ -2,5 +2,19 @@
     "name": "add",
     "type": "primitive",
     "description":"Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-    "syntax_line": "add {addend1} and {addend2} and store result in {result}"
+    "syntax_line": "add {addend1} and {addend2} and store result in {addResult}",
+    "participants": [
+        {
+            "name": "addend1",
+            "required": "true"
+        },
+        {
+            "name": "addend2",
+            "required": "true"
+        },
+        {
+            "name": "addResult",
+            "required": "true"
+        }
+    ]
 }
