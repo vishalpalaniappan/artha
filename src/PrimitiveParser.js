@@ -26,17 +26,15 @@ export class PrimitiveParser {
      *      participant: "addend1"
      * }
      * 
-     * This is used when parsing the construted narrative to access the
+     * This is used when parsing the constructed narrative to access the
      * meaning it is referencing and the relevant participants.
      */
     parseSyntax() {
         for (const primitive of this.primitives) {
-            const syntax_line = primitive.syntax_line;
-            const split = syntax_line.split(" ");
             primitive.syntax = [];
 
-            // Process each word in the 
-            for (const word of split) {
+            // Process each word in the syntax
+            for (const word of primitive.syntax_line.split(" ")) {
                 if (word.charAt(0) === "{") {
                     primitive.syntax.push({
                         type: "placeholder",
@@ -53,17 +51,21 @@ export class PrimitiveParser {
     }
 
     /**
-     * Given the accumulated identifiers find the syntax if there is any.
+     * Given the accumulated identifiers find the primitive which the identifiers
+     * belong to. 
+     * 
+     * Currently, I am only comparing the first position, this is very crude.
+     * This will be made more elegant as I iterate on it. 
+     * 
      * @param {Array} identifiers 
      * @returns 
      */
     findPrimitiveGivenIdentifiers (identifiers) {
         for (const primitive of this.primitives) {
-            const syntax = primitive.syntax;
             if (identifiers.length === 0) {
                 console.error("No identifiers in accumulated sentence");
                 return identifiers;
-            } else if (syntax[0].syntax === identifiers[0]) {
+            } else if (primitive.syntax[0].syntax === identifiers[0]) {
                 return this.processAdd(identifiers, primitive);
             }
         }
