@@ -1,10 +1,18 @@
+/**
+ * Parses accumulated identifies to check which primitive it applies to.
+ */
 export class PrimitiveParser {
 
     constructor (primitives) {
         this.primitives = primitives;
     }
 
-    findPrimitiveGivenIdentifier (identifiers) {
+    /**
+     * Given the accumulated identifiers find the syntax if there is any.
+     * @param {Array} identifiers 
+     * @returns 
+     */
+    findPrimitiveGivenIdentifiers (identifiers) {
         for (const primitive of this.primitives) {
             const syntax = primitive.syntax;
             if (identifiers.length === 0) {
@@ -16,6 +24,12 @@ export class PrimitiveParser {
         }
     }
 
+    /**
+     * Process the add primitive and identify the participants involved.
+     * @param {Array} identifiers 
+     * @param {Object} primitive 
+     * @returns 
+     */
     processAdd(identifiers, primitive) {
         let pos = 0;
         const info = {name: primitive.name};
@@ -25,7 +39,7 @@ export class PrimitiveParser {
             if (token.type === "placeholder") {
                 info[token.participant] = identifiers[pos];
             } else if (token.type === "string") {
-
+                // TODO: Check that the syntax used was correct
             }
 
         } while (++pos < primitive.syntax.length);
