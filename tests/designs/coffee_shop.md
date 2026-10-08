@@ -43,11 +43,11 @@ It has 1 action named checkout.
 **Participant**: Coffee  
 **Participant Meaning**  
 Coffee is a class.  
-Coffee has two attributes.  
+Coffee has three attributes.  
 It has an attribute named type that is a string and has a value of "food item".  
 It has an attribute named cost which is a float and has a value of 1.00.
 It has an attributed named cost_currency which is a string and has a value of "CAD".  
-It has narratives "type of coffee" and "cost of coffee" and "currency of coffee cost".  
+It has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost".  
 
 **Meaning**: get cost of coffee  
 **Narrative (accesses attribute of class)**:  
@@ -65,7 +65,7 @@ get attribute cost_currency of coffee
 **Participant**: Bagel  
 **Participant Meaning**  
 Coffee is a class.  
-Bagel has two attributes.  
+Bagel has three attributes.  
 It has an attribute named type that is a string and has a value of "food item".  
 It has an attribute named cost which is a float and has a value of 2.00.  
 It has an attributed named cost_currency which is a string and has a value of "CAD".   
