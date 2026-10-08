@@ -1,6 +1,13 @@
 **Meaning**:  
 Coffee Shop  
 
+**Participant**
+Cart
+**Participant Meaning**:
+Cart is a list.
+It accepts food item.
+
+
 **Narratives**:  
 Barista presents the menu to the user then accept the menu choice from the user.  
 If the user selected coffee, then add coffee to cart.  
