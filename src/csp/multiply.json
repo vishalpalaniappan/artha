@@ -2,7 +2,7 @@
     "name": "multiply",
     "type": "primitive",
     "description":"Multiplies two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-    "syntax_line": "multiply {multiplicand} from {multiplier} and store result in {multiplicationResult}",
+    "syntax_line": "multiply {multiplicand} and {multiplier} and store result in {multiplicationResult}",
     "participants": [
         {
             "name": "multiplicand",

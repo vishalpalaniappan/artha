@@ -15,7 +15,7 @@ describe("primitive parser", async () => {
     it("tests the artha parser", async () => {
         const lexer = new ArthaLexer(
             `
-            if bill is requested then multiply cost_of_bagel from number_of_bagels and store result in cost_of_bagels then add cost_of_bagels and cost_of_coffee and store result in total_cost. 
+            if bill is requested then multiply cost_of_bagel and number_of_bagels and store result in cost_of_bagels then add cost_of_bagels and cost_of_coffee and store result in total_cost. 
             `
         );
 
