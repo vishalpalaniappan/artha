@@ -8,6 +8,17 @@ If the user selected a bagel, then add bagel to cart.
 If the user terminates the transaction, then clear the cart and return to the menu.    
 If the user proceeds with the payment, then calculate cost then hand user the bill then accept payment from user.  
 
+**Meaning**: accept menu choice from the user
+**Narrative**:  
+Accept user terminal input and store in menu_choice.
+
+**Meaning**: the user selected coffee
+**Narrative**:  
+menu_choice equals coffee
+
+**Meaning**: the user selected bagel
+**Narrative**:  
+menu_choice equals bagel
 ---
 
 **Meaning:** calculate cost  
