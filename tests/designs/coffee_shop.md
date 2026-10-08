@@ -8,7 +8,6 @@ If the user selected a bagel, then add bagel to cart.
 If the user terminated the transaction, then clear the cart and return to the menu.    
 If the user proceeded with the payment, then calculate cost then hand user the bill then accept payment from user.  
 
-
 ---
 
 **Meaning**: accept menu choice from the user
@@ -66,7 +65,7 @@ It has 1 action named checkout.
 
 **Meaning**: get formatted menu
 **Narrative (returns list)**:  
-# Add narrative to format menu into string
+wip
 
 ----
 **Participant**: Coffee  
@@ -110,4 +109,6 @@ get attribute type of bagel
 
 **Meaning**: get currency of bagel cost  
 **Narrative (accesses attribute of class)**:  
-get attribute cost_currency of bagel
+get attribute cost_currency of bagel  
+
+----  
