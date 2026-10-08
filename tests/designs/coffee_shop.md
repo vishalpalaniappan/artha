@@ -5,12 +5,19 @@ Coffee Shop
 Barista presents the menu to the user then accept the menu choice from the user.  
 If the user selected coffee, then add coffee to cart.  
 If the user selected a bagel, then add bagel to cart.  
-If the user terminates the transaction, then clear the cart and return to the menu.    
-If the user proceeds with the payment, then calculate cost then hand user the bill then accept payment from user.  
+If the user terminated the transaction, then clear the cart and return to the menu.    
+If the user proceeded with the payment, then calculate cost then hand user the bill then accept payment from user.  
+
+
+---
 
 **Meaning**: accept menu choice from the user
 **Narrative**:  
 Accept user terminal input and store in menu_choice.
+
+**Meaning**: Barista presents the menu to the user
+**Narrative**:  
+Get formatted menu then display in terminal.
 
 **Meaning**: the user selected coffee
 **Narrative**:  
@@ -19,7 +26,14 @@ menu_choice equals coffee
 **Meaning**: the user selected bagel
 **Narrative**:  
 menu_choice equals bagel
----
+
+**Meaning**: the user terminated the transaction
+**Narrative**:  
+menu_choice equals terminate
+
+**Meaning**: the user proceeded with the payment
+**Narrative**:  
+menu_choice equals checkout
 
 **Meaning:** calculate cost  
 **Narrative**:  
@@ -49,6 +63,10 @@ It has 1 food item named coffee.
 It has 1 food item named bagel.  
 It has 1 action named terminate.  
 It has 1 action named checkout.  
+
+**Meaning**: get formatted menu
+**Narrative (returns list)**:  
+# Add narrative to format menu into string
 
 ----
 **Participant**: Coffee  
