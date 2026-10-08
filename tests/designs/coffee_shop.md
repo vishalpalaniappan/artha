@@ -8,6 +8,11 @@ If the user selected a bagel, then add bagel to cart.
 If the user terminates the transaction, then clear the cart and return to the menu.    
 If the user proceeds with the payment, then calculate cost then hand user the bill then accept payment from user.  
 
+**Meaning:** calculate cost  
+**Narrative**:  
+Set total_cost to 0 and has type float.  
+For each item in cart, get cost of {item} and add to total_cost.
+
 ----
 **Participant**: Cart  
 **Participant Meaning**:  
@@ -42,15 +47,15 @@ It has an attribute named cost which is a float and has a value of 1.00.
 It has an attributed named cost_currency which is a string and has a value of "CAD".  
 It has narratives "type of coffee" and "cost of coffee" and "currency of coffee cost".  
 
-**Meaning**: cost of coffee  
+**Meaning**: get cost of coffee  
 **Narrative (accesses attribute of class)**:  
 get attribute cost of coffee
 
-**Meaning**: type of coffee  
+**Meaning**: get type of coffee  
 **Narrative (accesses attribute of class)**:  
 get attribute type of coffee
 
-**Meaning**: currency of coffee cost  
+**Meaning**: get currency of coffee cost  
 **Narrative (accesses attribute of class)**:  
 get attribute cost_currency of coffee
 
@@ -64,14 +69,14 @@ It has an attribute named cost which is a float and has a value of 2.00.
 It has an attributed named cost_currency which is a string and has a value of "CAD".   
 It has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost".  
 
-**Meaning**: cost of bagel  
+**Meaning**: get cost of bagel  
 **Narrative (accesses attribute of class)**:  
 get attribute cost of bagel
 
-**Meaning**: type of bagel  
+**Meaning**: get type of bagel  
 **Narrative (accesses attribute of class)**:  
 get attribute type of bagel
 
-**Meaning**: currency of bagel cost  
+**Meaning**: get currency of bagel cost  
 **Narrative (accesses attribute of class)**:  
 get attribute cost_currency of bagel
