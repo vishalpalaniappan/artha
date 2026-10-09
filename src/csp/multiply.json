@@ -1,0 +1,47 @@
+{
+    "name": "multiply",
+    "type": "primitive",
+    "description":"Multiplies two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
+    "syntax_line": "multiply {multiplicand} and {multiplier} and store result in {multiplicationResult}",
+    "participants": [
+        {
+            "name": "multiplicand",
+            "required": "true"
+        },
+        {
+            "name": "multiplier",
+            "required": "true"
+        },
+        {
+            "name": "multiplicationResult",
+            "modifies": "true",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+        "id_1": {
+            "participants": ["multiplicand"],
+            "property": ["type"],
+            "condition": ["float", "int"],
+            "description": "Multiplicand must be a whole number or float",
+            "invalidValues": [
+                {
+                    "value": "string_value",
+                    "description": "A string is provided as multiplicand"
+                }
+            ]
+        },
+        "id_2": {
+            "participants": ["multiplier"],
+            "property": ["type"],
+            "condition": ["float", "int"],
+            "description": "Multiplier must be a whole number or float",
+            "invalidValues": [
+                {
+                    "value": "string_value",
+                    "description": "A string is provided as multiplier"
+                }
+            ]
+        }
+    }
+}

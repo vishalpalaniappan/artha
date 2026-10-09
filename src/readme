@@ -1,0 +1,12 @@
+Contains the lexer and parser for the language.
+
+- Tokenize the script into identifiers.
+- Parse the identifiers using keywords
+- Current functional keywords are:
+    - If
+    - Then
+    - While
+- Primitive Keywords:
+    - I will load these directly from the primitive definitions.
+- Constructed Keywords:
+    - I will load this from the constructed keywords in the world.
