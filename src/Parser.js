@@ -1,7 +1,12 @@
 import { PrimitiveParser } from "./PrimitiveParser";
 
 /**
- *
+ * The current state of the parser groups the meaning into
+ * blocks and splits the blocks into sentences.
+ * 
+ * In the next stage, each of the sentences will be parsed into
+ * the meaning that composes it. This can be composite meaning or
+ * it can be primitive meaning.
  */
 export class ArthaParser {
 
@@ -19,15 +24,10 @@ export class ArthaParser {
         this.currPos = 0;
         do {
             const token = this.tokens[this.currPos];
-
-            if (token.type === "FUNCTIONAL") {
-                console.log(token.type, token.value);
-                if (token.value === "meaning") {
-                    this.processMeaning();
-                }
+            if (token.type === "FUNCTIONAL" && token.value === "meaning") {
+                this.processMeaning();
             }
-            this.currPos++;
-        } while (this.currPos < this.tokens.length);
+        } while (++this.currPos < this.tokens.length);
 
         console.log(this.grouped);
     }
@@ -53,12 +53,13 @@ export class ArthaParser {
     processMeaning() {
         let startIndex, endIndex;
         
-        // increment position to complete syntax
+        // Expect meaning to be followed by of
         if (this.tokens[++this.currPos].value !== "of") {
-            throw Error("Syntax Error");
+            throw Error("Syntax error: Expected meaning to be followed by 'of'.");
         }
 
-        // gather the title of the composed meaning
+        // Gather the title of the composed meaning
+        // meaning of [composite title]
         let meaning = "";
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
@@ -70,7 +71,14 @@ export class ArthaParser {
             meaning = meaning + token.value + " ";
         }
 
-        // group the rest of the block
+        // The meaning block was not opened.
+        if (!startIndex) {
+            throw Error("Syntax error: Expected opening brace for meaning block.")
+        }
+
+        // TODO: Sentences can have braces, need to account for this.
+
+        // Group the rest of the block.
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
             if (token.type === "RBRACE") {
@@ -80,15 +88,15 @@ export class ArthaParser {
             }
         }
 
-        if (!startIndex || !endIndex) {
-            throw Error("Invalid syntax.")
+        // The block was not closed.
+        if (!endIndex) {
+            throw Error("Syntax error: Expected closing brace for meaning block.")
         }
 
-        // Group the sentences within meaning block
+        // Split the blocks into lines.
         const sentences = [];
         let sentence = [];
         for (let i = startIndex; i < endIndex; i++) {
-            const token = this.tokens[i];
             if (this.tokens[i].type === "PERIOD") {
                 sentences.push(sentence);
                 sentence = [];
