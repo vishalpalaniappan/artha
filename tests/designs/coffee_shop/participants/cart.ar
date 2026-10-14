@@ -1,6 +1,6 @@
 meaning of Cart {
     Cart is a list.
-    It contains food item.
+    it contains food item.
 }
 
 meaning of add {food_item} to cart {

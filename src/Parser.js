@@ -61,9 +61,10 @@ export class ArthaParser {
      */
     processFunctional(value) {
         if (value === "if") {
+            console.log(`Processed identifier ${value}.`);
             this.processIf();
         } else {
-            console.log("Unsupported functional identifier.")
+            console.log(`Unsupported functional identifier ${value}.`)
         }
     }
 
