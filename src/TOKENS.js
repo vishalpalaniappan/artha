@@ -3,7 +3,9 @@ let TOKENS = {
     "COLON": ":",
     "COMMA": ",",
     "SEMICOLON": ";",
-    "PERIOD": "."
+    "PERIOD": ".",
+    "LBRACE": "{",
+    "RBRACE": "}"
 }
 TOKENS = Object.freeze(TOKENS);
 
