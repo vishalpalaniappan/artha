@@ -10,27 +10,27 @@ If the user proceeded with the payment, then calculate cost then hand user the b
 
 ---
 
-**Meaning**: accept menu choice from the user
+**Meaning**: accept menu choice from the user  
 **Narrative**:  
 Accept user terminal input and store in menu_choice.
 
-**Meaning**: Barista presents the menu to the user
+**Meaning**: Barista presents the menu to the user  
 **Narrative**:  
 Get formatted menu then display in terminal.
 
-**Meaning**: the user selected coffee
+**Meaning**: the user selected coffee  
 **Narrative**:  
 menu_choice equals coffee
 
-**Meaning**: the user selected bagel
+**Meaning**: the user selected bagel  
 **Narrative**:  
 menu_choice equals bagel
 
-**Meaning**: the user terminated the transaction
+**Meaning**: the user terminated the transaction  
 **Narrative**:  
 menu_choice equals terminate
 
-**Meaning**: the user proceeded with the payment
+**Meaning**: the user proceeded with the payment  
 **Narrative**:  
 menu_choice equals checkout
 
@@ -92,7 +92,7 @@ get attribute cost_currency of coffee
 ----
 **Participant**: Bagel  
 **Participant Meaning**  
-Coffee is a class.  
+Bagel is a class.  
 Bagel has three attributes.  
 It has an attribute named type that is a string and has a value of "food item".  
 It has an attribute named cost which is a float and has a value of 2.00.  
