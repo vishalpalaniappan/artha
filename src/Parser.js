@@ -78,8 +78,6 @@ export class ArthaParser {
             throw Error("Syntax error: Expected opening brace for meaning block.")
         }
 
-        // TODO: Sentences can have braces, need to account for this.
-
         // Group the rest of the block.
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
@@ -100,11 +98,11 @@ export class ArthaParser {
         let sentence = [];
         for (let i = startIndex; i < endIndex; i++) {
             if (this.tokens[i].type === "PERIOD") {
-                sentences.push(sentence);
+                sentences.push(this.processSentence([...sentence]));
                 sentence = [];
-                continue;
+            } else {
+                sentence.push(this.tokens[i]);
             }
-            sentence.push(this.tokens[i]);
         }
 
         // Save the grouped meaning
@@ -114,5 +112,31 @@ export class ArthaParser {
                 sentences: sentences
             }
         )
+    }
+
+    /**
+     * "if bill is requested then get bill."
+     * 
+     * "if", "bill is requested", "then", "get bill"
+     * 
+     * @param {Array} sentence 
+     */
+    processSentence(sentence) {
+        let processed = [];
+        let pos = 0;
+        let accumulated = [];
+        do {
+            if (sentence[pos].type === "FUNCTIONAL") {
+                if (accumulated.length > 0) {
+                    processed.push(accumulated)
+                    accumulated = [];
+                }
+                processed.push(sentence[pos]);    
+            } else {
+                accumulated.push(sentence[pos]);
+            }
+        } while (++pos < sentence.length);
+        processed.push(accumulated);
+        return processed;
     }
 }
