@@ -7,7 +7,7 @@ meaning of coffee shop {
 }
 
 meaning of accept menu choice from the user {
-    accept user terminate input and store in menu_choice.
+    accept terminal input and store in menu_choice.
 }
 
 meaning of Barista presents the menu to the user {
