@@ -1,6 +1,6 @@
 import { describe, expect, it} from "vitest";
 import { resolve } from "path"
-import { writeFile } from "fs/promises"
+import { writeFile, readFile } from "fs/promises"
 import { PrimitiveParser } from "../dist/index.esm";
 import { ArthaLexer } from "../dist/index.esm";
 import { ArthaParser } from "../dist/index.esm";
@@ -13,11 +13,15 @@ ensureDir("./tests/output/primitive_parser")
 describe("primitive parser", async () => {
 
     it("tests the artha parser", async () => {
-        const lexer = new ArthaLexer(
-            `
-            if bill is requested then multiply cost_of_bagel and number_of_bagels and store result in cost_of_bagels then add cost_of_bagels and cost_of_coffee and store result in total_cost. 
-            `
-        );
+
+        const shop = (await readFile("./tests/designs/coffee_shop/coffee_shop.ar")).toString();
+
+        // const lexer = new ArthaLexer(
+        //     `
+        //     if bill is requested then multiply cost_of_bagel and number_of_bagels and store result in cost_of_bagels then add cost_of_bagels and cost_of_coffee and store result in total_cost. 
+        //     `
+        // );
+        const lexer = new ArthaLexer(shop);
 
         const primitive = await loadPrimitivesFromManifest();
         const parser = new ArthaParser(lexer.scannedTokens, primitive);
