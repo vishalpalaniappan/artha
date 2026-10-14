@@ -7,6 +7,9 @@ let FUNCTIONAL_IDENTIFIERS = [
     },
     {
         name: "while"
+    },
+    {
+        name: "meaning"
     }
 ]
 FUNCTIONAL_IDENTIFIERS = Object.freeze(FUNCTIONAL_IDENTIFIERS);
