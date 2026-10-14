@@ -3,7 +3,7 @@ meaning of coffee shop {
     if the user selected coffee, then add coffee to cart.
     if the user selected a bagel, then add bagel to cart.
     if the user terminates the transaction, then clear the cart and return to the menu.
-    if the user proceeds with the payment, then calculate cost then hand user the bill then accept payment from user.
+    if the user proceeds with the payment, then process payment.
 }
 
 meaning of accept menu choice from the user {
