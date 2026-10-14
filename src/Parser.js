@@ -62,15 +62,19 @@ export class ArthaParser {
 
         // Gather the title of the composed meaning
         // meaning of [composite title]
-        let meaning = "";
+        let compositeMeaningArray = [];
+        let compositeMeaningSentence; 
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
             if (token.type === "LBRACE") {
                 console.log("Block opened");
+                compositeMeaningSentence = compositeMeaningArray.map(
+                    (e)=> e.value
+                ).join(" ");
                 startIndex = ++this.currPos;
                 break;
             }
-            meaning = meaning + token.value + " ";
+            compositeMeaningArray.push(token);
         }
 
         // The meaning block was not opened.
@@ -108,7 +112,8 @@ export class ArthaParser {
         // Save the grouped meaning
         this.grouped.push(
             {
-                composite: meaning,
+                compositeMeaningArray: compositeMeaningArray,
+                compositeMeaningSentence: compositeMeaningSentence,
                 sentences: sentences
             }
         )
