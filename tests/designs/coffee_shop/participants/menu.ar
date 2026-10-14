@@ -1,6 +1,7 @@
-meaning of Menu:
+meaning of Menu {
     Menu is a list.
     It contains food items and actions. It has 1 food item named coffee.
     It has 1 food item named bagel.
     It has 1 action named terminate.
     It has 1 action named checkout.
+}

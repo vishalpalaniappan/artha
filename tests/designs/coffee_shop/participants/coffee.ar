@@ -1,16 +1,20 @@
-meaning of Coffee:
+meaning of Coffee {
     Coffee is a class.
     Coffee has three attributes.
     It has an attribute named type that is a string and has a value of "food item".
     It has an attribute named cost which is a float and has a value of 1.00. 
     It has an attribute named cost_currency which is a string and has a value of "CAD".
     It has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost".
+}
 
-meaning of get cost of coffee:
+meaning of get cost of coffee {
     get attribute cost.
+}
 
-meaning of get type of coffee:
+meaning of get type of coffee {
     get attribute type.
+}
 
-meaning of get currency of coffee cost:
+meaning of get currency of coffee cost {
     get attribute cost_currency.
+}
