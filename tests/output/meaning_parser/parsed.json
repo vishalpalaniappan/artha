@@ -1,0 +1,1107 @@
+[
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "coffee",
+                "type": "IDENTIFIER",
+                "startLineno": 1,
+                "startColno": 12,
+                "endLineno": 1,
+                "endColno": 17
+            },
+            {
+                "value": "shop",
+                "type": "IDENTIFIER",
+                "startLineno": 1,
+                "startColno": 19,
+                "endLineno": 1,
+                "endColno": 22
+            }
+        ],
+        "compositeMeaningSentence": "coffee shop",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "Barista",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 5,
+                        "endLineno": 2,
+                        "endColno": 11
+                    },
+                    {
+                        "value": "presents",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 13,
+                        "endLineno": 2,
+                        "endColno": 20
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 22,
+                        "endLineno": 2,
+                        "endColno": 24
+                    },
+                    {
+                        "value": "menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 26,
+                        "endLineno": 2,
+                        "endColno": 29
+                    },
+                    {
+                        "value": "to",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 31,
+                        "endLineno": 2,
+                        "endColno": 32
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 34,
+                        "endLineno": 2,
+                        "endColno": 36
+                    },
+                    {
+                        "value": "user",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 38,
+                        "endLineno": 2,
+                        "endColno": 41
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 2,
+                    "startColno": 43,
+                    "endLineno": 2,
+                    "endColno": 46
+                },
+                [
+                    {
+                        "value": "accept",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 48,
+                        "endLineno": 2,
+                        "endColno": 53
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 55,
+                        "endLineno": 2,
+                        "endColno": 57
+                    },
+                    {
+                        "value": "menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 59,
+                        "endLineno": 2,
+                        "endColno": 62
+                    },
+                    {
+                        "value": "choice",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 64,
+                        "endLineno": 2,
+                        "endColno": 69
+                    },
+                    {
+                        "value": "from",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 71,
+                        "endLineno": 2,
+                        "endColno": 74
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 76,
+                        "endLineno": 2,
+                        "endColno": 78
+                    },
+                    {
+                        "value": "user",
+                        "type": "IDENTIFIER",
+                        "startLineno": 2,
+                        "startColno": 80,
+                        "endLineno": 2,
+                        "endColno": 83
+                    }
+                ]
+            ],
+            [
+                {
+                    "value": "if",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 3,
+                    "startColno": 5,
+                    "endLineno": 3,
+                    "endColno": 6
+                },
+                [
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 8,
+                        "endLineno": 3,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "user",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 12,
+                        "endLineno": 3,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "selected",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 17,
+                        "endLineno": 3,
+                        "endColno": 24
+                    },
+                    {
+                        "value": "coffee",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 26,
+                        "endLineno": 3,
+                        "endColno": 31
+                    },
+                    {
+                        "type": "COMMA",
+                        "value": ",",
+                        "startLineno": 3,
+                        "startColno": 32,
+                        "endLineno": 3,
+                        "endColno": 32
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 3,
+                    "startColno": 34,
+                    "endLineno": 3,
+                    "endColno": 37
+                },
+                [
+                    {
+                        "value": "add",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 39,
+                        "endLineno": 3,
+                        "endColno": 41
+                    },
+                    {
+                        "value": "coffee",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 43,
+                        "endLineno": 3,
+                        "endColno": 48
+                    },
+                    {
+                        "value": "to",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 50,
+                        "endLineno": 3,
+                        "endColno": 51
+                    },
+                    {
+                        "value": "cart",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 53,
+                        "endLineno": 3,
+                        "endColno": 56
+                    }
+                ]
+            ],
+            [
+                {
+                    "value": "if",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 4,
+                    "startColno": 5,
+                    "endLineno": 4,
+                    "endColno": 6
+                },
+                [
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 8,
+                        "endLineno": 4,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "user",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 12,
+                        "endLineno": 4,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "selected",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 17,
+                        "endLineno": 4,
+                        "endColno": 24
+                    },
+                    {
+                        "value": "a",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 26,
+                        "endLineno": 4,
+                        "endColno": 26
+                    },
+                    {
+                        "value": "bagel",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 28,
+                        "endLineno": 4,
+                        "endColno": 32
+                    },
+                    {
+                        "type": "COMMA",
+                        "value": ",",
+                        "startLineno": 4,
+                        "startColno": 33,
+                        "endLineno": 4,
+                        "endColno": 33
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 4,
+                    "startColno": 35,
+                    "endLineno": 4,
+                    "endColno": 38
+                },
+                [
+                    {
+                        "value": "add",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 40,
+                        "endLineno": 4,
+                        "endColno": 42
+                    },
+                    {
+                        "value": "bagel",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 44,
+                        "endLineno": 4,
+                        "endColno": 48
+                    },
+                    {
+                        "value": "to",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 50,
+                        "endLineno": 4,
+                        "endColno": 51
+                    },
+                    {
+                        "value": "cart",
+                        "type": "IDENTIFIER",
+                        "startLineno": 4,
+                        "startColno": 53,
+                        "endLineno": 4,
+                        "endColno": 56
+                    }
+                ]
+            ],
+            [
+                {
+                    "value": "if",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 5,
+                    "startColno": 5,
+                    "endLineno": 5,
+                    "endColno": 6
+                },
+                [
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 8,
+                        "endLineno": 5,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "user",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 12,
+                        "endLineno": 5,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "terminates",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 17,
+                        "endLineno": 5,
+                        "endColno": 26
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 28,
+                        "endLineno": 5,
+                        "endColno": 30
+                    },
+                    {
+                        "value": "transaction",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 32,
+                        "endLineno": 5,
+                        "endColno": 42
+                    },
+                    {
+                        "type": "COMMA",
+                        "value": ",",
+                        "startLineno": 5,
+                        "startColno": 43,
+                        "endLineno": 5,
+                        "endColno": 43
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 5,
+                    "startColno": 45,
+                    "endLineno": 5,
+                    "endColno": 48
+                },
+                [
+                    {
+                        "value": "clear",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 50,
+                        "endLineno": 5,
+                        "endColno": 54
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 56,
+                        "endLineno": 5,
+                        "endColno": 58
+                    },
+                    {
+                        "value": "cart",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 60,
+                        "endLineno": 5,
+                        "endColno": 63
+                    },
+                    {
+                        "value": "and",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 65,
+                        "endLineno": 5,
+                        "endColno": 67
+                    },
+                    {
+                        "value": "return",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 69,
+                        "endLineno": 5,
+                        "endColno": 74
+                    },
+                    {
+                        "value": "to",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 76,
+                        "endLineno": 5,
+                        "endColno": 77
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 79,
+                        "endLineno": 5,
+                        "endColno": 81
+                    },
+                    {
+                        "value": "menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 5,
+                        "startColno": 83,
+                        "endLineno": 5,
+                        "endColno": 86
+                    }
+                ]
+            ],
+            [
+                {
+                    "value": "if",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 6,
+                    "startColno": 5,
+                    "endLineno": 6,
+                    "endColno": 6
+                },
+                [
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 8,
+                        "endLineno": 6,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "user",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 12,
+                        "endLineno": 6,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "proceeds",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 17,
+                        "endLineno": 6,
+                        "endColno": 24
+                    },
+                    {
+                        "value": "with",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 26,
+                        "endLineno": 6,
+                        "endColno": 29
+                    },
+                    {
+                        "value": "the",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 31,
+                        "endLineno": 6,
+                        "endColno": 33
+                    },
+                    {
+                        "value": "payment",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 35,
+                        "endLineno": 6,
+                        "endColno": 41
+                    },
+                    {
+                        "type": "COMMA",
+                        "value": ",",
+                        "startLineno": 6,
+                        "startColno": 42,
+                        "endLineno": 6,
+                        "endColno": 42
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 6,
+                    "startColno": 44,
+                    "endLineno": 6,
+                    "endColno": 47
+                },
+                [
+                    {
+                        "value": "process",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 49,
+                        "endLineno": 6,
+                        "endColno": 55
+                    },
+                    {
+                        "value": "payment",
+                        "type": "IDENTIFIER",
+                        "startLineno": 6,
+                        "startColno": 57,
+                        "endLineno": 6,
+                        "endColno": 63
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "accept",
+                "type": "IDENTIFIER",
+                "startLineno": 9,
+                "startColno": 12,
+                "endLineno": 9,
+                "endColno": 17
+            },
+            {
+                "value": "menu",
+                "type": "IDENTIFIER",
+                "startLineno": 9,
+                "startColno": 19,
+                "endLineno": 9,
+                "endColno": 22
+            },
+            {
+                "value": "choice",
+                "type": "IDENTIFIER",
+                "startLineno": 9,
+                "startColno": 24,
+                "endLineno": 9,
+                "endColno": 29
+            },
+            {
+                "value": "from",
+                "type": "IDENTIFIER",
+                "startLineno": 9,
+                "startColno": 31,
+                "endLineno": 9,
+                "endColno": 34
+            },
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 9,
+                "startColno": 36,
+                "endLineno": 9,
+                "endColno": 38
+            },
+            {
+                "value": "user",
+                "type": "IDENTIFIER",
+                "startLineno": 9,
+                "startColno": 40,
+                "endLineno": 9,
+                "endColno": 43
+            }
+        ],
+        "compositeMeaningSentence": "accept menu choice from the user",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "accept",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 5,
+                        "endLineno": 10,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "terminal",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 12,
+                        "endLineno": 10,
+                        "endColno": 19
+                    },
+                    {
+                        "value": "input",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 21,
+                        "endLineno": 10,
+                        "endColno": 25
+                    },
+                    {
+                        "value": "and",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 27,
+                        "endLineno": 10,
+                        "endColno": 29
+                    },
+                    {
+                        "value": "store",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 31,
+                        "endLineno": 10,
+                        "endColno": 35
+                    },
+                    {
+                        "value": "in",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 37,
+                        "endLineno": 10,
+                        "endColno": 38
+                    },
+                    {
+                        "value": "menu_choice",
+                        "type": "IDENTIFIER",
+                        "startLineno": 10,
+                        "startColno": 40,
+                        "endLineno": 10,
+                        "endColno": 50
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "Barista",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 12,
+                "endLineno": 13,
+                "endColno": 18
+            },
+            {
+                "value": "presents",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 20,
+                "endLineno": 13,
+                "endColno": 27
+            },
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 29,
+                "endLineno": 13,
+                "endColno": 31
+            },
+            {
+                "value": "menu",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 33,
+                "endLineno": 13,
+                "endColno": 36
+            },
+            {
+                "value": "to",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 38,
+                "endLineno": 13,
+                "endColno": 39
+            },
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 41,
+                "endLineno": 13,
+                "endColno": 43
+            },
+            {
+                "value": "user",
+                "type": "IDENTIFIER",
+                "startLineno": 13,
+                "startColno": 45,
+                "endLineno": 13,
+                "endColno": 48
+            }
+        ],
+        "compositeMeaningSentence": "Barista presents the menu to the user",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "get",
+                        "type": "IDENTIFIER",
+                        "startLineno": 14,
+                        "startColno": 5,
+                        "endLineno": 14,
+                        "endColno": 7
+                    },
+                    {
+                        "value": "formatted",
+                        "type": "IDENTIFIER",
+                        "startLineno": 14,
+                        "startColno": 9,
+                        "endLineno": 14,
+                        "endColno": 17
+                    },
+                    {
+                        "value": "menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 14,
+                        "startColno": 19,
+                        "endLineno": 14,
+                        "endColno": 22
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 14,
+                    "startColno": 24,
+                    "endLineno": 14,
+                    "endColno": 27
+                },
+                [
+                    {
+                        "value": "display",
+                        "type": "IDENTIFIER",
+                        "startLineno": 14,
+                        "startColno": 29,
+                        "endLineno": 14,
+                        "endColno": 35
+                    },
+                    {
+                        "value": "in",
+                        "type": "IDENTIFIER",
+                        "startLineno": 14,
+                        "startColno": 37,
+                        "endLineno": 14,
+                        "endColno": 38
+                    },
+                    {
+                        "value": "terminal",
+                        "type": "IDENTIFIER",
+                        "startLineno": 14,
+                        "startColno": 40,
+                        "endLineno": 14,
+                        "endColno": 47
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 17,
+                "startColno": 12,
+                "endLineno": 17,
+                "endColno": 14
+            },
+            {
+                "value": "user",
+                "type": "IDENTIFIER",
+                "startLineno": 17,
+                "startColno": 16,
+                "endLineno": 17,
+                "endColno": 19
+            },
+            {
+                "value": "selected",
+                "type": "IDENTIFIER",
+                "startLineno": 17,
+                "startColno": 21,
+                "endLineno": 17,
+                "endColno": 28
+            },
+            {
+                "value": "coffee",
+                "type": "IDENTIFIER",
+                "startLineno": 17,
+                "startColno": 30,
+                "endLineno": 17,
+                "endColno": 35
+            }
+        ],
+        "compositeMeaningSentence": "the user selected coffee",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "menu_choice",
+                        "type": "IDENTIFIER",
+                        "startLineno": 18,
+                        "startColno": 5,
+                        "endLineno": 18,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "equals",
+                        "type": "IDENTIFIER",
+                        "startLineno": 18,
+                        "startColno": 17,
+                        "endLineno": 18,
+                        "endColno": 22
+                    },
+                    {
+                        "value": "\"coffee\"",
+                        "type": "IDENTIFIER",
+                        "startLineno": 18,
+                        "startColno": 24,
+                        "endLineno": 18,
+                        "endColno": 31
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 21,
+                "startColno": 12,
+                "endLineno": 21,
+                "endColno": 14
+            },
+            {
+                "value": "user",
+                "type": "IDENTIFIER",
+                "startLineno": 21,
+                "startColno": 16,
+                "endLineno": 21,
+                "endColno": 19
+            },
+            {
+                "value": "selected",
+                "type": "IDENTIFIER",
+                "startLineno": 21,
+                "startColno": 21,
+                "endLineno": 21,
+                "endColno": 28
+            },
+            {
+                "value": "bagel",
+                "type": "IDENTIFIER",
+                "startLineno": 21,
+                "startColno": 30,
+                "endLineno": 21,
+                "endColno": 34
+            }
+        ],
+        "compositeMeaningSentence": "the user selected bagel",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "menu_choice",
+                        "type": "IDENTIFIER",
+                        "startLineno": 22,
+                        "startColno": 5,
+                        "endLineno": 22,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "equals",
+                        "type": "IDENTIFIER",
+                        "startLineno": 22,
+                        "startColno": 17,
+                        "endLineno": 22,
+                        "endColno": 22
+                    },
+                    {
+                        "value": "\"bagel\"",
+                        "type": "IDENTIFIER",
+                        "startLineno": 22,
+                        "startColno": 24,
+                        "endLineno": 22,
+                        "endColno": 30
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 25,
+                "startColno": 12,
+                "endLineno": 25,
+                "endColno": 14
+            },
+            {
+                "value": "user",
+                "type": "IDENTIFIER",
+                "startLineno": 25,
+                "startColno": 16,
+                "endLineno": 25,
+                "endColno": 19
+            },
+            {
+                "value": "terminated",
+                "type": "IDENTIFIER",
+                "startLineno": 25,
+                "startColno": 21,
+                "endLineno": 25,
+                "endColno": 30
+            },
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 25,
+                "startColno": 32,
+                "endLineno": 25,
+                "endColno": 34
+            },
+            {
+                "value": "transaction",
+                "type": "IDENTIFIER",
+                "startLineno": 25,
+                "startColno": 36,
+                "endLineno": 25,
+                "endColno": 46
+            }
+        ],
+        "compositeMeaningSentence": "the user terminated the transaction",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "menu_choice",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 5,
+                        "endLineno": 26,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "equals",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 17,
+                        "endLineno": 26,
+                        "endColno": 22
+                    },
+                    {
+                        "value": "\"terminate\"",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 24,
+                        "endLineno": 26,
+                        "endColno": 34
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 29,
+                "startColno": 12,
+                "endLineno": 29,
+                "endColno": 14
+            },
+            {
+                "value": "user",
+                "type": "IDENTIFIER",
+                "startLineno": 29,
+                "startColno": 16,
+                "endLineno": 29,
+                "endColno": 19
+            },
+            {
+                "value": "proceeded",
+                "type": "IDENTIFIER",
+                "startLineno": 29,
+                "startColno": 21,
+                "endLineno": 29,
+                "endColno": 29
+            },
+            {
+                "value": "with",
+                "type": "IDENTIFIER",
+                "startLineno": 29,
+                "startColno": 31,
+                "endLineno": 29,
+                "endColno": 34
+            },
+            {
+                "value": "the",
+                "type": "IDENTIFIER",
+                "startLineno": 29,
+                "startColno": 36,
+                "endLineno": 29,
+                "endColno": 38
+            },
+            {
+                "value": "payment",
+                "type": "IDENTIFIER",
+                "startLineno": 29,
+                "startColno": 40,
+                "endLineno": 29,
+                "endColno": 46
+            }
+        ],
+        "compositeMeaningSentence": "the user proceeded with the payment",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "menu_choice",
+                        "type": "IDENTIFIER",
+                        "startLineno": 30,
+                        "startColno": 5,
+                        "endLineno": 30,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "equals",
+                        "type": "IDENTIFIER",
+                        "startLineno": 30,
+                        "startColno": 17,
+                        "endLineno": 30,
+                        "endColno": 22
+                    },
+                    {
+                        "value": "\"checkout\"",
+                        "type": "IDENTIFIER",
+                        "startLineno": 30,
+                        "startColno": 24,
+                        "endLineno": 30,
+                        "endColno": 33
+                    }
+                ]
+            ]
+        ]
+    }
+]
