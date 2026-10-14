@@ -1,5 +1,5 @@
 let TOKENS = {
-    "MEANING": "Meaning",
+    "MEANING": "meaning",
     "COMMENT": "#",
     "COLON": ":",
     "COMMA": ",",
