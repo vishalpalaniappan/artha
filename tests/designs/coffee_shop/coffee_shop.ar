@@ -13,6 +13,24 @@ Meaning of hand user the bill:
     Set user_prompt to "User owes {total_cost}" with type string.
     Prompt terminal with user_prompt.
 
+Meaning of accept menu choice from the user:
+    Accept user terminate input and store in menu_choice.
+
+Meaning of Barista presents the menu to the user:
+    Get formatted menu then display in terminal.
+
+Meaning of the user selected coffee:
+    menu_choice equals "coffee".
+
+Meaning of the user selected bagel:
+    menu_choice equals "bagel".
+
+Meaning of the user terminated the transaction:
+    menu_choice equals "terminate".
+
+Meaning of the user proceeded with the payment:
+    menu_choice equals "checkout".
+
 Meaning of accept payment from user:
     # TODO: Verify payment amount.
     Accept user_payment from terminal.
