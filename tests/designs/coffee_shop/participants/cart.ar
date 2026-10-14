@@ -1,0 +1,9 @@
+Meaning of Cart:
+    Cart is a list.
+    It contains food item.
+
+Meaning of add {food_item} to cart:
+    insert {food_item} at end of cart.
+
+Meaning of clear the cart:
+    remove all entires in cart.

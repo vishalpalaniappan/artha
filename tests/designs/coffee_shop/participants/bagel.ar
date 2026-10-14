@@ -4,13 +4,13 @@ Meaning of Bagel:
     It has an attribute named type that is a string and has a value of "food item".
     It has an attribute named cost which is a float and has a value of 2.00.
     It has an attribute named cost_currency which is a string and has a value of "CAD".
-    It has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost".
+    It has narratives "get type of bagel" and "get cost of bagel" and "get currency of bagel cost".
 
 Meaning of get cost of bagel:
-    get attribute cost of bagel.
+    get attribute cost.
 
 Meaning of get type of bagel:
-    get attribute type of bagel.
+    get attribute type.
 
 Meaning of get currency of bagel cost:
-    get attribute cost_currency of bagel.
+    get attribute cost_currency.
