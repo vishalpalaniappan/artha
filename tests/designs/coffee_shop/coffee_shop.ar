@@ -6,16 +6,6 @@ meaning of coffee shop {
     if the user proceeds with the payment, then calculate cost then hand user the bill then accept payment from user.
 }
 
-meaning of calculate cost {
-    set total_cost to 0 with type float.
-    for each item in cart, get cost of {item} and add to total_cost.
-}
-
-meaning of hand user the bill {
-    set user_prompt to "User owes {total_cost}" with type string.
-    prompt terminal with user_prompt.
-}
-
 meaning of accept menu choice from the user {
     accept user terminate input and store in menu_choice.
 }
@@ -38,9 +28,4 @@ meaning of the user terminated the transaction {
 
 meaning of the user proceeded with the payment {
     menu_choice equals "checkout".
-}
-
-meaning of accept payment from user {
-    # TODO: Verify payment amount.
-    accept user_payment from terminal.
 }
