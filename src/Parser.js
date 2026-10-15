@@ -65,7 +65,6 @@ export class ArthaParser {
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
             if (token.type === "LBRACE") {
-                console.log("Block opened");
                 compositeMeaningSentence = compositeMeaningArray.map(
                     (e)=> e.value
                 ).join(" ");
@@ -84,7 +83,6 @@ export class ArthaParser {
         while (++this.currPos < this.tokens.length) {
             const token = this.tokens[this.currPos];
             if (token.type === "RBRACE") {
-                console.log("Block closed");
                 endIndex = this.currPos;
                 break;
             }
