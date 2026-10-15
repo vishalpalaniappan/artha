@@ -30,14 +30,10 @@ export class MeaningProcessor {
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
                     if (Array.isArray(entry)) {
-                        const found = this.findCompositeMeaning(entry);
-                        if (found) {
-                            console.log("  " + entry.map((e) => e.value).join(" ") + " FOUND COMPOSITE")
-                            continue;
-                        } 
-
-                        
                         console.log("  " + entry.map((e) => e.value).join(" "))
+                        const foundComposite = this.findCompositeMeaning(entry);
+                        const foundPrimitive = this.findPrimitiveMeaning(entry);
+                        
                     } else if (typeof entry === "object") {
                         console.log( "  " + entry.value)
                     }
@@ -75,14 +71,46 @@ export class MeaningProcessor {
             }
 
             if (found) {
+                console.log("Found composite meaning");
                 return compositeMeaningObj;
             }
         }
     }
 
     findPrimitiveMeaning(parsedMeaning) {
-        for (const primitiveMeaning of primitives) {
+        for (const primitiveMeaningObj of this.primitives) {
             // Compare the parsedMeaning with the primitiveMeaning
+            const primitiveMeaning = primitiveMeaningObj.syntax_line.split(" ");
+            
+
+            // Compare the parsedMeaning with the compositeMeaning
+            if (primitiveMeaning.length !== parsedMeaning.length) continue;
+
+            
+            let found = true;
+            for (const index in parsedMeaning) {
+                const primitiveEntry = primitiveMeaning[index];
+                const parsedEntry = parsedMeaning[index];
+                
+                // If the composite entry doesn't have val, continue
+                if (primitiveEntry.length === 0) continue;
+                
+                // This references a participant, so we can't compare
+                if (primitiveEntry[0] === "[" && primitiveEntry[primitiveEntry.length - 1] === "]") {
+                    continue;
+                }
+
+                // Check if the syntax matches
+                if (primitiveEntry !== parsedEntry.value) {
+                    found = false;
+                }
+            }
+
+            if (found) {
+                console.log("Found primitive:", primitiveMeaningObj.name);
+                return primitiveMeaningObj;
+            }
+
         }
     }
 

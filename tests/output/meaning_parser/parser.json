@@ -1297,11 +1297,147 @@
             "endColno": 34
         },
         {
+            "type": "HASH",
+            "value": "#",
+            "startLineno": 32,
+            "startColno": 5,
+            "endLineno": 32,
+            "endColno": 5
+        },
+        {
+            "value": "Temporary",
+            "type": "IDENTIFIER",
+            "startLineno": 32,
+            "startColno": 7,
+            "endLineno": 32,
+            "endColno": 15
+        },
+        {
+            "value": "test",
+            "type": "IDENTIFIER",
+            "startLineno": 32,
+            "startColno": 17,
+            "endLineno": 32,
+            "endColno": 20
+        },
+        {
+            "value": "for",
+            "type": "IDENTIFIER",
+            "startLineno": 32,
+            "startColno": 22,
+            "endLineno": 32,
+            "endColno": 24
+        },
+        {
+            "value": "parsing",
+            "type": "IDENTIFIER",
+            "startLineno": 32,
+            "startColno": 26,
+            "endLineno": 32,
+            "endColno": 32
+        },
+        {
+            "value": "primitive",
+            "type": "IDENTIFIER",
+            "startLineno": 32,
+            "startColno": 34,
+            "endLineno": 32,
+            "endColno": 42
+        },
+        {
+            "value": "meaning",
+            "type": "FUNCTIONAL",
+            "startLineno": 32,
+            "startColno": 44,
+            "endLineno": 32,
+            "endColno": 50
+        },
+        {
+            "value": "add",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 5,
+            "endLineno": 33,
+            "endColno": 7
+        },
+        {
+            "value": "num1",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 9,
+            "endLineno": 33,
+            "endColno": 12
+        },
+        {
+            "value": "and",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 14,
+            "endLineno": 33,
+            "endColno": 16
+        },
+        {
+            "value": "num2",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 18,
+            "endLineno": 33,
+            "endColno": 21
+        },
+        {
+            "value": "and",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 23,
+            "endLineno": 33,
+            "endColno": 25
+        },
+        {
+            "value": "store",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 27,
+            "endLineno": 33,
+            "endColno": 31
+        },
+        {
+            "value": "result",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 33,
+            "endLineno": 33,
+            "endColno": 38
+        },
+        {
+            "value": "in",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 40,
+            "endLineno": 33,
+            "endColno": 41
+        },
+        {
+            "value": "result",
+            "type": "IDENTIFIER",
+            "startLineno": 33,
+            "startColno": 43,
+            "endLineno": 33,
+            "endColno": 48
+        },
+        {
+            "type": "PERIOD",
+            "value": ".",
+            "startLineno": 33,
+            "startColno": 49,
+            "endLineno": 33,
+            "endColno": 49
+        },
+        {
             "type": "RBRACE",
             "value": "}",
-            "startLineno": 31,
+            "startLineno": 34,
             "startColno": 1,
-            "endLineno": 31,
+            "endLineno": 34,
             "endColno": 1
         }
     ],
@@ -2368,18 +2504,152 @@
                             "endColno": 33
                         }
                     ]
+                ],
+                [
+                    [
+                        {
+                            "type": "HASH",
+                            "value": "#",
+                            "startLineno": 32,
+                            "startColno": 5,
+                            "endLineno": 32,
+                            "endColno": 5
+                        },
+                        {
+                            "value": "Temporary",
+                            "type": "IDENTIFIER",
+                            "startLineno": 32,
+                            "startColno": 7,
+                            "endLineno": 32,
+                            "endColno": 15
+                        },
+                        {
+                            "value": "test",
+                            "type": "IDENTIFIER",
+                            "startLineno": 32,
+                            "startColno": 17,
+                            "endLineno": 32,
+                            "endColno": 20
+                        },
+                        {
+                            "value": "for",
+                            "type": "IDENTIFIER",
+                            "startLineno": 32,
+                            "startColno": 22,
+                            "endLineno": 32,
+                            "endColno": 24
+                        },
+                        {
+                            "value": "parsing",
+                            "type": "IDENTIFIER",
+                            "startLineno": 32,
+                            "startColno": 26,
+                            "endLineno": 32,
+                            "endColno": 32
+                        },
+                        {
+                            "value": "primitive",
+                            "type": "IDENTIFIER",
+                            "startLineno": 32,
+                            "startColno": 34,
+                            "endLineno": 32,
+                            "endColno": 42
+                        }
+                    ],
+                    {
+                        "value": "meaning",
+                        "type": "FUNCTIONAL",
+                        "startLineno": 32,
+                        "startColno": 44,
+                        "endLineno": 32,
+                        "endColno": 50
+                    },
+                    [
+                        {
+                            "value": "add",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 5,
+                            "endLineno": 33,
+                            "endColno": 7
+                        },
+                        {
+                            "value": "num1",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 9,
+                            "endLineno": 33,
+                            "endColno": 12
+                        },
+                        {
+                            "value": "and",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 14,
+                            "endLineno": 33,
+                            "endColno": 16
+                        },
+                        {
+                            "value": "num2",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 18,
+                            "endLineno": 33,
+                            "endColno": 21
+                        },
+                        {
+                            "value": "and",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 23,
+                            "endLineno": 33,
+                            "endColno": 25
+                        },
+                        {
+                            "value": "store",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 27,
+                            "endLineno": 33,
+                            "endColno": 31
+                        },
+                        {
+                            "value": "result",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 33,
+                            "endLineno": 33,
+                            "endColno": 38
+                        },
+                        {
+                            "value": "in",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 40,
+                            "endLineno": 33,
+                            "endColno": 41
+                        },
+                        {
+                            "value": "result",
+                            "type": "IDENTIFIER",
+                            "startLineno": 33,
+                            "startColno": 43,
+                            "endLineno": 33,
+                            "endColno": 48
+                        }
+                    ]
                 ]
             ]
         }
     ],
-    "currPos": 163,
+    "currPos": 180,
     "parsedOutput": {
         "primitives": [
             {
                 "name": "add",
                 "type": "primitive",
                 "description": "Adds two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-                "syntax_line": "add {addend1} and {addend2} and store result in {addResult}",
+                "syntax_line": "add [addend1] and [addend2] and store result in [addResult]",
                 "participants": [
                     {
                         "name": "addend1",
@@ -2440,7 +2710,7 @@
                 "name": "multiply",
                 "type": "primitive",
                 "description": "Multiplies two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-                "syntax_line": "multiply {multiplicand} and {multiplier} and store result in {multiplicationResult}",
+                "syntax_line": "multiply [multiplicand] and [multiplier] and store result in [multiplicationResult]",
                 "participants": [
                     {
                         "name": "multiplicand",
@@ -2501,7 +2771,7 @@
                 "name": "subtract",
                 "type": "primitive",
                 "description": "Subtracts two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-                "syntax_line": "subtract {subtrahend} from {minuend} and store result in {subtractResult}",
+                "syntax_line": "subtract [subtrahend] from [minuend] and store result in [subtractResult]",
                 "participants": [
                     {
                         "name": "subtrahend",
@@ -3620,6 +3890,140 @@
                                 "startColno": 24,
                                 "endLineno": 30,
                                 "endColno": 33
+                            }
+                        ]
+                    ],
+                    [
+                        [
+                            {
+                                "type": "HASH",
+                                "value": "#",
+                                "startLineno": 32,
+                                "startColno": 5,
+                                "endLineno": 32,
+                                "endColno": 5
+                            },
+                            {
+                                "value": "Temporary",
+                                "type": "IDENTIFIER",
+                                "startLineno": 32,
+                                "startColno": 7,
+                                "endLineno": 32,
+                                "endColno": 15
+                            },
+                            {
+                                "value": "test",
+                                "type": "IDENTIFIER",
+                                "startLineno": 32,
+                                "startColno": 17,
+                                "endLineno": 32,
+                                "endColno": 20
+                            },
+                            {
+                                "value": "for",
+                                "type": "IDENTIFIER",
+                                "startLineno": 32,
+                                "startColno": 22,
+                                "endLineno": 32,
+                                "endColno": 24
+                            },
+                            {
+                                "value": "parsing",
+                                "type": "IDENTIFIER",
+                                "startLineno": 32,
+                                "startColno": 26,
+                                "endLineno": 32,
+                                "endColno": 32
+                            },
+                            {
+                                "value": "primitive",
+                                "type": "IDENTIFIER",
+                                "startLineno": 32,
+                                "startColno": 34,
+                                "endLineno": 32,
+                                "endColno": 42
+                            }
+                        ],
+                        {
+                            "value": "meaning",
+                            "type": "FUNCTIONAL",
+                            "startLineno": 32,
+                            "startColno": 44,
+                            "endLineno": 32,
+                            "endColno": 50
+                        },
+                        [
+                            {
+                                "value": "add",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 5,
+                                "endLineno": 33,
+                                "endColno": 7
+                            },
+                            {
+                                "value": "num1",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 9,
+                                "endLineno": 33,
+                                "endColno": 12
+                            },
+                            {
+                                "value": "and",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 14,
+                                "endLineno": 33,
+                                "endColno": 16
+                            },
+                            {
+                                "value": "num2",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 18,
+                                "endLineno": 33,
+                                "endColno": 21
+                            },
+                            {
+                                "value": "and",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 23,
+                                "endLineno": 33,
+                                "endColno": 25
+                            },
+                            {
+                                "value": "store",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 27,
+                                "endLineno": 33,
+                                "endColno": 31
+                            },
+                            {
+                                "value": "result",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 33,
+                                "endLineno": 33,
+                                "endColno": 38
+                            },
+                            {
+                                "value": "in",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 40,
+                                "endLineno": 33,
+                                "endColno": 41
+                            },
+                            {
+                                "value": "result",
+                                "type": "IDENTIFIER",
+                                "startLineno": 33,
+                                "startColno": 43,
+                                "endLineno": 33,
+                                "endColno": 48
                             }
                         ]
                     ]
