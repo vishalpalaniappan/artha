@@ -28,4 +28,7 @@ meaning of the user terminated the transaction {
 
 meaning of the user proceeded with the payment {
     menu_choice equals "checkout".
+
+    # Temporary test for parsing primitive meaning
+    add num1 and num2 and store result in result.
 }
