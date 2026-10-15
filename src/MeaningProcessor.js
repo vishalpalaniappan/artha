@@ -18,5 +18,27 @@ export class MeaningProcessor {
     constructor (arthaParsed, primitives) {
         this.primitives = primitives;
         this.arthaParsed = arthaParsed;
+
+        this.run();
     }
+
+    run() {
+
+        for (const meaning of this.arthaParsed) {
+            const compositeSentence = meaning.compositeMeaningSentence;
+            console.log(compositeSentence);
+
+            for (const sentence of meaning.sentences) {
+                for (const entry of sentence) {
+                    console.log(
+                        "    " + entry.map((e) => e.value).join(" ")
+                    )
+                }
+            }
+            console.log(" ");
+        }
+    }
+
+
+
 }
