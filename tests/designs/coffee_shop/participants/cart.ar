@@ -1,5 +1,5 @@
 meaning of Cart {
-    Cart is a list.
+    it is a list.
     it contains food item.
 }
 

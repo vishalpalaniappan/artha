@@ -1,5 +1,5 @@
 coffee shop
-      # populate coffee shop
+      # TODO : populate coffee shop
       present menu --> COMPOSITE MEANING
 
 
@@ -93,8 +93,8 @@ accept payment from user
 
 
 Bagel
-      Bagel is a class
-      Bagel has three attributes
+      it is a class
+      it has three attributes
       it has an attribute named type that is a string and has a value of "food item"
       it has an attribute named cost which is a float and has a value of 2
       00
@@ -119,7 +119,7 @@ get currency of bagel cost
 
 
 Cart
-      Cart is a list
+      it is a list
       it contains food item
 
 
@@ -135,8 +135,8 @@ clear the cart
 
 
 Coffee
-      Coffee is a class
-      Coffee has three attributes
+      it is a class
+      it has three attributes
       it has an attribute named type that is a string and has a value of "food item"
       it has an attribute named cost which is a float and has a value of 1
       00
@@ -161,7 +161,7 @@ get currency of coffee cost
 
 
 Menu
-      Menu is a list
+      it is a list
       it contains food items and actions
       it has 1 food item named coffee
       it has 1 food item named bagel

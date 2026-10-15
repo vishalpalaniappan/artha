@@ -1,5 +1,5 @@
 meaning of coffee shop {
-    # populate coffee shop.
+    # TODO: populate coffee shop.
     present menu.
 }
 

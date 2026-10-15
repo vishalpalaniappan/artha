@@ -49,36 +49,52 @@
             "endColno": 5
         },
         {
-            "value": "populate",
+            "value": "TODO",
             "type": "IDENTIFIER",
             "startLineno": 2,
             "startColno": 7,
             "endLineno": 2,
-            "endColno": 14
+            "endColno": 10
+        },
+        {
+            "type": "COLON",
+            "value": ":",
+            "startLineno": 2,
+            "startColno": 11,
+            "endLineno": 2,
+            "endColno": 11
+        },
+        {
+            "value": "populate",
+            "type": "IDENTIFIER",
+            "startLineno": 2,
+            "startColno": 13,
+            "endLineno": 2,
+            "endColno": 20
         },
         {
             "value": "coffee",
             "type": "IDENTIFIER",
             "startLineno": 2,
-            "startColno": 16,
+            "startColno": 22,
             "endLineno": 2,
-            "endColno": 21
+            "endColno": 27
         },
         {
             "value": "shop",
             "type": "IDENTIFIER",
             "startLineno": 2,
-            "startColno": 23,
+            "startColno": 29,
             "endLineno": 2,
-            "endColno": 26
+            "endColno": 32
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 2,
-            "startColno": 27,
+            "startColno": 33,
             "endLineno": 2,
-            "endColno": 27
+            "endColno": 33
         },
         {
             "value": "present",
@@ -2321,84 +2337,84 @@
             "endColno": 18
         },
         {
-            "value": "Bagel",
+            "value": "it",
             "type": "IDENTIFIER",
             "startLineno": 60,
             "startColno": 5,
             "endLineno": 60,
-            "endColno": 9
+            "endColno": 6
         },
         {
             "value": "is",
             "type": "IDENTIFIER",
             "startLineno": 60,
-            "startColno": 11,
+            "startColno": 8,
             "endLineno": 60,
-            "endColno": 12
+            "endColno": 9
         },
         {
             "value": "a",
             "type": "IDENTIFIER",
             "startLineno": 60,
-            "startColno": 14,
+            "startColno": 11,
             "endLineno": 60,
-            "endColno": 14
+            "endColno": 11
         },
         {
             "value": "class",
             "type": "IDENTIFIER",
             "startLineno": 60,
-            "startColno": 16,
+            "startColno": 13,
             "endLineno": 60,
-            "endColno": 20
+            "endColno": 17
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 60,
-            "startColno": 21,
+            "startColno": 18,
             "endLineno": 60,
-            "endColno": 21
+            "endColno": 18
         },
         {
-            "value": "Bagel",
+            "value": "it",
             "type": "IDENTIFIER",
             "startLineno": 61,
             "startColno": 5,
             "endLineno": 61,
-            "endColno": 9
+            "endColno": 6
         },
         {
             "value": "has",
             "type": "IDENTIFIER",
             "startLineno": 61,
-            "startColno": 11,
+            "startColno": 8,
             "endLineno": 61,
-            "endColno": 13
+            "endColno": 10
         },
         {
             "value": "three",
             "type": "IDENTIFIER",
             "startLineno": 61,
-            "startColno": 15,
+            "startColno": 12,
             "endLineno": 61,
-            "endColno": 19
+            "endColno": 16
         },
         {
             "value": "attributes",
             "type": "IDENTIFIER",
             "startLineno": 61,
-            "startColno": 21,
+            "startColno": 18,
             "endLineno": 61,
-            "endColno": 30
+            "endColno": 27
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 61,
-            "startColno": 31,
+            "startColno": 28,
             "endLineno": 61,
-            "endColno": 31
+            "endColno": 28
         },
         {
             "value": "it",
@@ -3321,44 +3337,44 @@
             "endColno": 17
         },
         {
-            "value": "Cart",
+            "value": "it",
             "type": "IDENTIFIER",
             "startLineno": 80,
             "startColno": 5,
             "endLineno": 80,
-            "endColno": 8
+            "endColno": 6
         },
         {
             "value": "is",
             "type": "IDENTIFIER",
             "startLineno": 80,
-            "startColno": 10,
+            "startColno": 8,
             "endLineno": 80,
-            "endColno": 11
+            "endColno": 9
         },
         {
             "value": "a",
             "type": "IDENTIFIER",
             "startLineno": 80,
-            "startColno": 13,
+            "startColno": 11,
             "endLineno": 80,
-            "endColno": 13
+            "endColno": 11
         },
         {
             "value": "list",
             "type": "IDENTIFIER",
             "startLineno": 80,
-            "startColno": 15,
+            "startColno": 13,
             "endLineno": 80,
-            "endColno": 18
+            "endColno": 16
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 80,
-            "startColno": 19,
+            "startColno": 17,
             "endLineno": 80,
-            "endColno": 19
+            "endColno": 17
         },
         {
             "value": "it",
@@ -3665,84 +3681,84 @@
             "endColno": 19
         },
         {
-            "value": "Coffee",
+            "value": "it",
             "type": "IDENTIFIER",
             "startLineno": 92,
             "startColno": 5,
             "endLineno": 92,
-            "endColno": 10
+            "endColno": 6
         },
         {
             "value": "is",
             "type": "IDENTIFIER",
             "startLineno": 92,
-            "startColno": 12,
+            "startColno": 8,
             "endLineno": 92,
-            "endColno": 13
+            "endColno": 9
         },
         {
             "value": "a",
             "type": "IDENTIFIER",
             "startLineno": 92,
-            "startColno": 15,
+            "startColno": 11,
             "endLineno": 92,
-            "endColno": 15
+            "endColno": 11
         },
         {
             "value": "class",
             "type": "IDENTIFIER",
             "startLineno": 92,
-            "startColno": 17,
+            "startColno": 13,
             "endLineno": 92,
-            "endColno": 21
+            "endColno": 17
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 92,
-            "startColno": 22,
+            "startColno": 18,
             "endLineno": 92,
-            "endColno": 22
+            "endColno": 18
         },
         {
-            "value": "Coffee",
+            "value": "it",
             "type": "IDENTIFIER",
             "startLineno": 93,
             "startColno": 5,
             "endLineno": 93,
-            "endColno": 10
+            "endColno": 6
         },
         {
             "value": "has",
             "type": "IDENTIFIER",
             "startLineno": 93,
-            "startColno": 12,
+            "startColno": 8,
             "endLineno": 93,
-            "endColno": 14
+            "endColno": 10
         },
         {
             "value": "three",
             "type": "IDENTIFIER",
             "startLineno": 93,
-            "startColno": 16,
+            "startColno": 12,
             "endLineno": 93,
-            "endColno": 20
+            "endColno": 16
         },
         {
             "value": "attributes",
             "type": "IDENTIFIER",
             "startLineno": 93,
-            "startColno": 22,
+            "startColno": 18,
             "endLineno": 93,
-            "endColno": 31
+            "endColno": 27
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 93,
-            "startColno": 32,
+            "startColno": 28,
             "endLineno": 93,
-            "endColno": 32
+            "endColno": 28
         },
         {
             "value": "it",
@@ -4665,44 +4681,44 @@
             "endColno": 17
         },
         {
-            "value": "Menu",
+            "value": "it",
             "type": "IDENTIFIER",
             "startLineno": 112,
             "startColno": 5,
             "endLineno": 112,
-            "endColno": 8
+            "endColno": 6
         },
         {
             "value": "is",
             "type": "IDENTIFIER",
             "startLineno": 112,
-            "startColno": 10,
+            "startColno": 8,
             "endLineno": 112,
-            "endColno": 11
+            "endColno": 9
         },
         {
             "value": "a",
             "type": "IDENTIFIER",
             "startLineno": 112,
-            "startColno": 13,
+            "startColno": 11,
             "endLineno": 112,
-            "endColno": 13
+            "endColno": 11
         },
         {
             "value": "list",
             "type": "IDENTIFIER",
             "startLineno": 112,
-            "startColno": 15,
+            "startColno": 13,
             "endLineno": 112,
-            "endColno": 18
+            "endColno": 16
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 112,
-            "startColno": 19,
+            "startColno": 17,
             "endLineno": 112,
-            "endColno": 19
+            "endColno": 17
         },
         {
             "value": "it",
@@ -5042,28 +5058,44 @@
                             "endColno": 5
                         },
                         {
-                            "value": "populate",
+                            "value": "TODO",
                             "type": "IDENTIFIER",
                             "startLineno": 2,
                             "startColno": 7,
                             "endLineno": 2,
-                            "endColno": 14
+                            "endColno": 10
+                        },
+                        {
+                            "type": "COLON",
+                            "value": ":",
+                            "startLineno": 2,
+                            "startColno": 11,
+                            "endLineno": 2,
+                            "endColno": 11
+                        },
+                        {
+                            "value": "populate",
+                            "type": "IDENTIFIER",
+                            "startLineno": 2,
+                            "startColno": 13,
+                            "endLineno": 2,
+                            "endColno": 20
                         },
                         {
                             "value": "coffee",
                             "type": "IDENTIFIER",
                             "startLineno": 2,
-                            "startColno": 16,
+                            "startColno": 22,
                             "endLineno": 2,
-                            "endColno": 21
+                            "endColno": 27
                         },
                         {
                             "value": "shop",
                             "type": "IDENTIFIER",
                             "startLineno": 2,
-                            "startColno": 23,
+                            "startColno": 29,
                             "endLineno": 2,
-                            "endColno": 26
+                            "endColno": 32
                         }
                     ]
                 ],
@@ -6906,72 +6938,72 @@
                 [
                     [
                         {
-                            "value": "Bagel",
+                            "value": "it",
                             "type": "IDENTIFIER",
                             "startLineno": 60,
                             "startColno": 5,
                             "endLineno": 60,
-                            "endColno": 9
+                            "endColno": 6
                         },
                         {
                             "value": "is",
                             "type": "IDENTIFIER",
                             "startLineno": 60,
-                            "startColno": 11,
+                            "startColno": 8,
                             "endLineno": 60,
-                            "endColno": 12
+                            "endColno": 9
                         },
                         {
                             "value": "a",
                             "type": "IDENTIFIER",
                             "startLineno": 60,
-                            "startColno": 14,
+                            "startColno": 11,
                             "endLineno": 60,
-                            "endColno": 14
+                            "endColno": 11
                         },
                         {
                             "value": "class",
                             "type": "IDENTIFIER",
                             "startLineno": 60,
-                            "startColno": 16,
+                            "startColno": 13,
                             "endLineno": 60,
-                            "endColno": 20
+                            "endColno": 17
                         }
                     ]
                 ],
                 [
                     [
                         {
-                            "value": "Bagel",
+                            "value": "it",
                             "type": "IDENTIFIER",
                             "startLineno": 61,
                             "startColno": 5,
                             "endLineno": 61,
-                            "endColno": 9
+                            "endColno": 6
                         },
                         {
                             "value": "has",
                             "type": "IDENTIFIER",
                             "startLineno": 61,
-                            "startColno": 11,
+                            "startColno": 8,
                             "endLineno": 61,
-                            "endColno": 13
+                            "endColno": 10
                         },
                         {
                             "value": "three",
                             "type": "IDENTIFIER",
                             "startLineno": 61,
-                            "startColno": 15,
+                            "startColno": 12,
                             "endLineno": 61,
-                            "endColno": 19
+                            "endColno": 16
                         },
                         {
                             "value": "attributes",
                             "type": "IDENTIFIER",
                             "startLineno": 61,
-                            "startColno": 21,
+                            "startColno": 18,
                             "endLineno": 61,
-                            "endColno": 30
+                            "endColno": 27
                         }
                     ]
                 ],
@@ -7766,36 +7798,36 @@
                 [
                     [
                         {
-                            "value": "Cart",
+                            "value": "it",
                             "type": "IDENTIFIER",
                             "startLineno": 80,
                             "startColno": 5,
                             "endLineno": 80,
-                            "endColno": 8
+                            "endColno": 6
                         },
                         {
                             "value": "is",
                             "type": "IDENTIFIER",
                             "startLineno": 80,
-                            "startColno": 10,
+                            "startColno": 8,
                             "endLineno": 80,
-                            "endColno": 11
+                            "endColno": 9
                         },
                         {
                             "value": "a",
                             "type": "IDENTIFIER",
                             "startLineno": 80,
-                            "startColno": 13,
+                            "startColno": 11,
                             "endLineno": 80,
-                            "endColno": 13
+                            "endColno": 11
                         },
                         {
                             "value": "list",
                             "type": "IDENTIFIER",
                             "startLineno": 80,
-                            "startColno": 15,
+                            "startColno": 13,
                             "endLineno": 80,
-                            "endColno": 18
+                            "endColno": 16
                         }
                     ]
                 ],
@@ -8019,72 +8051,72 @@
                 [
                     [
                         {
-                            "value": "Coffee",
+                            "value": "it",
                             "type": "IDENTIFIER",
                             "startLineno": 92,
                             "startColno": 5,
                             "endLineno": 92,
-                            "endColno": 10
+                            "endColno": 6
                         },
                         {
                             "value": "is",
                             "type": "IDENTIFIER",
                             "startLineno": 92,
-                            "startColno": 12,
+                            "startColno": 8,
                             "endLineno": 92,
-                            "endColno": 13
+                            "endColno": 9
                         },
                         {
                             "value": "a",
                             "type": "IDENTIFIER",
                             "startLineno": 92,
-                            "startColno": 15,
+                            "startColno": 11,
                             "endLineno": 92,
-                            "endColno": 15
+                            "endColno": 11
                         },
                         {
                             "value": "class",
                             "type": "IDENTIFIER",
                             "startLineno": 92,
-                            "startColno": 17,
+                            "startColno": 13,
                             "endLineno": 92,
-                            "endColno": 21
+                            "endColno": 17
                         }
                     ]
                 ],
                 [
                     [
                         {
-                            "value": "Coffee",
+                            "value": "it",
                             "type": "IDENTIFIER",
                             "startLineno": 93,
                             "startColno": 5,
                             "endLineno": 93,
-                            "endColno": 10
+                            "endColno": 6
                         },
                         {
                             "value": "has",
                             "type": "IDENTIFIER",
                             "startLineno": 93,
-                            "startColno": 12,
+                            "startColno": 8,
                             "endLineno": 93,
-                            "endColno": 14
+                            "endColno": 10
                         },
                         {
                             "value": "three",
                             "type": "IDENTIFIER",
                             "startLineno": 93,
-                            "startColno": 16,
+                            "startColno": 12,
                             "endLineno": 93,
-                            "endColno": 20
+                            "endColno": 16
                         },
                         {
                             "value": "attributes",
                             "type": "IDENTIFIER",
                             "startLineno": 93,
-                            "startColno": 22,
+                            "startColno": 18,
                             "endLineno": 93,
-                            "endColno": 31
+                            "endColno": 27
                         }
                     ]
                 ],
@@ -8879,36 +8911,36 @@
                 [
                     [
                         {
-                            "value": "Menu",
+                            "value": "it",
                             "type": "IDENTIFIER",
                             "startLineno": 112,
                             "startColno": 5,
                             "endLineno": 112,
-                            "endColno": 8
+                            "endColno": 6
                         },
                         {
                             "value": "is",
                             "type": "IDENTIFIER",
                             "startLineno": 112,
-                            "startColno": 10,
+                            "startColno": 8,
                             "endLineno": 112,
-                            "endColno": 11
+                            "endColno": 9
                         },
                         {
                             "value": "a",
                             "type": "IDENTIFIER",
                             "startLineno": 112,
-                            "startColno": 13,
+                            "startColno": 11,
                             "endLineno": 112,
-                            "endColno": 13
+                            "endColno": 11
                         },
                         {
                             "value": "list",
                             "type": "IDENTIFIER",
                             "startLineno": 112,
-                            "startColno": 15,
+                            "startColno": 13,
                             "endLineno": 112,
-                            "endColno": 18
+                            "endColno": 16
                         }
                     ]
                 ],
@@ -9191,7 +9223,7 @@
             ]
         }
     ],
-    "currPos": 626,
+    "currPos": 628,
     "processedMeaning": {
         "primitives": [
             {
@@ -9411,28 +9443,44 @@
                                 "endColno": 5
                             },
                             {
-                                "value": "populate",
+                                "value": "TODO",
                                 "type": "IDENTIFIER",
                                 "startLineno": 2,
                                 "startColno": 7,
                                 "endLineno": 2,
-                                "endColno": 14
+                                "endColno": 10
+                            },
+                            {
+                                "type": "COLON",
+                                "value": ":",
+                                "startLineno": 2,
+                                "startColno": 11,
+                                "endLineno": 2,
+                                "endColno": 11
+                            },
+                            {
+                                "value": "populate",
+                                "type": "IDENTIFIER",
+                                "startLineno": 2,
+                                "startColno": 13,
+                                "endLineno": 2,
+                                "endColno": 20
                             },
                             {
                                 "value": "coffee",
                                 "type": "IDENTIFIER",
                                 "startLineno": 2,
-                                "startColno": 16,
+                                "startColno": 22,
                                 "endLineno": 2,
-                                "endColno": 21
+                                "endColno": 27
                             },
                             {
                                 "value": "shop",
                                 "type": "IDENTIFIER",
                                 "startLineno": 2,
-                                "startColno": 23,
+                                "startColno": 29,
                                 "endLineno": 2,
-                                "endColno": 26
+                                "endColno": 32
                             }
                         ]
                     ],
@@ -11275,72 +11323,72 @@
                     [
                         [
                             {
-                                "value": "Bagel",
+                                "value": "it",
                                 "type": "IDENTIFIER",
                                 "startLineno": 60,
                                 "startColno": 5,
                                 "endLineno": 60,
-                                "endColno": 9
+                                "endColno": 6
                             },
                             {
                                 "value": "is",
                                 "type": "IDENTIFIER",
                                 "startLineno": 60,
-                                "startColno": 11,
+                                "startColno": 8,
                                 "endLineno": 60,
-                                "endColno": 12
+                                "endColno": 9
                             },
                             {
                                 "value": "a",
                                 "type": "IDENTIFIER",
                                 "startLineno": 60,
-                                "startColno": 14,
+                                "startColno": 11,
                                 "endLineno": 60,
-                                "endColno": 14
+                                "endColno": 11
                             },
                             {
                                 "value": "class",
                                 "type": "IDENTIFIER",
                                 "startLineno": 60,
-                                "startColno": 16,
+                                "startColno": 13,
                                 "endLineno": 60,
-                                "endColno": 20
+                                "endColno": 17
                             }
                         ]
                     ],
                     [
                         [
                             {
-                                "value": "Bagel",
+                                "value": "it",
                                 "type": "IDENTIFIER",
                                 "startLineno": 61,
                                 "startColno": 5,
                                 "endLineno": 61,
-                                "endColno": 9
+                                "endColno": 6
                             },
                             {
                                 "value": "has",
                                 "type": "IDENTIFIER",
                                 "startLineno": 61,
-                                "startColno": 11,
+                                "startColno": 8,
                                 "endLineno": 61,
-                                "endColno": 13
+                                "endColno": 10
                             },
                             {
                                 "value": "three",
                                 "type": "IDENTIFIER",
                                 "startLineno": 61,
-                                "startColno": 15,
+                                "startColno": 12,
                                 "endLineno": 61,
-                                "endColno": 19
+                                "endColno": 16
                             },
                             {
                                 "value": "attributes",
                                 "type": "IDENTIFIER",
                                 "startLineno": 61,
-                                "startColno": 21,
+                                "startColno": 18,
                                 "endLineno": 61,
-                                "endColno": 30
+                                "endColno": 27
                             }
                         ]
                     ],
@@ -12135,36 +12183,36 @@
                     [
                         [
                             {
-                                "value": "Cart",
+                                "value": "it",
                                 "type": "IDENTIFIER",
                                 "startLineno": 80,
                                 "startColno": 5,
                                 "endLineno": 80,
-                                "endColno": 8
+                                "endColno": 6
                             },
                             {
                                 "value": "is",
                                 "type": "IDENTIFIER",
                                 "startLineno": 80,
-                                "startColno": 10,
+                                "startColno": 8,
                                 "endLineno": 80,
-                                "endColno": 11
+                                "endColno": 9
                             },
                             {
                                 "value": "a",
                                 "type": "IDENTIFIER",
                                 "startLineno": 80,
-                                "startColno": 13,
+                                "startColno": 11,
                                 "endLineno": 80,
-                                "endColno": 13
+                                "endColno": 11
                             },
                             {
                                 "value": "list",
                                 "type": "IDENTIFIER",
                                 "startLineno": 80,
-                                "startColno": 15,
+                                "startColno": 13,
                                 "endLineno": 80,
-                                "endColno": 18
+                                "endColno": 16
                             }
                         ]
                     ],
@@ -12388,72 +12436,72 @@
                     [
                         [
                             {
-                                "value": "Coffee",
+                                "value": "it",
                                 "type": "IDENTIFIER",
                                 "startLineno": 92,
                                 "startColno": 5,
                                 "endLineno": 92,
-                                "endColno": 10
+                                "endColno": 6
                             },
                             {
                                 "value": "is",
                                 "type": "IDENTIFIER",
                                 "startLineno": 92,
-                                "startColno": 12,
+                                "startColno": 8,
                                 "endLineno": 92,
-                                "endColno": 13
+                                "endColno": 9
                             },
                             {
                                 "value": "a",
                                 "type": "IDENTIFIER",
                                 "startLineno": 92,
-                                "startColno": 15,
+                                "startColno": 11,
                                 "endLineno": 92,
-                                "endColno": 15
+                                "endColno": 11
                             },
                             {
                                 "value": "class",
                                 "type": "IDENTIFIER",
                                 "startLineno": 92,
-                                "startColno": 17,
+                                "startColno": 13,
                                 "endLineno": 92,
-                                "endColno": 21
+                                "endColno": 17
                             }
                         ]
                     ],
                     [
                         [
                             {
-                                "value": "Coffee",
+                                "value": "it",
                                 "type": "IDENTIFIER",
                                 "startLineno": 93,
                                 "startColno": 5,
                                 "endLineno": 93,
-                                "endColno": 10
+                                "endColno": 6
                             },
                             {
                                 "value": "has",
                                 "type": "IDENTIFIER",
                                 "startLineno": 93,
-                                "startColno": 12,
+                                "startColno": 8,
                                 "endLineno": 93,
-                                "endColno": 14
+                                "endColno": 10
                             },
                             {
                                 "value": "three",
                                 "type": "IDENTIFIER",
                                 "startLineno": 93,
-                                "startColno": 16,
+                                "startColno": 12,
                                 "endLineno": 93,
-                                "endColno": 20
+                                "endColno": 16
                             },
                             {
                                 "value": "attributes",
                                 "type": "IDENTIFIER",
                                 "startLineno": 93,
-                                "startColno": 22,
+                                "startColno": 18,
                                 "endLineno": 93,
-                                "endColno": 31
+                                "endColno": 27
                             }
                         ]
                     ],
@@ -13248,36 +13296,36 @@
                     [
                         [
                             {
-                                "value": "Menu",
+                                "value": "it",
                                 "type": "IDENTIFIER",
                                 "startLineno": 112,
                                 "startColno": 5,
                                 "endLineno": 112,
-                                "endColno": 8
+                                "endColno": 6
                             },
                             {
                                 "value": "is",
                                 "type": "IDENTIFIER",
                                 "startLineno": 112,
-                                "startColno": 10,
+                                "startColno": 8,
                                 "endLineno": 112,
-                                "endColno": 11
+                                "endColno": 9
                             },
                             {
                                 "value": "a",
                                 "type": "IDENTIFIER",
                                 "startLineno": 112,
-                                "startColno": 13,
+                                "startColno": 11,
                                 "endLineno": 112,
-                                "endColno": 13
+                                "endColno": 11
                             },
                             {
                                 "value": "list",
                                 "type": "IDENTIFIER",
                                 "startLineno": 112,
-                                "startColno": 15,
+                                "startColno": 13,
                                 "endLineno": 112,
-                                "endColno": 18
+                                "endColno": 16
                             }
                         ]
                     ],
@@ -13560,6 +13608,6 @@
                 ]
             }
         ],
-        "outputLog": "coffee shop\n      # populate coffee shop\n      present menu --> COMPOSITE MEANING\n\n\n\npresent menu\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user\n    if\n      the user selected coffee --> COMPOSITE MEANING\n    then\n      add coffee to cart --> COMPOSITE MEANING\n    if\n      the user selected bagel --> COMPOSITE MEANING\n    then\n      add bagel to cart --> COMPOSITE MEANING\n    if\n      the user terminated the transaction --> COMPOSITE MEANING\n    then\n      clear the cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n\n\n\naccept menu choice from the user\n      accept terminal input and store in menu_choice\n\n\n\nBarista presents the menu to the user\n      get formatted menu\n    then\n      display in terminal\n\n\n\nthe user selected coffee\n      menu_choice equals \"coffee\"\n\n\n\nthe user selected bagel\n      menu_choice equals \"bagel\"\n\n\n\nthe user terminated the transaction\n      menu_choice equals \"terminate\"\n\n\n\nthe user proceeded with the payment\n      menu_choice equals \"checkout\"\n      # Temporary test for parsing primitive\n      add num1 and num2 and store result in result --> PRIMITIVE MEANING\n\n\n\nprocess payment\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n\ncalculate cost\n      set total_cost to 0 with type float\n      for each item in cart get cost of [item] and add to total_cost\n\n\n\nhand user the bill\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n\naccept payment from user\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n\nBagel\n      Bagel is a class\n      Bagel has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2\n      00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of bagel\" and \"get cost of bagel\" and \"get currency of bagel cost\"\n\n\n\nget cost of bagel\n      get attribute cost\n\n\n\nget type of bagel\n      get attribute type\n\n\n\nget currency of bagel cost\n      get attribute cost_currency\n\n\n\nCart\n      Cart is a list\n      it contains food item\n\n\n\nadd [food_item] to cart\n      insert [food_item] at end of cart\n\n\n\nclear the cart\n      remove all entires in cart\n\n\n\nCoffee\n      Coffee is a class\n      Coffee has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1\n      00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of coffee\" and \"get cost of coffee\" and \"get currency of coffee cost\"\n\n\n\nget cost of coffee\n      get attribute cost\n\n\n\nget type of coffee\n      get attribute type\n\n\n\nget currency of coffee cost\n      get attribute cost_currency\n\n\n\nMenu\n      Menu is a list\n      it contains food items and actions\n      it has 1 food item named coffee\n      it has 1 food item named bagel\n      it has 1 action named terminate\n      it has 1 action named checkout\n\n\n\n"
+        "outputLog": "coffee shop\n      # TODO : populate coffee shop\n      present menu --> COMPOSITE MEANING\n\n\n\npresent menu\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user\n    if\n      the user selected coffee --> COMPOSITE MEANING\n    then\n      add coffee to cart --> COMPOSITE MEANING\n    if\n      the user selected bagel --> COMPOSITE MEANING\n    then\n      add bagel to cart --> COMPOSITE MEANING\n    if\n      the user terminated the transaction --> COMPOSITE MEANING\n    then\n      clear the cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n\n\n\naccept menu choice from the user\n      accept terminal input and store in menu_choice\n\n\n\nBarista presents the menu to the user\n      get formatted menu\n    then\n      display in terminal\n\n\n\nthe user selected coffee\n      menu_choice equals \"coffee\"\n\n\n\nthe user selected bagel\n      menu_choice equals \"bagel\"\n\n\n\nthe user terminated the transaction\n      menu_choice equals \"terminate\"\n\n\n\nthe user proceeded with the payment\n      menu_choice equals \"checkout\"\n      # Temporary test for parsing primitive\n      add num1 and num2 and store result in result --> PRIMITIVE MEANING\n\n\n\nprocess payment\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n\ncalculate cost\n      set total_cost to 0 with type float\n      for each item in cart get cost of [item] and add to total_cost\n\n\n\nhand user the bill\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n\naccept payment from user\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n\nBagel\n      it is a class\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2\n      00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of bagel\" and \"get cost of bagel\" and \"get currency of bagel cost\"\n\n\n\nget cost of bagel\n      get attribute cost\n\n\n\nget type of bagel\n      get attribute type\n\n\n\nget currency of bagel cost\n      get attribute cost_currency\n\n\n\nCart\n      it is a list\n      it contains food item\n\n\n\nadd [food_item] to cart\n      insert [food_item] at end of cart\n\n\n\nclear the cart\n      remove all entires in cart\n\n\n\nCoffee\n      it is a class\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1\n      00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of coffee\" and \"get cost of coffee\" and \"get currency of coffee cost\"\n\n\n\nget cost of coffee\n      get attribute cost\n\n\n\nget type of coffee\n      get attribute type\n\n\n\nget currency of coffee cost\n      get attribute cost_currency\n\n\n\nMenu\n      it is a list\n      it contains food items and actions\n      it has 1 food item named coffee\n      it has 1 food item named bagel\n      it has 1 action named terminate\n      it has 1 action named checkout\n\n\n\n"
     }
 }

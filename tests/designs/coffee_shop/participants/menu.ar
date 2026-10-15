@@ -1,5 +1,5 @@
 meaning of Menu {
-    Menu is a list.
+    it is a list.
     it contains food items and actions. 
     it has 1 food item named coffee.
     it has 1 food item named bagel.
