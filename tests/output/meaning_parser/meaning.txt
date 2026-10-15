@@ -1,4 +1,10 @@
 coffee shop
+      # populate coffee shop
+      present menu --> COMPOSITE MEANING
+
+
+
+present menu
       Barista presents the menu to the user --> COMPOSITE MEANING
     then
       accept the menu choice from the user
@@ -13,11 +19,15 @@ coffee shop
     if
       the user terminated the transaction --> COMPOSITE MEANING
     then
-      clear the cart and return to the menu
+      clear the cart --> COMPOSITE MEANING
+    then
+      present menu --> COMPOSITE MEANING
     if
       the user proceeded with the payment --> COMPOSITE MEANING
     then
       process payment --> COMPOSITE MEANING
+    then
+      present menu --> COMPOSITE MEANING
 
 
 

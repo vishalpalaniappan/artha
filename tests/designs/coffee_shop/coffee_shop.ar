@@ -1,9 +1,14 @@
 meaning of coffee shop {
+    # populate coffee shop.
+    present menu.
+}
+
+meaning of present menu {
     Barista presents the menu to the user then accept the menu choice from the user.
     if the user selected coffee, then add coffee to cart.
     if the user selected bagel, then add bagel to cart.
-    if the user terminated the transaction, then clear the cart and return to the menu.
-    if the user proceeded with the payment, then process payment.
+    if the user terminated the transaction, then clear the cart then present menu.
+    if the user proceeded with the payment, then process payment then present menu.
 }
 
 meaning of accept menu choice from the user {
