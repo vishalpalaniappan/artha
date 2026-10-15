@@ -1,4 +1,4 @@
-import { PrimitiveParser } from "./PrimitiveParser";
+import { MeaningProcessor } from "./MeaningProcessor";
 
 /**
  * The current state of the parser groups the meaning into
@@ -15,8 +15,8 @@ export class ArthaParser {
     constructor (tokens, primitives) {
         this.tokens = tokens;
         this.grouped = [];
-        this.primitives = new PrimitiveParser(primitives);
         this.processTokens();
+        this.parsedOutput = new MeaningProcessor(this.grouped, primitives);
     }
 
     /**
