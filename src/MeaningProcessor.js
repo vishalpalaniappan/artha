@@ -23,22 +23,34 @@ export class MeaningProcessor {
     }
 
     run() {
-
         for (const meaning of this.arthaParsed) {
             const compositeSentence = meaning.compositeMeaningSentence;
             console.log(compositeSentence);
 
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
-                    console.log(
-                        "    " + entry.map((e) => e.value).join(" ")
-                    )
+                    if (Array.isArray(entry)) {
+                        console.log("  " + entry.map((e) => e.value).join(" "))
+                        const found = this.findCompositeMeaning(entry);
+                    } else if (typeof entry === "object") {
+                        console.log( "  " + entry.value)
+                    }
                 }
             }
             console.log(" ");
         }
     }
 
+    findCompositeMeaning(parsedMeaning) {
+        for (const compositeMeaning of this.arthaParsed) {
+            // Compare the parsedMeaning with the compositeMeaning
+        }
+    }
 
+    findPrimitiveMeaning(parsedMeaning) {
+        for (const primitiveMeaning of primitives) {
+            // Compare the primitiveMeaning with the primitiveMeaning
+        }
+    }
 
 }
