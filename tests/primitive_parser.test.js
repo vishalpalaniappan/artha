@@ -25,8 +25,7 @@ describe("meaning parser", async () => {
 
         // Group all the files into one src
         let shopSrc = "";
-        for (const file of txtFiles) {
-            const path = "./tests/designs/coffee_shop/" + file;
+        for (const file of arFiles) {
             const src = await readFile("./tests/designs/coffee_shop/" + file);
             shopSrc += src.toString() + "\n";
         }
