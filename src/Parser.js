@@ -130,7 +130,7 @@ export class ArthaParser {
             if (sentence[pos].type === "FUNCTIONAL") {
                 if (accumulated.length > 0) processed.push(accumulated)
                 accumulated = [];
-                processed.push([sentence[pos]]);    
+                processed.push(sentence[pos]);    
             } else {
                 if (sentence[pos].type === "COMMA") continue;
                 accumulated.push(sentence[pos]);
