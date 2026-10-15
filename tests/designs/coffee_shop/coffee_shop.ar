@@ -20,17 +20,21 @@ meaning of Barista presents the menu to the user {
 }
 
 meaning of the user selected coffee {
-    menu_choice equals "coffee".
+    menu_choice equals "coffee" and store result in is_coffee.
+    resolve is_coffee.
 }
 
 meaning of the user selected bagel {
-    menu_choice equals "bagel".
+    menu_choice equals "bagel" and store result in is_bagel.
+    resolve is_bagel.
 }
 
 meaning of the user terminated the transaction {
-    menu_choice equals "terminate".
+    menu_choice equals "terminate" and store result in is_transaction.
+    resolve is_transaction.
 }
 
 meaning of the user proceeded with the payment {
-    menu_choice equals "checkout".
+    menu_choice equals "checkout" and store result in is_payment.
+    resolve is_payment.
 }

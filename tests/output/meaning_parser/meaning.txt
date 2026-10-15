@@ -50,25 +50,29 @@ Barista presents the menu to the user
 =================
 the user selected coffee
 =================
-      menu_choice equals "coffee"
+      menu_choice equals "coffee" and store result in is_coffee --> PRIMITIVE MEANING: equals
+      resolve is_coffee
 
 
 =================
 the user selected bagel
 =================
-      menu_choice equals "bagel"
+      menu_choice equals "bagel" and store result in is_bagel --> PRIMITIVE MEANING: equals
+      resolve is_bagel
 
 
 =================
 the user terminated the transaction
 =================
-      menu_choice equals "terminate"
+      menu_choice equals "terminate" and store result in is_transaction --> PRIMITIVE MEANING: equals
+      resolve is_transaction
 
 
 =================
 the user proceeded with the payment
 =================
-      menu_choice equals "checkout"
+      menu_choice equals "checkout" and store result in is_payment --> PRIMITIVE MEANING: equals
+      resolve is_payment
 
 
 =================
