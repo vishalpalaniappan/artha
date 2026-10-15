@@ -30,8 +30,6 @@ export class ArthaParser {
                 this.processMeaning();
             }
         } while (++this.currPos < this.tokens.length);
-
-        console.log(this.grouped);
     }
 
     /**
