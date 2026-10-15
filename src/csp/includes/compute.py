@@ -6,3 +6,6 @@ def multiply(multiplicand, multiplier):
 
 def subtract(minuend, subtrahend):
     return minuend - subtrahend
+
+def equals(value1, value2):
+    return value1 == value2
