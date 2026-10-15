@@ -4,7 +4,12 @@ meaning of process payment {
 
 meaning of calculate cost {
     set total_cost to 0 with type float.
-    for each item in cart, get cost of [item] and add to total_cost.
+    for each item in cart, add cost of [item] to total_cost.
+}
+
+meaning of add cost of [item] to [total_cost] {
+    get cost of [item] and store in item_cost.
+    add item_cost and [total_cost] and store result in [total_cost].
 }
 
 meaning of hand user the bill {
