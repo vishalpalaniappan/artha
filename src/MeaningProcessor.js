@@ -30,9 +30,22 @@ export class MeaningProcessor {
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
                     if (Array.isArray(entry)) {
-                        console.log("  " + entry.map((e) => e.value).join(" "))
                         const foundComposite = this.findCompositeMeaning(entry);
+
+                        // Temporarily print to console for inspection
+                        const joinStr = "  " + entry.map((e) => e.value).join(" ");
+                        if (foundComposite) {
+                            console.log(joinStr + " \x1b[31mComposite Meaning\x1b[0m");
+                            continue;
+                        }
+
                         const foundPrimitive = this.findPrimitiveMeaning(entry);
+                        if (foundPrimitive) {
+                            console.log(joinStr + ` \x1b[32mPrimitive: ${foundPrimitive.name}\x1b[0m `);
+                            continue;
+                        }
+
+                        console.log(joinStr);
                         
                     } else if (typeof entry === "object") {
                         console.log( "  " + entry.value)
@@ -71,7 +84,6 @@ export class MeaningProcessor {
             }
 
             if (found) {
-                console.log("Found composite meaning");
                 return compositeMeaningObj;
             }
         }
@@ -107,7 +119,7 @@ export class MeaningProcessor {
             }
 
             if (found) {
-                console.log("Found primitive:", primitiveMeaningObj.name);
+                // console.log("Found primitive:", primitiveMeaningObj.name);
                 return primitiveMeaningObj;
             }
 
