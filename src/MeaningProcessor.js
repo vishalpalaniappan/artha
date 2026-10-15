@@ -34,11 +34,19 @@ export class MeaningProcessor {
 
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
-                    if (Array.isArray(entry)) {
-                        const foundComposite = this.findCompositeMeaning(entry);
 
-                        // Save to log for inspection
+                    console.log(entry)
+
+                    // Functional token in sentence (parser saves it as object)
+                    if (entry !== null && typeof entry === "object" && !Array.isArray(entry)) {
+                        this.outputLog += "    " + entry.value + "\n";
+                    }
+
+                    // Composite or primitive meaning (parser saves it as array)
+                    else if (Array.isArray(entry)) {
                         const joinStr = "      " + entry.map((e) => e.value).join(" ");
+                        
+                        const foundComposite = this.findCompositeMeaning(entry);
                         if (foundComposite) {
                             this.outputLog += joinStr + " --> COMPOSITE MEANING" + "\n";
                             continue;
@@ -50,11 +58,9 @@ export class MeaningProcessor {
                             continue;
                         }
 
+                        // Not composite or primitive meaning, meaning is missing
                         this.outputLog += joinStr + "\n";
-                        
-                    } else if (typeof entry === "object") {
-                        this.outputLog += "    " + entry.value + "\n";
-                    }
+                    } 
                 }
             }
             this.outputLog += "\n\n";
