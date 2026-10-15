@@ -2744,10 +2744,87 @@
                 "startColno": 12,
                 "endLineno": 79,
                 "endColno": 14
+            },
+            {
+                "value": "[food_item]",
+                "type": "IDENTIFIER",
+                "startLineno": 79,
+                "startColno": 16,
+                "endLineno": 79,
+                "endColno": 26
+            },
+            {
+                "value": "to",
+                "type": "IDENTIFIER",
+                "startLineno": 79,
+                "startColno": 28,
+                "endLineno": 79,
+                "endColno": 29
+            },
+            {
+                "value": "cart",
+                "type": "IDENTIFIER",
+                "startLineno": 79,
+                "startColno": 31,
+                "endLineno": 79,
+                "endColno": 34
             }
         ],
-        "compositeMeaningSentence": "add",
-        "sentences": []
+        "compositeMeaningSentence": "add [food_item] to cart",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "insert",
+                        "type": "IDENTIFIER",
+                        "startLineno": 80,
+                        "startColno": 5,
+                        "endLineno": 80,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "[food_item]",
+                        "type": "IDENTIFIER",
+                        "startLineno": 80,
+                        "startColno": 12,
+                        "endLineno": 80,
+                        "endColno": 22
+                    },
+                    {
+                        "value": "at",
+                        "type": "IDENTIFIER",
+                        "startLineno": 80,
+                        "startColno": 24,
+                        "endLineno": 80,
+                        "endColno": 25
+                    },
+                    {
+                        "value": "end",
+                        "type": "IDENTIFIER",
+                        "startLineno": 80,
+                        "startColno": 27,
+                        "endLineno": 80,
+                        "endColno": 29
+                    },
+                    {
+                        "value": "of",
+                        "type": "IDENTIFIER",
+                        "startLineno": 80,
+                        "startColno": 31,
+                        "endLineno": 80,
+                        "endColno": 32
+                    },
+                    {
+                        "value": "cart",
+                        "type": "IDENTIFIER",
+                        "startLineno": 80,
+                        "startColno": 34,
+                        "endLineno": 80,
+                        "endColno": 37
+                    }
+                ]
+            ]
+        ]
     },
     {
         "compositeMeaningArray": [

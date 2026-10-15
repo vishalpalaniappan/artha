@@ -5,11 +5,11 @@ coffee shop
     if
       the user selected coffee --> COMPOSITE MEANING
     then
-      add coffee to cart
+      add coffee to cart --> COMPOSITE MEANING
     if
       the user selected bagel --> COMPOSITE MEANING
     then
-      add bagel to cart
+      add bagel to cart --> COMPOSITE MEANING
     if
       the user terminated the transaction --> COMPOSITE MEANING
     then
@@ -114,7 +114,8 @@ Cart
 
 
 
-add
+add [food_item] to cart
+      insert [food_item] at end of cart
 
 
 

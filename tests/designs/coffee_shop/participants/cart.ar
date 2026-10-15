@@ -3,8 +3,8 @@ meaning of Cart {
     it contains food item.
 }
 
-meaning of add {food_item} to cart {
-    insert {food_item} at end of cart.
+meaning of add [food_item] to cart {
+    insert [food_item] at end of cart.
 }
 
 meaning of clear the cart {
