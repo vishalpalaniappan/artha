@@ -1,3 +1,3 @@
 {
-    "primitives": ["add", "multiply", "subtract"]
+    "primitives": ["add", "multiply", "subtract", "equals"]
 }
