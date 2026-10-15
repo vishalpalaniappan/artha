@@ -1112,15 +1112,9 @@
                         "endLineno": 32,
                         "endColno": 42
                     }
-                ],
-                {
-                    "value": "meaning",
-                    "type": "FUNCTIONAL",
-                    "startLineno": 32,
-                    "startColno": 44,
-                    "endLineno": 32,
-                    "endColno": 50
-                },
+                ]
+            ],
+            [
                 [
                     {
                         "value": "add",

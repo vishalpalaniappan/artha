@@ -1345,12 +1345,12 @@
             "endColno": 42
         },
         {
-            "value": "meaning",
-            "type": "FUNCTIONAL",
+            "type": "PERIOD",
+            "value": ".",
             "startLineno": 32,
-            "startColno": 44,
+            "startColno": 43,
             "endLineno": 32,
-            "endColno": 50
+            "endColno": 43
         },
         {
             "value": "add",
@@ -6035,15 +6035,9 @@
                             "endLineno": 32,
                             "endColno": 42
                         }
-                    ],
-                    {
-                        "value": "meaning",
-                        "type": "FUNCTIONAL",
-                        "startLineno": 32,
-                        "startColno": 44,
-                        "endLineno": 32,
-                        "endColno": 50
-                    },
+                    ]
+                ],
+                [
                     [
                         {
                             "value": "add",
@@ -8942,7 +8936,7 @@
         }
     ],
     "currPos": 615,
-    "parsedOutput": {
+    "processedMeaning": {
         "primitives": [
             {
                 "name": "add",
@@ -10242,15 +10236,9 @@
                                 "endLineno": 32,
                                 "endColno": 42
                             }
-                        ],
-                        {
-                            "value": "meaning",
-                            "type": "FUNCTIONAL",
-                            "startLineno": 32,
-                            "startColno": 44,
-                            "endLineno": 32,
-                            "endColno": 50
-                        },
+                        ]
+                    ],
+                    [
                         [
                             {
                                 "value": "add",
@@ -13147,6 +13135,7 @@
                     ]
                 ]
             }
-        ]
+        ],
+        "outputLog": "coffee shop\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user\n    if\n      the user selected coffee --> COMPOSITE MEANING\n    then\n      add coffee to cart\n    if\n      the user selected bagel --> COMPOSITE MEANING\n    then\n      add bagel to cart\n    if\n      the user terminated the transaction --> COMPOSITE MEANING\n    then\n      clear the cart and return to the menu\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n\n\n\naccept menu choice from the user\n      accept terminal input and store in menu_choice\n\n\n\nBarista presents the menu to the user\n      get formatted menu\n    then\n      display in terminal\n\n\n\nthe user selected coffee\n      menu_choice equals \"coffee\"\n\n\n\nthe user selected bagel\n      menu_choice equals \"bagel\"\n\n\n\nthe user terminated the transaction\n      menu_choice equals \"terminate\"\n\n\n\nthe user proceeded with the payment\n      menu_choice equals \"checkout\"\n      # Temporary test for parsing primitive\n      add num1 and num2 and store result in result --> PRIMITIVE MEANING\n\n\n\nprocess payment\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n\ncalculate cost\n      set total_cost to 0 with type float\n      for each item in cart get cost of [item] and add to total_cost\n\n\n\nhand user the bill\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n\naccept payment from user\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n\nBagel\n      Bagel is a class\n      Bagel has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2\n      00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of bagel\" and \"get cost of bagel\" and \"get currency of bagel cost\"\n\n\n\nget cost of bagel\n      get attribute cost\n\n\n\nget type of bagel\n      get attribute type\n\n\n\nget currency of bagel cost\n      get attribute cost_currency\n\n\n\nCart\n      Cart is a list\n      it contains food item\n\n\n\nadd\n\n\n\nclear the cart\n      remove all entires in cart\n\n\n\nCoffee\n      Coffee is a class\n      Coffee has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1\n      00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of coffee\" and \"get cost of coffee\" and \"get currency of coffee cost\"\n\n\n\nget cost of coffee\n      get attribute cost\n\n\n\nget type of coffee\n      get attribute type\n\n\n\nget currency of coffee cost\n      get attribute cost_currency\n\n\n\nMenu\n      Menu is a list\n      it contains food items and actions\n      it has 1 food item named coffee\n      it has 1 food item named bagel\n      it has 1 action named terminate\n      it has 1 action named checkout\n\n\n\n"
     }
 }

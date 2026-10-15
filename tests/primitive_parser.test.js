@@ -52,5 +52,11 @@ describe("meaning parser", async () => {
             grouped_output_path,
             JSON.stringify(parser.grouped, null, 4)
         );
+
+        const meaning_path = resolve(__dirname, "./output/meaning_parser/meaning.txt")
+        await writeFile(
+            meaning_path,
+            parser.processedMeaning.outputLog
+        );
     });
 });

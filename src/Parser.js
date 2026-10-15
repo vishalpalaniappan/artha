@@ -16,7 +16,7 @@ export class ArthaParser {
         this.tokens = tokens;
         this.grouped = [];
         this.processTokens();
-        this.parsedOutput = new MeaningProcessor(this.grouped, primitives);
+        this.processedMeaning = new MeaningProcessor(this.grouped, primitives);
     }
 
     /**
