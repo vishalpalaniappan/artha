@@ -49,7 +49,7 @@ export class MeaningProcessor {
 
     findPrimitiveMeaning(parsedMeaning) {
         for (const primitiveMeaning of primitives) {
-            // Compare the primitiveMeaning with the primitiveMeaning
+            // Compare the parsedMeaning with the primitiveMeaning
         }
     }
 
