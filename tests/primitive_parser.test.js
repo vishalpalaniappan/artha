@@ -20,7 +20,13 @@ describe("meaning parser", async () => {
         const primitive = await loadPrimitivesFromManifest();
         const parser = new ArthaParser(lexer.scannedTokens, primitive);
 
-        const parser_output_path = resolve(__dirname, "./output/meaning_parser/tokens.json")
+        const tokens_output_path = resolve(__dirname, "./output/meaning_parser/tokens.json")
+        await writeFile(
+            tokens_output_path,
+            JSON.stringify(parser.tokens, null, 4)
+        );
+
+        const parser_output_path = resolve(__dirname, "./output/meaning_parser/parser.json")
         await writeFile(
             parser_output_path,
             JSON.stringify(parser, null, 4)
