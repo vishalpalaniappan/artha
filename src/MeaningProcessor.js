@@ -34,7 +34,7 @@ export class MeaningProcessor {
 
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
-                    
+
                     // Functional token in sentence (parser saves it as object)
                     if (entry !== null && typeof entry === "object" && !Array.isArray(entry)) {
                         this.outputLog += "    " + entry.value + "\n";
@@ -77,11 +77,13 @@ export class MeaningProcessor {
                 const compositeEntry = compositeMeaning[index];
                 const parsedEntry = parsedMeaning[index];
                 
-                // If the composite entry doesn't have val, continue
+                // If the composite entry value is empty string, it is invalid.
                 const val = compositeEntry.value;
-                if (val.length === 0) continue;
+                if (val.length === 0) {
+                    throw Error("Parsed composite meaning token is invalid (string is empty).")
+                }
                 
-                // This references a participant, so we can't compare
+                // References a participant, so we don't need to comp syntax
                 if (val[0] === "[" && val[val.length - 1] === "]") {
                     continue;
                 }
@@ -113,8 +115,10 @@ export class MeaningProcessor {
                 const primitiveEntry = primitiveMeaning[index];
                 const parsedEntry = parsedMeaning[index];
                 
-                // If the composite entry doesn't have val, continue
-                if (primitiveEntry.length === 0) continue;
+                // If the primitive entry is an empty string, then it is invaid.
+                if (primitiveEntry.length === 0) {
+                    throw Error("Parsed composite meaning token is invalid (string is empty).")
+                }
                 
                 // This references a participant, so we can't compare
                 if (primitiveEntry[0] === "[" && primitiveEntry[primitiveEntry.length - 1] === "]") {
