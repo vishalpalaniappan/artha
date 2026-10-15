@@ -2,7 +2,7 @@
     "name": "subtract",
     "type": "primitive",
     "description":"Subtracts two numbers and produces a result. The numbers must have type float or int and the result will be float or int type.",
-    "syntax_line": "subtract {subtrahend} from {minuend} and store result in {subtractResult}",
+    "syntax_line": "subtract [subtrahend] from [minuend] and store result in [subtractResult]",
     "participants": [
         {
             "name": "subtrahend",
