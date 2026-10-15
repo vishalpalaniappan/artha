@@ -34,9 +34,7 @@ export class MeaningProcessor {
 
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
-
-                    console.log(entry)
-
+                    
                     // Functional token in sentence (parser saves it as object)
                     if (entry !== null && typeof entry === "object" && !Array.isArray(entry)) {
                         this.outputLog += "    " + entry.value + "\n";
