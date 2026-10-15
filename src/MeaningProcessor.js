@@ -27,39 +27,37 @@ export class MeaningProcessor {
     run() {
         for (const meaning of this.arthaParsed) {
             const compositeSentence = meaning.compositeMeaningSentence;
+
+            this.outputLog += "=================" + "\n";
             this.outputLog += compositeSentence + "\n";
+            this.outputLog += "=================" + "\n";
 
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
                     if (Array.isArray(entry)) {
                         const foundComposite = this.findCompositeMeaning(entry);
 
-                        // Temporarily print to console for inspection
+                        // Save to log for inspection
                         const joinStr = "      " + entry.map((e) => e.value).join(" ");
                         if (foundComposite) {
                             this.outputLog += joinStr + " --> COMPOSITE MEANING" + "\n";
-                            // console.log(joinStr + " \x1b[31mComposite Meaning\x1b[0m");
                             continue;
                         }
 
                         const foundPrimitive = this.findPrimitiveMeaning(entry);
                         if (foundPrimitive) {
-                            this.outputLog += joinStr + " --> PRIMITIVE MEANING" + "\n";
-                            // console.log(joinStr + ` \x1b[32mPrimitive: ${foundPrimitive.name}\x1b[0m `);
+                            this.outputLog += joinStr + ` --> PRIMITIVE MEANING: ${foundPrimitive.name}` + "\n";
                             continue;
                         }
 
                         this.outputLog += joinStr + "\n";
-                        // console.log(joinStr);
                         
                     } else if (typeof entry === "object") {
                         this.outputLog += "    " + entry.value + "\n";
-                        // console.log( "  " + entry.value)
                     }
                 }
             }
-            this.outputLog += "\n\n\n";
-            // console.log(" ");
+            this.outputLog += "\n\n";
         }
     }
 

@@ -1,10 +1,13 @@
+=================
 coffee shop
+=================
       # TODO : populate coffee shop
       present menu --> COMPOSITE MEANING
 
 
-
+=================
 present menu
+=================
       Barista presents the menu to the user --> COMPOSITE MEANING
     then
       accept the menu choice from the user
@@ -30,44 +33,47 @@ present menu
       present menu --> COMPOSITE MEANING
 
 
-
+=================
 accept menu choice from the user
+=================
       accept terminal input and store in menu_choice
 
 
-
+=================
 Barista presents the menu to the user
+=================
       get formatted menu
     then
       display in terminal
 
 
-
+=================
 the user selected coffee
+=================
       menu_choice equals "coffee"
 
 
-
+=================
 the user selected bagel
+=================
       menu_choice equals "bagel"
 
 
-
+=================
 the user terminated the transaction
+=================
       menu_choice equals "terminate"
 
 
-
+=================
 the user proceeded with the payment
+=================
       menu_choice equals "checkout"
-      # Temporary test
-    for
-      parsing primitive
-      add num1 and num2 and store result in result --> PRIMITIVE MEANING
 
 
-
+=================
 process payment
+=================
       calculate cost --> COMPOSITE MEANING
     then
       hand user the bill --> COMPOSITE MEANING
@@ -75,33 +81,38 @@ process payment
       accept payment from user --> COMPOSITE MEANING
 
 
-
+=================
 calculate cost
+=================
       set total_cost to 0 with type float
     for
       each item in cart add cost of [item] to total_cost
 
 
-
+=================
 add cost of [item] to [total_cost]
+=================
       get cost of [item] and store in item_cost
-      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING
+      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add
 
 
-
+=================
 hand user the bill
+=================
       set user_prompt to "User owes [total_cost]" with type string
       prompt terminal with user_prompt
 
 
-
+=================
 accept payment from user
+=================
       # TODO : Verify payment amount
       accept user_payment from terminal
 
 
-
+=================
 Bagel
+=================
       it is a class
       it has three attributes
       it has an attribute named type that is a string and has a value of "food item"
@@ -111,39 +122,46 @@ Bagel
       it has narratives "get type of bagel" and "get cost of bagel" and "get currency of bagel cost"
 
 
-
+=================
 get cost of bagel
+=================
       get attribute cost
 
 
-
+=================
 get type of bagel
+=================
       get attribute type
 
 
-
+=================
 get currency of bagel cost
+=================
       get attribute cost_currency
 
 
-
+=================
 Cart
+=================
       it is a list
       it contains food item
 
 
-
+=================
 add [food_item] to cart
+=================
       insert [food_item] at end of cart
 
 
-
+=================
 clear the cart
+=================
       remove all entires in cart
 
 
-
+=================
 Coffee
+=================
       it is a class
       it has three attributes
       it has an attribute named type that is a string and has a value of "food item"
@@ -153,29 +171,32 @@ Coffee
       it has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost"
 
 
-
+=================
 get cost of coffee
+=================
       get attribute cost
 
 
-
+=================
 get type of coffee
+=================
       get attribute type
 
 
-
+=================
 get currency of coffee cost
+=================
       get attribute cost_currency
 
 
-
+=================
 Menu
+=================
       it is a list
       it contains food items and actions
       it has 1 food item named coffee
       it has 1 food item named bagel
       it has 1 action named terminate
       it has 1 action named checkout
-
 
 
