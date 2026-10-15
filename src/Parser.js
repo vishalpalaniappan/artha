@@ -1,14 +1,13 @@
 import { MeaningProcessor } from "./MeaningProcessor";
 
 /**
- * The current state of the parser groups the meaning into
- * blocks and splits the blocks into sentences.
+ * The parser groups the meaning into blocks and splits
+ * the blocks into sentences. Then each of the sentences
+ * is parsed into the meaning that composes it. 
  * 
- * In the next stage, each of the sentences will be parsed into
- * the meaning that composes it. This can be composite meaning or
- * it can be primitive meaning. The composite and primitive meaning
- * can also be connected using functional primitives which are used
- * to establish narrative structure.
+ * This can be composite meaning or it can be primitive 
+ * meaning that can be connected using functional primitives
+ * that establish narrative structure.
  */
 export class ArthaParser {
 
