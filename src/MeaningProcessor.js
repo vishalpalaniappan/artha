@@ -30,8 +30,14 @@ export class MeaningProcessor {
             for (const sentence of meaning.sentences) {
                 for (const entry of sentence) {
                     if (Array.isArray(entry)) {
-                        console.log("  " + entry.map((e) => e.value).join(" "))
                         const found = this.findCompositeMeaning(entry);
+                        if (found) {
+                            console.log("  " + entry.map((e) => e.value).join(" ") + " FOUND COMPOSITE")
+                            continue;
+                        } 
+
+                        
+                        console.log("  " + entry.map((e) => e.value).join(" "))
                     } else if (typeof entry === "object") {
                         console.log( "  " + entry.value)
                     }
@@ -42,8 +48,35 @@ export class MeaningProcessor {
     }
 
     findCompositeMeaning(parsedMeaning) {
-        for (const compositeMeaning of this.arthaParsed) {
+        for (const compositeMeaningObj of this.arthaParsed) {
+            const compositeMeaning = compositeMeaningObj.compositeMeaningArray;
+
             // Compare the parsedMeaning with the compositeMeaning
+            if (compositeMeaning.length !== parsedMeaning.length) continue;
+
+            let found = true;
+            for (const index in parsedMeaning) {
+                const compositeEntry = compositeMeaning[index];
+                const parsedEntry = parsedMeaning[index];
+                
+                // If the composite entry doesn't have val, continue
+                const val = compositeEntry.value;
+                if (val.length === 0) continue;
+                
+                // This references a participant, so we can't compare
+                if (val[0] === "[" && val[val.length - 1] === "]") {
+                    continue;
+                }
+
+                // Check if the syntax matches
+                if (compositeEntry.value !== parsedEntry.value) {
+                    found = false;
+                }
+            }
+
+            if (found) {
+                return compositeMeaningObj;
+            }
         }
     }
 
