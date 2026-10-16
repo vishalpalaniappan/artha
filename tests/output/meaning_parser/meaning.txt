@@ -45,13 +45,10 @@ present menu
 =================
 accept menu choice from the user
 =================
-      accept input and store in user_input
-      If EOF is reached without data
-    then
-      present menu --> COMPOSITE MEANING
-      If keyboard interrupt is triggered
-    then
-      close store --> COMPOSITE MEANING
+      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input
+      # TODO : Add errors after extending primitive syntax
+      # EOF is reached without data : present menu
+      # keyboard interrupt is triggered : close store
 
 
 =================
