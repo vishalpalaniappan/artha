@@ -1,7 +1,5 @@
 meaning of coffee shop {
     # TODO: populate coffee shop.
-    # Create basket with bagels (subtract one per bagel bought).
-    # Create pot of coffee (contains 8 cups of coffee).
     # Create Menu.
     # Create Goodbye message.
 
