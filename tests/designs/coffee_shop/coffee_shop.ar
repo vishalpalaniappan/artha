@@ -1,12 +1,17 @@
 meaning of coffee shop {
     # TODO: populate coffee shop.
+    # Create basket with bagels (subtract one for every bagel bought)
+    # Create pot of coffee (contains 8 cups of coffee)
+    # Create Menu
+
+    #-------
     present menu.
 }
 
 meaning of present menu {
     Barista presents the menu to the user then accept the menu choice from the user.
-    if the user selected coffee, then add coffee to cart.
-    if the user selected bagel, then add bagel to cart.
+    if the user selected coffee, then add coffee to cart then present menu.
+    if the user selected bagel, then add bagel to cart then present menu.
     if the user terminated the transaction, then clear the cart then present menu.
     if the user proceeded with the payment, then process payment then present menu.
 }
