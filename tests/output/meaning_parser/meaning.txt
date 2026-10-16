@@ -4,7 +4,10 @@ coffee shop
       # TODO : populate coffee shop
       # Create basket with bagels (subtract one
     for
-      every bagel bought) # Create pot of coffee (contains 8 cups of coffee) # Create Menu # ------- present menu
+      every bagel bought)
+      # Create pot of coffee (contains 8 cups of coffee)
+      # Create Menu
+      present menu --> COMPOSITE MEANING
 
 
 =================
