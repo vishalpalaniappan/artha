@@ -8,13 +8,13 @@ meaning of Bagel {
 }
 
 meaning of get cost of bagel {
-    get attribute cost.
+    resolve attribute cost.
 }
 
 meaning of get type of bagel {
-    get attribute type.
+    resolve attribute type.
 }
 
 meaning of get currency of bagel cost {
-    get attribute cost_currency.
+    resolve attribute cost_currency.
 }

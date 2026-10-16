@@ -8,13 +8,13 @@ meaning of Coffee {
 }
 
 meaning of get cost of coffee {
-    get attribute cost.
+    resolve attribute cost.
 }
 
 meaning of get type of coffee {
-    get attribute type.
+    resolve attribute type.
 }
 
 meaning of get currency of coffee cost {
-    get attribute cost_currency.
+    resolve attribute cost_currency.
 }
