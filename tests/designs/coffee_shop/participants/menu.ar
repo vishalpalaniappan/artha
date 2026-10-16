@@ -3,6 +3,10 @@ meaning of Menu {
     it contains food items and actions. 
     it has 1 food item named coffee.
     it has 1 food item named bagel.
-    it has 1 action named terminate.
+    it has 1 action named clear.
     it has 1 action named checkout.
+}
+
+get formatted menu {
+    resolve "coffee, bagel, clear, pay, leave"
 }

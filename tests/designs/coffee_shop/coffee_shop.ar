@@ -11,7 +11,7 @@ meaning of present menu {
     Barista presents the menu to the user then accept the menu choice from the user.
     if the user selected coffee, then add coffee to cart then present menu.
     if the user selected bagel, then add bagel to cart then present menu.
-    if the user terminated the transaction, then clear the cart then present menu.
+    if the user cleared the transaction, then clear the cart then present menu.
     if the user proceeded with the payment, then process payment then present menu.
     if the user decided to leave the store, then close the store.
 }
@@ -43,9 +43,9 @@ meaning of the user selected bagel {
     resolve is_bagel.
 }
 
-meaning of the user terminated the transaction {
-    menu_choice equals "terminate" and store result in is_transaction.
-    resolve is_transaction.
+meaning of the user cleared the transaction {
+    menu_choice equals "clear" and store result in is_clear.
+    resolve is_clear.
 }
 
 meaning of the user proceeded with the payment {
