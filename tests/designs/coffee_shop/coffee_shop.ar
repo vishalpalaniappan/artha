@@ -16,11 +16,19 @@ meaning of present menu {
 }
 
 meaning of accept menu choice from the user {
-    accept terminal input and store in menu_choice.
+    accept input and store in user_input. 
+    If EOF is reached without data, then present menu. 
+    If keyboard interrupt is triggered, then close store.
+}
+
+meaning of close store {
+    create message "Closing store. Gooddbye." of type string and store in msg.
+    display msg in terminal.
 }
 
 meaning of Barista presents the menu to the user {
-    get formatted menu then display in terminal.
+    get formatted menu and store in formatted_menu.
+    display formatted_menu in terminal.
 }
 
 meaning of the user selected coffee {

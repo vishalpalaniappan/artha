@@ -961,52 +961,367 @@
                         "endColno": 10
                     },
                     {
-                        "value": "terminal",
+                        "value": "input",
                         "type": "IDENTIFIER",
                         "startLineno": 19,
                         "startColno": 12,
                         "endLineno": 19,
-                        "endColno": 19
-                    },
-                    {
-                        "value": "input",
-                        "type": "IDENTIFIER",
-                        "startLineno": 19,
-                        "startColno": 21,
-                        "endLineno": 19,
-                        "endColno": 25
+                        "endColno": 16
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
                         "startLineno": 19,
-                        "startColno": 27,
+                        "startColno": 18,
                         "endLineno": 19,
-                        "endColno": 29
+                        "endColno": 20
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
                         "startLineno": 19,
-                        "startColno": 31,
+                        "startColno": 22,
                         "endLineno": 19,
-                        "endColno": 35
+                        "endColno": 26
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
                         "startLineno": 19,
-                        "startColno": 37,
+                        "startColno": 28,
                         "endLineno": 19,
-                        "endColno": 38
+                        "endColno": 29
                     },
                     {
-                        "value": "menu_choice",
+                        "value": "user_input",
                         "type": "IDENTIFIER",
                         "startLineno": 19,
-                        "startColno": 40,
+                        "startColno": 31,
                         "endLineno": 19,
+                        "endColno": 40
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "value": "If",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 5,
+                        "endLineno": 20,
+                        "endColno": 6
+                    },
+                    {
+                        "value": "EOF",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 8,
+                        "endLineno": 20,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "is",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 12,
+                        "endLineno": 20,
+                        "endColno": 13
+                    },
+                    {
+                        "value": "reached",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 15,
+                        "endLineno": 20,
+                        "endColno": 21
+                    },
+                    {
+                        "value": "without",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 23,
+                        "endLineno": 20,
+                        "endColno": 29
+                    },
+                    {
+                        "value": "data",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 31,
+                        "endLineno": 20,
+                        "endColno": 34
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 20,
+                    "startColno": 37,
+                    "endLineno": 20,
+                    "endColno": 40
+                },
+                [
+                    {
+                        "value": "present",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 42,
+                        "endLineno": 20,
+                        "endColno": 48
+                    },
+                    {
+                        "value": "menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 20,
+                        "startColno": 50,
+                        "endLineno": 20,
+                        "endColno": 53
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "value": "If",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 5,
+                        "endLineno": 21,
+                        "endColno": 6
+                    },
+                    {
+                        "value": "keyboard",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 8,
+                        "endLineno": 21,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "interrupt",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 17,
+                        "endLineno": 21,
+                        "endColno": 25
+                    },
+                    {
+                        "value": "is",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 27,
+                        "endLineno": 21,
+                        "endColno": 28
+                    },
+                    {
+                        "value": "triggered",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 30,
+                        "endLineno": 21,
+                        "endColno": 38
+                    }
+                ],
+                {
+                    "value": "then",
+                    "type": "FUNCTIONAL",
+                    "startLineno": 21,
+                    "startColno": 41,
+                    "endLineno": 21,
+                    "endColno": 44
+                },
+                [
+                    {
+                        "value": "close",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 46,
+                        "endLineno": 21,
                         "endColno": 50
+                    },
+                    {
+                        "value": "store",
+                        "type": "IDENTIFIER",
+                        "startLineno": 21,
+                        "startColno": 52,
+                        "endLineno": 21,
+                        "endColno": 56
+                    }
+                ]
+            ]
+        ]
+    },
+    {
+        "compositeMeaningArray": [
+            {
+                "value": "close",
+                "type": "IDENTIFIER",
+                "startLineno": 24,
+                "startColno": 12,
+                "endLineno": 24,
+                "endColno": 16
+            },
+            {
+                "value": "store",
+                "type": "IDENTIFIER",
+                "startLineno": 24,
+                "startColno": 18,
+                "endLineno": 24,
+                "endColno": 22
+            }
+        ],
+        "compositeMeaningSentence": "close store",
+        "sentences": [
+            [
+                [
+                    {
+                        "value": "create",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 5,
+                        "endLineno": 25,
+                        "endColno": 10
+                    },
+                    {
+                        "value": "message",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 12,
+                        "endLineno": 25,
+                        "endColno": 18
+                    },
+                    {
+                        "value": "\"Closing",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 20,
+                        "endLineno": 25,
+                        "endColno": 27
+                    },
+                    {
+                        "value": "store",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 29,
+                        "endLineno": 25,
+                        "endColno": 33
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "value": "Gooddbye",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 36,
+                        "endLineno": 25,
+                        "endColno": 43
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "value": "\"",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 45,
+                        "endLineno": 25,
+                        "endColno": 45
+                    },
+                    {
+                        "value": "of",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 47,
+                        "endLineno": 25,
+                        "endColno": 48
+                    },
+                    {
+                        "value": "type",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 50,
+                        "endLineno": 25,
+                        "endColno": 53
+                    },
+                    {
+                        "value": "string",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 55,
+                        "endLineno": 25,
+                        "endColno": 60
+                    },
+                    {
+                        "value": "and",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 62,
+                        "endLineno": 25,
+                        "endColno": 64
+                    },
+                    {
+                        "value": "store",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 66,
+                        "endLineno": 25,
+                        "endColno": 70
+                    },
+                    {
+                        "value": "in",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 72,
+                        "endLineno": 25,
+                        "endColno": 73
+                    },
+                    {
+                        "value": "msg",
+                        "type": "IDENTIFIER",
+                        "startLineno": 25,
+                        "startColno": 75,
+                        "endLineno": 25,
+                        "endColno": 77
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "value": "display",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 5,
+                        "endLineno": 26,
+                        "endColno": 11
+                    },
+                    {
+                        "value": "msg",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 13,
+                        "endLineno": 26,
+                        "endColno": 15
+                    },
+                    {
+                        "value": "in",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 17,
+                        "endLineno": 26,
+                        "endColno": 18
+                    },
+                    {
+                        "value": "terminal",
+                        "type": "IDENTIFIER",
+                        "startLineno": 26,
+                        "startColno": 20,
+                        "endLineno": 26,
+                        "endColno": 27
                     }
                 ]
             ]
@@ -1017,57 +1332,57 @@
             {
                 "value": "Barista",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 12,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 18
             },
             {
                 "value": "presents",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 20,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 27
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 29,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 31
             },
             {
                 "value": "menu",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 33,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 36
             },
             {
                 "value": "to",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 38,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 39
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 41,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 43
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 22,
+                "startLineno": 29,
                 "startColno": 45,
-                "endLineno": 22,
+                "endLineno": 29,
                 "endColno": 48
             }
         ],
@@ -1078,60 +1393,94 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 23,
+                        "startLineno": 30,
                         "startColno": 5,
-                        "endLineno": 23,
+                        "endLineno": 30,
                         "endColno": 7
                     },
                     {
                         "value": "formatted",
                         "type": "IDENTIFIER",
-                        "startLineno": 23,
+                        "startLineno": 30,
                         "startColno": 9,
-                        "endLineno": 23,
+                        "endLineno": 30,
                         "endColno": 17
                     },
                     {
                         "value": "menu",
                         "type": "IDENTIFIER",
-                        "startLineno": 23,
+                        "startLineno": 30,
                         "startColno": 19,
-                        "endLineno": 23,
+                        "endLineno": 30,
                         "endColno": 22
-                    }
-                ],
-                {
-                    "value": "then",
-                    "type": "FUNCTIONAL",
-                    "startLineno": 23,
-                    "startColno": 24,
-                    "endLineno": 23,
-                    "endColno": 27
-                },
-                [
+                    },
                     {
-                        "value": "display",
+                        "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 23,
-                        "startColno": 29,
-                        "endLineno": 23,
-                        "endColno": 35
+                        "startLineno": 30,
+                        "startColno": 24,
+                        "endLineno": 30,
+                        "endColno": 26
+                    },
+                    {
+                        "value": "store",
+                        "type": "IDENTIFIER",
+                        "startLineno": 30,
+                        "startColno": 28,
+                        "endLineno": 30,
+                        "endColno": 32
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 23,
+                        "startLineno": 30,
+                        "startColno": 34,
+                        "endLineno": 30,
+                        "endColno": 35
+                    },
+                    {
+                        "value": "formatted_menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 30,
                         "startColno": 37,
-                        "endLineno": 23,
-                        "endColno": 38
+                        "endLineno": 30,
+                        "endColno": 50
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "value": "display",
+                        "type": "IDENTIFIER",
+                        "startLineno": 31,
+                        "startColno": 5,
+                        "endLineno": 31,
+                        "endColno": 11
+                    },
+                    {
+                        "value": "formatted_menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 31,
+                        "startColno": 13,
+                        "endLineno": 31,
+                        "endColno": 26
+                    },
+                    {
+                        "value": "in",
+                        "type": "IDENTIFIER",
+                        "startLineno": 31,
+                        "startColno": 28,
+                        "endLineno": 31,
+                        "endColno": 29
                     },
                     {
                         "value": "terminal",
                         "type": "IDENTIFIER",
-                        "startLineno": 23,
-                        "startColno": 40,
-                        "endLineno": 23,
-                        "endColno": 47
+                        "startLineno": 31,
+                        "startColno": 31,
+                        "endLineno": 31,
+                        "endColno": 38
                     }
                 ]
             ]
@@ -1142,33 +1491,33 @@
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 26,
+                "startLineno": 34,
                 "startColno": 12,
-                "endLineno": 26,
+                "endLineno": 34,
                 "endColno": 14
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 26,
+                "startLineno": 34,
                 "startColno": 16,
-                "endLineno": 26,
+                "endLineno": 34,
                 "endColno": 19
             },
             {
                 "value": "selected",
                 "type": "IDENTIFIER",
-                "startLineno": 26,
+                "startLineno": 34,
                 "startColno": 21,
-                "endLineno": 26,
+                "endLineno": 34,
                 "endColno": 28
             },
             {
                 "value": "coffee",
                 "type": "IDENTIFIER",
-                "startLineno": 26,
+                "startLineno": 34,
                 "startColno": 30,
-                "endLineno": 26,
+                "endLineno": 34,
                 "endColno": 35
             }
         ],
@@ -1179,65 +1528,65 @@
                     {
                         "value": "menu_choice",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 5,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 15
                     },
                     {
                         "value": "equals",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 17,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 22
                     },
                     {
                         "value": "\"coffee\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 24,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 31
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 33,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 35
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 37,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 41
                     },
                     {
                         "value": "result",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 43,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 48
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 50,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 51
                     },
                     {
                         "value": "is_coffee",
                         "type": "IDENTIFIER",
-                        "startLineno": 27,
+                        "startLineno": 35,
                         "startColno": 53,
-                        "endLineno": 27,
+                        "endLineno": 35,
                         "endColno": 61
                     }
                 ]
@@ -1247,17 +1596,17 @@
                     {
                         "value": "resolve",
                         "type": "IDENTIFIER",
-                        "startLineno": 28,
+                        "startLineno": 36,
                         "startColno": 5,
-                        "endLineno": 28,
+                        "endLineno": 36,
                         "endColno": 11
                     },
                     {
                         "value": "is_coffee",
                         "type": "IDENTIFIER",
-                        "startLineno": 28,
+                        "startLineno": 36,
                         "startColno": 13,
-                        "endLineno": 28,
+                        "endLineno": 36,
                         "endColno": 21
                     }
                 ]
@@ -1269,33 +1618,33 @@
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 31,
+                "startLineno": 39,
                 "startColno": 12,
-                "endLineno": 31,
+                "endLineno": 39,
                 "endColno": 14
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 31,
+                "startLineno": 39,
                 "startColno": 16,
-                "endLineno": 31,
+                "endLineno": 39,
                 "endColno": 19
             },
             {
                 "value": "selected",
                 "type": "IDENTIFIER",
-                "startLineno": 31,
+                "startLineno": 39,
                 "startColno": 21,
-                "endLineno": 31,
+                "endLineno": 39,
                 "endColno": 28
             },
             {
                 "value": "bagel",
                 "type": "IDENTIFIER",
-                "startLineno": 31,
+                "startLineno": 39,
                 "startColno": 30,
-                "endLineno": 31,
+                "endLineno": 39,
                 "endColno": 34
             }
         ],
@@ -1306,65 +1655,65 @@
                     {
                         "value": "menu_choice",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 5,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 15
                     },
                     {
                         "value": "equals",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 17,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 22
                     },
                     {
                         "value": "\"bagel\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 24,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 30
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 32,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 34
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 36,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 40
                     },
                     {
                         "value": "result",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 42,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 47
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 49,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 50
                     },
                     {
                         "value": "is_bagel",
                         "type": "IDENTIFIER",
-                        "startLineno": 32,
+                        "startLineno": 40,
                         "startColno": 52,
-                        "endLineno": 32,
+                        "endLineno": 40,
                         "endColno": 59
                     }
                 ]
@@ -1374,17 +1723,17 @@
                     {
                         "value": "resolve",
                         "type": "IDENTIFIER",
-                        "startLineno": 33,
+                        "startLineno": 41,
                         "startColno": 5,
-                        "endLineno": 33,
+                        "endLineno": 41,
                         "endColno": 11
                     },
                     {
                         "value": "is_bagel",
                         "type": "IDENTIFIER",
-                        "startLineno": 33,
+                        "startLineno": 41,
                         "startColno": 13,
-                        "endLineno": 33,
+                        "endLineno": 41,
                         "endColno": 20
                     }
                 ]
@@ -1396,41 +1745,41 @@
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 36,
+                "startLineno": 44,
                 "startColno": 12,
-                "endLineno": 36,
+                "endLineno": 44,
                 "endColno": 14
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 36,
+                "startLineno": 44,
                 "startColno": 16,
-                "endLineno": 36,
+                "endLineno": 44,
                 "endColno": 19
             },
             {
                 "value": "terminated",
                 "type": "IDENTIFIER",
-                "startLineno": 36,
+                "startLineno": 44,
                 "startColno": 21,
-                "endLineno": 36,
+                "endLineno": 44,
                 "endColno": 30
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 36,
+                "startLineno": 44,
                 "startColno": 32,
-                "endLineno": 36,
+                "endLineno": 44,
                 "endColno": 34
             },
             {
                 "value": "transaction",
                 "type": "IDENTIFIER",
-                "startLineno": 36,
+                "startLineno": 44,
                 "startColno": 36,
-                "endLineno": 36,
+                "endLineno": 44,
                 "endColno": 46
             }
         ],
@@ -1441,65 +1790,65 @@
                     {
                         "value": "menu_choice",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 5,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 15
                     },
                     {
                         "value": "equals",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 17,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 22
                     },
                     {
                         "value": "\"terminate\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 24,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 34
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 36,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 38
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 40,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 44
                     },
                     {
                         "value": "result",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 46,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 51
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 53,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 54
                     },
                     {
                         "value": "is_transaction",
                         "type": "IDENTIFIER",
-                        "startLineno": 37,
+                        "startLineno": 45,
                         "startColno": 56,
-                        "endLineno": 37,
+                        "endLineno": 45,
                         "endColno": 69
                     }
                 ]
@@ -1509,17 +1858,17 @@
                     {
                         "value": "resolve",
                         "type": "IDENTIFIER",
-                        "startLineno": 38,
+                        "startLineno": 46,
                         "startColno": 5,
-                        "endLineno": 38,
+                        "endLineno": 46,
                         "endColno": 11
                     },
                     {
                         "value": "is_transaction",
                         "type": "IDENTIFIER",
-                        "startLineno": 38,
+                        "startLineno": 46,
                         "startColno": 13,
-                        "endLineno": 38,
+                        "endLineno": 46,
                         "endColno": 26
                     }
                 ]
@@ -1531,49 +1880,49 @@
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 41,
+                "startLineno": 49,
                 "startColno": 12,
-                "endLineno": 41,
+                "endLineno": 49,
                 "endColno": 14
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 41,
+                "startLineno": 49,
                 "startColno": 16,
-                "endLineno": 41,
+                "endLineno": 49,
                 "endColno": 19
             },
             {
                 "value": "proceeded",
                 "type": "IDENTIFIER",
-                "startLineno": 41,
+                "startLineno": 49,
                 "startColno": 21,
-                "endLineno": 41,
+                "endLineno": 49,
                 "endColno": 29
             },
             {
                 "value": "with",
                 "type": "IDENTIFIER",
-                "startLineno": 41,
+                "startLineno": 49,
                 "startColno": 31,
-                "endLineno": 41,
+                "endLineno": 49,
                 "endColno": 34
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 41,
+                "startLineno": 49,
                 "startColno": 36,
-                "endLineno": 41,
+                "endLineno": 49,
                 "endColno": 38
             },
             {
                 "value": "payment",
                 "type": "IDENTIFIER",
-                "startLineno": 41,
+                "startLineno": 49,
                 "startColno": 40,
-                "endLineno": 41,
+                "endLineno": 49,
                 "endColno": 46
             }
         ],
@@ -1584,65 +1933,65 @@
                     {
                         "value": "menu_choice",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 5,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 15
                     },
                     {
                         "value": "equals",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 17,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 22
                     },
                     {
                         "value": "\"checkout\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 24,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 33
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 35,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 37
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 39,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 43
                     },
                     {
                         "value": "result",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 45,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 50
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 52,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 53
                     },
                     {
                         "value": "is_payment",
                         "type": "IDENTIFIER",
-                        "startLineno": 42,
+                        "startLineno": 50,
                         "startColno": 55,
-                        "endLineno": 42,
+                        "endLineno": 50,
                         "endColno": 64
                     }
                 ]
@@ -1652,17 +2001,17 @@
                     {
                         "value": "resolve",
                         "type": "IDENTIFIER",
-                        "startLineno": 43,
+                        "startLineno": 51,
                         "startColno": 5,
-                        "endLineno": 43,
+                        "endLineno": 51,
                         "endColno": 11
                     },
                     {
                         "value": "is_payment",
                         "type": "IDENTIFIER",
-                        "startLineno": 43,
+                        "startLineno": 51,
                         "startColno": 13,
-                        "endLineno": 43,
+                        "endLineno": 51,
                         "endColno": 22
                     }
                 ]
@@ -1674,17 +2023,17 @@
             {
                 "value": "process",
                 "type": "IDENTIFIER",
-                "startLineno": 46,
+                "startLineno": 54,
                 "startColno": 12,
-                "endLineno": 46,
+                "endLineno": 54,
                 "endColno": 18
             },
             {
                 "value": "payment",
                 "type": "IDENTIFIER",
-                "startLineno": 46,
+                "startLineno": 54,
                 "startColno": 20,
-                "endLineno": 46,
+                "endLineno": 54,
                 "endColno": 26
             }
         ],
@@ -1695,101 +2044,101 @@
                     {
                         "value": "calculate",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 5,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 13
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 15,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 18
                     }
                 ],
                 {
                     "value": "then",
                     "type": "FUNCTIONAL",
-                    "startLineno": 47,
+                    "startLineno": 55,
                     "startColno": 20,
-                    "endLineno": 47,
+                    "endLineno": 55,
                     "endColno": 23
                 },
                 [
                     {
                         "value": "hand",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 25,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 28
                     },
                     {
                         "value": "user",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 30,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 33
                     },
                     {
                         "value": "the",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 35,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 37
                     },
                     {
                         "value": "bill",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 39,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 42
                     }
                 ],
                 {
                     "value": "then",
                     "type": "FUNCTIONAL",
-                    "startLineno": 47,
+                    "startLineno": 55,
                     "startColno": 44,
-                    "endLineno": 47,
+                    "endLineno": 55,
                     "endColno": 47
                 },
                 [
                     {
                         "value": "accept",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 49,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 54
                     },
                     {
                         "value": "payment",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 56,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 62
                     },
                     {
                         "value": "from",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 64,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 67
                     },
                     {
                         "value": "user",
                         "type": "IDENTIFIER",
-                        "startLineno": 47,
+                        "startLineno": 55,
                         "startColno": 69,
-                        "endLineno": 47,
+                        "endLineno": 55,
                         "endColno": 72
                     }
                 ]
@@ -1801,17 +2150,17 @@
             {
                 "value": "calculate",
                 "type": "IDENTIFIER",
-                "startLineno": 50,
+                "startLineno": 58,
                 "startColno": 12,
-                "endLineno": 50,
+                "endLineno": 58,
                 "endColno": 20
             },
             {
                 "value": "cost",
                 "type": "IDENTIFIER",
-                "startLineno": 50,
+                "startLineno": 58,
                 "startColno": 22,
-                "endLineno": 50,
+                "endLineno": 58,
                 "endColno": 25
             }
         ],
@@ -1822,57 +2171,57 @@
                     {
                         "value": "set",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 5,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 7
                     },
                     {
                         "value": "total_cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 9,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 18
                     },
                     {
                         "value": "to",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 20,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 21
                     },
                     {
                         "value": "0",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 23,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 23
                     },
                     {
                         "value": "with",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 25,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 28
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 30,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 33
                     },
                     {
                         "value": "float",
                         "type": "IDENTIFIER",
-                        "startLineno": 51,
+                        "startLineno": 59,
                         "startColno": 35,
-                        "endLineno": 51,
+                        "endLineno": 59,
                         "endColno": 39
                     }
                 ]
@@ -1881,90 +2230,90 @@
                 {
                     "value": "for",
                     "type": "FUNCTIONAL",
-                    "startLineno": 52,
+                    "startLineno": 60,
                     "startColno": 5,
-                    "endLineno": 52,
+                    "endLineno": 60,
                     "endColno": 7
                 },
                 [
                     {
                         "value": "each",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 9,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 12
                     },
                     {
                         "value": "item",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 14,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 17
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 19,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 20
                     },
                     {
                         "value": "cart",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 22,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 25
                     },
                     {
                         "value": "add",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 28,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 30
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 32,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 35
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 37,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 38
                     },
                     {
                         "value": "[item]",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 40,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 45
                     },
                     {
                         "value": "to",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 47,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 48
                     },
                     {
                         "value": "total_cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 52,
+                        "startLineno": 60,
                         "startColno": 50,
-                        "endLineno": 52,
+                        "endLineno": 60,
                         "endColno": 59
                     }
                 ]
@@ -1976,49 +2325,49 @@
             {
                 "value": "add",
                 "type": "IDENTIFIER",
-                "startLineno": 55,
+                "startLineno": 63,
                 "startColno": 12,
-                "endLineno": 55,
+                "endLineno": 63,
                 "endColno": 14
             },
             {
                 "value": "cost",
                 "type": "IDENTIFIER",
-                "startLineno": 55,
+                "startLineno": 63,
                 "startColno": 16,
-                "endLineno": 55,
+                "endLineno": 63,
                 "endColno": 19
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 55,
+                "startLineno": 63,
                 "startColno": 21,
-                "endLineno": 55,
+                "endLineno": 63,
                 "endColno": 22
             },
             {
                 "value": "[item]",
                 "type": "IDENTIFIER",
-                "startLineno": 55,
+                "startLineno": 63,
                 "startColno": 24,
-                "endLineno": 55,
+                "endLineno": 63,
                 "endColno": 29
             },
             {
                 "value": "to",
                 "type": "IDENTIFIER",
-                "startLineno": 55,
+                "startLineno": 63,
                 "startColno": 31,
-                "endLineno": 55,
+                "endLineno": 63,
                 "endColno": 32
             },
             {
                 "value": "[total_cost]",
                 "type": "IDENTIFIER",
-                "startLineno": 55,
+                "startLineno": 63,
                 "startColno": 34,
-                "endLineno": 55,
+                "endLineno": 63,
                 "endColno": 45
             }
         ],
@@ -2029,65 +2378,65 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 5,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 7
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 9,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 12
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 14,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 15
                     },
                     {
                         "value": "[item]",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 17,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 22
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 24,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 26
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 28,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 32
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 34,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 35
                     },
                     {
                         "value": "item_cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 56,
+                        "startLineno": 64,
                         "startColno": 37,
-                        "endLineno": 56,
+                        "endLineno": 64,
                         "endColno": 45
                     }
                 ]
@@ -2097,73 +2446,73 @@
                     {
                         "value": "add",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 5,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 7
                     },
                     {
                         "value": "item_cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 9,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 17
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 19,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 21
                     },
                     {
                         "value": "[total_cost]",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 23,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 34
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 36,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 38
                     },
                     {
                         "value": "store",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 40,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 44
                     },
                     {
                         "value": "result",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 46,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 51
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 53,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 54
                     },
                     {
                         "value": "[total_cost]",
                         "type": "IDENTIFIER",
-                        "startLineno": 57,
+                        "startLineno": 65,
                         "startColno": 56,
-                        "endLineno": 57,
+                        "endLineno": 65,
                         "endColno": 67
                     }
                 ]
@@ -2175,33 +2524,33 @@
             {
                 "value": "hand",
                 "type": "IDENTIFIER",
-                "startLineno": 60,
+                "startLineno": 68,
                 "startColno": 12,
-                "endLineno": 60,
+                "endLineno": 68,
                 "endColno": 15
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 60,
+                "startLineno": 68,
                 "startColno": 17,
-                "endLineno": 60,
+                "endLineno": 68,
                 "endColno": 20
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 60,
+                "startLineno": 68,
                 "startColno": 22,
-                "endLineno": 60,
+                "endLineno": 68,
                 "endColno": 24
             },
             {
                 "value": "bill",
                 "type": "IDENTIFIER",
-                "startLineno": 60,
+                "startLineno": 68,
                 "startColno": 26,
-                "endLineno": 60,
+                "endLineno": 68,
                 "endColno": 29
             }
         ],
@@ -2212,73 +2561,73 @@
                     {
                         "value": "set",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 5,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 7
                     },
                     {
                         "value": "user_prompt",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 9,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 19
                     },
                     {
                         "value": "to",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 21,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 22
                     },
                     {
                         "value": "\"User",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 24,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 28
                     },
                     {
                         "value": "owes",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 30,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 33
                     },
                     {
                         "value": "[total_cost]\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 35,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 47
                     },
                     {
                         "value": "with",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 49,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 52
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 54,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 57
                     },
                     {
                         "value": "string",
                         "type": "IDENTIFIER",
-                        "startLineno": 61,
+                        "startLineno": 69,
                         "startColno": 59,
-                        "endLineno": 61,
+                        "endLineno": 69,
                         "endColno": 64
                     }
                 ]
@@ -2288,33 +2637,33 @@
                     {
                         "value": "prompt",
                         "type": "IDENTIFIER",
-                        "startLineno": 62,
+                        "startLineno": 70,
                         "startColno": 5,
-                        "endLineno": 62,
+                        "endLineno": 70,
                         "endColno": 10
                     },
                     {
                         "value": "terminal",
                         "type": "IDENTIFIER",
-                        "startLineno": 62,
+                        "startLineno": 70,
                         "startColno": 12,
-                        "endLineno": 62,
+                        "endLineno": 70,
                         "endColno": 19
                     },
                     {
                         "value": "with",
                         "type": "IDENTIFIER",
-                        "startLineno": 62,
+                        "startLineno": 70,
                         "startColno": 21,
-                        "endLineno": 62,
+                        "endLineno": 70,
                         "endColno": 24
                     },
                     {
                         "value": "user_prompt",
                         "type": "IDENTIFIER",
-                        "startLineno": 62,
+                        "startLineno": 70,
                         "startColno": 26,
-                        "endLineno": 62,
+                        "endLineno": 70,
                         "endColno": 36
                     }
                 ]
@@ -2326,33 +2675,33 @@
             {
                 "value": "accept",
                 "type": "IDENTIFIER",
-                "startLineno": 65,
+                "startLineno": 73,
                 "startColno": 12,
-                "endLineno": 65,
+                "endLineno": 73,
                 "endColno": 17
             },
             {
                 "value": "payment",
                 "type": "IDENTIFIER",
-                "startLineno": 65,
+                "startLineno": 73,
                 "startColno": 19,
-                "endLineno": 65,
+                "endLineno": 73,
                 "endColno": 25
             },
             {
                 "value": "from",
                 "type": "IDENTIFIER",
-                "startLineno": 65,
+                "startLineno": 73,
                 "startColno": 27,
-                "endLineno": 65,
+                "endLineno": 73,
                 "endColno": 30
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
-                "startLineno": 65,
+                "startLineno": 73,
                 "startColno": 32,
-                "endLineno": 65,
+                "endLineno": 73,
                 "endColno": 35
             }
         ],
@@ -2363,49 +2712,49 @@
                     {
                         "type": "HASH",
                         "value": "#",
-                        "startLineno": 66,
+                        "startLineno": 74,
                         "startColno": 5,
-                        "endLineno": 66,
+                        "endLineno": 74,
                         "endColno": 5
                     },
                     {
                         "value": "TODO",
                         "type": "IDENTIFIER",
-                        "startLineno": 66,
+                        "startLineno": 74,
                         "startColno": 7,
-                        "endLineno": 66,
+                        "endLineno": 74,
                         "endColno": 10
                     },
                     {
                         "type": "COLON",
                         "value": ":",
-                        "startLineno": 66,
+                        "startLineno": 74,
                         "startColno": 11,
-                        "endLineno": 66,
+                        "endLineno": 74,
                         "endColno": 11
                     },
                     {
                         "value": "Verify",
                         "type": "IDENTIFIER",
-                        "startLineno": 66,
+                        "startLineno": 74,
                         "startColno": 13,
-                        "endLineno": 66,
+                        "endLineno": 74,
                         "endColno": 18
                     },
                     {
                         "value": "payment",
                         "type": "IDENTIFIER",
-                        "startLineno": 66,
+                        "startLineno": 74,
                         "startColno": 20,
-                        "endLineno": 66,
+                        "endLineno": 74,
                         "endColno": 26
                     },
                     {
                         "value": "amount",
                         "type": "IDENTIFIER",
-                        "startLineno": 66,
+                        "startLineno": 74,
                         "startColno": 28,
-                        "endLineno": 66,
+                        "endLineno": 74,
                         "endColno": 33
                     }
                 ]
@@ -2415,33 +2764,33 @@
                     {
                         "value": "accept",
                         "type": "IDENTIFIER",
-                        "startLineno": 67,
+                        "startLineno": 75,
                         "startColno": 5,
-                        "endLineno": 67,
+                        "endLineno": 75,
                         "endColno": 10
                     },
                     {
                         "value": "user_payment",
                         "type": "IDENTIFIER",
-                        "startLineno": 67,
+                        "startLineno": 75,
                         "startColno": 12,
-                        "endLineno": 67,
+                        "endLineno": 75,
                         "endColno": 23
                     },
                     {
                         "value": "from",
                         "type": "IDENTIFIER",
-                        "startLineno": 67,
+                        "startLineno": 75,
                         "startColno": 25,
-                        "endLineno": 67,
+                        "endLineno": 75,
                         "endColno": 28
                     },
                     {
                         "value": "terminal",
                         "type": "IDENTIFIER",
-                        "startLineno": 67,
+                        "startLineno": 75,
                         "startColno": 30,
-                        "endLineno": 67,
+                        "endLineno": 75,
                         "endColno": 37
                     }
                 ]
@@ -2453,9 +2802,9 @@
             {
                 "value": "Bagel",
                 "type": "IDENTIFIER",
-                "startLineno": 69,
+                "startLineno": 77,
                 "startColno": 12,
-                "endLineno": 69,
+                "endLineno": 77,
                 "endColno": 16
             }
         ],
@@ -2466,33 +2815,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 70,
+                        "startLineno": 78,
                         "startColno": 5,
-                        "endLineno": 70,
+                        "endLineno": 78,
                         "endColno": 6
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 70,
+                        "startLineno": 78,
                         "startColno": 8,
-                        "endLineno": 70,
+                        "endLineno": 78,
                         "endColno": 9
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 70,
+                        "startLineno": 78,
                         "startColno": 11,
-                        "endLineno": 70,
+                        "endLineno": 78,
                         "endColno": 11
                     },
                     {
                         "value": "class",
                         "type": "IDENTIFIER",
-                        "startLineno": 70,
+                        "startLineno": 78,
                         "startColno": 13,
-                        "endLineno": 70,
+                        "endLineno": 78,
                         "endColno": 17
                     }
                 ]
@@ -2502,33 +2851,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 71,
+                        "startLineno": 79,
                         "startColno": 5,
-                        "endLineno": 71,
+                        "endLineno": 79,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 71,
+                        "startLineno": 79,
                         "startColno": 8,
-                        "endLineno": 71,
+                        "endLineno": 79,
                         "endColno": 10
                     },
                     {
                         "value": "three",
                         "type": "IDENTIFIER",
-                        "startLineno": 71,
+                        "startLineno": 79,
                         "startColno": 12,
-                        "endLineno": 71,
+                        "endLineno": 79,
                         "endColno": 16
                     },
                     {
                         "value": "attributes",
                         "type": "IDENTIFIER",
-                        "startLineno": 71,
+                        "startLineno": 79,
                         "startColno": 18,
-                        "endLineno": 71,
+                        "endLineno": 79,
                         "endColno": 27
                     }
                 ]
@@ -2538,137 +2887,137 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 5,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 8,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 10
                     },
                     {
                         "value": "an",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 12,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 13
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 15,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 23
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 25,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 29
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 31,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 34
                     },
                     {
                         "value": "that",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 36,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 39
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 41,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 42
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 44,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 44
                     },
                     {
                         "value": "string",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 46,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 51
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 53,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 55
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 57,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 59
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 61,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 61
                     },
                     {
                         "value": "value",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 63,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 67
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 69,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 70
                     },
                     {
                         "value": "\"food",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 72,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 76
                     },
                     {
                         "value": "item\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 72,
+                        "startLineno": 80,
                         "startColno": 78,
-                        "endLineno": 72,
+                        "endLineno": 80,
                         "endColno": 82
                     }
                 ]
@@ -2678,137 +3027,137 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 5,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 8,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 10
                     },
                     {
                         "value": "an",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 12,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 13
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 15,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 23
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 25,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 29
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 31,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 34
                     },
                     {
                         "value": "which",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 36,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 40
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 42,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 43
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 45,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 45
                     },
                     {
                         "value": "float",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 47,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 51
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 53,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 55
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 57,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 59
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 61,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 61
                     },
                     {
                         "value": "value",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 63,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 67
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 69,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 70
                     },
                     {
                         "value": "2",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 72,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 72
                     },
                     {
                         "value": "00",
                         "type": "IDENTIFIER",
-                        "startLineno": 73,
+                        "startLineno": 81,
                         "startColno": 74,
-                        "endLineno": 73,
+                        "endLineno": 81,
                         "endColno": 75
                     }
                 ]
@@ -2818,129 +3167,129 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 5,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 8,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 10
                     },
                     {
                         "value": "an",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 12,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 13
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 15,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 23
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 25,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 29
                     },
                     {
                         "value": "cost_currency",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 31,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 43
                     },
                     {
                         "value": "which",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 45,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 49
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 51,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 52
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 54,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 54
                     },
                     {
                         "value": "string",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 56,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 61
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 63,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 65
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 67,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 69
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 71,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 71
                     },
                     {
                         "value": "value",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 73,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 77
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 79,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 80
                     },
                     {
                         "value": "\"CAD\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 74,
+                        "startLineno": 82,
                         "startColno": 82,
-                        "endLineno": 74,
+                        "endLineno": 82,
                         "endColno": 86
                     }
                 ]
@@ -2950,145 +3299,145 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 5,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 8,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 10
                     },
                     {
                         "value": "narratives",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 12,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 21
                     },
                     {
                         "value": "\"get",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 23,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 26
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 28,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 31
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 33,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 34
                     },
                     {
                         "value": "bagel\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 36,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 41
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 43,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 45
                     },
                     {
                         "value": "\"get",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 47,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 50
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 52,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 55
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 57,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 58
                     },
                     {
                         "value": "bagel\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 60,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 65
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 67,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 69
                     },
                     {
                         "value": "\"get",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 71,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 74
                     },
                     {
                         "value": "currency",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 76,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 83
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 85,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 86
                     },
                     {
                         "value": "bagel",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 88,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 92
                     },
                     {
                         "value": "cost\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 75,
+                        "startLineno": 83,
                         "startColno": 94,
-                        "endLineno": 75,
+                        "endLineno": 83,
                         "endColno": 98
                     }
                 ]
@@ -3100,33 +3449,33 @@
             {
                 "value": "get",
                 "type": "IDENTIFIER",
-                "startLineno": 78,
+                "startLineno": 86,
                 "startColno": 12,
-                "endLineno": 78,
+                "endLineno": 86,
                 "endColno": 14
             },
             {
                 "value": "cost",
                 "type": "IDENTIFIER",
-                "startLineno": 78,
+                "startLineno": 86,
                 "startColno": 16,
-                "endLineno": 78,
+                "endLineno": 86,
                 "endColno": 19
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 78,
+                "startLineno": 86,
                 "startColno": 21,
-                "endLineno": 78,
+                "endLineno": 86,
                 "endColno": 22
             },
             {
                 "value": "bagel",
                 "type": "IDENTIFIER",
-                "startLineno": 78,
+                "startLineno": 86,
                 "startColno": 24,
-                "endLineno": 78,
+                "endLineno": 86,
                 "endColno": 28
             }
         ],
@@ -3137,25 +3486,25 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 79,
+                        "startLineno": 87,
                         "startColno": 5,
-                        "endLineno": 79,
+                        "endLineno": 87,
                         "endColno": 7
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 79,
+                        "startLineno": 87,
                         "startColno": 9,
-                        "endLineno": 79,
+                        "endLineno": 87,
                         "endColno": 17
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 79,
+                        "startLineno": 87,
                         "startColno": 19,
-                        "endLineno": 79,
+                        "endLineno": 87,
                         "endColno": 22
                     }
                 ]
@@ -3167,33 +3516,33 @@
             {
                 "value": "get",
                 "type": "IDENTIFIER",
-                "startLineno": 82,
+                "startLineno": 90,
                 "startColno": 12,
-                "endLineno": 82,
+                "endLineno": 90,
                 "endColno": 14
             },
             {
                 "value": "type",
                 "type": "IDENTIFIER",
-                "startLineno": 82,
+                "startLineno": 90,
                 "startColno": 16,
-                "endLineno": 82,
+                "endLineno": 90,
                 "endColno": 19
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 82,
+                "startLineno": 90,
                 "startColno": 21,
-                "endLineno": 82,
+                "endLineno": 90,
                 "endColno": 22
             },
             {
                 "value": "bagel",
                 "type": "IDENTIFIER",
-                "startLineno": 82,
+                "startLineno": 90,
                 "startColno": 24,
-                "endLineno": 82,
+                "endLineno": 90,
                 "endColno": 28
             }
         ],
@@ -3204,25 +3553,25 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 83,
+                        "startLineno": 91,
                         "startColno": 5,
-                        "endLineno": 83,
+                        "endLineno": 91,
                         "endColno": 7
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 83,
+                        "startLineno": 91,
                         "startColno": 9,
-                        "endLineno": 83,
+                        "endLineno": 91,
                         "endColno": 17
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 83,
+                        "startLineno": 91,
                         "startColno": 19,
-                        "endLineno": 83,
+                        "endLineno": 91,
                         "endColno": 22
                     }
                 ]
@@ -3234,41 +3583,41 @@
             {
                 "value": "get",
                 "type": "IDENTIFIER",
-                "startLineno": 86,
+                "startLineno": 94,
                 "startColno": 12,
-                "endLineno": 86,
+                "endLineno": 94,
                 "endColno": 14
             },
             {
                 "value": "currency",
                 "type": "IDENTIFIER",
-                "startLineno": 86,
+                "startLineno": 94,
                 "startColno": 16,
-                "endLineno": 86,
+                "endLineno": 94,
                 "endColno": 23
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 86,
+                "startLineno": 94,
                 "startColno": 25,
-                "endLineno": 86,
+                "endLineno": 94,
                 "endColno": 26
             },
             {
                 "value": "bagel",
                 "type": "IDENTIFIER",
-                "startLineno": 86,
+                "startLineno": 94,
                 "startColno": 28,
-                "endLineno": 86,
+                "endLineno": 94,
                 "endColno": 32
             },
             {
                 "value": "cost",
                 "type": "IDENTIFIER",
-                "startLineno": 86,
+                "startLineno": 94,
                 "startColno": 34,
-                "endLineno": 86,
+                "endLineno": 94,
                 "endColno": 37
             }
         ],
@@ -3279,25 +3628,25 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 87,
+                        "startLineno": 95,
                         "startColno": 5,
-                        "endLineno": 87,
+                        "endLineno": 95,
                         "endColno": 7
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 87,
+                        "startLineno": 95,
                         "startColno": 9,
-                        "endLineno": 87,
+                        "endLineno": 95,
                         "endColno": 17
                     },
                     {
                         "value": "cost_currency",
                         "type": "IDENTIFIER",
-                        "startLineno": 87,
+                        "startLineno": 95,
                         "startColno": 19,
-                        "endLineno": 87,
+                        "endLineno": 95,
                         "endColno": 31
                     }
                 ]
@@ -3309,9 +3658,9 @@
             {
                 "value": "Cart",
                 "type": "IDENTIFIER",
-                "startLineno": 89,
+                "startLineno": 97,
                 "startColno": 12,
-                "endLineno": 89,
+                "endLineno": 97,
                 "endColno": 15
             }
         ],
@@ -3322,33 +3671,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 90,
+                        "startLineno": 98,
                         "startColno": 5,
-                        "endLineno": 90,
+                        "endLineno": 98,
                         "endColno": 6
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 90,
+                        "startLineno": 98,
                         "startColno": 8,
-                        "endLineno": 90,
+                        "endLineno": 98,
                         "endColno": 9
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 90,
+                        "startLineno": 98,
                         "startColno": 11,
-                        "endLineno": 90,
+                        "endLineno": 98,
                         "endColno": 11
                     },
                     {
                         "value": "list",
                         "type": "IDENTIFIER",
-                        "startLineno": 90,
+                        "startLineno": 98,
                         "startColno": 13,
-                        "endLineno": 90,
+                        "endLineno": 98,
                         "endColno": 16
                     }
                 ]
@@ -3358,33 +3707,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 91,
+                        "startLineno": 99,
                         "startColno": 5,
-                        "endLineno": 91,
+                        "endLineno": 99,
                         "endColno": 6
                     },
                     {
                         "value": "contains",
                         "type": "IDENTIFIER",
-                        "startLineno": 91,
+                        "startLineno": 99,
                         "startColno": 8,
-                        "endLineno": 91,
+                        "endLineno": 99,
                         "endColno": 15
                     },
                     {
                         "value": "food",
                         "type": "IDENTIFIER",
-                        "startLineno": 91,
+                        "startLineno": 99,
                         "startColno": 17,
-                        "endLineno": 91,
+                        "endLineno": 99,
                         "endColno": 20
                     },
                     {
                         "value": "item",
                         "type": "IDENTIFIER",
-                        "startLineno": 91,
+                        "startLineno": 99,
                         "startColno": 22,
-                        "endLineno": 91,
+                        "endLineno": 99,
                         "endColno": 25
                     }
                 ]
@@ -3396,33 +3745,33 @@
             {
                 "value": "add",
                 "type": "IDENTIFIER",
-                "startLineno": 94,
+                "startLineno": 102,
                 "startColno": 12,
-                "endLineno": 94,
+                "endLineno": 102,
                 "endColno": 14
             },
             {
                 "value": "[food_item]",
                 "type": "IDENTIFIER",
-                "startLineno": 94,
+                "startLineno": 102,
                 "startColno": 16,
-                "endLineno": 94,
+                "endLineno": 102,
                 "endColno": 26
             },
             {
                 "value": "to",
                 "type": "IDENTIFIER",
-                "startLineno": 94,
+                "startLineno": 102,
                 "startColno": 28,
-                "endLineno": 94,
+                "endLineno": 102,
                 "endColno": 29
             },
             {
                 "value": "cart",
                 "type": "IDENTIFIER",
-                "startLineno": 94,
+                "startLineno": 102,
                 "startColno": 31,
-                "endLineno": 94,
+                "endLineno": 102,
                 "endColno": 34
             }
         ],
@@ -3433,49 +3782,49 @@
                     {
                         "value": "insert",
                         "type": "IDENTIFIER",
-                        "startLineno": 95,
+                        "startLineno": 103,
                         "startColno": 5,
-                        "endLineno": 95,
+                        "endLineno": 103,
                         "endColno": 10
                     },
                     {
                         "value": "[food_item]",
                         "type": "IDENTIFIER",
-                        "startLineno": 95,
+                        "startLineno": 103,
                         "startColno": 12,
-                        "endLineno": 95,
+                        "endLineno": 103,
                         "endColno": 22
                     },
                     {
                         "value": "at",
                         "type": "IDENTIFIER",
-                        "startLineno": 95,
+                        "startLineno": 103,
                         "startColno": 24,
-                        "endLineno": 95,
+                        "endLineno": 103,
                         "endColno": 25
                     },
                     {
                         "value": "end",
                         "type": "IDENTIFIER",
-                        "startLineno": 95,
+                        "startLineno": 103,
                         "startColno": 27,
-                        "endLineno": 95,
+                        "endLineno": 103,
                         "endColno": 29
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 95,
+                        "startLineno": 103,
                         "startColno": 31,
-                        "endLineno": 95,
+                        "endLineno": 103,
                         "endColno": 32
                     },
                     {
                         "value": "cart",
                         "type": "IDENTIFIER",
-                        "startLineno": 95,
+                        "startLineno": 103,
                         "startColno": 34,
-                        "endLineno": 95,
+                        "endLineno": 103,
                         "endColno": 37
                     }
                 ]
@@ -3487,25 +3836,25 @@
             {
                 "value": "clear",
                 "type": "IDENTIFIER",
-                "startLineno": 98,
+                "startLineno": 106,
                 "startColno": 12,
-                "endLineno": 98,
+                "endLineno": 106,
                 "endColno": 16
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
-                "startLineno": 98,
+                "startLineno": 106,
                 "startColno": 18,
-                "endLineno": 98,
+                "endLineno": 106,
                 "endColno": 20
             },
             {
                 "value": "cart",
                 "type": "IDENTIFIER",
-                "startLineno": 98,
+                "startLineno": 106,
                 "startColno": 22,
-                "endLineno": 98,
+                "endLineno": 106,
                 "endColno": 25
             }
         ],
@@ -3516,41 +3865,41 @@
                     {
                         "value": "remove",
                         "type": "IDENTIFIER",
-                        "startLineno": 99,
+                        "startLineno": 107,
                         "startColno": 5,
-                        "endLineno": 99,
+                        "endLineno": 107,
                         "endColno": 10
                     },
                     {
                         "value": "all",
                         "type": "IDENTIFIER",
-                        "startLineno": 99,
+                        "startLineno": 107,
                         "startColno": 12,
-                        "endLineno": 99,
+                        "endLineno": 107,
                         "endColno": 14
                     },
                     {
                         "value": "entires",
                         "type": "IDENTIFIER",
-                        "startLineno": 99,
+                        "startLineno": 107,
                         "startColno": 16,
-                        "endLineno": 99,
+                        "endLineno": 107,
                         "endColno": 22
                     },
                     {
                         "value": "in",
                         "type": "IDENTIFIER",
-                        "startLineno": 99,
+                        "startLineno": 107,
                         "startColno": 24,
-                        "endLineno": 99,
+                        "endLineno": 107,
                         "endColno": 25
                     },
                     {
                         "value": "cart",
                         "type": "IDENTIFIER",
-                        "startLineno": 99,
+                        "startLineno": 107,
                         "startColno": 27,
-                        "endLineno": 99,
+                        "endLineno": 107,
                         "endColno": 30
                     }
                 ]
@@ -3562,9 +3911,9 @@
             {
                 "value": "Coffee",
                 "type": "IDENTIFIER",
-                "startLineno": 101,
+                "startLineno": 109,
                 "startColno": 12,
-                "endLineno": 101,
+                "endLineno": 109,
                 "endColno": 17
             }
         ],
@@ -3575,33 +3924,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 102,
+                        "startLineno": 110,
                         "startColno": 5,
-                        "endLineno": 102,
+                        "endLineno": 110,
                         "endColno": 6
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 102,
+                        "startLineno": 110,
                         "startColno": 8,
-                        "endLineno": 102,
+                        "endLineno": 110,
                         "endColno": 9
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 102,
+                        "startLineno": 110,
                         "startColno": 11,
-                        "endLineno": 102,
+                        "endLineno": 110,
                         "endColno": 11
                     },
                     {
                         "value": "class",
                         "type": "IDENTIFIER",
-                        "startLineno": 102,
+                        "startLineno": 110,
                         "startColno": 13,
-                        "endLineno": 102,
+                        "endLineno": 110,
                         "endColno": 17
                     }
                 ]
@@ -3611,33 +3960,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 103,
+                        "startLineno": 111,
                         "startColno": 5,
-                        "endLineno": 103,
+                        "endLineno": 111,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 103,
+                        "startLineno": 111,
                         "startColno": 8,
-                        "endLineno": 103,
+                        "endLineno": 111,
                         "endColno": 10
                     },
                     {
                         "value": "three",
                         "type": "IDENTIFIER",
-                        "startLineno": 103,
+                        "startLineno": 111,
                         "startColno": 12,
-                        "endLineno": 103,
+                        "endLineno": 111,
                         "endColno": 16
                     },
                     {
                         "value": "attributes",
                         "type": "IDENTIFIER",
-                        "startLineno": 103,
+                        "startLineno": 111,
                         "startColno": 18,
-                        "endLineno": 103,
+                        "endLineno": 111,
                         "endColno": 27
                     }
                 ]
@@ -3647,137 +3996,137 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 5,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 8,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 10
                     },
                     {
                         "value": "an",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 12,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 13
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 15,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 23
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 25,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 29
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 31,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 34
                     },
                     {
                         "value": "that",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 36,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 39
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 41,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 42
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 44,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 44
                     },
                     {
                         "value": "string",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 46,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 51
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 53,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 55
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 57,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 59
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 61,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 61
                     },
                     {
                         "value": "value",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 63,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 67
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 69,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 70
                     },
                     {
                         "value": "\"food",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 72,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 76
                     },
                     {
                         "value": "item\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 104,
+                        "startLineno": 112,
                         "startColno": 78,
-                        "endLineno": 104,
+                        "endLineno": 112,
                         "endColno": 82
                     }
                 ]
@@ -3787,137 +4136,137 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 5,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 8,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 10
                     },
                     {
                         "value": "an",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 12,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 13
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 15,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 23
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 25,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 29
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 31,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 34
                     },
                     {
                         "value": "which",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 36,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 40
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 42,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 43
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 45,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 45
                     },
                     {
                         "value": "float",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 47,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 51
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 53,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 55
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 57,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 59
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 61,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 61
                     },
                     {
                         "value": "value",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 63,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 67
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 69,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 70
                     },
                     {
                         "value": "1",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 72,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 72
                     },
                     {
                         "value": "00",
                         "type": "IDENTIFIER",
-                        "startLineno": 105,
+                        "startLineno": 113,
                         "startColno": 74,
-                        "endLineno": 105,
+                        "endLineno": 113,
                         "endColno": 75
                     }
                 ]
@@ -3927,129 +4276,129 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 5,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 8,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 10
                     },
                     {
                         "value": "an",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 12,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 13
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 15,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 23
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 25,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 29
                     },
                     {
                         "value": "cost_currency",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 31,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 43
                     },
                     {
                         "value": "which",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 45,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 49
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 51,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 52
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 54,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 54
                     },
                     {
                         "value": "string",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 56,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 61
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 63,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 65
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 67,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 69
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 71,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 71
                     },
                     {
                         "value": "value",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 73,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 77
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 79,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 80
                     },
                     {
                         "value": "\"CAD\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 106,
+                        "startLineno": 114,
                         "startColno": 82,
-                        "endLineno": 106,
+                        "endLineno": 114,
                         "endColno": 86
                     }
                 ]
@@ -4059,145 +4408,145 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 5,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 8,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 10
                     },
                     {
                         "value": "narratives",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 12,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 21
                     },
                     {
                         "value": "\"get",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 23,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 26
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 28,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 31
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 33,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 34
                     },
                     {
                         "value": "coffee\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 36,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 42
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 44,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 46
                     },
                     {
                         "value": "\"get",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 48,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 51
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 53,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 56
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 58,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 59
                     },
                     {
                         "value": "coffee\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 61,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 67
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 69,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 71
                     },
                     {
                         "value": "\"get",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 73,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 76
                     },
                     {
                         "value": "currency",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 78,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 85
                     },
                     {
                         "value": "of",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 87,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 88
                     },
                     {
                         "value": "coffee",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 90,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 95
                     },
                     {
                         "value": "cost\"",
                         "type": "IDENTIFIER",
-                        "startLineno": 107,
+                        "startLineno": 115,
                         "startColno": 97,
-                        "endLineno": 107,
+                        "endLineno": 115,
                         "endColno": 101
                     }
                 ]
@@ -4209,33 +4558,33 @@
             {
                 "value": "get",
                 "type": "IDENTIFIER",
-                "startLineno": 110,
+                "startLineno": 118,
                 "startColno": 12,
-                "endLineno": 110,
+                "endLineno": 118,
                 "endColno": 14
             },
             {
                 "value": "cost",
                 "type": "IDENTIFIER",
-                "startLineno": 110,
+                "startLineno": 118,
                 "startColno": 16,
-                "endLineno": 110,
+                "endLineno": 118,
                 "endColno": 19
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 110,
+                "startLineno": 118,
                 "startColno": 21,
-                "endLineno": 110,
+                "endLineno": 118,
                 "endColno": 22
             },
             {
                 "value": "coffee",
                 "type": "IDENTIFIER",
-                "startLineno": 110,
+                "startLineno": 118,
                 "startColno": 24,
-                "endLineno": 110,
+                "endLineno": 118,
                 "endColno": 29
             }
         ],
@@ -4246,25 +4595,25 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 111,
+                        "startLineno": 119,
                         "startColno": 5,
-                        "endLineno": 111,
+                        "endLineno": 119,
                         "endColno": 7
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 111,
+                        "startLineno": 119,
                         "startColno": 9,
-                        "endLineno": 111,
+                        "endLineno": 119,
                         "endColno": 17
                     },
                     {
                         "value": "cost",
                         "type": "IDENTIFIER",
-                        "startLineno": 111,
+                        "startLineno": 119,
                         "startColno": 19,
-                        "endLineno": 111,
+                        "endLineno": 119,
                         "endColno": 22
                     }
                 ]
@@ -4276,33 +4625,33 @@
             {
                 "value": "get",
                 "type": "IDENTIFIER",
-                "startLineno": 114,
+                "startLineno": 122,
                 "startColno": 12,
-                "endLineno": 114,
+                "endLineno": 122,
                 "endColno": 14
             },
             {
                 "value": "type",
                 "type": "IDENTIFIER",
-                "startLineno": 114,
+                "startLineno": 122,
                 "startColno": 16,
-                "endLineno": 114,
+                "endLineno": 122,
                 "endColno": 19
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 114,
+                "startLineno": 122,
                 "startColno": 21,
-                "endLineno": 114,
+                "endLineno": 122,
                 "endColno": 22
             },
             {
                 "value": "coffee",
                 "type": "IDENTIFIER",
-                "startLineno": 114,
+                "startLineno": 122,
                 "startColno": 24,
-                "endLineno": 114,
+                "endLineno": 122,
                 "endColno": 29
             }
         ],
@@ -4313,25 +4662,25 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 115,
+                        "startLineno": 123,
                         "startColno": 5,
-                        "endLineno": 115,
+                        "endLineno": 123,
                         "endColno": 7
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 115,
+                        "startLineno": 123,
                         "startColno": 9,
-                        "endLineno": 115,
+                        "endLineno": 123,
                         "endColno": 17
                     },
                     {
                         "value": "type",
                         "type": "IDENTIFIER",
-                        "startLineno": 115,
+                        "startLineno": 123,
                         "startColno": 19,
-                        "endLineno": 115,
+                        "endLineno": 123,
                         "endColno": 22
                     }
                 ]
@@ -4343,41 +4692,41 @@
             {
                 "value": "get",
                 "type": "IDENTIFIER",
-                "startLineno": 118,
+                "startLineno": 126,
                 "startColno": 12,
-                "endLineno": 118,
+                "endLineno": 126,
                 "endColno": 14
             },
             {
                 "value": "currency",
                 "type": "IDENTIFIER",
-                "startLineno": 118,
+                "startLineno": 126,
                 "startColno": 16,
-                "endLineno": 118,
+                "endLineno": 126,
                 "endColno": 23
             },
             {
                 "value": "of",
                 "type": "IDENTIFIER",
-                "startLineno": 118,
+                "startLineno": 126,
                 "startColno": 25,
-                "endLineno": 118,
+                "endLineno": 126,
                 "endColno": 26
             },
             {
                 "value": "coffee",
                 "type": "IDENTIFIER",
-                "startLineno": 118,
+                "startLineno": 126,
                 "startColno": 28,
-                "endLineno": 118,
+                "endLineno": 126,
                 "endColno": 33
             },
             {
                 "value": "cost",
                 "type": "IDENTIFIER",
-                "startLineno": 118,
+                "startLineno": 126,
                 "startColno": 35,
-                "endLineno": 118,
+                "endLineno": 126,
                 "endColno": 38
             }
         ],
@@ -4388,25 +4737,25 @@
                     {
                         "value": "get",
                         "type": "IDENTIFIER",
-                        "startLineno": 119,
+                        "startLineno": 127,
                         "startColno": 5,
-                        "endLineno": 119,
+                        "endLineno": 127,
                         "endColno": 7
                     },
                     {
                         "value": "attribute",
                         "type": "IDENTIFIER",
-                        "startLineno": 119,
+                        "startLineno": 127,
                         "startColno": 9,
-                        "endLineno": 119,
+                        "endLineno": 127,
                         "endColno": 17
                     },
                     {
                         "value": "cost_currency",
                         "type": "IDENTIFIER",
-                        "startLineno": 119,
+                        "startLineno": 127,
                         "startColno": 19,
-                        "endLineno": 119,
+                        "endLineno": 127,
                         "endColno": 31
                     }
                 ]
@@ -4418,9 +4767,9 @@
             {
                 "value": "Menu",
                 "type": "IDENTIFIER",
-                "startLineno": 121,
+                "startLineno": 129,
                 "startColno": 12,
-                "endLineno": 121,
+                "endLineno": 129,
                 "endColno": 15
             }
         ],
@@ -4431,33 +4780,33 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 122,
+                        "startLineno": 130,
                         "startColno": 5,
-                        "endLineno": 122,
+                        "endLineno": 130,
                         "endColno": 6
                     },
                     {
                         "value": "is",
                         "type": "IDENTIFIER",
-                        "startLineno": 122,
+                        "startLineno": 130,
                         "startColno": 8,
-                        "endLineno": 122,
+                        "endLineno": 130,
                         "endColno": 9
                     },
                     {
                         "value": "a",
                         "type": "IDENTIFIER",
-                        "startLineno": 122,
+                        "startLineno": 130,
                         "startColno": 11,
-                        "endLineno": 122,
+                        "endLineno": 130,
                         "endColno": 11
                     },
                     {
                         "value": "list",
                         "type": "IDENTIFIER",
-                        "startLineno": 122,
+                        "startLineno": 130,
                         "startColno": 13,
-                        "endLineno": 122,
+                        "endLineno": 130,
                         "endColno": 16
                     }
                 ]
@@ -4467,49 +4816,49 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 123,
+                        "startLineno": 131,
                         "startColno": 5,
-                        "endLineno": 123,
+                        "endLineno": 131,
                         "endColno": 6
                     },
                     {
                         "value": "contains",
                         "type": "IDENTIFIER",
-                        "startLineno": 123,
+                        "startLineno": 131,
                         "startColno": 8,
-                        "endLineno": 123,
+                        "endLineno": 131,
                         "endColno": 15
                     },
                     {
                         "value": "food",
                         "type": "IDENTIFIER",
-                        "startLineno": 123,
+                        "startLineno": 131,
                         "startColno": 17,
-                        "endLineno": 123,
+                        "endLineno": 131,
                         "endColno": 20
                     },
                     {
                         "value": "items",
                         "type": "IDENTIFIER",
-                        "startLineno": 123,
+                        "startLineno": 131,
                         "startColno": 22,
-                        "endLineno": 123,
+                        "endLineno": 131,
                         "endColno": 26
                     },
                     {
                         "value": "and",
                         "type": "IDENTIFIER",
-                        "startLineno": 123,
+                        "startLineno": 131,
                         "startColno": 28,
-                        "endLineno": 123,
+                        "endLineno": 131,
                         "endColno": 30
                     },
                     {
                         "value": "actions",
                         "type": "IDENTIFIER",
-                        "startLineno": 123,
+                        "startLineno": 131,
                         "startColno": 32,
-                        "endLineno": 123,
+                        "endLineno": 131,
                         "endColno": 38
                     }
                 ]
@@ -4519,57 +4868,57 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 5,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 8,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 10
                     },
                     {
                         "value": "1",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 12,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 12
                     },
                     {
                         "value": "food",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 14,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 17
                     },
                     {
                         "value": "item",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 19,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 22
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 24,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 28
                     },
                     {
                         "value": "coffee",
                         "type": "IDENTIFIER",
-                        "startLineno": 124,
+                        "startLineno": 132,
                         "startColno": 30,
-                        "endLineno": 124,
+                        "endLineno": 132,
                         "endColno": 35
                     }
                 ]
@@ -4579,57 +4928,57 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 5,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 8,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 10
                     },
                     {
                         "value": "1",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 12,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 12
                     },
                     {
                         "value": "food",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 14,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 17
                     },
                     {
                         "value": "item",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 19,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 22
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 24,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 28
                     },
                     {
                         "value": "bagel",
                         "type": "IDENTIFIER",
-                        "startLineno": 125,
+                        "startLineno": 133,
                         "startColno": 30,
-                        "endLineno": 125,
+                        "endLineno": 133,
                         "endColno": 34
                     }
                 ]
@@ -4639,49 +4988,49 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 126,
+                        "startLineno": 134,
                         "startColno": 5,
-                        "endLineno": 126,
+                        "endLineno": 134,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 126,
+                        "startLineno": 134,
                         "startColno": 8,
-                        "endLineno": 126,
+                        "endLineno": 134,
                         "endColno": 10
                     },
                     {
                         "value": "1",
                         "type": "IDENTIFIER",
-                        "startLineno": 126,
+                        "startLineno": 134,
                         "startColno": 12,
-                        "endLineno": 126,
+                        "endLineno": 134,
                         "endColno": 12
                     },
                     {
                         "value": "action",
                         "type": "IDENTIFIER",
-                        "startLineno": 126,
+                        "startLineno": 134,
                         "startColno": 14,
-                        "endLineno": 126,
+                        "endLineno": 134,
                         "endColno": 19
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 126,
+                        "startLineno": 134,
                         "startColno": 21,
-                        "endLineno": 126,
+                        "endLineno": 134,
                         "endColno": 25
                     },
                     {
                         "value": "terminate",
                         "type": "IDENTIFIER",
-                        "startLineno": 126,
+                        "startLineno": 134,
                         "startColno": 27,
-                        "endLineno": 126,
+                        "endLineno": 134,
                         "endColno": 35
                     }
                 ]
@@ -4691,49 +5040,49 @@
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
-                        "startLineno": 127,
+                        "startLineno": 135,
                         "startColno": 5,
-                        "endLineno": 127,
+                        "endLineno": 135,
                         "endColno": 6
                     },
                     {
                         "value": "has",
                         "type": "IDENTIFIER",
-                        "startLineno": 127,
+                        "startLineno": 135,
                         "startColno": 8,
-                        "endLineno": 127,
+                        "endLineno": 135,
                         "endColno": 10
                     },
                     {
                         "value": "1",
                         "type": "IDENTIFIER",
-                        "startLineno": 127,
+                        "startLineno": 135,
                         "startColno": 12,
-                        "endLineno": 127,
+                        "endLineno": 135,
                         "endColno": 12
                     },
                     {
                         "value": "action",
                         "type": "IDENTIFIER",
-                        "startLineno": 127,
+                        "startLineno": 135,
                         "startColno": 14,
-                        "endLineno": 127,
+                        "endLineno": 135,
                         "endColno": 19
                     },
                     {
                         "value": "named",
                         "type": "IDENTIFIER",
-                        "startLineno": 127,
+                        "startLineno": 135,
                         "startColno": 21,
-                        "endLineno": 127,
+                        "endLineno": 135,
                         "endColno": 25
                     },
                     {
                         "value": "checkout",
                         "type": "IDENTIFIER",
-                        "startLineno": 127,
+                        "startLineno": 135,
                         "startColno": 27,
-                        "endLineno": 127,
+                        "endLineno": 135,
                         "endColno": 34
                     }
                 ]

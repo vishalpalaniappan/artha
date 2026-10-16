@@ -45,15 +45,29 @@ present menu
 =================
 accept menu choice from the user
 =================
-      accept terminal input and store in menu_choice
+      accept input and store in user_input
+      If EOF is reached without data
+    then
+      present menu --> COMPOSITE MEANING
+      If keyboard interrupt is triggered
+    then
+      close store --> COMPOSITE MEANING
+
+
+=================
+close store
+=================
+      create message "Closing store
+      Gooddbye
+      " of type string and store in msg
+      display msg in terminal
 
 
 =================
 Barista presents the menu to the user
 =================
-      get formatted menu
-    then
-      display in terminal
+      get formatted menu and store in formatted_menu
+      display formatted_menu in terminal
 
 
 =================
