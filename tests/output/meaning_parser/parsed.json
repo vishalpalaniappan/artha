@@ -129,19 +129,17 @@
                         "startColno": 43,
                         "endLineno": 3,
                         "endColno": 45
-                    }
-                ],
-                {
-                    "value": "for",
-                    "type": "FUNCTIONAL",
-                    "startLineno": 3,
-                    "startColno": 47,
-                    "endLineno": 3,
-                    "endColno": 49
-                },
-                [
+                    },
                     {
-                        "value": "every",
+                        "value": "per",
+                        "type": "IDENTIFIER",
+                        "startLineno": 3,
+                        "startColno": 47,
+                        "endLineno": 3,
+                        "endColno": 49
+                    },
+                    {
+                        "value": "bagel",
                         "type": "IDENTIFIER",
                         "startLineno": 3,
                         "startColno": 51,
@@ -149,20 +147,12 @@
                         "endColno": 55
                     },
                     {
-                        "value": "bagel",
+                        "value": "bought)",
                         "type": "IDENTIFIER",
                         "startLineno": 3,
                         "startColno": 57,
                         "endLineno": 3,
-                        "endColno": 61
-                    },
-                    {
-                        "value": "bought)",
-                        "type": "IDENTIFIER",
-                        "startLineno": 3,
-                        "startColno": 63,
-                        "endLineno": 3,
-                        "endColno": 69
+                        "endColno": 63
                     }
                 ]
             ],
@@ -908,47 +898,55 @@
                 "endColno": 17
             },
             {
-                "value": "menu",
+                "value": "the",
                 "type": "IDENTIFIER",
                 "startLineno": 18,
                 "startColno": 19,
                 "endLineno": 18,
-                "endColno": 22
+                "endColno": 21
+            },
+            {
+                "value": "menu",
+                "type": "IDENTIFIER",
+                "startLineno": 18,
+                "startColno": 23,
+                "endLineno": 18,
+                "endColno": 26
             },
             {
                 "value": "choice",
                 "type": "IDENTIFIER",
                 "startLineno": 18,
-                "startColno": 24,
+                "startColno": 28,
                 "endLineno": 18,
-                "endColno": 29
+                "endColno": 33
             },
             {
                 "value": "from",
                 "type": "IDENTIFIER",
                 "startLineno": 18,
-                "startColno": 31,
+                "startColno": 35,
                 "endLineno": 18,
-                "endColno": 34
+                "endColno": 38
             },
             {
                 "value": "the",
                 "type": "IDENTIFIER",
                 "startLineno": 18,
-                "startColno": 36,
+                "startColno": 40,
                 "endLineno": 18,
-                "endColno": 38
+                "endColno": 42
             },
             {
                 "value": "user",
                 "type": "IDENTIFIER",
                 "startLineno": 18,
-                "startColno": 40,
+                "startColno": 44,
                 "endLineno": 18,
-                "endColno": 43
+                "endColno": 47
             }
         ],
-        "compositeMeaningSentence": "accept menu choice from the user",
+        "compositeMeaningSentence": "accept the menu choice from the user",
         "sentences": [
             [
                 [

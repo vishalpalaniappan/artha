@@ -153,15 +153,15 @@
             "endColno": 45
         },
         {
-            "value": "for",
-            "type": "FUNCTIONAL",
+            "value": "per",
+            "type": "IDENTIFIER",
             "startLineno": 3,
             "startColno": 47,
             "endLineno": 3,
             "endColno": 49
         },
         {
-            "value": "every",
+            "value": "bagel",
             "type": "IDENTIFIER",
             "startLineno": 3,
             "startColno": 51,
@@ -169,28 +169,20 @@
             "endColno": 55
         },
         {
-            "value": "bagel",
+            "value": "bought)",
             "type": "IDENTIFIER",
             "startLineno": 3,
             "startColno": 57,
             "endLineno": 3,
-            "endColno": 61
-        },
-        {
-            "value": "bought)",
-            "type": "IDENTIFIER",
-            "startLineno": 3,
-            "startColno": 63,
-            "endLineno": 3,
-            "endColno": 69
+            "endColno": 63
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 3,
-            "startColno": 70,
+            "startColno": 64,
             "endLineno": 3,
-            "endColno": 70
+            "endColno": 64
         },
         {
             "type": "HASH",
@@ -1025,52 +1017,60 @@
             "endColno": 17
         },
         {
-            "value": "menu",
+            "value": "the",
             "type": "IDENTIFIER",
             "startLineno": 18,
             "startColno": 19,
             "endLineno": 18,
-            "endColno": 22
+            "endColno": 21
+        },
+        {
+            "value": "menu",
+            "type": "IDENTIFIER",
+            "startLineno": 18,
+            "startColno": 23,
+            "endLineno": 18,
+            "endColno": 26
         },
         {
             "value": "choice",
             "type": "IDENTIFIER",
             "startLineno": 18,
-            "startColno": 24,
+            "startColno": 28,
             "endLineno": 18,
-            "endColno": 29
+            "endColno": 33
         },
         {
             "value": "from",
             "type": "IDENTIFIER",
             "startLineno": 18,
-            "startColno": 31,
+            "startColno": 35,
             "endLineno": 18,
-            "endColno": 34
+            "endColno": 38
         },
         {
             "value": "the",
             "type": "IDENTIFIER",
             "startLineno": 18,
-            "startColno": 36,
+            "startColno": 40,
             "endLineno": 18,
-            "endColno": 38
+            "endColno": 42
         },
         {
             "value": "user",
             "type": "IDENTIFIER",
             "startLineno": 18,
-            "startColno": 40,
+            "startColno": 44,
             "endLineno": 18,
-            "endColno": 43
+            "endColno": 47
         },
         {
             "type": "LBRACE",
             "value": "{",
             "startLineno": 18,
-            "startColno": 45,
+            "startColno": 49,
             "endLineno": 18,
-            "endColno": 45
+            "endColno": 49
         },
         {
             "value": "accept",
@@ -6244,19 +6244,17 @@
                             "startColno": 43,
                             "endLineno": 3,
                             "endColno": 45
-                        }
-                    ],
-                    {
-                        "value": "for",
-                        "type": "FUNCTIONAL",
-                        "startLineno": 3,
-                        "startColno": 47,
-                        "endLineno": 3,
-                        "endColno": 49
-                    },
-                    [
+                        },
                         {
-                            "value": "every",
+                            "value": "per",
+                            "type": "IDENTIFIER",
+                            "startLineno": 3,
+                            "startColno": 47,
+                            "endLineno": 3,
+                            "endColno": 49
+                        },
+                        {
+                            "value": "bagel",
                             "type": "IDENTIFIER",
                             "startLineno": 3,
                             "startColno": 51,
@@ -6264,20 +6262,12 @@
                             "endColno": 55
                         },
                         {
-                            "value": "bagel",
+                            "value": "bought)",
                             "type": "IDENTIFIER",
                             "startLineno": 3,
                             "startColno": 57,
                             "endLineno": 3,
-                            "endColno": 61
-                        },
-                        {
-                            "value": "bought)",
-                            "type": "IDENTIFIER",
-                            "startLineno": 3,
-                            "startColno": 63,
-                            "endLineno": 3,
-                            "endColno": 69
+                            "endColno": 63
                         }
                     ]
                 ],
@@ -7023,47 +7013,55 @@
                     "endColno": 17
                 },
                 {
-                    "value": "menu",
+                    "value": "the",
                     "type": "IDENTIFIER",
                     "startLineno": 18,
                     "startColno": 19,
                     "endLineno": 18,
-                    "endColno": 22
+                    "endColno": 21
+                },
+                {
+                    "value": "menu",
+                    "type": "IDENTIFIER",
+                    "startLineno": 18,
+                    "startColno": 23,
+                    "endLineno": 18,
+                    "endColno": 26
                 },
                 {
                     "value": "choice",
                     "type": "IDENTIFIER",
                     "startLineno": 18,
-                    "startColno": 24,
+                    "startColno": 28,
                     "endLineno": 18,
-                    "endColno": 29
+                    "endColno": 33
                 },
                 {
                     "value": "from",
                     "type": "IDENTIFIER",
                     "startLineno": 18,
-                    "startColno": 31,
+                    "startColno": 35,
                     "endLineno": 18,
-                    "endColno": 34
+                    "endColno": 38
                 },
                 {
                     "value": "the",
                     "type": "IDENTIFIER",
                     "startLineno": 18,
-                    "startColno": 36,
+                    "startColno": 40,
                     "endLineno": 18,
-                    "endColno": 38
+                    "endColno": 42
                 },
                 {
                     "value": "user",
                     "type": "IDENTIFIER",
                     "startLineno": 18,
-                    "startColno": 40,
+                    "startColno": 44,
                     "endLineno": 18,
-                    "endColno": 43
+                    "endColno": 47
                 }
             ],
-            "compositeMeaningSentence": "accept menu choice from the user",
+            "compositeMeaningSentence": "accept the menu choice from the user",
             "sentences": [
                 [
                     [
@@ -11732,19 +11730,17 @@
                                 "startColno": 43,
                                 "endLineno": 3,
                                 "endColno": 45
-                            }
-                        ],
-                        {
-                            "value": "for",
-                            "type": "FUNCTIONAL",
-                            "startLineno": 3,
-                            "startColno": 47,
-                            "endLineno": 3,
-                            "endColno": 49
-                        },
-                        [
+                            },
                             {
-                                "value": "every",
+                                "value": "per",
+                                "type": "IDENTIFIER",
+                                "startLineno": 3,
+                                "startColno": 47,
+                                "endLineno": 3,
+                                "endColno": 49
+                            },
+                            {
+                                "value": "bagel",
                                 "type": "IDENTIFIER",
                                 "startLineno": 3,
                                 "startColno": 51,
@@ -11752,20 +11748,12 @@
                                 "endColno": 55
                             },
                             {
-                                "value": "bagel",
+                                "value": "bought)",
                                 "type": "IDENTIFIER",
                                 "startLineno": 3,
                                 "startColno": 57,
                                 "endLineno": 3,
-                                "endColno": 61
-                            },
-                            {
-                                "value": "bought)",
-                                "type": "IDENTIFIER",
-                                "startLineno": 3,
-                                "startColno": 63,
-                                "endLineno": 3,
-                                "endColno": 69
+                                "endColno": 63
                             }
                         ]
                     ],
@@ -12511,47 +12499,55 @@
                         "endColno": 17
                     },
                     {
-                        "value": "menu",
+                        "value": "the",
                         "type": "IDENTIFIER",
                         "startLineno": 18,
                         "startColno": 19,
                         "endLineno": 18,
-                        "endColno": 22
+                        "endColno": 21
+                    },
+                    {
+                        "value": "menu",
+                        "type": "IDENTIFIER",
+                        "startLineno": 18,
+                        "startColno": 23,
+                        "endLineno": 18,
+                        "endColno": 26
                     },
                     {
                         "value": "choice",
                         "type": "IDENTIFIER",
                         "startLineno": 18,
-                        "startColno": 24,
+                        "startColno": 28,
                         "endLineno": 18,
-                        "endColno": 29
+                        "endColno": 33
                     },
                     {
                         "value": "from",
                         "type": "IDENTIFIER",
                         "startLineno": 18,
-                        "startColno": 31,
+                        "startColno": 35,
                         "endLineno": 18,
-                        "endColno": 34
+                        "endColno": 38
                     },
                     {
                         "value": "the",
                         "type": "IDENTIFIER",
                         "startLineno": 18,
-                        "startColno": 36,
+                        "startColno": 40,
                         "endLineno": 18,
-                        "endColno": 38
+                        "endColno": 42
                     },
                     {
                         "value": "user",
                         "type": "IDENTIFIER",
                         "startLineno": 18,
-                        "startColno": 40,
+                        "startColno": 44,
                         "endLineno": 18,
-                        "endColno": 43
+                        "endColno": 47
                     }
                 ],
-                "compositeMeaningSentence": "accept menu choice from the user",
+                "compositeMeaningSentence": "accept the menu choice from the user",
                 "sentences": [
                     [
                         [
@@ -16773,6 +16769,6 @@
                 ]
             }
         ],
-        "outputLog": "=================\ncoffee shop\n=================\n      # TODO : populate coffee shop\n      # Create basket with bagels (subtract one\n    for\n      every bagel bought)\n      # Create pot of coffee (contains 8 cups of coffee)\n      # Create Menu\n      present menu --> COMPOSITE MEANING\n\n\n=================\npresent menu\n=================\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user\n    if\n      the user selected coffee --> COMPOSITE MEANING\n    then\n      add coffee to cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user selected bagel --> COMPOSITE MEANING\n    then\n      add bagel to cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user terminated the transaction --> COMPOSITE MEANING\n    then\n      clear the cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n\n\n=================\naccept menu choice from the user\n=================\n      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n      # TODO : Add errors after extending primitive syntax\n      # EOF is reached without data : present menu\n      # keyboard interrupt is triggered : close store\n\n\n=================\nclose store\n=================\n      create message \"Closing store\n      Gooddbye\n      \" of type string and store in msg\n      display msg in terminal\n\n\n=================\nBarista presents the menu to the user\n=================\n      get formatted menu and store in formatted_menu\n      display formatted_menu in terminal\n\n\n=================\nthe user selected coffee\n=================\n      menu_choice equals \"coffee\" and store result in is_coffee --> PRIMITIVE MEANING: equal\n      resolve is_coffee\n\n\n=================\nthe user selected bagel\n=================\n      menu_choice equals \"bagel\" and store result in is_bagel --> PRIMITIVE MEANING: equal\n      resolve is_bagel\n\n\n=================\nthe user terminated the transaction\n=================\n      menu_choice equals \"terminate\" and store result in is_transaction --> PRIMITIVE MEANING: equal\n      resolve is_transaction\n\n\n=================\nthe user proceeded with the payment\n=================\n      menu_choice equals \"checkout\" and store result in is_payment --> PRIMITIVE MEANING: equal\n      resolve is_payment\n\n\n=================\nprocess payment\n=================\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n=================\ncalculate cost\n=================\n      set total_cost to 0 with type float\n    for\n      each item in cart add cost of [item] to total_cost\n\n\n=================\nadd cost of [item] to [total_cost]\n=================\n      get cost of [item] and store in item_cost\n      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n\n\n=================\nhand user the bill\n=================\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n=================\naccept payment from user\n=================\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n=================\nBagel\n=================\n      it is a class\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of bagel\" and \"get cost of bagel\" and \"get currency of bagel cost\"\n\n\n=================\nget cost of bagel\n=================\n      get attribute cost\n\n\n=================\nget type of bagel\n=================\n      get attribute type\n\n\n=================\nget currency of bagel cost\n=================\n      get attribute cost_currency\n\n\n=================\nCart\n=================\n      it is a list\n      it contains food item\n\n\n=================\nadd [food_item] to cart\n=================\n      insert [food_item] at end of cart\n\n\n=================\nclear the cart\n=================\n      remove all entires in cart\n\n\n=================\nCoffee\n=================\n      it is a class\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of coffee\" and \"get cost of coffee\" and \"get currency of coffee cost\"\n\n\n=================\nget cost of coffee\n=================\n      get attribute cost\n\n\n=================\nget type of coffee\n=================\n      get attribute type\n\n\n=================\nget currency of coffee cost\n=================\n      get attribute cost_currency\n\n\n=================\nMenu\n=================\n      it is a list\n      it contains food items and actions\n      it has 1 food item named coffee\n      it has 1 food item named bagel\n      it has 1 action named terminate\n      it has 1 action named checkout\n\n\n"
+        "outputLog": "=================\ncoffee shop\n=================\n      # TODO : populate coffee shop\n      # Create basket with bagels (subtract one per bagel bought)\n      # Create pot of coffee (contains 8 cups of coffee)\n      # Create Menu\n      present menu --> COMPOSITE MEANING\n\n\n=================\npresent menu\n=================\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user --> COMPOSITE MEANING\n    if\n      the user selected coffee --> COMPOSITE MEANING\n    then\n      add coffee to cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user selected bagel --> COMPOSITE MEANING\n    then\n      add bagel to cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user terminated the transaction --> COMPOSITE MEANING\n    then\n      clear the cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n\n\n=================\naccept the menu choice from the user\n=================\n      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n      # TODO : Add errors after extending primitive syntax\n      # EOF is reached without data : present menu\n      # keyboard interrupt is triggered : close store\n\n\n=================\nclose store\n=================\n      create message \"Closing store\n      Gooddbye\n      \" of type string and store in msg\n      display msg in terminal\n\n\n=================\nBarista presents the menu to the user\n=================\n      get formatted menu and store in formatted_menu\n      display formatted_menu in terminal\n\n\n=================\nthe user selected coffee\n=================\n      menu_choice equals \"coffee\" and store result in is_coffee --> PRIMITIVE MEANING: equal\n      resolve is_coffee\n\n\n=================\nthe user selected bagel\n=================\n      menu_choice equals \"bagel\" and store result in is_bagel --> PRIMITIVE MEANING: equal\n      resolve is_bagel\n\n\n=================\nthe user terminated the transaction\n=================\n      menu_choice equals \"terminate\" and store result in is_transaction --> PRIMITIVE MEANING: equal\n      resolve is_transaction\n\n\n=================\nthe user proceeded with the payment\n=================\n      menu_choice equals \"checkout\" and store result in is_payment --> PRIMITIVE MEANING: equal\n      resolve is_payment\n\n\n=================\nprocess payment\n=================\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n=================\ncalculate cost\n=================\n      set total_cost to 0 with type float\n    for\n      each item in cart add cost of [item] to total_cost\n\n\n=================\nadd cost of [item] to [total_cost]\n=================\n      get cost of [item] and store in item_cost\n      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n\n\n=================\nhand user the bill\n=================\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n=================\naccept payment from user\n=================\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n=================\nBagel\n=================\n      it is a class\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of bagel\" and \"get cost of bagel\" and \"get currency of bagel cost\"\n\n\n=================\nget cost of bagel\n=================\n      get attribute cost\n\n\n=================\nget type of bagel\n=================\n      get attribute type\n\n\n=================\nget currency of bagel cost\n=================\n      get attribute cost_currency\n\n\n=================\nCart\n=================\n      it is a list\n      it contains food item\n\n\n=================\nadd [food_item] to cart\n=================\n      insert [food_item] at end of cart\n\n\n=================\nclear the cart\n=================\n      remove all entires in cart\n\n\n=================\nCoffee\n=================\n      it is a class\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n      it has narratives \"get type of coffee\" and \"get cost of coffee\" and \"get currency of coffee cost\"\n\n\n=================\nget cost of coffee\n=================\n      get attribute cost\n\n\n=================\nget type of coffee\n=================\n      get attribute type\n\n\n=================\nget currency of coffee cost\n=================\n      get attribute cost_currency\n\n\n=================\nMenu\n=================\n      it is a list\n      it contains food items and actions\n      it has 1 food item named coffee\n      it has 1 food item named bagel\n      it has 1 action named terminate\n      it has 1 action named checkout\n\n\n"
     }
 }

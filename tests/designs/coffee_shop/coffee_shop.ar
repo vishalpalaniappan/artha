@@ -15,7 +15,7 @@ meaning of present menu {
     if the user proceeded with the payment, then process payment then present menu.
 }
 
-meaning of accept menu choice from the user {
+meaning of accept the menu choice from the user {
     accept terminal input and store in user_input.
 
     # TODO: Add errors after extending primitive syntax.

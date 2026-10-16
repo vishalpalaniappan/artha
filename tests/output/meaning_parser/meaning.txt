@@ -2,9 +2,7 @@
 coffee shop
 =================
       # TODO : populate coffee shop
-      # Create basket with bagels (subtract one
-    for
-      every bagel bought)
+      # Create basket with bagels (subtract one per bagel bought)
       # Create pot of coffee (contains 8 cups of coffee)
       # Create Menu
       present menu --> COMPOSITE MEANING
@@ -15,7 +13,7 @@ present menu
 =================
       Barista presents the menu to the user --> COMPOSITE MEANING
     then
-      accept the menu choice from the user
+      accept the menu choice from the user --> COMPOSITE MEANING
     if
       the user selected coffee --> COMPOSITE MEANING
     then
@@ -43,7 +41,7 @@ present menu
 
 
 =================
-accept menu choice from the user
+accept the menu choice from the user
 =================
       accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input
       # TODO : Add errors after extending primitive syntax
