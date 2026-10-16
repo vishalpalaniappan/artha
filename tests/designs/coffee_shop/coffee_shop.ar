@@ -1,6 +1,7 @@
 meaning of coffee shop {
     # TODO: populate coffee shop.
     # Create Menu.
+    # Create Cart.
     # Create Goodbye message.
 
     present menu.
