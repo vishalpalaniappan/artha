@@ -2,12 +2,8 @@
     "name": "terminal_input",
     "type": "legacy_primitive",
     "description":"Accepts and stores the input from terminal. This is a legacy primitive because the meaning stops at this layer (even though it is built from more primitives) but I am establishing it as a primitive because I haven't yet constructed this meaning from computable semantic primitives.",
-    "syntax_line": "prompt terminal with message [msg], accept input and store in [input]. If EOF is reached without data, then [eof_behavior]. If keyboard interrupt is triggered, then [keyboard_behavior]",
+    "syntax_line": "accept input and store in [input]. If EOF is reached without data, then [eof_behavior]. If keyboard interrupt is triggered, then [keyboard_behavior]",
     "participants": [
-        {
-            "name": "msg",
-            "required": "true"
-        },
         {
             "name": "save_input",
             "modifies": "true",

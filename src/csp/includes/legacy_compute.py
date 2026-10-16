@@ -1,6 +1,6 @@
-def terminal_input(msg):
+def terminal_input():
     try:
-        _input = input(msg)
+        _input = input("")
         return {
             "error": False,
             "value": _input
