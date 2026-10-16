@@ -3,6 +3,7 @@ meaning of coffee shop {
     # Create basket with bagels (subtract one per bagel bought).
     # Create pot of coffee (contains 8 cups of coffee).
     # Create Menu.
+    # Create Goodbye message.
 
     present menu.
 }
@@ -13,6 +14,7 @@ meaning of present menu {
     if the user selected bagel, then add bagel to cart then present menu.
     if the user terminated the transaction, then clear the cart then present menu.
     if the user proceeded with the payment, then process payment then present menu.
+    if the user decided to leave the store, then close the store.
 }
 
 meaning of accept the menu choice from the user {
@@ -23,9 +25,8 @@ meaning of accept the menu choice from the user {
     # keyboard interrupt is triggered: close store.
 }
 
-meaning of close store {
-    create message "Closing store. Gooddbye." of type string and store in msg.
-    display msg in terminal.
+meaning of close the store {
+    display goodbye_message in terminal.
 }
 
 meaning of Barista presents the menu to the user {
@@ -52,3 +53,9 @@ meaning of the user proceeded with the payment {
     menu_choice equals "checkout" and store result in is_payment.
     resolve is_payment.
 }
+
+meaning of the user decided to leave the store {
+    menu_choice equals "leave" and store result in is_leave.
+    resolve is_leave.
+}
+

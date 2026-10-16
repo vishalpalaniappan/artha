@@ -5,6 +5,7 @@ coffee shop
       # Create basket with bagels (subtract one per bagel bought)
       # Create pot of coffee (contains 8 cups of coffee)
       # Create Menu
+      # Create Goodbye message
       present menu --> COMPOSITE MEANING
 
 
@@ -38,6 +39,10 @@ present menu
       process payment --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
+    if
+      the user decided to leave the store --> COMPOSITE MEANING
+    then
+      close the store --> COMPOSITE MEANING
 
 
 =================
@@ -50,12 +55,9 @@ accept the menu choice from the user
 
 
 =================
-close store
+close the store
 =================
-      create message "Closing store
-      Gooddbye
-      " of type string and store in msg
-      display msg in terminal
+      display goodbye_message in terminal
 
 
 =================
@@ -91,6 +93,13 @@ the user proceeded with the payment
 =================
       menu_choice equals "checkout" and store result in is_payment --> PRIMITIVE MEANING: equal
       resolve is_payment
+
+
+=================
+the user decided to leave the store
+=================
+      menu_choice equals "leave" and store result in is_leave --> PRIMITIVE MEANING: equal
+      resolve is_leave
 
 
 =================
