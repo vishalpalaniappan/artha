@@ -115,7 +115,7 @@ export class MeaningProcessor {
                 const primitiveEntry = primitiveMeaning[index];
                 const parsedEntry = parsedMeaning[index];
                 
-                // If the primitive entry is an empty string, then it is invaid.
+                // If the primitive entry is an empty string, then it is invalid.
                 if (primitiveEntry.length === 0) {
                     throw Error("Parsed composite meaning token is invalid (string is empty).")
                 }
@@ -132,7 +132,6 @@ export class MeaningProcessor {
             }
 
             if (found) {
-                // console.log("Found primitive:", primitiveMeaningObj.name);
                 return primitiveMeaningObj;
             }
 
