@@ -16,5 +16,5 @@ Parsing meaning:
 Parsing sentences:
 
 - Split the sentence using functional tokens and the meaning that is involved.
-- For the meaning that composes the sentence, scan it to detemine if it is primitive meaning or it is composite meaning. 
+- For the meaning that composes the sentence, scan it to determine if it is primitive meaning or it is composite meaning. 
 - The scanning itself is done by first comparing the first node in the sentence to find candidates for the meaning. Then compare the rest of the sentence to find the match.
