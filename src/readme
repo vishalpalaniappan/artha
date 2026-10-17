@@ -1,0 +1,20 @@
+wip
+
+The current parser is an exploratory implementation, now that I have started to establish more of the meaning, I want to write it so that it uses a more modular structure for parsing. The output of the parser will serve two purposes:
+
+- It will allow the engine to reason about the meaning. 
+- It will allow the synthesis of the meaning into a program. 
+
+The first step will be parsing the meaning blocks using the established grammar. Then I will parse the meaning into sentences and then each sentence will be parsed into its composing meaning and/or functional tokens.
+
+Parsing meaning:
+
+- Split the file into meaning blocks.
+- Split each of the blocks into sentences.
+- Parse each sentence using the steps shown below.
+
+Parsing sentences:
+
+- Split the sentence using functional tokens and the meaning that is involved.
+- For the meaning that composes the sentence, scan it to determine if it is primitive meaning or it is composite meaning. 
+- The scanning itself is done by first comparing the first node in the sentence to find candidates for the meaning. Then compare the rest of the sentence to find the match.

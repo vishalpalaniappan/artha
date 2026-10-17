@@ -1,0 +1,23 @@
+meaning of process payment {
+    calculate cost then hand user the bill then accept payment from user.
+}
+
+meaning of calculate cost {
+    set total_cost to 0 with type float.
+    for each item in cart, add cost of [item] to total_cost.
+}
+
+meaning of add cost of [item] to [total_cost] {
+    get cost of [item] and store in item_cost.
+    add item_cost and [total_cost] and store result in [total_cost].
+}
+
+meaning of hand user the bill {
+    set user_prompt to "User owes [total_cost]" with type string.
+    prompt terminal with user_prompt.
+}
+
+meaning of accept payment from user {
+    # TODO: Verify payment amount.
+    accept user_payment from terminal.
+}

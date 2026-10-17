@@ -1,0 +1,31 @@
+{
+    "name": "artha",
+    "version": "0.0.0-dev",
+    "main": "dist/index.cjs",
+    "module": "dist/index.esm.js",
+    "type": "module",
+    "scripts": {
+        "build": "rollup -c",
+        "test": "rollup -c && vitest",
+        "test:watch": "rollup -c && vitest --watch",
+        "test:run": "rollup -c && vitest run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vishalpalaniappan/artha.git"
+    },
+    "author": "Vishal Palaniappan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vishalpalaniappan/artha/issues"
+    },
+    "homepage": "https://github.com/vishalpalaniappan/artha",
+    "devDependencies": {
+        "@rollup/plugin-dynamic-import-vars": "^2.1.5",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^16.0.3",
+        "dal-ast-js": "^0.0.21-dev",
+        "rollup": "^4.57.1",
+        "vitest": "^4.0.18"
+    }
+}
