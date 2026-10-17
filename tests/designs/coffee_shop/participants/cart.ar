@@ -1,15 +1,12 @@
-participant Cart {
+meaning of Cart {
+    it is a list.
+    it contains food item.
+}
 
-    meaning of Cart {
-        it is a list.
-        it contains food item.
-    }
+meaning of add [food_item] to cart {
+    insert [food_item] at end of cart.
+}
 
-    meaning of add [food_item] to cart {
-        insert [food_item] at end of cart.
-    }
-
-    meaning of clear the cart {
-        remove all entires in cart.
-    }
+meaning of clear the cart {
+    remove all entires in cart.
 }

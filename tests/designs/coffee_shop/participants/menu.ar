@@ -1,18 +1,14 @@
-participant Menu {
+meaning of Menu {
+    it is a list.
+    it contains food items and actions. 
+    it has 1 food item named coffee.
+    it has 1 food item named bagel.
+    it has 1 action named clear.
+    it has 1 action named checkout.
+}
 
-    meaning of Menu {
-        it is a list.
-        it contains food items and actions. 
-        it has 1 food item named coffee.
-        it has 1 food item named bagel.
-        it has 1 action named clear.
-        it has 1 action named checkout.
-    }
-
-    meaning of get formatted menu {
-        # Simple menu for now, I have not added escaped strings and new lines yet.
-        set formatted_menu to "Choose from: coffee, bagel, clear, pay, leave" with type string.
-        resolve formatted_menu.
-    }
-
+get formatted menu {
+    # Simple menu for now, I have not added escaped strings and new lines yet.
+    set formatted_menu to "Choose from: coffee, bagel, clear, pay, leave" with type string.
+    resolve formatted_menu.
 }

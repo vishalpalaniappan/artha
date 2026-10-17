@@ -2,8 +2,9 @@
 coffee shop
 =================
       # TODO : populate coffee shop
+      # Create basket with bagels (subtract one per bagel bought)
+      # Create pot of coffee (contains 8 cups of coffee)
       # Create Menu
-      # Create Cart
       # Create Goodbye message
       present menu --> COMPOSITE MEANING
 
@@ -17,19 +18,19 @@ present menu
     if
       the user selected coffee --> COMPOSITE MEANING
     then
-      add coffee to cart
+      add coffee to cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
       the user selected bagel --> COMPOSITE MEANING
     then
-      add bagel to cart
+      add bagel to cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user cleared the transaction --> COMPOSITE MEANING
+      the user terminated the transaction --> COMPOSITE MEANING
     then
-      clear the cart
+      clear the cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
@@ -81,10 +82,10 @@ the user selected bagel
 
 
 =================
-the user cleared the transaction
+the user terminated the transaction
 =================
-      menu_choice equals "clear" and store result in is_clear --> PRIMITIVE MEANING: equal
-      resolve is_clear
+      menu_choice equals "terminate" and store result in is_transaction --> PRIMITIVE MEANING: equal
+      resolve is_transaction
 
 
 =================
@@ -138,5 +139,93 @@ accept payment from user
 =================
       # TODO : Verify payment amount
       accept user_payment from terminal
+
+
+=================
+Bagel
+=================
+      it is a class
+      it has three attributes
+      it has an attribute named type that is a string and has a value of "food item"
+      it has an attribute named cost which is a float and has a value of 2 00
+      it has an attribute named cost_currency which is a string and has a value of "CAD"
+      it has narratives "get type of bagel" and "get cost of bagel" and "get currency of bagel cost"
+
+
+=================
+get cost of bagel
+=================
+      get attribute cost
+
+
+=================
+get type of bagel
+=================
+      get attribute type
+
+
+=================
+get currency of bagel cost
+=================
+      get attribute cost_currency
+
+
+=================
+Cart
+=================
+      it is a list
+      it contains food item
+
+
+=================
+add [food_item] to cart
+=================
+      insert [food_item] at end of cart
+
+
+=================
+clear the cart
+=================
+      remove all entires in cart
+
+
+=================
+Coffee
+=================
+      it is a class
+      it has three attributes
+      it has an attribute named type that is a string and has a value of "food item"
+      it has an attribute named cost which is a float and has a value of 1 00
+      it has an attribute named cost_currency which is a string and has a value of "CAD"
+      it has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost"
+
+
+=================
+get cost of coffee
+=================
+      get attribute cost
+
+
+=================
+get type of coffee
+=================
+      get attribute type
+
+
+=================
+get currency of coffee cost
+=================
+      get attribute cost_currency
+
+
+=================
+Menu
+=================
+      it is a list
+      it contains food items and actions
+      it has 1 food item named coffee
+      it has 1 food item named bagel
+      it has 1 action named terminate
+      it has 1 action named checkout
 
 

@@ -13,9 +13,6 @@ let FUNCTIONAL_IDENTIFIERS = [
     },
     {
         name: "for"
-    },
-    {
-        name: "participant"
     }
 ]
 FUNCTIONAL_IDENTIFIERS = Object.freeze(FUNCTIONAL_IDENTIFIERS);
