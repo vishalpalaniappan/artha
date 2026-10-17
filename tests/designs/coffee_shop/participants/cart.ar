@@ -3,10 +3,12 @@ meaning of Cart {
     it contains food item.
 }
 
-meaning of add [food_item] to cart {
-    insert [food_item] at end of cart.
+meaning of add [food_item] to Cart {
+    # Cart only contains food item, so there is an invariant that the item being inserted has to be of type food item.
+    insert [food_item] at end of Cart.
 }
 
-meaning of clear the cart {
-    remove all entires in cart.
+meaning of clear the Cart {
+    # This is primitive that removes all the entries in the cart.
+    remove all entires in Cart.
 }
