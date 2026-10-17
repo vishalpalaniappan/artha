@@ -26,6 +26,10 @@ export class MeaningProcessor {
 
     run() {
         for (const meaning of this.arthaParsed) {
+
+            // TODO: Temporary, because participant meaning is nested, will revert this soon.
+            if (meaning.type === "participant") continue;
+
             const compositeSentence = meaning.compositeMeaningSentence;
 
             this.outputLog += "=================" + "\n";
@@ -67,6 +71,10 @@ export class MeaningProcessor {
 
     findCompositeMeaning(parsedMeaning) {
         for (const compositeMeaningObj of this.arthaParsed) {
+            
+            // TODO: Temporary, because participant meaning is nested, will revert this soon.
+            if (compositeMeaningObj.type === "participant") continue;
+
             const compositeMeaning = compositeMeaningObj.compositeMeaningArray;
 
             // Compare the parsedMeaning with the compositeMeaning
@@ -102,6 +110,10 @@ export class MeaningProcessor {
 
     findPrimitiveMeaning(parsedMeaning) {
         for (const primitiveMeaningObj of this.primitives) {
+            
+            // TODO: Temporary, because participant meaning is nested, will revert this soon.
+            if (primitiveMeaningObj.type === "participant") continue;
+
             // Compare the parsedMeaning with the primitiveMeaning
             const primitiveMeaning = primitiveMeaningObj.syntax_line.split(" ");
             

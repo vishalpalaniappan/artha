@@ -14,6 +14,7 @@ export class ArthaParser {
     constructor (tokens, primitives) {
         this.tokens = tokens;
         this.grouped = [];
+        this.stack = [];
         this.processTokens();
         this.processedMeaning = new MeaningProcessor(this.grouped, primitives);
     }
@@ -25,10 +26,45 @@ export class ArthaParser {
         this.currPos = 0;
         do {
             const token = this.tokens[this.currPos];
+
+            if (token.type === "FUNCTIONAL" && token.value === "participant") {
+                // Participant block begins
+                this.beginParticipant();
+                continue;
+            }
+
             if (token.type === "FUNCTIONAL" && token.value === "meaning") {
                 this.processMeaning();
+                continue;
             }
+            
+            if (token.type === "RBRACE") {
+                // Participant block ends
+                this.grouped.push(this.stack.pop());
+                continue;
+            }
+
         } while (++this.currPos < this.tokens.length);
+    }
+
+
+    /**
+     * Begin the participant.
+     * 
+     */
+    beginParticipant() {
+        const participant = this.tokens[++this.currPos].value;
+
+        const token = this.tokens[++this.currPos];        
+        if (token.type === "LBRACE") {
+            this.stack.push({
+                type: "participant",
+                participant: participant,
+                meaning: []
+            })
+        } else {
+            throw Error("Expected LBRACE to block participant.")
+        }
     }
 
     /**
@@ -104,14 +140,20 @@ export class ArthaParser {
             }
         }
 
-        // Save the grouped meaning
-        this.grouped.push(
-            {
-                compositeMeaningArray: compositeMeaningArray,
-                compositeMeaningSentence: compositeMeaningSentence,
-                sentences: sentences
-            }
-        )
+        const meaning = {
+            type: "meaning",
+            compositeMeaningArray: compositeMeaningArray,
+            compositeMeaningSentence: compositeMeaningSentence,
+            sentences: sentences
+        }
+        
+        // If we are inside participant block, add it to blocks meaning.
+        if (this.stack.length > 0) {
+            // Currently only supports one nested block
+            this.stack[0].meaning.push(meaning)
+        } else {
+            this.grouped.push(meaning)
+        }
     }
 
     /**
