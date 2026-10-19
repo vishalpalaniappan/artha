@@ -1,6 +1,6 @@
 meaning of coffee shop {
-    contains Menu.
-    contains Cart.
+    add Menu to world.
+    add Cart to world.
     present menu.
 }
 

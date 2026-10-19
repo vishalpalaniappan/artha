@@ -2,8 +2,18 @@ meaning of process payment {
     calculate cost then hand user the bill then accept payment from user.
 }
 
+meaning of total_cost {
+    it has structural type float.
+    it has role type accumulated_cost.
+}
+
+meaning of initialize cost {
+    set total_cost to zero.
+}
+
 meaning of calculate cost {
-    set total_cost to 0 with type float.
+    add total_cost to world.
+    initialize cost.
     for each item in cart, add cost of [item] to total_cost.
 }
 
