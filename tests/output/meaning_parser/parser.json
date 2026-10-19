@@ -18431,7 +18431,10 @@
         "output": {
             "coffee shop": [
                 [],
-                []
+                [],
+                [
+                    "      present menu --> COMPOSITE MEANING"
+                ]
             ],
             "present menu": [
                 [
@@ -18449,57 +18452,9 @@
                 ],
                 [
                     "if",
-                    "      the user selected Coffee --> COMPOSITE MEANING",
-                    "then",
-                    "      add Coffee to Cart --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user selected Coffee --> COMPOSITE MEANING",
-                    "then",
-                    "      add Coffee to Cart --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
                     "      the user selected Bagel --> COMPOSITE MEANING",
                     "then",
                     "      add Bagel to Cart --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user selected Bagel --> COMPOSITE MEANING",
-                    "then",
-                    "      add Bagel to Cart --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user selected Bagel --> COMPOSITE MEANING",
-                    "then",
-                    "      add Bagel to Cart --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user cleared the transaction --> COMPOSITE MEANING",
-                    "then",
-                    "      clear the Cart --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user cleared the transaction --> COMPOSITE MEANING",
-                    "then",
-                    "      clear the Cart --> COMPOSITE MEANING",
                     "then",
                     "      present menu --> COMPOSITE MEANING"
                 ],
@@ -18518,28 +18473,6 @@
                     "      process payment --> COMPOSITE MEANING",
                     "then",
                     "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user proceeded with the payment --> COMPOSITE MEANING",
-                    "then",
-                    "      process payment --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user proceeded with the payment --> COMPOSITE MEANING",
-                    "then",
-                    "      process payment --> COMPOSITE MEANING",
-                    "then",
-                    "      present menu --> COMPOSITE MEANING"
-                ],
-                [
-                    "if",
-                    "      the user decided to leave the store --> COMPOSITE MEANING",
-                    "then",
-                    "      close the store --> COMPOSITE MEANING"
                 ],
                 [
                     "if",
@@ -18549,15 +18482,29 @@
                 ]
             ],
             "accept the menu choice from the user": [
+                [
+                    "      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n"
+                ],
                 [],
                 [],
                 []
             ],
-            "close the store": [],
+            "close the store": [
+                [
+                    "      display goodbye_message in terminal --> PRIMITIVE MEANING: display_terminal\n"
+                ]
+            ],
             "Barista presents the menu to the user": [
-                []
+                [],
+                [
+                    "      display formatted_menu in terminal --> PRIMITIVE MEANING: display_terminal\n"
+                ]
             ],
-            "the user selected Coffee": [],
+            "the user selected Coffee": [
+                [
+                    "      menu_choice equals \"coffee\" --> PRIMITIVE MEANING: equal\n"
+                ]
+            ],
             "the user selected Bagel": [
                 [
                     "resolve",
@@ -18589,13 +18536,6 @@
                     "      hand user the bill --> COMPOSITE MEANING",
                     "then",
                     "      accept payment from user --> COMPOSITE MEANING"
-                ],
-                [
-                    "      calculate cost --> COMPOSITE MEANING",
-                    "then",
-                    "      hand user the bill --> COMPOSITE MEANING",
-                    "then",
-                    "      accept payment from user --> COMPOSITE MEANING"
                 ]
             ],
             "total_cost": [
@@ -18608,14 +18548,17 @@
             "calculate cost": [
                 [],
                 [
-                    "for"
+                    "      initialize cost --> COMPOSITE MEANING"
                 ],
                 [
                     "for"
                 ]
             ],
             "add cost of [item] to [total_cost]": [
-                []
+                [],
+                [
+                    "      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n"
+                ]
             ],
             "hand user the bill": [
                 [],
@@ -18636,23 +18579,14 @@
             "get cost of bagel": [
                 [
                     "resolve"
-                ],
-                [
-                    "resolve"
                 ]
             ],
             "get type of bagel": [
                 [
                     "resolve"
-                ],
-                [
-                    "resolve"
                 ]
             ],
             "get currency of bagel cost": [
-                [
-                    "resolve"
-                ],
                 [
                     "resolve"
                 ]
@@ -18686,23 +18620,14 @@
             "get cost of coffee": [
                 [
                     "resolve"
-                ],
-                [
-                    "resolve"
                 ]
             ],
             "get type of coffee": [
                 [
                     "resolve"
-                ],
-                [
-                    "resolve"
                 ]
             ],
             "get currency of coffee cost": [
-                [
-                    "resolve"
-                ],
                 [
                     "resolve"
                 ]

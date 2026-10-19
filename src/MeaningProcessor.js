@@ -66,8 +66,8 @@ export class MeaningProcessor {
                         // Not composite or primitive meaning, meaning is missing
                         this.outputLog += joinStr + "\n";
                     } 
-                    this.output[compositeSentence].push(sentenceMeaning);
                 }
+                this.output[compositeSentence].push(sentenceMeaning);
             }
             this.outputLog += "\n\n";
         }
