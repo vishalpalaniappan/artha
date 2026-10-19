@@ -1,5 +1,5 @@
 {
     "primitives": [
-        "terminal_input"
+        "terminal_input", "display_terminal"
     ]
 }

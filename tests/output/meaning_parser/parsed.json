@@ -23,40 +23,40 @@
             [
                 [
                     {
-                        "value": "add",
+                        "value": "contains",
                         "type": "IDENTIFIER",
                         "startLineno": 2,
                         "startColno": 5,
                         "endLineno": 2,
-                        "endColno": 7
+                        "endColno": 12
                     },
                     {
                         "value": "Menu",
                         "type": "IDENTIFIER",
                         "startLineno": 2,
-                        "startColno": 9,
+                        "startColno": 14,
                         "endLineno": 2,
-                        "endColno": 12
+                        "endColno": 17
                     }
                 ]
             ],
             [
                 [
                     {
-                        "value": "add",
+                        "value": "contains",
                         "type": "IDENTIFIER",
                         "startLineno": 3,
                         "startColno": 5,
                         "endLineno": 3,
-                        "endColno": 7
+                        "endColno": 12
                     },
                     {
                         "value": "Cart",
                         "type": "IDENTIFIER",
                         "startLineno": 3,
-                        "startColno": 9,
+                        "startColno": 14,
                         "endLineno": 3,
-                        "endColno": 12
+                        "endColno": 17
                     }
                 ]
             ],

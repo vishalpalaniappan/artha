@@ -41,52 +41,52 @@
             "endColno": 24
         },
         {
-            "value": "add",
+            "value": "contains",
             "type": "IDENTIFIER",
             "startLineno": 2,
             "startColno": 5,
             "endLineno": 2,
-            "endColno": 7
+            "endColno": 12
         },
         {
             "value": "Menu",
             "type": "IDENTIFIER",
             "startLineno": 2,
-            "startColno": 9,
+            "startColno": 14,
             "endLineno": 2,
-            "endColno": 12
+            "endColno": 17
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 2,
-            "startColno": 13,
+            "startColno": 18,
             "endLineno": 2,
-            "endColno": 13
+            "endColno": 18
         },
         {
-            "value": "add",
+            "value": "contains",
             "type": "IDENTIFIER",
             "startLineno": 3,
             "startColno": 5,
             "endLineno": 3,
-            "endColno": 7
+            "endColno": 12
         },
         {
             "value": "Cart",
             "type": "IDENTIFIER",
             "startLineno": 3,
-            "startColno": 9,
+            "startColno": 14,
             "endLineno": 3,
-            "endColno": 12
+            "endColno": 17
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 3,
-            "startColno": 13,
+            "startColno": 18,
             "endLineno": 3,
-            "endColno": 13
+            "endColno": 18
         },
         {
             "value": "present",
@@ -6370,40 +6370,40 @@
                 [
                     [
                         {
-                            "value": "add",
+                            "value": "contains",
                             "type": "IDENTIFIER",
                             "startLineno": 2,
                             "startColno": 5,
                             "endLineno": 2,
-                            "endColno": 7
+                            "endColno": 12
                         },
                         {
                             "value": "Menu",
                             "type": "IDENTIFIER",
                             "startLineno": 2,
-                            "startColno": 9,
+                            "startColno": 14,
                             "endLineno": 2,
-                            "endColno": 12
+                            "endColno": 17
                         }
                     ]
                 ],
                 [
                     [
                         {
-                            "value": "add",
+                            "value": "contains",
                             "type": "IDENTIFIER",
                             "startLineno": 3,
                             "startColno": 5,
                             "endLineno": 3,
-                            "endColno": 7
+                            "endColno": 12
                         },
                         {
                             "value": "Cart",
                             "type": "IDENTIFIER",
                             "startLineno": 3,
-                            "startColno": 9,
+                            "startColno": 14,
                             "endLineno": 3,
-                            "endColno": 12
+                            "endColno": 17
                         }
                     ]
                 ],
@@ -11809,6 +11809,20 @@
                 "invariants": {},
                 "_note": "This primitive throws an EOFError and Keyboard Interrupt error. EOFError can be triggered by using CTRL+D in unix environments and Ctrl+Z followed by Enter in windows. Keyboard interrupts happen when Ctrl + C is used to terminate program in console. The meaning of these errors are built into the primitive and as part of the narrative that uses them the relevant behavior that should be exhibited can be specified. So in the synthesized implementation, I will throw the errors and then the specified meaning is used.",
                 "_note2": "I will extend the syntax for the errors and update the syntax_line after I implement the necessary functionality."
+            },
+            {
+                "name": "display_terminal",
+                "type": "legacy_primitives",
+                "description": "Displays the provided text in the console.",
+                "syntax_line": "display [message] in terminal",
+                "participants": [
+                    {
+                        "name": "message",
+                        "required": "true"
+                    }
+                ],
+                "invariants": {},
+                "_note": "The implementation will throw if message combines multiple types. I have not exhausted all the possible issues and I'm leaving this note to revisit this and also specify the invariants."
             }
         ],
         "arthaParsed": [
@@ -11836,40 +11850,40 @@
                     [
                         [
                             {
-                                "value": "add",
+                                "value": "contains",
                                 "type": "IDENTIFIER",
                                 "startLineno": 2,
                                 "startColno": 5,
                                 "endLineno": 2,
-                                "endColno": 7
+                                "endColno": 12
                             },
                             {
                                 "value": "Menu",
                                 "type": "IDENTIFIER",
                                 "startLineno": 2,
-                                "startColno": 9,
+                                "startColno": 14,
                                 "endLineno": 2,
-                                "endColno": 12
+                                "endColno": 17
                             }
                         ]
                     ],
                     [
                         [
                             {
-                                "value": "add",
+                                "value": "contains",
                                 "type": "IDENTIFIER",
                                 "startLineno": 3,
                                 "startColno": 5,
                                 "endLineno": 3,
-                                "endColno": 7
+                                "endColno": 12
                             },
                             {
                                 "value": "Cart",
                                 "type": "IDENTIFIER",
                                 "startLineno": 3,
-                                "startColno": 9,
+                                "startColno": 14,
                                 "endLineno": 3,
-                                "endColno": 12
+                                "endColno": 17
                             }
                         ]
                     ],
@@ -16961,6 +16975,6 @@
                 ]
             }
         ],
-        "outputLog": "=================\ncoffee shop\n=================\n      add Menu\n      add Cart\n      present menu --> COMPOSITE MEANING\n\n\n=================\npresent menu\n=================\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user --> COMPOSITE MEANING\n    if\n      the user selected Coffee --> COMPOSITE MEANING\n    then\n      add Coffee to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user selected Bagel --> COMPOSITE MEANING\n    then\n      add Bagel to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user cleared the transaction --> COMPOSITE MEANING\n    then\n      clear the Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user decided to leave the store --> COMPOSITE MEANING\n    then\n      close the store --> COMPOSITE MEANING\n\n\n=================\naccept the menu choice from the user\n=================\n      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n      # TODO : Add errors after extending primitive syntax\n      # EOF is reached without data : present menu\n      # keyboard interrupt is triggered : close store\n\n\n=================\nclose the store\n=================\n      display goodbye_message in terminal\n\n\n=================\nBarista presents the menu to the user\n=================\n      get formatted menu and store in formatted_menu\n      display formatted_menu in terminal\n\n\n=================\nthe user selected Coffee\n=================\n      menu_choice equals \"coffee\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user selected Bagel\n=================\n    resolve\n      menu_choice equals \"bagel\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user cleared the transaction\n=================\n    resolve\n      menu_choice equals \"clear\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user proceeded with the payment\n=================\n    resolve\n      menu_choice equals \"checkout\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user decided to leave the store\n=================\n    resolve\n      menu_choice equals \"leave\" --> PRIMITIVE MEANING: equal\n\n\n=================\nprocess payment\n=================\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n=================\ncalculate cost\n=================\n      set total_cost to 0 with type float\n    for\n      each item in cart add cost of [item] to total_cost\n\n\n=================\nadd cost of [item] to [total_cost]\n=================\n      get cost of [item] and store in item_cost\n      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n\n\n=================\nhand user the bill\n=================\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n=================\naccept payment from user\n=================\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n=================\nBagel\n=================\n      it is an object\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n\n\n=================\nget cost of bagel\n=================\n    resolve\n      attribute cost of Bagel\n\n\n=================\nget type of bagel\n=================\n    resolve\n      attribute type of Bagel\n\n\n=================\nget currency of bagel cost\n=================\n    resolve\n      attribute cost_currency of Bagel\n\n\n=================\nCart\n=================\n      it is a list of food item(s)\n\n\n=================\nadd Coffee to Cart\n=================\n      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item\n      insert Coffee at end of Cart\n\n\n=================\nadd Bagel to Cart\n=================\n      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item\n      insert Bagel at end of Cart\n\n\n=================\nclear the Cart\n=================\n      # This is primitive that removes all the entries in the cart\n      remove all entires in Cart\n\n\n=================\nCoffee\n=================\n      it is an object\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n\n\n=================\nget cost of coffee\n=================\n    resolve\n      attribute cost of Coffee\n\n\n=================\nget type of coffee\n=================\n    resolve\n      attribute type of Coffee\n\n\n=================\nget currency of coffee cost\n=================\n    resolve\n      attribute cost_currency of Coffee\n\n\n=================\nMenu\n=================\n      it is a list of option(s)\n      it has 1 option named Coffee\n      it has 1 option named Bagel\n      it has 1 option named Clear Cart\n      it has 1 action named Checkout\n\n\n"
+        "outputLog": "=================\ncoffee shop\n=================\n      contains Menu\n      contains Cart\n      present menu --> COMPOSITE MEANING\n\n\n=================\npresent menu\n=================\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user --> COMPOSITE MEANING\n    if\n      the user selected Coffee --> COMPOSITE MEANING\n    then\n      add Coffee to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user selected Bagel --> COMPOSITE MEANING\n    then\n      add Bagel to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user cleared the transaction --> COMPOSITE MEANING\n    then\n      clear the Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user decided to leave the store --> COMPOSITE MEANING\n    then\n      close the store --> COMPOSITE MEANING\n\n\n=================\naccept the menu choice from the user\n=================\n      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n      # TODO : Add errors after extending primitive syntax\n      # EOF is reached without data : present menu\n      # keyboard interrupt is triggered : close store\n\n\n=================\nclose the store\n=================\n      display goodbye_message in terminal --> PRIMITIVE MEANING: display_terminal\n\n\n=================\nBarista presents the menu to the user\n=================\n      get formatted menu and store in formatted_menu\n      display formatted_menu in terminal --> PRIMITIVE MEANING: display_terminal\n\n\n=================\nthe user selected Coffee\n=================\n      menu_choice equals \"coffee\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user selected Bagel\n=================\n    resolve\n      menu_choice equals \"bagel\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user cleared the transaction\n=================\n    resolve\n      menu_choice equals \"clear\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user proceeded with the payment\n=================\n    resolve\n      menu_choice equals \"checkout\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user decided to leave the store\n=================\n    resolve\n      menu_choice equals \"leave\" --> PRIMITIVE MEANING: equal\n\n\n=================\nprocess payment\n=================\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n=================\ncalculate cost\n=================\n      set total_cost to 0 with type float\n    for\n      each item in cart add cost of [item] to total_cost\n\n\n=================\nadd cost of [item] to [total_cost]\n=================\n      get cost of [item] and store in item_cost\n      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n\n\n=================\nhand user the bill\n=================\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n=================\naccept payment from user\n=================\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n=================\nBagel\n=================\n      it is an object\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 2 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n\n\n=================\nget cost of bagel\n=================\n    resolve\n      attribute cost of Bagel\n\n\n=================\nget type of bagel\n=================\n    resolve\n      attribute type of Bagel\n\n\n=================\nget currency of bagel cost\n=================\n    resolve\n      attribute cost_currency of Bagel\n\n\n=================\nCart\n=================\n      it is a list of food item(s)\n\n\n=================\nadd Coffee to Cart\n=================\n      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item\n      insert Coffee at end of Cart\n\n\n=================\nadd Bagel to Cart\n=================\n      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item\n      insert Bagel at end of Cart\n\n\n=================\nclear the Cart\n=================\n      # This is primitive that removes all the entries in the cart\n      remove all entires in Cart\n\n\n=================\nCoffee\n=================\n      it is an object\n      it has three attributes\n      it has an attribute named type that is a string and has a value of \"food item\"\n      it has an attribute named cost which is a float and has a value of 1 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n\n\n=================\nget cost of coffee\n=================\n    resolve\n      attribute cost of Coffee\n\n\n=================\nget type of coffee\n=================\n    resolve\n      attribute type of Coffee\n\n\n=================\nget currency of coffee cost\n=================\n    resolve\n      attribute cost_currency of Coffee\n\n\n=================\nMenu\n=================\n      it is a list of option(s)\n      it has 1 option named Coffee\n      it has 1 option named Bagel\n      it has 1 option named Clear Cart\n      it has 1 action named Checkout\n\n\n"
     }
 }

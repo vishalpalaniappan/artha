@@ -1,8 +1,8 @@
 =================
 coffee shop
 =================
-      add Menu
-      add Cart
+      contains Menu
+      contains Cart
       present menu --> COMPOSITE MEANING
 
 
@@ -54,14 +54,14 @@ accept the menu choice from the user
 =================
 close the store
 =================
-      display goodbye_message in terminal
+      display goodbye_message in terminal --> PRIMITIVE MEANING: display_terminal
 
 
 =================
 Barista presents the menu to the user
 =================
       get formatted menu and store in formatted_menu
-      display formatted_menu in terminal
+      display formatted_menu in terminal --> PRIMITIVE MEANING: display_terminal
 
 
 =================
