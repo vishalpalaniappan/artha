@@ -2,7 +2,7 @@
     "name": "equal",
     "type": "primitive",
     "description":"Checks for equality between two participants and stores result in result",
-    "syntax_line": "[val1] equals [val2] and store result in [equalResult]",
+    "syntax_line": "[val1] equals [val2]",
     "participants": [
         {
             "name": "val1",

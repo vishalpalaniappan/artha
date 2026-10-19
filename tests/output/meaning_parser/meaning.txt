@@ -1,11 +1,8 @@
 =================
 coffee shop
 =================
-      # TODO : populate coffee shop
-      # Create basket with bagels (subtract one per bagel bought)
-      # Create pot of coffee (contains 8 cups of coffee)
-      # Create Menu
-      # Create Goodbye message
+      add Menu
+      add Cart
       present menu --> COMPOSITE MEANING
 
 
@@ -16,21 +13,21 @@ present menu
     then
       accept the menu choice from the user --> COMPOSITE MEANING
     if
-      the user selected coffee --> COMPOSITE MEANING
+      the user selected Coffee --> COMPOSITE MEANING
     then
-      add coffee to cart --> COMPOSITE MEANING
-    then
-      present menu --> COMPOSITE MEANING
-    if
-      the user selected bagel --> COMPOSITE MEANING
-    then
-      add bagel to cart --> COMPOSITE MEANING
+      add Coffee to Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user terminated the transaction --> COMPOSITE MEANING
+      the user selected Bagel --> COMPOSITE MEANING
     then
-      clear the cart --> COMPOSITE MEANING
+      add Bagel to Cart --> COMPOSITE MEANING
+    then
+      present menu --> COMPOSITE MEANING
+    if
+      the user cleared the transaction --> COMPOSITE MEANING
+    then
+      clear the Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
@@ -68,38 +65,37 @@ Barista presents the menu to the user
 
 
 =================
-the user selected coffee
+the user selected Coffee
 =================
-      menu_choice equals "coffee" and store result in is_coffee --> PRIMITIVE MEANING: equal
-      resolve is_coffee
+      menu_choice equals "coffee" --> PRIMITIVE MEANING: equal
 
 
 =================
-the user selected bagel
+the user selected Bagel
 =================
-      menu_choice equals "bagel" and store result in is_bagel --> PRIMITIVE MEANING: equal
-      resolve is_bagel
+    resolve
+      menu_choice equals "bagel" --> PRIMITIVE MEANING: equal
 
 
 =================
-the user terminated the transaction
+the user cleared the transaction
 =================
-      menu_choice equals "terminate" and store result in is_transaction --> PRIMITIVE MEANING: equal
-      resolve is_transaction
+    resolve
+      menu_choice equals "clear" --> PRIMITIVE MEANING: equal
 
 
 =================
 the user proceeded with the payment
 =================
-      menu_choice equals "checkout" and store result in is_payment --> PRIMITIVE MEANING: equal
-      resolve is_payment
+    resolve
+      menu_choice equals "checkout" --> PRIMITIVE MEANING: equal
 
 
 =================
 the user decided to leave the store
 =================
-      menu_choice equals "leave" and store result in is_leave --> PRIMITIVE MEANING: equal
-      resolve is_leave
+    resolve
+      menu_choice equals "leave" --> PRIMITIVE MEANING: equal
 
 
 =================
@@ -144,88 +140,99 @@ accept payment from user
 =================
 Bagel
 =================
-      it is a class
+      it is an object
       it has three attributes
       it has an attribute named type that is a string and has a value of "food item"
       it has an attribute named cost which is a float and has a value of 2 00
       it has an attribute named cost_currency which is a string and has a value of "CAD"
-      it has narratives "get type of bagel" and "get cost of bagel" and "get currency of bagel cost"
 
 
 =================
 get cost of bagel
 =================
-      get attribute cost
+    resolve
+      attribute cost of Bagel
 
 
 =================
 get type of bagel
 =================
-      get attribute type
+    resolve
+      attribute type of Bagel
 
 
 =================
 get currency of bagel cost
 =================
-      get attribute cost_currency
+    resolve
+      attribute cost_currency of Bagel
 
 
 =================
 Cart
 =================
-      it is a list
-      it contains food item
+      it is a list of food item(s)
 
 
 =================
-add [food_item] to cart
+add Coffee to Cart
 =================
-      insert [food_item] at end of cart
+      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item
+      insert Coffee at end of Cart
 
 
 =================
-clear the cart
+add Bagel to Cart
 =================
-      remove all entires in cart
+      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item
+      insert Bagel at end of Cart
+
+
+=================
+clear the Cart
+=================
+      # This is primitive that removes all the entries in the cart
+      remove all entires in Cart
 
 
 =================
 Coffee
 =================
-      it is a class
+      it is an object
       it has three attributes
       it has an attribute named type that is a string and has a value of "food item"
       it has an attribute named cost which is a float and has a value of 1 00
       it has an attribute named cost_currency which is a string and has a value of "CAD"
-      it has narratives "get type of coffee" and "get cost of coffee" and "get currency of coffee cost"
 
 
 =================
 get cost of coffee
 =================
-      get attribute cost
+    resolve
+      attribute cost of Coffee
 
 
 =================
 get type of coffee
 =================
-      get attribute type
+    resolve
+      attribute type of Coffee
 
 
 =================
 get currency of coffee cost
 =================
-      get attribute cost_currency
+    resolve
+      attribute cost_currency of Coffee
 
 
 =================
 Menu
 =================
-      it is a list
-      it contains food items and actions
-      it has 1 food item named coffee
-      it has 1 food item named bagel
-      it has 1 action named terminate
-      it has 1 action named checkout
+      it is a list of option(s)
+      it has 1 option named Coffee
+      it has 1 option named Bagel
+      it has 1 option named Clear Cart
+      it has 1 action named Checkout
 
 

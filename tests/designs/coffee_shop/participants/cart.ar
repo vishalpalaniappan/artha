@@ -1,11 +1,15 @@
 meaning of Cart {
-    it is a list.
-    it contains food item.
+    it is a list of food item(s).
 }
 
-meaning of add [food_item] to Cart {
+meaning of add Coffee to Cart {
     # Cart only contains food item, so there is an invariant that the item being inserted has to be of type food item.
-    insert [food_item] at end of Cart.
+    insert Coffee at end of Cart.
+}
+
+meaning of add Bagel to Cart {
+    # Cart only contains food item, so there is an invariant that the item being inserted has to be of type food item.
+    insert Bagel at end of Cart.
 }
 
 meaning of clear the Cart {
