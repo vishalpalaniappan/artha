@@ -53,9 +53,15 @@ describe("meaning parser", async () => {
             JSON.stringify(parser.grouped, null, 4)
         );
 
-        const meaning_path = resolve(__dirname, "./output/meaning_parser/meaning.txt")
+        const meaning_output_path = resolve(__dirname, "./output/meaning_parser/processed_meaning.json");
         await writeFile(
-            meaning_path,
+            meaning_output_path,
+            JSON.stringify(parser.processedMeaning.output, null, 4)
+        );
+
+        const meaning_txt_path = resolve(__dirname, "./output/meaning_parser/meaning.txt")
+        await writeFile(
+            meaning_txt_path,
             parser.processedMeaning.outputLog
         );
     });
