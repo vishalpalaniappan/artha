@@ -1,9 +1,11 @@
 meaning of Menu {
-    it is a list of option(s).
-    it has 1 option named Coffee.
-    it has 1 option named Bagel.
-    it has 1 option named Clear Cart.
-    it has 1 action named Checkout.
+    it has structural type List.
+    it has role type Menu List.
+    it contains type String.
+    it has 1 option named "Coffee".
+    it has 1 option named "Bagel".
+    it has 1 option named "Clear Cart".
+    it has 1 option named "Checkout".
 }
 
 get formatted Menu {

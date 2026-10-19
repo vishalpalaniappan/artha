@@ -1,5 +1,7 @@
 meaning of Cart {
-    it is a list of food item(s).
+    it has structural type List.
+    it has role type Inventory.
+    it contain type Food Item.
 }
 
 meaning of add Coffee to Cart {
