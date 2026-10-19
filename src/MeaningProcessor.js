@@ -35,12 +35,14 @@ export class MeaningProcessor {
             this.output[compositeSentence] = [];
 
             for (const sentence of meaning.sentences) {
+                
+                const sentenceMeaning = [];
                 for (const entry of sentence) {
 
                     // Functional token in sentence (parser saves it as object)
                     if (entry !== null && typeof entry === "object" && !Array.isArray(entry)) {
                         this.outputLog += "    " + entry.value + "\n";
-                        this.output[compositeSentence].push(entry.value);
+                        sentenceMeaning.push(entry.value);
                     }
 
                     // Composite or primitive meaning (parser saves it as array)
@@ -50,20 +52,21 @@ export class MeaningProcessor {
                         const foundComposite = this.findCompositeMeaning(entry);
                         if (foundComposite) {
                             this.outputLog += joinStr + " --> COMPOSITE MEANING" + "\n";
-                            this.output[compositeSentence].push(joinStr + " --> COMPOSITE MEANING");
+                            sentenceMeaning.push(joinStr + " --> COMPOSITE MEANING");
                             continue;
                         }
 
                         const foundPrimitive = this.findPrimitiveMeaning(entry);
                         if (foundPrimitive) {
                             this.outputLog += joinStr + ` --> PRIMITIVE MEANING: ${foundPrimitive.name}` + "\n";
-                            this.output[compositeSentence].push(joinStr + ` --> PRIMITIVE MEANING: ${foundPrimitive.name}` + "\n");
+                            sentenceMeaning.push(joinStr + ` --> PRIMITIVE MEANING: ${foundPrimitive.name}` + "\n");
                             continue;
                         }
 
                         // Not composite or primitive meaning, meaning is missing
                         this.outputLog += joinStr + "\n";
                     } 
+                    this.output[compositeSentence].push(sentenceMeaning);
                 }
             }
             this.outputLog += "\n\n";
