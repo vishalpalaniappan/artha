@@ -1,4 +1,5 @@
 meaning of Bagel {
+    it is a participant.
     it has structural type Object.
     it has role type Food Item.
     it has two attributes.

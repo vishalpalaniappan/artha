@@ -1,4 +1,5 @@
 meaning of Menu {
+    it is a participant.
     it has structural type List.
     it has role type Menu List.
     it contains type String.

@@ -1,4 +1,5 @@
 meaning of Cart {
+    it is a participant.
     it has structural type List.
     it has role type Inventory.
     it contain type Food Item.
