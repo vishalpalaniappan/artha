@@ -110,8 +110,8 @@ process payment
 =================
 total_cost
 =================
-      it has structural type float
-      it has role type accumulated_cost
+      it has structural type float --> PRIMITIVE MEANING: it_has
+      it has role type accumulated_cost --> PRIMITIVE MEANING: it_has
 
 
 =================
@@ -154,8 +154,8 @@ accept payment from user
 Bagel
 =================
       it is a participant --> PRIMITIVE MEANING: it is
-      it has structural type Object
-      it has role type Food Item
+      it has structural type Object --> PRIMITIVE MEANING: it_has
+      it has role type food_item --> PRIMITIVE MEANING: it_has
       it has two attributes
       it has an attribute named cost which is a float and has a value of 2 00
       it has an attribute named cost_currency which is a string and has a value of "CAD"
@@ -186,15 +186,15 @@ get currency of bagel cost
 Cart
 =================
       it is a participant --> PRIMITIVE MEANING: it is
-      it has structural type List
-      it has role type Inventory
+      it has structural type List --> PRIMITIVE MEANING: it_has
+      it has role type Inventory --> PRIMITIVE MEANING: it_has
       it contain type Food Item
 
 
 =================
 add Coffee to Cart
 =================
-      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item
+      # Cart only contains food_item so there is an invariant that the item being inserted has to be of type food item
       insert Coffee at end of Cart
 
 
@@ -216,7 +216,7 @@ clear the Cart
 Coffee
 =================
       it is a participant --> PRIMITIVE MEANING: it is
-      it has structural type Object
+      it has structural type Object --> PRIMITIVE MEANING: it_has
       it has role type Food Item
       it has two attributes
       it has an attribute named cost which is a float and has a value of 1 00
@@ -248,10 +248,13 @@ get currency of coffee cost
 Menu
 =================
       it is a participant --> PRIMITIVE MEANING: it is
-      # Types it has structural type List
-      it has role type Menu List
-      # Contains it contains type String
-      # Initial Value it has 1 entry with value "Coffee"
+      # Types
+      it has structural type List --> PRIMITIVE MEANING: it_has
+      it has role type menu_list --> PRIMITIVE MEANING: it_has
+      # Contains
+      it contains type String
+      # Initial Value
+      it has 1 entry with value "Coffee"
       it has 1 entry with value "Bagel"
       it has 1 entry with value "Clear Cart"
       it has 1 entry with value "Checkout"

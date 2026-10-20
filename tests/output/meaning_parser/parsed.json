@@ -2810,18 +2810,10 @@
                         "endColno": 20
                     },
                     {
-                        "value": "Food",
+                        "value": "food_item",
                         "type": "IDENTIFIER",
                         "startLineno": 89,
                         "startColno": 22,
-                        "endLineno": 89,
-                        "endColno": 25
-                    },
-                    {
-                        "value": "Item",
-                        "type": "IDENTIFIER",
-                        "startLineno": 89,
-                        "startColno": 27,
                         "endLineno": 89,
                         "endColno": 30
                     }
@@ -3649,18 +3641,10 @@
                         "endColno": 24
                     },
                     {
-                        "value": "food",
+                        "value": "food_item",
                         "type": "IDENTIFIER",
                         "startLineno": 114,
                         "startColno": 26,
-                        "endLineno": 114,
-                        "endColno": 29
-                    },
-                    {
-                        "value": "item",
-                        "type": "IDENTIFIER",
-                        "startLineno": 114,
-                        "startColno": 31,
                         "endLineno": 114,
                         "endColno": 34
                     },
@@ -5088,7 +5072,11 @@
                         "startColno": 7,
                         "endLineno": 150,
                         "endColno": 11
-                    },
+                    }
+                ]
+            ],
+            [
+                [
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
@@ -5166,18 +5154,10 @@
                         "endColno": 20
                     },
                     {
-                        "value": "Menu",
+                        "value": "menu_list",
                         "type": "IDENTIFIER",
                         "startLineno": 152,
                         "startColno": 22,
-                        "endLineno": 152,
-                        "endColno": 25
-                    },
-                    {
-                        "value": "List",
-                        "type": "IDENTIFIER",
-                        "startLineno": 152,
-                        "startColno": 27,
                         "endLineno": 152,
                         "endColno": 30
                     }
@@ -5200,7 +5180,11 @@
                         "startColno": 7,
                         "endLineno": 154,
                         "endColno": 14
-                    },
+                    }
+                ]
+            ],
+            [
+                [
                     {
                         "value": "it",
                         "type": "IDENTIFIER",
@@ -5260,7 +5244,11 @@
                         "startColno": 15,
                         "endLineno": 157,
                         "endColno": 19
-                    },
+                    }
+                ]
+            ],
+            [
+                [
                     {
                         "value": "it",
                         "type": "IDENTIFIER",

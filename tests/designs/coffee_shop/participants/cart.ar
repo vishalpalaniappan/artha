@@ -6,7 +6,7 @@ meaning of Cart {
 }
 
 meaning of add Coffee to Cart {
-    # Cart only contains food item, so there is an invariant that the item being inserted has to be of type food item.
+    # Cart only contains food_item, so there is an invariant that the item being inserted has to be of type food item.
     insert Coffee at end of Cart.
 }
 

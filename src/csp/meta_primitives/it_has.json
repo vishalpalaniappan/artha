@@ -1,0 +1,18 @@
+{
+    "name": "it_has",
+    "type": "meta_primitive",
+    "description":"Meta primitive that specifies unique type.",
+    "syntax_line": "it has [type] type [value]",
+    "participants": [
+        {
+            "name": "type",
+            "required": "true"
+        },
+        {
+            "name": "value",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+    }
+}

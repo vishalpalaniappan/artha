@@ -108,8 +108,12 @@
         ]
     ],
     "total_cost": [
-        [],
-        []
+        [
+            "      it has structural type float --> PRIMITIVE MEANING: it_has\n"
+        ],
+        [
+            "      it has role type accumulated_cost --> PRIMITIVE MEANING: it_has\n"
+        ]
     ],
     "initialize cost": [
         []
@@ -141,8 +145,12 @@
         [
             "      it is a participant --> PRIMITIVE MEANING: it is\n"
         ],
-        [],
-        [],
+        [
+            "      it has structural type Object --> PRIMITIVE MEANING: it_has\n"
+        ],
+        [
+            "      it has role type food_item --> PRIMITIVE MEANING: it_has\n"
+        ],
         [],
         [],
         []
@@ -169,8 +177,12 @@
         [
             "      it is a participant --> PRIMITIVE MEANING: it is\n"
         ],
-        [],
-        [],
+        [
+            "      it has structural type List --> PRIMITIVE MEANING: it_has\n"
+        ],
+        [
+            "      it has role type Inventory --> PRIMITIVE MEANING: it_has\n"
+        ],
         []
     ],
     "add Coffee to Cart": [
@@ -189,7 +201,9 @@
         [
             "      it is a participant --> PRIMITIVE MEANING: it is\n"
         ],
-        [],
+        [
+            "      it has structural type Object --> PRIMITIVE MEANING: it_has\n"
+        ],
         [],
         [],
         [],
@@ -216,6 +230,13 @@
     "Menu": [
         [
             "      it is a participant --> PRIMITIVE MEANING: it is\n"
+        ],
+        [],
+        [
+            "      it has structural type List --> PRIMITIVE MEANING: it_has\n"
+        ],
+        [
+            "      it has role type menu_list --> PRIMITIVE MEANING: it_has\n"
         ],
         [],
         [],
