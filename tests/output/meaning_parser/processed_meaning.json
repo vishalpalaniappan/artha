@@ -138,7 +138,9 @@
         []
     ],
     "Bagel": [
-        [],
+        [
+            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+        ],
         [],
         [],
         [],
@@ -164,7 +166,9 @@
         ]
     ],
     "Cart": [
-        [],
+        [
+            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+        ],
         [],
         [],
         []
@@ -182,7 +186,9 @@
         []
     ],
     "Coffee": [
-        [],
+        [
+            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+        ],
         [],
         [],
         [],
@@ -208,7 +214,9 @@
         ]
     ],
     "Menu": [
-        [],
+        [
+            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+        ],
         [],
         [],
         [],

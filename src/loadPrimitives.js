@@ -10,9 +10,15 @@ export async function loadPrimitivesFromManifest() {
       legacy_manifest.primitives.map(fileName => import(`./csp/legacy_primitives/${fileName}.json`))
     );
 
+    const meta_manifest = await import("./csp/meta_manifest.json");
+    const meta_primitive_modules = await Promise.all(
+      meta_manifest.primitives.map(fileName => import(`./csp/meta_primitives/${fileName}.json`))
+    );
+
     const combined = [
       ...primitive_modules.map(m => m.default),
-      ...legacy_primitive_modules.map(m => m.default)
+      ...legacy_primitive_modules.map(m => m.default),
+      ...meta_primitive_modules.map(m => m.default)
     ];
 
     return combined;
