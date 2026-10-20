@@ -1,10 +1,6 @@
 {
     "name": "it is",
     "type": "meta_primitive",
-    "description":"Meta information to indicate type of participant.",
-    "syntax_line": "it is a participant",
-    "participants": [
-    ],
-    "invariants": {
-    }
+    "description":"Meta information to indicate that this is the meaning of a participant.",
+    "syntax_line": "it is a participant"
 }

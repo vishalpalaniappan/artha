@@ -13,6 +13,5 @@
             "required": "true"
         }
     ],
-    "invariants": {
-    }
+    "_note": "I am calling type and value participants but clearly they can be considered attributes. I will leave it as participants for now with the intention of migrating it later."
 }
