@@ -153,7 +153,7 @@ accept payment from user
 =================
 Bagel
 =================
-      it is a participant --> PRIMITIVE MEANING: it is
+      it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type Object --> PRIMITIVE MEANING: it_has
       it has role type food_item --> PRIMITIVE MEANING: it_has
       it has two attributes
@@ -185,7 +185,7 @@ get currency of bagel cost
 =================
 Cart
 =================
-      it is a participant --> PRIMITIVE MEANING: it is
+      it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type List --> PRIMITIVE MEANING: it_has
       it has role type Inventory --> PRIMITIVE MEANING: it_has
       it contain type Food Item
@@ -215,7 +215,7 @@ clear the Cart
 =================
 Coffee
 =================
-      it is a participant --> PRIMITIVE MEANING: it is
+      it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type Object --> PRIMITIVE MEANING: it_has
       it has role type Food Item
       it has two attributes
@@ -247,12 +247,12 @@ get currency of coffee cost
 =================
 Menu
 =================
-      it is a participant --> PRIMITIVE MEANING: it is
+      it is a participant --> PRIMITIVE MEANING: it_is
       # Types
       it has structural type List --> PRIMITIVE MEANING: it_has
       it has role type menu_list --> PRIMITIVE MEANING: it_has
       # Contains
-      it contains type String
+      it contains type String --> PRIMITIVE MEANING: it_contains
       # Initial Value
       it has 1 entry with value "Coffee"
       it has 1 entry with value "Bagel"

@@ -1,5 +1,5 @@
 {
-    "name": "it is",
+    "name": "it_is",
     "type": "meta_primitive",
     "description":"Meta information to indicate that this is the meaning of a participant.",
     "syntax_line": "it is a participant"

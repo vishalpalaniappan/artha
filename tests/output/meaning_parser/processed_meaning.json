@@ -143,7 +143,7 @@
     ],
     "Bagel": [
         [
-            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+            "      it is a participant --> PRIMITIVE MEANING: it_is\n"
         ],
         [
             "      it has structural type Object --> PRIMITIVE MEANING: it_has\n"
@@ -175,7 +175,7 @@
     ],
     "Cart": [
         [
-            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+            "      it is a participant --> PRIMITIVE MEANING: it_is\n"
         ],
         [
             "      it has structural type List --> PRIMITIVE MEANING: it_has\n"
@@ -199,7 +199,7 @@
     ],
     "Coffee": [
         [
-            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+            "      it is a participant --> PRIMITIVE MEANING: it_is\n"
         ],
         [
             "      it has structural type Object --> PRIMITIVE MEANING: it_has\n"
@@ -229,7 +229,7 @@
     ],
     "Menu": [
         [
-            "      it is a participant --> PRIMITIVE MEANING: it is\n"
+            "      it is a participant --> PRIMITIVE MEANING: it_is\n"
         ],
         [],
         [
@@ -239,7 +239,9 @@
             "      it has role type menu_list --> PRIMITIVE MEANING: it_has\n"
         ],
         [],
-        [],
+        [
+            "      it contains type String --> PRIMITIVE MEANING: it_contains\n"
+        ],
         [],
         [],
         [],
