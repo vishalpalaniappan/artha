@@ -1,7 +1,6 @@
 {
     "coffee shop": [
         [],
-        [],
         [
             "      present menu --> COMPOSITE MEANING"
         ]
@@ -148,17 +147,20 @@
     ],
     "get cost of bagel": [
         [
-            "resolve"
+            "resolve",
+            "      attribute cost of Bagel --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "get type of bagel": [
         [
-            "resolve"
+            "resolve",
+            "      attribute type of Bagel --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "get currency of bagel cost": [
         [
-            "resolve"
+            "resolve",
+            "      attribute cost_currency of Bagel --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "Cart": [
@@ -189,17 +191,20 @@
     ],
     "get cost of coffee": [
         [
-            "resolve"
+            "resolve",
+            "      attribute cost of Coffee --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "get type of coffee": [
         [
-            "resolve"
+            "resolve",
+            "      attribute type of Coffee --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "get currency of coffee cost": [
         [
-            "resolve"
+            "resolve",
+            "      attribute cost_currency of Coffee --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "Menu": [

@@ -1,6 +1,5 @@
 meaning of coffee shop {
-    add Menu to world.
-    add Cart to world.
+    initialize Cart.
     present menu.
 }
 

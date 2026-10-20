@@ -1,8 +1,7 @@
 =================
 coffee shop
 =================
-      add Menu to world
-      add Cart to world
+      initialize Cart
       present menu --> COMPOSITE MEANING
 
 
@@ -166,21 +165,21 @@ Bagel
 get cost of bagel
 =================
     resolve
-      attribute cost of Bagel
+      attribute cost of Bagel --> PRIMITIVE MEANING: get_attribute
 
 
 =================
 get type of bagel
 =================
     resolve
-      attribute type of Bagel
+      attribute type of Bagel --> PRIMITIVE MEANING: get_attribute
 
 
 =================
 get currency of bagel cost
 =================
     resolve
-      attribute cost_currency of Bagel
+      attribute cost_currency of Bagel --> PRIMITIVE MEANING: get_attribute
 
 
 =================
@@ -228,21 +227,21 @@ Coffee
 get cost of coffee
 =================
     resolve
-      attribute cost of Coffee
+      attribute cost of Coffee --> PRIMITIVE MEANING: get_attribute
 
 
 =================
 get type of coffee
 =================
     resolve
-      attribute type of Coffee
+      attribute type of Coffee --> PRIMITIVE MEANING: get_attribute
 
 
 =================
 get currency of coffee cost
 =================
     resolve
-      attribute cost_currency of Coffee
+      attribute cost_currency of Coffee --> PRIMITIVE MEANING: get_attribute
 
 
 =================

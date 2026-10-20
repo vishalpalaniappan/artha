@@ -4,6 +4,7 @@
         "multiply",
         "subtract",
         "divide",
-        "equal"
+        "equal",
+        "get_attribute"
     ]
 }
