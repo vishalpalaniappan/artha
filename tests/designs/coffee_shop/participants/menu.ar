@@ -1,14 +1,11 @@
 meaning of Menu {
     it is a participant.
 
-    # Types.
     it has structural type List.
     it has role type menu_list.
 
-    # Contains.
     it contains type String.
 
-    # Initial Value.
     it has 1 entry with value "Coffee".
     it has 1 entry with value "Bagel".
     it has 1 entry with value "Clear Cart".

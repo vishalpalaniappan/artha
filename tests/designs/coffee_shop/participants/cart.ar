@@ -1,8 +1,10 @@
 meaning of Cart {
     it is a participant.
+
     it has structural type List.
     it has role type Inventory.
-    it contain type Food Item.
+    
+    it contains type Food Item.
 }
 
 meaning of add Coffee to Cart {
