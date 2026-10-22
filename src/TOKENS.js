@@ -7,7 +7,8 @@ let TOKENS = {
     "RBRACE": "}",
     "LBRACKET": "[",
     "RBRACKET": "]",
-    "HASH": "#"
+    "HASH": "#",
+    "EQUAL": "="
 }
 TOKENS = Object.freeze(TOKENS);
 
