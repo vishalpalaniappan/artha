@@ -175,7 +175,7 @@ export class ArthaLexer {
      * Add the accumulated identifier to the scannedTokens list.
      */
     addAccumulatedIdentifierToken () {
-        // Subtract 1 from endColno beause we have to reach token
+        // Subtract 1 from endColno because we have to reach token
         // to identify that the accumulator is done.
         if (this.accumulatedIdentifier.length > 0) {
             this.scannedTokens.push({
