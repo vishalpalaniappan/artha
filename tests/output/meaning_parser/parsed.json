@@ -3006,20 +3006,12 @@
                         "endColno": 43
                     },
                     {
-                        "value": "2",
+                        "value": "1",
                         "type": "IDENTIFIER",
                         "startLineno": 94,
                         "startColno": 45,
                         "endLineno": 94,
                         "endColno": 45
-                    },
-                    {
-                        "value": "00",
-                        "type": "IDENTIFIER",
-                        "startLineno": 94,
-                        "startColno": 47,
-                        "endLineno": 94,
-                        "endColno": 48
                     }
                 ]
             ],
@@ -4641,14 +4633,6 @@
                         "startColno": 45,
                         "endLineno": 139,
                         "endColno": 45
-                    },
-                    {
-                        "value": "00",
-                        "type": "IDENTIFIER",
-                        "startLineno": 139,
-                        "startColno": 47,
-                        "endLineno": 139,
-                        "endColno": 48
                     }
                 ]
             ],
