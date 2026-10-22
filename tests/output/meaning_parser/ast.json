@@ -1,0 +1,32 @@
+{
+    "type": "root",
+    "body": [
+        {
+            "type": "behavior",
+            "behaviorName": "test",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "command",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "a"
+                        },
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "b"
+                        },
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "c"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,18 +1,40 @@
 [
     {
         "type": "IDENTIFIER",
-        "value": "test",
+        "value": "behavior",
         "startLineno": 1,
         "startColno": 1,
         "endLineno": 1,
-        "endColno": 4
+        "endColno": 8
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "test",
+        "startLineno": 1,
+        "startColno": 10,
+        "endLineno": 1,
+        "endColno": 13
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 1,
+        "startColno": 14,
+        "endLineno": 1,
+        "endColno": 14
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 1,
+        "startColno": 15,
+        "endLineno": 1,
+        "endColno": 15
     },
     {
         "type": "LBRACE",
         "startLineno": 1,
-        "startColno": 6,
+        "startColno": 17,
         "endLineno": 1,
-        "endColno": 6
+        "endColno": 17
     },
     {
         "type": "IDENTIFIER",
