@@ -23,18 +23,26 @@
         "endColno": 14
     },
     {
-        "type": "RPAREN",
+        "type": "IDENTIFIER",
+        "value": "sample",
         "startLineno": 1,
         "startColno": 15,
         "endLineno": 1,
-        "endColno": 15
+        "endColno": 20
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 1,
+        "startColno": 21,
+        "endLineno": 1,
+        "endColno": 21
     },
     {
         "type": "LBRACE",
         "startLineno": 1,
-        "startColno": 17,
+        "startColno": 23,
         "endLineno": 1,
-        "endColno": 17
+        "endColno": 23
     },
     {
         "type": "IDENTIFIER",
@@ -97,10 +105,62 @@
         "endColno": 18
     },
     {
+        "type": "IDENTIFIER",
+        "value": "participant",
+        "startLineno": 4,
+        "startColno": 5,
+        "endLineno": 4,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "adf",
+        "startLineno": 4,
+        "startColno": 17,
+        "endLineno": 4,
+        "endColno": 19
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 4,
+        "startColno": 20,
+        "endLineno": 4,
+        "endColno": 20
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "val",
+        "startLineno": 5,
+        "startColno": 9,
+        "endLineno": 5,
+        "endColno": 11
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 5,
+        "startColno": 12,
+        "endLineno": 5,
+        "endColno": 12
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 5,
+        "startColno": 13,
+        "endLineno": 5,
+        "endColno": 13
+    },
+    {
         "type": "RBRACE",
-        "startLineno": 3,
+        "startLineno": 6,
+        "startColno": 5,
+        "endLineno": 6,
+        "endColno": 5
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 7,
         "startColno": 1,
-        "endLineno": 3,
+        "endLineno": 7,
         "endColno": 1
     }
 ]

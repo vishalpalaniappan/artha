@@ -3,6 +3,13 @@
     "body": [
         {
             "type": "behavior",
+            "parsedArgs": [
+                {
+                    "arg": null,
+                    "type": "name",
+                    "value": "sample"
+                }
+            ],
             "behaviorName": "test",
             "body": [
                 {
@@ -23,6 +30,17 @@
                             "arg": null,
                             "type": "name",
                             "value": "c"
+                        }
+                    ]
+                },
+                {
+                    "type": "participant",
+                    "participantType": "adf",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "val",
+                            "args": []
                         }
                     ]
                 }

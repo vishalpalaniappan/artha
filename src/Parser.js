@@ -128,8 +128,10 @@ export class ArthaParser {
      */
     processBehavior () {
         const behaviorName = this.tokens[++this.currPos].value;
+        const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             type: "behavior",
+            parsedArgs: parsedArgs,
             behaviorName: behaviorName,
             body: []
         }
