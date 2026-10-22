@@ -1,0 +1,84 @@
+[
+    {
+        "type": "IDENTIFIER",
+        "value": "test",
+        "startLineno": 1,
+        "startColno": 1,
+        "endLineno": 1,
+        "endColno": 4
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 1,
+        "startColno": 6,
+        "endLineno": 1,
+        "endColno": 6
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "command",
+        "startLineno": 2,
+        "startColno": 5,
+        "endLineno": 2,
+        "endColno": 11
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 2,
+        "startColno": 12,
+        "endLineno": 2,
+        "endColno": 12
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "a",
+        "startLineno": 2,
+        "startColno": 13,
+        "endLineno": 2,
+        "endColno": 13
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 2,
+        "startColno": 14,
+        "endLineno": 2,
+        "endColno": 14
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "b",
+        "startLineno": 2,
+        "startColno": 15,
+        "endLineno": 2,
+        "endColno": 15
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 2,
+        "startColno": 16,
+        "endLineno": 2,
+        "endColno": 16
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "c",
+        "startLineno": 2,
+        "startColno": 17,
+        "endLineno": 2,
+        "endColno": 17
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 2,
+        "startColno": 18,
+        "endLineno": 2,
+        "endColno": 18
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 3,
+        "startColno": 1,
+        "endLineno": 3,
+        "endColno": 1
+    }
+]

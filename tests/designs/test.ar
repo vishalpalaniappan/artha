@@ -1,0 +1,3 @@
+test {
+    command(a,b,c)
+}
