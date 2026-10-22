@@ -1,5 +1,5 @@
 {
-    "name": "it_has",
+    "name": "it_has_type",
     "type": "meta_primitive",
     "description":"Meta primitive that specifies unique type.",
     "syntax_line": "it has [type] type [value]",
