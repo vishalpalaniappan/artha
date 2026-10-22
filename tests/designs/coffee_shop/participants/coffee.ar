@@ -5,20 +5,16 @@ meaning of Coffee {
     it has role type Food Item.
     
     it has an attribute named cost.
-    attribute named cost has structural type float.
-    attribute named cost has a value of 1,00.
+    the attribute named cost has structural type float.
+    the attribute named cost has a value of 1,00.
     
     it has an attribute named cost_currency.
-    attribute named cost_currency has structural type string.
-    attribute named cost_currency has a value of CAD.
+    the attribute named cost_currency has structural type string.
+    the attribute named cost_currency has a value of CAD.
 }
 
 meaning of get cost of coffee {
     resolve attribute cost of Coffee.
-}
-
-meaning of get type of coffee {
-    resolve attribute type of Coffee.
 }
 
 meaning of get currency of coffee cost {

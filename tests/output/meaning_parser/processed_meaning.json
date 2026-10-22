@@ -13,6 +13,7 @@
         ],
         [
             "if",
+            "      the user selected Coffee --> COMPOSITE MEANING",
             "then",
             "      add Coffee to Cart --> COMPOSITE MEANING",
             "then",
@@ -20,6 +21,7 @@
         ],
         [
             "if",
+            "      the user selected Bagel --> COMPOSITE MEANING",
             "then",
             "      add Bagel to Cart --> COMPOSITE MEANING",
             "then",
@@ -27,6 +29,7 @@
         ],
         [
             "if",
+            "      the user cleared the transaction --> COMPOSITE MEANING",
             "then",
             "      clear the Cart --> COMPOSITE MEANING",
             "then",
@@ -34,6 +37,7 @@
         ],
         [
             "if",
+            "      the user proceeded with the payment --> COMPOSITE MEANING",
             "then",
             "      process payment --> COMPOSITE MEANING",
             "then",
@@ -41,6 +45,7 @@
         ],
         [
             "if",
+            "      the user decided to leave the store --> COMPOSITE MEANING",
             "then",
             "      close the store --> COMPOSITE MEANING"
         ]
@@ -147,18 +152,16 @@
             "      it has role type food_item --> PRIMITIVE MEANING: it_has_type\n"
         ],
         [],
+        [],
+        [],
+        [],
+        [],
         []
     ],
     "get cost of bagel": [
         [
             "resolve",
             "      attribute cost of Bagel --> PRIMITIVE MEANING: get_attribute\n"
-        ]
-    ],
-    "get type of bagel": [
-        [
-            "resolve",
-            "      attribute type of Bagel --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "get currency of bagel cost": [
@@ -200,20 +203,16 @@
         ],
         [],
         [],
-        [
-            "      it has an attribute named cost_currency with structural type string and has a value of \"CAD\" --> PRIMITIVE MEANING: it_has_an_attribute\n"
-        ]
+        [],
+        [],
+        [],
+        [],
+        []
     ],
     "get cost of coffee": [
         [
             "resolve",
             "      attribute cost of Coffee --> PRIMITIVE MEANING: get_attribute\n"
-        ]
-    ],
-    "get type of coffee": [
-        [
-            "resolve",
-            "      attribute type of Coffee --> PRIMITIVE MEANING: get_attribute\n"
         ]
     ],
     "get currency of coffee cost": [

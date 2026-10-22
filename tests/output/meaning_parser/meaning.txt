@@ -12,31 +12,31 @@ present menu
     then
       accept the menu choice from the user --> COMPOSITE MEANING
     if
-      the user selected Coffee ,
+      the user selected Coffee --> COMPOSITE MEANING
     then
       add Coffee to Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user selected Bagel ,
+      the user selected Bagel --> COMPOSITE MEANING
     then
       add Bagel to Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user cleared the transaction ,
+      the user cleared the transaction --> COMPOSITE MEANING
     then
       clear the Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user proceeded with the payment ,
+      the user proceeded with the payment --> COMPOSITE MEANING
     then
       process payment --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user decided to leave the store ,
+      the user decided to leave the store --> COMPOSITE MEANING
     then
       close the store --> COMPOSITE MEANING
 
@@ -126,7 +126,7 @@ calculate cost
       add total_cost to world
       initialize cost --> COMPOSITE MEANING
     for
-      each item in cart , add cost of [item] to total_cost
+      each item in cart add cost of [item] to total_cost
 
 
 =================
@@ -156,8 +156,12 @@ Bagel
       it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type Object --> PRIMITIVE MEANING: it_has_type
       it has role type food_item --> PRIMITIVE MEANING: it_has_type
-      it has an attribute named cost which is a float and has a value of 2 , 00
-      it has an attribute named cost_currency which is a string and has a value of "CAD"
+      it has an attribute named cost
+      the attribute named cost has structural type float
+      the attribute named cost has a value of 2 00
+      it has an attribute named cost_currency
+      the attribute named cost_currency has structural type string
+      the attribute named cost_currency has a value of CAD
 
 
 =================
@@ -165,13 +169,6 @@ get cost of bagel
 =================
     resolve
       attribute cost of Bagel --> PRIMITIVE MEANING: get_attribute
-
-
-=================
-get type of bagel
-=================
-    resolve
-      attribute type of Bagel --> PRIMITIVE MEANING: get_attribute
 
 
 =================
@@ -193,14 +190,14 @@ Cart
 =================
 add Coffee to Cart
 =================
-      # Cart only contains food_item , so there is an invariant that the item being inserted has to be of type food item
+      # Cart only contains food_item so there is an invariant that the item being inserted has to be of type food item
       insert Coffee at end of Cart
 
 
 =================
 add Bagel to Cart
 =================
-      # Cart only contains food item , so there is an invariant that the item being inserted has to be of type food item
+      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item
       insert Bagel at end of Cart
 
 
@@ -217,8 +214,12 @@ Coffee
       it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type Object --> PRIMITIVE MEANING: it_has_type
       it has role type Food Item
-      it has an attribute named cost with structural type float and has a value of 1 , 00
-      it has an attribute named cost_currency with structural type string and has a value of "CAD" --> PRIMITIVE MEANING: it_has_an_attribute
+      it has an attribute named cost
+      the attribute named cost has structural type float
+      the attribute named cost has a value of 1 00
+      it has an attribute named cost_currency
+      the attribute named cost_currency has structural type string
+      the attribute named cost_currency has a value of CAD
 
 
 =================
@@ -226,13 +227,6 @@ get cost of coffee
 =================
     resolve
       attribute cost of Coffee --> PRIMITIVE MEANING: get_attribute
-
-
-=================
-get type of coffee
-=================
-    resolve
-      attribute type of Coffee --> PRIMITIVE MEANING: get_attribute
 
 
 =================

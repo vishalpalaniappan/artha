@@ -5,20 +5,16 @@ meaning of Bagel {
     it has role type food_item.
     
     it has an attribute named cost.
-    attribute named cost has structural type float.
-    attribute named cost has a value of 2,00.
+    the attribute named cost has structural type float.
+    the attribute named cost has a value of 2,00.
     
     it has an attribute named cost_currency.
-    attribute named cost_currency has structural type string.
-    attribute named cost_currency has a value of CAD.
+    the attribute named cost_currency has structural type string.
+    the attribute named cost_currency has a value of CAD.
 }
 
 meaning of get cost of bagel {
     resolve attribute cost of Bagel.
-}
-
-meaning of get type of bagel {
-    resolve attribute type of Bagel.
 }
 
 meaning of get currency of bagel cost {
