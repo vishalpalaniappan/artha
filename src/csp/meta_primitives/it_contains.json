@@ -1,6 +1,0 @@
-{
-    "name": "it_contains",
-    "type": "meta_primitive",
-    "description":"It indicates what type of participants this participant contains. For example, cart contains food items.",
-    "syntax_line": "it contains type [type]"
-}
