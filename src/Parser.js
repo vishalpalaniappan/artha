@@ -198,6 +198,11 @@ export class ArthaParser {
      *      }
      *  ]
      * 
+     * TODO: Add support for args that have brackets, 
+     * ex test(behavior(arg1, arg2)). While doing this, 
+     * I need to migrate the tokenization that is done 
+     * in the args parser to the lexer.
+     * 
      * @returns {Object} Returns the processed args.
      */
     getArgs () {
