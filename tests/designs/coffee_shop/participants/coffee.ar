@@ -1,0 +1,22 @@
+meaning of Coffee {
+    it is a participant.
+
+    it has structural type Object.
+    it has role type Food Item.
+    
+    it has an attribute named cost.
+    the attribute named cost has structural type float.
+    the attribute named cost has a value of 1.
+    
+    it has an attribute named cost_currency.
+    the attribute named cost_currency has structural type string.
+    the attribute named cost_currency has a value of CAD.
+}
+
+meaning of get cost of coffee {
+    resolve attribute cost of Coffee.
+}
+
+meaning of get currency of coffee cost {
+    resolve attribute cost_currency of Coffee.
+}

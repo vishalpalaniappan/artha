@@ -1,0 +1,30 @@
+{
+    "name": "get_attribute",
+    "type": "primitive",
+    "description":"Gets the attribute of a participant.",
+    "syntax_line": "attribute [attribute] of [participant_name]",
+    "participants": [
+        {
+            "name": "attribute",
+            "required": "true"
+        },
+        {
+            "name": "participant_name",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+        "id_1": {
+            "participants": ["attribute"],
+            "property": ["structural_type"],
+            "condition": ["object"],
+            "description": "Attribute must be an object.",
+            "invalidValues": [
+                {
+                    "value": "string_value",
+                    "description": "A string is provided as addend1"
+                }
+            ]
+        }
+    }
+}

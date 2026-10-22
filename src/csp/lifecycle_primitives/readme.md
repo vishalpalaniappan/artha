@@ -1,0 +1,1 @@
+Contains primitives that can be used to establish the lifecycle of participants in the narrative.

@@ -1,0 +1,1 @@
+Computable semantic primitives that can be used to build the meaning of the system so that it can be synthesized into an implementation.
