@@ -32,15 +32,47 @@
                             "value": "c"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "type": "participant",
+            "parsedArgs": [],
+            "participantType": "Cart",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "structuralType",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "string",
+                            "value": "list"
+                        }
+                    ]
                 },
                 {
-                    "type": "participant",
-                    "participantType": "adf",
-                    "body": [
+                    "type": "cmd",
+                    "command": "roleType",
+                    "args": [
                         {
-                            "type": "cmd",
-                            "command": "val",
-                            "args": []
+                            "arg": null,
+                            "type": "string",
+                            "value": "basket"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "contains",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "list",
+                            "value": [
+                                "Coffee",
+                                "Bagel"
+                            ]
                         }
                     ]
                 }

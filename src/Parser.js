@@ -1,4 +1,3 @@
-import KEYWORDS from "./KEYWORDS";
 import { ArgsParser } from "./ArgsParser";
 
 /**
@@ -60,35 +59,14 @@ export class ArthaParser {
      * @param {String} token 
      */
     processToken(token) {
-        let output;
         if (token.type === "RBRACE") {
             this.closeBlock();
-        } else if (token.value === "design") {
-            this.processDesignKeyword();
         } else if (token.value === "behavior") {
             this.processBehavior();
         } else if (token.value === "if") {
             this.processIf();
-        } else if (token.value === "else") {
-            this.processElse();
-        } else if (token.value === "for") {
-            this.processFor();
-        } else if (token.value === "while") {
-            this.processWhile();
-        } else if (token.value === "invariant") {
-            this.processInvariant();
-        } else if (token.value === "select") {
-            this.processSelect();
-        }else if (token.value === "actor") {
-            this.processActor();
-        } else if (token.value === "include") {
-            this.processInclude();
         } else if (token.value === "participant") {
             this.processParticipant();
-        } else if (token.value === "compositeBehavior") {
-            this.processCompositeBehavior();
-        } else if (token.value === "import") {
-            this.processImport();
         } else if (token.type === "IDENTIFIER") {
             this.processCmd(token.value);
         }
@@ -139,36 +117,6 @@ export class ArthaParser {
     }
 
     /**
-     * Processes the behavior block.
-     * 
-     * behavior <behavior_name>(args1, arg2...argN) {
-     * 
-     * }
-     */
-    processCompositeBehavior () {
-        const parsedArgs = new ArgsParser(this.getArgs()).run();
-        this.ast["type"] = "compositeBehavior";
-        this.ast["name"] = parsedArgs;
-    }
-
-    /**
-     * Processes the actor block.
-     * 
-     * actor <actor_name> {
-     * 
-     * }
-     */
-    processActor () {
-        const actorName = this.tokens[++this.currPos].value;
-        const node = {
-            type: "actor",
-            actorName: actorName,
-            body: []
-        }
-        this.stack.push(node)
-    }
-
-    /**
      * Processes the actor block.
      * 
      * actor <actor_name> {
@@ -177,54 +125,14 @@ export class ArthaParser {
      */
     processParticipant () {
         const participantType = this.tokens[++this.currPos].value;
+        const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             type: "participant",
+            parsedArgs: parsedArgs,
             participantType: participantType,
             body: []
         }
         this.stack.push(node)
-    }
-
-    /**
-     * Processes the include block.
-     * 
-     * include("config.json","a.py",...)
-     */
-    processInclude () {
-        const parsedArgs = new ArgsParser(this.getArgs()).run();
-
-        const includes = parsedArgs.map((arg) => arg["value"]);
-
-        // TODO: Validate that include is added inside actor block
-
-        const s = this.stack[this.stack.length - 1];
-        if ("includes" in s) {
-            s.includes.push(includes)
-        } else {
-            s.includes = [];
-            s.includes.push(includes)
-        }
-    }
-
-    /**
-     * Processes the import command.
-     * 
-     * import("sample.dal")
-     */
-    processImport() {
-        const parsedArgs = new ArgsParser(this.getArgs()).run();
-
-        const imports = parsedArgs.map((arg) => arg["value"]);
-
-        // TODO: Validate that import is added inside actor block
-
-        const s = this.stack[this.stack.length - 1];
-        if ("imports" in s) {
-            s.imports.push(imports)
-        } else {
-            s.imports = [];
-            s.imports.push(imports)
-        }
     }
 
     /**
@@ -242,102 +150,6 @@ export class ArthaParser {
             body: []
         }
         this.stack.push(node)
-    }
-
-    /**
-     * Processes invariant block.
-     * 
-     * invariant {
-     * 
-     * }
-     */
-    processInvariant () {
-        const invariantName = this.tokens[++this.currPos].value;
-        const node = {
-            type: "invariant",
-            invariantName: invariantName,
-            args: [],
-            body: []
-        }
-        this.stack.push(node)
-    }
-    /**
-     * Processes select block.
-     * 
-     * select {
-     * 
-     * }
-     */
-    processSelect () {
-        const node = {
-            type: "select",
-            args: [],
-            body: []
-        }
-        this.stack.push(node)
-    }
-
-
-    /**
-     * Processes while block.
-     * 
-     * while (condition) {
-     * 
-     * }
-     */
-    processWhile () {
-        const parsedArgs = new ArgsParser(this.getArgs()).run();
-        const node = {
-            type: "while",
-            args: parsedArgs,
-            body: []
-        }
-        this.stack.push(node)
-    }
-
-    /**
-     * Processes else block.
-     * 
-     * else (condition) {
-     * 
-     * }
-     */
-    processElse () {
-        const node = {
-            type: "else",
-            body: []
-        }
-        this.stack.push(node)
-    }
-
-    /**
-     * Processes for block.
-     * 
-     * for (<participan>, <start>,<end>) {
-     * 
-     * }
-     */
-    processFor () {
-        const parsedArgs = new ArgsParser(this.getArgs()).run();
-        const node = {
-            type: "for",
-            participant: parsedArgs[0],
-            start: parsedArgs[1],
-            end: parsedArgs[2],
-            body: []
-        }
-        this.stack.push(node)
-    }
-
-    /**
-     * Process design keyword.
-     * 
-     * design(<design_name>)
-     */
-    processDesignKeyword () {
-        const parsedArgs = new ArgsParser(this.getArgs()).run();
-        this.ast["type"] = "design";
-        this.ast["name"] = parsedArgs;
     }
 
     /**

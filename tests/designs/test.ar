@@ -1,3 +1,9 @@
 behavior test(sample) {
     command(a,b,c)
 }
+
+participant Cart() {
+    structuralType("list")
+    roleType("basket")
+    contains(["Coffee", "Bagel"])
+}
