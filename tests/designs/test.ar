@@ -1,9 +1,14 @@
-behavior test(sample) {
-    command(a,b,c)
+behavior coffee_shop() {
+    create(participant=Cart)
+    visit_shop()
+}
+
+behavior barista_presents_menu() {
+    display(value=menu)
 }
 
 participant Cart() {
-    structuralType("list")
-    roleType("basket")
-    contains(["Coffee", "Bagel"])
+    structuralType(type="list")
+    roleType(type="basket")
+    contains(values=["Coffee", "Bagel"])
 }

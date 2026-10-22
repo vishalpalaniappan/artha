@@ -3,33 +3,40 @@
     "body": [
         {
             "type": "behavior",
-            "parsedArgs": [
-                {
-                    "arg": null,
-                    "type": "name",
-                    "value": "sample"
-                }
-            ],
-            "behaviorName": "test",
+            "parsedArgs": [],
+            "behaviorName": "coffee_shop",
             "body": [
                 {
                     "type": "cmd",
-                    "command": "command",
+                    "command": "create",
                     "args": [
                         {
                             "arg": null,
                             "type": "name",
-                            "value": "a"
-                        },
+                            "value": "Cart"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "visit_shop",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [],
+            "behaviorName": "barista_presents_menu",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "display",
+                    "args": [
                         {
                             "arg": null,
                             "type": "name",
-                            "value": "b"
-                        },
-                        {
-                            "arg": null,
-                            "type": "name",
-                            "value": "c"
+                            "value": "menu"
                         }
                     ]
                 }
@@ -45,7 +52,7 @@
                     "command": "structuralType",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "type",
                             "type": "string",
                             "value": "list"
                         }
