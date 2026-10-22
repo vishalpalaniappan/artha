@@ -1,0 +1,1 @@
+Legacy primitives that are necessary to interact with the narrative but are not built from meaning and synthesized, so they are opaque and can't be reasoned about outside of the meaning established at this layer.

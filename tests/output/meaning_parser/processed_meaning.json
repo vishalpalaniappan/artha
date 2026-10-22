@@ -231,18 +231,15 @@
         [
             "      it is a participant --> PRIMITIVE MEANING: it_is\n"
         ],
-        [],
         [
             "      it has structural type List --> PRIMITIVE MEANING: it_has\n"
         ],
         [
             "      it has role type menu_list --> PRIMITIVE MEANING: it_has\n"
         ],
-        [],
         [
             "      it contains type String --> PRIMITIVE MEANING: it_contains\n"
         ],
-        [],
         [],
         [],
         [],

@@ -188,7 +188,7 @@ Cart
       it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type List --> PRIMITIVE MEANING: it_has
       it has role type Inventory --> PRIMITIVE MEANING: it_has
-      it contain type Food Item
+      it contains type Food Item
 
 
 =================
@@ -248,12 +248,9 @@ get currency of coffee cost
 Menu
 =================
       it is a participant --> PRIMITIVE MEANING: it_is
-      # Types
       it has structural type List --> PRIMITIVE MEANING: it_has
       it has role type menu_list --> PRIMITIVE MEANING: it_has
-      # Contains
       it contains type String --> PRIMITIVE MEANING: it_contains
-      # Initial Value
       it has 1 entry with value "Coffee"
       it has 1 entry with value "Bagel"
       it has 1 entry with value "Clear Cart"

@@ -1,10 +1,22 @@
 {
-    "primitives": [
+    "computable_primitives": [
         "add",
         "multiply",
         "subtract",
         "divide",
         "equal",
         "get_attribute"
+    ],
+    "legacy_primitives": [
+        "terminal_input",
+        "display_terminal"
+    ],
+    "meta_primitives": [
+        "it_is",
+        "it_has",
+        "it_contains"
+    ],
+    "lifecycle_primitives": [
+        
     ]
 }
