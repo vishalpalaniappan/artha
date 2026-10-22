@@ -5361,7 +5361,7 @@
             "endColno": 34
         },
         {
-            "value": "that",
+            "value": "with",
             "type": "IDENTIFIER",
             "startLineno": 136,
             "startColno": 36,
@@ -5369,108 +5369,100 @@
             "endColno": 39
         },
         {
-            "value": "is",
+            "value": "structural",
             "type": "IDENTIFIER",
             "startLineno": 136,
             "startColno": 41,
             "endLineno": 136,
-            "endColno": 42
-        },
-        {
-            "value": "structural",
-            "type": "IDENTIFIER",
-            "startLineno": 136,
-            "startColno": 44,
-            "endLineno": 136,
-            "endColno": 53
+            "endColno": 50
         },
         {
             "value": "type",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 55,
+            "startColno": 52,
             "endLineno": 136,
-            "endColno": 58
+            "endColno": 55
         },
         {
             "value": "float",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 60,
+            "startColno": 57,
             "endLineno": 136,
-            "endColno": 64
+            "endColno": 61
         },
         {
             "value": "and",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 66,
+            "startColno": 63,
             "endLineno": 136,
-            "endColno": 68
+            "endColno": 65
         },
         {
             "value": "has",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 70,
+            "startColno": 67,
             "endLineno": 136,
-            "endColno": 72
+            "endColno": 69
         },
         {
             "value": "a",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 74,
+            "startColno": 71,
             "endLineno": 136,
-            "endColno": 74
+            "endColno": 71
         },
         {
             "value": "value",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 76,
+            "startColno": 73,
             "endLineno": 136,
-            "endColno": 80
+            "endColno": 77
         },
         {
             "value": "of",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 82,
+            "startColno": 79,
             "endLineno": 136,
-            "endColno": 83
+            "endColno": 80
         },
         {
             "value": "1",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 85,
+            "startColno": 82,
             "endLineno": 136,
-            "endColno": 85
+            "endColno": 82
         },
         {
             "type": "COMMA",
             "value": ",",
             "startLineno": 136,
-            "startColno": 86,
+            "startColno": 83,
             "endLineno": 136,
-            "endColno": 86
+            "endColno": 83
         },
         {
             "value": "00",
             "type": "IDENTIFIER",
             "startLineno": 136,
-            "startColno": 87,
+            "startColno": 84,
             "endLineno": 136,
-            "endColno": 88
+            "endColno": 85
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 136,
-            "startColno": 89,
+            "startColno": 86,
             "endLineno": 136,
-            "endColno": 89
+            "endColno": 86
         },
         {
             "value": "it",
@@ -5521,7 +5513,7 @@
             "endColno": 43
         },
         {
-            "value": "that",
+            "value": "with",
             "type": "IDENTIFIER",
             "startLineno": 137,
             "startColno": 45,
@@ -5529,92 +5521,84 @@
             "endColno": 48
         },
         {
-            "value": "is",
+            "value": "structural",
             "type": "IDENTIFIER",
             "startLineno": 137,
             "startColno": 50,
             "endLineno": 137,
-            "endColno": 51
-        },
-        {
-            "value": "structural",
-            "type": "IDENTIFIER",
-            "startLineno": 137,
-            "startColno": 53,
-            "endLineno": 137,
-            "endColno": 62
+            "endColno": 59
         },
         {
             "value": "type",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 64,
+            "startColno": 61,
             "endLineno": 137,
-            "endColno": 67
+            "endColno": 64
         },
         {
             "value": "string",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 69,
+            "startColno": 66,
             "endLineno": 137,
-            "endColno": 74
+            "endColno": 71
         },
         {
             "value": "and",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 76,
+            "startColno": 73,
             "endLineno": 137,
-            "endColno": 78
+            "endColno": 75
         },
         {
             "value": "has",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 80,
+            "startColno": 77,
             "endLineno": 137,
-            "endColno": 82
+            "endColno": 79
         },
         {
             "value": "a",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 84,
+            "startColno": 81,
             "endLineno": 137,
-            "endColno": 84
+            "endColno": 81
         },
         {
             "value": "value",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 86,
+            "startColno": 83,
             "endLineno": 137,
-            "endColno": 90
+            "endColno": 87
         },
         {
             "value": "of",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 92,
+            "startColno": 89,
             "endLineno": 137,
-            "endColno": 93
+            "endColno": 90
         },
         {
             "value": "\"CAD\"",
             "type": "IDENTIFIER",
             "startLineno": 137,
-            "startColno": 95,
+            "startColno": 92,
             "endLineno": 137,
-            "endColno": 99
+            "endColno": 96
         },
         {
             "type": "PERIOD",
             "value": ".",
             "startLineno": 137,
-            "startColno": 100,
+            "startColno": 97,
             "endLineno": 137,
-            "endColno": 100
+            "endColno": 97
         },
         {
             "type": "RBRACE",
@@ -7021,6 +7005,14 @@
                             "startColno": 26,
                             "endLineno": 8,
                             "endColno": 31
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 8,
+                            "startColno": 32,
+                            "endLineno": 8,
+                            "endColno": 32
                         }
                     ],
                     {
@@ -7133,6 +7125,14 @@
                             "startColno": 26,
                             "endLineno": 9,
                             "endColno": 30
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 9,
+                            "startColno": 31,
+                            "endLineno": 9,
+                            "endColno": 31
                         }
                     ],
                     {
@@ -7253,6 +7253,14 @@
                             "startColno": 29,
                             "endLineno": 10,
                             "endColno": 39
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 10,
+                            "startColno": 40,
+                            "endLineno": 10,
+                            "endColno": 40
                         }
                     ],
                     {
@@ -7373,6 +7381,14 @@
                             "startColno": 36,
                             "endLineno": 11,
                             "endColno": 42
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 11,
+                            "startColno": 43,
+                            "endLineno": 11,
+                            "endColno": 43
                         }
                     ],
                     {
@@ -7493,6 +7509,14 @@
                             "startColno": 38,
                             "endLineno": 12,
                             "endColno": 42
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 12,
+                            "startColno": 43,
+                            "endLineno": 12,
+                            "endColno": 43
                         }
                     ],
                     {
@@ -8925,6 +8949,14 @@
                             "endColno": 25
                         },
                         {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 69,
+                            "startColno": 26,
+                            "endLineno": 69,
+                            "endColno": 26
+                        },
+                        {
                             "value": "add",
                             "type": "IDENTIFIER",
                             "startLineno": 69,
@@ -9721,6 +9753,14 @@
                             "endColno": 72
                         },
                         {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 92,
+                            "startColno": 73,
+                            "endLineno": 92,
+                            "endColno": 73
+                        },
+                        {
                             "value": "00",
                             "type": "IDENTIFIER",
                             "startLineno": 92,
@@ -10384,6 +10424,14 @@
                             "endColno": 34
                         },
                         {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 117,
+                            "startColno": 35,
+                            "endLineno": 117,
+                            "endColno": 35
+                        },
+                        {
                             "value": "so",
                             "type": "IDENTIFIER",
                             "startLineno": 117,
@@ -10661,6 +10709,14 @@
                             "startColno": 31,
                             "endLineno": 122,
                             "endColno": 34
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 122,
+                            "startColno": 35,
+                            "endLineno": 122,
+                            "endColno": 35
                         },
                         {
                             "value": "so",
@@ -11225,7 +11281,7 @@
                             "endColno": 34
                         },
                         {
-                            "value": "that",
+                            "value": "with",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
                             "startColno": 36,
@@ -11233,92 +11289,92 @@
                             "endColno": 39
                         },
                         {
-                            "value": "is",
+                            "value": "structural",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
                             "startColno": 41,
                             "endLineno": 136,
-                            "endColno": 42
-                        },
-                        {
-                            "value": "structural",
-                            "type": "IDENTIFIER",
-                            "startLineno": 136,
-                            "startColno": 44,
-                            "endLineno": 136,
-                            "endColno": 53
+                            "endColno": 50
                         },
                         {
                             "value": "type",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 55,
+                            "startColno": 52,
                             "endLineno": 136,
-                            "endColno": 58
+                            "endColno": 55
                         },
                         {
                             "value": "float",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 60,
+                            "startColno": 57,
                             "endLineno": 136,
-                            "endColno": 64
+                            "endColno": 61
                         },
                         {
                             "value": "and",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 66,
+                            "startColno": 63,
                             "endLineno": 136,
-                            "endColno": 68
+                            "endColno": 65
                         },
                         {
                             "value": "has",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 70,
+                            "startColno": 67,
                             "endLineno": 136,
-                            "endColno": 72
+                            "endColno": 69
                         },
                         {
                             "value": "a",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 74,
+                            "startColno": 71,
                             "endLineno": 136,
-                            "endColno": 74
+                            "endColno": 71
                         },
                         {
                             "value": "value",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 76,
+                            "startColno": 73,
                             "endLineno": 136,
-                            "endColno": 80
+                            "endColno": 77
                         },
                         {
                             "value": "of",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 82,
+                            "startColno": 79,
                             "endLineno": 136,
-                            "endColno": 83
+                            "endColno": 80
                         },
                         {
                             "value": "1",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 85,
+                            "startColno": 82,
                             "endLineno": 136,
-                            "endColno": 85
+                            "endColno": 82
+                        },
+                        {
+                            "type": "COMMA",
+                            "value": ",",
+                            "startLineno": 136,
+                            "startColno": 83,
+                            "endLineno": 136,
+                            "endColno": 83
                         },
                         {
                             "value": "00",
                             "type": "IDENTIFIER",
                             "startLineno": 136,
-                            "startColno": 87,
+                            "startColno": 84,
                             "endLineno": 136,
-                            "endColno": 88
+                            "endColno": 85
                         }
                     ]
                 ],
@@ -11373,7 +11429,7 @@
                             "endColno": 43
                         },
                         {
-                            "value": "that",
+                            "value": "with",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
                             "startColno": 45,
@@ -11381,84 +11437,76 @@
                             "endColno": 48
                         },
                         {
-                            "value": "is",
+                            "value": "structural",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
                             "startColno": 50,
                             "endLineno": 137,
-                            "endColno": 51
-                        },
-                        {
-                            "value": "structural",
-                            "type": "IDENTIFIER",
-                            "startLineno": 137,
-                            "startColno": 53,
-                            "endLineno": 137,
-                            "endColno": 62
+                            "endColno": 59
                         },
                         {
                             "value": "type",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 64,
+                            "startColno": 61,
                             "endLineno": 137,
-                            "endColno": 67
+                            "endColno": 64
                         },
                         {
                             "value": "string",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 69,
+                            "startColno": 66,
                             "endLineno": 137,
-                            "endColno": 74
+                            "endColno": 71
                         },
                         {
                             "value": "and",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 76,
+                            "startColno": 73,
                             "endLineno": 137,
-                            "endColno": 78
+                            "endColno": 75
                         },
                         {
                             "value": "has",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 80,
+                            "startColno": 77,
                             "endLineno": 137,
-                            "endColno": 82
+                            "endColno": 79
                         },
                         {
                             "value": "a",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 84,
+                            "startColno": 81,
                             "endLineno": 137,
-                            "endColno": 84
+                            "endColno": 81
                         },
                         {
                             "value": "value",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 86,
+                            "startColno": 83,
                             "endLineno": 137,
-                            "endColno": 90
+                            "endColno": 87
                         },
                         {
                             "value": "of",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 92,
+                            "startColno": 89,
                             "endLineno": 137,
-                            "endColno": 93
+                            "endColno": 90
                         },
                         {
                             "value": "\"CAD\"",
                             "type": "IDENTIFIER",
                             "startLineno": 137,
-                            "startColno": 95,
+                            "startColno": 92,
                             "endLineno": 137,
-                            "endColno": 99
+                            "endColno": 96
                         }
                     ]
                 ]
@@ -12145,7 +12193,7 @@
             ]
         }
     ],
-    "currPos": 846,
+    "currPos": 844,
     "processedMeaning": {
         "primitives": [
             {
@@ -12538,6 +12586,26 @@
                 "type": "meta_primitive",
                 "description": "It indicates what type of participants this participant contains. For example, cart contains food items.",
                 "syntax_line": "it contains type [type]"
+            },
+            {
+                "name": "it_has_an_attribute",
+                "type": "meta_primitive",
+                "description": "Meta primitive that specifies unique type.",
+                "syntax_line": "it has an attribute named [name] with structural type [type] and has a value of [value]",
+                "participants": [
+                    {
+                        "name": "name",
+                        "required": "true"
+                    },
+                    {
+                        "name": "type",
+                        "required": "true"
+                    },
+                    {
+                        "name": "value",
+                        "required": "true"
+                    }
+                ]
             }
         ],
         "arthaParsed": [
@@ -12792,6 +12860,14 @@
                                 "startColno": 26,
                                 "endLineno": 8,
                                 "endColno": 31
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 8,
+                                "startColno": 32,
+                                "endLineno": 8,
+                                "endColno": 32
                             }
                         ],
                         {
@@ -12904,6 +12980,14 @@
                                 "startColno": 26,
                                 "endLineno": 9,
                                 "endColno": 30
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 9,
+                                "startColno": 31,
+                                "endLineno": 9,
+                                "endColno": 31
                             }
                         ],
                         {
@@ -13024,6 +13108,14 @@
                                 "startColno": 29,
                                 "endLineno": 10,
                                 "endColno": 39
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 10,
+                                "startColno": 40,
+                                "endLineno": 10,
+                                "endColno": 40
                             }
                         ],
                         {
@@ -13144,6 +13236,14 @@
                                 "startColno": 36,
                                 "endLineno": 11,
                                 "endColno": 42
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 11,
+                                "startColno": 43,
+                                "endLineno": 11,
+                                "endColno": 43
                             }
                         ],
                         {
@@ -13264,6 +13364,14 @@
                                 "startColno": 38,
                                 "endLineno": 12,
                                 "endColno": 42
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 12,
+                                "startColno": 43,
+                                "endLineno": 12,
+                                "endColno": 43
                             }
                         ],
                         {
@@ -14696,6 +14804,14 @@
                                 "endColno": 25
                             },
                             {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 69,
+                                "startColno": 26,
+                                "endLineno": 69,
+                                "endColno": 26
+                            },
+                            {
                                 "value": "add",
                                 "type": "IDENTIFIER",
                                 "startLineno": 69,
@@ -15492,6 +15608,14 @@
                                 "endColno": 72
                             },
                             {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 92,
+                                "startColno": 73,
+                                "endLineno": 92,
+                                "endColno": 73
+                            },
+                            {
                                 "value": "00",
                                 "type": "IDENTIFIER",
                                 "startLineno": 92,
@@ -16155,6 +16279,14 @@
                                 "endColno": 34
                             },
                             {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 117,
+                                "startColno": 35,
+                                "endLineno": 117,
+                                "endColno": 35
+                            },
+                            {
                                 "value": "so",
                                 "type": "IDENTIFIER",
                                 "startLineno": 117,
@@ -16432,6 +16564,14 @@
                                 "startColno": 31,
                                 "endLineno": 122,
                                 "endColno": 34
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 122,
+                                "startColno": 35,
+                                "endLineno": 122,
+                                "endColno": 35
                             },
                             {
                                 "value": "so",
@@ -16996,7 +17136,7 @@
                                 "endColno": 34
                             },
                             {
-                                "value": "that",
+                                "value": "with",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
                                 "startColno": 36,
@@ -17004,92 +17144,92 @@
                                 "endColno": 39
                             },
                             {
-                                "value": "is",
+                                "value": "structural",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
                                 "startColno": 41,
                                 "endLineno": 136,
-                                "endColno": 42
-                            },
-                            {
-                                "value": "structural",
-                                "type": "IDENTIFIER",
-                                "startLineno": 136,
-                                "startColno": 44,
-                                "endLineno": 136,
-                                "endColno": 53
+                                "endColno": 50
                             },
                             {
                                 "value": "type",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 55,
+                                "startColno": 52,
                                 "endLineno": 136,
-                                "endColno": 58
+                                "endColno": 55
                             },
                             {
                                 "value": "float",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 60,
+                                "startColno": 57,
                                 "endLineno": 136,
-                                "endColno": 64
+                                "endColno": 61
                             },
                             {
                                 "value": "and",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 66,
+                                "startColno": 63,
                                 "endLineno": 136,
-                                "endColno": 68
+                                "endColno": 65
                             },
                             {
                                 "value": "has",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 70,
+                                "startColno": 67,
                                 "endLineno": 136,
-                                "endColno": 72
+                                "endColno": 69
                             },
                             {
                                 "value": "a",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 74,
+                                "startColno": 71,
                                 "endLineno": 136,
-                                "endColno": 74
+                                "endColno": 71
                             },
                             {
                                 "value": "value",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 76,
+                                "startColno": 73,
                                 "endLineno": 136,
-                                "endColno": 80
+                                "endColno": 77
                             },
                             {
                                 "value": "of",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 82,
+                                "startColno": 79,
                                 "endLineno": 136,
-                                "endColno": 83
+                                "endColno": 80
                             },
                             {
                                 "value": "1",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 85,
+                                "startColno": 82,
                                 "endLineno": 136,
-                                "endColno": 85
+                                "endColno": 82
+                            },
+                            {
+                                "type": "COMMA",
+                                "value": ",",
+                                "startLineno": 136,
+                                "startColno": 83,
+                                "endLineno": 136,
+                                "endColno": 83
                             },
                             {
                                 "value": "00",
                                 "type": "IDENTIFIER",
                                 "startLineno": 136,
-                                "startColno": 87,
+                                "startColno": 84,
                                 "endLineno": 136,
-                                "endColno": 88
+                                "endColno": 85
                             }
                         ]
                     ],
@@ -17144,7 +17284,7 @@
                                 "endColno": 43
                             },
                             {
-                                "value": "that",
+                                "value": "with",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
                                 "startColno": 45,
@@ -17152,84 +17292,76 @@
                                 "endColno": 48
                             },
                             {
-                                "value": "is",
+                                "value": "structural",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
                                 "startColno": 50,
                                 "endLineno": 137,
-                                "endColno": 51
-                            },
-                            {
-                                "value": "structural",
-                                "type": "IDENTIFIER",
-                                "startLineno": 137,
-                                "startColno": 53,
-                                "endLineno": 137,
-                                "endColno": 62
+                                "endColno": 59
                             },
                             {
                                 "value": "type",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 64,
+                                "startColno": 61,
                                 "endLineno": 137,
-                                "endColno": 67
+                                "endColno": 64
                             },
                             {
                                 "value": "string",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 69,
+                                "startColno": 66,
                                 "endLineno": 137,
-                                "endColno": 74
+                                "endColno": 71
                             },
                             {
                                 "value": "and",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 76,
+                                "startColno": 73,
                                 "endLineno": 137,
-                                "endColno": 78
+                                "endColno": 75
                             },
                             {
                                 "value": "has",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 80,
+                                "startColno": 77,
                                 "endLineno": 137,
-                                "endColno": 82
+                                "endColno": 79
                             },
                             {
                                 "value": "a",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 84,
+                                "startColno": 81,
                                 "endLineno": 137,
-                                "endColno": 84
+                                "endColno": 81
                             },
                             {
                                 "value": "value",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 86,
+                                "startColno": 83,
                                 "endLineno": 137,
-                                "endColno": 90
+                                "endColno": 87
                             },
                             {
                                 "value": "of",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 92,
+                                "startColno": 89,
                                 "endLineno": 137,
-                                "endColno": 93
+                                "endColno": 90
                             },
                             {
                                 "value": "\"CAD\"",
                                 "type": "IDENTIFIER",
                                 "startLineno": 137,
-                                "startColno": 95,
+                                "startColno": 92,
                                 "endLineno": 137,
-                                "endColno": 99
+                                "endColno": 96
                             }
                         ]
                     ]
@@ -17916,7 +18048,7 @@
                 ]
             }
         ],
-        "outputLog": "=================\ncoffee shop\n=================\n      initialize Cart\n      present menu --> COMPOSITE MEANING\n\n\n=================\npresent menu\n=================\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user --> COMPOSITE MEANING\n    if\n      the user selected Coffee --> COMPOSITE MEANING\n    then\n      add Coffee to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user selected Bagel --> COMPOSITE MEANING\n    then\n      add Bagel to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user cleared the transaction --> COMPOSITE MEANING\n    then\n      clear the Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment --> COMPOSITE MEANING\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user decided to leave the store --> COMPOSITE MEANING\n    then\n      close the store --> COMPOSITE MEANING\n\n\n=================\naccept the menu choice from the user\n=================\n      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n      # TODO : Add errors after extending primitive syntax\n      # EOF is reached without data : present menu\n      # keyboard interrupt is triggered : close store\n\n\n=================\nclose the store\n=================\n      display goodbye_message in terminal --> PRIMITIVE MEANING: display_terminal\n\n\n=================\nBarista presents the menu to the user\n=================\n      get formatted menu and store in formatted_menu\n      display formatted_menu in terminal --> PRIMITIVE MEANING: display_terminal\n\n\n=================\nthe user selected Coffee\n=================\n      menu_choice equals \"coffee\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user selected Bagel\n=================\n    resolve\n      menu_choice equals \"bagel\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user cleared the transaction\n=================\n    resolve\n      menu_choice equals \"clear\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user proceeded with the payment\n=================\n    resolve\n      menu_choice equals \"checkout\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user decided to leave the store\n=================\n    resolve\n      menu_choice equals \"leave\" --> PRIMITIVE MEANING: equal\n\n\n=================\nprocess payment\n=================\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n=================\ntotal_cost\n=================\n      it has structural type float --> PRIMITIVE MEANING: it_has_type\n      it has role type accumulated_cost --> PRIMITIVE MEANING: it_has_type\n\n\n=================\ninitialize cost\n=================\n      set total_cost to zero\n\n\n=================\ncalculate cost\n=================\n      add total_cost to world\n      initialize cost --> COMPOSITE MEANING\n    for\n      each item in cart add cost of [item] to total_cost\n\n\n=================\nadd cost of [item] to [total_cost]\n=================\n      get cost of [item] and store in item_cost\n      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n\n\n=================\nhand user the bill\n=================\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n=================\naccept payment from user\n=================\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n=================\nBagel\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type Object --> PRIMITIVE MEANING: it_has_type\n      it has role type food_item --> PRIMITIVE MEANING: it_has_type\n      it has an attribute named cost which is a float and has a value of 2 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n\n\n=================\nget cost of bagel\n=================\n    resolve\n      attribute cost of Bagel --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget type of bagel\n=================\n    resolve\n      attribute type of Bagel --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget currency of bagel cost\n=================\n    resolve\n      attribute cost_currency of Bagel --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nCart\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type List --> PRIMITIVE MEANING: it_has_type\n      it has role type Inventory --> PRIMITIVE MEANING: it_has_type\n      it contains type Food Item\n\n\n=================\nadd Coffee to Cart\n=================\n      # Cart only contains food_item so there is an invariant that the item being inserted has to be of type food item\n      insert Coffee at end of Cart\n\n\n=================\nadd Bagel to Cart\n=================\n      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item\n      insert Bagel at end of Cart\n\n\n=================\nclear the Cart\n=================\n      # This is primitive that removes all the entries in the cart\n      remove all entires in Cart\n\n\n=================\nCoffee\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type Object --> PRIMITIVE MEANING: it_has_type\n      it has role type Food Item\n      it has an attribute named cost that is structural type float and has a value of 1 00\n      it has an attribute named cost_currency that is structural type string and has a value of \"CAD\"\n\n\n=================\nget cost of coffee\n=================\n    resolve\n      attribute cost of Coffee --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget type of coffee\n=================\n    resolve\n      attribute type of Coffee --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget currency of coffee cost\n=================\n    resolve\n      attribute cost_currency of Coffee --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nMenu\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type List --> PRIMITIVE MEANING: it_has_type\n      it has role type menu_list --> PRIMITIVE MEANING: it_has_type\n      it contains type String --> PRIMITIVE MEANING: it_contains\n      it has 1 entry with value \"Coffee\"\n      it has 1 entry with value \"Bagel\"\n      it has 1 entry with value \"Clear Cart\"\n      it has 1 entry with value \"Checkout\"\n\n\n",
+        "outputLog": "=================\ncoffee shop\n=================\n      initialize Cart\n      present menu --> COMPOSITE MEANING\n\n\n=================\npresent menu\n=================\n      Barista presents the menu to the user --> COMPOSITE MEANING\n    then\n      accept the menu choice from the user --> COMPOSITE MEANING\n    if\n      the user selected Coffee ,\n    then\n      add Coffee to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user selected Bagel ,\n    then\n      add Bagel to Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user cleared the transaction ,\n    then\n      clear the Cart --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user proceeded with the payment ,\n    then\n      process payment --> COMPOSITE MEANING\n    then\n      present menu --> COMPOSITE MEANING\n    if\n      the user decided to leave the store ,\n    then\n      close the store --> COMPOSITE MEANING\n\n\n=================\naccept the menu choice from the user\n=================\n      accept terminal input and store in user_input --> PRIMITIVE MEANING: terminal_input\n      # TODO : Add errors after extending primitive syntax\n      # EOF is reached without data : present menu\n      # keyboard interrupt is triggered : close store\n\n\n=================\nclose the store\n=================\n      display goodbye_message in terminal --> PRIMITIVE MEANING: display_terminal\n\n\n=================\nBarista presents the menu to the user\n=================\n      get formatted menu and store in formatted_menu\n      display formatted_menu in terminal --> PRIMITIVE MEANING: display_terminal\n\n\n=================\nthe user selected Coffee\n=================\n      menu_choice equals \"coffee\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user selected Bagel\n=================\n    resolve\n      menu_choice equals \"bagel\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user cleared the transaction\n=================\n    resolve\n      menu_choice equals \"clear\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user proceeded with the payment\n=================\n    resolve\n      menu_choice equals \"checkout\" --> PRIMITIVE MEANING: equal\n\n\n=================\nthe user decided to leave the store\n=================\n    resolve\n      menu_choice equals \"leave\" --> PRIMITIVE MEANING: equal\n\n\n=================\nprocess payment\n=================\n      calculate cost --> COMPOSITE MEANING\n    then\n      hand user the bill --> COMPOSITE MEANING\n    then\n      accept payment from user --> COMPOSITE MEANING\n\n\n=================\ntotal_cost\n=================\n      it has structural type float --> PRIMITIVE MEANING: it_has_type\n      it has role type accumulated_cost --> PRIMITIVE MEANING: it_has_type\n\n\n=================\ninitialize cost\n=================\n      set total_cost to zero\n\n\n=================\ncalculate cost\n=================\n      add total_cost to world\n      initialize cost --> COMPOSITE MEANING\n    for\n      each item in cart , add cost of [item] to total_cost\n\n\n=================\nadd cost of [item] to [total_cost]\n=================\n      get cost of [item] and store in item_cost\n      add item_cost and [total_cost] and store result in [total_cost] --> PRIMITIVE MEANING: add\n\n\n=================\nhand user the bill\n=================\n      set user_prompt to \"User owes [total_cost]\" with type string\n      prompt terminal with user_prompt\n\n\n=================\naccept payment from user\n=================\n      # TODO : Verify payment amount\n      accept user_payment from terminal\n\n\n=================\nBagel\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type Object --> PRIMITIVE MEANING: it_has_type\n      it has role type food_item --> PRIMITIVE MEANING: it_has_type\n      it has an attribute named cost which is a float and has a value of 2 , 00\n      it has an attribute named cost_currency which is a string and has a value of \"CAD\"\n\n\n=================\nget cost of bagel\n=================\n    resolve\n      attribute cost of Bagel --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget type of bagel\n=================\n    resolve\n      attribute type of Bagel --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget currency of bagel cost\n=================\n    resolve\n      attribute cost_currency of Bagel --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nCart\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type List --> PRIMITIVE MEANING: it_has_type\n      it has role type Inventory --> PRIMITIVE MEANING: it_has_type\n      it contains type Food Item\n\n\n=================\nadd Coffee to Cart\n=================\n      # Cart only contains food_item , so there is an invariant that the item being inserted has to be of type food item\n      insert Coffee at end of Cart\n\n\n=================\nadd Bagel to Cart\n=================\n      # Cart only contains food item , so there is an invariant that the item being inserted has to be of type food item\n      insert Bagel at end of Cart\n\n\n=================\nclear the Cart\n=================\n      # This is primitive that removes all the entries in the cart\n      remove all entires in Cart\n\n\n=================\nCoffee\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type Object --> PRIMITIVE MEANING: it_has_type\n      it has role type Food Item\n      it has an attribute named cost with structural type float and has a value of 1 , 00\n      it has an attribute named cost_currency with structural type string and has a value of \"CAD\" --> PRIMITIVE MEANING: it_has_an_attribute\n\n\n=================\nget cost of coffee\n=================\n    resolve\n      attribute cost of Coffee --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget type of coffee\n=================\n    resolve\n      attribute type of Coffee --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nget currency of coffee cost\n=================\n    resolve\n      attribute cost_currency of Coffee --> PRIMITIVE MEANING: get_attribute\n\n\n=================\nMenu\n=================\n      it is a participant --> PRIMITIVE MEANING: it_is\n      it has structural type List --> PRIMITIVE MEANING: it_has_type\n      it has role type menu_list --> PRIMITIVE MEANING: it_has_type\n      it contains type String --> PRIMITIVE MEANING: it_contains\n      it has 1 entry with value \"Coffee\"\n      it has 1 entry with value \"Bagel\"\n      it has 1 entry with value \"Clear Cart\"\n      it has 1 entry with value \"Checkout\"\n\n\n",
         "output": {
             "coffee shop": [
                 [],
@@ -17932,7 +18064,6 @@
                 ],
                 [
                     "if",
-                    "      the user selected Coffee --> COMPOSITE MEANING",
                     "then",
                     "      add Coffee to Cart --> COMPOSITE MEANING",
                     "then",
@@ -17940,7 +18071,6 @@
                 ],
                 [
                     "if",
-                    "      the user selected Bagel --> COMPOSITE MEANING",
                     "then",
                     "      add Bagel to Cart --> COMPOSITE MEANING",
                     "then",
@@ -17948,7 +18078,6 @@
                 ],
                 [
                     "if",
-                    "      the user cleared the transaction --> COMPOSITE MEANING",
                     "then",
                     "      clear the Cart --> COMPOSITE MEANING",
                     "then",
@@ -17956,7 +18085,6 @@
                 ],
                 [
                     "if",
-                    "      the user proceeded with the payment --> COMPOSITE MEANING",
                     "then",
                     "      process payment --> COMPOSITE MEANING",
                     "then",
@@ -17964,7 +18092,6 @@
                 ],
                 [
                     "if",
-                    "      the user decided to leave the store --> COMPOSITE MEANING",
                     "then",
                     "      close the store --> COMPOSITE MEANING"
                 ]
@@ -18124,7 +18251,9 @@
                 ],
                 [],
                 [],
-                []
+                [
+                    "      it has an attribute named cost_currency with structural type string and has a value of \"CAD\" --> PRIMITIVE MEANING: it_has_an_attribute\n"
+                ]
             ],
             "get cost of coffee": [
                 [

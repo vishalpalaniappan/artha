@@ -12,31 +12,31 @@ present menu
     then
       accept the menu choice from the user --> COMPOSITE MEANING
     if
-      the user selected Coffee --> COMPOSITE MEANING
+      the user selected Coffee ,
     then
       add Coffee to Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user selected Bagel --> COMPOSITE MEANING
+      the user selected Bagel ,
     then
       add Bagel to Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user cleared the transaction --> COMPOSITE MEANING
+      the user cleared the transaction ,
     then
       clear the Cart --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user proceeded with the payment --> COMPOSITE MEANING
+      the user proceeded with the payment ,
     then
       process payment --> COMPOSITE MEANING
     then
       present menu --> COMPOSITE MEANING
     if
-      the user decided to leave the store --> COMPOSITE MEANING
+      the user decided to leave the store ,
     then
       close the store --> COMPOSITE MEANING
 
@@ -126,7 +126,7 @@ calculate cost
       add total_cost to world
       initialize cost --> COMPOSITE MEANING
     for
-      each item in cart add cost of [item] to total_cost
+      each item in cart , add cost of [item] to total_cost
 
 
 =================
@@ -156,7 +156,7 @@ Bagel
       it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type Object --> PRIMITIVE MEANING: it_has_type
       it has role type food_item --> PRIMITIVE MEANING: it_has_type
-      it has an attribute named cost which is a float and has a value of 2 00
+      it has an attribute named cost which is a float and has a value of 2 , 00
       it has an attribute named cost_currency which is a string and has a value of "CAD"
 
 
@@ -193,14 +193,14 @@ Cart
 =================
 add Coffee to Cart
 =================
-      # Cart only contains food_item so there is an invariant that the item being inserted has to be of type food item
+      # Cart only contains food_item , so there is an invariant that the item being inserted has to be of type food item
       insert Coffee at end of Cart
 
 
 =================
 add Bagel to Cart
 =================
-      # Cart only contains food item so there is an invariant that the item being inserted has to be of type food item
+      # Cart only contains food item , so there is an invariant that the item being inserted has to be of type food item
       insert Bagel at end of Cart
 
 
@@ -217,8 +217,8 @@ Coffee
       it is a participant --> PRIMITIVE MEANING: it_is
       it has structural type Object --> PRIMITIVE MEANING: it_has_type
       it has role type Food Item
-      it has an attribute named cost that is structural type float and has a value of 1 00
-      it has an attribute named cost_currency that is structural type string and has a value of "CAD"
+      it has an attribute named cost with structural type float and has a value of 1 , 00
+      it has an attribute named cost_currency with structural type string and has a value of "CAD" --> PRIMITIVE MEANING: it_has_an_attribute
 
 
 =================
