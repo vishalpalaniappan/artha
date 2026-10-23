@@ -1,0 +1,89 @@
+{
+    "type": "root",
+    "body": [
+        {
+            "type": "behavior",
+            "parsedArgs": [],
+            "behaviorName": "coffee_shop",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "create",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "Cart"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "visit_shop",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [],
+            "behaviorName": "barista_presents_menu",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "display",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "menu"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "participant",
+            "parsedArgs": [],
+            "participantType": "Cart",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "structuralType",
+                    "args": [
+                        {
+                            "arg": "type",
+                            "type": "string",
+                            "value": "list"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "roleType",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "string",
+                            "value": "basket"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "contains",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "list",
+                            "value": [
+                                "Coffee",
+                                "Bagel"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
