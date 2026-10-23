@@ -1,6 +1,6 @@
 # Syntax Planning 
 
-I will also add equality syntax so that I can store values in participants. In the past, I was using the first argument in the meaning args as the participant to store the value in, but I think it is time to start extending the syntax.
+I will also add assign syntax so that I can store values in participants. In the past, I was using the first argument in the meaning args as the participant to store the value in, but I think it is time to start extending the syntax.
 
 So if a meaning yields a value, then it will be stored in the participant:
 participant = meaning(arg1, arg2, arg3)
@@ -8,7 +8,7 @@ participant = meaning(arg1, arg2, arg3)
 For example
 sum = add(1,2)
 
-add(1,2) will yield 3. I can even switch to the + syntax eventually. While that looks like programming, I think it is still important to remember that it is meaning and then it will be synthesized into a program. 
+add(1,2) will yield 3. I can even switch to the + syntax eventually. While that looks like programming, I think it is still important to remember that there is an unambiguous narrative with meaning that is being established and then it will be synthesized into a program.
 
 Also, sum can be a participant that was already created with a role and then it its value is the result of add. 
 
