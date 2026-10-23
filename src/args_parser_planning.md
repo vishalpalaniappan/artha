@@ -3,7 +3,7 @@
 I will also add assign syntax so that I can store values in participants. In the past, I was using the first argument in the meaning args as the participant to store the value in, but I think it is time to start extending the syntax.
 
 So if a meaning yields a value, then it will be stored in the participant:
-participant = meaning(arg1, arg2, arg3)
+participant = meaning(meaningfulArg2, meaningfulArg2)
 
 For example
 sum = add(1,2)
@@ -20,14 +20,14 @@ meaning(test=meaning2(23,"23"),test2=meaning3(),[1,2,3],"asdf")
 
 meaning(
     test = meaning2(
-        arg1 = 23,
-        arg2 = "23"
+        meaningfulArg1 = 23,
+        meaningfulArg2 = "23"
     )
     ,
     test2= meaning3(
-        arg1 = 5,
-        arg2 = [1,2,3],
-        arg3 = "asdf"
+        meaningfulArg1 = 5,
+        meaningfulArg2 = [1,2,3],
+        meaningfulArg3 = "asdf"
     )
 )
 
