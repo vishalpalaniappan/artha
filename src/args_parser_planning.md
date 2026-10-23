@@ -8,11 +8,11 @@ participant = meaning(meaningfulArg2, meaningfulArg2)
 For example
 sum = add(1,2)
 
-add(1,2) will yield 3. I can even switch to the + syntax eventually. While that looks like programming, I think it is still important to remember that there is an unambiguous narrative with meaning that is being established and then it will be synthesized into a program.
+add(1,2) will yield a result. I can even switch to the + syntax eventually. While that looks like programming, I think it is still important to remember that there is an unambiguous narrative with meaning that is being established and then it will be synthesized into a program.
 
-Also, sum can be a participant that was already created with a role and then it its value is the result of add. 
+Also, sum can be a participant that was already created with a role and then it its value is the result of add. I haven't yet decided the nuances of how I want to approach that but I will refine that as I implement.
 
-In this way, writing the program itself is constructing meaning and then the engine reasons about it and then synthesizes it. The automatic synthesis is done with awareness of meaning that has been fully reasoned about, that is why it will be fully correct.
+In this way, writing the program itself is constructing meaning and then the engine reasons about it and then synthesizes it. The automatic synthesis is done with awareness of meaning that has been fully reasoned about, that is why it will be fully correct (with respect to the known meaning and CLP will enable the unknown meaning to be learnt through root cause analysis on failures that have been automatically diagnosed).
 
 # Args Parser Planning
 
