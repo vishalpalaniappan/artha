@@ -1,14 +1,25 @@
 behavior coffee_shop() {
-    create(participant=Cart)
+    introduce(
+        name= shopping_cart, 
+        participant= Cart
+    )
     visit_shop()
 }
 
 behavior barista_presents_menu() {
-    display(value=menu)
+    display(
+        value= menu
+    )
 }
 
 participant Cart() {
-    structuralType(type="list")
-    roleType(type="basket")
-    contains(values=["Coffee", "Bagel"])
+    structuralType(
+        type= "list"
+    )
+    roleType(
+        type= "basket"
+    )
+    contains(
+        values= ["Coffee", "Bagel"]
+    )
 }
