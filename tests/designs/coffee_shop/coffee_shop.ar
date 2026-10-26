@@ -1,5 +1,5 @@
 import("user_choice.ar")
-import("Cart.ar")
+import("participants/Cart.ar")
 
 behavior coffee_shop() {
     introduce(
@@ -33,25 +33,21 @@ behavior visit_shop() {
     )
 
     if (user_chose_coffee) {
-        # Add coffee to cart
         add_coffee_to_cart()
         visit_shop()
     }
 
     if (user_chose_bagel) {
-        # Add bagel to cart
         add_bagel_to_cart()
         visit_shop()
     }
 
     if (user_chose_display_cart) {
-        # Display Cart
         display_cart()
         visit_shop()
     }
 
     if (user_chose_clear_cart) {
-        # Clear the cart
         clear_cart()
         visit_shop()
     }
