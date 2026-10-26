@@ -38,369 +38,704 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "create",
+        "value": "introduce",
         "startLineno": 2,
         "startColno": 5,
         "endLineno": 2,
-        "endColno": 10
+        "endColno": 13
     },
     {
         "type": "LPAREN",
         "startLineno": 2,
-        "startColno": 11,
+        "startColno": 14,
         "endLineno": 2,
-        "endColno": 11
+        "endColno": 14
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "name",
+        "startLineno": 3,
+        "startColno": 9,
+        "endLineno": 3,
+        "endColno": 12
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 3,
+        "startColno": 13,
+        "endLineno": 3,
+        "endColno": 13
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "shopping_cart",
+        "startLineno": 3,
+        "startColno": 15,
+        "endLineno": 3,
+        "endColno": 27
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 3,
+        "startColno": 28,
+        "endLineno": 3,
+        "endColno": 28
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "participant",
+        "startLineno": 4,
+        "startColno": 9,
+        "endLineno": 4,
+        "endColno": 19
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 4,
+        "startColno": 20,
+        "endLineno": 4,
+        "endColno": 20
     },
     {
         "type": "IDENTIFIER",
         "value": "Cart",
-        "startLineno": 2,
-        "startColno": 12,
-        "endLineno": 2,
-        "endColno": 15
+        "startLineno": 4,
+        "startColno": 22,
+        "endLineno": 4,
+        "endColno": 25
     },
     {
         "type": "RPAREN",
-        "startLineno": 2,
-        "startColno": 16,
-        "endLineno": 2,
-        "endColno": 16
+        "startLineno": 5,
+        "startColno": 5,
+        "endLineno": 5,
+        "endColno": 5
     },
     {
         "type": "IDENTIFIER",
         "value": "visit_shop",
-        "startLineno": 3,
+        "startLineno": 6,
         "startColno": 5,
-        "endLineno": 3,
+        "endLineno": 6,
         "endColno": 14
     },
     {
         "type": "LPAREN",
-        "startLineno": 3,
+        "startLineno": 6,
         "startColno": 15,
-        "endLineno": 3,
+        "endLineno": 6,
         "endColno": 15
     },
     {
         "type": "RPAREN",
-        "startLineno": 3,
+        "startLineno": 6,
         "startColno": 16,
-        "endLineno": 3,
+        "endLineno": 6,
         "endColno": 16
     },
     {
         "type": "RBRACE",
-        "startLineno": 4,
+        "startLineno": 7,
         "startColno": 1,
-        "endLineno": 4,
+        "endLineno": 7,
         "endColno": 1
     },
     {
         "type": "IDENTIFIER",
         "value": "behavior",
-        "startLineno": 6,
+        "startLineno": 9,
         "startColno": 1,
-        "endLineno": 6,
+        "endLineno": 9,
         "endColno": 8
     },
     {
         "type": "IDENTIFIER",
-        "value": "barista_presents_menu",
-        "startLineno": 6,
+        "value": "visit_shop",
+        "startLineno": 9,
         "startColno": 10,
-        "endLineno": 6,
-        "endColno": 30
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 6,
-        "startColno": 31,
-        "endLineno": 6,
-        "endColno": 31
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 6,
-        "startColno": 32,
-        "endLineno": 6,
-        "endColno": 32
-    },
-    {
-        "type": "LBRACE",
-        "startLineno": 6,
-        "startColno": 34,
-        "endLineno": 6,
-        "endColno": 34
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "display",
-        "startLineno": 7,
-        "startColno": 5,
-        "endLineno": 7,
-        "endColno": 11
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 7,
-        "startColno": 12,
-        "endLineno": 7,
-        "endColno": 12
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "menu",
-        "startLineno": 7,
-        "startColno": 13,
-        "endLineno": 7,
-        "endColno": 16
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 7,
-        "startColno": 17,
-        "endLineno": 7,
-        "endColno": 17
-    },
-    {
-        "type": "RBRACE",
-        "startLineno": 8,
-        "startColno": 1,
-        "endLineno": 8,
-        "endColno": 1
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "participant",
-        "startLineno": 10,
-        "startColno": 1,
-        "endLineno": 10,
-        "endColno": 11
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "Cart",
-        "startLineno": 10,
-        "startColno": 13,
-        "endLineno": 10,
-        "endColno": 16
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 10,
-        "startColno": 17,
-        "endLineno": 10,
-        "endColno": 17
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 10,
-        "startColno": 18,
-        "endLineno": 10,
-        "endColno": 18
-    },
-    {
-        "type": "LBRACE",
-        "startLineno": 10,
-        "startColno": 20,
-        "endLineno": 10,
-        "endColno": 20
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "structuralType",
-        "startLineno": 11,
-        "startColno": 5,
-        "endLineno": 11,
-        "endColno": 18
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 11,
-        "startColno": 19,
-        "endLineno": 11,
+        "endLineno": 9,
         "endColno": 19
     },
     {
-        "type": "IDENTIFIER",
-        "value": "type",
-        "startLineno": 11,
-        "startColno": 20,
-        "endLineno": 11,
-        "endColno": 23
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 11,
-        "startColno": 24,
-        "endLineno": 11,
-        "endColno": 24
-    },
-    {
-        "type": "QUOTE",
-        "startLineno": 11,
-        "startColno": 25,
-        "endLineno": 11,
-        "endColno": 25
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "list",
-        "startLineno": 11,
-        "startColno": 26,
-        "endLineno": 11,
-        "endColno": 29
-    },
-    {
-        "type": "QUOTE",
-        "startLineno": 11,
-        "startColno": 30,
-        "endLineno": 11,
-        "endColno": 30
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 11,
-        "startColno": 31,
-        "endLineno": 11,
-        "endColno": 31
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "roleType",
-        "startLineno": 12,
-        "startColno": 5,
-        "endLineno": 12,
-        "endColno": 12
-    },
-    {
         "type": "LPAREN",
-        "startLineno": 12,
-        "startColno": 13,
-        "endLineno": 12,
-        "endColno": 13
-    },
-    {
-        "type": "QUOTE",
-        "startLineno": 12,
-        "startColno": 14,
-        "endLineno": 12,
-        "endColno": 14
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "basket",
-        "startLineno": 12,
-        "startColno": 15,
-        "endLineno": 12,
+        "startLineno": 9,
+        "startColno": 20,
+        "endLineno": 9,
         "endColno": 20
     },
     {
-        "type": "QUOTE",
-        "startLineno": 12,
-        "startColno": 21,
-        "endLineno": 12,
-        "endColno": 21
-    },
-    {
         "type": "RPAREN",
-        "startLineno": 12,
-        "startColno": 22,
-        "endLineno": 12,
-        "endColno": 22
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "contains",
-        "startLineno": 13,
-        "startColno": 5,
-        "endLineno": 13,
-        "endColno": 12
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 13,
-        "startColno": 13,
-        "endLineno": 13,
-        "endColno": 13
-    },
-    {
-        "type": "LBRACKET",
-        "startLineno": 13,
-        "startColno": 14,
-        "endLineno": 13,
-        "endColno": 14
-    },
-    {
-        "type": "QUOTE",
-        "startLineno": 13,
-        "startColno": 15,
-        "endLineno": 13,
-        "endColno": 15
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "Coffee",
-        "startLineno": 13,
-        "startColno": 16,
-        "endLineno": 13,
+        "startLineno": 9,
+        "startColno": 21,
+        "endLineno": 9,
         "endColno": 21
     },
     {
-        "type": "QUOTE",
-        "startLineno": 13,
-        "startColno": 22,
-        "endLineno": 13,
-        "endColno": 22
-    },
-    {
-        "type": "COMMA",
-        "startLineno": 13,
+        "type": "LBRACE",
+        "startLineno": 9,
         "startColno": 23,
-        "endLineno": 13,
+        "endLineno": 9,
         "endColno": 23
     },
     {
-        "type": "QUOTE",
-        "startLineno": 13,
-        "startColno": 25,
-        "endLineno": 13,
+        "type": "IDENTIFIER",
+        "value": "barista_presents_menu",
+        "startLineno": 10,
+        "startColno": 5,
+        "endLineno": 10,
         "endColno": 25
     },
     {
-        "type": "IDENTIFIER",
-        "value": "Bagel",
-        "startLineno": 13,
+        "type": "LPAREN",
+        "startLineno": 10,
         "startColno": 26,
-        "endLineno": 13,
-        "endColno": 30
+        "endLineno": 10,
+        "endColno": 26
     },
     {
-        "type": "QUOTE",
-        "startLineno": 13,
-        "startColno": 31,
-        "endLineno": 13,
-        "endColno": 31
+        "type": "RPAREN",
+        "startLineno": 10,
+        "startColno": 27,
+        "endLineno": 10,
+        "endColno": 27
     },
     {
-        "type": "RBRACKET",
-        "startLineno": 13,
-        "startColno": 32,
-        "endLineno": 13,
-        "endColno": 32
+        "type": "IDENTIFIER",
+        "value": "accept_choice",
+        "startLineno": 11,
+        "startColno": 5,
+        "endLineno": 11,
+        "endColno": 17
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 11,
+        "startColno": 18,
+        "endLineno": 11,
+        "endColno": 18
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "as",
+        "startLineno": 12,
+        "startColno": 9,
+        "endLineno": 12,
+        "endColno": 10
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 12,
+        "startColno": 12,
+        "endLineno": 12,
+        "endColno": 12
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_choice",
+        "startLineno": 12,
+        "startColno": 14,
+        "endLineno": 12,
+        "endColno": 24
     },
     {
         "type": "RPAREN",
         "startLineno": 13,
-        "startColno": 33,
+        "startColno": 5,
         "endLineno": 13,
-        "endColno": 33
+        "endColno": 5
     },
     {
         "type": "RBRACE",
         "startLineno": 14,
         "startColno": 1,
         "endLineno": 14,
+        "endColno": 1
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "behavior",
+        "startLineno": 16,
+        "startColno": 1,
+        "endLineno": 16,
+        "endColno": 8
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "barista_presents_menu",
+        "startLineno": 16,
+        "startColno": 10,
+        "endLineno": 16,
+        "endColno": 30
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 16,
+        "startColno": 31,
+        "endLineno": 16,
+        "endColno": 31
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 16,
+        "startColno": 32,
+        "endLineno": 16,
+        "endColno": 32
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 16,
+        "startColno": 34,
+        "endLineno": 16,
+        "endColno": 34
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "display",
+        "startLineno": 17,
+        "startColno": 5,
+        "endLineno": 17,
+        "endColno": 11
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 17,
+        "startColno": 12,
+        "endLineno": 17,
+        "endColno": 12
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "value",
+        "startLineno": 18,
+        "startColno": 9,
+        "endLineno": 18,
+        "endColno": 13
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 18,
+        "startColno": 15,
+        "endLineno": 18,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "menu",
+        "startLineno": 18,
+        "startColno": 17,
+        "endLineno": 18,
+        "endColno": 20
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 19,
+        "startColno": 5,
+        "endLineno": 19,
+        "endColno": 5
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 20,
+        "startColno": 1,
+        "endLineno": 20,
+        "endColno": 1
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "behavior",
+        "startLineno": 22,
+        "startColno": 1,
+        "endLineno": 22,
+        "endColno": 8
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "accept_choice",
+        "startLineno": 22,
+        "startColno": 10,
+        "endLineno": 22,
+        "endColno": 22
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 22,
+        "startColno": 23,
+        "endLineno": 22,
+        "endColno": 23
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 22,
+        "startColno": 24,
+        "endLineno": 22,
+        "endColno": 24
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 22,
+        "startColno": 26,
+        "endLineno": 22,
+        "endColno": 26
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "accept_terminal_input",
+        "startLineno": 23,
+        "startColno": 5,
+        "endLineno": 23,
+        "endColno": 25
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 23,
+        "startColno": 26,
+        "endLineno": 23,
+        "endColno": 26
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "as",
+        "startLineno": 24,
+        "startColno": 9,
+        "endLineno": 24,
+        "endColno": 10
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 24,
+        "startColno": 12,
+        "endLineno": 24,
+        "endColno": 12
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "terminal_input",
+        "startLineno": 24,
+        "startColno": 14,
+        "endLineno": 24,
+        "endColno": 27
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 25,
+        "startColno": 5,
+        "endLineno": 25,
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "yield",
+        "startLineno": 26,
+        "startColno": 5,
+        "endLineno": 26,
+        "endColno": 9
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 26,
+        "startColno": 10,
+        "endLineno": 26,
+        "endColno": 10
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "value",
+        "startLineno": 26,
+        "startColno": 11,
+        "endLineno": 26,
+        "endColno": 15
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 26,
+        "startColno": 16,
+        "endLineno": 26,
+        "endColno": 16
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "terminal_input",
+        "startLineno": 26,
+        "startColno": 17,
+        "endLineno": 26,
+        "endColno": 30
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 26,
+        "startColno": 31,
+        "endLineno": 26,
+        "endColno": 31
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 27,
+        "startColno": 1,
+        "endLineno": 27,
+        "endColno": 1
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "participant",
+        "startLineno": 29,
+        "startColno": 1,
+        "endLineno": 29,
+        "endColno": 11
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "Cart",
+        "startLineno": 29,
+        "startColno": 13,
+        "endLineno": 29,
+        "endColno": 16
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 29,
+        "startColno": 17,
+        "endLineno": 29,
+        "endColno": 17
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 29,
+        "startColno": 18,
+        "endLineno": 29,
+        "endColno": 18
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 29,
+        "startColno": 20,
+        "endLineno": 29,
+        "endColno": 20
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "structuralType",
+        "startLineno": 30,
+        "startColno": 5,
+        "endLineno": 30,
+        "endColno": 18
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 30,
+        "startColno": 19,
+        "endLineno": 30,
+        "endColno": 19
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "type",
+        "startLineno": 31,
+        "startColno": 9,
+        "endLineno": 31,
+        "endColno": 12
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 31,
+        "startColno": 13,
+        "endLineno": 31,
+        "endColno": 13
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 31,
+        "startColno": 15,
+        "endLineno": 31,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "list",
+        "startLineno": 31,
+        "startColno": 16,
+        "endLineno": 31,
+        "endColno": 19
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 31,
+        "startColno": 20,
+        "endLineno": 31,
+        "endColno": 20
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 32,
+        "startColno": 5,
+        "endLineno": 32,
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "roleType",
+        "startLineno": 33,
+        "startColno": 5,
+        "endLineno": 33,
+        "endColno": 12
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 33,
+        "startColno": 13,
+        "endLineno": 33,
+        "endColno": 13
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "type",
+        "startLineno": 34,
+        "startColno": 9,
+        "endLineno": 34,
+        "endColno": 12
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 34,
+        "startColno": 13,
+        "endLineno": 34,
+        "endColno": 13
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 34,
+        "startColno": 15,
+        "endLineno": 34,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "basket",
+        "startLineno": 34,
+        "startColno": 16,
+        "endLineno": 34,
+        "endColno": 21
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 34,
+        "startColno": 22,
+        "endLineno": 34,
+        "endColno": 22
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 35,
+        "startColno": 5,
+        "endLineno": 35,
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "contains",
+        "startLineno": 36,
+        "startColno": 5,
+        "endLineno": 36,
+        "endColno": 12
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 36,
+        "startColno": 13,
+        "endLineno": 36,
+        "endColno": 13
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "values",
+        "startLineno": 37,
+        "startColno": 9,
+        "endLineno": 37,
+        "endColno": 14
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 37,
+        "startColno": 15,
+        "endLineno": 37,
+        "endColno": 15
+    },
+    {
+        "type": "LBRACKET",
+        "startLineno": 37,
+        "startColno": 17,
+        "endLineno": 37,
+        "endColno": 17
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 37,
+        "startColno": 18,
+        "endLineno": 37,
+        "endColno": 18
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "Coffee",
+        "startLineno": 37,
+        "startColno": 19,
+        "endLineno": 37,
+        "endColno": 24
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 37,
+        "startColno": 25,
+        "endLineno": 37,
+        "endColno": 25
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 37,
+        "startColno": 26,
+        "endLineno": 37,
+        "endColno": 26
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 37,
+        "startColno": 28,
+        "endLineno": 37,
+        "endColno": 28
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "Bagel",
+        "startLineno": 37,
+        "startColno": 29,
+        "endLineno": 37,
+        "endColno": 33
+    },
+    {
+        "type": "QUOTE",
+        "startLineno": 37,
+        "startColno": 34,
+        "endLineno": 37,
+        "endColno": 34
+    },
+    {
+        "type": "RBRACKET",
+        "startLineno": 37,
+        "startColno": 35,
+        "endLineno": 37,
+        "endColno": 35
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 38,
+        "startColno": 5,
+        "endLineno": 38,
+        "endColno": 5
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 39,
+        "startColno": 1,
+        "endLineno": 39,
         "endColno": 1
     }
 ]

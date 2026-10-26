@@ -8,10 +8,15 @@
             "body": [
                 {
                     "type": "cmd",
-                    "command": "create",
+                    "command": "introduce",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "name",
+                            "type": "name",
+                            "value": "shopping_cart"
+                        },
+                        {
+                            "arg": "participant",
                             "type": "name",
                             "value": "Cart"
                         }
@@ -27,6 +32,29 @@
         {
             "type": "behavior",
             "parsedArgs": [],
+            "behaviorName": "visit_shop",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "barista_presents_menu",
+                    "args": []
+                },
+                {
+                    "type": "cmd",
+                    "command": "accept_choice",
+                    "args": [
+                        {
+                            "arg": "as",
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [],
             "behaviorName": "barista_presents_menu",
             "body": [
                 {
@@ -34,9 +62,38 @@
                     "command": "display",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "value",
                             "type": "name",
                             "value": "menu"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [],
+            "behaviorName": "accept_choice",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "accept_terminal_input",
+                    "args": [
+                        {
+                            "arg": "as",
+                            "type": "name",
+                            "value": "terminal_input"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "yield",
+                    "args": [
+                        {
+                            "arg": "value",
+                            "type": "name",
+                            "value": "terminal_input"
                         }
                     ]
                 }
@@ -63,7 +120,7 @@
                     "command": "roleType",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "type",
                             "type": "string",
                             "value": "basket"
                         }
@@ -74,7 +131,7 @@
                     "command": "contains",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "values",
                             "type": "list",
                             "value": [
                                 "Coffee",
