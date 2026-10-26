@@ -1,0 +1,35 @@
+behavior checkIfUserChoseBagel (user_choice) {
+    equals(
+        as = user_chose_bagel,
+        user_choice = user_choice,
+        check = "bagel"
+    )
+    yield(user_chose_bagel)
+}
+
+behavior checkIfUserChoseCoffee (user_choice) {
+    equals(
+        as = did_user_chose_coffee,
+        user_choice = user_choice,
+        check = "coffee"
+    )
+    yield(user_chose_coffee)
+}
+
+behavior checkIfUserChoseDisplayCart (user_choice) {
+    equals(
+        as = did_user_choose_display_cart,
+        user_choice = user_choice,
+        check = "view"
+    )
+    yield(did_user_choose_display_cart)
+}
+
+checkIfUserChoseClearCart (user_choice) {
+    equals(
+        as = did_user_choose_clear_cart,
+        user_choice = user_choice,
+        check = "clear"
+    )
+    yield(did_user_choose_clear_cart)
+}

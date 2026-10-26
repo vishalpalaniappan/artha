@@ -1,3 +1,5 @@
+import("user_choice.ar")
+
 behavior coffee_shop() {
     introduce(
         name= shopping_cart, 
@@ -8,9 +10,46 @@ behavior coffee_shop() {
 
 behavior visit_shop() {
     barista_presents_menu()
-    accept_choice(
-        as = user_choice
+    acceptChoice(
+        alias = user_choice
     )
+
+    checkIfUserChoseCoffee(
+        alias = user_chose_coffee,
+        choice = user_choice
+    )    
+    checkIfUserChoseBagel(
+        alias = user_chose_bagel,
+        choice = user_choice
+    )
+    checkIfUserChoseDisplayCart(
+        alias = user_chose_display_cart,
+        choice = user_choice
+    )
+    checkIfUserChoseClearCart(
+        alias = user_chose_clear_cart,
+        choice = user_choice
+    )
+
+    if (user_chose_coffee) {
+        # Add coffee to cart
+        visit_shop()
+    }
+
+    if (user_chose_bagel) {
+        # Add bagel to cart
+        visit_shop()
+    }
+
+    if (user_chose_display_cart) {
+        # Display Cart
+        visit_shop()
+    }
+
+    if (user_chose_clear_cart) {
+        # Clear the cart
+        visit_shop()
+    }
 }
 
 behavior barista_presents_menu() {
@@ -19,7 +58,7 @@ behavior barista_presents_menu() {
     )
 }
 
-behavior accept_choice() {
+behavior acceptChoice() {
     accept_terminal_input(
         as = terminal_input
     )

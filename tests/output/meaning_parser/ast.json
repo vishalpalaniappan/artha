@@ -2,6 +2,17 @@
     "type": "root",
     "body": [
         {
+            "type": "cmd",
+            "command": "import",
+            "args": [
+                {
+                    "arg": null,
+                    "type": "string",
+                    "value": "user_choice.ar"
+                }
+            ]
+        },
+        {
             "type": "behavior",
             "parsedArgs": [],
             "behaviorName": "coffee_shop",
@@ -47,6 +58,138 @@
                             "arg": "as",
                             "type": "name",
                             "value": "user_choice"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "checkIfUserChoseCoffee",
+                    "args": [
+                        {
+                            "arg": "as",
+                            "type": "name",
+                            "value": "user_chose_coffee"
+                        },
+                        {
+                            "arg": "choice",
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "checkIfUserChoseBagel",
+                    "args": [
+                        {
+                            "arg": "as",
+                            "type": "name",
+                            "value": "user_chose_bagel"
+                        },
+                        {
+                            "arg": "choice",
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "checkIfUserChoseDisplayCart",
+                    "args": [
+                        {
+                            "arg": "as",
+                            "type": "name",
+                            "value": "user_chose_display_cart"
+                        },
+                        {
+                            "arg": "choice",
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "checkIfUserChoseClearCart",
+                    "args": [
+                        {
+                            "arg": "as",
+                            "type": "name",
+                            "value": "user_chose_clear_cart"
+                        },
+                        {
+                            "arg": "choice",
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ]
+                },
+                {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_coffee"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
+                        }
+                    ]
+                },
+                {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_bagel"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
+                        }
+                    ]
+                },
+                {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_display_cart"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
+                        }
+                    ]
+                },
+                {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_clear_cart"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
                         }
                     ]
                 }

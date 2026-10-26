@@ -35,3 +35,5 @@ I need to extend the args parser so that it can handel nested meaning as argumen
 
 I think the best way to do this is to have a args stack where every time I see an opening parenthesis, I add the meaning to the stack and then when it closes, I pop the stack and continue at the level below it. 
 
+While I implement this, I will save the yielded values in aliases and then use the alias as an argument. This will be a bit more verbose but it establishes the same functionality.
+
