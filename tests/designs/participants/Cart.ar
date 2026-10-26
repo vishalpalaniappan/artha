@@ -1,0 +1,11 @@
+participant Cart() {
+    structuralType(
+        type= "list"
+    )
+    roleType(
+        type= "basket"
+    )
+    contains(
+        values= ["Coffee", "Bagel"]
+    )
+}

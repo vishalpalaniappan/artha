@@ -13,6 +13,17 @@
             ]
         },
         {
+            "type": "cmd",
+            "command": "import",
+            "args": [
+                {
+                    "arg": null,
+                    "type": "string",
+                    "value": "Cart.ar"
+                }
+            ]
+        },
+        {
             "type": "behavior",
             "parsedArgs": [],
             "behaviorName": "coffee_shop",
@@ -52,10 +63,10 @@
                 },
                 {
                     "type": "cmd",
-                    "command": "accept_choice",
+                    "command": "acceptChoice",
                     "args": [
                         {
-                            "arg": "as",
+                            "arg": "alias",
                             "type": "name",
                             "value": "user_choice"
                         }
@@ -66,7 +77,7 @@
                     "command": "checkIfUserChoseCoffee",
                     "args": [
                         {
-                            "arg": "as",
+                            "arg": "alias",
                             "type": "name",
                             "value": "user_chose_coffee"
                         },
@@ -82,7 +93,7 @@
                     "command": "checkIfUserChoseBagel",
                     "args": [
                         {
-                            "arg": "as",
+                            "arg": "alias",
                             "type": "name",
                             "value": "user_chose_bagel"
                         },
@@ -98,7 +109,7 @@
                     "command": "checkIfUserChoseDisplayCart",
                     "args": [
                         {
-                            "arg": "as",
+                            "arg": "alias",
                             "type": "name",
                             "value": "user_chose_display_cart"
                         },
@@ -114,7 +125,7 @@
                     "command": "checkIfUserChoseClearCart",
                     "args": [
                         {
-                            "arg": "as",
+                            "arg": "alias",
                             "type": "name",
                             "value": "user_chose_clear_cart"
                         },
@@ -137,6 +148,11 @@
                     "body": [
                         {
                             "type": "cmd",
+                            "command": "add_coffee_to_cart",
+                            "args": []
+                        },
+                        {
+                            "type": "cmd",
                             "command": "visit_shop",
                             "args": []
                         }
@@ -152,6 +168,11 @@
                         }
                     ],
                     "body": [
+                        {
+                            "type": "cmd",
+                            "command": "add_bagel_to_cart",
+                            "args": []
+                        },
                         {
                             "type": "cmd",
                             "command": "visit_shop",
@@ -171,6 +192,11 @@
                     "body": [
                         {
                             "type": "cmd",
+                            "command": "display_cart",
+                            "args": []
+                        },
+                        {
+                            "type": "cmd",
                             "command": "visit_shop",
                             "args": []
                         }
@@ -186,6 +212,11 @@
                         }
                     ],
                     "body": [
+                        {
+                            "type": "cmd",
+                            "command": "clear_cart",
+                            "args": []
+                        },
                         {
                             "type": "cmd",
                             "command": "visit_shop",
@@ -216,14 +247,14 @@
         {
             "type": "behavior",
             "parsedArgs": [],
-            "behaviorName": "accept_choice",
+            "behaviorName": "acceptChoice",
             "body": [
                 {
                     "type": "cmd",
                     "command": "accept_terminal_input",
                     "args": [
                         {
-                            "arg": "as",
+                            "arg": "alias",
                             "type": "name",
                             "value": "terminal_input"
                         }
@@ -243,43 +274,106 @@
             ]
         },
         {
-            "type": "participant",
-            "parsedArgs": [],
-            "participantType": "Cart",
+            "type": "behavior",
+            "parsedArgs": [
+                {
+                    "arg": null,
+                    "type": "name",
+                    "value": "cart"
+                }
+            ],
+            "behaviorName": "add_coffee_to_cart",
             "body": [
                 {
                     "type": "cmd",
-                    "command": "structuralType",
+                    "command": "insert_at_end",
                     "args": [
                         {
-                            "arg": "type",
+                            "arg": "value",
                             "type": "string",
-                            "value": "list"
+                            "value": "Coffee"
+                        },
+                        {
+                            "arg": "list",
+                            "type": "name",
+                            "value": "cart"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [
+                {
+                    "arg": null,
+                    "type": "name",
+                    "value": "cart"
+                }
+            ],
+            "behaviorName": "add_bagel_to_cart",
+            "body": [
                 {
                     "type": "cmd",
-                    "command": "roleType",
+                    "command": "insert_at_end",
                     "args": [
                         {
-                            "arg": "type",
+                            "arg": "value",
                             "type": "string",
-                            "value": "basket"
+                            "value": "Bagel"
+                        },
+                        {
+                            "arg": "list",
+                            "type": "name",
+                            "value": "cart"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [
+                {
+                    "arg": null,
+                    "type": "name",
+                    "value": "cart"
+                }
+            ],
+            "behaviorName": "display_cart",
+            "body": [
                 {
                     "type": "cmd",
-                    "command": "contains",
+                    "command": "display",
                     "args": [
                         {
-                            "arg": "values",
-                            "type": "list",
-                            "value": [
-                                "Coffee",
-                                "Bagel"
-                            ]
+                            "arg": "value",
+                            "type": "name",
+                            "value": "cart"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "behavior",
+            "parsedArgs": [
+                {
+                    "arg": null,
+                    "type": "name",
+                    "value": "cart"
+                }
+            ],
+            "behaviorName": "clear_cart",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "clear",
+                    "args": [
+                        {
+                            "arg": "list",
+                            "type": "name",
+                            "value": "cart"
                         }
                     ]
                 }

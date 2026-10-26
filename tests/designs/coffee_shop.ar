@@ -1,4 +1,5 @@
 import("user_choice.ar")
+import("Cart.ar")
 
 behavior coffee_shop() {
     introduce(
@@ -33,21 +34,25 @@ behavior visit_shop() {
 
     if (user_chose_coffee) {
         # Add coffee to cart
+        add_coffee_to_cart()
         visit_shop()
     }
 
     if (user_chose_bagel) {
         # Add bagel to cart
+        add_bagel_to_cart()
         visit_shop()
     }
 
     if (user_chose_display_cart) {
         # Display Cart
+        display_cart()
         visit_shop()
     }
 
     if (user_chose_clear_cart) {
         # Clear the cart
+        clear_cart()
         visit_shop()
     }
 }
@@ -60,19 +65,34 @@ behavior barista_presents_menu() {
 
 behavior acceptChoice() {
     accept_terminal_input(
-        as = terminal_input
+        alias = terminal_input
     )
     yield(value=terminal_input)
 }
 
-participant Cart() {
-    structuralType(
-        type= "list"
-    )
-    roleType(
-        type= "basket"
-    )
-    contains(
-        values= ["Coffee", "Bagel"]
+behavior add_coffee_to_cart(cart) {
+    insert_at_end(
+        value = "Coffee", 
+        list = cart
     )
 }
+
+behavior add_bagel_to_cart(cart) {
+    insert_at_end(
+        value = "Bagel", 
+        list = cart
+    )
+}
+
+behavior display_cart(cart) {
+    display(
+        value = cart
+    )
+}
+
+behavior clear_cart(cart) {
+    clear(
+        list = cart
+    )
+}
+
