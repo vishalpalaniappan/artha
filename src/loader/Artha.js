@@ -13,7 +13,7 @@ import { ReasoningEngine } from "../exports";
  * I will the extend this to run the engine and synthesize the output. The end goal is that this will be the only file that is exported and it will provide the mechanism to access the rest of the functionality.
  *
  * Example:
- * const coffee_shop = new Artha(PATH_TO_MEANING);
+ * const coffee_shop = new Artha(files_in_script_directory);
  * coffee_shop.reason();
  * coffee_shop.synthesize();
  * 
@@ -23,6 +23,17 @@ import { ReasoningEngine } from "../exports";
  * 
  * Implementation:
  * coffee_shop.implementation
+ * 
+ * Note, files in script directory take the following form:
+ * [
+ *   {
+ *     fullPath: filePath,
+ *     name: ...,
+ *     relativePath: path.relative(dirPath, filePath),
+ *     content: ...
+ *   },
+ *   ...
+ * ]
  */
 export class Artha {
     constructor (files) {
