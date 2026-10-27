@@ -1,8 +1,8 @@
 behavior checkIfUserChoseBagel (user_choice) {
     equals(
         alias = user_chose_bagel,
-        user_choice = user_choice,
-        check = "bagel"
+        value1 = user_choice,
+        value2 = "bagel"
     )
     yield(user_chose_bagel)
 }
@@ -10,8 +10,8 @@ behavior checkIfUserChoseBagel (user_choice) {
 behavior checkIfUserChoseCoffee (user_choice) {
     equals(
         alias = did_user_chose_coffee,
-        user_choice = user_choice,
-        check = "coffee"
+        value1 = user_choice,
+        value2 = "coffee"
     )
     yield(user_chose_coffee)
 }
@@ -19,8 +19,8 @@ behavior checkIfUserChoseCoffee (user_choice) {
 behavior checkIfUserChoseDisplayCart (user_choice) {
     equals(
         alias = did_user_choose_display_cart,
-        user_choice = user_choice,
-        check = "view"
+        value1 = user_choice,
+        value2 = "view"
     )
     yield(did_user_choose_display_cart)
 }
@@ -28,8 +28,8 @@ behavior checkIfUserChoseDisplayCart (user_choice) {
 behavior checkIfUserChoseClearCart (user_choice) {
     equals(
         alias = did_user_choose_clear_cart,
-        user_choice = user_choice,
-        check = "clear"
+        value1 = user_choice,
+        value2 = "clear"
     )
     yield(did_user_choose_clear_cart)
 }
