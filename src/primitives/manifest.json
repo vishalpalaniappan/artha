@@ -1,0 +1,14 @@
+{
+    "computable_primitives": [
+        "insert_at_end"
+    ],
+    "meta_primitives": [
+
+    ],
+    "functional_primitives": [
+
+    ],
+    "legacy_primitives": [
+        
+    ]
+}
