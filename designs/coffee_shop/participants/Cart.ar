@@ -2,8 +2,8 @@ participant Cart() {
     structural_type(
         type= "list"
     )
-    roleType(
-        type= "basket"
+    role(
+        role = "basket"
     )
     contains(
         values= ["Coffee", "Bagel"]

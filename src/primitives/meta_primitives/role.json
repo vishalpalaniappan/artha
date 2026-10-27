@@ -1,0 +1,12 @@
+{
+    "name": "role",
+    "type": "meta_primitive",
+    "description":"Establishes that role of a participant.",
+    "syntax": "role",
+    "participants": [
+        {
+            "name": "role",
+            "required": "true"
+        }
+    ]
+}
