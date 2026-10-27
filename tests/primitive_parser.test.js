@@ -20,7 +20,7 @@ describe("meaning parser", async () => {
 
     it("tests the artha parser", async () => {
 
-        const src = await readFile("./tests/designs/coffee_shop.ar");
+        const src = await readFile("./tests/designs/coffee_shop/coffee_shop.ar");
         const lexer = new ArthaLexer(src.toString());
 
         const tokens_output_path = resolve(__dirname, "./output/meaning_parser/test_tokens.json")
