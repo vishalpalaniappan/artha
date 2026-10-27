@@ -20,7 +20,7 @@ behavior visit_shop() {
         alias = user_chose_coffee,
         choice = user_choice
     )
-    if (user_chose_coffee) {
+    if (condition = user_chose_coffee) {
         add_coffee_to_cart(
             cart = shopping_cart
         )
@@ -32,7 +32,7 @@ behavior visit_shop() {
         alias = user_chose_bagel,
         choice = user_choice
     )
-    if (user_chose_bagel) {
+    if (condition = user_chose_bagel) {
         add_bagel_to_cart(
             cart = shopping_cart
         )
@@ -44,7 +44,7 @@ behavior visit_shop() {
         alias = user_chose_display_cart,
         choice = user_choice
     )
-    if (user_chose_display_cart) {
+    if (condition = user_chose_display_cart) {
         display_cart(
             cart = shopping_cart
         )
@@ -56,7 +56,7 @@ behavior visit_shop() {
         alias = user_chose_clear_cart,
         choice = user_choice
     )
-    if (user_chose_clear_cart) {
+    if (condition = user_chose_clear_cart) {
         clear_cart(
             cart = shopping_cart
         )
