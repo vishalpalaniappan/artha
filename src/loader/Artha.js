@@ -66,9 +66,11 @@ export class Artha {
     }
 
     generateReasoningPackage () {
-        return this.files.filter(
-            (f) => "ast" in f
-        )
+        const data = this.files.filter((f) => "ast" in f);
+        return {
+            meta: this.meta,
+            data
+        }
     }
 
 
