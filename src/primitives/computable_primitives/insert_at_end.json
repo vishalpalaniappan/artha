@@ -2,7 +2,7 @@
     "name": "insert_at_end",
     "type": "computable_primitive",
     "description":"Inserts item to end of list.",
-    "syntax_line": "insert_at_end",
+    "syntax": "insert_at_end",
     "participants": [
         {
             "name": "item",
