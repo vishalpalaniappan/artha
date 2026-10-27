@@ -78,14 +78,14 @@ behavior acceptChoice() {
 }
 
 behavior add_coffee_to_cart(cart) {
-    insert_at_end(
+    insert_at_end_of_list(
         value = "Coffee", 
         list = cart
     )
 }
 
 behavior add_bagel_to_cart(cart) {
-    insert_at_end(
+    insert_at_end_of_list(
         value = "Bagel", 
         list = cart
     )

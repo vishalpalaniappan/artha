@@ -1,8 +1,8 @@
 {
-    "name": "insert_at_end",
+    "name": "insert_at_end_of_list",
     "type": "computable_primitive",
     "description":"Inserts item to end of list.",
-    "syntax": "insert_at_end",
+    "syntax": "insert_at_end_of_list",
     "participants": [
         {
             "name": "item",

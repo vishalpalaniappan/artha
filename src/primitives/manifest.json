@@ -1,6 +1,6 @@
 {
     "computable_primitives": [
-        "insert_at_end",
+        "insert_at_end_of_list",
         "clear_list"
     ],
     "meta_primitives": [
