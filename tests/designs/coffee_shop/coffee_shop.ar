@@ -11,6 +11,7 @@ behavior coffee_shop() {
 
 behavior visit_shop() {
     barista_presents_menu()
+
     acceptChoice(
         alias = user_choice
     )
@@ -18,20 +19,7 @@ behavior visit_shop() {
     checkIfUserChoseCoffee(
         alias = user_chose_coffee,
         choice = user_choice
-    )    
-    checkIfUserChoseBagel(
-        alias = user_chose_bagel,
-        choice = user_choice
     )
-    checkIfUserChoseDisplayCart(
-        alias = user_chose_display_cart,
-        choice = user_choice
-    )
-    checkIfUserChoseClearCart(
-        alias = user_chose_clear_cart,
-        choice = user_choice
-    )
-
     if (user_chose_coffee) {
         add_coffee_to_cart(
             cart = shopping_cart
@@ -39,6 +27,11 @@ behavior visit_shop() {
         visit_shop()
     }
 
+
+    checkIfUserChoseBagel(
+        alias = user_chose_bagel,
+        choice = user_choice
+    )
     if (user_chose_bagel) {
         add_bagel_to_cart(
             cart = shopping_cart
@@ -46,6 +39,11 @@ behavior visit_shop() {
         visit_shop()
     }
 
+
+    checkIfUserChoseDisplayCart(
+        alias = user_chose_display_cart,
+        choice = user_choice
+    )
     if (user_chose_display_cart) {
         display_cart(
             cart = shopping_cart
@@ -53,6 +51,11 @@ behavior visit_shop() {
         visit_shop()
     }
 
+
+    checkIfUserChoseClearCart(
+        alias = user_chose_clear_cart,
+        choice = user_choice
+    )
     if (user_chose_clear_cart) {
         clear_cart(
             cart = shopping_cart
