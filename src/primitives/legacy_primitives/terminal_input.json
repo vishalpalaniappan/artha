@@ -2,7 +2,7 @@
     "name": "terminal_input",
     "type": "legacy_primitive",
     "description":"Accepts and stores the input from terminal. This is a legacy primitive because the meaning stops at this layer (even though it is built from more primitives) but I am establishing it as a primitive because I haven't yet constructed this meaning from computable semantic primitives.",
-    "syntax": "accept_terminal_input",
+    "syntax": "terminal_input",
     "participants": [
         {
             "name": "save_input",
