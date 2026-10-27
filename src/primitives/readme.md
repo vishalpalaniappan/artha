@@ -1,7 +1,10 @@
-This folder contains a manifest that includes all the computable semantic primitives, functional primitives and legacy primitives.
+This folder contains a manifest that includes all the types of primitives provided below.
 
 ## Computable Semantic Primitives
 These are primitives are the atomic building blocks of meaning. They include primitives like add, insert etc.
+
+## Meta Primitives
+These are primitives that establish metadata about the world. It includes things like type, life cycle of participants etc.
 
 ## Functional Primitives
 These are primitives used to establish functional meaning like conditional meaning, selecting meaning etc.
