@@ -1,0 +1,1 @@
+This folder will contain the engine implementation. The engine will accept the AST produced by the parser and it will use the provided primitives to reason about the meaning specified in the artha script.
