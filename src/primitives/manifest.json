@@ -11,6 +11,7 @@
         "if"
     ],
     "legacy_primitives": [
-        "terminal_input"
+        "terminal_input",
+        "terminal_display"
     ]
 }

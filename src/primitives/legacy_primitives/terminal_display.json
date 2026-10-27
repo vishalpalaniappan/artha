@@ -1,0 +1,15 @@
+{
+    "name": "terminal_display",
+    "type": "legacy_primitives",
+    "description":"Displays the provided text in the console.",
+    "syntax": "terminal_display",
+    "participants": [
+        {
+            "name": "message",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+    },
+    "_note": "The implementation will throw if message combines multiple types (ex print(1 + None)). This isn't an issue because I will be using a participant directly in the synthesis but it is something to be aware of. I have not exhausted all the possible issues and I'm leaving this note to revisit this and also specify the invariants."
+}
