@@ -1,3 +1,6 @@
+import { ArthaLexer } from "../exports";
+import { ArthaParser } from "../exports";
+
 /**
  * Accepts the contents of a design repo and does the following:
  * - Loads the meta file
@@ -32,21 +35,27 @@ export class Artha {
             (f) => f.name == "meta.json"
         );
 
-
-        let meta;
-        if (metaFile) {
-            meta = JSON.parse(metaFile.content);
-        } else {
+        if (!metaFile) {
             throw Error("Missing meta.json file.");
         }
+        
+        const meta = JSON.parse(metaFile.content);
+        const entryFile = this.files.find(
+            (f) => f.relativePath == meta.entry
+        );
 
-        console.log(meta, meta.entry);
-
-        // Load the entry file
-        // parse entry file
+        this.parseFile(entryFile);
     }
 
-    parseFile () {
+    parseFile (entryFile) {
+
+        const lexer = new ArthaLexer(entryFile.content);
+        const parsed = new ArthaParser(lexer.scannedTokens);
+        const ast = parsed.ast;
+
+        console.log(ast);
+
+        
         // If file has already been parsed return.
         // Parse artha file
         // Recursively call on imported files
