@@ -1,7 +1,7 @@
 import { describe, expect, it} from "vitest";
 import { resolve } from "path"
 import { writeFile, readFile } from "fs/promises"
-import { ensureDir } from "./utils";
+import { ensureDir, getFilesAndContent } from "./utils";
 import { readdirSync } from 'node:fs';
 import { Artha } from "../dist/index.esm";
 
@@ -12,8 +12,7 @@ ensureDir("./tests/output/meaning_parser")
 describe("meaning parser", async () => {
 
     it("tests artha", async () => {
-        const arFiles = readdirSync("./designs/coffee_shop", { recursive: true });
+        const arFiles = await getFilesAndContent("./designs/coffee_shop");
         const coffee_shop = new Artha(arFiles);
-
     });
 });
