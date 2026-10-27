@@ -18,12 +18,28 @@ export class ReasoningEngine {
         console.log(atomicBehavior);
 
         // Visit the nodes in the atomic behavior and inspect their meaning
-        this.processBehavior(atomicBehavior);
+        this.processBehavior([atomicBehavior]);
     }
 
-    processBehavior (behavior) {
-        for (const node of behavior.body) {
-            console.log(this.processNode(node));
+    processBehavior (behaviors) {
+        // I intend to refactor this, I am just testing visiting of the nodes while maintaining a list of visited behaviors (terminate when looped).
+        const currBehavior = behaviors[behaviors.length - 1];
+        console.log("")
+        console.log(behaviors.map((b) => b.behaviorName));
+
+        for (const node of currBehavior.body) {
+            const foundNode = this.processNode(node);
+            if (!foundNode) continue;
+
+            if (foundNode.type === "behavior") {
+                if (!behaviors.includes(foundNode.behaviorName)) {
+                    this.processBehavior([...behaviors, foundNode]);
+                }
+            }
+
+            if (foundNode.type === "functional" && foundNode.name === "if") {
+                console.log("Found functional node, condition:", node.args[0].value);
+            }
         }
     }
 
@@ -34,6 +50,11 @@ export class ReasoningEngine {
 
             const foundBehavior = this.findBehavior(node.command)
             if (foundBehavior) return foundBehavior;
+        } 
+        
+        if (node.type === "if") {
+            const foundPrimitive = this.findPrimitive(node.type);
+            if (foundPrimitive) return foundPrimitive;
         }
     }
 
