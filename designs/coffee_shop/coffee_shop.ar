@@ -1,4 +1,4 @@
-import("user_choice.ar")
+import("includes/user_choice.ar")
 import("participants/Cart.ar")
 
 behavior coffee_shop() {
