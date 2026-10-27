@@ -7,7 +7,6 @@ import { loadPrimitivesFromManifest } from "../primitives/loadPrimitives";
 export class ReasoningEngine {
     constructor (pkg) {
         this.pkg = pkg;
-        this.reason();
     }
 
     async loadPrimitives() {
@@ -16,6 +15,7 @@ export class ReasoningEngine {
 
     reason () {
         console.log(this.pkg.meta);
+        console.log(this.primitives);
     }
 
 }

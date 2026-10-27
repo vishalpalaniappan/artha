@@ -29,19 +29,15 @@ export class Artha {
         // Accepts the contents of the design repo
         this.files = files;
         this.meta = null;
-        this.loadMeta();
+        this.parseFiles();
     }
 
-    loadMeta () {
+    parseFiles () {
         const metaFile = this.files.find((f) => f.name == "meta.json");
         if (!metaFile) throw Error("Missing meta.json file.");
         
         this.meta = JSON.parse(metaFile.content);
         this.parseFile(this.meta.entry);
-
-        this.engine = new ReasoningEngine(
-            this.generateReasoningPackage()
-        );
     }
 
     parseFile (relativePath) {
@@ -66,6 +62,16 @@ export class Artha {
         for(const imp of imports) {
             this.parseFile(imp);
         }
+    }
+
+    async runEngine () {
+        this.engine = new ReasoningEngine(
+            this.generateReasoningPackage()
+        );
+
+        await this.engine.loadPrimitives();
+
+        this.engine.reason();
     }
 
     generateReasoningPackage () {

@@ -15,6 +15,8 @@ describe("meaning parser", async () => {
         const arFiles = await getFilesAndContent("./designs/coffee_shop");
         const coffee_shop = new Artha(arFiles);
 
+        await coffee_shop.runEngine();
+
         await writeFile(
             resolve(__dirname, "./output/coffee_shop/reasoningPkg.json"),
             JSON.stringify(coffee_shop.generateReasoningPackage(), null, 4)
