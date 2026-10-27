@@ -1,5 +1,3 @@
-import { loadPrimitivesFromManifest } from "../primitives/loadPrimitives";
-
 /**
  * Accepts a path to an artha project and does the following:
  * - Loads the meta file
@@ -23,12 +21,26 @@ import { loadPrimitivesFromManifest } from "../primitives/loadPrimitives";
  * coffee_shop.implementation
  */
 export class Artha {
-    constructor () {
-        
+    constructor (path) {
+        this.path = path;
+
+        // TODO: Validate path and throw if needed.
     }
 
-    setPath (path) {
-        this.path = path;
+    loadFiles () {
+        // Load the meta JSON file
+
+        // Load the entry file
+
+        // parse entry file
+    }
+
+    parseFile () {
+        // If file has already been parsed return.
+
+        // Parse artha file
+
+        // Recursively call on imported files
     }
 
 }
