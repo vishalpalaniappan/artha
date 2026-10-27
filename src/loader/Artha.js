@@ -28,18 +28,27 @@ export class Artha {
     }
 
     loadMeta () {
-        // Load the meta JSON file
+        const metaFile = this.files.find(
+            (f) => f.name == "meta.json"
+        );
+
+
+        let meta;
+        if (metaFile) {
+            meta = JSON.parse(metaFile.content);
+        } else {
+            throw Error("Missing meta.json file.");
+        }
+
+        console.log(meta, meta.entry);
 
         // Load the entry file
-
         // parse entry file
     }
 
     parseFile () {
         // If file has already been parsed return.
-
         // Parse artha file
-
         // Recursively call on imported files
     }
 
