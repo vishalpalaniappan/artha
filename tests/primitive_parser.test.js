@@ -6,6 +6,7 @@ import { readdirSync } from 'node:fs';
 import { extname } from 'node:path';
 import { ArthaLexer } from "../dist/index.esm";
 import { ArthaParser } from "../dist/index.esm";
+import { ReasoningEngine } from "../dist/index.esm";
 
 
 ensureDir("./tests/output")
@@ -36,7 +37,8 @@ describe("meaning parser", async () => {
             JSON.stringify(parser.ast, null, 4)
         );
 
-
+        const engine = new ReasoningEngine(parser.ast);
+        await engine.loadPrimitives();
 
     });
 });
