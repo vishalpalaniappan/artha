@@ -14,8 +14,22 @@ export class ReasoningEngine {
     }
 
     reason () {
-        console.log(this.pkg.meta);
-        console.log(this.primitives);
+        const atomicBehavior = this.findBehavior(this.pkg.meta.atomic_behavior);
+        console.log(atomicBehavior);
+
+    }
+
+    findBehavior(name) {
+        for (const file of this.pkg.data) {
+            const behavior = file.ast.body.find(
+                (f) => (f.type === "behavior") && (f.behaviorName == name)
+            )
+            if (behavior) return behavior;            
+        }
+    }
+
+    findParticipant() {
+
     }
 
 }
