@@ -6,6 +6,7 @@
     ],
     "meta_primitives": [
         "introduce",
+        "structural_type",
         "yield"
     ],
     "functional_primitives": [

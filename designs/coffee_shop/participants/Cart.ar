@@ -1,5 +1,5 @@
 participant Cart() {
-    structuralType(
+    structural_type(
         type= "list"
     )
     roleType(

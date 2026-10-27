@@ -1,0 +1,12 @@
+{
+    "name": "structural_type",
+    "type": "meta_primitive",
+    "description":"Establishes that structural type of a participant.",
+    "syntax": "structural_type",
+    "participants": [
+        {
+            "name": "type",
+            "required": "true"
+        }
+    ]
+}
