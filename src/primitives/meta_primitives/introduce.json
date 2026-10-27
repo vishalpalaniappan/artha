@@ -1,6 +1,6 @@
 {
     "name": "introduce",
-    "type": "lifecycle_primitive",
+    "type": "meta_primitive",
     "description":"Introduces a participant into the world",
     "syntax": "introduce",
     "participants": [
