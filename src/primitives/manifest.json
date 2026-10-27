@@ -1,7 +1,8 @@
 {
     "computable_primitives": [
-        "insert_at_end_of_list",
-        "clear_list"
+        "clear_list",
+        "equals",
+        "insert_at_end_of_list"
     ],
     "meta_primitives": [
         "introduce",
@@ -11,7 +12,7 @@
         "if"
     ],
     "legacy_primitives": [
-        "terminal_input",
-        "terminal_display"
+        "terminal_display",
+        "terminal_input"
     ]
 }

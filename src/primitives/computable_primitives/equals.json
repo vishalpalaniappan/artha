@@ -1,0 +1,23 @@
+{
+    "name": "equals",
+    "type": "computable_primitive",
+    "description":"Checks if two values are equal.",
+    "syntax": "equals",
+    "participants": [
+        {
+            "name": "alias",
+            "required": "true"
+        },
+        {
+            "name": "value1",
+            "required": "true"
+        },
+        {
+            "name": "value2",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+    },
+    "_note":"There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
+}
