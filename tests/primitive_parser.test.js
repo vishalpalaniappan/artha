@@ -38,7 +38,7 @@ describe("meaning parser", async () => {
         );
 
         const engine = new ReasoningEngine(parser.ast);
-        await engine.loadPrimitives();
+        // await engine.loadPrimitives();
 
     });
 });

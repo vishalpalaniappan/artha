@@ -40,25 +40,38 @@ export class Artha {
         }
         
         const meta = JSON.parse(metaFile.content);
-        const entryFile = this.files.find(
-            (f) => f.relativePath == meta.entry
-        );
-
-        this.parseFile(entryFile);
+        this.parseFile(meta.entry);
     }
 
-    parseFile (entryFile) {
+    parseFile (relativePath) {
+
+        const currFile = this.files.find((f) => f.relativePath == relativePath);
+
+        if (!currFile) {
+            throw Error("Could not find entry file");
+        }
+
+        if (Object.keys(currFile).includes("ast")) {
+            // Already parsed file.
+            return;
+        }
 
         const lexer = new ArthaLexer(entryFile.content);
         const parsed = new ArthaParser(lexer.scannedTokens);
-        const ast = parsed.ast;
 
-        console.log(ast);
+        // Save the parsed ast in file
+        entryFile.ast = parsed.ast;
+
+        // Find all imports in current AST
+        const imports = ast.body
+            .filter((f) => f.command == "import")
+            .map((f) => f.args[0].value);
 
         
-        // If file has already been parsed return.
-        // Parse artha file
-        // Recursively call on imported files
+        // Recursively call parse on the imports.
+        for(const imp of imports) {
+            this.parseFile(imp);
+        }
     }
 
 }
