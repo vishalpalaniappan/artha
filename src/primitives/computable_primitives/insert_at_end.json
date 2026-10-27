@@ -22,7 +22,7 @@
             "invalidValues": [
                 {
                     "value": "string_value",
-                    "description": "A string is provided as addend1"
+                    "description": "A string is provided as list participant"
                 }
             ]
         }
