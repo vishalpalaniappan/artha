@@ -5,7 +5,7 @@ participant Cart() {
     role(
         role = "basket"
     )
-    contains(
+    list_contains(
         values= ["Coffee", "Bagel"]
     )
 }

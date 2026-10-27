@@ -5,6 +5,7 @@
         "insert_at_end_of_list"
     ],
     "meta_primitives": [
+        "contains",
         "introduce",
         "role",
         "structural_type",
