@@ -65,13 +65,13 @@ behavior visit_shop() {
 }
 
 behavior barista_presents_menu() {
-    display(
+    terminal_display(
         value = menu
     )
 }
 
 behavior acceptChoice() {
-    accept_terminal_input(
+    terminal_input(
         alias = terminal_input
     )
     yield(value=terminal_input)
@@ -92,7 +92,7 @@ behavior add_bagel_to_cart(cart) {
 }
 
 behavior display_cart(cart) {
-    display(
+    terminal_display(
         value = cart
     )
 }
