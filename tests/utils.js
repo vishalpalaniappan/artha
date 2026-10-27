@@ -23,6 +23,7 @@ async function getFilesAndContent(dirPath) {
             filePaths.map(async (filePath) => {
                 return {
                     fullPath: filePath,
+                    name: path.basename(filePath),
                     relativePath: path.relative(dirPath, filePath),
                     content: await fs.readFile(filePath, 'utf8')
                 };
