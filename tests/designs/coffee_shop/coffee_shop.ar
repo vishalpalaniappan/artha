@@ -33,22 +33,30 @@ behavior visit_shop() {
     )
 
     if (user_chose_coffee) {
-        add_coffee_to_cart()
+        add_coffee_to_cart(
+            cart = shopping_cart
+        )
         visit_shop()
     }
 
     if (user_chose_bagel) {
-        add_bagel_to_cart()
+        add_bagel_to_cart(
+            cart = shopping_cart
+        )
         visit_shop()
     }
 
     if (user_chose_display_cart) {
-        display_cart()
+        display_cart(
+            cart = shopping_cart
+        )
         visit_shop()
     }
 
     if (user_chose_clear_cart) {
-        clear_cart()
+        clear_cart(
+            cart = shopping_cart
+        )
         visit_shop()
     }
 }
