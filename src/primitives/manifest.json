@@ -6,7 +6,7 @@
         "introduce"
     ],
     "functional_primitives": [
-
+        "if"
     ],
     "legacy_primitives": [
         "terminal_input"

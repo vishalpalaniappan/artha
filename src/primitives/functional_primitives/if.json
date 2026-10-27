@@ -1,0 +1,26 @@
+{
+    "name": "if",
+    "type": "functional",
+    "description":"Establishes conditional meaning",
+    "syntax": "if",
+    "participants": [
+        {
+            "name": "condition",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+        "id_1": {
+            "participants": ["condition"],
+            "property": ["structuralType"],
+            "condition": ["boolean"],
+            "description": "the condition must be a boolean value",
+            "invalidValues": [
+                {
+                    "value": "string_value",
+                    "description": "A string is provided as the condition"
+                }
+            ]
+        }
+    }
+}
