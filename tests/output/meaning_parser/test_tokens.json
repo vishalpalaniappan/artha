@@ -67,25 +67,25 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "Cart.ar",
+        "value": "participants/Cart.ar",
         "startLineno": 2,
         "startColno": 9,
         "endLineno": 2,
-        "endColno": 15
+        "endColno": 28
     },
     {
         "type": "QUOTE",
         "startLineno": 2,
-        "startColno": 16,
+        "startColno": 29,
         "endLineno": 2,
-        "endColno": 16
+        "endColno": 29
     },
     {
         "type": "RPAREN",
         "startLineno": 2,
-        "startColno": 17,
+        "startColno": 30,
         "endLineno": 2,
-        "endColno": 17
+        "endColno": 30
     },
     {
         "type": "IDENTIFIER",
@@ -290,522 +290,493 @@
     {
         "type": "IDENTIFIER",
         "value": "acceptChoice",
-        "startLineno": 14,
+        "startLineno": 15,
         "startColno": 5,
-        "endLineno": 14,
+        "endLineno": 15,
         "endColno": 16
     },
     {
         "type": "LPAREN",
-        "startLineno": 14,
+        "startLineno": 15,
         "startColno": 17,
-        "endLineno": 14,
+        "endLineno": 15,
         "endColno": 17
     },
     {
         "type": "IDENTIFIER",
         "value": "alias",
-        "startLineno": 15,
+        "startLineno": 16,
         "startColno": 9,
-        "endLineno": 15,
+        "endLineno": 16,
         "endColno": 13
     },
     {
         "type": "EQUAL",
-        "startLineno": 15,
+        "startLineno": 16,
         "startColno": 15,
-        "endLineno": 15,
+        "endLineno": 16,
         "endColno": 15
     },
     {
         "type": "IDENTIFIER",
         "value": "user_choice",
-        "startLineno": 15,
+        "startLineno": 16,
         "startColno": 17,
-        "endLineno": 15,
+        "endLineno": 16,
         "endColno": 27
     },
     {
         "type": "RPAREN",
-        "startLineno": 16,
+        "startLineno": 17,
         "startColno": 5,
-        "endLineno": 16,
+        "endLineno": 17,
         "endColno": 5
     },
     {
         "type": "IDENTIFIER",
         "value": "checkIfUserChoseCoffee",
-        "startLineno": 18,
+        "startLineno": 19,
         "startColno": 5,
-        "endLineno": 18,
+        "endLineno": 19,
         "endColno": 26
     },
     {
         "type": "LPAREN",
-        "startLineno": 18,
+        "startLineno": 19,
         "startColno": 27,
-        "endLineno": 18,
+        "endLineno": 19,
         "endColno": 27
     },
     {
         "type": "IDENTIFIER",
         "value": "alias",
-        "startLineno": 19,
+        "startLineno": 20,
         "startColno": 9,
-        "endLineno": 19,
+        "endLineno": 20,
         "endColno": 13
     },
     {
         "type": "EQUAL",
-        "startLineno": 19,
+        "startLineno": 20,
         "startColno": 15,
-        "endLineno": 19,
+        "endLineno": 20,
         "endColno": 15
     },
     {
         "type": "IDENTIFIER",
         "value": "user_chose_coffee",
-        "startLineno": 19,
+        "startLineno": 20,
         "startColno": 17,
-        "endLineno": 19,
+        "endLineno": 20,
         "endColno": 33
     },
     {
         "type": "COMMA",
-        "startLineno": 19,
+        "startLineno": 20,
         "startColno": 34,
-        "endLineno": 19,
+        "endLineno": 20,
         "endColno": 34
     },
     {
         "type": "IDENTIFIER",
         "value": "choice",
-        "startLineno": 20,
-        "startColno": 9,
-        "endLineno": 20,
-        "endColno": 14
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 20,
-        "startColno": 16,
-        "endLineno": 20,
-        "endColno": 16
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_choice",
-        "startLineno": 20,
-        "startColno": 18,
-        "endLineno": 20,
-        "endColno": 28
-    },
-    {
-        "type": "RPAREN",
         "startLineno": 21,
-        "startColno": 5,
+        "startColno": 9,
         "endLineno": 21,
-        "endColno": 5
+        "endColno": 14
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 21,
+        "startColno": 16,
+        "endLineno": 21,
+        "endColno": 16
     },
     {
         "type": "IDENTIFIER",
-        "value": "checkIfUserChoseBagel",
+        "value": "user_choice",
+        "startLineno": 21,
+        "startColno": 18,
+        "endLineno": 21,
+        "endColno": 28
+    },
+    {
+        "type": "RPAREN",
         "startLineno": 22,
         "startColno": 5,
         "endLineno": 22,
-        "endColno": 25
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 22,
-        "startColno": 26,
-        "endLineno": 22,
-        "endColno": 26
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "alias",
-        "startLineno": 23,
-        "startColno": 9,
-        "endLineno": 23,
-        "endColno": 13
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 23,
-        "startColno": 15,
-        "endLineno": 23,
-        "endColno": 15
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_chose_bagel",
-        "startLineno": 23,
-        "startColno": 17,
-        "endLineno": 23,
-        "endColno": 32
-    },
-    {
-        "type": "COMMA",
-        "startLineno": 23,
-        "startColno": 33,
-        "endLineno": 23,
-        "endColno": 33
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "choice",
-        "startLineno": 24,
-        "startColno": 9,
-        "endLineno": 24,
-        "endColno": 14
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 24,
-        "startColno": 16,
-        "endLineno": 24,
-        "endColno": 16
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_choice",
-        "startLineno": 24,
-        "startColno": 18,
-        "endLineno": 24,
-        "endColno": 28
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 25,
-        "startColno": 5,
-        "endLineno": 25,
-        "endColno": 5
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "checkIfUserChoseDisplayCart",
-        "startLineno": 26,
-        "startColno": 5,
-        "endLineno": 26,
-        "endColno": 31
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 26,
-        "startColno": 32,
-        "endLineno": 26,
-        "endColno": 32
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "alias",
-        "startLineno": 27,
-        "startColno": 9,
-        "endLineno": 27,
-        "endColno": 13
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 27,
-        "startColno": 15,
-        "endLineno": 27,
-        "endColno": 15
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_chose_display_cart",
-        "startLineno": 27,
-        "startColno": 17,
-        "endLineno": 27,
-        "endColno": 39
-    },
-    {
-        "type": "COMMA",
-        "startLineno": 27,
-        "startColno": 40,
-        "endLineno": 27,
-        "endColno": 40
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "choice",
-        "startLineno": 28,
-        "startColno": 9,
-        "endLineno": 28,
-        "endColno": 14
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 28,
-        "startColno": 16,
-        "endLineno": 28,
-        "endColno": 16
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_choice",
-        "startLineno": 28,
-        "startColno": 18,
-        "endLineno": 28,
-        "endColno": 28
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 29,
-        "startColno": 5,
-        "endLineno": 29,
-        "endColno": 5
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "checkIfUserChoseClearCart",
-        "startLineno": 30,
-        "startColno": 5,
-        "endLineno": 30,
-        "endColno": 29
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 30,
-        "startColno": 30,
-        "endLineno": 30,
-        "endColno": 30
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "alias",
-        "startLineno": 31,
-        "startColno": 9,
-        "endLineno": 31,
-        "endColno": 13
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 31,
-        "startColno": 15,
-        "endLineno": 31,
-        "endColno": 15
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_chose_clear_cart",
-        "startLineno": 31,
-        "startColno": 17,
-        "endLineno": 31,
-        "endColno": 37
-    },
-    {
-        "type": "COMMA",
-        "startLineno": 31,
-        "startColno": 38,
-        "endLineno": 31,
-        "endColno": 38
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "choice",
-        "startLineno": 32,
-        "startColno": 9,
-        "endLineno": 32,
-        "endColno": 14
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 32,
-        "startColno": 16,
-        "endLineno": 32,
-        "endColno": 16
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "user_choice",
-        "startLineno": 32,
-        "startColno": 18,
-        "endLineno": 32,
-        "endColno": 28
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 33,
-        "startColno": 5,
-        "endLineno": 33,
         "endColno": 5
     },
     {
         "type": "IDENTIFIER",
         "value": "if",
-        "startLineno": 35,
+        "startLineno": 23,
         "startColno": 5,
-        "endLineno": 35,
+        "endLineno": 23,
         "endColno": 6
     },
     {
         "type": "LPAREN",
-        "startLineno": 35,
+        "startLineno": 23,
         "startColno": 8,
-        "endLineno": 35,
+        "endLineno": 23,
         "endColno": 8
     },
     {
         "type": "IDENTIFIER",
         "value": "user_chose_coffee",
-        "startLineno": 35,
+        "startLineno": 23,
         "startColno": 9,
-        "endLineno": 35,
+        "endLineno": 23,
         "endColno": 25
     },
     {
         "type": "RPAREN",
-        "startLineno": 35,
+        "startLineno": 23,
         "startColno": 26,
-        "endLineno": 35,
+        "endLineno": 23,
         "endColno": 26
     },
     {
         "type": "LBRACE",
-        "startLineno": 35,
+        "startLineno": 23,
         "startColno": 28,
-        "endLineno": 35,
+        "endLineno": 23,
         "endColno": 28
     },
     {
         "type": "IDENTIFIER",
         "value": "add_coffee_to_cart",
-        "startLineno": 37,
+        "startLineno": 24,
         "startColno": 9,
-        "endLineno": 37,
+        "endLineno": 24,
         "endColno": 26
     },
     {
         "type": "LPAREN",
-        "startLineno": 37,
+        "startLineno": 24,
         "startColno": 27,
-        "endLineno": 37,
+        "endLineno": 24,
         "endColno": 27
     },
     {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 25,
+        "startColno": 13,
+        "endLineno": 25,
+        "endColno": 16
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 25,
+        "startColno": 18,
+        "endLineno": 25,
+        "endColno": 18
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "shopping_cart",
+        "startLineno": 25,
+        "startColno": 20,
+        "endLineno": 25,
+        "endColno": 32
+    },
+    {
         "type": "RPAREN",
-        "startLineno": 37,
-        "startColno": 28,
-        "endLineno": 37,
-        "endColno": 28
+        "startLineno": 26,
+        "startColno": 9,
+        "endLineno": 26,
+        "endColno": 9
     },
     {
         "type": "IDENTIFIER",
         "value": "visit_shop",
-        "startLineno": 38,
+        "startLineno": 27,
         "startColno": 9,
-        "endLineno": 38,
+        "endLineno": 27,
         "endColno": 18
     },
     {
         "type": "LPAREN",
-        "startLineno": 38,
+        "startLineno": 27,
         "startColno": 19,
-        "endLineno": 38,
+        "endLineno": 27,
         "endColno": 19
     },
     {
         "type": "RPAREN",
-        "startLineno": 38,
+        "startLineno": 27,
         "startColno": 20,
-        "endLineno": 38,
+        "endLineno": 27,
         "endColno": 20
     },
     {
         "type": "RBRACE",
-        "startLineno": 39,
+        "startLineno": 28,
         "startColno": 5,
-        "endLineno": 39,
+        "endLineno": 28,
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "checkIfUserChoseBagel",
+        "startLineno": 31,
+        "startColno": 5,
+        "endLineno": 31,
+        "endColno": 25
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 31,
+        "startColno": 26,
+        "endLineno": 31,
+        "endColno": 26
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "alias",
+        "startLineno": 32,
+        "startColno": 9,
+        "endLineno": 32,
+        "endColno": 13
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 32,
+        "startColno": 15,
+        "endLineno": 32,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_bagel",
+        "startLineno": 32,
+        "startColno": 17,
+        "endLineno": 32,
+        "endColno": 32
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 32,
+        "startColno": 33,
+        "endLineno": 32,
+        "endColno": 33
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "choice",
+        "startLineno": 33,
+        "startColno": 9,
+        "endLineno": 33,
+        "endColno": 14
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 33,
+        "startColno": 16,
+        "endLineno": 33,
+        "endColno": 16
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_choice",
+        "startLineno": 33,
+        "startColno": 18,
+        "endLineno": 33,
+        "endColno": 28
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 34,
+        "startColno": 5,
+        "endLineno": 34,
         "endColno": 5
     },
     {
         "type": "IDENTIFIER",
         "value": "if",
-        "startLineno": 41,
+        "startLineno": 35,
         "startColno": 5,
-        "endLineno": 41,
+        "endLineno": 35,
         "endColno": 6
     },
     {
         "type": "LPAREN",
-        "startLineno": 41,
+        "startLineno": 35,
         "startColno": 8,
-        "endLineno": 41,
+        "endLineno": 35,
         "endColno": 8
     },
     {
         "type": "IDENTIFIER",
         "value": "user_chose_bagel",
-        "startLineno": 41,
+        "startLineno": 35,
         "startColno": 9,
-        "endLineno": 41,
+        "endLineno": 35,
         "endColno": 24
     },
     {
         "type": "RPAREN",
-        "startLineno": 41,
+        "startLineno": 35,
         "startColno": 25,
-        "endLineno": 41,
+        "endLineno": 35,
         "endColno": 25
     },
     {
         "type": "LBRACE",
-        "startLineno": 41,
+        "startLineno": 35,
         "startColno": 27,
-        "endLineno": 41,
+        "endLineno": 35,
         "endColno": 27
     },
     {
         "type": "IDENTIFIER",
         "value": "add_bagel_to_cart",
-        "startLineno": 43,
+        "startLineno": 36,
         "startColno": 9,
-        "endLineno": 43,
+        "endLineno": 36,
         "endColno": 25
     },
     {
         "type": "LPAREN",
-        "startLineno": 43,
+        "startLineno": 36,
         "startColno": 26,
-        "endLineno": 43,
+        "endLineno": 36,
         "endColno": 26
     },
     {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 37,
+        "startColno": 13,
+        "endLineno": 37,
+        "endColno": 16
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 37,
+        "startColno": 18,
+        "endLineno": 37,
+        "endColno": 18
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "shopping_cart",
+        "startLineno": 37,
+        "startColno": 20,
+        "endLineno": 37,
+        "endColno": 32
+    },
+    {
         "type": "RPAREN",
-        "startLineno": 43,
-        "startColno": 27,
-        "endLineno": 43,
-        "endColno": 27
+        "startLineno": 38,
+        "startColno": 9,
+        "endLineno": 38,
+        "endColno": 9
     },
     {
         "type": "IDENTIFIER",
         "value": "visit_shop",
-        "startLineno": 44,
+        "startLineno": 39,
         "startColno": 9,
-        "endLineno": 44,
+        "endLineno": 39,
         "endColno": 18
     },
     {
         "type": "LPAREN",
-        "startLineno": 44,
+        "startLineno": 39,
         "startColno": 19,
-        "endLineno": 44,
+        "endLineno": 39,
         "endColno": 19
     },
     {
         "type": "RPAREN",
-        "startLineno": 44,
+        "startLineno": 39,
         "startColno": 20,
-        "endLineno": 44,
+        "endLineno": 39,
         "endColno": 20
     },
     {
         "type": "RBRACE",
-        "startLineno": 45,
+        "startLineno": 40,
         "startColno": 5,
+        "endLineno": 40,
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "checkIfUserChoseDisplayCart",
+        "startLineno": 43,
+        "startColno": 5,
+        "endLineno": 43,
+        "endColno": 31
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 43,
+        "startColno": 32,
+        "endLineno": 43,
+        "endColno": 32
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "alias",
+        "startLineno": 44,
+        "startColno": 9,
+        "endLineno": 44,
+        "endColno": 13
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 44,
+        "startColno": 15,
+        "endLineno": 44,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_display_cart",
+        "startLineno": 44,
+        "startColno": 17,
+        "endLineno": 44,
+        "endColno": 39
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 44,
+        "startColno": 40,
+        "endLineno": 44,
+        "endColno": 40
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "choice",
+        "startLineno": 45,
+        "startColno": 9,
         "endLineno": 45,
+        "endColno": 14
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 45,
+        "startColno": 16,
+        "endLineno": 45,
+        "endColno": 16
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_choice",
+        "startLineno": 45,
+        "startColno": 18,
+        "endLineno": 45,
+        "endColno": 28
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 46,
+        "startColno": 5,
+        "endLineno": 46,
         "endColno": 5
     },
     {
@@ -848,364 +819,351 @@
     {
         "type": "IDENTIFIER",
         "value": "display_cart",
-        "startLineno": 49,
+        "startLineno": 48,
         "startColno": 9,
-        "endLineno": 49,
+        "endLineno": 48,
         "endColno": 20
     },
     {
         "type": "LPAREN",
-        "startLineno": 49,
+        "startLineno": 48,
         "startColno": 21,
-        "endLineno": 49,
+        "endLineno": 48,
         "endColno": 21
     },
     {
-        "type": "RPAREN",
+        "type": "IDENTIFIER",
+        "value": "cart",
         "startLineno": 49,
-        "startColno": 22,
+        "startColno": 13,
         "endLineno": 49,
-        "endColno": 22
+        "endColno": 16
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 49,
+        "startColno": 18,
+        "endLineno": 49,
+        "endColno": 18
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "shopping_cart",
+        "startLineno": 49,
+        "startColno": 20,
+        "endLineno": 49,
+        "endColno": 32
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 50,
+        "startColno": 9,
+        "endLineno": 50,
+        "endColno": 9
     },
     {
         "type": "IDENTIFIER",
         "value": "visit_shop",
-        "startLineno": 50,
+        "startLineno": 51,
         "startColno": 9,
-        "endLineno": 50,
+        "endLineno": 51,
         "endColno": 18
     },
     {
         "type": "LPAREN",
-        "startLineno": 50,
+        "startLineno": 51,
         "startColno": 19,
-        "endLineno": 50,
+        "endLineno": 51,
         "endColno": 19
     },
     {
         "type": "RPAREN",
-        "startLineno": 50,
+        "startLineno": 51,
         "startColno": 20,
-        "endLineno": 50,
+        "endLineno": 51,
         "endColno": 20
     },
     {
         "type": "RBRACE",
-        "startLineno": 51,
+        "startLineno": 52,
         "startColno": 5,
-        "endLineno": 51,
+        "endLineno": 52,
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "checkIfUserChoseClearCart",
+        "startLineno": 55,
+        "startColno": 5,
+        "endLineno": 55,
+        "endColno": 29
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 55,
+        "startColno": 30,
+        "endLineno": 55,
+        "endColno": 30
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "alias",
+        "startLineno": 56,
+        "startColno": 9,
+        "endLineno": 56,
+        "endColno": 13
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 56,
+        "startColno": 15,
+        "endLineno": 56,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_clear_cart",
+        "startLineno": 56,
+        "startColno": 17,
+        "endLineno": 56,
+        "endColno": 37
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 56,
+        "startColno": 38,
+        "endLineno": 56,
+        "endColno": 38
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "choice",
+        "startLineno": 57,
+        "startColno": 9,
+        "endLineno": 57,
+        "endColno": 14
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 57,
+        "startColno": 16,
+        "endLineno": 57,
+        "endColno": 16
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_choice",
+        "startLineno": 57,
+        "startColno": 18,
+        "endLineno": 57,
+        "endColno": 28
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 58,
+        "startColno": 5,
+        "endLineno": 58,
         "endColno": 5
     },
     {
         "type": "IDENTIFIER",
         "value": "if",
-        "startLineno": 53,
+        "startLineno": 59,
         "startColno": 5,
-        "endLineno": 53,
+        "endLineno": 59,
         "endColno": 6
     },
     {
         "type": "LPAREN",
-        "startLineno": 53,
+        "startLineno": 59,
         "startColno": 8,
-        "endLineno": 53,
+        "endLineno": 59,
         "endColno": 8
     },
     {
         "type": "IDENTIFIER",
         "value": "user_chose_clear_cart",
-        "startLineno": 53,
+        "startLineno": 59,
         "startColno": 9,
-        "endLineno": 53,
+        "endLineno": 59,
         "endColno": 29
     },
     {
         "type": "RPAREN",
-        "startLineno": 53,
+        "startLineno": 59,
         "startColno": 30,
-        "endLineno": 53,
+        "endLineno": 59,
         "endColno": 30
     },
     {
         "type": "LBRACE",
-        "startLineno": 53,
+        "startLineno": 59,
         "startColno": 32,
-        "endLineno": 53,
+        "endLineno": 59,
         "endColno": 32
     },
     {
         "type": "IDENTIFIER",
         "value": "clear_cart",
-        "startLineno": 55,
+        "startLineno": 60,
         "startColno": 9,
-        "endLineno": 55,
+        "endLineno": 60,
         "endColno": 18
     },
     {
         "type": "LPAREN",
-        "startLineno": 55,
+        "startLineno": 60,
         "startColno": 19,
-        "endLineno": 55,
+        "endLineno": 60,
         "endColno": 19
     },
     {
-        "type": "RPAREN",
-        "startLineno": 55,
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 61,
+        "startColno": 13,
+        "endLineno": 61,
+        "endColno": 16
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 61,
+        "startColno": 18,
+        "endLineno": 61,
+        "endColno": 18
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "shopping_cart",
+        "startLineno": 61,
         "startColno": 20,
-        "endLineno": 55,
-        "endColno": 20
+        "endLineno": 61,
+        "endColno": 32
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 62,
+        "startColno": 9,
+        "endLineno": 62,
+        "endColno": 9
     },
     {
         "type": "IDENTIFIER",
         "value": "visit_shop",
-        "startLineno": 56,
+        "startLineno": 63,
         "startColno": 9,
-        "endLineno": 56,
+        "endLineno": 63,
         "endColno": 18
     },
     {
         "type": "LPAREN",
-        "startLineno": 56,
+        "startLineno": 63,
         "startColno": 19,
-        "endLineno": 56,
+        "endLineno": 63,
         "endColno": 19
     },
     {
         "type": "RPAREN",
-        "startLineno": 56,
+        "startLineno": 63,
         "startColno": 20,
-        "endLineno": 56,
+        "endLineno": 63,
         "endColno": 20
     },
     {
         "type": "RBRACE",
-        "startLineno": 57,
+        "startLineno": 64,
         "startColno": 5,
-        "endLineno": 57,
+        "endLineno": 64,
         "endColno": 5
     },
     {
         "type": "RBRACE",
-        "startLineno": 58,
+        "startLineno": 65,
         "startColno": 1,
-        "endLineno": 58,
+        "endLineno": 65,
         "endColno": 1
     },
     {
         "type": "IDENTIFIER",
         "value": "behavior",
-        "startLineno": 60,
+        "startLineno": 67,
         "startColno": 1,
-        "endLineno": 60,
+        "endLineno": 67,
         "endColno": 8
     },
     {
         "type": "IDENTIFIER",
         "value": "barista_presents_menu",
-        "startLineno": 60,
+        "startLineno": 67,
         "startColno": 10,
-        "endLineno": 60,
+        "endLineno": 67,
         "endColno": 30
     },
     {
         "type": "LPAREN",
-        "startLineno": 60,
+        "startLineno": 67,
         "startColno": 31,
-        "endLineno": 60,
+        "endLineno": 67,
         "endColno": 31
     },
     {
         "type": "RPAREN",
-        "startLineno": 60,
+        "startLineno": 67,
         "startColno": 32,
-        "endLineno": 60,
+        "endLineno": 67,
         "endColno": 32
     },
     {
         "type": "LBRACE",
-        "startLineno": 60,
+        "startLineno": 67,
         "startColno": 34,
-        "endLineno": 60,
+        "endLineno": 67,
         "endColno": 34
     },
     {
         "type": "IDENTIFIER",
         "value": "display",
-        "startLineno": 61,
+        "startLineno": 68,
         "startColno": 5,
-        "endLineno": 61,
+        "endLineno": 68,
         "endColno": 11
     },
     {
         "type": "LPAREN",
-        "startLineno": 61,
+        "startLineno": 68,
         "startColno": 12,
-        "endLineno": 61,
+        "endLineno": 68,
         "endColno": 12
     },
     {
         "type": "IDENTIFIER",
         "value": "value",
-        "startLineno": 62,
+        "startLineno": 69,
         "startColno": 9,
-        "endLineno": 62,
+        "endLineno": 69,
         "endColno": 13
     },
     {
         "type": "EQUAL",
-        "startLineno": 62,
+        "startLineno": 69,
         "startColno": 15,
-        "endLineno": 62,
+        "endLineno": 69,
         "endColno": 15
     },
     {
         "type": "IDENTIFIER",
         "value": "menu",
-        "startLineno": 62,
+        "startLineno": 69,
         "startColno": 17,
-        "endLineno": 62,
+        "endLineno": 69,
         "endColno": 20
     },
     {
         "type": "RPAREN",
-        "startLineno": 63,
+        "startLineno": 70,
         "startColno": 5,
-        "endLineno": 63,
+        "endLineno": 70,
         "endColno": 5
-    },
-    {
-        "type": "RBRACE",
-        "startLineno": 64,
-        "startColno": 1,
-        "endLineno": 64,
-        "endColno": 1
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "behavior",
-        "startLineno": 66,
-        "startColno": 1,
-        "endLineno": 66,
-        "endColno": 8
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "acceptChoice",
-        "startLineno": 66,
-        "startColno": 10,
-        "endLineno": 66,
-        "endColno": 21
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 66,
-        "startColno": 22,
-        "endLineno": 66,
-        "endColno": 22
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 66,
-        "startColno": 23,
-        "endLineno": 66,
-        "endColno": 23
-    },
-    {
-        "type": "LBRACE",
-        "startLineno": 66,
-        "startColno": 25,
-        "endLineno": 66,
-        "endColno": 25
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "accept_terminal_input",
-        "startLineno": 67,
-        "startColno": 5,
-        "endLineno": 67,
-        "endColno": 25
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 67,
-        "startColno": 26,
-        "endLineno": 67,
-        "endColno": 26
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "alias",
-        "startLineno": 68,
-        "startColno": 9,
-        "endLineno": 68,
-        "endColno": 13
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 68,
-        "startColno": 15,
-        "endLineno": 68,
-        "endColno": 15
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "terminal_input",
-        "startLineno": 68,
-        "startColno": 17,
-        "endLineno": 68,
-        "endColno": 30
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 69,
-        "startColno": 5,
-        "endLineno": 69,
-        "endColno": 5
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "yield",
-        "startLineno": 70,
-        "startColno": 5,
-        "endLineno": 70,
-        "endColno": 9
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 70,
-        "startColno": 10,
-        "endLineno": 70,
-        "endColno": 10
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "value",
-        "startLineno": 70,
-        "startColno": 11,
-        "endLineno": 70,
-        "endColno": 15
-    },
-    {
-        "type": "EQUAL",
-        "startLineno": 70,
-        "startColno": 16,
-        "endLineno": 70,
-        "endColno": 16
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "terminal_input",
-        "startLineno": 70,
-        "startColno": 17,
-        "endLineno": 70,
-        "endColno": 30
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 70,
-        "startColno": 31,
-        "endLineno": 70,
-        "endColno": 31
     },
     {
         "type": "RBRACE",
@@ -1224,59 +1182,51 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "add_coffee_to_cart",
+        "value": "acceptChoice",
         "startLineno": 73,
         "startColno": 10,
         "endLineno": 73,
-        "endColno": 27
+        "endColno": 21
     },
     {
         "type": "LPAREN",
         "startLineno": 73,
-        "startColno": 28,
+        "startColno": 22,
         "endLineno": 73,
-        "endColno": 28
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "cart",
-        "startLineno": 73,
-        "startColno": 29,
-        "endLineno": 73,
-        "endColno": 32
+        "endColno": 22
     },
     {
         "type": "RPAREN",
         "startLineno": 73,
-        "startColno": 33,
+        "startColno": 23,
         "endLineno": 73,
-        "endColno": 33
+        "endColno": 23
     },
     {
         "type": "LBRACE",
         "startLineno": 73,
-        "startColno": 35,
+        "startColno": 25,
         "endLineno": 73,
-        "endColno": 35
+        "endColno": 25
     },
     {
         "type": "IDENTIFIER",
-        "value": "insert_at_end",
+        "value": "accept_terminal_input",
         "startLineno": 74,
         "startColno": 5,
         "endLineno": 74,
-        "endColno": 17
+        "endColno": 25
     },
     {
         "type": "LPAREN",
         "startLineno": 74,
-        "startColno": 18,
+        "startColno": 26,
         "endLineno": 74,
-        "endColno": 18
+        "endColno": 26
     },
     {
         "type": "IDENTIFIER",
-        "value": "value",
+        "value": "alias",
         "startLineno": 75,
         "startColno": 9,
         "endLineno": 75,
@@ -1290,63 +1240,64 @@
         "endColno": 15
     },
     {
-        "type": "QUOTE",
+        "type": "IDENTIFIER",
+        "value": "terminal_input",
         "startLineno": 75,
         "startColno": 17,
         "endLineno": 75,
-        "endColno": 17
+        "endColno": 30
     },
     {
-        "type": "IDENTIFIER",
-        "value": "Coffee",
-        "startLineno": 75,
-        "startColno": 18,
-        "endLineno": 75,
-        "endColno": 23
-    },
-    {
-        "type": "QUOTE",
-        "startLineno": 75,
-        "startColno": 24,
-        "endLineno": 75,
-        "endColno": 24
-    },
-    {
-        "type": "COMMA",
-        "startLineno": 75,
-        "startColno": 25,
-        "endLineno": 75,
-        "endColno": 25
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "list",
+        "type": "RPAREN",
         "startLineno": 76,
-        "startColno": 9,
+        "startColno": 5,
         "endLineno": 76,
-        "endColno": 12
+        "endColno": 5
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "yield",
+        "startLineno": 77,
+        "startColno": 5,
+        "endLineno": 77,
+        "endColno": 9
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 77,
+        "startColno": 10,
+        "endLineno": 77,
+        "endColno": 10
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "value",
+        "startLineno": 77,
+        "startColno": 11,
+        "endLineno": 77,
+        "endColno": 15
     },
     {
         "type": "EQUAL",
-        "startLineno": 76,
-        "startColno": 14,
-        "endLineno": 76,
-        "endColno": 14
+        "startLineno": 77,
+        "startColno": 16,
+        "endLineno": 77,
+        "endColno": 16
     },
     {
         "type": "IDENTIFIER",
-        "value": "cart",
-        "startLineno": 76,
-        "startColno": 16,
-        "endLineno": 76,
-        "endColno": 19
+        "value": "terminal_input",
+        "startLineno": 77,
+        "startColno": 17,
+        "endLineno": 77,
+        "endColno": 30
     },
     {
         "type": "RPAREN",
         "startLineno": 77,
-        "startColno": 5,
+        "startColno": 31,
         "endLineno": 77,
-        "endColno": 5
+        "endColno": 31
     },
     {
         "type": "RBRACE",
@@ -1365,40 +1316,40 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "add_bagel_to_cart",
+        "value": "add_coffee_to_cart",
         "startLineno": 80,
         "startColno": 10,
         "endLineno": 80,
-        "endColno": 26
+        "endColno": 27
     },
     {
         "type": "LPAREN",
         "startLineno": 80,
-        "startColno": 27,
+        "startColno": 28,
         "endLineno": 80,
-        "endColno": 27
+        "endColno": 28
     },
     {
         "type": "IDENTIFIER",
         "value": "cart",
         "startLineno": 80,
-        "startColno": 28,
-        "endLineno": 80,
-        "endColno": 31
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 80,
-        "startColno": 32,
+        "startColno": 29,
         "endLineno": 80,
         "endColno": 32
     },
     {
+        "type": "RPAREN",
+        "startLineno": 80,
+        "startColno": 33,
+        "endLineno": 80,
+        "endColno": 33
+    },
+    {
         "type": "LBRACE",
         "startLineno": 80,
-        "startColno": 34,
+        "startColno": 35,
         "endLineno": 80,
-        "endColno": 34
+        "endColno": 35
     },
     {
         "type": "IDENTIFIER",
@@ -1439,25 +1390,25 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "Bagel",
+        "value": "Coffee",
         "startLineno": 82,
         "startColno": 18,
-        "endLineno": 82,
-        "endColno": 22
-    },
-    {
-        "type": "QUOTE",
-        "startLineno": 82,
-        "startColno": 23,
         "endLineno": 82,
         "endColno": 23
     },
     {
-        "type": "COMMA",
+        "type": "QUOTE",
         "startLineno": 82,
         "startColno": 24,
         "endLineno": 82,
         "endColno": 24
+    },
+    {
+        "type": "COMMA",
+        "startLineno": 82,
+        "startColno": 25,
+        "endLineno": 82,
+        "endColno": 25
     },
     {
         "type": "IDENTIFIER",
@@ -1506,55 +1457,55 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "display_cart",
+        "value": "add_bagel_to_cart",
         "startLineno": 87,
         "startColno": 10,
-        "endLineno": 87,
-        "endColno": 21
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 87,
-        "startColno": 22,
-        "endLineno": 87,
-        "endColno": 22
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "cart",
-        "startLineno": 87,
-        "startColno": 23,
         "endLineno": 87,
         "endColno": 26
     },
     {
-        "type": "RPAREN",
+        "type": "LPAREN",
         "startLineno": 87,
         "startColno": 27,
         "endLineno": 87,
         "endColno": 27
     },
     {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 87,
+        "startColno": 28,
+        "endLineno": 87,
+        "endColno": 31
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 87,
+        "startColno": 32,
+        "endLineno": 87,
+        "endColno": 32
+    },
+    {
         "type": "LBRACE",
         "startLineno": 87,
-        "startColno": 29,
+        "startColno": 34,
         "endLineno": 87,
-        "endColno": 29
+        "endColno": 34
     },
     {
         "type": "IDENTIFIER",
-        "value": "display",
+        "value": "insert_at_end",
         "startLineno": 88,
         "startColno": 5,
         "endLineno": 88,
-        "endColno": 11
+        "endColno": 17
     },
     {
         "type": "LPAREN",
         "startLineno": 88,
-        "startColno": 12,
+        "startColno": 18,
         "endLineno": 88,
-        "endColno": 12
+        "endColno": 18
     },
     {
         "type": "IDENTIFIER",
@@ -1572,122 +1523,263 @@
         "endColno": 15
     },
     {
-        "type": "IDENTIFIER",
-        "value": "cart",
+        "type": "QUOTE",
         "startLineno": 89,
         "startColno": 17,
         "endLineno": 89,
-        "endColno": 20
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 90,
-        "startColno": 5,
-        "endLineno": 90,
-        "endColno": 5
-    },
-    {
-        "type": "RBRACE",
-        "startLineno": 91,
-        "startColno": 1,
-        "endLineno": 91,
-        "endColno": 1
+        "endColno": 17
     },
     {
         "type": "IDENTIFIER",
-        "value": "behavior",
-        "startLineno": 93,
-        "startColno": 1,
-        "endLineno": 93,
-        "endColno": 8
+        "value": "Bagel",
+        "startLineno": 89,
+        "startColno": 18,
+        "endLineno": 89,
+        "endColno": 22
     },
     {
-        "type": "IDENTIFIER",
-        "value": "clear_cart",
-        "startLineno": 93,
-        "startColno": 10,
-        "endLineno": 93,
-        "endColno": 19
+        "type": "QUOTE",
+        "startLineno": 89,
+        "startColno": 23,
+        "endLineno": 89,
+        "endColno": 23
     },
     {
-        "type": "LPAREN",
-        "startLineno": 93,
-        "startColno": 20,
-        "endLineno": 93,
-        "endColno": 20
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "cart",
-        "startLineno": 93,
-        "startColno": 21,
-        "endLineno": 93,
+        "type": "COMMA",
+        "startLineno": 89,
+        "startColno": 24,
+        "endLineno": 89,
         "endColno": 24
-    },
-    {
-        "type": "RPAREN",
-        "startLineno": 93,
-        "startColno": 25,
-        "endLineno": 93,
-        "endColno": 25
-    },
-    {
-        "type": "LBRACE",
-        "startLineno": 93,
-        "startColno": 27,
-        "endLineno": 93,
-        "endColno": 27
-    },
-    {
-        "type": "IDENTIFIER",
-        "value": "clear",
-        "startLineno": 94,
-        "startColno": 5,
-        "endLineno": 94,
-        "endColno": 9
-    },
-    {
-        "type": "LPAREN",
-        "startLineno": 94,
-        "startColno": 10,
-        "endLineno": 94,
-        "endColno": 10
     },
     {
         "type": "IDENTIFIER",
         "value": "list",
-        "startLineno": 95,
+        "startLineno": 90,
         "startColno": 9,
-        "endLineno": 95,
+        "endLineno": 90,
         "endColno": 12
     },
     {
         "type": "EQUAL",
-        "startLineno": 95,
+        "startLineno": 90,
         "startColno": 14,
-        "endLineno": 95,
+        "endLineno": 90,
         "endColno": 14
     },
     {
         "type": "IDENTIFIER",
         "value": "cart",
-        "startLineno": 95,
+        "startLineno": 90,
         "startColno": 16,
-        "endLineno": 95,
+        "endLineno": 90,
         "endColno": 19
     },
     {
         "type": "RPAREN",
-        "startLineno": 96,
+        "startLineno": 91,
         "startColno": 5,
-        "endLineno": 96,
+        "endLineno": 91,
         "endColno": 5
     },
     {
         "type": "RBRACE",
-        "startLineno": 97,
+        "startLineno": 92,
         "startColno": 1,
+        "endLineno": 92,
+        "endColno": 1
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "behavior",
+        "startLineno": 94,
+        "startColno": 1,
+        "endLineno": 94,
+        "endColno": 8
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "display_cart",
+        "startLineno": 94,
+        "startColno": 10,
+        "endLineno": 94,
+        "endColno": 21
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 94,
+        "startColno": 22,
+        "endLineno": 94,
+        "endColno": 22
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 94,
+        "startColno": 23,
+        "endLineno": 94,
+        "endColno": 26
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 94,
+        "startColno": 27,
+        "endLineno": 94,
+        "endColno": 27
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 94,
+        "startColno": 29,
+        "endLineno": 94,
+        "endColno": 29
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "display",
+        "startLineno": 95,
+        "startColno": 5,
+        "endLineno": 95,
+        "endColno": 11
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 95,
+        "startColno": 12,
+        "endLineno": 95,
+        "endColno": 12
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "value",
+        "startLineno": 96,
+        "startColno": 9,
+        "endLineno": 96,
+        "endColno": 13
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 96,
+        "startColno": 15,
+        "endLineno": 96,
+        "endColno": 15
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 96,
+        "startColno": 17,
+        "endLineno": 96,
+        "endColno": 20
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 97,
+        "startColno": 5,
         "endLineno": 97,
+        "endColno": 5
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 98,
+        "startColno": 1,
+        "endLineno": 98,
+        "endColno": 1
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "behavior",
+        "startLineno": 100,
+        "startColno": 1,
+        "endLineno": 100,
+        "endColno": 8
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "clear_cart",
+        "startLineno": 100,
+        "startColno": 10,
+        "endLineno": 100,
+        "endColno": 19
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 100,
+        "startColno": 20,
+        "endLineno": 100,
+        "endColno": 20
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 100,
+        "startColno": 21,
+        "endLineno": 100,
+        "endColno": 24
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 100,
+        "startColno": 25,
+        "endLineno": 100,
+        "endColno": 25
+    },
+    {
+        "type": "LBRACE",
+        "startLineno": 100,
+        "startColno": 27,
+        "endLineno": 100,
+        "endColno": 27
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "clear",
+        "startLineno": 101,
+        "startColno": 5,
+        "endLineno": 101,
+        "endColno": 9
+    },
+    {
+        "type": "LPAREN",
+        "startLineno": 101,
+        "startColno": 10,
+        "endLineno": 101,
+        "endColno": 10
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "list",
+        "startLineno": 102,
+        "startColno": 9,
+        "endLineno": 102,
+        "endColno": 12
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 102,
+        "startColno": 14,
+        "endLineno": 102,
+        "endColno": 14
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "cart",
+        "startLineno": 102,
+        "startColno": 16,
+        "endLineno": 102,
+        "endColno": 19
+    },
+    {
+        "type": "RPAREN",
+        "startLineno": 103,
+        "startColno": 5,
+        "endLineno": 103,
+        "endColno": 5
+    },
+    {
+        "type": "RBRACE",
+        "startLineno": 104,
+        "startColno": 1,
+        "endLineno": 104,
         "endColno": 1
     }
 ]

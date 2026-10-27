@@ -19,7 +19,7 @@
                 {
                     "arg": null,
                     "type": "string",
-                    "value": "Cart.ar"
+                    "value": "participants/Cart.ar"
                 }
             ]
         },
@@ -89,6 +89,34 @@
                     ]
                 },
                 {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_coffee"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "add_coffee_to_cart",
+                            "args": [
+                                {
+                                    "arg": "cart",
+                                    "type": "name",
+                                    "value": "shopping_cart"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
+                        }
+                    ]
+                },
+                {
                     "type": "cmd",
                     "command": "checkIfUserChoseBagel",
                     "args": [
@@ -105,6 +133,34 @@
                     ]
                 },
                 {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_bagel"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "add_bagel_to_cart",
+                            "args": [
+                                {
+                                    "arg": "cart",
+                                    "type": "name",
+                                    "value": "shopping_cart"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
+                        }
+                    ]
+                },
+                {
                     "type": "cmd",
                     "command": "checkIfUserChoseDisplayCart",
                     "args": [
@@ -117,6 +173,34 @@
                             "arg": "choice",
                             "type": "name",
                             "value": "user_choice"
+                        }
+                    ]
+                },
+                {
+                    "type": "if",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_chose_display_cart"
+                        }
+                    ],
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "display_cart",
+                            "args": [
+                                {
+                                    "arg": "cart",
+                                    "type": "name",
+                                    "value": "shopping_cart"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
                         }
                     ]
                 },
@@ -142,72 +226,6 @@
                         {
                             "arg": null,
                             "type": "name",
-                            "value": "user_chose_coffee"
-                        }
-                    ],
-                    "body": [
-                        {
-                            "type": "cmd",
-                            "command": "add_coffee_to_cart",
-                            "args": []
-                        },
-                        {
-                            "type": "cmd",
-                            "command": "visit_shop",
-                            "args": []
-                        }
-                    ]
-                },
-                {
-                    "type": "if",
-                    "args": [
-                        {
-                            "arg": null,
-                            "type": "name",
-                            "value": "user_chose_bagel"
-                        }
-                    ],
-                    "body": [
-                        {
-                            "type": "cmd",
-                            "command": "add_bagel_to_cart",
-                            "args": []
-                        },
-                        {
-                            "type": "cmd",
-                            "command": "visit_shop",
-                            "args": []
-                        }
-                    ]
-                },
-                {
-                    "type": "if",
-                    "args": [
-                        {
-                            "arg": null,
-                            "type": "name",
-                            "value": "user_chose_display_cart"
-                        }
-                    ],
-                    "body": [
-                        {
-                            "type": "cmd",
-                            "command": "display_cart",
-                            "args": []
-                        },
-                        {
-                            "type": "cmd",
-                            "command": "visit_shop",
-                            "args": []
-                        }
-                    ]
-                },
-                {
-                    "type": "if",
-                    "args": [
-                        {
-                            "arg": null,
-                            "type": "name",
                             "value": "user_chose_clear_cart"
                         }
                     ],
@@ -215,7 +233,13 @@
                         {
                             "type": "cmd",
                             "command": "clear_cart",
-                            "args": []
+                            "args": [
+                                {
+                                    "arg": "cart",
+                                    "type": "name",
+                                    "value": "shopping_cart"
+                                }
+                            ]
                         },
                         {
                             "type": "cmd",

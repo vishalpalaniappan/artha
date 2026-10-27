@@ -1,2 +1,2 @@
-export { ArthaLexer } from "./Lexer";
-export { ArthaParser } from "./Parser"
+export { ArthaLexer } from "./parser/Lexer";
+export { ArthaParser } from "./parser/Parser"
