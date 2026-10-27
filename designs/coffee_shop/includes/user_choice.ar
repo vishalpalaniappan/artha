@@ -25,7 +25,7 @@ behavior checkIfUserChoseDisplayCart (user_choice) {
     yield(did_user_choose_display_cart)
 }
 
-checkIfUserChoseClearCart (user_choice) {
+behavior checkIfUserChoseClearCart (user_choice) {
     equals(
         alias = did_user_choose_clear_cart,
         user_choice = user_choice,
