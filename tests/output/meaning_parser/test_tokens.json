@@ -424,25 +424,40 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "user_chose_coffee",
+        "value": "condition",
         "startLineno": 23,
         "startColno": 9,
         "endLineno": 23,
-        "endColno": 25
+        "endColno": 17
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 23,
+        "startColno": 19,
+        "endLineno": 23,
+        "endColno": 19
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_coffee",
+        "startLineno": 23,
+        "startColno": 21,
+        "endLineno": 23,
+        "endColno": 37
     },
     {
         "type": "RPAREN",
         "startLineno": 23,
-        "startColno": 26,
+        "startColno": 38,
         "endLineno": 23,
-        "endColno": 26
+        "endColno": 38
     },
     {
         "type": "LBRACE",
         "startLineno": 23,
-        "startColno": 28,
+        "startColno": 40,
         "endLineno": 23,
-        "endColno": 28
+        "endColno": 40
     },
     {
         "type": "IDENTIFIER",
@@ -610,25 +625,40 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "user_chose_bagel",
+        "value": "condition",
         "startLineno": 35,
         "startColno": 9,
         "endLineno": 35,
-        "endColno": 24
+        "endColno": 17
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 35,
+        "startColno": 19,
+        "endLineno": 35,
+        "endColno": 19
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_bagel",
+        "startLineno": 35,
+        "startColno": 21,
+        "endLineno": 35,
+        "endColno": 36
     },
     {
         "type": "RPAREN",
         "startLineno": 35,
-        "startColno": 25,
+        "startColno": 37,
         "endLineno": 35,
-        "endColno": 25
+        "endColno": 37
     },
     {
         "type": "LBRACE",
         "startLineno": 35,
-        "startColno": 27,
+        "startColno": 39,
         "endLineno": 35,
-        "endColno": 27
+        "endColno": 39
     },
     {
         "type": "IDENTIFIER",
@@ -796,25 +826,40 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "user_chose_display_cart",
+        "value": "condition",
         "startLineno": 47,
         "startColno": 9,
         "endLineno": 47,
-        "endColno": 31
+        "endColno": 17
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 47,
+        "startColno": 19,
+        "endLineno": 47,
+        "endColno": 19
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_display_cart",
+        "startLineno": 47,
+        "startColno": 21,
+        "endLineno": 47,
+        "endColno": 43
     },
     {
         "type": "RPAREN",
         "startLineno": 47,
-        "startColno": 32,
+        "startColno": 44,
         "endLineno": 47,
-        "endColno": 32
+        "endColno": 44
     },
     {
         "type": "LBRACE",
         "startLineno": 47,
-        "startColno": 34,
+        "startColno": 46,
         "endLineno": 47,
-        "endColno": 34
+        "endColno": 46
     },
     {
         "type": "IDENTIFIER",
@@ -982,25 +1027,40 @@
     },
     {
         "type": "IDENTIFIER",
-        "value": "user_chose_clear_cart",
+        "value": "condition",
         "startLineno": 59,
         "startColno": 9,
         "endLineno": 59,
-        "endColno": 29
+        "endColno": 17
+    },
+    {
+        "type": "EQUAL",
+        "startLineno": 59,
+        "startColno": 19,
+        "endLineno": 59,
+        "endColno": 19
+    },
+    {
+        "type": "IDENTIFIER",
+        "value": "user_chose_clear_cart",
+        "startLineno": 59,
+        "startColno": 21,
+        "endLineno": 59,
+        "endColno": 41
     },
     {
         "type": "RPAREN",
         "startLineno": 59,
-        "startColno": 30,
+        "startColno": 42,
         "endLineno": 59,
-        "endColno": 30
+        "endColno": 42
     },
     {
         "type": "LBRACE",
         "startLineno": 59,
-        "startColno": 32,
+        "startColno": 44,
         "endLineno": 59,
-        "endColno": 32
+        "endColno": 44
     },
     {
         "type": "IDENTIFIER",

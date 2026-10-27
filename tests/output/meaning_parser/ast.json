@@ -92,7 +92,7 @@
                     "type": "if",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "condition",
                             "type": "name",
                             "value": "user_chose_coffee"
                         }
@@ -136,7 +136,7 @@
                     "type": "if",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "condition",
                             "type": "name",
                             "value": "user_chose_bagel"
                         }
@@ -180,7 +180,7 @@
                     "type": "if",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "condition",
                             "type": "name",
                             "value": "user_chose_display_cart"
                         }
@@ -224,7 +224,7 @@
                     "type": "if",
                     "args": [
                         {
-                            "arg": null,
+                            "arg": "condition",
                             "type": "name",
                             "value": "user_chose_clear_cart"
                         }
