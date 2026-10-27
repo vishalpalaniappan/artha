@@ -98,7 +98,7 @@ behavior display_cart(cart) {
 }
 
 behavior clear_cart(cart) {
-    clear(
+    clear_list(
         list = cart
     )
 }
