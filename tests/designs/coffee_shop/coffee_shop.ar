@@ -52,25 +52,6 @@ behavior visit_shop() {
     }
 
 
-    checkIfUserChoseCheckout(
-        alias = user_chose_checkout,
-        choice = user_choice
-    )
-    if (user_chose_checkout) {
-        # TODO: Meaning of these behaviors have not been established yet.
-        calculate_cost(
-            alias = cost,
-            cart = shopping_cart
-        )
-        present_cost(
-            value = cost
-        )
-        accept_payment(
-            value = cost
-        )
-    }
-
-
     checkIfUserChoseClearCart(
         alias = user_chose_clear_cart,
         choice = user_choice
