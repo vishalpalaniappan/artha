@@ -7,12 +7,17 @@ import { Artha } from "../dist/index.esm";
 
 
 ensureDir("./tests/output")
-ensureDir("./tests/output/meaning_parser")
+ensureDir("./tests/output/coffee_shop")
 
 describe("meaning parser", async () => {
 
     it("tests artha", async () => {
         const arFiles = await getFilesAndContent("./designs/coffee_shop");
         const coffee_shop = new Artha(arFiles);
+
+        await writeFile(
+            resolve(__dirname, "./output/coffee_shop/reasoningPkg.json"),
+            JSON.stringify(coffee_shop.reasoningPkg, null, 4)
+        );
     });
 });

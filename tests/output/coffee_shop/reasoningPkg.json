@@ -1,0 +1,660 @@
+[
+    {
+        "fullPath": "designs/coffee_shop/coffee_shop.ar",
+        "name": "coffee_shop.ar",
+        "relativePath": "coffee_shop.ar",
+        "content": "import(\"includes/user_choice.ar\")\nimport(\"participants/Cart.ar\")\n\nbehavior coffee_shop() {\n    introduce(\n        name= shopping_cart, \n        participant= Cart\n    )\n    visit_shop()\n}\n\nbehavior visit_shop() {\n    barista_presents_menu()\n\n    acceptChoice(\n        alias = user_choice\n    )\n\n    checkIfUserChoseCoffee(\n        alias = user_chose_coffee,\n        choice = user_choice\n    )\n    if (condition = user_chose_coffee) {\n        add_coffee_to_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n\n\n    checkIfUserChoseBagel(\n        alias = user_chose_bagel,\n        choice = user_choice\n    )\n    if (condition = user_chose_bagel) {\n        add_bagel_to_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n\n\n    checkIfUserChoseDisplayCart(\n        alias = user_chose_display_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_display_cart) {\n        display_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n\n\n    checkIfUserChoseClearCart(\n        alias = user_chose_clear_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_clear_cart) {\n        clear_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n}\n\nbehavior barista_presents_menu() {\n    display(\n        value = menu\n    )\n}\n\nbehavior acceptChoice() {\n    accept_terminal_input(\n        alias = terminal_input\n    )\n    yield(value=terminal_input)\n}\n\nbehavior add_coffee_to_cart(cart) {\n    insert_at_end(\n        value = \"Coffee\", \n        list = cart\n    )\n}\n\nbehavior add_bagel_to_cart(cart) {\n    insert_at_end(\n        value = \"Bagel\", \n        list = cart\n    )\n}\n\nbehavior display_cart(cart) {\n    display(\n        value = cart\n    )\n}\n\nbehavior clear_cart(cart) {\n    clear(\n        list = cart\n    )\n}\n\n",
+        "ast": {
+            "type": "root",
+            "body": [
+                {
+                    "type": "cmd",
+                    "command": "import",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "string",
+                            "value": "includes/user_choice.ar"
+                        }
+                    ]
+                },
+                {
+                    "type": "cmd",
+                    "command": "import",
+                    "args": [
+                        {
+                            "arg": null,
+                            "type": "string",
+                            "value": "participants/Cart.ar"
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "coffee_shop",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "introduce",
+                            "args": [
+                                {
+                                    "arg": "name",
+                                    "type": "name",
+                                    "value": "shopping_cart"
+                                },
+                                {
+                                    "arg": "participant",
+                                    "type": "name",
+                                    "value": "Cart"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "visit_shop",
+                            "args": []
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "visit_shop",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "barista_presents_menu",
+                            "args": []
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "acceptChoice",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "checkIfUserChoseCoffee",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_coffee"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_coffee"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "type": "cmd",
+                                    "command": "add_coffee_to_cart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "cmd",
+                                    "command": "visit_shop",
+                                    "args": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "checkIfUserChoseBagel",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "type": "cmd",
+                                    "command": "add_bagel_to_cart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "cmd",
+                                    "command": "visit_shop",
+                                    "args": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "checkIfUserChoseDisplayCart",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_display_cart"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_display_cart"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "type": "cmd",
+                                    "command": "display_cart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "cmd",
+                                    "command": "visit_shop",
+                                    "args": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "checkIfUserChoseClearCart",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_clear_cart"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_clear_cart"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "type": "cmd",
+                                    "command": "clear_cart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "cmd",
+                                    "command": "visit_shop",
+                                    "args": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "barista_presents_menu",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "display",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "name",
+                                    "value": "menu"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "acceptChoice",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "accept_terminal_input",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "terminal_input"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "name",
+                                    "value": "terminal_input"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "cart"
+                        }
+                    ],
+                    "behaviorName": "add_coffee_to_cart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "insert_at_end",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "string",
+                                    "value": "Coffee"
+                                },
+                                {
+                                    "arg": "list",
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "cart"
+                        }
+                    ],
+                    "behaviorName": "add_bagel_to_cart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "insert_at_end",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "string",
+                                    "value": "Bagel"
+                                },
+                                {
+                                    "arg": "list",
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "cart"
+                        }
+                    ],
+                    "behaviorName": "display_cart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "display",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "cart"
+                        }
+                    ],
+                    "behaviorName": "clear_cart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "clear",
+                            "args": [
+                                {
+                                    "arg": "list",
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "fullPath": "designs/coffee_shop/participants/Cart.ar",
+        "name": "Cart.ar",
+        "relativePath": "participants/Cart.ar",
+        "content": "participant Cart() {\n    structuralType(\n        type= \"list\"\n    )\n    roleType(\n        type= \"basket\"\n    )\n    contains(\n        values= [\"Coffee\", \"Bagel\"]\n    )\n}",
+        "ast": {
+            "type": "root",
+            "body": [
+                {
+                    "type": "participant",
+                    "parsedArgs": [],
+                    "participantType": "Cart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "structuralType",
+                            "args": [
+                                {
+                                    "arg": "type",
+                                    "type": "string",
+                                    "value": "list"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "roleType",
+                            "args": [
+                                {
+                                    "arg": "type",
+                                    "type": "string",
+                                    "value": "basket"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "contains",
+                            "args": [
+                                {
+                                    "arg": "values",
+                                    "type": "list",
+                                    "value": [
+                                        "Coffee",
+                                        "Bagel"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "fullPath": "designs/coffee_shop/includes/user_choice.ar",
+        "name": "user_choice.ar",
+        "relativePath": "includes/user_choice.ar",
+        "content": "behavior checkIfUserChoseBagel (user_choice) {\n    equals(\n        alias = user_chose_bagel,\n        user_choice = user_choice,\n        check = \"bagel\"\n    )\n    yield(user_chose_bagel)\n}\n\nbehavior checkIfUserChoseCoffee (user_choice) {\n    equals(\n        alias = did_user_chose_coffee,\n        user_choice = user_choice,\n        check = \"coffee\"\n    )\n    yield(user_chose_coffee)\n}\n\nbehavior checkIfUserChoseDisplayCart (user_choice) {\n    equals(\n        alias = did_user_choose_display_cart,\n        user_choice = user_choice,\n        check = \"view\"\n    )\n    yield(did_user_choose_display_cart)\n}\n\nbehavior checkIfUserChoseClearCart (user_choice) {\n    equals(\n        alias = did_user_choose_clear_cart,\n        user_choice = user_choice,\n        check = \"clear\"\n    )\n    yield(did_user_choose_clear_cart)\n}",
+        "ast": {
+            "type": "root",
+            "body": [
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseBagel",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                },
+                                {
+                                    "arg": "user_choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "check",
+                                    "type": "string",
+                                    "value": "bagel"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseCoffee",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "did_user_chose_coffee"
+                                },
+                                {
+                                    "arg": "user_choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "check",
+                                    "type": "string",
+                                    "value": "coffee"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "user_chose_coffee"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseDisplayCart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "did_user_choose_display_cart"
+                                },
+                                {
+                                    "arg": "user_choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "check",
+                                    "type": "string",
+                                    "value": "view"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "did_user_choose_display_cart"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseClearCart",
+                    "body": [
+                        {
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "did_user_choose_clear_cart"
+                                },
+                                {
+                                    "arg": "user_choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "check",
+                                    "type": "string",
+                                    "value": "clear"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "did_user_choose_clear_cart"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

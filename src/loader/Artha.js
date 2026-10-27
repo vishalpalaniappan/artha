@@ -27,43 +27,34 @@ export class Artha {
     constructor (files) {
         // Accepts the contents of the design repo
         this.files = files;
+        this.meta = null;
         this.loadMeta();
     }
 
     loadMeta () {
-        const metaFile = this.files.find(
-            (f) => f.name == "meta.json"
-        );
-
-        if (!metaFile) {
-            throw Error("Missing meta.json file.");
-        }
+        const metaFile = this.files.find((f) => f.name == "meta.json");
+        if (!metaFile) throw Error("Missing meta.json file.");
         
-        const meta = JSON.parse(metaFile.content);
-        this.parseFile(meta.entry);
+        this.meta = JSON.parse(metaFile.content);
+        this.parseFile(this.meta.entry);
+
+        this.reasoningPkg = this.generateReasoningPackage();
     }
 
     parseFile (relativePath) {
-
         const currFile = this.files.find((f) => f.relativePath == relativePath);
+        if (!currFile) throw Error("Could not find entry file");
 
-        if (!currFile) {
-            throw Error("Could not find entry file");
-        }
+        if (Object.keys(currFile).includes("ast")) return;
 
-        if (Object.keys(currFile).includes("ast")) {
-            // Already parsed file.
-            return;
-        }
-
-        const lexer = new ArthaLexer(entryFile.content);
+        const lexer = new ArthaLexer(currFile.content);
         const parsed = new ArthaParser(lexer.scannedTokens);
 
         // Save the parsed ast in file
-        entryFile.ast = parsed.ast;
+        currFile.ast = parsed.ast;
 
         // Find all imports in current AST
-        const imports = ast.body
+        const imports = currFile.ast.body
             .filter((f) => f.command == "import")
             .map((f) => f.args[0].value);
 
@@ -73,5 +64,12 @@ export class Artha {
             this.parseFile(imp);
         }
     }
+
+    generateReasoningPackage () {
+        return this.files.filter(
+            (f) => "ast" in f
+        )
+    }
+
 
 }
