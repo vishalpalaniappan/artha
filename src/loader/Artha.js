@@ -1,5 +1,6 @@
 import { ArthaLexer } from "../exports";
 import { ArthaParser } from "../exports";
+import { ReasoningEngine } from "../exports";
 
 /**
  * Accepts the contents of a design repo and does the following:
@@ -38,7 +39,9 @@ export class Artha {
         this.meta = JSON.parse(metaFile.content);
         this.parseFile(this.meta.entry);
 
-        this.reasoningPkg = this.generateReasoningPackage();
+        this.engine = new ReasoningEngine(
+            this.generateReasoningPackage()
+        );
     }
 
     parseFile (relativePath) {

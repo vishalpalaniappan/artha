@@ -17,7 +17,7 @@ describe("meaning parser", async () => {
 
         await writeFile(
             resolve(__dirname, "./output/coffee_shop/reasoningPkg.json"),
-            JSON.stringify(coffee_shop.reasoningPkg, null, 4)
+            JSON.stringify(coffee_shop.generateReasoningPackage(), null, 4)
         );
     });
 });

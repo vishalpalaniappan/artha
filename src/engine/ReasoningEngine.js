@@ -5,12 +5,17 @@ import { loadPrimitivesFromManifest } from "../primitives/loadPrimitives";
  * provided primitives. 
  */
 export class ReasoningEngine {
-    constructor (ast) {
-        this.ast = ast;
+    constructor (pkg) {
+        this.pkg = pkg;
+        this.reason();
     }
 
     async loadPrimitives() {
         this.primitives = await loadPrimitivesFromManifest();
+    }
+
+    reason () {
+        console.log(this.pkg.meta);
     }
 
 }
