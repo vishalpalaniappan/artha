@@ -9,6 +9,6 @@
 
     ],
     "legacy_primitives": [
-        
+        "terminal_input"
     ]
 }
