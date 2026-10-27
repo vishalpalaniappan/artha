@@ -1,5 +1,5 @@
 /**
- * Accepts a path to an artha project and does the following:
+ * Accepts the contents of a design repo and does the following:
  * - Loads the meta file
  * - Parses the entry file
  * - Reads all the imports
@@ -21,13 +21,13 @@
  * coffee_shop.implementation
  */
 export class Artha {
-    constructor (path) {
-        this.path = path;
-
-        // TODO: Validate path and throw if needed.
+    constructor (files) {
+        // Accepts the contents of the design repo
+        this.files = files;
+        this.loadMeta();
     }
 
-    loadFiles () {
+    loadMeta () {
         // Load the meta JSON file
 
         // Load the entry file
