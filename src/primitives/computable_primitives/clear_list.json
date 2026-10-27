@@ -1,0 +1,26 @@
+{
+    "name": "clear_list",
+    "type": "computable_primitive",
+    "description":"Removes all items from a list.",
+    "syntax": "clear_list",
+    "participants": [
+        {
+            "name": "list",
+            "required": "true"
+        }
+    ],
+    "invariants": {
+        "id_1": {
+            "participants": ["list"],
+            "property": ["structuralType"],
+            "condition": ["list"],
+            "description": "list must have structuralType List.",
+            "invalidValues": [
+                {
+                    "value": "string_value",
+                    "description": "A string is provided as list participant"
+                }
+            ]
+        }
+    }
+}
