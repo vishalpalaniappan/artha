@@ -1,0 +1,12 @@
+{
+    "name": "yield",
+    "type": "meta_primitive",
+    "description":"Indicates that a behavior yields a value.",
+    "syntax": "yield",
+    "participants": [
+        {
+            "name": "alias",
+            "required": "true"
+        }
+    ]
+}

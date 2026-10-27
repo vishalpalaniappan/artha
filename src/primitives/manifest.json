@@ -3,7 +3,8 @@
         "insert_at_end"
     ],
     "meta_primitives": [
-        "introduce"
+        "introduce",
+        "yield"
     ],
     "functional_primitives": [
         "if"
