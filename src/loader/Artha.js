@@ -88,6 +88,9 @@ export class Artha {
         }
     }
 
+    /**
+     * Run the reasoning engine with the generated reasoning package. Prior to running the reasoning process, load the necessary primitives.
+     */
     async runEngine () {
         this.engine = new ReasoningEngine(
             this.generateReasoningPackage()
@@ -98,6 +101,36 @@ export class Artha {
         this.engine.reason();
     }
 
+    /**
+     * Generates a reasoning package for the engine. The package contains:
+     * 
+     * {
+     *      meta: <meta.json content>,
+     *      data: [
+     *          {
+     *              fullPath: <fullPath>,
+     *              name: <name>,
+     *              relativePath: <relativePath>,
+     *              content: <file_content>
+     *              ast: {
+     *                  type: "root",
+     *                  body: [
+     *                      {
+     *                          <ast_node>
+     *                      },
+     *                      {
+     *                          <ast_node>
+     *                      }
+     *                  ]
+     *              }   
+     *          },
+     *          ...
+     *      ]
+     * }
+     * 
+     * In combination with the primitive types, this contains the relevant information to be able to reason about the specified meaning.
+     * @returns {Object}
+     */
     generateReasoningPackage () {
         const data = this.files.filter((f) => "ast" in f);
         return {
