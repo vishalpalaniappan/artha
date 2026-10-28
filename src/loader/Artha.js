@@ -129,6 +129,10 @@ export class Artha {
      * }
      * 
      * In combination with the primitive types, this contains the relevant information to be able to reason about the specified meaning.
+     * 
+     * TODO:
+     * I want to add the line and col information to the AST so that when the engine produces conclusions, it also shows where to highlight the conclusion in the script for the users attention. This information is already in the tokenizer, I just haven't added it to the generated AST yet.
+     * 
      * @returns {Object}
      */
     generateReasoningPackage () {
