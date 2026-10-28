@@ -3,7 +3,7 @@
     "type": "meta_primitive",
     "description":"Establishes that structural type of a participant.",
     "syntax": "structural_type",
-    "participants": [
+    "attributes": [
         {
             "name": "type",
             "required": "true"

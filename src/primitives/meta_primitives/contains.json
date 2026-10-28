@@ -3,7 +3,7 @@
     "type": "meta_primitive",
     "description":"For participants with structural type list, it establishes the role of the participants that the list can contain.",
     "syntax": "list_contains",
-    "participants": [
+    "attributes": [
         {
             "name": "values",
             "structural_type": "list",

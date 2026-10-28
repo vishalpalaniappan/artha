@@ -3,7 +3,7 @@
     "type": "meta_primitive",
     "description":"Establishes that role of a participant.",
     "syntax": "role",
-    "participants": [
+    "attributes": [
         {
             "name": "role",
             "required": "true"

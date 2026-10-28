@@ -3,7 +3,7 @@
     "type": "meta_primitive",
     "description":"Indicates that a behavior yields a value.",
     "syntax": "yield",
-    "participants": [
+    "attributes": [
         {
             "name": "alias",
             "required": "true"
