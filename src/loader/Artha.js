@@ -74,22 +74,19 @@ export class Artha {
         const lexer = new ArthaLexer(currFile.content);
         const parsed = new ArthaParser(lexer.scannedTokens);
 
-        // Save the parsed ast in file
         currFile.ast = parsed.ast;
-
-        // Find all imports in current AST
         const imports = currFile.ast.body
             .filter((f) => f.command == "import")
             .map((f) => f.args[0].value);
 
-        // Recursively call parse on the imports.
         for(const imp of imports) {
             this.parseFile(imp);
         }
     }
 
     /**
-     * Run the reasoning engine with the generated reasoning package. Prior to running the reasoning process, load the necessary primitives.
+     * Run the reasoning engine with the generated reasoning package. 
+     * Prior to running the reasoning process, load the necessary primitives.
      */
     async runEngine () {
         this.engine = new ReasoningEngine(
@@ -131,7 +128,7 @@ export class Artha {
      * In combination with the primitive types, this contains the relevant information to be able to reason about the specified meaning.
      * 
      * TODO:
-     * I want to add the line and col information to the AST so that when the engine produces conclusions, it also shows where to highlight the conclusion in the script for the users attention. This information is already in the tokenizer, I just haven't added it to the generated AST yet.
+     * I want to add the line and col information to the AST so that when the engine produces conclusions, it also shows where to highlight the conclusion in the script for the developers attention. This information is already in the tokenizer, I just haven't added it to the generated AST yet.
      * 
      * @returns {Object}
      */
