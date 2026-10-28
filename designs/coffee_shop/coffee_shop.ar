@@ -4,10 +4,12 @@ import("participants/Cart.ar")
 behavior coffee_shop() {
     introduce(
         name= shopping_cart, 
+        role= cart
         participant= Cart
     )
     introduce(
         name= menu, 
+        role= menu
         participant= menu
     )
     visit_shop()
