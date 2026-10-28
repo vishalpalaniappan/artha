@@ -9,6 +9,10 @@
             "required": "true"
         },
         {
+            "name": "role",
+            "required": "true"
+        },
+        {
             "name": "participant",
             "required": "true"
         }
