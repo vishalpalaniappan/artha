@@ -6,6 +6,10 @@ behavior coffee_shop() {
         name= shopping_cart, 
         participant= Cart
     )
+    introduce(
+        name= menu, 
+        participant= menu
+    )
     visit_shop()
 }
 
