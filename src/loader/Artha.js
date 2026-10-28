@@ -43,6 +43,11 @@ export class Artha {
         this.parseFiles();
     }
 
+    /**
+     * Read the meta json file and begin parsing files process by parsing the
+     * entry file. The parseFile method will recursively call itself on all
+     * imports until all the files are parsed.
+     */
     parseFiles () {
         const metaFile = this.files.find((f) => f.name == "meta.json");
         if (!metaFile) throw Error("Missing meta.json file.");
@@ -51,10 +56,19 @@ export class Artha {
         this.parseFile(this.meta.entry);
     }
 
+    /**
+     * Parse the file and save the AST in the file. Recursively call parse on
+     * all the imported files until all imported files are parsed. If a file
+     * as already been parsed (has ast key), don't parse it.
+     * 
+     * @param {String} relativePath Relative path to the file.
+     * @returns 
+     */
     parseFile (relativePath) {
         const currFile = this.files.find((f) => f.relativePath == relativePath);
         if (!currFile) throw Error("Could not find entry file");
 
+        // File was already parsed (imported in multiple files)
         if (Object.keys(currFile).includes("ast")) return;
 
         const lexer = new ArthaLexer(currFile.content);
@@ -68,7 +82,6 @@ export class Artha {
             .filter((f) => f.command == "import")
             .map((f) => f.args[0].value);
 
-        
         // Recursively call parse on the imports.
         for(const imp of imports) {
             this.parseFile(imp);
