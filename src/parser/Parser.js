@@ -166,12 +166,11 @@ export class ArthaParser {
      */
     processCmd (cmd) {
         const parsedArgs = new ArgsParser(this.getArgs()).run();
-        const type = (cmd[0] === "_")?"registeredCmd":"cmd";
         const node = {
             uid: crypto.randomUUID(),
-            "type": type,
-            "command": cmd,
-            "args": parsedArgs
+            type: "cmd",
+            command: cmd,
+            args: parsedArgs
         }
         this.stack[this.stack.length - 1].body.push(node); 
     }
