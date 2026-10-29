@@ -135,16 +135,4 @@ export class NarrativeWalker {
             if (b) return b;
         }
     }
-
-    /**
-     * Find the primitive given the name.
-     * @param {String} name 
-     * @returns 
-     */
-    findPrimitive(name) {
-        const foundPrimitive = this.primitives.find(
-            (f) => f.syntax === name
-        );
-        if (foundPrimitive) return foundPrimitive;
-    }
 }
