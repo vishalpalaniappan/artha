@@ -1,6 +1,6 @@
 [
     {
-        "uid": "1ff8d780-c491-4c18-a3b1-f9b8f963c554",
+        "uid": "8958e615-9c26-4dfb-8be5-ea5f5fe1996f",
         "name": "import",
         "type": "meta_primitive",
         "args": [
@@ -25,10 +25,11 @@
                     "required": "false"
                 }
             ]
-        }
+        },
+        "errMsg": []
     },
     {
-        "uid": "14d44f23-418c-4079-a405-3c392ad6995f",
+        "uid": "028ab686-d775-43e2-ae2a-96eed3efbf66",
         "name": "import",
         "type": "meta_primitive",
         "args": [
@@ -53,15 +54,17 @@
                     "required": "false"
                 }
             ]
-        }
+        },
+        "errMsg": []
     },
     {
-        "uid": "fcbf7989-7a82-4e94-b8f4-01e79b44a97e",
+        "uid": "bbc744af-ec26-413c-b109-c8f236cf98ca",
         "name": "coffeeShop",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "464e331f-1bb3-4932-8269-515db11ce620",
+                "uid": "4cb6f444-f32b-4f23-a015-04b811b0066f",
                 "name": "introduce",
                 "type": "meta_primitive",
                 "args": [
@@ -95,10 +98,13 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": [
+                    "meta_primitive with name introduce is missing arg participant"
+                ]
             },
             {
-                "uid": "e1f8df2c-47db-4d9b-93cb-49ede7e9372d",
+                "uid": "b0f8123b-a76d-4544-9971-0a97a069ff34",
                 "name": "introduce",
                 "type": "meta_primitive",
                 "args": [
@@ -137,27 +143,28 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "4c302750-af37-474e-b13d-faf8c1d097ce",
+                "uid": "537da263-e918-4270-a09a-67688f67f2e2",
                 "name": "visitShop",
                 "type": "behavior",
                 "args": [],
                 "definition": {
-                    "uid": "43877244-694a-482a-aaca-4e391cfff700",
+                    "uid": "aafb4caa-8c58-4308-b68a-4b9398bade7a",
                     "type": "behavior",
                     "parsedArgs": [],
                     "behaviorName": "visitShop",
                     "body": [
                         {
-                            "uid": "9f06eab9-e252-4173-a9e7-d4471d702e05",
+                            "uid": "1d5a373a-babd-4eb7-96ff-ff7c421728b0",
                             "type": "cmd",
                             "command": "baristaPresentsMenu",
                             "args": []
                         },
                         {
-                            "uid": "b200d487-2c11-46eb-8f7d-3735aa207c12",
+                            "uid": "047e7de4-9120-4aaa-b7f3-d4b8cb41ef09",
                             "type": "cmd",
                             "command": "acceptChoice",
                             "args": [
@@ -169,7 +176,7 @@
                             ]
                         },
                         {
-                            "uid": "167f1c0e-97b9-4645-b955-32f578125bb7",
+                            "uid": "f5531dce-f957-47d2-bdba-9392f9f66e99",
                             "type": "cmd",
                             "command": "checkIfUserChoseCoffee",
                             "args": [
@@ -186,7 +193,7 @@
                             ]
                         },
                         {
-                            "uid": "4a784c9f-576a-4696-b539-a79aca6f673d",
+                            "uid": "dc9776a4-204d-4f55-b812-f3f642c7c7b5",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -198,7 +205,7 @@
                             ],
                             "body": [
                                 {
-                                    "uid": "a9b1e4b1-196c-4863-9aa1-82cb626304e8",
+                                    "uid": "8dd83f0f-4688-4b6b-89d1-98560d515bee",
                                     "type": "cmd",
                                     "command": "addCoffeeToCart",
                                     "args": [
@@ -210,7 +217,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "2d21521d-3078-4559-a419-c587a27eb343",
+                                    "uid": "9ff3e797-c8ba-4181-8201-6b543923a432",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -218,7 +225,7 @@
                             ]
                         },
                         {
-                            "uid": "7c831525-b6e5-4a39-8b72-cdcb99f933a3",
+                            "uid": "cc333021-2b81-4512-a71b-83db851a10cf",
                             "type": "cmd",
                             "command": "checkIfUserChoseBagel",
                             "args": [
@@ -235,7 +242,7 @@
                             ]
                         },
                         {
-                            "uid": "0e6fcbfe-3b93-4fb9-ba49-55d57353969a",
+                            "uid": "c2353d18-78a2-44bb-8c43-d1e17d310b11",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -247,7 +254,7 @@
                             ],
                             "body": [
                                 {
-                                    "uid": "606278fb-77b3-4361-b944-6bdfc535b90c",
+                                    "uid": "50b44ad9-5fbb-44e9-9444-07a09c00e1e9",
                                     "type": "cmd",
                                     "command": "addBagelToCart",
                                     "args": [
@@ -259,7 +266,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "abb82f78-4117-4443-ace6-0f79e3ea007a",
+                                    "uid": "0ac5e314-643e-49f5-9d04-48cc26989180",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -267,7 +274,7 @@
                             ]
                         },
                         {
-                            "uid": "d5751f60-86ea-4b35-af4b-40f1220fd10b",
+                            "uid": "688aa9d6-2955-4444-8710-bb76f817216c",
                             "type": "cmd",
                             "command": "checkIfUserChoseDisplayCart",
                             "args": [
@@ -284,7 +291,7 @@
                             ]
                         },
                         {
-                            "uid": "4a6a06e7-f691-45ef-93e6-268a9f52fef5",
+                            "uid": "d1dfbe9d-064f-4642-aa55-bd85d8491663",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -296,7 +303,7 @@
                             ],
                             "body": [
                                 {
-                                    "uid": "ba4acded-00bf-4f43-a60a-75b7f9a94194",
+                                    "uid": "556351c8-9744-4a20-9c15-9bbdea2bfdb1",
                                     "type": "cmd",
                                     "command": "displayCart",
                                     "args": [
@@ -308,7 +315,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "80fcfe55-0f30-4f35-8b33-09b35c92d0f9",
+                                    "uid": "6f8d712c-7af6-458e-b20d-44f40fe4adf0",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -316,7 +323,7 @@
                             ]
                         },
                         {
-                            "uid": "3e21a223-2a4f-4bea-8097-6e65e101175f",
+                            "uid": "b7b90ae8-e8c8-4791-9e71-cf6ee397787a",
                             "type": "cmd",
                             "command": "checkIfUserChoseClearCart",
                             "args": [
@@ -333,7 +340,7 @@
                             ]
                         },
                         {
-                            "uid": "d8925b94-529a-4fec-a01f-136e6e4d209d",
+                            "uid": "2e27320a-b1ac-4b9d-bdbe-9db193f0deaa",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -345,7 +352,7 @@
                             ],
                             "body": [
                                 {
-                                    "uid": "495feab6-aee5-4473-aba4-2dcfd1e6e7a6",
+                                    "uid": "a0e238c1-7d9c-4e7e-be35-197bbb994a13",
                                     "type": "cmd",
                                     "command": "clearCart",
                                     "args": [
@@ -357,7 +364,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "081e5302-003d-4d72-9031-a9b0e234d6d8",
+                                    "uid": "290f6d21-6ea5-4d29-8b08-d1313acc660c",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -365,28 +372,30 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             }
         ]
     },
     {
-        "uid": "43877244-694a-482a-aaca-4e391cfff700",
+        "uid": "aafb4caa-8c58-4308-b68a-4b9398bade7a",
         "name": "visitShop",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "9f06eab9-e252-4173-a9e7-d4471d702e05",
+                "uid": "1d5a373a-babd-4eb7-96ff-ff7c421728b0",
                 "name": "baristaPresentsMenu",
                 "type": "behavior",
                 "args": [],
                 "definition": {
-                    "uid": "a9ed1ef4-4d59-4c04-a3ed-a17a8977c341",
+                    "uid": "2ea220e3-3183-47f4-975f-e454c7d0110f",
                     "type": "behavior",
                     "parsedArgs": [],
                     "behaviorName": "baristaPresentsMenu",
                     "body": [
                         {
-                            "uid": "71fa3e28-cedf-4642-b4be-d0f04318d892",
+                            "uid": "029bafba-e842-41b1-a701-76833dfc2bb7",
                             "type": "cmd",
                             "command": "terminal_display",
                             "args": [
@@ -398,10 +407,11 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "b200d487-2c11-46eb-8f7d-3735aa207c12",
+                "uid": "047e7de4-9120-4aaa-b7f3-d4b8cb41ef09",
                 "name": "acceptChoice",
                 "type": "behavior",
                 "args": [
@@ -412,13 +422,13 @@
                     }
                 ],
                 "definition": {
-                    "uid": "886116f1-ac00-467f-9ce4-e1403a7225a9",
+                    "uid": "ef651d74-3e55-4fc0-84e0-47a551e82ba9",
                     "type": "behavior",
                     "parsedArgs": [],
                     "behaviorName": "acceptChoice",
                     "body": [
                         {
-                            "uid": "f84b1c1f-4a9a-4df9-a86f-38998e0da67c",
+                            "uid": "da72838f-deca-4a95-88a0-ab11fb8b8d80",
                             "type": "cmd",
                             "command": "terminal_input",
                             "args": [
@@ -430,7 +440,7 @@
                             ]
                         },
                         {
-                            "uid": "e915ae07-39e0-4e2e-b0ef-d9a287271aea",
+                            "uid": "2920166a-5c47-4c27-a094-659271dea787",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -442,10 +452,11 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "167f1c0e-97b9-4645-b955-32f578125bb7",
+                "uid": "f5531dce-f957-47d2-bdba-9392f9f66e99",
                 "name": "checkIfUserChoseCoffee",
                 "type": "behavior",
                 "args": [
@@ -461,7 +472,7 @@
                     }
                 ],
                 "definition": {
-                    "uid": "96206d80-4ce2-4015-8888-ef181609f48e",
+                    "uid": "f837447b-c724-41bf-8bbf-9fb149b67076",
                     "type": "behavior",
                     "parsedArgs": [
                         {
@@ -473,7 +484,7 @@
                     "behaviorName": "checkIfUserChoseCoffee",
                     "body": [
                         {
-                            "uid": "c2fb55f9-33e7-4ec8-aec4-f235f479d53b",
+                            "uid": "0ffbb7e4-e05f-45e2-a9e2-9668f19f360e",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -495,7 +506,7 @@
                             ]
                         },
                         {
-                            "uid": "1a0dfcfd-19e1-41bc-b55a-beedc68ec016",
+                            "uid": "ebbe048f-053f-4543-8085-60cdf79c6b34",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -507,10 +518,11 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "4a784c9f-576a-4696-b539-a79aca6f673d",
+                "uid": "dc9776a4-204d-4f55-b812-f3f642c7c7b5",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -520,9 +532,10 @@
                         "value": "user_chose_coffee"
                     }
                 ],
+                "errMsg": [],
                 "body": [
                     {
-                        "uid": "a9b1e4b1-196c-4863-9aa1-82cb626304e8",
+                        "uid": "8dd83f0f-4688-4b6b-89d1-98560d515bee",
                         "name": "addCoffeeToCart",
                         "type": "behavior",
                         "args": [
@@ -533,7 +546,7 @@
                             }
                         ],
                         "definition": {
-                            "uid": "7bab8253-ef3c-4379-afcb-95647e08dd36",
+                            "uid": "39918048-517a-47f0-9d07-312b3a95e914",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -545,7 +558,7 @@
                             "behaviorName": "addCoffeeToCart",
                             "body": [
                                 {
-                                    "uid": "731d0a9a-85d7-44c0-b8e8-a4d94da85f1e",
+                                    "uid": "72b10eb6-065a-4358-bb13-c7b9c88c478e",
                                     "type": "cmd",
                                     "command": "insert_at_end_of_list",
                                     "args": [
@@ -562,27 +575,28 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     },
                     {
-                        "uid": "2d21521d-3078-4559-a419-c587a27eb343",
+                        "uid": "9ff3e797-c8ba-4181-8201-6b543923a432",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "43877244-694a-482a-aaca-4e391cfff700",
+                            "uid": "aafb4caa-8c58-4308-b68a-4b9398bade7a",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "9f06eab9-e252-4173-a9e7-d4471d702e05",
+                                    "uid": "1d5a373a-babd-4eb7-96ff-ff7c421728b0",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "b200d487-2c11-46eb-8f7d-3735aa207c12",
+                                    "uid": "047e7de4-9120-4aaa-b7f3-d4b8cb41ef09",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -594,7 +608,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "167f1c0e-97b9-4645-b955-32f578125bb7",
+                                    "uid": "f5531dce-f957-47d2-bdba-9392f9f66e99",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -611,7 +625,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a784c9f-576a-4696-b539-a79aca6f673d",
+                                    "uid": "dc9776a4-204d-4f55-b812-f3f642c7c7b5",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -623,7 +637,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "a9b1e4b1-196c-4863-9aa1-82cb626304e8",
+                                            "uid": "8dd83f0f-4688-4b6b-89d1-98560d515bee",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -635,7 +649,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "2d21521d-3078-4559-a419-c587a27eb343",
+                                            "uid": "9ff3e797-c8ba-4181-8201-6b543923a432",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -643,7 +657,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "7c831525-b6e5-4a39-8b72-cdcb99f933a3",
+                                    "uid": "cc333021-2b81-4512-a71b-83db851a10cf",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -660,7 +674,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "0e6fcbfe-3b93-4fb9-ba49-55d57353969a",
+                                    "uid": "c2353d18-78a2-44bb-8c43-d1e17d310b11",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -672,7 +686,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "606278fb-77b3-4361-b944-6bdfc535b90c",
+                                            "uid": "50b44ad9-5fbb-44e9-9444-07a09c00e1e9",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -684,7 +698,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "abb82f78-4117-4443-ace6-0f79e3ea007a",
+                                            "uid": "0ac5e314-643e-49f5-9d04-48cc26989180",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -692,7 +706,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d5751f60-86ea-4b35-af4b-40f1220fd10b",
+                                    "uid": "688aa9d6-2955-4444-8710-bb76f817216c",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -709,7 +723,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a6a06e7-f691-45ef-93e6-268a9f52fef5",
+                                    "uid": "d1dfbe9d-064f-4642-aa55-bd85d8491663",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -721,7 +735,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "ba4acded-00bf-4f43-a60a-75b7f9a94194",
+                                            "uid": "556351c8-9744-4a20-9c15-9bbdea2bfdb1",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -733,7 +747,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "80fcfe55-0f30-4f35-8b33-09b35c92d0f9",
+                                            "uid": "6f8d712c-7af6-458e-b20d-44f40fe4adf0",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -741,7 +755,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "3e21a223-2a4f-4bea-8097-6e65e101175f",
+                                    "uid": "b7b90ae8-e8c8-4791-9e71-cf6ee397787a",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -758,7 +772,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d8925b94-529a-4fec-a01f-136e6e4d209d",
+                                    "uid": "2e27320a-b1ac-4b9d-bdbe-9db193f0deaa",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -770,7 +784,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "495feab6-aee5-4473-aba4-2dcfd1e6e7a6",
+                                            "uid": "a0e238c1-7d9c-4e7e-be35-197bbb994a13",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -782,7 +796,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "081e5302-003d-4d72-9031-a9b0e234d6d8",
+                                            "uid": "290f6d21-6ea5-4d29-8b08-d1313acc660c",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -790,12 +804,13 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     }
                 ]
             },
             {
-                "uid": "7c831525-b6e5-4a39-8b72-cdcb99f933a3",
+                "uid": "cc333021-2b81-4512-a71b-83db851a10cf",
                 "name": "checkIfUserChoseBagel",
                 "type": "behavior",
                 "args": [
@@ -811,7 +826,7 @@
                     }
                 ],
                 "definition": {
-                    "uid": "b49fe568-b42e-400b-8ec3-eb02d4d0df76",
+                    "uid": "8ef7998d-fb2f-4b11-ad59-3e85d48c10e5",
                     "type": "behavior",
                     "parsedArgs": [
                         {
@@ -823,7 +838,7 @@
                     "behaviorName": "checkIfUserChoseBagel",
                     "body": [
                         {
-                            "uid": "11f00b85-422a-4d7c-a2fb-a16205e673bd",
+                            "uid": "ecb07162-21e9-4217-bfd6-f432f98f47db",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -845,7 +860,7 @@
                             ]
                         },
                         {
-                            "uid": "e092f1d1-b0d2-4a51-9852-aa96d486cc62",
+                            "uid": "128d84c5-9fa5-4c57-88b4-f5b29b4d8a45",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -857,10 +872,11 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "0e6fcbfe-3b93-4fb9-ba49-55d57353969a",
+                "uid": "c2353d18-78a2-44bb-8c43-d1e17d310b11",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -870,9 +886,10 @@
                         "value": "user_chose_bagel"
                     }
                 ],
+                "errMsg": [],
                 "body": [
                     {
-                        "uid": "606278fb-77b3-4361-b944-6bdfc535b90c",
+                        "uid": "50b44ad9-5fbb-44e9-9444-07a09c00e1e9",
                         "name": "addBagelToCart",
                         "type": "behavior",
                         "args": [
@@ -883,7 +900,7 @@
                             }
                         ],
                         "definition": {
-                            "uid": "aa866dfa-8b8e-4cf9-a07c-225a32dc9afa",
+                            "uid": "2bf70583-04a0-46b8-88a1-4a29fe801a35",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -895,7 +912,7 @@
                             "behaviorName": "addBagelToCart",
                             "body": [
                                 {
-                                    "uid": "970e251d-1a33-44ef-a383-ae6a0519b9dc",
+                                    "uid": "9bfff2ea-1873-4545-870b-a9ee08f92475",
                                     "type": "cmd",
                                     "command": "insert_at_end_of_list",
                                     "args": [
@@ -912,27 +929,28 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     },
                     {
-                        "uid": "abb82f78-4117-4443-ace6-0f79e3ea007a",
+                        "uid": "0ac5e314-643e-49f5-9d04-48cc26989180",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "43877244-694a-482a-aaca-4e391cfff700",
+                            "uid": "aafb4caa-8c58-4308-b68a-4b9398bade7a",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "9f06eab9-e252-4173-a9e7-d4471d702e05",
+                                    "uid": "1d5a373a-babd-4eb7-96ff-ff7c421728b0",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "b200d487-2c11-46eb-8f7d-3735aa207c12",
+                                    "uid": "047e7de4-9120-4aaa-b7f3-d4b8cb41ef09",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -944,7 +962,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "167f1c0e-97b9-4645-b955-32f578125bb7",
+                                    "uid": "f5531dce-f957-47d2-bdba-9392f9f66e99",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -961,7 +979,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a784c9f-576a-4696-b539-a79aca6f673d",
+                                    "uid": "dc9776a4-204d-4f55-b812-f3f642c7c7b5",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -973,7 +991,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "a9b1e4b1-196c-4863-9aa1-82cb626304e8",
+                                            "uid": "8dd83f0f-4688-4b6b-89d1-98560d515bee",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -985,7 +1003,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "2d21521d-3078-4559-a419-c587a27eb343",
+                                            "uid": "9ff3e797-c8ba-4181-8201-6b543923a432",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -993,7 +1011,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "7c831525-b6e5-4a39-8b72-cdcb99f933a3",
+                                    "uid": "cc333021-2b81-4512-a71b-83db851a10cf",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -1010,7 +1028,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "0e6fcbfe-3b93-4fb9-ba49-55d57353969a",
+                                    "uid": "c2353d18-78a2-44bb-8c43-d1e17d310b11",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1022,7 +1040,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "606278fb-77b3-4361-b944-6bdfc535b90c",
+                                            "uid": "50b44ad9-5fbb-44e9-9444-07a09c00e1e9",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -1034,7 +1052,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "abb82f78-4117-4443-ace6-0f79e3ea007a",
+                                            "uid": "0ac5e314-643e-49f5-9d04-48cc26989180",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1042,7 +1060,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d5751f60-86ea-4b35-af4b-40f1220fd10b",
+                                    "uid": "688aa9d6-2955-4444-8710-bb76f817216c",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -1059,7 +1077,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a6a06e7-f691-45ef-93e6-268a9f52fef5",
+                                    "uid": "d1dfbe9d-064f-4642-aa55-bd85d8491663",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1071,7 +1089,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "ba4acded-00bf-4f43-a60a-75b7f9a94194",
+                                            "uid": "556351c8-9744-4a20-9c15-9bbdea2bfdb1",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -1083,7 +1101,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "80fcfe55-0f30-4f35-8b33-09b35c92d0f9",
+                                            "uid": "6f8d712c-7af6-458e-b20d-44f40fe4adf0",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1091,7 +1109,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "3e21a223-2a4f-4bea-8097-6e65e101175f",
+                                    "uid": "b7b90ae8-e8c8-4791-9e71-cf6ee397787a",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -1108,7 +1126,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d8925b94-529a-4fec-a01f-136e6e4d209d",
+                                    "uid": "2e27320a-b1ac-4b9d-bdbe-9db193f0deaa",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1120,7 +1138,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "495feab6-aee5-4473-aba4-2dcfd1e6e7a6",
+                                            "uid": "a0e238c1-7d9c-4e7e-be35-197bbb994a13",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -1132,7 +1150,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "081e5302-003d-4d72-9031-a9b0e234d6d8",
+                                            "uid": "290f6d21-6ea5-4d29-8b08-d1313acc660c",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1140,12 +1158,13 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     }
                 ]
             },
             {
-                "uid": "d5751f60-86ea-4b35-af4b-40f1220fd10b",
+                "uid": "688aa9d6-2955-4444-8710-bb76f817216c",
                 "name": "checkIfUserChoseDisplayCart",
                 "type": "behavior",
                 "args": [
@@ -1161,7 +1180,7 @@
                     }
                 ],
                 "definition": {
-                    "uid": "60896783-7bd5-4847-aad8-ffbc4368a270",
+                    "uid": "4d00f541-1bd5-4104-b8a1-ca20e501037e",
                     "type": "behavior",
                     "parsedArgs": [
                         {
@@ -1173,7 +1192,7 @@
                     "behaviorName": "checkIfUserChoseDisplayCart",
                     "body": [
                         {
-                            "uid": "3a2e6e4c-4597-4856-8ed4-d03a55fb6341",
+                            "uid": "54383445-8150-44cc-ae52-925006ec2613",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -1195,7 +1214,7 @@
                             ]
                         },
                         {
-                            "uid": "b925a81a-b739-44f7-a18e-c1534baa7406",
+                            "uid": "5c27e8e3-650d-4ed0-b91b-f907d4846f4b",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -1207,10 +1226,11 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "4a6a06e7-f691-45ef-93e6-268a9f52fef5",
+                "uid": "d1dfbe9d-064f-4642-aa55-bd85d8491663",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -1220,9 +1240,10 @@
                         "value": "user_chose_display_cart"
                     }
                 ],
+                "errMsg": [],
                 "body": [
                     {
-                        "uid": "ba4acded-00bf-4f43-a60a-75b7f9a94194",
+                        "uid": "556351c8-9744-4a20-9c15-9bbdea2bfdb1",
                         "name": "displayCart",
                         "type": "behavior",
                         "args": [
@@ -1233,7 +1254,7 @@
                             }
                         ],
                         "definition": {
-                            "uid": "3081446a-bef1-43a2-8e84-c08f58f9a41d",
+                            "uid": "2f42068a-95b9-4358-a68d-6d5db5e8e762",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -1245,7 +1266,7 @@
                             "behaviorName": "displayCart",
                             "body": [
                                 {
-                                    "uid": "f22a276d-4be1-4fa1-a652-62635c6a8857",
+                                    "uid": "982494c0-9bbc-4a34-9ef1-ea0da00eabdd",
                                     "type": "cmd",
                                     "command": "terminal_display",
                                     "args": [
@@ -1257,27 +1278,28 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     },
                     {
-                        "uid": "80fcfe55-0f30-4f35-8b33-09b35c92d0f9",
+                        "uid": "6f8d712c-7af6-458e-b20d-44f40fe4adf0",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "43877244-694a-482a-aaca-4e391cfff700",
+                            "uid": "aafb4caa-8c58-4308-b68a-4b9398bade7a",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "9f06eab9-e252-4173-a9e7-d4471d702e05",
+                                    "uid": "1d5a373a-babd-4eb7-96ff-ff7c421728b0",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "b200d487-2c11-46eb-8f7d-3735aa207c12",
+                                    "uid": "047e7de4-9120-4aaa-b7f3-d4b8cb41ef09",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -1289,7 +1311,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "167f1c0e-97b9-4645-b955-32f578125bb7",
+                                    "uid": "f5531dce-f957-47d2-bdba-9392f9f66e99",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -1306,7 +1328,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a784c9f-576a-4696-b539-a79aca6f673d",
+                                    "uid": "dc9776a4-204d-4f55-b812-f3f642c7c7b5",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1318,7 +1340,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "a9b1e4b1-196c-4863-9aa1-82cb626304e8",
+                                            "uid": "8dd83f0f-4688-4b6b-89d1-98560d515bee",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -1330,7 +1352,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "2d21521d-3078-4559-a419-c587a27eb343",
+                                            "uid": "9ff3e797-c8ba-4181-8201-6b543923a432",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1338,7 +1360,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "7c831525-b6e5-4a39-8b72-cdcb99f933a3",
+                                    "uid": "cc333021-2b81-4512-a71b-83db851a10cf",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -1355,7 +1377,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "0e6fcbfe-3b93-4fb9-ba49-55d57353969a",
+                                    "uid": "c2353d18-78a2-44bb-8c43-d1e17d310b11",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1367,7 +1389,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "606278fb-77b3-4361-b944-6bdfc535b90c",
+                                            "uid": "50b44ad9-5fbb-44e9-9444-07a09c00e1e9",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -1379,7 +1401,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "abb82f78-4117-4443-ace6-0f79e3ea007a",
+                                            "uid": "0ac5e314-643e-49f5-9d04-48cc26989180",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1387,7 +1409,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d5751f60-86ea-4b35-af4b-40f1220fd10b",
+                                    "uid": "688aa9d6-2955-4444-8710-bb76f817216c",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -1404,7 +1426,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a6a06e7-f691-45ef-93e6-268a9f52fef5",
+                                    "uid": "d1dfbe9d-064f-4642-aa55-bd85d8491663",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1416,7 +1438,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "ba4acded-00bf-4f43-a60a-75b7f9a94194",
+                                            "uid": "556351c8-9744-4a20-9c15-9bbdea2bfdb1",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -1428,7 +1450,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "80fcfe55-0f30-4f35-8b33-09b35c92d0f9",
+                                            "uid": "6f8d712c-7af6-458e-b20d-44f40fe4adf0",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1436,7 +1458,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "3e21a223-2a4f-4bea-8097-6e65e101175f",
+                                    "uid": "b7b90ae8-e8c8-4791-9e71-cf6ee397787a",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -1453,7 +1475,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d8925b94-529a-4fec-a01f-136e6e4d209d",
+                                    "uid": "2e27320a-b1ac-4b9d-bdbe-9db193f0deaa",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1465,7 +1487,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "495feab6-aee5-4473-aba4-2dcfd1e6e7a6",
+                                            "uid": "a0e238c1-7d9c-4e7e-be35-197bbb994a13",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -1477,7 +1499,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "081e5302-003d-4d72-9031-a9b0e234d6d8",
+                                            "uid": "290f6d21-6ea5-4d29-8b08-d1313acc660c",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1485,12 +1507,13 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     }
                 ]
             },
             {
-                "uid": "3e21a223-2a4f-4bea-8097-6e65e101175f",
+                "uid": "b7b90ae8-e8c8-4791-9e71-cf6ee397787a",
                 "name": "checkIfUserChoseClearCart",
                 "type": "behavior",
                 "args": [
@@ -1506,7 +1529,7 @@
                     }
                 ],
                 "definition": {
-                    "uid": "ca5f53f6-1197-4bc4-b05a-18a1c3616ffb",
+                    "uid": "db968da9-7aa1-4d35-b3f3-5f9aea575db8",
                     "type": "behavior",
                     "parsedArgs": [
                         {
@@ -1518,7 +1541,7 @@
                     "behaviorName": "checkIfUserChoseClearCart",
                     "body": [
                         {
-                            "uid": "da9402a9-89f3-4d47-be5b-28dd8dbeb815",
+                            "uid": "6cb80845-255b-4be7-bed3-1d84594723af",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -1540,7 +1563,7 @@
                             ]
                         },
                         {
-                            "uid": "599af91b-13ae-48f0-a4f6-f4917ef34fbc",
+                            "uid": "53aa385b-8357-4fb5-b0a8-d0cad19b6057",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -1552,10 +1575,11 @@
                             ]
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "d8925b94-529a-4fec-a01f-136e6e4d209d",
+                "uid": "2e27320a-b1ac-4b9d-bdbe-9db193f0deaa",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -1565,9 +1589,10 @@
                         "value": "user_chose_clear_cart"
                     }
                 ],
+                "errMsg": [],
                 "body": [
                     {
-                        "uid": "495feab6-aee5-4473-aba4-2dcfd1e6e7a6",
+                        "uid": "a0e238c1-7d9c-4e7e-be35-197bbb994a13",
                         "name": "clearCart",
                         "type": "behavior",
                         "args": [
@@ -1578,7 +1603,7 @@
                             }
                         ],
                         "definition": {
-                            "uid": "d1c2bce4-2c98-4475-85e9-38c4602f25cb",
+                            "uid": "3ff34dba-396b-42de-9f8b-3d8c19264ee5",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -1590,7 +1615,7 @@
                             "behaviorName": "clearCart",
                             "body": [
                                 {
-                                    "uid": "23996705-9165-41b3-8a56-bf4d2bc2b6fa",
+                                    "uid": "f2e6f06c-25e4-4a72-bac6-5c0ea26d8a32",
                                     "type": "cmd",
                                     "command": "clear_list",
                                     "args": [
@@ -1602,27 +1627,28 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     },
                     {
-                        "uid": "081e5302-003d-4d72-9031-a9b0e234d6d8",
+                        "uid": "290f6d21-6ea5-4d29-8b08-d1313acc660c",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "43877244-694a-482a-aaca-4e391cfff700",
+                            "uid": "aafb4caa-8c58-4308-b68a-4b9398bade7a",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "9f06eab9-e252-4173-a9e7-d4471d702e05",
+                                    "uid": "1d5a373a-babd-4eb7-96ff-ff7c421728b0",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "b200d487-2c11-46eb-8f7d-3735aa207c12",
+                                    "uid": "047e7de4-9120-4aaa-b7f3-d4b8cb41ef09",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -1634,7 +1660,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "167f1c0e-97b9-4645-b955-32f578125bb7",
+                                    "uid": "f5531dce-f957-47d2-bdba-9392f9f66e99",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -1651,7 +1677,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a784c9f-576a-4696-b539-a79aca6f673d",
+                                    "uid": "dc9776a4-204d-4f55-b812-f3f642c7c7b5",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1663,7 +1689,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "a9b1e4b1-196c-4863-9aa1-82cb626304e8",
+                                            "uid": "8dd83f0f-4688-4b6b-89d1-98560d515bee",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -1675,7 +1701,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "2d21521d-3078-4559-a419-c587a27eb343",
+                                            "uid": "9ff3e797-c8ba-4181-8201-6b543923a432",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1683,7 +1709,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "7c831525-b6e5-4a39-8b72-cdcb99f933a3",
+                                    "uid": "cc333021-2b81-4512-a71b-83db851a10cf",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -1700,7 +1726,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "0e6fcbfe-3b93-4fb9-ba49-55d57353969a",
+                                    "uid": "c2353d18-78a2-44bb-8c43-d1e17d310b11",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1712,7 +1738,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "606278fb-77b3-4361-b944-6bdfc535b90c",
+                                            "uid": "50b44ad9-5fbb-44e9-9444-07a09c00e1e9",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -1724,7 +1750,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "abb82f78-4117-4443-ace6-0f79e3ea007a",
+                                            "uid": "0ac5e314-643e-49f5-9d04-48cc26989180",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1732,7 +1758,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d5751f60-86ea-4b35-af4b-40f1220fd10b",
+                                    "uid": "688aa9d6-2955-4444-8710-bb76f817216c",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -1749,7 +1775,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "4a6a06e7-f691-45ef-93e6-268a9f52fef5",
+                                    "uid": "d1dfbe9d-064f-4642-aa55-bd85d8491663",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1761,7 +1787,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "ba4acded-00bf-4f43-a60a-75b7f9a94194",
+                                            "uid": "556351c8-9744-4a20-9c15-9bbdea2bfdb1",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -1773,7 +1799,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "80fcfe55-0f30-4f35-8b33-09b35c92d0f9",
+                                            "uid": "6f8d712c-7af6-458e-b20d-44f40fe4adf0",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1781,7 +1807,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "3e21a223-2a4f-4bea-8097-6e65e101175f",
+                                    "uid": "b7b90ae8-e8c8-4791-9e71-cf6ee397787a",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -1798,7 +1824,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "d8925b94-529a-4fec-a01f-136e6e4d209d",
+                                    "uid": "2e27320a-b1ac-4b9d-bdbe-9db193f0deaa",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1810,7 +1836,7 @@
                                     ],
                                     "body": [
                                         {
-                                            "uid": "495feab6-aee5-4473-aba4-2dcfd1e6e7a6",
+                                            "uid": "a0e238c1-7d9c-4e7e-be35-197bbb994a13",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -1822,7 +1848,7 @@
                                             ]
                                         },
                                         {
-                                            "uid": "081e5302-003d-4d72-9031-a9b0e234d6d8",
+                                            "uid": "290f6d21-6ea5-4d29-8b08-d1313acc660c",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1830,19 +1856,21 @@
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        "errMsg": []
                     }
                 ]
             }
         ]
     },
     {
-        "uid": "a9ed1ef4-4d59-4c04-a3ed-a17a8977c341",
+        "uid": "2ea220e3-3183-47f4-975f-e454c7d0110f",
         "name": "baristaPresentsMenu",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "71fa3e28-cedf-4642-b4be-d0f04318d892",
+                "uid": "029bafba-e842-41b1-a701-76833dfc2bb7",
                 "name": "terminal_display",
                 "type": "legacy_primitives",
                 "args": [
@@ -1865,17 +1893,21 @@
                     ],
                     "invariants": {},
                     "_note": "The implementation will throw if message combines multiple types (ex print(1 + None)). This isn't an issue because I will be using a participant directly in the synthesis but it is something to be aware of. I have not exhausted all the possible issues and I'm leaving this note to revisit this and also specify the invariants."
-                }
+                },
+                "errMsg": [
+                    "legacy_primitives with name terminal_display is missing arg message"
+                ]
             }
         ]
     },
     {
-        "uid": "886116f1-ac00-467f-9ce4-e1403a7225a9",
+        "uid": "ef651d74-3e55-4fc0-84e0-47a551e82ba9",
         "name": "acceptChoice",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "f84b1c1f-4a9a-4df9-a86f-38998e0da67c",
+                "uid": "da72838f-deca-4a95-88a0-ab11fb8b8d80",
                 "name": "terminal_input",
                 "type": "legacy_primitive",
                 "args": [
@@ -1910,10 +1942,13 @@
                     "invariants": {},
                     "_note": "This primitive throws an EOFError and Keyboard Interrupt error. EOFError can be triggered by using CTRL+D in unix environments and Ctrl+Z followed by Enter in windows. Keyboard interrupts happen when Ctrl + C is used to terminate program in console. The meaning of these errors are built into the primitive and as part of the narrative that uses them the relevant behavior that should be exhibited can be specified. So in the synthesized implementation, I will throw the errors and then the specified meaning is used.",
                     "_note2": "I will extend the syntax for the errors after I implement the necessary functionality."
-                }
+                },
+                "errMsg": [
+                    "legacy_primitive with name terminal_input is missing arg save_input"
+                ]
             },
             {
-                "uid": "e915ae07-39e0-4e2e-b0ef-d9a287271aea",
+                "uid": "2920166a-5c47-4c27-a094-659271dea787",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -1934,17 +1969,21 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": [
+                    "meta_primitive with name yield is missing arg alias"
+                ]
             }
         ]
     },
     {
-        "uid": "7bab8253-ef3c-4379-afcb-95647e08dd36",
+        "uid": "39918048-517a-47f0-9d07-312b3a95e914",
         "name": "addCoffeeToCart",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "731d0a9a-85d7-44c0-b8e8-a4d94da85f1e",
+                "uid": "72b10eb6-065a-4358-bb13-c7b9c88c478e",
                 "name": "insert_at_end_of_list",
                 "type": "computable_primitive",
                 "args": [
@@ -1994,17 +2033,21 @@
                             ]
                         }
                     }
-                }
+                },
+                "errMsg": [
+                    "computable_primitive with name insert_at_end_of_list is missing arg item"
+                ]
             }
         ]
     },
     {
-        "uid": "aa866dfa-8b8e-4cf9-a07c-225a32dc9afa",
+        "uid": "2bf70583-04a0-46b8-88a1-4a29fe801a35",
         "name": "addBagelToCart",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "970e251d-1a33-44ef-a383-ae6a0519b9dc",
+                "uid": "9bfff2ea-1873-4545-870b-a9ee08f92475",
                 "name": "insert_at_end_of_list",
                 "type": "computable_primitive",
                 "args": [
@@ -2054,17 +2097,21 @@
                             ]
                         }
                     }
-                }
+                },
+                "errMsg": [
+                    "computable_primitive with name insert_at_end_of_list is missing arg item"
+                ]
             }
         ]
     },
     {
-        "uid": "3081446a-bef1-43a2-8e84-c08f58f9a41d",
+        "uid": "2f42068a-95b9-4358-a68d-6d5db5e8e762",
         "name": "displayCart",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "f22a276d-4be1-4fa1-a652-62635c6a8857",
+                "uid": "982494c0-9bbc-4a34-9ef1-ea0da00eabdd",
                 "name": "terminal_display",
                 "type": "legacy_primitives",
                 "args": [
@@ -2087,17 +2134,21 @@
                     ],
                     "invariants": {},
                     "_note": "The implementation will throw if message combines multiple types (ex print(1 + None)). This isn't an issue because I will be using a participant directly in the synthesis but it is something to be aware of. I have not exhausted all the possible issues and I'm leaving this note to revisit this and also specify the invariants."
-                }
+                },
+                "errMsg": [
+                    "legacy_primitives with name terminal_display is missing arg message"
+                ]
             }
         ]
     },
     {
-        "uid": "d1c2bce4-2c98-4475-85e9-38c4602f25cb",
+        "uid": "3ff34dba-396b-42de-9f8b-3d8c19264ee5",
         "name": "clearCart",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "23996705-9165-41b3-8a56-bf4d2bc2b6fa",
+                "uid": "f2e6f06c-25e4-4a72-bac6-5c0ea26d8a32",
                 "name": "clear_list",
                 "type": "computable_primitive",
                 "args": [
@@ -2138,17 +2189,19 @@
                             ]
                         }
                     }
-                }
+                },
+                "errMsg": []
             }
         ]
     },
     {
-        "uid": "34d5a34c-8183-4c24-8dc1-df8da3268622",
+        "uid": "069c6e35-90bf-4eee-bf73-de0bff344ce5",
         "name": "Cart",
         "type": "participant",
+        "errMsg": [],
         "body": [
             {
-                "uid": "6c45a141-840b-4770-9a2f-d2b93de870f8",
+                "uid": "573eb548-30af-4ab6-8a2c-2213fbf1624e",
                 "name": "structural_type",
                 "type": "meta_primitive",
                 "args": [
@@ -2169,10 +2222,11 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "134803e5-4115-4aa3-aae8-300ac6bdbd2b",
+                "uid": "524d3652-2d8a-4dc9-b703-877ebb66282a",
                 "name": "list_contains",
                 "type": "meta_primitive",
                 "args": [
@@ -2198,17 +2252,19 @@
                         }
                     ],
                     "_note": "When a participant has a particular structural type, there are other meta attributes like list_contains which need to be included to complete the meaning of the list structural type. The engine needs to be able to identify if this is missing, so I need to establish the types for the participants and the attributes that must be specified."
-                }
+                },
+                "errMsg": []
             }
         ]
     },
     {
-        "uid": "b49fe568-b42e-400b-8ec3-eb02d4d0df76",
+        "uid": "8ef7998d-fb2f-4b11-ad59-3e85d48c10e5",
         "name": "checkIfUserChoseBagel",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "11f00b85-422a-4d7c-a2fb-a16205e673bd",
+                "uid": "ecb07162-21e9-4217-bfd6-f432f98f47db",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -2250,10 +2306,11 @@
                     ],
                     "invariants": {},
                     "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "e092f1d1-b0d2-4a51-9852-aa96d486cc62",
+                "uid": "128d84c5-9fa5-4c57-88b4-f5b29b4d8a45",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -2274,17 +2331,21 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": [
+                    "meta_primitive with name yield is missing arg alias"
+                ]
             }
         ]
     },
     {
-        "uid": "96206d80-4ce2-4015-8888-ef181609f48e",
+        "uid": "f837447b-c724-41bf-8bbf-9fb149b67076",
         "name": "checkIfUserChoseCoffee",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "c2fb55f9-33e7-4ec8-aec4-f235f479d53b",
+                "uid": "0ffbb7e4-e05f-45e2-a9e2-9668f19f360e",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -2326,10 +2387,11 @@
                     ],
                     "invariants": {},
                     "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "1a0dfcfd-19e1-41bc-b55a-beedc68ec016",
+                "uid": "ebbe048f-053f-4543-8085-60cdf79c6b34",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -2350,17 +2412,21 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": [
+                    "meta_primitive with name yield is missing arg alias"
+                ]
             }
         ]
     },
     {
-        "uid": "60896783-7bd5-4847-aad8-ffbc4368a270",
+        "uid": "4d00f541-1bd5-4104-b8a1-ca20e501037e",
         "name": "checkIfUserChoseDisplayCart",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "3a2e6e4c-4597-4856-8ed4-d03a55fb6341",
+                "uid": "54383445-8150-44cc-ae52-925006ec2613",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -2402,10 +2468,11 @@
                     ],
                     "invariants": {},
                     "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "b925a81a-b739-44f7-a18e-c1534baa7406",
+                "uid": "5c27e8e3-650d-4ed0-b91b-f907d4846f4b",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -2426,17 +2493,21 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": [
+                    "meta_primitive with name yield is missing arg alias"
+                ]
             }
         ]
     },
     {
-        "uid": "ca5f53f6-1197-4bc4-b05a-18a1c3616ffb",
+        "uid": "db968da9-7aa1-4d35-b3f3-5f9aea575db8",
         "name": "checkIfUserChoseClearCart",
         "type": "behavior",
+        "errMsg": [],
         "body": [
             {
-                "uid": "da9402a9-89f3-4d47-be5b-28dd8dbeb815",
+                "uid": "6cb80845-255b-4be7-bed3-1d84594723af",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -2478,10 +2549,11 @@
                     ],
                     "invariants": {},
                     "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
-                }
+                },
+                "errMsg": []
             },
             {
-                "uid": "599af91b-13ae-48f0-a4f6-f4917ef34fbc",
+                "uid": "53aa385b-8357-4fb5-b0a8-d0cad19b6057",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -2502,7 +2574,10 @@
                             "required": "true"
                         }
                     ]
-                }
+                },
+                "errMsg": [
+                    "meta_primitive with name yield is missing arg alias"
+                ]
             }
         ]
     }

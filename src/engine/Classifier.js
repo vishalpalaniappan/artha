@@ -23,6 +23,7 @@ export class Classifier {
         this.meaning = meaning;
         this.primitives = primitives;
         this.classifiedNodes = [];
+        this.syntaxErrMsg = [];
         this.process(meaning.data);
     }
 
@@ -43,6 +44,7 @@ export class Classifier {
         const nodes = [];
         for (const astNode of body) {
             const classifiedNode = new Node(astNode.uid, this.classify(astNode));
+            this.syntaxErrMsg =  this.syntaxErrMsg.concat(classifiedNode.errMsg);
             if ("body" in astNode) {
                 classifiedNode.addBody(this.visitBody(astNode.body));
             }

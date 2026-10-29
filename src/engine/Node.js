@@ -5,6 +5,7 @@ export class Node {
         this.type = classified.type;
         this.args = classified.args;
         this.definition = classified.definition;
+        this.errMsg = [];
         this.validate();
     }
 
@@ -27,9 +28,8 @@ export class Node {
             if (arg.required === "true") {
                 const hasArg = this.checkArgs(arg.name);
                 if (!hasArg) {
-                    console.log(
-                        `${this.type} with name ${this.name} is mising arg ${arg.name}`
-                    )
+                    const errMsg = `${this.type} with name ${this.name} is missing arg ${arg.name}`;
+                    this.errMsg.push(errMsg);
                 }
             }
         }
