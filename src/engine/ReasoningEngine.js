@@ -1,4 +1,5 @@
 import { loadPrimitivesFromManifest } from "../primitives/loadPrimitives";
+import { NarrativeWalker } from "./NarrativeWalker";
 
 /**
  * Reasons about the meaning specified in the AST using the
@@ -14,11 +15,15 @@ export class ReasoningEngine {
     }
 
     reason () {
-        const atomicBehavior = this.findBehavior(this.pkg.meta.atomic_behavior);
-        console.log(atomicBehavior);
+        this.narratives = new NarrativeWalker(this.pkg.meta, this.pkg.data);
+
+        // The methods below will be replaced.
+
+        // const atomicBehavior = this.findBehavior(this.pkg.meta.atomic_behavior);
+        // console.log(atomicBehavior);
 
         // Visit the nodes in the atomic behavior and inspect their meaning
-        this.processBehavior([atomicBehavior]);
+        // this.processBehavior([atomicBehavior]);
     }
 
     processBehavior (behaviors) {
