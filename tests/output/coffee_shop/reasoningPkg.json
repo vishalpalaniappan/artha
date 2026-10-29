@@ -14,7 +14,7 @@
                 "type": "root",
                 "body": [
                     {
-                        "uid": "fb54a7da-8806-4e0d-8d8a-3edb387fe6f4",
+                        "uid": "7c417b83-06ba-4a25-b815-4b076e7eec16",
                         "type": "cmd",
                         "command": "import",
                         "args": [
@@ -26,7 +26,7 @@
                         ]
                     },
                     {
-                        "uid": "6d61a701-3c51-442f-9577-5fa79141d797",
+                        "uid": "fa4cbf6d-1bb7-499f-859c-4b67d6e6d86a",
                         "type": "cmd",
                         "command": "import",
                         "args": [
@@ -38,13 +38,13 @@
                         ]
                     },
                     {
-                        "uid": "b8d01722-2889-434a-b2a6-a3a5c085224f",
+                        "uid": "b0cb2611-118e-4382-bc8e-578e3379d73b",
                         "type": "behavior",
                         "parsedArgs": [],
                         "behaviorName": "coffeeShop",
                         "body": [
                             {
-                                "uid": "4fc1c88b-c2bb-4981-aae3-a83a1f14aff3",
+                                "uid": "073987fd-08f2-4b86-903b-d7e2614594f7",
                                 "type": "cmd",
                                 "command": "introduce",
                                 "args": [
@@ -61,7 +61,7 @@
                                 ]
                             },
                             {
-                                "uid": "25719bc0-19dc-4760-9ae7-523213fdfb18",
+                                "uid": "57a4f310-446e-4070-9be0-0adcc6d56d6c",
                                 "type": "cmd",
                                 "command": "introduce",
                                 "args": [
@@ -78,7 +78,7 @@
                                 ]
                             },
                             {
-                                "uid": "9e264be6-a217-49a5-9b67-8ea03dc20e26",
+                                "uid": "0f4074bc-846a-4d52-8218-533f19c74362",
                                 "type": "cmd",
                                 "command": "visitShop",
                                 "args": []
@@ -86,19 +86,19 @@
                         ]
                     },
                     {
-                        "uid": "91e10b2e-700c-4fc2-9830-d3b8eefb64d1",
+                        "uid": "56191570-37f8-4a4f-8c87-accd307a656c",
                         "type": "behavior",
                         "parsedArgs": [],
                         "behaviorName": "visitShop",
                         "body": [
                             {
-                                "uid": "15822eb0-8969-4a92-bba5-0c2296a47d1d",
+                                "uid": "ed19dad8-4516-4736-9f0e-63d390dcbeb9",
                                 "type": "cmd",
                                 "command": "baristaPresentsMenu",
                                 "args": []
                             },
                             {
-                                "uid": "6df91f1e-1069-4883-9c29-c7e3b1847737",
+                                "uid": "7a12257c-8402-4682-bffe-490c11f4229d",
                                 "type": "cmd",
                                 "command": "acceptChoice",
                                 "args": [
@@ -110,7 +110,7 @@
                                 ]
                             },
                             {
-                                "uid": "640a53f8-f9f5-4d5a-9a3a-4d960e4a456e",
+                                "uid": "e67578f6-a3f1-48f7-8f2e-183c82d3e570",
                                 "type": "cmd",
                                 "command": "checkIfUserChoseCoffee",
                                 "args": [
@@ -127,7 +127,7 @@
                                 ]
                             },
                             {
-                                "uid": "c2d25109-8797-45cb-9be7-60032c64a3eb",
+                                "uid": "358cac41-0a29-4535-8ef2-2160077135dd",
                                 "type": "if",
                                 "args": [
                                     {
@@ -138,7 +138,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "1e4b653f-b418-4d43-8bc7-051c774fe2b9",
+                                        "uid": "3c25fe34-854a-45d5-b220-0a41fe05c9a7",
                                         "type": "cmd",
                                         "command": "addCoffeeToCart",
                                         "args": [
@@ -150,7 +150,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "d0ef9682-2424-4746-9521-5b0a0a3d3403",
+                                        "uid": "6866c8bc-06ed-4166-b05a-23f01a03b48c",
                                         "type": "cmd",
                                         "command": "visitShop",
                                         "args": []
@@ -158,7 +158,7 @@
                                 ]
                             },
                             {
-                                "uid": "b823d9a6-2f95-4d62-8013-8a423d980fd8",
+                                "uid": "f0c545c4-0900-42b1-bbdf-054438657d80",
                                 "type": "cmd",
                                 "command": "checkIfUserChoseBagel",
                                 "args": [
@@ -175,7 +175,7 @@
                                 ]
                             },
                             {
-                                "uid": "a09af555-8048-43fc-adf8-cdd9f3bab2ec",
+                                "uid": "c6b0b33f-d1fe-4664-bb88-83fcd65fd6c0",
                                 "type": "if",
                                 "args": [
                                     {
@@ -186,7 +186,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "c055f6b6-fbb2-40ed-874f-1f408f7921ae",
+                                        "uid": "a182f079-ca45-468f-9609-c2e78b886c91",
                                         "type": "cmd",
                                         "command": "addBagelToCart",
                                         "args": [
@@ -198,7 +198,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "e1695e18-a4e1-4c82-b9e8-33c849e44c6d",
+                                        "uid": "9fa5f8f3-1f0a-45ab-83d7-38483aa1244d",
                                         "type": "cmd",
                                         "command": "visitShop",
                                         "args": []
@@ -206,7 +206,7 @@
                                 ]
                             },
                             {
-                                "uid": "06b2d792-e766-47ac-a403-e1bdc3ef8296",
+                                "uid": "1416ca45-7485-441d-a3eb-705b2fbead4a",
                                 "type": "cmd",
                                 "command": "checkIfUserChoseDisplayCart",
                                 "args": [
@@ -223,7 +223,7 @@
                                 ]
                             },
                             {
-                                "uid": "62d7ad24-8672-4cd8-8683-62c4a3ec4fee",
+                                "uid": "6094b63f-8870-41d9-a800-bfe6fbdf4246",
                                 "type": "if",
                                 "args": [
                                     {
@@ -234,7 +234,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "2acff6f0-56e3-476b-a414-5e1f8088127b",
+                                        "uid": "1c37e32c-987d-42db-a787-eadecf55ab1d",
                                         "type": "cmd",
                                         "command": "displayCart",
                                         "args": [
@@ -246,7 +246,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "ef767d1b-2e5a-434b-b7d6-fc899949c65a",
+                                        "uid": "1c420bcd-c23c-427d-947a-0be8f1eeddf8",
                                         "type": "cmd",
                                         "command": "visitShop",
                                         "args": []
@@ -254,7 +254,7 @@
                                 ]
                             },
                             {
-                                "uid": "06e43170-6b7f-48b4-95a2-b08a5c094ddf",
+                                "uid": "b3136b3d-1978-442c-aefe-75870e3ae0f7",
                                 "type": "cmd",
                                 "command": "checkIfUserChoseClearCart",
                                 "args": [
@@ -271,7 +271,7 @@
                                 ]
                             },
                             {
-                                "uid": "6750975d-2050-4f4a-80b9-85a14dc755bf",
+                                "uid": "17b227e5-6392-40be-bce4-fad20146e744",
                                 "type": "if",
                                 "args": [
                                     {
@@ -282,7 +282,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "fee3d58c-586e-4cd1-8dba-39a71cd5cecd",
+                                        "uid": "282d7151-6d5a-434e-80b8-d8c84be94d92",
                                         "type": "cmd",
                                         "command": "clearCart",
                                         "args": [
@@ -294,7 +294,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "c414eab5-15fb-404f-8bad-c0a760d88912",
+                                        "uid": "4bde9bd5-2a9e-4403-a5aa-784dc5baf858",
                                         "type": "cmd",
                                         "command": "visitShop",
                                         "args": []
@@ -304,13 +304,13 @@
                         ]
                     },
                     {
-                        "uid": "750363e0-359a-4238-9764-9f282bbd9d36",
+                        "uid": "0d37237d-7fbf-4284-8576-1197a190d62a",
                         "type": "behavior",
                         "parsedArgs": [],
                         "behaviorName": "baristaPresentsMenu",
                         "body": [
                             {
-                                "uid": "84d617b5-7b21-4a26-bb42-bfb11964d8d2",
+                                "uid": "73cb23d4-c643-442e-8779-4282a2deb7a6",
                                 "type": "cmd",
                                 "command": "terminal_display",
                                 "args": [
@@ -324,13 +324,13 @@
                         ]
                     },
                     {
-                        "uid": "c88bf825-58fb-4d79-899e-0ecc886d5757",
+                        "uid": "409d9e31-157d-4f18-a880-3d196b2b3625",
                         "type": "behavior",
                         "parsedArgs": [],
                         "behaviorName": "acceptChoice",
                         "body": [
                             {
-                                "uid": "0af5c404-42a4-4913-8fd6-1a5493371ac1",
+                                "uid": "e1c5c03b-96b0-4aab-a2c9-b3b4d140a9bb",
                                 "type": "cmd",
                                 "command": "terminal_input",
                                 "args": [
@@ -342,7 +342,7 @@
                                 ]
                             },
                             {
-                                "uid": "7ae02768-e88d-4185-b4bb-14e6e4f2b13d",
+                                "uid": "fe3537fd-de12-4a32-b454-36e3152aa3e9",
                                 "type": "cmd",
                                 "command": "yield",
                                 "args": [
@@ -356,7 +356,7 @@
                         ]
                     },
                     {
-                        "uid": "18e91b96-8d38-474e-a674-e119ed8947a4",
+                        "uid": "e28b02fd-6055-4420-8513-e420a71f3aeb",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -368,7 +368,7 @@
                         "behaviorName": "addCoffeeToCart",
                         "body": [
                             {
-                                "uid": "a4b112c1-201d-4d41-8c5e-64abd228002c",
+                                "uid": "a1458e2d-7acd-419e-9fd8-eecde2a837f3",
                                 "type": "cmd",
                                 "command": "insert_at_end_of_list",
                                 "args": [
@@ -387,7 +387,7 @@
                         ]
                     },
                     {
-                        "uid": "2a5d8714-51ad-4c7a-84c7-1e44f5c9ca6d",
+                        "uid": "04377cef-4d5c-4fb1-83fa-c3c580d18208",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -399,7 +399,7 @@
                         "behaviorName": "addBagelToCart",
                         "body": [
                             {
-                                "uid": "6145b591-5bc8-41ba-be75-23bcac9d455d",
+                                "uid": "f76db301-1422-4717-9675-4dbed7c6e872",
                                 "type": "cmd",
                                 "command": "insert_at_end_of_list",
                                 "args": [
@@ -418,7 +418,7 @@
                         ]
                     },
                     {
-                        "uid": "af2870a3-0935-4c0c-83d5-8b481fe76c52",
+                        "uid": "b38f86bd-47b1-4ba2-90f9-7e6b796754a3",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -430,7 +430,7 @@
                         "behaviorName": "displayCart",
                         "body": [
                             {
-                                "uid": "31d19565-1238-4777-83b2-e1e9fc9259e0",
+                                "uid": "d749be7e-5cd3-4117-9af5-66f3a6ea5792",
                                 "type": "cmd",
                                 "command": "terminal_display",
                                 "args": [
@@ -444,7 +444,7 @@
                         ]
                     },
                     {
-                        "uid": "8a668df5-8754-46e4-90d8-06de2bb0106b",
+                        "uid": "201a32ac-4e76-48ad-8b63-22e1c88657aa",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -456,7 +456,7 @@
                         "behaviorName": "clearCart",
                         "body": [
                             {
-                                "uid": "59a86751-803f-43a3-aa77-f98f349e8a09",
+                                "uid": "e22a8b81-ab10-4bb6-86aa-3e0f5f6cfacc",
                                 "type": "cmd",
                                 "command": "clear_list",
                                 "args": [
@@ -481,13 +481,13 @@
                 "type": "root",
                 "body": [
                     {
-                        "uid": "9963f19c-859c-4419-9064-980ec03c53d0",
+                        "uid": "24ed4630-7b6b-43cf-8aba-018315ea5e6c",
                         "type": "participant",
                         "parsedArgs": [],
                         "participantType": "Cart",
                         "body": [
                             {
-                                "uid": "69a2cc16-d78a-45a4-b7de-88cfea534869",
+                                "uid": "277879d5-817d-4012-86d7-c6669b6498ea",
                                 "type": "cmd",
                                 "command": "structural_type",
                                 "args": [
@@ -499,7 +499,7 @@
                                 ]
                             },
                             {
-                                "uid": "af305997-a841-4b2f-affd-c093c2dc1642",
+                                "uid": "6daa3e3d-37e0-40b8-ae8b-6f13bb10af3f",
                                 "type": "cmd",
                                 "command": "list_contains",
                                 "args": [
@@ -527,7 +527,7 @@
                 "type": "root",
                 "body": [
                     {
-                        "uid": "97c4a2b1-c8d8-44c6-b2d3-ebe09d8dc4f2",
+                        "uid": "3a64929c-88b8-41b6-9f01-900ccba5530d",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -539,7 +539,7 @@
                         "behaviorName": "checkIfUserChoseBagel",
                         "body": [
                             {
-                                "uid": "ffb711e6-5fc7-44e7-b1fb-4ffeddf9110e",
+                                "uid": "5fc7a42e-a4be-49ee-926d-bacf87655f24",
                                 "type": "cmd",
                                 "command": "equals",
                                 "args": [
@@ -561,7 +561,7 @@
                                 ]
                             },
                             {
-                                "uid": "38ca14a0-0512-413e-ade8-b9cf0a0506fd",
+                                "uid": "a429c944-d9bc-406d-b0a2-864ba66ee536",
                                 "type": "cmd",
                                 "command": "yield",
                                 "args": [
@@ -575,7 +575,7 @@
                         ]
                     },
                     {
-                        "uid": "f2cf3ae5-659e-47da-9dd8-4866d5071888",
+                        "uid": "32ddcbed-56e7-45bf-a738-f12a96d2f557",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -587,7 +587,7 @@
                         "behaviorName": "checkIfUserChoseCoffee",
                         "body": [
                             {
-                                "uid": "022c9a3d-5e93-4eca-8e4c-eacdc73807ac",
+                                "uid": "9cb1d592-1358-4630-9ba9-f0288045499b",
                                 "type": "cmd",
                                 "command": "equals",
                                 "args": [
@@ -609,7 +609,7 @@
                                 ]
                             },
                             {
-                                "uid": "db0e0ff5-2d66-4ecb-956e-fcdb92c21dee",
+                                "uid": "d40b73da-2f75-452d-ace2-e9f3eb3f1777",
                                 "type": "cmd",
                                 "command": "yield",
                                 "args": [
@@ -623,7 +623,7 @@
                         ]
                     },
                     {
-                        "uid": "d967bb64-29ac-4fa0-9420-3671981c7e86",
+                        "uid": "4ce49478-ac0e-4ce1-b2fd-f5ee4dfafce5",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -635,7 +635,7 @@
                         "behaviorName": "checkIfUserChoseDisplayCart",
                         "body": [
                             {
-                                "uid": "7737ab38-7ef0-461f-82c1-b0af68eedc62",
+                                "uid": "41f98787-f737-47ff-b89d-f94b6ec9f68b",
                                 "type": "cmd",
                                 "command": "equals",
                                 "args": [
@@ -657,7 +657,7 @@
                                 ]
                             },
                             {
-                                "uid": "e9b43da9-9023-45c0-a958-30e25ace810a",
+                                "uid": "124fa350-46af-4cd1-853b-c12a7f71ca6e",
                                 "type": "cmd",
                                 "command": "yield",
                                 "args": [
@@ -671,7 +671,7 @@
                         ]
                     },
                     {
-                        "uid": "03a587e5-dccc-496d-8933-45d3d1bf327c",
+                        "uid": "4384aafb-2cbd-45c6-ac6a-d5030a74098a",
                         "type": "behavior",
                         "parsedArgs": [
                             {
@@ -683,7 +683,7 @@
                         "behaviorName": "checkIfUserChoseClearCart",
                         "body": [
                             {
-                                "uid": "e3ca3cca-dbc1-4e68-9631-01fc899706a1",
+                                "uid": "4d519c07-c24c-4786-9e1d-ad58b8376bc7",
                                 "type": "cmd",
                                 "command": "equals",
                                 "args": [
@@ -705,7 +705,7 @@
                                 ]
                             },
                             {
-                                "uid": "06e7fbe7-eeb4-4134-9c57-0dd6a62ae0c2",
+                                "uid": "357939a0-d722-43ab-8645-e31b457b834b",
                                 "type": "cmd",
                                 "command": "yield",
                                 "args": [

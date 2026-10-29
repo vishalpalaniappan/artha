@@ -9,7 +9,8 @@
         "introduce",
         "role",
         "structural_type",
-        "yield"
+        "yield",
+        "import"
     ],
     "functional_primitives": [
         "if"
