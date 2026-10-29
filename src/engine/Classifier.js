@@ -1,3 +1,5 @@
+import { Node } from "./Node";
+
 /**
  * This class accepts the AST and classifies every node as one of the following:
  * - Composite Behavior
@@ -20,6 +22,7 @@ export class Classifier {
     constructor (meaning, primitives) {
         this.meaning = meaning;
         this.primitives = primitives;
+        this.classifiedNodes = [];
         this.process(meaning.data);
     }
 
@@ -29,24 +32,27 @@ export class Classifier {
      */
     process(files) {
         for (const f of files) {
-            console.log("");
-            console.log(f.name);
-            this.visitBody(f.ast.body);
+            const nodes = this.visitBody(f.ast.body);
+            this.classifiedNodes = [
+                ...this.classifiedNodes, ...nodes
+            ];
         }
+
+        console.log(this.classifiedNodes);
     }
 
     visitBody(body) {
+        const nodes = [];
         for (const node of body) {
+            const classifiedNode = new Node(node);
             if ("body" in node) {
-                this.visitBody(node.body);
+                classifiedNode.addBody(
+                    this.visitBody(node.body)
+                );
             }
-            this.classify(node);
-        }
-    }
-
-    classify (node) {
-        // classify node
-        console.log(node.type);
+            nodes.push(classifiedNode);
+        } 
+        return nodes;
     }
 
     /**
