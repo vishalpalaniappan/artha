@@ -21,5 +21,11 @@ describe("meaning parser", async () => {
             resolve(__dirname, "./output/coffee_shop/reasoningPkg.json"),
             JSON.stringify(coffee_shop.generateReasoningPackage(), null, 4)
         );
+        
+
+        await writeFile(
+            resolve(__dirname, "./output/coffee_shop/narratives.json"),
+            JSON.stringify(coffee_shop.engine.narratives.narratives, null, 4)
+        );
     });
 });
