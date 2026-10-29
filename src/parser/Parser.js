@@ -108,6 +108,7 @@ export class ArthaParser {
         const behaviorName = this.tokens[++this.currPos].value;
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
+            uid: crypto.randomUUID(),
             type: "behavior",
             parsedArgs: parsedArgs,
             behaviorName: behaviorName,
@@ -127,6 +128,7 @@ export class ArthaParser {
         const participantType = this.tokens[++this.currPos].value;
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
+            uid: crypto.randomUUID(),
             type: "participant",
             parsedArgs: parsedArgs,
             participantType: participantType,
@@ -145,6 +147,7 @@ export class ArthaParser {
     processIf () {
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
+            uid: crypto.randomUUID(),
             type: "if",
             args: parsedArgs,
             body: []
@@ -165,6 +168,7 @@ export class ArthaParser {
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const type = (cmd[0] === "_")?"registeredCmd":"cmd";
         const node = {
+            uid: crypto.randomUUID(),
             "type": type,
             "command": cmd,
             "args": parsedArgs
