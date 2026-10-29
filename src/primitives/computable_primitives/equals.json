@@ -6,6 +6,7 @@
     "participants": [
         {
             "name": "alias",
+            "type": "boolean",
             "required": "true"
         },
         {
