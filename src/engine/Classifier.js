@@ -15,8 +15,49 @@
  * This can be done in the parsing stage to make it more efficient.
  */
 
-class Classifier {
-    constructor () {
+export class Classifier {
 
+    constructor (meaning, primitives) {
+        this.meaning = meaning;
+        this.primitives = primitives;
+        this.process(meaning.data);
+    }
+
+    /**
+     * Visit each node in the body and classify it.
+     * @param {Array} body 
+     */
+    process(files) {
+        for (const f of files) {
+            console.log("");
+            console.log(f.name);
+            this.visitBody(f.ast.body);
+        }
+    }
+
+    visitBody(body) {
+        for (const node of body) {
+            if ("body" in node) {
+                this.visitBody(node.body);
+            }
+            this.classify(node);
+        }
+    }
+
+    classify (node) {
+        // classify node
+        console.log(node.type);
+    }
+
+    /**
+     * Find the primitive given the name.
+     * @param {String} name 
+     * @returns 
+     */
+    findPrimitive(name) {
+        const foundPrimitive = this.primitives.find(
+            (f) => f.syntax === name
+        );
+        if (foundPrimitive) return foundPrimitive;
     }
 }
