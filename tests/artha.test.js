@@ -22,7 +22,11 @@ describe("meaning parser", async () => {
             JSON.stringify(coffee_shop.generateReasoningPackage(), null, 4)
         );
         
-
+        await writeFile(
+            resolve(__dirname, "./output/coffee_shop/classifiedNodes.json"),
+            JSON.stringify(coffee_shop.engine.classifier.classifiedNodes, null, 4)
+        );
+        
         await writeFile(
             resolve(__dirname, "./output/coffee_shop/narratives.json"),
             JSON.stringify(coffee_shop.engine.narratives.narratives, null, 4)
