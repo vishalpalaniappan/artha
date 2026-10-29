@@ -1,7 +1,11 @@
 export class Node {
-    constructor(node) {
-        this.uid = node.uid;
-        this.type = node.type;
+    constructor(uid, classified) {
+        this.uid = uid;
+        if (classified) {
+            this.name = classified.name;
+            this.type = classified.type;
+            this.args = classified.args;
+        }
     }
 
     addBody(body) {

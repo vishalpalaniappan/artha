@@ -37,22 +37,75 @@ export class Classifier {
                 ...this.classifiedNodes, ...nodes
             ];
         }
-
-        console.log(this.classifiedNodes);
     }
 
     visitBody(body) {
         const nodes = [];
-        for (const node of body) {
-            const classifiedNode = new Node(node);
-            if ("body" in node) {
-                classifiedNode.addBody(
-                    this.visitBody(node.body)
-                );
+        for (const astNode of body) {
+            const classifiedNode = new Node(astNode.uid, this.classify(astNode));
+            if ("body" in astNode) {
+                classifiedNode.addBody(this.visitBody(astNode.body));
             }
             nodes.push(classifiedNode);
-        } 
+        }
         return nodes;
+    }
+
+    /**
+     * Classify the AST node.
+     * @param {Object} node 
+     */
+    classify(node) {
+        if (node.type === "behavior") {
+            return {
+                type: "behavior",
+                name: node.behaviorName,
+                args: node.args
+            }
+        }
+
+        if (node.type === "cmd") {
+            const foundBehavior = this.findBehavior(node.command);
+            if (foundBehavior) {
+                return {
+                    type: "behavior",
+                    name: node.command,
+                    args: node.args
+                }
+            }
+
+            const foundPrimitive = this.findPrimitive(node.command);
+            if (foundPrimitive) {
+                return {
+                    type: "primitive",
+                    name: foundPrimitive.name,
+                    args: node.args
+                }
+            }
+        }
+
+        if (node.type == "if") {
+            return {
+                type: "if",
+                args: node.args
+            }
+        }
+    }
+
+
+
+    /**
+     * Find the behavior given the name of the behavior.
+     * @param {String} name 
+     * @returns 
+     */
+    findBehavior(name) {
+        for (const file of this.meaning.data) {
+            const b = file.ast.body.find(
+                (f) => (f.type === "behavior") && (f.behaviorName == name)
+            )
+            if (b) return b;
+        }
     }
 
     /**
