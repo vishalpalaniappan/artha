@@ -1,7 +1,7 @@
 import("includes/user_choice.ar")
 import("participants/Cart.ar")
 
-behavior coffee_shop() {
+behavior coffeeShop() {
     introduce(
         name= shopping_cart, 
         role= cart
@@ -12,11 +12,11 @@ behavior coffee_shop() {
         role= menu
         participant= menu
     )
-    visit_shop()
+    visitShop()
 }
 
-behavior visit_shop() {
-    barista_presents_menu()
+behavior visitShop() {
+    baristaPresentsMenu()
 
     acceptChoice(
         alias = user_choice
@@ -27,10 +27,10 @@ behavior visit_shop() {
         choice = user_choice
     )
     if (condition = user_chose_coffee) {
-        add_coffee_to_cart(
+        addCoffeeToCart(
             cart = shopping_cart
         )
-        visit_shop()
+        visitShop()
     }
 
 
@@ -39,10 +39,10 @@ behavior visit_shop() {
         choice = user_choice
     )
     if (condition = user_chose_bagel) {
-        add_bagel_to_cart(
+        addBagelToCart(
             cart = shopping_cart
         )
-        visit_shop()
+        visitShop()
     }
 
 
@@ -51,10 +51,10 @@ behavior visit_shop() {
         choice = user_choice
     )
     if (condition = user_chose_display_cart) {
-        display_cart(
+        displayCart(
             cart = shopping_cart
         )
-        visit_shop()
+        visitShop()
     }
 
 
@@ -63,14 +63,14 @@ behavior visit_shop() {
         choice = user_choice
     )
     if (condition = user_chose_clear_cart) {
-        clear_cart(
+        clearCart(
             cart = shopping_cart
         )
-        visit_shop()
+        visitShop()
     }
 }
 
-behavior barista_presents_menu() {
+behavior baristaPresentsMenu() {
     terminal_display(
         value = menu
     )
@@ -83,27 +83,27 @@ behavior acceptChoice() {
     yield(value=terminal_input)
 }
 
-behavior add_coffee_to_cart(cart) {
+behavior addCoffeeToCart(cart) {
     insert_at_end_of_list(
         value = "Coffee", 
         list = cart
     )
 }
 
-behavior add_bagel_to_cart(cart) {
+behavior addBagelToCart(cart) {
     insert_at_end_of_list(
         value = "Bagel", 
         list = cart
     )
 }
 
-behavior display_cart(cart) {
+behavior displayCart(cart) {
     terminal_display(
         value = cart
     )
 }
 
-behavior clear_cart(cart) {
+behavior clearCart(cart) {
     clear_list(
         list = cart
     )
