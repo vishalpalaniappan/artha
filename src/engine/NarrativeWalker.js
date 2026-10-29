@@ -30,9 +30,31 @@ export class NarrativeWalker {
 
     walk (atomicBehaviorName) {
         console.log("Walking from atomic behavior:", atomicBehaviorName);
-
         const atomicBehavior = this.findBehavior(atomicBehaviorName);
-        console.log(atomicBehavior);
+
+        if(!atomicBehavior) throw Error("Atomic behavior doesn't exist.")
+
+        this.visitBody(atomicBehavior.body);
+    }
+
+
+    visitBody(body) {
+        for (const node of body) {
+            if (node.type == "cmd") {
+                console.log(node.command)
+                const foundBehavior = this.findBehavior(node.command);
+                if (foundBehavior) {
+                    this.visitBody(foundBehavior.body);
+                    continue;
+                }
+            }
+
+            if (node.type == "if") {
+                console.log("IF", node.args[0].value);
+                // Temporary disable (loops on itself)
+                // this.visitBody(node.body);
+            }
+        }
     }
 
     /**
@@ -47,5 +69,17 @@ export class NarrativeWalker {
             )
             if (b) return b;
         }
+    }
+
+    /**
+     * Find the primitive given the name.
+     * @param {String} name 
+     * @returns 
+     */
+    findPrimitive(name) {
+        const foundPrimitive = this.primitives.find(
+            (f) => f.syntax === name
+        );
+        if (foundPrimitive) return foundPrimitive;
     }
 }
