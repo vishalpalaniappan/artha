@@ -1,7 +1,7 @@
 {
     "meta": {
         "entry": "coffee_shop.ar",
-        "atomic_behavior": "coffee_shop",
+        "atomic_behavior": "coffeeShop",
         "version": "v0.0"
     },
     "data": [
@@ -9,7 +9,7 @@
             "fullPath": "designs/coffee_shop/coffee_shop.ar",
             "name": "coffee_shop.ar",
             "relativePath": "coffee_shop.ar",
-            "content": "import(\"includes/user_choice.ar\")\nimport(\"participants/Cart.ar\")\n\nbehavior coffee_shop() {\n    introduce(\n        name= shopping_cart, \n        participant= Cart\n    )\n    visit_shop()\n}\n\nbehavior visit_shop() {\n    barista_presents_menu()\n\n    acceptChoice(\n        alias = user_choice\n    )\n\n    checkIfUserChoseCoffee(\n        alias = user_chose_coffee,\n        choice = user_choice\n    )\n    if (condition = user_chose_coffee) {\n        add_coffee_to_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n\n\n    checkIfUserChoseBagel(\n        alias = user_chose_bagel,\n        choice = user_choice\n    )\n    if (condition = user_chose_bagel) {\n        add_bagel_to_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n\n\n    checkIfUserChoseDisplayCart(\n        alias = user_chose_display_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_display_cart) {\n        display_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n\n\n    checkIfUserChoseClearCart(\n        alias = user_chose_clear_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_clear_cart) {\n        clear_cart(\n            cart = shopping_cart\n        )\n        visit_shop()\n    }\n}\n\nbehavior barista_presents_menu() {\n    display(\n        value = menu\n    )\n}\n\nbehavior acceptChoice() {\n    accept_terminal_input(\n        alias = terminal_input\n    )\n    yield(value=terminal_input)\n}\n\nbehavior add_coffee_to_cart(cart) {\n    insert_at_end(\n        value = \"Coffee\", \n        list = cart\n    )\n}\n\nbehavior add_bagel_to_cart(cart) {\n    insert_at_end(\n        value = \"Bagel\", \n        list = cart\n    )\n}\n\nbehavior display_cart(cart) {\n    display(\n        value = cart\n    )\n}\n\nbehavior clear_cart(cart) {\n    clear(\n        list = cart\n    )\n}\n\n",
+            "content": "import(\"includes/user_choice.ar\")\nimport(\"participants/Cart.ar\")\n\nbehavior coffeeShop() {\n    introduce(\n        name= shopping_cart, \n        role= cart\n        participant= Cart\n    )\n    introduce(\n        name= menu, \n        role= menu\n        participant= menu\n    )\n    visitShop()\n}\n\nbehavior visitShop() {\n    baristaPresentsMenu()\n\n    acceptChoice(\n        alias = user_choice\n    )\n\n    checkIfUserChoseCoffee(\n        alias = user_chose_coffee,\n        choice = user_choice\n    )\n    if (condition = user_chose_coffee) {\n        addCoffeeToCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n\n\n    checkIfUserChoseBagel(\n        alias = user_chose_bagel,\n        choice = user_choice\n    )\n    if (condition = user_chose_bagel) {\n        addBagelToCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n\n\n    checkIfUserChoseDisplayCart(\n        alias = user_chose_display_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_display_cart) {\n        displayCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n\n\n    checkIfUserChoseClearCart(\n        alias = user_chose_clear_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_clear_cart) {\n        clearCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n}\n\nbehavior baristaPresentsMenu() {\n    terminal_display(\n        value = menu\n    )\n}\n\nbehavior acceptChoice() {\n    terminal_input(\n        alias = terminal_input\n    )\n    yield(value=terminal_input)\n}\n\nbehavior addCoffeeToCart(cart) {\n    insert_at_end_of_list(\n        value = \"Coffee\", \n        list = cart\n    )\n}\n\nbehavior addBagelToCart(cart) {\n    insert_at_end_of_list(\n        value = \"Bagel\", \n        list = cart\n    )\n}\n\nbehavior displayCart(cart) {\n    terminal_display(\n        value = cart\n    )\n}\n\nbehavior clearCart(cart) {\n    clear_list(\n        list = cart\n    )\n}\n\n",
             "ast": {
                 "type": "root",
                 "body": [
@@ -38,7 +38,7 @@
                     {
                         "type": "behavior",
                         "parsedArgs": [],
-                        "behaviorName": "coffee_shop",
+                        "behaviorName": "coffeeShop",
                         "body": [
                             {
                                 "type": "cmd",
@@ -50,15 +50,31 @@
                                         "value": "shopping_cart"
                                     },
                                     {
-                                        "arg": "participant",
+                                        "arg": "role",
                                         "type": "name",
-                                        "value": "Cart"
+                                        "value": "cartparticipant=Cart"
                                     }
                                 ]
                             },
                             {
                                 "type": "cmd",
-                                "command": "visit_shop",
+                                "command": "introduce",
+                                "args": [
+                                    {
+                                        "arg": "name",
+                                        "type": "name",
+                                        "value": "menu"
+                                    },
+                                    {
+                                        "arg": "role",
+                                        "type": "name",
+                                        "value": "menuparticipant=menu"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "cmd",
+                                "command": "visitShop",
                                 "args": []
                             }
                         ]
@@ -66,11 +82,11 @@
                     {
                         "type": "behavior",
                         "parsedArgs": [],
-                        "behaviorName": "visit_shop",
+                        "behaviorName": "visitShop",
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "barista_presents_menu",
+                                "command": "baristaPresentsMenu",
                                 "args": []
                             },
                             {
@@ -112,7 +128,7 @@
                                 "body": [
                                     {
                                         "type": "cmd",
-                                        "command": "add_coffee_to_cart",
+                                        "command": "addCoffeeToCart",
                                         "args": [
                                             {
                                                 "arg": "cart",
@@ -123,7 +139,7 @@
                                     },
                                     {
                                         "type": "cmd",
-                                        "command": "visit_shop",
+                                        "command": "visitShop",
                                         "args": []
                                     }
                                 ]
@@ -156,7 +172,7 @@
                                 "body": [
                                     {
                                         "type": "cmd",
-                                        "command": "add_bagel_to_cart",
+                                        "command": "addBagelToCart",
                                         "args": [
                                             {
                                                 "arg": "cart",
@@ -167,7 +183,7 @@
                                     },
                                     {
                                         "type": "cmd",
-                                        "command": "visit_shop",
+                                        "command": "visitShop",
                                         "args": []
                                     }
                                 ]
@@ -200,7 +216,7 @@
                                 "body": [
                                     {
                                         "type": "cmd",
-                                        "command": "display_cart",
+                                        "command": "displayCart",
                                         "args": [
                                             {
                                                 "arg": "cart",
@@ -211,7 +227,7 @@
                                     },
                                     {
                                         "type": "cmd",
-                                        "command": "visit_shop",
+                                        "command": "visitShop",
                                         "args": []
                                     }
                                 ]
@@ -244,7 +260,7 @@
                                 "body": [
                                     {
                                         "type": "cmd",
-                                        "command": "clear_cart",
+                                        "command": "clearCart",
                                         "args": [
                                             {
                                                 "arg": "cart",
@@ -255,7 +271,7 @@
                                     },
                                     {
                                         "type": "cmd",
-                                        "command": "visit_shop",
+                                        "command": "visitShop",
                                         "args": []
                                     }
                                 ]
@@ -265,11 +281,11 @@
                     {
                         "type": "behavior",
                         "parsedArgs": [],
-                        "behaviorName": "barista_presents_menu",
+                        "behaviorName": "baristaPresentsMenu",
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "display",
+                                "command": "terminal_display",
                                 "args": [
                                     {
                                         "arg": "value",
@@ -287,7 +303,7 @@
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "accept_terminal_input",
+                                "command": "terminal_input",
                                 "args": [
                                     {
                                         "arg": "alias",
@@ -318,11 +334,11 @@
                                 "value": "cart"
                             }
                         ],
-                        "behaviorName": "add_coffee_to_cart",
+                        "behaviorName": "addCoffeeToCart",
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "insert_at_end",
+                                "command": "insert_at_end_of_list",
                                 "args": [
                                     {
                                         "arg": "value",
@@ -347,11 +363,11 @@
                                 "value": "cart"
                             }
                         ],
-                        "behaviorName": "add_bagel_to_cart",
+                        "behaviorName": "addBagelToCart",
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "insert_at_end",
+                                "command": "insert_at_end_of_list",
                                 "args": [
                                     {
                                         "arg": "value",
@@ -376,11 +392,11 @@
                                 "value": "cart"
                             }
                         ],
-                        "behaviorName": "display_cart",
+                        "behaviorName": "displayCart",
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "display",
+                                "command": "terminal_display",
                                 "args": [
                                     {
                                         "arg": "value",
@@ -400,11 +416,11 @@
                                 "value": "cart"
                             }
                         ],
-                        "behaviorName": "clear_cart",
+                        "behaviorName": "clearCart",
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "clear",
+                                "command": "clear_list",
                                 "args": [
                                     {
                                         "arg": "list",
@@ -422,7 +438,7 @@
             "fullPath": "designs/coffee_shop/participants/Cart.ar",
             "name": "Cart.ar",
             "relativePath": "participants/Cart.ar",
-            "content": "participant Cart() {\n    structuralType(\n        type= \"list\"\n    )\n    roleType(\n        type= \"basket\"\n    )\n    contains(\n        values= [\"Coffee\", \"Bagel\"]\n    )\n}",
+            "content": "participant Cart() {\n    structural_type(\n        type= \"list\"\n    )\n    list_contains(\n        values= [\"Coffee\", \"Bagel\"]\n    )\n}",
             "ast": {
                 "type": "root",
                 "body": [
@@ -433,7 +449,7 @@
                         "body": [
                             {
                                 "type": "cmd",
-                                "command": "structuralType",
+                                "command": "structural_type",
                                 "args": [
                                     {
                                         "arg": "type",
@@ -444,18 +460,7 @@
                             },
                             {
                                 "type": "cmd",
-                                "command": "roleType",
-                                "args": [
-                                    {
-                                        "arg": "type",
-                                        "type": "string",
-                                        "value": "basket"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "cmd",
-                                "command": "contains",
+                                "command": "list_contains",
                                 "args": [
                                     {
                                         "arg": "values",
@@ -476,7 +481,7 @@
             "fullPath": "designs/coffee_shop/includes/user_choice.ar",
             "name": "user_choice.ar",
             "relativePath": "includes/user_choice.ar",
-            "content": "behavior checkIfUserChoseBagel (user_choice) {\n    equals(\n        alias = user_chose_bagel,\n        user_choice = user_choice,\n        check = \"bagel\"\n    )\n    yield(user_chose_bagel)\n}\n\nbehavior checkIfUserChoseCoffee (user_choice) {\n    equals(\n        alias = did_user_chose_coffee,\n        user_choice = user_choice,\n        check = \"coffee\"\n    )\n    yield(user_chose_coffee)\n}\n\nbehavior checkIfUserChoseDisplayCart (user_choice) {\n    equals(\n        alias = did_user_choose_display_cart,\n        user_choice = user_choice,\n        check = \"view\"\n    )\n    yield(did_user_choose_display_cart)\n}\n\nbehavior checkIfUserChoseClearCart (user_choice) {\n    equals(\n        alias = did_user_choose_clear_cart,\n        user_choice = user_choice,\n        check = \"clear\"\n    )\n    yield(did_user_choose_clear_cart)\n}",
+            "content": "behavior checkIfUserChoseBagel (user_choice) {\n    equals(\n        alias = user_chose_bagel,\n        value1 = user_choice,\n        value2 = \"Bagel\"\n    )\n    yield(user_chose_bagel)\n}\n\nbehavior checkIfUserChoseCoffee (user_choice) {\n    equals(\n        alias = did_user_chose_coffee,\n        value1 = user_choice,\n        value2 = \"Coffee\"\n    )\n    yield(user_chose_coffee)\n}\n\nbehavior checkIfUserChoseDisplayCart (user_choice) {\n    equals(\n        alias = did_user_choose_display_cart,\n        value1 = user_choice,\n        value2 = \"View\"\n    )\n    yield(did_user_choose_display_cart)\n}\n\nbehavior checkIfUserChoseClearCart (user_choice) {\n    equals(\n        alias = did_user_choose_clear_cart,\n        value1 = user_choice,\n        value2 = \"Clear\"\n    )\n    yield(did_user_choose_clear_cart)\n}",
             "ast": {
                 "type": "root",
                 "body": [
@@ -501,14 +506,14 @@
                                         "value": "user_chose_bagel"
                                     },
                                     {
-                                        "arg": "user_choice",
+                                        "arg": "value1",
                                         "type": "name",
                                         "value": "user_choice"
                                     },
                                     {
-                                        "arg": "check",
+                                        "arg": "value2",
                                         "type": "string",
-                                        "value": "bagel"
+                                        "value": "Bagel"
                                     }
                                 ]
                             },
@@ -546,14 +551,14 @@
                                         "value": "did_user_chose_coffee"
                                     },
                                     {
-                                        "arg": "user_choice",
+                                        "arg": "value1",
                                         "type": "name",
                                         "value": "user_choice"
                                     },
                                     {
-                                        "arg": "check",
+                                        "arg": "value2",
                                         "type": "string",
-                                        "value": "coffee"
+                                        "value": "Coffee"
                                     }
                                 ]
                             },
@@ -591,14 +596,14 @@
                                         "value": "did_user_choose_display_cart"
                                     },
                                     {
-                                        "arg": "user_choice",
+                                        "arg": "value1",
                                         "type": "name",
                                         "value": "user_choice"
                                     },
                                     {
-                                        "arg": "check",
+                                        "arg": "value2",
                                         "type": "string",
-                                        "value": "view"
+                                        "value": "View"
                                     }
                                 ]
                             },
@@ -636,14 +641,14 @@
                                         "value": "did_user_choose_clear_cart"
                                     },
                                     {
-                                        "arg": "user_choice",
+                                        "arg": "value1",
                                         "type": "name",
                                         "value": "user_choice"
                                     },
                                     {
-                                        "arg": "check",
+                                        "arg": "value2",
                                         "type": "string",
-                                        "value": "clear"
+                                        "value": "Clear"
                                     }
                                 ]
                             },

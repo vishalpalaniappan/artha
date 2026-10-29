@@ -26,15 +26,15 @@ For example, with the coffee_shop:
 coffee_shop
     introduce
     introduce
-visit_shop
+    visit_shop
 
 barista_presents_menu
-  terminal_display
+    terminal_display
 acceptChoice
-  terminal_input
+    terminal_input
 checkIfUserChoseCoffee
-  equals
-  yield
+    equals
+    yield
 -> IF user chose coffee
 
 #   Level 2
@@ -59,21 +59,21 @@ checkIfUserChoseCoffee
 
 # Continue Level 1
 coffee_shop
-  introduce
-  introduce
-  visit_shop
+    introduce
+    introduce
+    visit_shop
 
 barista_presents_menu
-  terminal_display
+    terminal_display
 acceptChoice
-  terminal_input
+    terminal_input
 checkIfUserChoseCoffee
-  equals
-  yield
+    equals
+    yield
 -> IF user chose coffee
 checkIfUserChoseBagel
-  equals
-  yield
+    equals
+    yield
 -> IF user chose Bagel
 
 # Level 2
