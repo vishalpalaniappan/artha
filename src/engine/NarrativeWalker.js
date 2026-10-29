@@ -16,45 +16,75 @@ export class NarrativeWalker {
     constructor(metadata, meaning) {
         this.metadata = metadata;
         this.meaning = meaning;
-        this.walk(metadata.atomic_behavior);
 
-        // List of established narratives
+        // List of narratives
         this.narratives = [];
 
-        // Current stack of narratives
+        // Stack of narratives (branches when if node)
         this.narrativeStack = [];
 
-        // The current stack on the walk
+        // The current stack on the walk (composite behaviors visited)
         this.walkStack= [];
+
+        this.walk(metadata.atomic_behavior);
     }
 
     walk (atomicBehaviorName) {
-        console.log("Walking from atomic behavior:", atomicBehaviorName);
         const atomicBehavior = this.findBehavior(atomicBehaviorName);
-
         if(!atomicBehavior) throw Error("Atomic behavior doesn't exist.")
+
+        // Start empty narrative
+        this.narrativeStack.push([]);
 
         this.visitBody(atomicBehavior.body);
     }
 
 
+    /**
+     * Finds all the unique narratives in the design by recursively
+     * visiting the nodes in the body.
+     * 
+     * @param {Array} body 
+     * @returns 
+     */
     visitBody(body) {
+
         for (const node of body) {
+
+            // Reached the same behavior in the walk
+            if (this.walkStack.includes(node.command)) {
+                this.narratives.push(this.narrativeStack.pop());
+                return;
+            }
+
             if (node.type == "cmd") {
-                console.log(node.command)
+                this.narrativeStack[this.narrativeStack.length - 1].push(node.command);
+
+                // If composite behavior, add to the walk stack and visit the body
                 const foundBehavior = this.findBehavior(node.command);
                 if (foundBehavior) {
+                    this.walkStack.push(node.command);
                     this.visitBody(foundBehavior.body);
                     continue;
                 }
             }
 
             if (node.type == "if") {
-                console.log("IF", node.args[0].value);
-                // Temporary disable (loops on itself)
-                // this.visitBody(node.body);
+                this.narrativeStack[this.narrativeStack.length - 1].push(
+                    `-> ${node.type} ${node.args[0].value}`
+                );
+
+                // Branch the narrative at the stop of stack by copying it
+                this.narrativeStack.push(
+                    [...this.narrativeStack[this.narrativeStack.length - 1]]
+                );
+                this.visitBody(node.body);
             }
+
         }
+
+        // Visited all nodes in composite behavior, pop the stack.
+        this.walkStack.pop();
     }
 
     /**
