@@ -28,10 +28,18 @@ export class NarrativeWalker {
         this.walkStack= [];
     }
 
-    walk (atomic) {
-        console.log("Walking from atomic behavior:", atomic);
+    walk (atomicBehaviorName) {
+        console.log("Walking from atomic behavior:", atomicBehaviorName);
+
+        const atomicBehavior = this.findBehavior(atomicBehaviorName);
+        console.log(atomicBehavior);
     }
 
+    /**
+     * Find the behavior given the name of the behavior.
+     * @param {String} name 
+     * @returns 
+     */
     findBehavior(name) {
         for (const file of this.meaning) {
             const b = file.ast.body.find(
