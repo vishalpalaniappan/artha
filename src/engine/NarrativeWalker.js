@@ -29,6 +29,15 @@ export class NarrativeWalker {
         this.walk(metadata.atomic_behavior);
     }
 
+    /**
+     * Walk the narratives starting at the atomic behavior.
+     * 
+     * TODO: Move the errors to a custom error so that I can catch it and
+     * provide feedback through the workbench.
+     * 
+     * @param {String} atomicBehaviorName 
+     * @throws {Error} Error indicating that atomic behavior doesn't exist.
+     */
     walk (atomicBehaviorName) {
         const atomicBehavior = this.findBehavior(atomicBehaviorName);
         if(!atomicBehavior) {
@@ -92,7 +101,7 @@ export class NarrativeWalker {
      * this should not happen.
      * 
      * @returns {Array} The current narrative as an array.
-     * @throws {Error} Custom error indicating that there are no narratives in the stack.
+     * @throws {Error} Error indicating that there are no narratives in the stack.
      */
     getCurrentNarrative() {
         if (this.narrativeStack.length === 0) {
