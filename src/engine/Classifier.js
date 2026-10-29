@@ -84,14 +84,15 @@ export class Classifier {
             }
         }
 
-        if (node.type == "if") {
+        if (node.type == "functional") {
+            const foundPrimitive = this.findPrimitive(node.command);
             return {
-                type: "if",
+                type: "functional",
+                name: "if",
                 args: node.args
             }
         }
     }
-
 
 
     /**

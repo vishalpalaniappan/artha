@@ -1,6 +1,6 @@
 [
     {
-        "uid": "f8180731-5172-40a6-a657-9d176e92c057",
+        "uid": "39fb858c-f74d-47b7-a888-2098fc8654ab",
         "name": "import",
         "type": "primitive",
         "args": [
@@ -12,7 +12,7 @@
         ]
     },
     {
-        "uid": "cb2f6b5f-ca74-4f48-8b78-e821ce084e86",
+        "uid": "2deab5bb-cfe0-412d-a1e6-a58fce15351b",
         "name": "import",
         "type": "primitive",
         "args": [
@@ -24,12 +24,12 @@
         ]
     },
     {
-        "uid": "1dbbd824-3583-47fa-b172-711a4a585130",
+        "uid": "ae9c3edf-b328-4a4b-9469-efc61419d953",
         "name": "coffeeShop",
         "type": "behavior",
         "body": [
             {
-                "uid": "adf0678e-204a-405d-96e9-a34bc1e519a5",
+                "uid": "a9668a8b-d810-42b0-8d8c-c2a5c2534db3",
                 "name": "introduce",
                 "type": "primitive",
                 "args": [
@@ -46,7 +46,7 @@
                 ]
             },
             {
-                "uid": "ff4cacc1-32ae-4311-818c-8f22315dfeb7",
+                "uid": "747823a2-72b0-4754-b65e-ad3bf4979de1",
                 "name": "introduce",
                 "type": "primitive",
                 "args": [
@@ -63,7 +63,7 @@
                 ]
             },
             {
-                "uid": "74e168b2-a008-4f63-9530-d0cff03631d6",
+                "uid": "45af29c8-a628-4aa2-bbb4-7b4dde98449f",
                 "name": "visitShop",
                 "type": "behavior",
                 "args": []
@@ -71,18 +71,18 @@
         ]
     },
     {
-        "uid": "901414ca-5ff9-4141-aa82-97eaf18b2b63",
+        "uid": "57d2bc71-fbfb-40aa-9c90-3a23fd82c9b5",
         "name": "visitShop",
         "type": "behavior",
         "body": [
             {
-                "uid": "bad5b523-1156-4707-a335-2419c949021b",
+                "uid": "b526483b-3a64-4cce-9aa0-c642e91f51c8",
                 "name": "baristaPresentsMenu",
                 "type": "behavior",
                 "args": []
             },
             {
-                "uid": "7e2baf82-49c7-44ea-88ed-3368bde7aa94",
+                "uid": "39ce5962-8075-4098-8236-70330e3761e5",
                 "name": "acceptChoice",
                 "type": "behavior",
                 "args": [
@@ -94,7 +94,7 @@
                 ]
             },
             {
-                "uid": "63145c1b-b95f-4081-be27-e78daa10151c",
+                "uid": "f13b7e9b-9e23-4ac8-86ae-d3147b8261a2",
                 "name": "checkIfUserChoseCoffee",
                 "type": "behavior",
                 "args": [
@@ -111,8 +111,9 @@
                 ]
             },
             {
-                "uid": "51a9922c-15da-4943-9502-57ba8fdf93ca",
-                "type": "if",
+                "uid": "bd268cd4-7ec7-41b5-a4ea-8a11fb2d6991",
+                "name": "if",
+                "type": "functional",
                 "args": [
                     {
                         "arg": "condition",
@@ -122,7 +123,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "3c0ac20c-21b1-4204-a5a4-603df7fb37e3",
+                        "uid": "1e3aa821-0ec4-402d-95dc-962786751c35",
                         "name": "addCoffeeToCart",
                         "type": "behavior",
                         "args": [
@@ -134,7 +135,7 @@
                         ]
                     },
                     {
-                        "uid": "653e784d-fcf0-4cb3-a011-69e20a7ee6ba",
+                        "uid": "275242d4-3327-4263-ae5a-1228113927e0",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": []
@@ -142,7 +143,7 @@
                 ]
             },
             {
-                "uid": "12969fa0-392a-4ef0-a434-8d8591cee7ab",
+                "uid": "010e103d-db56-4095-b0cd-36fe3db687b3",
                 "name": "checkIfUserChoseBagel",
                 "type": "behavior",
                 "args": [
@@ -159,8 +160,9 @@
                 ]
             },
             {
-                "uid": "a2cd2b39-be9a-483f-9317-6f3aa084e9ac",
-                "type": "if",
+                "uid": "acd8bb3d-e6d8-4a54-970a-a4da28b2e743",
+                "name": "if",
+                "type": "functional",
                 "args": [
                     {
                         "arg": "condition",
@@ -170,7 +172,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "5a67ebf6-702d-4f8b-8a4d-7bed29ecf0e9",
+                        "uid": "460c79da-15cb-47e5-b1ba-f7e79097f71b",
                         "name": "addBagelToCart",
                         "type": "behavior",
                         "args": [
@@ -182,7 +184,7 @@
                         ]
                     },
                     {
-                        "uid": "333b29be-692c-4eea-aea8-d9e701cfcbd4",
+                        "uid": "a75d6929-baa6-43e2-b2f5-580749e982ec",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": []
@@ -190,7 +192,7 @@
                 ]
             },
             {
-                "uid": "2fd49128-3798-4ab3-aa21-e0d1cdf740f3",
+                "uid": "3fe83712-ddb4-47a9-b175-9df9889bfa4e",
                 "name": "checkIfUserChoseDisplayCart",
                 "type": "behavior",
                 "args": [
@@ -207,8 +209,9 @@
                 ]
             },
             {
-                "uid": "96c2893c-cc20-4fae-a6c1-1ada87739a81",
-                "type": "if",
+                "uid": "10bbf6cc-2257-43c4-9a9a-3f7f87408453",
+                "name": "if",
+                "type": "functional",
                 "args": [
                     {
                         "arg": "condition",
@@ -218,7 +221,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "efadbdf3-4b50-4b0d-811d-f67f07f280f6",
+                        "uid": "e023bf61-f2db-48a3-a8b6-03563eb204d1",
                         "name": "displayCart",
                         "type": "behavior",
                         "args": [
@@ -230,7 +233,7 @@
                         ]
                     },
                     {
-                        "uid": "25526dab-2c62-49d5-9f4f-d55775047d46",
+                        "uid": "7dc7cc3b-5308-4129-bb88-ab7eeb34c6c6",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": []
@@ -238,7 +241,7 @@
                 ]
             },
             {
-                "uid": "244f7a5b-2397-481c-a3ca-7347fd78bf6e",
+                "uid": "cfebece3-5b58-4d63-9503-4dcfa993df74",
                 "name": "checkIfUserChoseClearCart",
                 "type": "behavior",
                 "args": [
@@ -255,8 +258,9 @@
                 ]
             },
             {
-                "uid": "8fb66dc1-4f1d-4324-9bb1-edd5f7cfae06",
-                "type": "if",
+                "uid": "d9f5717b-bc0a-47e3-8bb1-0e53ed1e3bcf",
+                "name": "if",
+                "type": "functional",
                 "args": [
                     {
                         "arg": "condition",
@@ -266,7 +270,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "0c3fce38-07da-465d-ba27-09c201779f55",
+                        "uid": "bf6b23f7-b546-4217-b166-207816772f03",
                         "name": "clearCart",
                         "type": "behavior",
                         "args": [
@@ -278,7 +282,7 @@
                         ]
                     },
                     {
-                        "uid": "e84a2f3c-87c8-4ee0-8985-6091d9fecd51",
+                        "uid": "9954b1a4-5384-4398-9250-353c76a5610c",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": []
@@ -288,12 +292,12 @@
         ]
     },
     {
-        "uid": "8e9734fd-1ff8-4c74-bc5c-c418519af011",
+        "uid": "c15e19b2-ef8e-4a34-85ac-bd3eed2c2a73",
         "name": "baristaPresentsMenu",
         "type": "behavior",
         "body": [
             {
-                "uid": "29cfb76a-5398-46a2-8090-aff625487bf3",
+                "uid": "c73bc5ec-370b-4eb3-a2cd-78805c7b3537",
                 "name": "terminal_display",
                 "type": "primitive",
                 "args": [
@@ -307,12 +311,12 @@
         ]
     },
     {
-        "uid": "b6c48cfe-3490-4e85-a285-d4fd86345942",
+        "uid": "a60905e5-68b1-4d27-898f-06e370a348cc",
         "name": "acceptChoice",
         "type": "behavior",
         "body": [
             {
-                "uid": "6d26e015-e074-4f8c-973f-1c2847763e1e",
+                "uid": "16301a51-c48e-41f1-8182-ee540caf5008",
                 "name": "terminal_input",
                 "type": "primitive",
                 "args": [
@@ -324,7 +328,7 @@
                 ]
             },
             {
-                "uid": "82c3ff48-9cdf-495a-9791-5fe6b847944b",
+                "uid": "20b4bc90-e3b8-4cc2-ad87-4371fa036510",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -338,12 +342,12 @@
         ]
     },
     {
-        "uid": "db794144-401c-4dd0-8988-7481da35f405",
+        "uid": "d02c8333-f31c-4a6e-8d21-c88e39862c90",
         "name": "addCoffeeToCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "8462b2d6-ea51-41f1-ba1f-9695ad4f7279",
+                "uid": "459d148f-084b-4a5d-ad8f-10b32d81c437",
                 "name": "insert_at_end_of_list",
                 "type": "primitive",
                 "args": [
@@ -362,12 +366,12 @@
         ]
     },
     {
-        "uid": "30f025c8-6de4-40c8-ba06-3239882d1ee8",
+        "uid": "e1295c15-736f-420e-9670-0f8fec5c813d",
         "name": "addBagelToCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "be872fa3-10fb-436a-898a-e6e0eaaabbca",
+                "uid": "5b1a92fb-314e-4140-9f2b-2e55fd675d7d",
                 "name": "insert_at_end_of_list",
                 "type": "primitive",
                 "args": [
@@ -386,12 +390,12 @@
         ]
     },
     {
-        "uid": "e3b01e1f-2e20-4adc-bfe5-215e8fde07f7",
+        "uid": "f1691274-c8e2-4a9f-953d-f8e817b6a352",
         "name": "displayCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "2d3b18ee-f5b8-4682-b8f7-02a46578ef6b",
+                "uid": "8986bb85-3072-405d-a1f0-e5bb55777652",
                 "name": "terminal_display",
                 "type": "primitive",
                 "args": [
@@ -405,12 +409,12 @@
         ]
     },
     {
-        "uid": "ac53a6f2-e0ca-4f4f-aa2c-a627dbbbd2ad",
+        "uid": "1c1a5556-26b1-4a46-8319-6f0200bc23f7",
         "name": "clearCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "e9ad807e-4bbd-4d1f-9f75-80b39537d4d1",
+                "uid": "ab659054-cc98-4324-845d-62c9503204d6",
                 "name": "clear_list",
                 "type": "primitive",
                 "args": [
@@ -424,10 +428,10 @@
         ]
     },
     {
-        "uid": "e66272b8-84e8-4cc0-9a57-7b820c7c05d7",
+        "uid": "86bdb047-68a7-4804-bcc0-ca2d8b1bf275",
         "body": [
             {
-                "uid": "0a62959b-dd21-4a62-bc84-1f7779f2f6c3",
+                "uid": "d7982a1a-79dc-4ae4-b10a-2dcdc18508d1",
                 "name": "structural_type",
                 "type": "primitive",
                 "args": [
@@ -439,7 +443,7 @@
                 ]
             },
             {
-                "uid": "08e7aac0-7e9d-4c8e-9565-e51f274cab75",
+                "uid": "d9053830-529c-48d4-8390-2f277fed1ef0",
                 "name": "list_contains",
                 "type": "primitive",
                 "args": [
@@ -456,12 +460,12 @@
         ]
     },
     {
-        "uid": "cfc33e79-6b04-400c-bca5-54fa0c7c988e",
+        "uid": "ca7d0b84-522b-4e77-8a9f-9d94c67c9785",
         "name": "checkIfUserChoseBagel",
         "type": "behavior",
         "body": [
             {
-                "uid": "1983a61c-3a41-44bf-93cc-473c27ecd6db",
+                "uid": "de0a93d0-bb9d-4a5d-8d2a-60fd6b69c524",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -483,7 +487,7 @@
                 ]
             },
             {
-                "uid": "ff35111c-4688-42e3-82b9-9950f3b5af7b",
+                "uid": "23c16d5d-350d-45bd-8b4a-9bb32207db3f",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -497,12 +501,12 @@
         ]
     },
     {
-        "uid": "5ddcd6db-66ae-455b-866d-426809fcd9cc",
+        "uid": "2dfb78d2-54b6-40ab-9c2f-0f766b3651f1",
         "name": "checkIfUserChoseCoffee",
         "type": "behavior",
         "body": [
             {
-                "uid": "a84904f8-b9ea-48e6-a66d-da0fd9f1c1f8",
+                "uid": "d643848f-82c7-45d7-bde9-3992ec7bfd85",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -524,7 +528,7 @@
                 ]
             },
             {
-                "uid": "a9926a51-b900-47e1-8aae-0d524740040f",
+                "uid": "cbdc3429-fef3-4adb-b179-1a4d48cdc8ea",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -538,12 +542,12 @@
         ]
     },
     {
-        "uid": "e61b2331-abba-428b-ac38-c5065a5eb2ba",
+        "uid": "09352961-483f-4bfc-a519-770ef58d6c3c",
         "name": "checkIfUserChoseDisplayCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "73ec1483-f25a-4185-a360-09e034f1ecf8",
+                "uid": "775742d5-dd4b-4290-8d24-88fca79fa32a",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -565,7 +569,7 @@
                 ]
             },
             {
-                "uid": "1c8d4f21-faba-4b14-bc57-cd070ebda23f",
+                "uid": "aeb930a6-322c-4fd9-83fe-b7e3aeb56bb3",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -579,12 +583,12 @@
         ]
     },
     {
-        "uid": "e31e8bc7-cb63-4705-a079-b9fa48cbd4db",
+        "uid": "1e7ca20b-4e77-42a0-9290-b586863ddd9e",
         "name": "checkIfUserChoseClearCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "9f1c8e00-a720-4a2c-9084-b85eb62a0882",
+                "uid": "92c0f533-dc0f-4032-b0c9-5146b4c2e969",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -606,7 +610,7 @@
                 ]
             },
             {
-                "uid": "c8b445fb-b72f-48c8-9422-63d5a2d17b83",
+                "uid": "e6ac0c34-11c8-4798-9f40-c0f9f80befc3",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
