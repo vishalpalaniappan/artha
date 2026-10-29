@@ -86,7 +86,7 @@ export class Classifier {
             const foundPrimitive = this.findPrimitive(node.command);
             if (foundPrimitive) {
                 return {
-                    type: "primitive",
+                    type: foundPrimitive.type,
                     name: foundPrimitive.name,
                     args: node.args,
                     definition: foundPrimitive
