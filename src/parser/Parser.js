@@ -148,7 +148,8 @@ export class ArthaParser {
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             uid: crypto.randomUUID(),
-            type: "if",
+            type: "functional",
+            name: "if",
             args: parsedArgs,
             body: []
         }
