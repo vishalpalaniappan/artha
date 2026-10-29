@@ -45,7 +45,7 @@ export class NarrativeWalker {
         }
 
         // Start empty narrative
-        this.narrativeStack.push([]);
+        this.narrativeStack.push([`Composite: ${atomicBehaviorName}`]);
 
         this.visitBody(atomicBehavior.body);
     }
@@ -69,15 +69,19 @@ export class NarrativeWalker {
             }
 
             if (node.type == "cmd") {
-                this.getCurrentNarrative().push(node.command);
 
                 // If composite behavior, add to the walk stack and visit the body
                 const foundBehavior = this.findBehavior(node.command);
                 if (foundBehavior) {
+
+                    this.getCurrentNarrative().push(`Composite: ${node.command}`);
                     this.walkStack.push(node.command);
                     this.visitBody(foundBehavior.body);
                     continue;
                 }
+
+                // If primitive, add to current narrative 
+                this.getCurrentNarrative().push(`   Primitive: ${node.command}`);
             }
 
             if (node.type == "if") {
