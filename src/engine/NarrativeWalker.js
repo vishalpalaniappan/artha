@@ -84,8 +84,10 @@ export class NarrativeWalker {
                 this.getCurrentNarrative().push(`   Primitive: ${node.command}`);
             }
 
-            if (node.type == "if") {
-                this.getCurrentNarrative().push(`-> ${node.type} ${node.args[0].value}`);
+            if (node.type == "functional" && node.name == "if") {
+                this.getCurrentNarrative().push(
+                    `-> ${node.type} ${node.name} ${node.args[0].value}`
+                );
 
                 // Branch the narrative at the top of stack by copying it
                 this.branchNarrative();
