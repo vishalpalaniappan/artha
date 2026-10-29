@@ -56,6 +56,8 @@ export class Classifier {
      * @param {Object} node 
      */
     classify(node) {
+        //TODO: This implementation is clumsy, I will iterate on it. I just wanted to see the syntax validation in action. I need to spend a little bit more time defining the specification cleanly and then use it for the classification and then the syntax validation. In the next step, I will use the classified nodes to validate the narrative using the established meaning. The synthesis itself is actually kind of simple after that because I have the meaning of the computable and legacy primitives, I just need to connect them together using the functional primitives and make it excutable.
+
         if (node.type === "behavior") {
             return {
                 type: "behavior",
