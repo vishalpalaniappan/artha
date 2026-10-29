@@ -1,6 +1,6 @@
 [
     {
-        "uid": "add7dae2-bc79-4c0c-8644-b89f45c3cbaa",
+        "uid": "00607e76-144b-4ed1-b4fe-1ef85cf292c4",
         "name": "import",
         "type": "primitive",
         "args": [
@@ -9,10 +9,26 @@
                 "type": "string",
                 "value": "includes/user_choice.ar"
             }
-        ]
+        ],
+        "definition": {
+            "name": "import",
+            "type": "meta_primitive",
+            "description": "Imports file into meaning (artha, txt, json etc) and provides optional alias. The alias will be useful for cases where a JSON file is imported and used in the files meaning.",
+            "syntax": "import",
+            "attributes": [
+                {
+                    "name": "file",
+                    "required": "true"
+                },
+                {
+                    "name": "alias",
+                    "required": "false"
+                }
+            ]
+        }
     },
     {
-        "uid": "2021f0ef-5e78-45c6-8e66-80af0c968e26",
+        "uid": "1ce6fc7e-18ea-4d39-9982-664c051220be",
         "name": "import",
         "type": "primitive",
         "args": [
@@ -21,15 +37,31 @@
                 "type": "string",
                 "value": "participants/Cart.ar"
             }
-        ]
+        ],
+        "definition": {
+            "name": "import",
+            "type": "meta_primitive",
+            "description": "Imports file into meaning (artha, txt, json etc) and provides optional alias. The alias will be useful for cases where a JSON file is imported and used in the files meaning.",
+            "syntax": "import",
+            "attributes": [
+                {
+                    "name": "file",
+                    "required": "true"
+                },
+                {
+                    "name": "alias",
+                    "required": "false"
+                }
+            ]
+        }
     },
     {
-        "uid": "527b1bb8-13de-420a-9b37-3d696ed0c6da",
+        "uid": "1894fe06-bf28-4186-a5fc-808cf7dff423",
         "name": "coffeeShop",
         "type": "behavior",
         "body": [
             {
-                "uid": "8e53497e-556a-4be2-b8a5-64b20122e8a6",
+                "uid": "50632ea6-5049-46cc-acd4-f4166e15b8a7",
                 "name": "introduce",
                 "type": "primitive",
                 "args": [
@@ -43,10 +75,30 @@
                         "type": "name",
                         "value": "cartparticipant=Cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "introduce",
+                    "type": "meta_primitive",
+                    "description": "Introduces a participant into the world",
+                    "syntax": "introduce",
+                    "attributes": [
+                        {
+                            "name": "name",
+                            "required": "true"
+                        },
+                        {
+                            "name": "role",
+                            "required": "true"
+                        },
+                        {
+                            "name": "participant",
+                            "required": "true"
+                        }
+                    ]
+                }
             },
             {
-                "uid": "22164042-72b4-4e3e-8df3-c867c474a7fd",
+                "uid": "f771e040-9ffc-447c-bc40-f1da478fc0bf",
                 "name": "introduce",
                 "type": "primitive",
                 "args": [
@@ -60,29 +112,291 @@
                         "type": "name",
                         "value": "menuparticipant=menu"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "introduce",
+                    "type": "meta_primitive",
+                    "description": "Introduces a participant into the world",
+                    "syntax": "introduce",
+                    "attributes": [
+                        {
+                            "name": "name",
+                            "required": "true"
+                        },
+                        {
+                            "name": "role",
+                            "required": "true"
+                        },
+                        {
+                            "name": "participant",
+                            "required": "true"
+                        }
+                    ]
+                }
             },
             {
-                "uid": "e5d41389-936f-479e-9fa6-29ffde51dcb7",
+                "uid": "ac8ba271-eb05-4ac3-b099-0608ca9ad428",
                 "name": "visitShop",
                 "type": "behavior",
-                "args": []
+                "args": [],
+                "definition": {
+                    "uid": "20753d0d-2b7b-4fde-8c21-e8a0285d87fa",
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "visitShop",
+                    "body": [
+                        {
+                            "uid": "bd795884-5b10-44f9-91da-3b2c51c59e9a",
+                            "type": "cmd",
+                            "command": "baristaPresentsMenu",
+                            "args": []
+                        },
+                        {
+                            "uid": "4294acf0-8117-435c-8265-845219ae70fb",
+                            "type": "cmd",
+                            "command": "acceptChoice",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "3227cda1-d146-4520-8039-ff99cbc6db18",
+                            "type": "cmd",
+                            "command": "checkIfUserChoseCoffee",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_coffee"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "90923b70-9a17-47e7-b442-eaa5413c9535",
+                            "type": "functional",
+                            "name": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_coffee"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "uid": "b965d25f-c6a5-4d9b-ad06-3bb8104e6d50",
+                                    "type": "cmd",
+                                    "command": "addCoffeeToCart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "56a6dd6b-8679-4db5-9f9a-f51583dcaafa",
+                                    "type": "cmd",
+                                    "command": "visitShop",
+                                    "args": []
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "0aa1611a-3f31-4272-b2e3-74b8ed39de6f",
+                            "type": "cmd",
+                            "command": "checkIfUserChoseBagel",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "fcff0c03-8ee7-4ee7-b933-137fb67d6a36",
+                            "type": "functional",
+                            "name": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "uid": "de249dbc-da5e-4090-b6e2-afd090617ea1",
+                                    "type": "cmd",
+                                    "command": "addBagelToCart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "87896ea1-e149-486f-b192-c42a31a15ad8",
+                                    "type": "cmd",
+                                    "command": "visitShop",
+                                    "args": []
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "146ac8d3-a2ad-4b09-ae87-5f36c226f9ba",
+                            "type": "cmd",
+                            "command": "checkIfUserChoseDisplayCart",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_display_cart"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "5afb215e-0978-48db-a68c-3fbc622afcfd",
+                            "type": "functional",
+                            "name": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_display_cart"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "uid": "8b5f7d1a-4ac3-4c92-a295-e8b67fad4f22",
+                                    "type": "cmd",
+                                    "command": "displayCart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "0a9531bd-fe16-423e-b98a-5635a5f4335d",
+                                    "type": "cmd",
+                                    "command": "visitShop",
+                                    "args": []
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "5c850f01-19db-44e9-bdfe-a5bd39a6d723",
+                            "type": "cmd",
+                            "command": "checkIfUserChoseClearCart",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_clear_cart"
+                                },
+                                {
+                                    "arg": "choice",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "08e2216e-384c-4261-ab0b-701d8f488bb2",
+                            "type": "functional",
+                            "name": "if",
+                            "args": [
+                                {
+                                    "arg": "condition",
+                                    "type": "name",
+                                    "value": "user_chose_clear_cart"
+                                }
+                            ],
+                            "body": [
+                                {
+                                    "uid": "81523e1c-304b-4ba1-ac50-15ede8d1bc92",
+                                    "type": "cmd",
+                                    "command": "clearCart",
+                                    "args": [
+                                        {
+                                            "arg": "cart",
+                                            "type": "name",
+                                            "value": "shopping_cart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "6a48a752-99bd-4245-bacb-4c256e3dd5d8",
+                                    "type": "cmd",
+                                    "command": "visitShop",
+                                    "args": []
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         ]
     },
     {
-        "uid": "84cf8896-8c89-4a32-86ca-d893f054bf5d",
+        "uid": "20753d0d-2b7b-4fde-8c21-e8a0285d87fa",
         "name": "visitShop",
         "type": "behavior",
         "body": [
             {
-                "uid": "fe86dd61-6919-46f7-8273-fe111718eba0",
+                "uid": "bd795884-5b10-44f9-91da-3b2c51c59e9a",
                 "name": "baristaPresentsMenu",
                 "type": "behavior",
-                "args": []
+                "args": [],
+                "definition": {
+                    "uid": "a80ae250-6ee3-46b2-b683-752218c8fffd",
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "baristaPresentsMenu",
+                    "body": [
+                        {
+                            "uid": "d8d7657b-8e0f-401f-b881-95260ca6a644",
+                            "type": "cmd",
+                            "command": "terminal_display",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "name",
+                                    "value": "menu"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "uid": "639943dd-3f38-4180-89a9-bbc5b4620906",
+                "uid": "4294acf0-8117-435c-8265-845219ae70fb",
                 "name": "acceptChoice",
                 "type": "behavior",
                 "args": [
@@ -91,10 +405,42 @@
                         "type": "name",
                         "value": "user_choice"
                     }
-                ]
+                ],
+                "definition": {
+                    "uid": "a06e26c2-3192-4658-ba0a-70d4c8366fa9",
+                    "type": "behavior",
+                    "parsedArgs": [],
+                    "behaviorName": "acceptChoice",
+                    "body": [
+                        {
+                            "uid": "612b6a87-fa6e-4724-8a2d-aac4226280de",
+                            "type": "cmd",
+                            "command": "terminal_input",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "terminal_input"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "2574bf7a-cb5b-451c-baea-dbf6654a52d8",
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": "value",
+                                    "type": "name",
+                                    "value": "terminal_input"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "uid": "56833a5b-86d1-499e-b578-8b08015bab63",
+                "uid": "3227cda1-d146-4520-8039-ff99cbc6db18",
                 "name": "checkIfUserChoseCoffee",
                 "type": "behavior",
                 "args": [
@@ -108,10 +454,58 @@
                         "type": "name",
                         "value": "user_choice"
                     }
-                ]
+                ],
+                "definition": {
+                    "uid": "ccf343e3-62d2-4677-9733-8734ee7954e7",
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseCoffee",
+                    "body": [
+                        {
+                            "uid": "8a46af23-36a0-46b6-8317-9d5a9188d11d",
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "did_user_chose_coffee"
+                                },
+                                {
+                                    "arg": "value1",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "value2",
+                                    "type": "string",
+                                    "value": "Coffee"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "072fb414-7c11-4cf5-9e6d-f771f19dec2b",
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "user_chose_coffee"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "uid": "047e9628-ee52-4f0a-968a-c56da3ba0b59",
+                "uid": "90923b70-9a17-47e7-b442-eaa5413c9535",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -123,7 +517,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "e47383fe-6e23-4886-989e-90c850c177f6",
+                        "uid": "b965d25f-c6a5-4d9b-ad06-3bb8104e6d50",
                         "name": "addCoffeeToCart",
                         "type": "behavior",
                         "args": [
@@ -132,18 +526,271 @@
                                 "type": "name",
                                 "value": "shopping_cart"
                             }
-                        ]
+                        ],
+                        "definition": {
+                            "uid": "1e5a81aa-eec6-4a42-967c-1471e0391c0c",
+                            "type": "behavior",
+                            "parsedArgs": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ],
+                            "behaviorName": "addCoffeeToCart",
+                            "body": [
+                                {
+                                    "uid": "97bae5bd-0303-4fb0-9810-21314d06969e",
+                                    "type": "cmd",
+                                    "command": "insert_at_end_of_list",
+                                    "args": [
+                                        {
+                                            "arg": "value",
+                                            "type": "string",
+                                            "value": "Coffee"
+                                        },
+                                        {
+                                            "arg": "list",
+                                            "type": "name",
+                                            "value": "cart"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     },
                     {
-                        "uid": "a2f76b77-6254-4ace-844f-0b2c8be0583a",
+                        "uid": "56a6dd6b-8679-4db5-9f9a-f51583dcaafa",
                         "name": "visitShop",
                         "type": "behavior",
-                        "args": []
+                        "args": [],
+                        "definition": {
+                            "uid": "20753d0d-2b7b-4fde-8c21-e8a0285d87fa",
+                            "type": "behavior",
+                            "parsedArgs": [],
+                            "behaviorName": "visitShop",
+                            "body": [
+                                {
+                                    "uid": "bd795884-5b10-44f9-91da-3b2c51c59e9a",
+                                    "type": "cmd",
+                                    "command": "baristaPresentsMenu",
+                                    "args": []
+                                },
+                                {
+                                    "uid": "4294acf0-8117-435c-8265-845219ae70fb",
+                                    "type": "cmd",
+                                    "command": "acceptChoice",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "3227cda1-d146-4520-8039-ff99cbc6db18",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseCoffee",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "90923b70-9a17-47e7-b442-eaa5413c9535",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "b965d25f-c6a5-4d9b-ad06-3bb8104e6d50",
+                                            "type": "cmd",
+                                            "command": "addCoffeeToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "56a6dd6b-8679-4db5-9f9a-f51583dcaafa",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "0aa1611a-3f31-4272-b2e3-74b8ed39de6f",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseBagel",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "fcff0c03-8ee7-4ee7-b933-137fb67d6a36",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "de249dbc-da5e-4090-b6e2-afd090617ea1",
+                                            "type": "cmd",
+                                            "command": "addBagelToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "87896ea1-e149-486f-b192-c42a31a15ad8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "146ac8d3-a2ad-4b09-ae87-5f36c226f9ba",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseDisplayCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5afb215e-0978-48db-a68c-3fbc622afcfd",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "8b5f7d1a-4ac3-4c92-a295-e8b67fad4f22",
+                                            "type": "cmd",
+                                            "command": "displayCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "0a9531bd-fe16-423e-b98a-5635a5f4335d",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5c850f01-19db-44e9-bdfe-a5bd39a6d723",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseClearCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "08e2216e-384c-4261-ab0b-701d8f488bb2",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "81523e1c-304b-4ba1-ac50-15ede8d1bc92",
+                                            "type": "cmd",
+                                            "command": "clearCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "6a48a752-99bd-4245-bacb-4c256e3dd5d8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     }
                 ]
             },
             {
-                "uid": "43b99d63-5d23-49c3-8942-ed483429c566",
+                "uid": "0aa1611a-3f31-4272-b2e3-74b8ed39de6f",
                 "name": "checkIfUserChoseBagel",
                 "type": "behavior",
                 "args": [
@@ -157,10 +804,58 @@
                         "type": "name",
                         "value": "user_choice"
                     }
-                ]
+                ],
+                "definition": {
+                    "uid": "91deffaf-5290-4e47-ae4d-118ba762b12b",
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseBagel",
+                    "body": [
+                        {
+                            "uid": "cbf20d2b-a909-4f69-8b51-1190cc992915",
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                },
+                                {
+                                    "arg": "value1",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "value2",
+                                    "type": "string",
+                                    "value": "Bagel"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "2550ff37-4744-43a5-bc4b-a187801f9ea8",
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "user_chose_bagel"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "uid": "985e5097-f841-4fb9-877b-2bbe1d23b893",
+                "uid": "fcff0c03-8ee7-4ee7-b933-137fb67d6a36",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -172,7 +867,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "b7df88b5-739d-4b8e-b0d2-c41ce1eafaee",
+                        "uid": "de249dbc-da5e-4090-b6e2-afd090617ea1",
                         "name": "addBagelToCart",
                         "type": "behavior",
                         "args": [
@@ -181,18 +876,271 @@
                                 "type": "name",
                                 "value": "shopping_cart"
                             }
-                        ]
+                        ],
+                        "definition": {
+                            "uid": "b1c3b221-d72f-4a48-a924-359fe835fd4f",
+                            "type": "behavior",
+                            "parsedArgs": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ],
+                            "behaviorName": "addBagelToCart",
+                            "body": [
+                                {
+                                    "uid": "135dc03c-10ac-4c19-869b-e290d6200b7d",
+                                    "type": "cmd",
+                                    "command": "insert_at_end_of_list",
+                                    "args": [
+                                        {
+                                            "arg": "value",
+                                            "type": "string",
+                                            "value": "Bagel"
+                                        },
+                                        {
+                                            "arg": "list",
+                                            "type": "name",
+                                            "value": "cart"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     },
                     {
-                        "uid": "a4513e32-68f4-40ac-bcec-2c9ffc567c1b",
+                        "uid": "87896ea1-e149-486f-b192-c42a31a15ad8",
                         "name": "visitShop",
                         "type": "behavior",
-                        "args": []
+                        "args": [],
+                        "definition": {
+                            "uid": "20753d0d-2b7b-4fde-8c21-e8a0285d87fa",
+                            "type": "behavior",
+                            "parsedArgs": [],
+                            "behaviorName": "visitShop",
+                            "body": [
+                                {
+                                    "uid": "bd795884-5b10-44f9-91da-3b2c51c59e9a",
+                                    "type": "cmd",
+                                    "command": "baristaPresentsMenu",
+                                    "args": []
+                                },
+                                {
+                                    "uid": "4294acf0-8117-435c-8265-845219ae70fb",
+                                    "type": "cmd",
+                                    "command": "acceptChoice",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "3227cda1-d146-4520-8039-ff99cbc6db18",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseCoffee",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "90923b70-9a17-47e7-b442-eaa5413c9535",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "b965d25f-c6a5-4d9b-ad06-3bb8104e6d50",
+                                            "type": "cmd",
+                                            "command": "addCoffeeToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "56a6dd6b-8679-4db5-9f9a-f51583dcaafa",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "0aa1611a-3f31-4272-b2e3-74b8ed39de6f",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseBagel",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "fcff0c03-8ee7-4ee7-b933-137fb67d6a36",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "de249dbc-da5e-4090-b6e2-afd090617ea1",
+                                            "type": "cmd",
+                                            "command": "addBagelToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "87896ea1-e149-486f-b192-c42a31a15ad8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "146ac8d3-a2ad-4b09-ae87-5f36c226f9ba",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseDisplayCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5afb215e-0978-48db-a68c-3fbc622afcfd",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "8b5f7d1a-4ac3-4c92-a295-e8b67fad4f22",
+                                            "type": "cmd",
+                                            "command": "displayCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "0a9531bd-fe16-423e-b98a-5635a5f4335d",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5c850f01-19db-44e9-bdfe-a5bd39a6d723",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseClearCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "08e2216e-384c-4261-ab0b-701d8f488bb2",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "81523e1c-304b-4ba1-ac50-15ede8d1bc92",
+                                            "type": "cmd",
+                                            "command": "clearCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "6a48a752-99bd-4245-bacb-4c256e3dd5d8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     }
                 ]
             },
             {
-                "uid": "b73d2853-6090-478c-8806-3b32c82da80f",
+                "uid": "146ac8d3-a2ad-4b09-ae87-5f36c226f9ba",
                 "name": "checkIfUserChoseDisplayCart",
                 "type": "behavior",
                 "args": [
@@ -206,10 +1154,58 @@
                         "type": "name",
                         "value": "user_choice"
                     }
-                ]
+                ],
+                "definition": {
+                    "uid": "00cbd662-513d-4696-9f15-d2477f545052",
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseDisplayCart",
+                    "body": [
+                        {
+                            "uid": "8770681c-5da5-4407-80c2-100e353fd1df",
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "did_user_choose_display_cart"
+                                },
+                                {
+                                    "arg": "value1",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "value2",
+                                    "type": "string",
+                                    "value": "View"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "171f0a96-6229-4066-8f65-b55b50278133",
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "did_user_choose_display_cart"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "uid": "134898a3-436c-4d12-8729-253ac6aaec55",
+                "uid": "5afb215e-0978-48db-a68c-3fbc622afcfd",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -221,7 +1217,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "fe3b2244-3f38-42a9-9fee-a34c08a8a394",
+                        "uid": "8b5f7d1a-4ac3-4c92-a295-e8b67fad4f22",
                         "name": "displayCart",
                         "type": "behavior",
                         "args": [
@@ -230,18 +1226,266 @@
                                 "type": "name",
                                 "value": "shopping_cart"
                             }
-                        ]
+                        ],
+                        "definition": {
+                            "uid": "8de8478c-7cd4-4d88-bd13-471cda5a91e9",
+                            "type": "behavior",
+                            "parsedArgs": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ],
+                            "behaviorName": "displayCart",
+                            "body": [
+                                {
+                                    "uid": "f38896d5-f563-470e-9651-3c877121b7a8",
+                                    "type": "cmd",
+                                    "command": "terminal_display",
+                                    "args": [
+                                        {
+                                            "arg": "value",
+                                            "type": "name",
+                                            "value": "cart"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     },
                     {
-                        "uid": "fdcd6f6a-6a85-400a-b648-d97111039264",
+                        "uid": "0a9531bd-fe16-423e-b98a-5635a5f4335d",
                         "name": "visitShop",
                         "type": "behavior",
-                        "args": []
+                        "args": [],
+                        "definition": {
+                            "uid": "20753d0d-2b7b-4fde-8c21-e8a0285d87fa",
+                            "type": "behavior",
+                            "parsedArgs": [],
+                            "behaviorName": "visitShop",
+                            "body": [
+                                {
+                                    "uid": "bd795884-5b10-44f9-91da-3b2c51c59e9a",
+                                    "type": "cmd",
+                                    "command": "baristaPresentsMenu",
+                                    "args": []
+                                },
+                                {
+                                    "uid": "4294acf0-8117-435c-8265-845219ae70fb",
+                                    "type": "cmd",
+                                    "command": "acceptChoice",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "3227cda1-d146-4520-8039-ff99cbc6db18",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseCoffee",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "90923b70-9a17-47e7-b442-eaa5413c9535",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "b965d25f-c6a5-4d9b-ad06-3bb8104e6d50",
+                                            "type": "cmd",
+                                            "command": "addCoffeeToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "56a6dd6b-8679-4db5-9f9a-f51583dcaafa",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "0aa1611a-3f31-4272-b2e3-74b8ed39de6f",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseBagel",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "fcff0c03-8ee7-4ee7-b933-137fb67d6a36",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "de249dbc-da5e-4090-b6e2-afd090617ea1",
+                                            "type": "cmd",
+                                            "command": "addBagelToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "87896ea1-e149-486f-b192-c42a31a15ad8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "146ac8d3-a2ad-4b09-ae87-5f36c226f9ba",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseDisplayCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5afb215e-0978-48db-a68c-3fbc622afcfd",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "8b5f7d1a-4ac3-4c92-a295-e8b67fad4f22",
+                                            "type": "cmd",
+                                            "command": "displayCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "0a9531bd-fe16-423e-b98a-5635a5f4335d",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5c850f01-19db-44e9-bdfe-a5bd39a6d723",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseClearCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "08e2216e-384c-4261-ab0b-701d8f488bb2",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "81523e1c-304b-4ba1-ac50-15ede8d1bc92",
+                                            "type": "cmd",
+                                            "command": "clearCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "6a48a752-99bd-4245-bacb-4c256e3dd5d8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     }
                 ]
             },
             {
-                "uid": "0f6c6901-7ade-47a4-aa5a-cad745dc429d",
+                "uid": "5c850f01-19db-44e9-bdfe-a5bd39a6d723",
                 "name": "checkIfUserChoseClearCart",
                 "type": "behavior",
                 "args": [
@@ -255,10 +1499,58 @@
                         "type": "name",
                         "value": "user_choice"
                     }
-                ]
+                ],
+                "definition": {
+                    "uid": "7c89d31e-13b8-4a6c-a750-c01c03ed0e37",
+                    "type": "behavior",
+                    "parsedArgs": [
+                        {
+                            "arg": null,
+                            "type": "name",
+                            "value": "user_choice"
+                        }
+                    ],
+                    "behaviorName": "checkIfUserChoseClearCart",
+                    "body": [
+                        {
+                            "uid": "53404353-b8f7-41bd-83a9-3f41ec5957d6",
+                            "type": "cmd",
+                            "command": "equals",
+                            "args": [
+                                {
+                                    "arg": "alias",
+                                    "type": "name",
+                                    "value": "did_user_choose_clear_cart"
+                                },
+                                {
+                                    "arg": "value1",
+                                    "type": "name",
+                                    "value": "user_choice"
+                                },
+                                {
+                                    "arg": "value2",
+                                    "type": "string",
+                                    "value": "Clear"
+                                }
+                            ]
+                        },
+                        {
+                            "uid": "f74d29e8-7685-4033-ac79-40d2c17924a7",
+                            "type": "cmd",
+                            "command": "yield",
+                            "args": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "did_user_choose_clear_cart"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
             {
-                "uid": "8dd14aef-e9cf-432c-89be-3257f441a72d",
+                "uid": "08e2216e-384c-4261-ab0b-701d8f488bb2",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -270,7 +1562,7 @@
                 ],
                 "body": [
                     {
-                        "uid": "648149aa-e9f8-462c-bace-6785010aee7c",
+                        "uid": "81523e1c-304b-4ba1-ac50-15ede8d1bc92",
                         "name": "clearCart",
                         "type": "behavior",
                         "args": [
@@ -279,25 +1571,273 @@
                                 "type": "name",
                                 "value": "shopping_cart"
                             }
-                        ]
+                        ],
+                        "definition": {
+                            "uid": "cbd93d83-123c-4aa2-a88f-8aa189bb1766",
+                            "type": "behavior",
+                            "parsedArgs": [
+                                {
+                                    "arg": null,
+                                    "type": "name",
+                                    "value": "cart"
+                                }
+                            ],
+                            "behaviorName": "clearCart",
+                            "body": [
+                                {
+                                    "uid": "09a58e96-ed5e-46c3-9f1b-4460d341edc1",
+                                    "type": "cmd",
+                                    "command": "clear_list",
+                                    "args": [
+                                        {
+                                            "arg": "list",
+                                            "type": "name",
+                                            "value": "cart"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     },
                     {
-                        "uid": "b02b4fe2-04e1-471c-830b-22fa36706f56",
+                        "uid": "6a48a752-99bd-4245-bacb-4c256e3dd5d8",
                         "name": "visitShop",
                         "type": "behavior",
-                        "args": []
+                        "args": [],
+                        "definition": {
+                            "uid": "20753d0d-2b7b-4fde-8c21-e8a0285d87fa",
+                            "type": "behavior",
+                            "parsedArgs": [],
+                            "behaviorName": "visitShop",
+                            "body": [
+                                {
+                                    "uid": "bd795884-5b10-44f9-91da-3b2c51c59e9a",
+                                    "type": "cmd",
+                                    "command": "baristaPresentsMenu",
+                                    "args": []
+                                },
+                                {
+                                    "uid": "4294acf0-8117-435c-8265-845219ae70fb",
+                                    "type": "cmd",
+                                    "command": "acceptChoice",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "3227cda1-d146-4520-8039-ff99cbc6db18",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseCoffee",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "90923b70-9a17-47e7-b442-eaa5413c9535",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_coffee"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "b965d25f-c6a5-4d9b-ad06-3bb8104e6d50",
+                                            "type": "cmd",
+                                            "command": "addCoffeeToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "56a6dd6b-8679-4db5-9f9a-f51583dcaafa",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "0aa1611a-3f31-4272-b2e3-74b8ed39de6f",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseBagel",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "fcff0c03-8ee7-4ee7-b933-137fb67d6a36",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_bagel"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "de249dbc-da5e-4090-b6e2-afd090617ea1",
+                                            "type": "cmd",
+                                            "command": "addBagelToCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "87896ea1-e149-486f-b192-c42a31a15ad8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "146ac8d3-a2ad-4b09-ae87-5f36c226f9ba",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseDisplayCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5afb215e-0978-48db-a68c-3fbc622afcfd",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_display_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "8b5f7d1a-4ac3-4c92-a295-e8b67fad4f22",
+                                            "type": "cmd",
+                                            "command": "displayCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "0a9531bd-fe16-423e-b98a-5635a5f4335d",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "5c850f01-19db-44e9-bdfe-a5bd39a6d723",
+                                    "type": "cmd",
+                                    "command": "checkIfUserChoseClearCart",
+                                    "args": [
+                                        {
+                                            "arg": "alias",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        },
+                                        {
+                                            "arg": "choice",
+                                            "type": "name",
+                                            "value": "user_choice"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "uid": "08e2216e-384c-4261-ab0b-701d8f488bb2",
+                                    "type": "functional",
+                                    "name": "if",
+                                    "args": [
+                                        {
+                                            "arg": "condition",
+                                            "type": "name",
+                                            "value": "user_chose_clear_cart"
+                                        }
+                                    ],
+                                    "body": [
+                                        {
+                                            "uid": "81523e1c-304b-4ba1-ac50-15ede8d1bc92",
+                                            "type": "cmd",
+                                            "command": "clearCart",
+                                            "args": [
+                                                {
+                                                    "arg": "cart",
+                                                    "type": "name",
+                                                    "value": "shopping_cart"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "uid": "6a48a752-99bd-4245-bacb-4c256e3dd5d8",
+                                            "type": "cmd",
+                                            "command": "visitShop",
+                                            "args": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
                     }
                 ]
             }
         ]
     },
     {
-        "uid": "5de1bafd-ac76-48c9-a9cb-51b9c48d133c",
+        "uid": "a80ae250-6ee3-46b2-b683-752218c8fffd",
         "name": "baristaPresentsMenu",
         "type": "behavior",
         "body": [
             {
-                "uid": "fb53bc92-e520-435e-90fe-cd927ed5f6d7",
+                "uid": "d8d7657b-8e0f-401f-b881-95260ca6a644",
                 "name": "terminal_display",
                 "type": "primitive",
                 "args": [
@@ -306,17 +1846,31 @@
                         "type": "name",
                         "value": "menu"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "terminal_display",
+                    "type": "legacy_primitives",
+                    "description": "Displays the provided text in the console.",
+                    "syntax": "terminal_display",
+                    "participants": [
+                        {
+                            "name": "message",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "The implementation will throw if message combines multiple types (ex print(1 + None)). This isn't an issue because I will be using a participant directly in the synthesis but it is something to be aware of. I have not exhausted all the possible issues and I'm leaving this note to revisit this and also specify the invariants."
+                }
             }
         ]
     },
     {
-        "uid": "077e2670-0b0e-42c6-a07d-35c39b82abd0",
+        "uid": "a06e26c2-3192-4658-ba0a-70d4c8366fa9",
         "name": "acceptChoice",
         "type": "behavior",
         "body": [
             {
-                "uid": "2e7714d3-08fe-4040-8075-803ea1c652cc",
+                "uid": "612b6a87-fa6e-4724-8a2d-aac4226280de",
                 "name": "terminal_input",
                 "type": "primitive",
                 "args": [
@@ -325,10 +1879,36 @@
                         "type": "name",
                         "value": "terminal_input"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "terminal_input",
+                    "type": "legacy_primitive",
+                    "description": "Accepts and stores the input from terminal. This is a legacy primitive because the meaning stops at this layer (even though it is built from more primitives) but I am establishing it as a primitive because I haven't yet constructed this meaning from computable semantic primitives.",
+                    "syntax": "terminal_input",
+                    "participants": [
+                        {
+                            "name": "save_input",
+                            "modifies": "true",
+                            "required": "true"
+                        },
+                        {
+                            "name": "eof_behavior",
+                            "behavior": "true",
+                            "required": "false"
+                        },
+                        {
+                            "name": "keyboard_behavior",
+                            "behavior": "true",
+                            "required": "false"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "This primitive throws an EOFError and Keyboard Interrupt error. EOFError can be triggered by using CTRL+D in unix environments and Ctrl+Z followed by Enter in windows. Keyboard interrupts happen when Ctrl + C is used to terminate program in console. The meaning of these errors are built into the primitive and as part of the narrative that uses them the relevant behavior that should be exhibited can be specified. So in the synthesized implementation, I will throw the errors and then the specified meaning is used.",
+                    "_note2": "I will extend the syntax for the errors after I implement the necessary functionality."
+                }
             },
             {
-                "uid": "859435ce-7cf8-4005-bb15-55c8f453d33d",
+                "uid": "2574bf7a-cb5b-451c-baea-dbf6654a52d8",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -337,17 +1917,29 @@
                         "type": "name",
                         "value": "terminal_input"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "yield",
+                    "type": "meta_primitive",
+                    "description": "Indicates that a behavior yields a value.",
+                    "syntax": "yield",
+                    "attributes": [
+                        {
+                            "name": "alias",
+                            "required": "true"
+                        }
+                    ]
+                }
             }
         ]
     },
     {
-        "uid": "f9449be9-0528-49f0-8a9a-d7f9fbfadea9",
+        "uid": "1e5a81aa-eec6-4a42-967c-1471e0391c0c",
         "name": "addCoffeeToCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "bc678bb4-3efc-4231-8d06-bb922d7afe21",
+                "uid": "97bae5bd-0303-4fb0-9810-21314d06969e",
                 "name": "insert_at_end_of_list",
                 "type": "primitive",
                 "args": [
@@ -361,17 +1953,53 @@
                         "type": "name",
                         "value": "cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "insert_at_end_of_list",
+                    "type": "computable_primitive",
+                    "description": "Inserts item to end of list.",
+                    "syntax": "insert_at_end_of_list",
+                    "participants": [
+                        {
+                            "name": "item",
+                            "required": "true"
+                        },
+                        {
+                            "name": "list",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {
+                        "id_1": {
+                            "participants": [
+                                "list"
+                            ],
+                            "property": [
+                                "structuralType"
+                            ],
+                            "condition": [
+                                "list"
+                            ],
+                            "description": "list must have structuralType List.",
+                            "invalidValues": [
+                                {
+                                    "value": "string_value",
+                                    "description": "A string is provided as list participant"
+                                }
+                            ]
+                        }
+                    }
+                }
             }
         ]
     },
     {
-        "uid": "c863eb99-c0ff-49f8-9fd6-c4658f7cf5a4",
+        "uid": "b1c3b221-d72f-4a48-a924-359fe835fd4f",
         "name": "addBagelToCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "494e0a85-6ff3-4627-83b3-bb7eabf72ba8",
+                "uid": "135dc03c-10ac-4c19-869b-e290d6200b7d",
                 "name": "insert_at_end_of_list",
                 "type": "primitive",
                 "args": [
@@ -385,17 +2013,53 @@
                         "type": "name",
                         "value": "cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "insert_at_end_of_list",
+                    "type": "computable_primitive",
+                    "description": "Inserts item to end of list.",
+                    "syntax": "insert_at_end_of_list",
+                    "participants": [
+                        {
+                            "name": "item",
+                            "required": "true"
+                        },
+                        {
+                            "name": "list",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {
+                        "id_1": {
+                            "participants": [
+                                "list"
+                            ],
+                            "property": [
+                                "structuralType"
+                            ],
+                            "condition": [
+                                "list"
+                            ],
+                            "description": "list must have structuralType List.",
+                            "invalidValues": [
+                                {
+                                    "value": "string_value",
+                                    "description": "A string is provided as list participant"
+                                }
+                            ]
+                        }
+                    }
+                }
             }
         ]
     },
     {
-        "uid": "0167202a-a55b-4e7f-8692-ff04b4afcada",
+        "uid": "8de8478c-7cd4-4d88-bd13-471cda5a91e9",
         "name": "displayCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "97d7781d-4214-467e-a88b-fe5bb9ac8c9d",
+                "uid": "f38896d5-f563-470e-9651-3c877121b7a8",
                 "name": "terminal_display",
                 "type": "primitive",
                 "args": [
@@ -404,17 +2068,31 @@
                         "type": "name",
                         "value": "cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "terminal_display",
+                    "type": "legacy_primitives",
+                    "description": "Displays the provided text in the console.",
+                    "syntax": "terminal_display",
+                    "participants": [
+                        {
+                            "name": "message",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "The implementation will throw if message combines multiple types (ex print(1 + None)). This isn't an issue because I will be using a participant directly in the synthesis but it is something to be aware of. I have not exhausted all the possible issues and I'm leaving this note to revisit this and also specify the invariants."
+                }
             }
         ]
     },
     {
-        "uid": "8d6feae1-dc6f-4f5f-ad85-d017893b5f1b",
+        "uid": "cbd93d83-123c-4aa2-a88f-8aa189bb1766",
         "name": "clearCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "ff1ae1d5-99f0-4476-8604-3c995dd17db3",
+                "uid": "09a58e96-ed5e-46c3-9f1b-4460d341edc1",
                 "name": "clear_list",
                 "type": "primitive",
                 "args": [
@@ -423,17 +2101,49 @@
                         "type": "name",
                         "value": "cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "clear_list",
+                    "type": "computable_primitive",
+                    "description": "Removes all items from a list.",
+                    "syntax": "clear_list",
+                    "participants": [
+                        {
+                            "name": "list",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {
+                        "id_1": {
+                            "participants": [
+                                "list"
+                            ],
+                            "property": [
+                                "structuralType"
+                            ],
+                            "condition": [
+                                "list"
+                            ],
+                            "description": "list must have structuralType List.",
+                            "invalidValues": [
+                                {
+                                    "value": "string_value",
+                                    "description": "A string is provided as list participant"
+                                }
+                            ]
+                        }
+                    }
+                }
             }
         ]
     },
     {
-        "uid": "63393866-f932-44c6-834a-4bb481d91786",
+        "uid": "45251b5f-4ab9-4f10-963a-51c3757e6fab",
         "name": "Cart",
         "type": "participant",
         "body": [
             {
-                "uid": "b8e4b6ec-83a3-415a-98e6-dcb17b0b508d",
+                "uid": "7f1d3ea4-8063-42b2-af63-40717084f76a",
                 "name": "structural_type",
                 "type": "primitive",
                 "args": [
@@ -442,10 +2152,22 @@
                         "type": "string",
                         "value": "list"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "structural_type",
+                    "type": "meta_primitive",
+                    "description": "Establishes that structural type of a participant.",
+                    "syntax": "structural_type",
+                    "attributes": [
+                        {
+                            "name": "type",
+                            "required": "true"
+                        }
+                    ]
+                }
             },
             {
-                "uid": "e99f8acf-e08b-4f3b-a4c3-2018f61d591a",
+                "uid": "0ac57b47-995a-4ece-a2a6-e245a51ea9f8",
                 "name": "list_contains",
                 "type": "primitive",
                 "args": [
@@ -457,17 +2179,31 @@
                             "Bagel"
                         ]
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "list_contains",
+                    "type": "meta_primitive",
+                    "description": "For participants with structural type list, it establishes the role of the participants that the list can contain.",
+                    "syntax": "list_contains",
+                    "attributes": [
+                        {
+                            "name": "values",
+                            "structural_type": "list",
+                            "required": "true"
+                        }
+                    ],
+                    "_note": "When a participant has a particular structural type, there are other meta attributes like list_contains which need to be included to complete the meaning of the list structural type. The engine needs to be able to identify if this is missing, so I need to establish the types for the participants and the attributes that must be specified."
+                }
             }
         ]
     },
     {
-        "uid": "9f6016e7-6ae1-4e7a-bbb0-fcf0496fc592",
+        "uid": "91deffaf-5290-4e47-ae4d-118ba762b12b",
         "name": "checkIfUserChoseBagel",
         "type": "behavior",
         "body": [
             {
-                "uid": "0b15edc9-315e-44d7-ad83-a75d145767bc",
+                "uid": "cbf20d2b-a909-4f69-8b51-1190cc992915",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -486,10 +2222,33 @@
                         "type": "string",
                         "value": "Bagel"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "equals",
+                    "type": "computable_primitive",
+                    "description": "Checks if two values are equal.",
+                    "syntax": "equals",
+                    "participants": [
+                        {
+                            "name": "alias",
+                            "type": "boolean",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value1",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value2",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
+                }
             },
             {
-                "uid": "5da9eab6-4c33-4900-b138-bc32eceeb8f0",
+                "uid": "2550ff37-4744-43a5-bc4b-a187801f9ea8",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -498,17 +2257,29 @@
                         "type": "name",
                         "value": "user_chose_bagel"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "yield",
+                    "type": "meta_primitive",
+                    "description": "Indicates that a behavior yields a value.",
+                    "syntax": "yield",
+                    "attributes": [
+                        {
+                            "name": "alias",
+                            "required": "true"
+                        }
+                    ]
+                }
             }
         ]
     },
     {
-        "uid": "75e83c9c-f4b8-414e-a4c5-5197d7677070",
+        "uid": "ccf343e3-62d2-4677-9733-8734ee7954e7",
         "name": "checkIfUserChoseCoffee",
         "type": "behavior",
         "body": [
             {
-                "uid": "c7b8acdc-6f2b-40a8-8672-4a216bd81d50",
+                "uid": "8a46af23-36a0-46b6-8317-9d5a9188d11d",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -527,10 +2298,33 @@
                         "type": "string",
                         "value": "Coffee"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "equals",
+                    "type": "computable_primitive",
+                    "description": "Checks if two values are equal.",
+                    "syntax": "equals",
+                    "participants": [
+                        {
+                            "name": "alias",
+                            "type": "boolean",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value1",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value2",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
+                }
             },
             {
-                "uid": "462b024e-3d71-4de7-a13f-e0cb74ce99bd",
+                "uid": "072fb414-7c11-4cf5-9e6d-f771f19dec2b",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -539,17 +2333,29 @@
                         "type": "name",
                         "value": "user_chose_coffee"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "yield",
+                    "type": "meta_primitive",
+                    "description": "Indicates that a behavior yields a value.",
+                    "syntax": "yield",
+                    "attributes": [
+                        {
+                            "name": "alias",
+                            "required": "true"
+                        }
+                    ]
+                }
             }
         ]
     },
     {
-        "uid": "3cd394b8-c0d6-46d7-84d7-a5dfd4e83d01",
+        "uid": "00cbd662-513d-4696-9f15-d2477f545052",
         "name": "checkIfUserChoseDisplayCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "f9b82a5f-f720-4297-9c2e-ba807a37a64a",
+                "uid": "8770681c-5da5-4407-80c2-100e353fd1df",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -568,10 +2374,33 @@
                         "type": "string",
                         "value": "View"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "equals",
+                    "type": "computable_primitive",
+                    "description": "Checks if two values are equal.",
+                    "syntax": "equals",
+                    "participants": [
+                        {
+                            "name": "alias",
+                            "type": "boolean",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value1",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value2",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
+                }
             },
             {
-                "uid": "db516e3c-ae9f-4889-a457-51013e74cd4c",
+                "uid": "171f0a96-6229-4066-8f65-b55b50278133",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -580,17 +2409,29 @@
                         "type": "name",
                         "value": "did_user_choose_display_cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "yield",
+                    "type": "meta_primitive",
+                    "description": "Indicates that a behavior yields a value.",
+                    "syntax": "yield",
+                    "attributes": [
+                        {
+                            "name": "alias",
+                            "required": "true"
+                        }
+                    ]
+                }
             }
         ]
     },
     {
-        "uid": "272ca33a-5d57-4b91-bf84-4fda338829a2",
+        "uid": "7c89d31e-13b8-4a6c-a750-c01c03ed0e37",
         "name": "checkIfUserChoseClearCart",
         "type": "behavior",
         "body": [
             {
-                "uid": "4fc95474-c9a2-45bb-8658-fa1369b0bc9d",
+                "uid": "53404353-b8f7-41bd-83a9-3f41ec5957d6",
                 "name": "equals",
                 "type": "primitive",
                 "args": [
@@ -609,10 +2450,33 @@
                         "type": "string",
                         "value": "Clear"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "equals",
+                    "type": "computable_primitive",
+                    "description": "Checks if two values are equal.",
+                    "syntax": "equals",
+                    "participants": [
+                        {
+                            "name": "alias",
+                            "type": "boolean",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value1",
+                            "required": "true"
+                        },
+                        {
+                            "name": "value2",
+                            "required": "true"
+                        }
+                    ],
+                    "invariants": {},
+                    "_note": "There are some corner cases where this primitive can be incorrect. For example, when adding two floats and checking equality (ex 0.1 + 0.2 == 0.3) causes floating point issues. Poorly implemented _eq_ methods can also cause issues. However, in this case, since I am synthesizing the implementation, I use the participants directly in the equality and this since I also synthesize the participants, I can account for the _eq_ methods. I am leaving this note here so I am aware of these issues with the realization of this meaning."
+                }
             },
             {
-                "uid": "417e4191-e898-4ffb-8eef-368b0dea6d92",
+                "uid": "f74d29e8-7685-4033-ac79-40d2c17924a7",
                 "name": "yield",
                 "type": "primitive",
                 "args": [
@@ -621,7 +2485,19 @@
                         "type": "name",
                         "value": "did_user_choose_clear_cart"
                     }
-                ]
+                ],
+                "definition": {
+                    "name": "yield",
+                    "type": "meta_primitive",
+                    "description": "Indicates that a behavior yields a value.",
+                    "syntax": "yield",
+                    "attributes": [
+                        {
+                            "name": "alias",
+                            "required": "true"
+                        }
+                    ]
+                }
             }
         ]
     }

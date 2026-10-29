@@ -5,6 +5,7 @@ export class Node {
             this.name = classified.name;
             this.type = classified.type;
             this.args = classified.args;
+            this.definition = classified.definition;
         }
     }
 
