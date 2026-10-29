@@ -31,7 +31,9 @@ export class NarrativeWalker {
 
     walk (atomicBehaviorName) {
         const atomicBehavior = this.findBehavior(atomicBehaviorName);
-        if(!atomicBehavior) throw Error("Atomic behavior doesn't exist.")
+        if(!atomicBehavior) {
+            throw Error(`Atomic behavior named ${atomicBehaviorName} does not exist.`)
+        }
 
         // Start empty narrative
         this.narrativeStack.push([]);
@@ -58,7 +60,7 @@ export class NarrativeWalker {
             }
 
             if (node.type == "cmd") {
-                this.narrativeStack[this.narrativeStack.length - 1].push(node.command);
+                this.getCurrentNarrative().push(node.command);
 
                 // If composite behavior, add to the walk stack and visit the body
                 const foundBehavior = this.findBehavior(node.command);
@@ -70,14 +72,10 @@ export class NarrativeWalker {
             }
 
             if (node.type == "if") {
-                this.narrativeStack[this.narrativeStack.length - 1].push(
-                    `-> ${node.type} ${node.args[0].value}`
-                );
+                this.getCurrentNarrative().push(`-> ${node.type} ${node.args[0].value}`);
 
-                // Branch the narrative at the stop of stack by copying it
-                this.narrativeStack.push(
-                    [...this.narrativeStack[this.narrativeStack.length - 1]]
-                );
+                // Branch the narrative at the top of stack by copying it
+                this.branchNarrative();
                 this.visitBody(node.body);
             }
 
@@ -85,6 +83,30 @@ export class NarrativeWalker {
 
         // Visited all nodes in composite behavior, pop the stack.
         this.walkStack.pop();
+    }
+
+    /**
+     * Returns the current narrative (top of narrative stack)
+     * 
+     * If there are no narratives in the stack, then throw error beacuse
+     * this should not happen.
+     * 
+     * @returns {Array} The current narrative as an array.
+     * @throws {Error} Custom error indicating that there are no narratives in the stack.
+     */
+    getCurrentNarrative() {
+        if (this.narrativeStack.length === 0) {
+            throw Error("There are no narratives in the stack.")
+        }
+        return this.narrativeStack[this.narrativeStack.length - 1];
+    }
+
+    /**
+     * Branches the current narrative by adding the current narrative
+     * to the top of the narrative stack.
+     */
+    branchNarrative() {
+        this.narrativeStack.push([...this.getCurrentNarrative()]);
     }
 
     /**
