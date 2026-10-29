@@ -64,13 +64,22 @@ export class Classifier {
             }
         }
 
+        if (node.type == "participant") {
+            return {
+                type: "participant",
+                name: node.name,
+                args: node.args
+            }
+        }
+
         if (node.type === "cmd") {
             const foundBehavior = this.findBehavior(node.command);
             if (foundBehavior) {
                 return {
                     type: "behavior",
                     name: node.command,
-                    args: node.args
+                    args: node.args,
+                    definition: foundBehavior
                 }
             }
 
@@ -79,7 +88,8 @@ export class Classifier {
                 return {
                     type: "primitive",
                     name: foundPrimitive.name,
-                    args: node.args
+                    args: node.args,
+                    definition: foundPrimitive
                 }
             }
         }
@@ -89,9 +99,12 @@ export class Classifier {
             return {
                 type: "functional",
                 name: "if",
-                args: node.args
+                args: node.args,
+                definition: foundPrimitive
             }
         }
+
+        throw Error("Unable to classify the node");
     }
 
 
@@ -119,5 +132,18 @@ export class Classifier {
             (f) => f.syntax === name
         );
         if (foundPrimitive) return foundPrimitive;
+    }
+
+    /**
+     * Find the participant given the name.
+     * @param {String} name 
+     */
+    findParticipant(name) {
+        for (const file of this.meaning.data) {
+            const participant = file.ast.body.find(
+                (f) => (f.type === "participant") && (f.participantType == name)
+            )
+            if (participant) participant;
+        }
     }
 }
