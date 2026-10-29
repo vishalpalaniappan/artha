@@ -1,5 +1,5 @@
-import("includes/user_choice.ar")
-import("participants/Cart.ar")
+import(file = "includes/user_choice.ar")
+import(file = "participants/Cart.ar")
 
 behavior coffeeShop() {
     introduce(
