@@ -125,13 +125,13 @@ export class ArthaParser {
      * }
      */
     processParticipant () {
-        const participantType = this.tokens[++this.currPos].value;
+        const participantName = this.tokens[++this.currPos].value;
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             uid: crypto.randomUUID(),
             type: "participant",
             parsedArgs: parsedArgs,
-            participantType: participantType,
+            name: participantName,
             body: []
         }
         this.stack.push(node)
