@@ -25,7 +25,7 @@ export class Node {
 
         // For each arg, check if it is included.
         for (const arg of definedArgs) {
-            if (arg.required === "true") {
+            if (arg.required === true) {
                 const hasArg = this.checkArgs(arg.name);
                 if (!hasArg) {
                     const errMsg = `${this.type} with name ${this.name} is missing arg ${arg.name}`;

@@ -6,7 +6,7 @@
     "participants": [
         {
             "name": "message",
-            "required": "true"
+            "required": true
         }
     ],
     "invariants": {

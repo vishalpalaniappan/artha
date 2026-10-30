@@ -6,11 +6,11 @@
     "attributes": [
         {
             "name": "file",
-            "required": "true"
+            "required": true
         },
         {
             "name": "alias",
-            "required": "false"
+            "required": true
         }
     ]
 }

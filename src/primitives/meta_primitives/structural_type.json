@@ -6,7 +6,7 @@
     "attributes": [
         {
             "name": "type",
-            "required": "true"
+            "required": true
         }
     ]
 }

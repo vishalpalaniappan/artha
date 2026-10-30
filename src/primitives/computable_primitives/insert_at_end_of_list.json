@@ -6,11 +6,11 @@
     "participants": [
         {
             "name": "item",
-            "required": "true"
+            "required": true
         },
         {
             "name": "list",
-            "required": "true"
+            "required": true
         }
     ],
     "invariants": {

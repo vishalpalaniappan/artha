@@ -2,4 +2,4 @@ def terminal_display(message):
     print(message)
 
 def terminal_input():
-    input(">")
+    return input(">")

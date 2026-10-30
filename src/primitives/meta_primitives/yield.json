@@ -6,7 +6,7 @@
     "attributes": [
         {
             "name": "alias",
-            "required": "true"
+            "required": true
         }
     ]
 }

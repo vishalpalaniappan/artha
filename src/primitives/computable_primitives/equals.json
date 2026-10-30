@@ -6,16 +6,17 @@
     "participants": [
         {
             "name": "alias",
-            "type": "boolean",
-            "required": "true"
+            "structuralType": "boolean",
+            "yielded": true,
+            "required": true
         },
         {
             "name": "value1",
-            "required": "true"
+            "required": true
         },
         {
             "name": "value2",
-            "required": "true"
+            "required": true
         }
     ],
     "invariants": {

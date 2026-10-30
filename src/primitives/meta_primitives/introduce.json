@@ -6,15 +6,15 @@
     "attributes": [
         {
             "name": "name",
-            "required": "true"
+            "required": true
         },
         {
             "name": "role",
-            "required": "true"
+            "required": true
         },
         {
             "name": "participant",
-            "required": "true"
+            "required": true
         }
     ]
 }

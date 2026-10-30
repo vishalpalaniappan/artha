@@ -5,19 +5,19 @@
     "syntax": "terminal_input",
     "participants": [
         {
-            "name": "save_input",
-            "modifies": "true",
-            "required": "true"
+            "name": "alias",
+            "yielded": true,
+            "required": true
         },
         {
             "name": "eof_behavior",
-            "behavior": "true",
-            "required": "false"
+            "behavior": true,
+            "required": true
         },
         {
             "name": "keyboard_behavior",
-            "behavior": "true",
-            "required": "false"
+            "behavior": true,
+            "required": true
         }
     ],
     "invariants": {

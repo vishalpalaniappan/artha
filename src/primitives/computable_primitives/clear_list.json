@@ -6,7 +6,7 @@
     "participants": [
         {
             "name": "list",
-            "required": "true"
+            "required": true
         }
     ],
     "invariants": {
