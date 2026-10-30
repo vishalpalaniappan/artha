@@ -1,4 +1,7 @@
 # Primitives are in meaning form, still need to be processed, this is blocking things out.
+# I also want to add a world state manager to store participants when introducing or modifying
+# Also need to import the realization of computable and legacy primitives
+# WIP: Need to iterate a bunch to fully realize the meaning as an executable implementation.
 def coffeeShop():
     shopping_cart = introduce(cart)
     menu = introduce(menu,menu)
