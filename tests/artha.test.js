@@ -37,5 +37,11 @@ describe("meaning parser", async () => {
             resolve(__dirname, "./output/coffee_shop/syntaxError.txt"),
             coffee_shop.engine.classifier.syntaxErrMsg.join("\n")
         );
+        
+        
+        await writeFile(
+            resolve(__dirname, "./output/coffee_shop/synthesized.py"),
+            coffee_shop.engine.synthesizer.implementation
+        );
     });
 });

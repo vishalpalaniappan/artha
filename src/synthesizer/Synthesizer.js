@@ -23,10 +23,48 @@ import { ast, parse } from "py-ast";
 export class Synthesizer {
     constructor (meaning) {
         this.meaning = meaning;
+        this.implementation = "";
         this.walk();
+        console.log(this.implementation)
     }
 
     walk () {
-        
+        this.implementation += "# Primitives are in meaning form, still need to be processed, this is blocking things out." + "\n"
+        for (const node of this.meaning) {
+            if (node.type === "behavior") {
+                this.implementBehavior(node);
+            }
+        }
+    }
+
+    implementBehavior (behavior) {
+        const args = (behavior?.args)?behavior.args.map((a) => a.value).join(","):"";
+        const syntax = `def ${behavior.name}(${args}):`
+        this.implementation = this.implementation + syntax + "\n";
+
+        for (const node of behavior.body) {
+            if (node.type.includes("primitive")) {
+                this.implementation += "    " + this.implementPrimitive(node) + "\n";
+            }
+            if (node.type == "behavior") {
+                this.implementation += "    " + this.implementCompositeBehaviorCall(node) + "\n";
+            }
+        }
+
+        this.implementation = this.implementation + "\n";
+    }
+
+    implementPrimitive (primitive) {
+        // Note: I need to parse each primitive to save the relevant aliases, this is just me
+        // setting up the structure so that I can continue.
+        const args = (primitive?.args)?primitive.args.map((a) => a.value).join(","):"";
+        const syntax = `${primitive.name}(${args})`
+        return syntax
+    }
+
+    implementCompositeBehaviorCall(composite) {
+        const args = (composite?.args)?composite.args.map((a) => a.value).join(","):"";
+        const syntax = `${composite.name}(${args})`
+        return syntax
     }
 }
