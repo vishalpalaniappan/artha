@@ -1,6 +1,5 @@
 meta_primitive with name introduce is missing arg participant
 legacy_primitives with name terminal_display is missing arg message
-legacy_primitive with name terminal_input is missing arg save_input
 meta_primitive with name yield is missing arg alias
 computable_primitive with name insert_at_end_of_list is missing arg item
 computable_primitive with name insert_at_end_of_list is missing arg item

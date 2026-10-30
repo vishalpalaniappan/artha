@@ -1,6 +1,7 @@
 import { loadPrimitivesFromManifest } from "../primitives/loadPrimitives";
 import { NarrativeWalker } from "./NarrativeWalker";
 import { Classifier } from "./Classifier";
+import { Synthesizer } from "../exports";
 
 /**
  * Reasons about the meaning specified in the AST using the
@@ -22,5 +23,8 @@ export class ReasoningEngine {
         // Walk the classified nodes, find narratives and then reason
         // Currently not using classified nodes, will migrate soon.
         this.narratives = new NarrativeWalker(this.pkg.meta, this.pkg.data);
+
+
+        this.synthesizer = new Synthesizer(this.classifier.classifiedNodes);
     }
 }

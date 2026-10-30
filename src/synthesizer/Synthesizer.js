@@ -1,3 +1,5 @@
+import { ast, parse } from "py-ast";
+
 /**
  * Synthesizes the specified meaning into a python program.
  * 
@@ -19,7 +21,16 @@
  * 
  */
 export class Synthesizer {
-    constructor () {
+    constructor (meaning) {
+        this.meaning = meaning;
+        this.testAstLib();
+    }
 
+    testAstLib() {
+        const source = "def hello(name):\n    return f'Hello, {name}!'";
+        const ast = parse(source);
+        const funcNode = ast.body[0];
+
+        console.log(funcNode);
     }
 }
