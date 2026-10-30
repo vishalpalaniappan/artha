@@ -12,12 +12,12 @@
         {
             "name": "eof_behavior",
             "behavior": true,
-            "required": true
+            "required": false
         },
         {
             "name": "keyboard_behavior",
             "behavior": true,
-            "required": true
+            "required": false
         }
     ],
     "invariants": {

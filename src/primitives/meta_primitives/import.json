@@ -10,7 +10,7 @@
         },
         {
             "name": "alias",
-            "required": true
+            "required": false
         }
     ]
 }
