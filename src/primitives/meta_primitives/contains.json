@@ -1,0 +1,14 @@
+{
+    "name": "list_contains",
+    "type": "meta_primitive",
+    "description":"For participants with structural type list, it establishes the role of the participants that the list can contain.",
+    "syntax": "list_contains",
+    "attributes": [
+        {
+            "name": "values",
+            "structural_type": "list",
+            "required": true
+        }
+    ],
+    "_note": "When a participant has a particular structural type, there are other meta attributes like list_contains which need to be included to complete the meaning of the list structural type. The engine needs to be able to identify if this is missing, so I need to establish the types for the participants and the attributes that must be specified."
+}

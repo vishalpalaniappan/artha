@@ -1,0 +1,20 @@
+{
+    "name": "introduce",
+    "type": "meta_primitive",
+    "description":"Introduces a participant into the world",
+    "syntax": "introduce",
+    "attributes": [
+        {
+            "name": "alias",
+            "required": true
+        },
+        {
+            "name": "role",
+            "required": true
+        },
+        {
+            "name": "participant",
+            "required": true
+        }
+    ]
+}

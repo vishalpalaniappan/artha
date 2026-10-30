@@ -1,0 +1,30 @@
+{
+    "name": "insert_at_end_of_list",
+    "type": "computable_primitive",
+    "description":"Inserts item to end of list.",
+    "syntax": "insert_at_end_of_list",
+    "participants": [
+        {
+            "name": "item",
+            "required": true
+        },
+        {
+            "name": "list",
+            "required": true
+        }
+    ],
+    "invariants": {
+        "id_1": {
+            "participants": ["list"],
+            "property": ["structuralType"],
+            "condition": ["list"],
+            "description": "list must have structuralType List.",
+            "invalidValues": [
+                {
+                    "value": "string_value",
+                    "description": "A string is provided as list participant"
+                }
+            ]
+        }
+    }
+}

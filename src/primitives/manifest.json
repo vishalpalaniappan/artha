@@ -1,0 +1,22 @@
+{
+    "computable_primitives": [
+        "clear_list",
+        "equals",
+        "insert_at_end_of_list"
+    ],
+    "meta_primitives": [
+        "contains",
+        "introduce",
+        "role",
+        "structural_type",
+        "yield",
+        "import"
+    ],
+    "functional_primitives": [
+        "if"
+    ],
+    "legacy_primitives": [
+        "terminal_display",
+        "terminal_input"
+    ]
+}
