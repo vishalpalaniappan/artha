@@ -29,7 +29,10 @@ export class Synthesizer {
     }
 
     walk () {
-        this.implementation += "# Primitives are in meaning form, still need to be processed, this is blocking things out." + "\n"
+        this.implementation += "# Primitives are in meaning form, still need to be processed, this is blocking things out." + "\n";
+        this.implementation += "# I also want to add a world state manager to store participants when introducing or modifying" + "\n";
+        this.implementation += "# Also need to import the realization of computable and legacy primitives" + "\n";
+        this.implementation += "# WIP: Need to iterate a bunch to fully realize the meaning as an executable implementation." + "\n";
         for (const node of this.meaning) {
             if (node.type === "behavior") {
                 this.implementBehavior(node);

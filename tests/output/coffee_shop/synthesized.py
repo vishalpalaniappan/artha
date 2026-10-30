@@ -1,7 +1,7 @@
 # Primitives are in meaning form, still need to be processed, this is blocking things out.
 def coffeeShop():
-    introduce(shopping_cart,cart)
-    introduce(menu,menu,menu)
+    shopping_cart = introduce(cart)
+    menu = introduce(menu,menu)
     visitShop()
 
 def visitShop():
