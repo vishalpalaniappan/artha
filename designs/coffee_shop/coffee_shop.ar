@@ -3,11 +3,11 @@ import(file = "participants/Cart.ar")
 
 behavior coffeeShop() {
     introduce(
-        name= shopping_cart, 
+        alias= shopping_cart, 
         role= cart
     )
     introduce(
-        name= menu, 
+        alias= menu, 
         role= menu,
         participant= menu
     )

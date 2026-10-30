@@ -5,7 +5,7 @@
     "syntax": "introduce",
     "attributes": [
         {
-            "name": "name",
+            "name": "alias",
             "required": true
         },
         {
