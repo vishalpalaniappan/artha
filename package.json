@@ -27,5 +27,8 @@
         "dal-ast-js": "^0.0.21-dev",
         "rollup": "^4.57.1",
         "vitest": "^4.0.18"
+    },
+    "dependencies": {
+        "py-ast": "^2.0.0"
     }
 }
