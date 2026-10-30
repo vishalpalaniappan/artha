@@ -34,7 +34,7 @@ describe("meaning parser", async () => {
         
         
         await writeFile(
-            resolve(__dirname, "./output/coffee_shop/syntaxError.json"),
+            resolve(__dirname, "./output/coffee_shop/syntaxError.txt"),
             coffee_shop.engine.classifier.syntaxErrMsg.join("\n")
         );
     });
