@@ -27,6 +27,12 @@ export class Synthesizer {
     }
 
     testAstLib() {
+        // Note: The more I think about this, the more I realize I don't even need an AST library
+        // because I know the meaning of what I am synthesizing. I can literally just write the
+        // implementation instead of creating it as a structure and then un parsing it. That being said
+        // it is probably cleaner to use an AST library because that is essentially what I will be doing
+        // if I implement my own structure.
+        
         const source = "def hello(name):\n    return f'Hello, {name}!'";
         const ast = parse(source);
         const funcNode = ast.body[0];
