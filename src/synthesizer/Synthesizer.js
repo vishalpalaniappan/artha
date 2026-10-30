@@ -55,10 +55,24 @@ export class Synthesizer {
     }
 
     implementPrimitive (primitive) {
-        // Note: I need to parse each primitive to save the relevant aliases, this is just me
-        // setting up the structure so that I can continue.
-        const args = (primitive?.args)?primitive.args.map((a) => a.value).join(","):"";
-        const syntax = `${primitive.name}(${args})`
+        // wip 
+        let args, syntax;
+
+        if (primitive.name === "yield") {
+            syntax = `return ${primitive.args[0].value}`
+            return syntax;
+        }
+
+        const foundAlias = primitive.args.find((p) => p.arg === "alias");
+        if (foundAlias) {
+            const updatedArgs = primitive.args.filter((p) => p.arg !== "alias");
+            args = (updatedArgs)?updatedArgs.map((a) => a.value).join(","):"";
+            syntax = `${foundAlias.value} = ${primitive.name}(${args})`
+        } else {
+            args = (primitive?.args)?primitive.args.map((a) => a.value).join(","):"";
+            syntax = `${primitive.name}(${args})`;
+        }
+
         return syntax
     }
 

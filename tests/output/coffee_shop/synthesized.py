@@ -16,8 +16,8 @@ def baristaPresentsMenu():
     terminal_display(menu)
 
 def acceptChoice():
-    terminal_input(terminal_input)
-    yield(terminal_input)
+    terminal_input = terminal_input()
+    return terminal_input
 
 def addCoffeeToCart():
     insert_at_end_of_list(Coffee,cart)
@@ -32,18 +32,18 @@ def clearCart():
     clear_list(cart)
 
 def checkIfUserChoseBagel():
-    equals(user_chose_bagel,user_choice,Bagel)
-    yield(user_chose_bagel)
+    user_chose_bagel = equals(user_choice,Bagel)
+    return user_chose_bagel
 
 def checkIfUserChoseCoffee():
-    equals(did_user_chose_coffee,user_choice,Coffee)
-    yield(user_chose_coffee)
+    did_user_chose_coffee = equals(user_choice,Coffee)
+    return user_chose_coffee
 
 def checkIfUserChoseDisplayCart():
-    equals(did_user_choose_display_cart,user_choice,View)
-    yield(did_user_choose_display_cart)
+    did_user_choose_display_cart = equals(user_choice,View)
+    return did_user_choose_display_cart
 
 def checkIfUserChoseClearCart():
-    equals(did_user_choose_clear_cart,user_choice,Clear)
-    yield(did_user_choose_clear_cart)
+    did_user_choose_clear_cart = equals(user_choice,Clear)
+    return did_user_choose_clear_cart
 
