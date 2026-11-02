@@ -68,7 +68,7 @@ export class ArgsParser {
     /**
      * Splits the tokens by commas so they can be processed independently.
      * For objects, arrays and strings, it flags that pair is being tracked
-     * so that any commmas inside the object or array is ignored.
+     * so that any commas inside the object or array is ignored.
      * @param {Array} tokens 
      */
     splitByComma (tokens) {
@@ -81,7 +81,7 @@ export class ArgsParser {
                 this.groupedTokens.push(group);
                 group = [];
                 continue;
-            } 
+            }
             
             if (this.trackingPair && token.type === this.trackingPair) {
                 this.trackingPair = null;
@@ -126,14 +126,22 @@ export class ArgsParser {
     processGroup (tokens) {
         let type;
         let rawValue = new Untokenizer(tokens).buildString();
+
         const match = rawValue.match(/^([^=]+)=(.*)$/);
         
-        let arg, value
+        let arg, value, meta;
         if (match) {
             [, arg, value] = match;
-        } else {
+            meta = {
+                argMeta: tokens[0],
+                valueMeta: this.gatherValueMetaInformation(tokens.splice(0))
+            }
+        } else {;
             arg = null;
-            value = rawValue;
+            value = rawValue;            
+            meta = {
+                valueMeta: this.gatherValueMetaInformation(tokens.splice(0))
+            }
         }
         
         /**
@@ -172,7 +180,16 @@ export class ArgsParser {
         return {
             arg: arg,
             type: type,
-            value: processedValue
+            value: processedValue,
+            meta: meta
         }
+    }
+
+
+    /**
+     * Gather the value meta information by grouping the tokens.
+     */
+    gatherValueMetaInformation (tokens) {
+        
     }
 }
