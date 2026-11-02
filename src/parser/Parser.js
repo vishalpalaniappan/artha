@@ -105,10 +105,16 @@ export class ArthaParser {
      * }
      */
     processBehavior () {
+        const meta = {}
+        meta["keyword"] = this.tokens[this.currPos];
+
         const behaviorName = this.tokens[++this.currPos].value;
+        meta["behaviorName"] = this.tokens[this.currPos];
+        
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             uid: crypto.randomUUID(),
+            meta: meta,
             type: "behavior",
             parsedArgs: parsedArgs,
             behaviorName: behaviorName,
@@ -125,10 +131,16 @@ export class ArthaParser {
      * }
      */
     processParticipant () {
+        const meta = {}
+        meta["keyword"] = this.tokens[this.currPos];
+
         const participantName = this.tokens[++this.currPos].value;
+        meta["participantName"] = this.tokens[this.currPos];
+
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             uid: crypto.randomUUID(),
+            meta: meta,
             type: "participant",
             parsedArgs: parsedArgs,
             name: participantName,
@@ -145,9 +157,13 @@ export class ArthaParser {
      * }
      */
     processIf () {
+        const meta = {}
+        meta["keyword"] = this.tokens[this.currPos];
+
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             uid: crypto.randomUUID(),
+            meta: meta,
             type: "functional",
             name: "if",
             args: parsedArgs,
@@ -166,9 +182,13 @@ export class ArthaParser {
      * cmd -> "cmd"
      */
     processCmd (cmd) {
+        const meta = {}
+        meta["command"] = this.tokens[this.currPos];
+
         const parsedArgs = new ArgsParser(this.getArgs()).run();
         const node = {
             uid: crypto.randomUUID(),
+            meta: meta,
             type: "cmd",
             command: cmd,
             args: parsedArgs
