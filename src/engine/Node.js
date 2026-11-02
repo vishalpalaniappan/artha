@@ -1,9 +1,10 @@
 export class Node {
-    constructor(uid, classified) {
+    constructor(uid, tokenMeta, classified) {
         this.uid = uid;
         this.name = classified.name;
         this.type = classified.type;
         this.args = classified.args;
+        this.tokenMeta = tokenMeta;
         this.definition = classified.definition;
         this.relativePath = classified.relativePath;
         this.errMsg = [];

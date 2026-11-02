@@ -14,7 +14,7 @@
                 "type": "root",
                 "body": [
                     {
-                        "uid": "952fb598-a8ba-46c2-bd49-201908f7da85",
+                        "uid": "094ad95c-16e5-4ac4-8595-10d58b7d5ba7",
                         "meta": {
                             "command": {
                                 "type": "IDENTIFIER",
@@ -53,7 +53,7 @@
                         ]
                     },
                     {
-                        "uid": "770f5a9f-f57e-40c2-bc95-80f6c560bb8c",
+                        "uid": "6ae67ec0-79f5-43c7-8e43-39719261e1d7",
                         "meta": {
                             "command": {
                                 "type": "IDENTIFIER",
@@ -92,7 +92,7 @@
                         ]
                     },
                     {
-                        "uid": "ade1484e-954c-4170-8438-8edd381e44ea",
+                        "uid": "026be5da-4ae8-4a5c-97a4-13659b4b384b",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -116,7 +116,7 @@
                         "behaviorName": "coffeeShop",
                         "body": [
                             {
-                                "uid": "52e473ad-6f71-4781-a6bf-e62398e69d96",
+                                "uid": "201daac4-22aa-4661-ae95-3a3563444c33",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -177,7 +177,7 @@
                                 ]
                             },
                             {
-                                "uid": "285d146d-786e-42f3-ab3c-2f7c1d0e7ab6",
+                                "uid": "31750d53-73cd-4273-a966-c1bce587f871",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -260,7 +260,7 @@
                                 ]
                             },
                             {
-                                "uid": "99ccf823-acaf-450e-a3b3-a2f958047d72",
+                                "uid": "9916cd01-b3d2-4e77-be35-0afe8e384dd4",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -278,7 +278,7 @@
                         ]
                     },
                     {
-                        "uid": "1616283c-21f0-47b1-b0fb-92a900a8efa7",
+                        "uid": "26c5e60f-decb-484b-b993-e5bc5a46ce21",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -302,7 +302,7 @@
                         "behaviorName": "visitShop",
                         "body": [
                             {
-                                "uid": "9c31ff03-441f-42ac-a39e-3b6ab7dbf3fd",
+                                "uid": "1d9d9489-f9a8-4c93-97f9-07408d84625d",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -318,7 +318,7 @@
                                 "args": []
                             },
                             {
-                                "uid": "4abccce1-1c23-42a0-b31d-868abfa1f82d",
+                                "uid": "75442661-eaf0-4e7d-af48-96f65ef8f82a",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -357,7 +357,7 @@
                                 ]
                             },
                             {
-                                "uid": "34aaaf49-1237-4827-9394-8ac097738b55",
+                                "uid": "0d4f7b48-1705-405b-aa69-fa7574cd5efa",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -418,7 +418,7 @@
                                 ]
                             },
                             {
-                                "uid": "b20bcacd-0c9e-4765-b944-5f726be81548",
+                                "uid": "f864d79c-cc16-4084-a8dd-1ef7cc162586",
                                 "meta": {
                                     "keyword": {
                                         "type": "IDENTIFIER",
@@ -457,7 +457,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "aac151a5-ad8a-4274-a167-266647d475fc",
+                                        "uid": "3793f7eb-a372-459d-a3ee-29b2bf9bbd70",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -496,7 +496,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "bde90242-cee7-4887-936b-9b9c3dc512c6",
+                                        "uid": "8ce94713-9e29-46e1-8904-296f839b745d",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -514,7 +514,7 @@
                                 ]
                             },
                             {
-                                "uid": "08d5df26-e200-44f7-9c13-e788d9b50310",
+                                "uid": "0c6190f0-aeb9-4343-8788-b4c5d25aa8cd",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -575,7 +575,7 @@
                                 ]
                             },
                             {
-                                "uid": "990511ff-8aed-498d-ae1e-cb2082557625",
+                                "uid": "2030f28e-a55e-4464-bd28-4a7c4fc93166",
                                 "meta": {
                                     "keyword": {
                                         "type": "IDENTIFIER",
@@ -614,7 +614,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "f444fec9-0001-4e11-99dd-e728518b58cf",
+                                        "uid": "950da7cd-d0e2-4c85-9937-8fe5c6e3b3e2",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -653,7 +653,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "0f55b630-a2ee-43ff-a852-7630e627361e",
+                                        "uid": "44d38f8f-5348-4e65-ab34-1c3c7fdcff68",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -671,7 +671,7 @@
                                 ]
                             },
                             {
-                                "uid": "7c1e03da-9a06-4bc3-9035-5ddad1692454",
+                                "uid": "cd9b754b-0191-447c-a694-75c4b57c110b",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -732,7 +732,7 @@
                                 ]
                             },
                             {
-                                "uid": "3befadd8-93f3-4371-b267-8a68ab11bccb",
+                                "uid": "052f09bf-0c29-4948-97f8-9c2dffaadf02",
                                 "meta": {
                                     "keyword": {
                                         "type": "IDENTIFIER",
@@ -771,7 +771,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "84e38a6b-8c9c-41da-9fbb-709d2e9c222c",
+                                        "uid": "bd600ade-9294-47d0-a430-f8026563cba9",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -810,7 +810,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "689de85e-a4b3-4642-b1bc-d516b174500b",
+                                        "uid": "0c0f8af8-deb6-4e44-b3b0-21c0ae2a8b4f",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -828,7 +828,7 @@
                                 ]
                             },
                             {
-                                "uid": "69bdf7a2-f2ad-45c5-906a-9ddf06cdac73",
+                                "uid": "d41cacc5-79c9-4367-9a8a-8c8d98f16a90",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -889,7 +889,7 @@
                                 ]
                             },
                             {
-                                "uid": "c08a8bb1-64de-4a04-98ca-6f16c0f9ea55",
+                                "uid": "d2cf8b7e-fdd3-4588-83bd-90974adb8e46",
                                 "meta": {
                                     "keyword": {
                                         "type": "IDENTIFIER",
@@ -928,7 +928,7 @@
                                 ],
                                 "body": [
                                     {
-                                        "uid": "fd2b3d12-7ce9-4fa0-9518-0ce44c85098d",
+                                        "uid": "6622405a-d0a5-41fb-b5ac-b710e76aa509",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -967,7 +967,7 @@
                                         ]
                                     },
                                     {
-                                        "uid": "82eb84e7-6a30-4cfe-85e0-a52185dfa0b8",
+                                        "uid": "b9571119-7717-4d15-8e87-a08b72ebe5c3",
                                         "meta": {
                                             "command": {
                                                 "type": "IDENTIFIER",
@@ -987,7 +987,7 @@
                         ]
                     },
                     {
-                        "uid": "97c8ce64-72b8-43bd-be12-24daeede8ac3",
+                        "uid": "0778d3ac-4d79-44ba-8d42-0a57a967ec6d",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1011,7 +1011,7 @@
                         "behaviorName": "baristaPresentsMenu",
                         "body": [
                             {
-                                "uid": "f026f074-4033-476a-b1f5-c19ca68cb0cf",
+                                "uid": "73b7b7cd-a815-4cab-954b-65a64a05a478",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1052,7 +1052,7 @@
                         ]
                     },
                     {
-                        "uid": "d9f46daf-35df-42ac-9534-815b34ed94c3",
+                        "uid": "0afdf59f-a9e0-4f4d-946c-82796fa9e905",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1076,7 +1076,7 @@
                         "behaviorName": "acceptChoice",
                         "body": [
                             {
-                                "uid": "360d7231-b667-486f-83bb-cd48fffadb59",
+                                "uid": "dd681da6-bfd8-4e08-ab6a-3cbccf7ffd5d",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1115,7 +1115,7 @@
                                 ]
                             },
                             {
-                                "uid": "3541f5b4-ce16-4cea-9543-2fffdee36aa5",
+                                "uid": "acf6e9cd-04e4-4159-a83b-8548b5ec5bd2",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1156,7 +1156,7 @@
                         ]
                     },
                     {
-                        "uid": "2b95769b-9490-4298-a237-3000ede6baa0",
+                        "uid": "c5c23c9d-4b0b-4fd6-a239-9380747f0cf3",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1203,7 +1203,7 @@
                         "behaviorName": "addCoffeeToCart",
                         "body": [
                             {
-                                "uid": "618ccd5e-0af8-4269-9b9e-a62a91843279",
+                                "uid": "e87beef8-e3c5-4188-adbf-dc2df2f0b9c3",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1266,7 +1266,7 @@
                         ]
                     },
                     {
-                        "uid": "5839f4b0-e858-4406-a5e5-d80ad0989491",
+                        "uid": "55ac68e2-9d37-4820-aa82-34fc37e45e16",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1313,7 +1313,7 @@
                         "behaviorName": "addBagelToCart",
                         "body": [
                             {
-                                "uid": "81815b01-ae32-45ee-b557-4b1ff5881461",
+                                "uid": "348acc23-e5ae-4ec5-99a6-5947b67f990e",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1376,7 +1376,7 @@
                         ]
                     },
                     {
-                        "uid": "65cc5c7a-6ec9-4cce-8146-eeff68c84446",
+                        "uid": "3d085df9-124c-4528-a9cf-068412d786a4",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1423,7 +1423,7 @@
                         "behaviorName": "displayCart",
                         "body": [
                             {
-                                "uid": "d6422690-4c67-4413-a78f-ca534d1c8afb",
+                                "uid": "6a8f3cd8-f871-4660-af90-7ea4e12ef0e3",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1464,7 +1464,7 @@
                         ]
                     },
                     {
-                        "uid": "e0199947-c38b-4dfd-b132-b07cf20b816e",
+                        "uid": "81fc1a88-a4c2-4210-9343-cceec6b2b465",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1511,7 +1511,7 @@
                         "behaviorName": "clearCart",
                         "body": [
                             {
-                                "uid": "92e7ddde-42e3-4ec4-88f1-7bea2f3907fe",
+                                "uid": "bb84c05e-7f5d-419f-a8b9-e2ae1754eb30",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1563,7 +1563,7 @@
                 "type": "root",
                 "body": [
                     {
-                        "uid": "66f70c9f-0dd1-48e0-87c9-10f3d890fb29",
+                        "uid": "06577693-9cac-4f6f-b3c7-e343c2aadc92",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1587,7 +1587,7 @@
                         "name": "Cart",
                         "body": [
                             {
-                                "uid": "020ed3ba-ebb7-4364-b011-5a1b9da677b2",
+                                "uid": "afb3c8d1-03ff-4a08-b615-e0653f8c4976",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1626,7 +1626,7 @@
                                 ]
                             },
                             {
-                                "uid": "59d70568-76ef-4ae1-8097-48eeee8ef25f",
+                                "uid": "9d76060d-9dba-42fa-8bec-6ea08e5dfb9b",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1681,7 +1681,7 @@
                 "type": "root",
                 "body": [
                     {
-                        "uid": "236d89ab-0905-485d-aaee-5f384ad80f81",
+                        "uid": "eb383354-20a4-4b7c-aebb-8a67dbdbb81d",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1720,7 +1720,7 @@
                         "behaviorName": "checkIfUserChoseBagel",
                         "body": [
                             {
-                                "uid": "6927d833-ed31-424f-8ddc-ca4cce335232",
+                                "uid": "9757d8d4-cffc-4009-b327-4931a224300b",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1803,7 +1803,7 @@
                                 ]
                             },
                             {
-                                "uid": "f1f8920d-ab63-4da7-93e6-1a908bab8c04",
+                                "uid": "0782759e-bcc9-4e07-b2f9-fe74edba62bd",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1836,7 +1836,7 @@
                         ]
                     },
                     {
-                        "uid": "50a83184-4387-4d2c-b85a-51ce4480a6ec",
+                        "uid": "ceafad09-2703-431f-a9e8-f86c763eb5c3",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -1875,7 +1875,7 @@
                         "behaviorName": "checkIfUserChoseCoffee",
                         "body": [
                             {
-                                "uid": "e329a572-892b-4091-8476-b74a25c66d05",
+                                "uid": "d3244e51-902a-4e4d-b326-49e1d08b2562",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1958,7 +1958,7 @@
                                 ]
                             },
                             {
-                                "uid": "19e24a77-04ca-414e-8769-b23195be07a4",
+                                "uid": "1f80a504-5550-4750-99c6-f0bf6e025289",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -1991,7 +1991,7 @@
                         ]
                     },
                     {
-                        "uid": "0fb1a685-e139-4952-a663-35d39858a2ee",
+                        "uid": "e56e0fdb-4d00-4acd-9c1d-1b46c738884a",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -2030,7 +2030,7 @@
                         "behaviorName": "checkIfUserChoseDisplayCart",
                         "body": [
                             {
-                                "uid": "965c663a-b6dc-45c2-a56e-a61ddf33a898",
+                                "uid": "d567b1c5-4f63-4562-a458-2d80e47b799f",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -2113,7 +2113,7 @@
                                 ]
                             },
                             {
-                                "uid": "e294873f-8326-45d6-b7a3-ab51e33da55c",
+                                "uid": "ba84a4bd-9834-4a48-b51c-0ef1d553e036",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -2146,7 +2146,7 @@
                         ]
                     },
                     {
-                        "uid": "d749ff07-8e80-4fc9-9fd5-e84304ed1d32",
+                        "uid": "94fc38e3-0d9a-4196-9dde-97793a9eadfd",
                         "meta": {
                             "keyword": {
                                 "type": "IDENTIFIER",
@@ -2185,7 +2185,7 @@
                         "behaviorName": "checkIfUserChoseClearCart",
                         "body": [
                             {
-                                "uid": "8b48d275-c17b-499e-ba59-96536878139a",
+                                "uid": "493eca27-88ef-4282-a707-334909010767",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",
@@ -2268,7 +2268,7 @@
                                 ]
                             },
                             {
-                                "uid": "7ddf834a-0a21-434b-9a2c-6de0af0a6f65",
+                                "uid": "f70dc15b-895f-4046-9e3b-489b5c912b78",
                                 "meta": {
                                     "command": {
                                         "type": "IDENTIFIER",

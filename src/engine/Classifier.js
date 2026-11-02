@@ -44,7 +44,7 @@ export class Classifier {
     visitBody(body) {
         const nodes = [];
         for (const astNode of body) {
-            const classifiedNode = new Node(astNode.uid, this.classify(astNode));
+            const classifiedNode = new Node(astNode.uid, astNode.meta, this.classify(astNode));
             this.syntaxErrMsg =  this.syntaxErrMsg.concat(classifiedNode.errMsg);
             if ("body" in astNode) {
                 classifiedNode.addBody(this.visitBody(astNode.body));
@@ -86,7 +86,6 @@ export class Classifier {
                     type: "behavior",
                     name: node.command,
                     args: node.args,
-                    definition: foundBehavior,
                     relativePath: this.currRelativePath
                 }
             }
