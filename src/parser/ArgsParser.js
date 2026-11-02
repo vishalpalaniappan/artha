@@ -190,6 +190,12 @@ export class ArgsParser {
      * Gather the value meta information by grouping the tokens.
      */
     gatherValueMetaInformation (tokens) {
-
+        return {
+            type: "VALUE",
+            startLineno: tokens[0].startLineno,
+            startColno: tokens[0].startColno,
+            endLineno: tokens[tokens.length - 1].startLineno,
+            endColno: tokens[tokens.length - 1].endColno,
+        }
     }
 }

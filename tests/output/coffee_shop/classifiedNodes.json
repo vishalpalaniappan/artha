@@ -1,6 +1,6 @@
 [
     {
-        "uid": "6b07c161-56dd-44a3-b0d7-0d6e2721a251",
+        "uid": "5a8b7bc2-e9bb-44c8-8e8d-f1cc6a9d0e01",
         "name": "import",
         "type": "meta_primitive",
         "args": [
@@ -16,6 +16,13 @@
                         "startColno": 8,
                         "endLineno": 1,
                         "endColno": 11
+                    },
+                    "valueMeta": {
+                        "type": "VALUE",
+                        "startLineno": 1,
+                        "startColno": 15,
+                        "endLineno": 1,
+                        "endColno": 39
                     }
                 }
             }
@@ -39,7 +46,7 @@
         "errMsg": []
     },
     {
-        "uid": "26d1701c-275b-4347-8cf3-a0d9c3c72832",
+        "uid": "0289d403-cea1-454f-8ee0-f6ea9bd14d06",
         "name": "import",
         "type": "meta_primitive",
         "args": [
@@ -55,6 +62,13 @@
                         "startColno": 8,
                         "endLineno": 2,
                         "endColno": 11
+                    },
+                    "valueMeta": {
+                        "type": "VALUE",
+                        "startLineno": 2,
+                        "startColno": 15,
+                        "endLineno": 2,
+                        "endColno": 36
                     }
                 }
             }
@@ -78,13 +92,13 @@
         "errMsg": []
     },
     {
-        "uid": "86f338d3-2f29-4499-880b-af1d2979d577",
+        "uid": "372ee855-e654-45b7-9c4e-3cb48c031a09",
         "name": "coffeeShop",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "5895f5a5-46f2-4cdf-8c23-86cb7a0590c7",
+                "uid": "c5524c18-a107-485a-9a82-7c2e51870cfd",
                 "name": "introduce",
                 "type": "meta_primitive",
                 "args": [
@@ -100,6 +114,13 @@
                                 "startColno": 9,
                                 "endLineno": 6,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 6,
+                                "startColno": 16,
+                                "endLineno": 6,
+                                "endColno": 28
                             }
                         }
                     },
@@ -115,6 +136,13 @@
                                 "startColno": 9,
                                 "endLineno": 7,
                                 "endColno": 12
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 7,
+                                "startColno": 15,
+                                "endLineno": 7,
+                                "endColno": 18
                             }
                         }
                     }
@@ -144,7 +172,7 @@
                 ]
             },
             {
-                "uid": "d13e42cb-2677-48bb-970a-5c252e1d509f",
+                "uid": "5c763263-cbae-4a08-9514-720f50a1c2a7",
                 "name": "introduce",
                 "type": "meta_primitive",
                 "args": [
@@ -160,6 +188,13 @@
                                 "startColno": 9,
                                 "endLineno": 10,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 10,
+                                "startColno": 16,
+                                "endLineno": 10,
+                                "endColno": 19
                             }
                         }
                     },
@@ -175,6 +210,13 @@
                                 "startColno": 9,
                                 "endLineno": 11,
                                 "endColno": 12
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 11,
+                                "startColno": 15,
+                                "endLineno": 11,
+                                "endColno": 18
                             }
                         }
                     },
@@ -190,6 +232,13 @@
                                 "startColno": 9,
                                 "endLineno": 12,
                                 "endColno": 19
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 12,
+                                "startColno": 22,
+                                "endLineno": 12,
+                                "endColno": 25
                             }
                         }
                     }
@@ -217,24 +266,24 @@
                 "errMsg": []
             },
             {
-                "uid": "b4132a81-feb5-4caa-8bc4-3fee5b24341d",
+                "uid": "cb4187b2-7229-4858-81d2-0df49e411d51",
                 "name": "visitShop",
                 "type": "behavior",
                 "args": [],
                 "definition": {
-                    "uid": "de1b82be-3231-45f8-8305-717dcea8e225",
+                    "uid": "9e56c219-afad-4e8f-b8e2-f34fb3619347",
                     "type": "behavior",
                     "parsedArgs": [],
                     "behaviorName": "visitShop",
                     "body": [
                         {
-                            "uid": "3dfff083-3751-4702-aadb-639a721033e9",
+                            "uid": "eb826a84-8c3f-4ea1-b353-e7af2eb579c5",
                             "type": "cmd",
                             "command": "baristaPresentsMenu",
                             "args": []
                         },
                         {
-                            "uid": "0bbdaa2a-b672-47eb-b4ce-67e53451bdc9",
+                            "uid": "1a37f96a-83e0-4df6-969d-f013e2d6da58",
                             "type": "cmd",
                             "command": "acceptChoice",
                             "args": [
@@ -250,13 +299,20 @@
                                             "startColno": 9,
                                             "endLineno": 21,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 21,
+                                            "startColno": 17,
+                                            "endLineno": 21,
+                                            "endColno": 27
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "185c9445-8d3a-4828-a885-d9191a320f3d",
+                            "uid": "2f52d65e-fb8e-4c69-844a-644ce734e529",
                             "type": "cmd",
                             "command": "checkIfUserChoseCoffee",
                             "args": [
@@ -272,6 +328,13 @@
                                             "startColno": 9,
                                             "endLineno": 25,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 25,
+                                            "startColno": 17,
+                                            "endLineno": 25,
+                                            "endColno": 33
                                         }
                                     }
                                 },
@@ -287,13 +350,20 @@
                                             "startColno": 9,
                                             "endLineno": 26,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 26,
+                                            "startColno": 18,
+                                            "endLineno": 26,
+                                            "endColno": 28
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "404a8579-2497-4f12-8dc7-bd73255e3a4d",
+                            "uid": "a73edff8-717b-40c3-a9bb-09b762f35683",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -309,13 +379,20 @@
                                             "startColno": 9,
                                             "endLineno": 28,
                                             "endColno": 17
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 28,
+                                            "startColno": 21,
+                                            "endLineno": 28,
+                                            "endColno": 37
                                         }
                                     }
                                 }
                             ],
                             "body": [
                                 {
-                                    "uid": "79dd7aa1-67cc-454d-ab03-fc934844a455",
+                                    "uid": "85ea1950-dca1-4781-a978-1fe7feb6c8be",
                                     "type": "cmd",
                                     "command": "addCoffeeToCart",
                                     "args": [
@@ -331,13 +408,20 @@
                                                     "startColno": 13,
                                                     "endLineno": 30,
                                                     "endColno": 16
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 30,
+                                                    "startColno": 20,
+                                                    "endLineno": 30,
+                                                    "endColno": 32
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "5c4eb9e1-b50e-4956-ae3c-934075009547",
+                                    "uid": "fba9641d-a907-4f5b-9c0a-5a74a07fd512",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -345,7 +429,7 @@
                             ]
                         },
                         {
-                            "uid": "a4f3baa7-395d-4e3e-a71b-273125c6f84c",
+                            "uid": "05d8f0af-fed0-499e-8aec-3fa88e3ce4aa",
                             "type": "cmd",
                             "command": "checkIfUserChoseBagel",
                             "args": [
@@ -361,6 +445,13 @@
                                             "startColno": 9,
                                             "endLineno": 37,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 37,
+                                            "startColno": 17,
+                                            "endLineno": 37,
+                                            "endColno": 32
                                         }
                                     }
                                 },
@@ -376,13 +467,20 @@
                                             "startColno": 9,
                                             "endLineno": 38,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 38,
+                                            "startColno": 18,
+                                            "endLineno": 38,
+                                            "endColno": 28
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "5523340f-e73c-47a6-9bbe-8ead5176a51a",
+                            "uid": "be7d63b6-0308-4341-b8c4-7a5c26994961",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -398,13 +496,20 @@
                                             "startColno": 9,
                                             "endLineno": 40,
                                             "endColno": 17
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 40,
+                                            "startColno": 21,
+                                            "endLineno": 40,
+                                            "endColno": 36
                                         }
                                     }
                                 }
                             ],
                             "body": [
                                 {
-                                    "uid": "16586408-5c7e-44b3-98bf-8664cbe8ab56",
+                                    "uid": "267de2f8-c171-4afd-8184-4fceaca3eb9e",
                                     "type": "cmd",
                                     "command": "addBagelToCart",
                                     "args": [
@@ -420,13 +525,20 @@
                                                     "startColno": 13,
                                                     "endLineno": 42,
                                                     "endColno": 16
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 42,
+                                                    "startColno": 20,
+                                                    "endLineno": 42,
+                                                    "endColno": 32
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "2a698fd8-1c4f-4ce2-921e-806fe745e34a",
+                                    "uid": "7de2f72b-9ae4-4b53-934a-d96c22003d83",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -434,7 +546,7 @@
                             ]
                         },
                         {
-                            "uid": "da16bb3e-a657-4077-888e-474f4dd51799",
+                            "uid": "c32b2c74-ae75-4ce7-af42-50657e41bb08",
                             "type": "cmd",
                             "command": "checkIfUserChoseDisplayCart",
                             "args": [
@@ -450,6 +562,13 @@
                                             "startColno": 9,
                                             "endLineno": 49,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 49,
+                                            "startColno": 17,
+                                            "endLineno": 49,
+                                            "endColno": 39
                                         }
                                     }
                                 },
@@ -465,13 +584,20 @@
                                             "startColno": 9,
                                             "endLineno": 50,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 50,
+                                            "startColno": 18,
+                                            "endLineno": 50,
+                                            "endColno": 28
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "0e52241d-0a99-4222-8900-e9c6063d6d18",
+                            "uid": "7ea26601-3874-4661-91b2-1cc9b959da5e",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -487,13 +613,20 @@
                                             "startColno": 9,
                                             "endLineno": 52,
                                             "endColno": 17
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 52,
+                                            "startColno": 21,
+                                            "endLineno": 52,
+                                            "endColno": 43
                                         }
                                     }
                                 }
                             ],
                             "body": [
                                 {
-                                    "uid": "dbc40634-09bf-407d-a7e3-5b9d047218db",
+                                    "uid": "e3ee6d51-dc4c-40c9-90e1-44414e5cbe55",
                                     "type": "cmd",
                                     "command": "displayCart",
                                     "args": [
@@ -509,13 +642,20 @@
                                                     "startColno": 13,
                                                     "endLineno": 54,
                                                     "endColno": 16
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 54,
+                                                    "startColno": 20,
+                                                    "endLineno": 54,
+                                                    "endColno": 32
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "2740568b-bb49-4d3c-8918-3903e7ce8da5",
+                                    "uid": "89cf1d59-6d7b-4713-9f3a-01df2723c1ff",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -523,7 +663,7 @@
                             ]
                         },
                         {
-                            "uid": "fb1fe936-d30d-49c2-8f37-e60a146e32c4",
+                            "uid": "bbd58a51-f14c-40e0-93fd-8eda1db7366b",
                             "type": "cmd",
                             "command": "checkIfUserChoseClearCart",
                             "args": [
@@ -539,6 +679,13 @@
                                             "startColno": 9,
                                             "endLineno": 61,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 61,
+                                            "startColno": 17,
+                                            "endLineno": 61,
+                                            "endColno": 37
                                         }
                                     }
                                 },
@@ -554,13 +701,20 @@
                                             "startColno": 9,
                                             "endLineno": 62,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 62,
+                                            "startColno": 18,
+                                            "endLineno": 62,
+                                            "endColno": 28
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "e80d1107-bd76-4d80-9e78-85aff97482cf",
+                            "uid": "d9d41383-c97b-4f55-b360-abb96f614578",
                             "type": "functional",
                             "name": "if",
                             "args": [
@@ -576,13 +730,20 @@
                                             "startColno": 9,
                                             "endLineno": 64,
                                             "endColno": 17
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 64,
+                                            "startColno": 21,
+                                            "endLineno": 64,
+                                            "endColno": 41
                                         }
                                     }
                                 }
                             ],
                             "body": [
                                 {
-                                    "uid": "6dbd89c3-4276-4fa6-83c1-1cf62e0ef791",
+                                    "uid": "3ebe5591-adfa-487d-af66-e21111381bba",
                                     "type": "cmd",
                                     "command": "clearCart",
                                     "args": [
@@ -598,13 +759,20 @@
                                                     "startColno": 13,
                                                     "endLineno": 66,
                                                     "endColno": 16
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 66,
+                                                    "startColno": 20,
+                                                    "endLineno": 66,
+                                                    "endColno": 32
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "dd5a4aa7-f85d-486e-bc6c-cdf4d5cf41ad",
+                                    "uid": "bab46bd7-3c99-4849-89d8-6646c928b08e",
                                     "type": "cmd",
                                     "command": "visitShop",
                                     "args": []
@@ -618,24 +786,24 @@
         ]
     },
     {
-        "uid": "de1b82be-3231-45f8-8305-717dcea8e225",
+        "uid": "9e56c219-afad-4e8f-b8e2-f34fb3619347",
         "name": "visitShop",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "3dfff083-3751-4702-aadb-639a721033e9",
+                "uid": "eb826a84-8c3f-4ea1-b353-e7af2eb579c5",
                 "name": "baristaPresentsMenu",
                 "type": "behavior",
                 "args": [],
                 "definition": {
-                    "uid": "82f183cc-b2a7-42ef-94ed-2b9e1d4873f4",
+                    "uid": "4a9fd783-8b40-4cdc-ad0d-2659287b5c29",
                     "type": "behavior",
                     "parsedArgs": [],
                     "behaviorName": "baristaPresentsMenu",
                     "body": [
                         {
-                            "uid": "ee99245e-cee8-4ed4-a994-a3ff411d6a16",
+                            "uid": "3fc30d96-d004-44fc-b9d0-839eb6a26c71",
                             "type": "cmd",
                             "command": "terminal_display",
                             "args": [
@@ -651,6 +819,13 @@
                                             "startColno": 9,
                                             "endLineno": 74,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 74,
+                                            "startColno": 17,
+                                            "endLineno": 74,
+                                            "endColno": 20
                                         }
                                     }
                                 }
@@ -661,7 +836,7 @@
                 "errMsg": []
             },
             {
-                "uid": "0bbdaa2a-b672-47eb-b4ce-67e53451bdc9",
+                "uid": "1a37f96a-83e0-4df6-969d-f013e2d6da58",
                 "name": "acceptChoice",
                 "type": "behavior",
                 "args": [
@@ -677,18 +852,25 @@
                                 "startColno": 9,
                                 "endLineno": 21,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 21,
+                                "startColno": 17,
+                                "endLineno": 21,
+                                "endColno": 27
                             }
                         }
                     }
                 ],
                 "definition": {
-                    "uid": "f4aa48c9-90b2-4ea4-bcc6-02ce07a95ca7",
+                    "uid": "d1e60387-79c6-40ed-be33-01f653c1161f",
                     "type": "behavior",
                     "parsedArgs": [],
                     "behaviorName": "acceptChoice",
                     "body": [
                         {
-                            "uid": "e879ec66-25b1-4b41-abc7-eb50701c7fd4",
+                            "uid": "88b392df-1574-4d11-a6ca-c950790b3e7c",
                             "type": "cmd",
                             "command": "terminal_input",
                             "args": [
@@ -704,13 +886,20 @@
                                             "startColno": 9,
                                             "endLineno": 80,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 80,
+                                            "startColno": 17,
+                                            "endLineno": 80,
+                                            "endColno": 30
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "27120f7c-e6d7-418d-abc4-e0326d6dc336",
+                            "uid": "779673e6-af08-4b49-a99e-59ba8fc7ec3f",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -726,6 +915,13 @@
                                             "startColno": 11,
                                             "endLineno": 82,
                                             "endColno": 15
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 82,
+                                            "startColno": 17,
+                                            "endLineno": 82,
+                                            "endColno": 30
                                         }
                                     }
                                 }
@@ -736,7 +932,7 @@
                 "errMsg": []
             },
             {
-                "uid": "185c9445-8d3a-4828-a885-d9191a320f3d",
+                "uid": "2f52d65e-fb8e-4c69-844a-644ce734e529",
                 "name": "checkIfUserChoseCoffee",
                 "type": "behavior",
                 "args": [
@@ -752,6 +948,13 @@
                                 "startColno": 9,
                                 "endLineno": 25,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 25,
+                                "startColno": 17,
+                                "endLineno": 25,
+                                "endColno": 33
                             }
                         }
                     },
@@ -767,25 +970,40 @@
                                 "startColno": 9,
                                 "endLineno": 26,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 26,
+                                "startColno": 18,
+                                "endLineno": 26,
+                                "endColno": 28
                             }
                         }
                     }
                 ],
                 "definition": {
-                    "uid": "67105b34-362e-433a-9254-189864257ffb",
+                    "uid": "71898110-d25a-4181-ba9d-bc4eb4952c7e",
                     "type": "behavior",
                     "parsedArgs": [
                         {
                             "arg": null,
                             "type": "name",
                             "value": "user_choice",
-                            "meta": {}
+                            "meta": {
+                                "valueMeta": {
+                                    "type": "VALUE",
+                                    "startLineno": 10,
+                                    "startColno": 34,
+                                    "endLineno": 10,
+                                    "endColno": 44
+                                }
+                            }
                         }
                     ],
                     "behaviorName": "checkIfUserChoseCoffee",
                     "body": [
                         {
-                            "uid": "7bdc8963-999e-4810-8a72-c6b485ef28e8",
+                            "uid": "2a48cd36-d6f7-415c-93f9-e8a3e67b2a20",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -801,6 +1019,13 @@
                                             "startColno": 9,
                                             "endLineno": 12,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 12,
+                                            "startColno": 17,
+                                            "endLineno": 12,
+                                            "endColno": 37
                                         }
                                     }
                                 },
@@ -816,6 +1041,13 @@
                                             "startColno": 9,
                                             "endLineno": 13,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 13,
+                                            "startColno": 18,
+                                            "endLineno": 13,
+                                            "endColno": 28
                                         }
                                     }
                                 },
@@ -831,13 +1063,20 @@
                                             "startColno": 9,
                                             "endLineno": 14,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 14,
+                                            "startColno": 18,
+                                            "endLineno": 14,
+                                            "endColno": 25
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "f0614107-92a4-433d-8734-f02912f35a6d",
+                            "uid": "b33e4a3c-83e7-4f6a-b04f-a2ce5cde5056",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -845,7 +1084,15 @@
                                     "arg": null,
                                     "type": "name",
                                     "value": "user_chose_coffee",
-                                    "meta": {}
+                                    "meta": {
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 16,
+                                            "startColno": 11,
+                                            "endLineno": 16,
+                                            "endColno": 27
+                                        }
+                                    }
                                 }
                             ]
                         }
@@ -854,7 +1101,7 @@
                 "errMsg": []
             },
             {
-                "uid": "404a8579-2497-4f12-8dc7-bd73255e3a4d",
+                "uid": "a73edff8-717b-40c3-a9bb-09b762f35683",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -870,6 +1117,13 @@
                                 "startColno": 9,
                                 "endLineno": 28,
                                 "endColno": 17
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 28,
+                                "startColno": 21,
+                                "endLineno": 28,
+                                "endColno": 37
                             }
                         }
                     }
@@ -877,7 +1131,7 @@
                 "errMsg": [],
                 "body": [
                     {
-                        "uid": "79dd7aa1-67cc-454d-ab03-fc934844a455",
+                        "uid": "85ea1950-dca1-4781-a978-1fe7feb6c8be",
                         "name": "addCoffeeToCart",
                         "type": "behavior",
                         "args": [
@@ -893,12 +1147,19 @@
                                         "startColno": 13,
                                         "endLineno": 30,
                                         "endColno": 16
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 30,
+                                        "startColno": 20,
+                                        "endLineno": 30,
+                                        "endColno": 32
                                     }
                                 }
                             }
                         ],
                         "definition": {
-                            "uid": "d15a4ea4-701d-440b-a6e2-688be7a8db19",
+                            "uid": "798d9398-043d-4c44-bbd1-7710c191a2b8",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -913,6 +1174,13 @@
                                             "startColno": 26,
                                             "endLineno": 85,
                                             "endColno": 29
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 85,
+                                            "startColno": 33,
+                                            "endLineno": 85,
+                                            "endColno": 36
                                         }
                                     }
                                 }
@@ -920,7 +1188,7 @@
                             "behaviorName": "addCoffeeToCart",
                             "body": [
                                 {
-                                    "uid": "6700044f-42af-43c9-85d5-ad1d3a26fca5",
+                                    "uid": "a72e3f50-277d-4131-a4f7-58840a034b8a",
                                     "type": "cmd",
                                     "command": "insert_at_end_of_list",
                                     "args": [
@@ -936,6 +1204,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 87,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 87,
+                                                    "startColno": 17,
+                                                    "endLineno": 87,
+                                                    "endColno": 24
                                                 }
                                             }
                                         },
@@ -951,6 +1226,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 88,
                                                     "endColno": 12
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 88,
+                                                    "startColno": 16,
+                                                    "endLineno": 88,
+                                                    "endColno": 19
                                                 }
                                             }
                                         }
@@ -961,24 +1243,24 @@
                         "errMsg": []
                     },
                     {
-                        "uid": "5c4eb9e1-b50e-4956-ae3c-934075009547",
+                        "uid": "fba9641d-a907-4f5b-9c0a-5a74a07fd512",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "de1b82be-3231-45f8-8305-717dcea8e225",
+                            "uid": "9e56c219-afad-4e8f-b8e2-f34fb3619347",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "3dfff083-3751-4702-aadb-639a721033e9",
+                                    "uid": "eb826a84-8c3f-4ea1-b353-e7af2eb579c5",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "0bbdaa2a-b672-47eb-b4ce-67e53451bdc9",
+                                    "uid": "1a37f96a-83e0-4df6-969d-f013e2d6da58",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -994,13 +1276,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 21,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 21,
+                                                    "startColno": 17,
+                                                    "endLineno": 21,
+                                                    "endColno": 27
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "185c9445-8d3a-4828-a885-d9191a320f3d",
+                                    "uid": "2f52d65e-fb8e-4c69-844a-644ce734e529",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -1016,6 +1305,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 25,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 25,
+                                                    "startColno": 17,
+                                                    "endLineno": 25,
+                                                    "endColno": 33
                                                 }
                                             }
                                         },
@@ -1031,13 +1327,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 26,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 26,
+                                                    "startColno": 18,
+                                                    "endLineno": 26,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "404a8579-2497-4f12-8dc7-bd73255e3a4d",
+                                    "uid": "a73edff8-717b-40c3-a9bb-09b762f35683",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1053,13 +1356,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 28,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 28,
+                                                    "startColno": 21,
+                                                    "endLineno": 28,
+                                                    "endColno": 37
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "79dd7aa1-67cc-454d-ab03-fc934844a455",
+                                            "uid": "85ea1950-dca1-4781-a978-1fe7feb6c8be",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -1075,13 +1385,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 30,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 30,
+                                                            "startColno": 20,
+                                                            "endLineno": 30,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "5c4eb9e1-b50e-4956-ae3c-934075009547",
+                                            "uid": "fba9641d-a907-4f5b-9c0a-5a74a07fd512",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1089,7 +1406,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "a4f3baa7-395d-4e3e-a71b-273125c6f84c",
+                                    "uid": "05d8f0af-fed0-499e-8aec-3fa88e3ce4aa",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -1105,6 +1422,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 37,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 37,
+                                                    "startColno": 17,
+                                                    "endLineno": 37,
+                                                    "endColno": 32
                                                 }
                                             }
                                         },
@@ -1120,13 +1444,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 38,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 38,
+                                                    "startColno": 18,
+                                                    "endLineno": 38,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "5523340f-e73c-47a6-9bbe-8ead5176a51a",
+                                    "uid": "be7d63b6-0308-4341-b8c4-7a5c26994961",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1142,13 +1473,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 40,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 40,
+                                                    "startColno": 21,
+                                                    "endLineno": 40,
+                                                    "endColno": 36
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "16586408-5c7e-44b3-98bf-8664cbe8ab56",
+                                            "uid": "267de2f8-c171-4afd-8184-4fceaca3eb9e",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -1164,13 +1502,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 42,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 42,
+                                                            "startColno": 20,
+                                                            "endLineno": 42,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2a698fd8-1c4f-4ce2-921e-806fe745e34a",
+                                            "uid": "7de2f72b-9ae4-4b53-934a-d96c22003d83",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1178,7 +1523,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "da16bb3e-a657-4077-888e-474f4dd51799",
+                                    "uid": "c32b2c74-ae75-4ce7-af42-50657e41bb08",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -1194,6 +1539,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 49,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 49,
+                                                    "startColno": 17,
+                                                    "endLineno": 49,
+                                                    "endColno": 39
                                                 }
                                             }
                                         },
@@ -1209,13 +1561,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 50,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 50,
+                                                    "startColno": 18,
+                                                    "endLineno": 50,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "0e52241d-0a99-4222-8900-e9c6063d6d18",
+                                    "uid": "7ea26601-3874-4661-91b2-1cc9b959da5e",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1231,13 +1590,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 52,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 52,
+                                                    "startColno": 21,
+                                                    "endLineno": 52,
+                                                    "endColno": 43
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "dbc40634-09bf-407d-a7e3-5b9d047218db",
+                                            "uid": "e3ee6d51-dc4c-40c9-90e1-44414e5cbe55",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -1253,13 +1619,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 54,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 54,
+                                                            "startColno": 20,
+                                                            "endLineno": 54,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2740568b-bb49-4d3c-8918-3903e7ce8da5",
+                                            "uid": "89cf1d59-6d7b-4713-9f3a-01df2723c1ff",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1267,7 +1640,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "fb1fe936-d30d-49c2-8f37-e60a146e32c4",
+                                    "uid": "bbd58a51-f14c-40e0-93fd-8eda1db7366b",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -1283,6 +1656,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 61,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 61,
+                                                    "startColno": 17,
+                                                    "endLineno": 61,
+                                                    "endColno": 37
                                                 }
                                             }
                                         },
@@ -1298,13 +1678,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 62,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 62,
+                                                    "startColno": 18,
+                                                    "endLineno": 62,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "e80d1107-bd76-4d80-9e78-85aff97482cf",
+                                    "uid": "d9d41383-c97b-4f55-b360-abb96f614578",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1320,13 +1707,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 64,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 64,
+                                                    "startColno": 21,
+                                                    "endLineno": 64,
+                                                    "endColno": 41
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "6dbd89c3-4276-4fa6-83c1-1cf62e0ef791",
+                                            "uid": "3ebe5591-adfa-487d-af66-e21111381bba",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -1342,13 +1736,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 66,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 66,
+                                                            "startColno": 20,
+                                                            "endLineno": 66,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "dd5a4aa7-f85d-486e-bc6c-cdf4d5cf41ad",
+                                            "uid": "bab46bd7-3c99-4849-89d8-6646c928b08e",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1362,7 +1763,7 @@
                 ]
             },
             {
-                "uid": "a4f3baa7-395d-4e3e-a71b-273125c6f84c",
+                "uid": "05d8f0af-fed0-499e-8aec-3fa88e3ce4aa",
                 "name": "checkIfUserChoseBagel",
                 "type": "behavior",
                 "args": [
@@ -1378,6 +1779,13 @@
                                 "startColno": 9,
                                 "endLineno": 37,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 37,
+                                "startColno": 17,
+                                "endLineno": 37,
+                                "endColno": 32
                             }
                         }
                     },
@@ -1393,25 +1801,40 @@
                                 "startColno": 9,
                                 "endLineno": 38,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 38,
+                                "startColno": 18,
+                                "endLineno": 38,
+                                "endColno": 28
                             }
                         }
                     }
                 ],
                 "definition": {
-                    "uid": "c469bd41-9681-4083-8d96-3e6c70e17851",
+                    "uid": "cc684eb5-bb4d-435d-bffa-273345ee6ebe",
                     "type": "behavior",
                     "parsedArgs": [
                         {
                             "arg": null,
                             "type": "name",
                             "value": "user_choice",
-                            "meta": {}
+                            "meta": {
+                                "valueMeta": {
+                                    "type": "VALUE",
+                                    "startLineno": 1,
+                                    "startColno": 33,
+                                    "endLineno": 1,
+                                    "endColno": 43
+                                }
+                            }
                         }
                     ],
                     "behaviorName": "checkIfUserChoseBagel",
                     "body": [
                         {
-                            "uid": "e7f34ddd-dc02-4a85-a29c-9c2e8c0d575e",
+                            "uid": "90a27f9f-469e-4ea8-8f9f-c8fd8c461da5",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -1427,6 +1850,13 @@
                                             "startColno": 9,
                                             "endLineno": 3,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 3,
+                                            "startColno": 17,
+                                            "endLineno": 3,
+                                            "endColno": 32
                                         }
                                     }
                                 },
@@ -1442,6 +1872,13 @@
                                             "startColno": 9,
                                             "endLineno": 4,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 4,
+                                            "startColno": 18,
+                                            "endLineno": 4,
+                                            "endColno": 28
                                         }
                                     }
                                 },
@@ -1457,13 +1894,20 @@
                                             "startColno": 9,
                                             "endLineno": 5,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 5,
+                                            "startColno": 18,
+                                            "endLineno": 5,
+                                            "endColno": 24
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "f25269a5-fd50-44a2-be9d-ffc2576db6cb",
+                            "uid": "1cf6311a-d6b5-49ef-99b3-5a664add6964",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -1471,7 +1915,15 @@
                                     "arg": null,
                                     "type": "name",
                                     "value": "user_chose_bagel",
-                                    "meta": {}
+                                    "meta": {
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 7,
+                                            "startColno": 11,
+                                            "endLineno": 7,
+                                            "endColno": 26
+                                        }
+                                    }
                                 }
                             ]
                         }
@@ -1480,7 +1932,7 @@
                 "errMsg": []
             },
             {
-                "uid": "5523340f-e73c-47a6-9bbe-8ead5176a51a",
+                "uid": "be7d63b6-0308-4341-b8c4-7a5c26994961",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -1496,6 +1948,13 @@
                                 "startColno": 9,
                                 "endLineno": 40,
                                 "endColno": 17
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 40,
+                                "startColno": 21,
+                                "endLineno": 40,
+                                "endColno": 36
                             }
                         }
                     }
@@ -1503,7 +1962,7 @@
                 "errMsg": [],
                 "body": [
                     {
-                        "uid": "16586408-5c7e-44b3-98bf-8664cbe8ab56",
+                        "uid": "267de2f8-c171-4afd-8184-4fceaca3eb9e",
                         "name": "addBagelToCart",
                         "type": "behavior",
                         "args": [
@@ -1519,12 +1978,19 @@
                                         "startColno": 13,
                                         "endLineno": 42,
                                         "endColno": 16
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 42,
+                                        "startColno": 20,
+                                        "endLineno": 42,
+                                        "endColno": 32
                                     }
                                 }
                             }
                         ],
                         "definition": {
-                            "uid": "5ea72b80-0da8-4591-9d39-902d2a7cf223",
+                            "uid": "17137d9e-dd3b-4be6-978d-64f6eb19c4db",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -1539,6 +2005,13 @@
                                             "startColno": 25,
                                             "endLineno": 92,
                                             "endColno": 28
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 92,
+                                            "startColno": 32,
+                                            "endLineno": 92,
+                                            "endColno": 35
                                         }
                                     }
                                 }
@@ -1546,7 +2019,7 @@
                             "behaviorName": "addBagelToCart",
                             "body": [
                                 {
-                                    "uid": "4e643223-9959-4651-a938-3e6b0ea36c58",
+                                    "uid": "13992128-5f71-4a44-9033-7003f8077d86",
                                     "type": "cmd",
                                     "command": "insert_at_end_of_list",
                                     "args": [
@@ -1562,6 +2035,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 94,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 94,
+                                                    "startColno": 17,
+                                                    "endLineno": 94,
+                                                    "endColno": 23
                                                 }
                                             }
                                         },
@@ -1577,6 +2057,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 95,
                                                     "endColno": 12
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 95,
+                                                    "startColno": 16,
+                                                    "endLineno": 95,
+                                                    "endColno": 19
                                                 }
                                             }
                                         }
@@ -1587,24 +2074,24 @@
                         "errMsg": []
                     },
                     {
-                        "uid": "2a698fd8-1c4f-4ce2-921e-806fe745e34a",
+                        "uid": "7de2f72b-9ae4-4b53-934a-d96c22003d83",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "de1b82be-3231-45f8-8305-717dcea8e225",
+                            "uid": "9e56c219-afad-4e8f-b8e2-f34fb3619347",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "3dfff083-3751-4702-aadb-639a721033e9",
+                                    "uid": "eb826a84-8c3f-4ea1-b353-e7af2eb579c5",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "0bbdaa2a-b672-47eb-b4ce-67e53451bdc9",
+                                    "uid": "1a37f96a-83e0-4df6-969d-f013e2d6da58",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -1620,13 +2107,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 21,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 21,
+                                                    "startColno": 17,
+                                                    "endLineno": 21,
+                                                    "endColno": 27
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "185c9445-8d3a-4828-a885-d9191a320f3d",
+                                    "uid": "2f52d65e-fb8e-4c69-844a-644ce734e529",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -1642,6 +2136,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 25,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 25,
+                                                    "startColno": 17,
+                                                    "endLineno": 25,
+                                                    "endColno": 33
                                                 }
                                             }
                                         },
@@ -1657,13 +2158,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 26,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 26,
+                                                    "startColno": 18,
+                                                    "endLineno": 26,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "404a8579-2497-4f12-8dc7-bd73255e3a4d",
+                                    "uid": "a73edff8-717b-40c3-a9bb-09b762f35683",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1679,13 +2187,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 28,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 28,
+                                                    "startColno": 21,
+                                                    "endLineno": 28,
+                                                    "endColno": 37
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "79dd7aa1-67cc-454d-ab03-fc934844a455",
+                                            "uid": "85ea1950-dca1-4781-a978-1fe7feb6c8be",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -1701,13 +2216,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 30,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 30,
+                                                            "startColno": 20,
+                                                            "endLineno": 30,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "5c4eb9e1-b50e-4956-ae3c-934075009547",
+                                            "uid": "fba9641d-a907-4f5b-9c0a-5a74a07fd512",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1715,7 +2237,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "a4f3baa7-395d-4e3e-a71b-273125c6f84c",
+                                    "uid": "05d8f0af-fed0-499e-8aec-3fa88e3ce4aa",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -1731,6 +2253,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 37,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 37,
+                                                    "startColno": 17,
+                                                    "endLineno": 37,
+                                                    "endColno": 32
                                                 }
                                             }
                                         },
@@ -1746,13 +2275,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 38,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 38,
+                                                    "startColno": 18,
+                                                    "endLineno": 38,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "5523340f-e73c-47a6-9bbe-8ead5176a51a",
+                                    "uid": "be7d63b6-0308-4341-b8c4-7a5c26994961",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1768,13 +2304,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 40,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 40,
+                                                    "startColno": 21,
+                                                    "endLineno": 40,
+                                                    "endColno": 36
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "16586408-5c7e-44b3-98bf-8664cbe8ab56",
+                                            "uid": "267de2f8-c171-4afd-8184-4fceaca3eb9e",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -1790,13 +2333,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 42,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 42,
+                                                            "startColno": 20,
+                                                            "endLineno": 42,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2a698fd8-1c4f-4ce2-921e-806fe745e34a",
+                                            "uid": "7de2f72b-9ae4-4b53-934a-d96c22003d83",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1804,7 +2354,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "da16bb3e-a657-4077-888e-474f4dd51799",
+                                    "uid": "c32b2c74-ae75-4ce7-af42-50657e41bb08",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -1820,6 +2370,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 49,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 49,
+                                                    "startColno": 17,
+                                                    "endLineno": 49,
+                                                    "endColno": 39
                                                 }
                                             }
                                         },
@@ -1835,13 +2392,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 50,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 50,
+                                                    "startColno": 18,
+                                                    "endLineno": 50,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "0e52241d-0a99-4222-8900-e9c6063d6d18",
+                                    "uid": "7ea26601-3874-4661-91b2-1cc9b959da5e",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1857,13 +2421,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 52,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 52,
+                                                    "startColno": 21,
+                                                    "endLineno": 52,
+                                                    "endColno": 43
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "dbc40634-09bf-407d-a7e3-5b9d047218db",
+                                            "uid": "e3ee6d51-dc4c-40c9-90e1-44414e5cbe55",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -1879,13 +2450,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 54,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 54,
+                                                            "startColno": 20,
+                                                            "endLineno": 54,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2740568b-bb49-4d3c-8918-3903e7ce8da5",
+                                            "uid": "89cf1d59-6d7b-4713-9f3a-01df2723c1ff",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1893,7 +2471,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "fb1fe936-d30d-49c2-8f37-e60a146e32c4",
+                                    "uid": "bbd58a51-f14c-40e0-93fd-8eda1db7366b",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -1909,6 +2487,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 61,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 61,
+                                                    "startColno": 17,
+                                                    "endLineno": 61,
+                                                    "endColno": 37
                                                 }
                                             }
                                         },
@@ -1924,13 +2509,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 62,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 62,
+                                                    "startColno": 18,
+                                                    "endLineno": 62,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "e80d1107-bd76-4d80-9e78-85aff97482cf",
+                                    "uid": "d9d41383-c97b-4f55-b360-abb96f614578",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -1946,13 +2538,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 64,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 64,
+                                                    "startColno": 21,
+                                                    "endLineno": 64,
+                                                    "endColno": 41
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "6dbd89c3-4276-4fa6-83c1-1cf62e0ef791",
+                                            "uid": "3ebe5591-adfa-487d-af66-e21111381bba",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -1968,13 +2567,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 66,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 66,
+                                                            "startColno": 20,
+                                                            "endLineno": 66,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "dd5a4aa7-f85d-486e-bc6c-cdf4d5cf41ad",
+                                            "uid": "bab46bd7-3c99-4849-89d8-6646c928b08e",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -1988,7 +2594,7 @@
                 ]
             },
             {
-                "uid": "da16bb3e-a657-4077-888e-474f4dd51799",
+                "uid": "c32b2c74-ae75-4ce7-af42-50657e41bb08",
                 "name": "checkIfUserChoseDisplayCart",
                 "type": "behavior",
                 "args": [
@@ -2004,6 +2610,13 @@
                                 "startColno": 9,
                                 "endLineno": 49,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 49,
+                                "startColno": 17,
+                                "endLineno": 49,
+                                "endColno": 39
                             }
                         }
                     },
@@ -2019,25 +2632,40 @@
                                 "startColno": 9,
                                 "endLineno": 50,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 50,
+                                "startColno": 18,
+                                "endLineno": 50,
+                                "endColno": 28
                             }
                         }
                     }
                 ],
                 "definition": {
-                    "uid": "04958d00-eb23-492e-8d1e-7d7eb76d7b35",
+                    "uid": "8198fd09-263b-4aaf-bcff-0d15e322b328",
                     "type": "behavior",
                     "parsedArgs": [
                         {
                             "arg": null,
                             "type": "name",
                             "value": "user_choice",
-                            "meta": {}
+                            "meta": {
+                                "valueMeta": {
+                                    "type": "VALUE",
+                                    "startLineno": 19,
+                                    "startColno": 39,
+                                    "endLineno": 19,
+                                    "endColno": 49
+                                }
+                            }
                         }
                     ],
                     "behaviorName": "checkIfUserChoseDisplayCart",
                     "body": [
                         {
-                            "uid": "4dd2111c-3b4b-4644-bdd5-e322144ecb07",
+                            "uid": "0bb4f89b-f0e7-4e18-8c99-5235a2f18034",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -2053,6 +2681,13 @@
                                             "startColno": 9,
                                             "endLineno": 21,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 21,
+                                            "startColno": 17,
+                                            "endLineno": 21,
+                                            "endColno": 44
                                         }
                                     }
                                 },
@@ -2068,6 +2703,13 @@
                                             "startColno": 9,
                                             "endLineno": 22,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 22,
+                                            "startColno": 18,
+                                            "endLineno": 22,
+                                            "endColno": 28
                                         }
                                     }
                                 },
@@ -2083,13 +2725,20 @@
                                             "startColno": 9,
                                             "endLineno": 23,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 23,
+                                            "startColno": 18,
+                                            "endLineno": 23,
+                                            "endColno": 23
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "b97087d6-0150-4496-af1f-757ae84bd790",
+                            "uid": "c07c4788-2188-49d7-9538-d05bf97d76f6",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -2097,7 +2746,15 @@
                                     "arg": null,
                                     "type": "name",
                                     "value": "did_user_choose_display_cart",
-                                    "meta": {}
+                                    "meta": {
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 25,
+                                            "startColno": 11,
+                                            "endLineno": 25,
+                                            "endColno": 38
+                                        }
+                                    }
                                 }
                             ]
                         }
@@ -2106,7 +2763,7 @@
                 "errMsg": []
             },
             {
-                "uid": "0e52241d-0a99-4222-8900-e9c6063d6d18",
+                "uid": "7ea26601-3874-4661-91b2-1cc9b959da5e",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -2122,6 +2779,13 @@
                                 "startColno": 9,
                                 "endLineno": 52,
                                 "endColno": 17
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 52,
+                                "startColno": 21,
+                                "endLineno": 52,
+                                "endColno": 43
                             }
                         }
                     }
@@ -2129,7 +2793,7 @@
                 "errMsg": [],
                 "body": [
                     {
-                        "uid": "dbc40634-09bf-407d-a7e3-5b9d047218db",
+                        "uid": "e3ee6d51-dc4c-40c9-90e1-44414e5cbe55",
                         "name": "displayCart",
                         "type": "behavior",
                         "args": [
@@ -2145,12 +2809,19 @@
                                         "startColno": 13,
                                         "endLineno": 54,
                                         "endColno": 16
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 54,
+                                        "startColno": 20,
+                                        "endLineno": 54,
+                                        "endColno": 32
                                     }
                                 }
                             }
                         ],
                         "definition": {
-                            "uid": "b687ccfe-ffb7-4cc1-a1e5-c490c53bd6ff",
+                            "uid": "f5d441d5-249d-4545-a898-7a29765b613b",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -2165,6 +2836,13 @@
                                             "startColno": 22,
                                             "endLineno": 99,
                                             "endColno": 25
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 99,
+                                            "startColno": 29,
+                                            "endLineno": 99,
+                                            "endColno": 32
                                         }
                                     }
                                 }
@@ -2172,7 +2850,7 @@
                             "behaviorName": "displayCart",
                             "body": [
                                 {
-                                    "uid": "c2955fc4-c4e9-48a6-8261-53b16bc0a096",
+                                    "uid": "d2d531b5-570c-4ed5-8201-4ecd3e51dd52",
                                     "type": "cmd",
                                     "command": "terminal_display",
                                     "args": [
@@ -2188,6 +2866,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 101,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 101,
+                                                    "startColno": 17,
+                                                    "endLineno": 101,
+                                                    "endColno": 20
                                                 }
                                             }
                                         }
@@ -2198,24 +2883,24 @@
                         "errMsg": []
                     },
                     {
-                        "uid": "2740568b-bb49-4d3c-8918-3903e7ce8da5",
+                        "uid": "89cf1d59-6d7b-4713-9f3a-01df2723c1ff",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "de1b82be-3231-45f8-8305-717dcea8e225",
+                            "uid": "9e56c219-afad-4e8f-b8e2-f34fb3619347",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "3dfff083-3751-4702-aadb-639a721033e9",
+                                    "uid": "eb826a84-8c3f-4ea1-b353-e7af2eb579c5",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "0bbdaa2a-b672-47eb-b4ce-67e53451bdc9",
+                                    "uid": "1a37f96a-83e0-4df6-969d-f013e2d6da58",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -2231,13 +2916,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 21,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 21,
+                                                    "startColno": 17,
+                                                    "endLineno": 21,
+                                                    "endColno": 27
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "185c9445-8d3a-4828-a885-d9191a320f3d",
+                                    "uid": "2f52d65e-fb8e-4c69-844a-644ce734e529",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -2253,6 +2945,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 25,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 25,
+                                                    "startColno": 17,
+                                                    "endLineno": 25,
+                                                    "endColno": 33
                                                 }
                                             }
                                         },
@@ -2268,13 +2967,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 26,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 26,
+                                                    "startColno": 18,
+                                                    "endLineno": 26,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "404a8579-2497-4f12-8dc7-bd73255e3a4d",
+                                    "uid": "a73edff8-717b-40c3-a9bb-09b762f35683",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -2290,13 +2996,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 28,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 28,
+                                                    "startColno": 21,
+                                                    "endLineno": 28,
+                                                    "endColno": 37
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "79dd7aa1-67cc-454d-ab03-fc934844a455",
+                                            "uid": "85ea1950-dca1-4781-a978-1fe7feb6c8be",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -2312,13 +3025,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 30,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 30,
+                                                            "startColno": 20,
+                                                            "endLineno": 30,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "5c4eb9e1-b50e-4956-ae3c-934075009547",
+                                            "uid": "fba9641d-a907-4f5b-9c0a-5a74a07fd512",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -2326,7 +3046,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "a4f3baa7-395d-4e3e-a71b-273125c6f84c",
+                                    "uid": "05d8f0af-fed0-499e-8aec-3fa88e3ce4aa",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -2342,6 +3062,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 37,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 37,
+                                                    "startColno": 17,
+                                                    "endLineno": 37,
+                                                    "endColno": 32
                                                 }
                                             }
                                         },
@@ -2357,13 +3084,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 38,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 38,
+                                                    "startColno": 18,
+                                                    "endLineno": 38,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "5523340f-e73c-47a6-9bbe-8ead5176a51a",
+                                    "uid": "be7d63b6-0308-4341-b8c4-7a5c26994961",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -2379,13 +3113,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 40,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 40,
+                                                    "startColno": 21,
+                                                    "endLineno": 40,
+                                                    "endColno": 36
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "16586408-5c7e-44b3-98bf-8664cbe8ab56",
+                                            "uid": "267de2f8-c171-4afd-8184-4fceaca3eb9e",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -2401,13 +3142,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 42,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 42,
+                                                            "startColno": 20,
+                                                            "endLineno": 42,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2a698fd8-1c4f-4ce2-921e-806fe745e34a",
+                                            "uid": "7de2f72b-9ae4-4b53-934a-d96c22003d83",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -2415,7 +3163,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "da16bb3e-a657-4077-888e-474f4dd51799",
+                                    "uid": "c32b2c74-ae75-4ce7-af42-50657e41bb08",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -2431,6 +3179,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 49,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 49,
+                                                    "startColno": 17,
+                                                    "endLineno": 49,
+                                                    "endColno": 39
                                                 }
                                             }
                                         },
@@ -2446,13 +3201,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 50,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 50,
+                                                    "startColno": 18,
+                                                    "endLineno": 50,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "0e52241d-0a99-4222-8900-e9c6063d6d18",
+                                    "uid": "7ea26601-3874-4661-91b2-1cc9b959da5e",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -2468,13 +3230,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 52,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 52,
+                                                    "startColno": 21,
+                                                    "endLineno": 52,
+                                                    "endColno": 43
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "dbc40634-09bf-407d-a7e3-5b9d047218db",
+                                            "uid": "e3ee6d51-dc4c-40c9-90e1-44414e5cbe55",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -2490,13 +3259,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 54,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 54,
+                                                            "startColno": 20,
+                                                            "endLineno": 54,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2740568b-bb49-4d3c-8918-3903e7ce8da5",
+                                            "uid": "89cf1d59-6d7b-4713-9f3a-01df2723c1ff",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -2504,7 +3280,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "fb1fe936-d30d-49c2-8f37-e60a146e32c4",
+                                    "uid": "bbd58a51-f14c-40e0-93fd-8eda1db7366b",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -2520,6 +3296,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 61,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 61,
+                                                    "startColno": 17,
+                                                    "endLineno": 61,
+                                                    "endColno": 37
                                                 }
                                             }
                                         },
@@ -2535,13 +3318,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 62,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 62,
+                                                    "startColno": 18,
+                                                    "endLineno": 62,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "e80d1107-bd76-4d80-9e78-85aff97482cf",
+                                    "uid": "d9d41383-c97b-4f55-b360-abb96f614578",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -2557,13 +3347,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 64,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 64,
+                                                    "startColno": 21,
+                                                    "endLineno": 64,
+                                                    "endColno": 41
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "6dbd89c3-4276-4fa6-83c1-1cf62e0ef791",
+                                            "uid": "3ebe5591-adfa-487d-af66-e21111381bba",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -2579,13 +3376,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 66,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 66,
+                                                            "startColno": 20,
+                                                            "endLineno": 66,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "dd5a4aa7-f85d-486e-bc6c-cdf4d5cf41ad",
+                                            "uid": "bab46bd7-3c99-4849-89d8-6646c928b08e",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -2599,7 +3403,7 @@
                 ]
             },
             {
-                "uid": "fb1fe936-d30d-49c2-8f37-e60a146e32c4",
+                "uid": "bbd58a51-f14c-40e0-93fd-8eda1db7366b",
                 "name": "checkIfUserChoseClearCart",
                 "type": "behavior",
                 "args": [
@@ -2615,6 +3419,13 @@
                                 "startColno": 9,
                                 "endLineno": 61,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 61,
+                                "startColno": 17,
+                                "endLineno": 61,
+                                "endColno": 37
                             }
                         }
                     },
@@ -2630,25 +3441,40 @@
                                 "startColno": 9,
                                 "endLineno": 62,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 62,
+                                "startColno": 18,
+                                "endLineno": 62,
+                                "endColno": 28
                             }
                         }
                     }
                 ],
                 "definition": {
-                    "uid": "9f6f5b6e-df80-4004-a27a-27058d5cce32",
+                    "uid": "adbb3a7e-cf59-4136-8901-c63ab7780e52",
                     "type": "behavior",
                     "parsedArgs": [
                         {
                             "arg": null,
                             "type": "name",
                             "value": "user_choice",
-                            "meta": {}
+                            "meta": {
+                                "valueMeta": {
+                                    "type": "VALUE",
+                                    "startLineno": 28,
+                                    "startColno": 37,
+                                    "endLineno": 28,
+                                    "endColno": 47
+                                }
+                            }
                         }
                     ],
                     "behaviorName": "checkIfUserChoseClearCart",
                     "body": [
                         {
-                            "uid": "9da4ef2d-47c4-47c3-9ea5-6c9312b2712c",
+                            "uid": "620716c9-7190-40d4-80e6-8405d9616e4a",
                             "type": "cmd",
                             "command": "equals",
                             "args": [
@@ -2664,6 +3490,13 @@
                                             "startColno": 9,
                                             "endLineno": 30,
                                             "endColno": 13
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 30,
+                                            "startColno": 17,
+                                            "endLineno": 30,
+                                            "endColno": 42
                                         }
                                     }
                                 },
@@ -2679,6 +3512,13 @@
                                             "startColno": 9,
                                             "endLineno": 31,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 31,
+                                            "startColno": 18,
+                                            "endLineno": 31,
+                                            "endColno": 28
                                         }
                                     }
                                 },
@@ -2694,13 +3534,20 @@
                                             "startColno": 9,
                                             "endLineno": 32,
                                             "endColno": 14
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 32,
+                                            "startColno": 18,
+                                            "endLineno": 32,
+                                            "endColno": 24
                                         }
                                     }
                                 }
                             ]
                         },
                         {
-                            "uid": "81b17f1c-b528-4eb6-9583-f41eb74bab50",
+                            "uid": "a7afc8bc-1fc6-4c58-ad69-f5b8a0bdf622",
                             "type": "cmd",
                             "command": "yield",
                             "args": [
@@ -2708,7 +3555,15 @@
                                     "arg": null,
                                     "type": "name",
                                     "value": "did_user_choose_clear_cart",
-                                    "meta": {}
+                                    "meta": {
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 34,
+                                            "startColno": 11,
+                                            "endLineno": 34,
+                                            "endColno": 36
+                                        }
+                                    }
                                 }
                             ]
                         }
@@ -2717,7 +3572,7 @@
                 "errMsg": []
             },
             {
-                "uid": "e80d1107-bd76-4d80-9e78-85aff97482cf",
+                "uid": "d9d41383-c97b-4f55-b360-abb96f614578",
                 "name": "if",
                 "type": "functional",
                 "args": [
@@ -2733,6 +3588,13 @@
                                 "startColno": 9,
                                 "endLineno": 64,
                                 "endColno": 17
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 64,
+                                "startColno": 21,
+                                "endLineno": 64,
+                                "endColno": 41
                             }
                         }
                     }
@@ -2740,7 +3602,7 @@
                 "errMsg": [],
                 "body": [
                     {
-                        "uid": "6dbd89c3-4276-4fa6-83c1-1cf62e0ef791",
+                        "uid": "3ebe5591-adfa-487d-af66-e21111381bba",
                         "name": "clearCart",
                         "type": "behavior",
                         "args": [
@@ -2756,12 +3618,19 @@
                                         "startColno": 13,
                                         "endLineno": 66,
                                         "endColno": 16
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 66,
+                                        "startColno": 20,
+                                        "endLineno": 66,
+                                        "endColno": 32
                                     }
                                 }
                             }
                         ],
                         "definition": {
-                            "uid": "9319b591-f582-486c-b829-fe630e1b3406",
+                            "uid": "af9195c7-5202-4d9f-bd3e-22d8e450ebe4",
                             "type": "behavior",
                             "parsedArgs": [
                                 {
@@ -2776,6 +3645,13 @@
                                             "startColno": 20,
                                             "endLineno": 105,
                                             "endColno": 23
+                                        },
+                                        "valueMeta": {
+                                            "type": "VALUE",
+                                            "startLineno": 105,
+                                            "startColno": 27,
+                                            "endLineno": 105,
+                                            "endColno": 30
                                         }
                                     }
                                 }
@@ -2783,7 +3659,7 @@
                             "behaviorName": "clearCart",
                             "body": [
                                 {
-                                    "uid": "6ef18e8b-c207-41eb-8825-cccced96c05b",
+                                    "uid": "bf7631c4-ed42-4789-9b24-73f28b5dd350",
                                     "type": "cmd",
                                     "command": "clear_list",
                                     "args": [
@@ -2799,6 +3675,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 107,
                                                     "endColno": 12
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 107,
+                                                    "startColno": 16,
+                                                    "endLineno": 107,
+                                                    "endColno": 19
                                                 }
                                             }
                                         }
@@ -2809,24 +3692,24 @@
                         "errMsg": []
                     },
                     {
-                        "uid": "dd5a4aa7-f85d-486e-bc6c-cdf4d5cf41ad",
+                        "uid": "bab46bd7-3c99-4849-89d8-6646c928b08e",
                         "name": "visitShop",
                         "type": "behavior",
                         "args": [],
                         "definition": {
-                            "uid": "de1b82be-3231-45f8-8305-717dcea8e225",
+                            "uid": "9e56c219-afad-4e8f-b8e2-f34fb3619347",
                             "type": "behavior",
                             "parsedArgs": [],
                             "behaviorName": "visitShop",
                             "body": [
                                 {
-                                    "uid": "3dfff083-3751-4702-aadb-639a721033e9",
+                                    "uid": "eb826a84-8c3f-4ea1-b353-e7af2eb579c5",
                                     "type": "cmd",
                                     "command": "baristaPresentsMenu",
                                     "args": []
                                 },
                                 {
-                                    "uid": "0bbdaa2a-b672-47eb-b4ce-67e53451bdc9",
+                                    "uid": "1a37f96a-83e0-4df6-969d-f013e2d6da58",
                                     "type": "cmd",
                                     "command": "acceptChoice",
                                     "args": [
@@ -2842,13 +3725,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 21,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 21,
+                                                    "startColno": 17,
+                                                    "endLineno": 21,
+                                                    "endColno": 27
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "185c9445-8d3a-4828-a885-d9191a320f3d",
+                                    "uid": "2f52d65e-fb8e-4c69-844a-644ce734e529",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseCoffee",
                                     "args": [
@@ -2864,6 +3754,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 25,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 25,
+                                                    "startColno": 17,
+                                                    "endLineno": 25,
+                                                    "endColno": 33
                                                 }
                                             }
                                         },
@@ -2879,13 +3776,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 26,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 26,
+                                                    "startColno": 18,
+                                                    "endLineno": 26,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "404a8579-2497-4f12-8dc7-bd73255e3a4d",
+                                    "uid": "a73edff8-717b-40c3-a9bb-09b762f35683",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -2901,13 +3805,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 28,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 28,
+                                                    "startColno": 21,
+                                                    "endLineno": 28,
+                                                    "endColno": 37
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "79dd7aa1-67cc-454d-ab03-fc934844a455",
+                                            "uid": "85ea1950-dca1-4781-a978-1fe7feb6c8be",
                                             "type": "cmd",
                                             "command": "addCoffeeToCart",
                                             "args": [
@@ -2923,13 +3834,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 30,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 30,
+                                                            "startColno": 20,
+                                                            "endLineno": 30,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "5c4eb9e1-b50e-4956-ae3c-934075009547",
+                                            "uid": "fba9641d-a907-4f5b-9c0a-5a74a07fd512",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -2937,7 +3855,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "a4f3baa7-395d-4e3e-a71b-273125c6f84c",
+                                    "uid": "05d8f0af-fed0-499e-8aec-3fa88e3ce4aa",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseBagel",
                                     "args": [
@@ -2953,6 +3871,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 37,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 37,
+                                                    "startColno": 17,
+                                                    "endLineno": 37,
+                                                    "endColno": 32
                                                 }
                                             }
                                         },
@@ -2968,13 +3893,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 38,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 38,
+                                                    "startColno": 18,
+                                                    "endLineno": 38,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "5523340f-e73c-47a6-9bbe-8ead5176a51a",
+                                    "uid": "be7d63b6-0308-4341-b8c4-7a5c26994961",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -2990,13 +3922,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 40,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 40,
+                                                    "startColno": 21,
+                                                    "endLineno": 40,
+                                                    "endColno": 36
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "16586408-5c7e-44b3-98bf-8664cbe8ab56",
+                                            "uid": "267de2f8-c171-4afd-8184-4fceaca3eb9e",
                                             "type": "cmd",
                                             "command": "addBagelToCart",
                                             "args": [
@@ -3012,13 +3951,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 42,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 42,
+                                                            "startColno": 20,
+                                                            "endLineno": 42,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2a698fd8-1c4f-4ce2-921e-806fe745e34a",
+                                            "uid": "7de2f72b-9ae4-4b53-934a-d96c22003d83",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -3026,7 +3972,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "da16bb3e-a657-4077-888e-474f4dd51799",
+                                    "uid": "c32b2c74-ae75-4ce7-af42-50657e41bb08",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseDisplayCart",
                                     "args": [
@@ -3042,6 +3988,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 49,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 49,
+                                                    "startColno": 17,
+                                                    "endLineno": 49,
+                                                    "endColno": 39
                                                 }
                                             }
                                         },
@@ -3057,13 +4010,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 50,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 50,
+                                                    "startColno": 18,
+                                                    "endLineno": 50,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "0e52241d-0a99-4222-8900-e9c6063d6d18",
+                                    "uid": "7ea26601-3874-4661-91b2-1cc9b959da5e",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -3079,13 +4039,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 52,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 52,
+                                                    "startColno": 21,
+                                                    "endLineno": 52,
+                                                    "endColno": 43
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "dbc40634-09bf-407d-a7e3-5b9d047218db",
+                                            "uid": "e3ee6d51-dc4c-40c9-90e1-44414e5cbe55",
                                             "type": "cmd",
                                             "command": "displayCart",
                                             "args": [
@@ -3101,13 +4068,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 54,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 54,
+                                                            "startColno": 20,
+                                                            "endLineno": 54,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "2740568b-bb49-4d3c-8918-3903e7ce8da5",
+                                            "uid": "89cf1d59-6d7b-4713-9f3a-01df2723c1ff",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -3115,7 +4089,7 @@
                                     ]
                                 },
                                 {
-                                    "uid": "fb1fe936-d30d-49c2-8f37-e60a146e32c4",
+                                    "uid": "bbd58a51-f14c-40e0-93fd-8eda1db7366b",
                                     "type": "cmd",
                                     "command": "checkIfUserChoseClearCart",
                                     "args": [
@@ -3131,6 +4105,13 @@
                                                     "startColno": 9,
                                                     "endLineno": 61,
                                                     "endColno": 13
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 61,
+                                                    "startColno": 17,
+                                                    "endLineno": 61,
+                                                    "endColno": 37
                                                 }
                                             }
                                         },
@@ -3146,13 +4127,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 62,
                                                     "endColno": 14
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 62,
+                                                    "startColno": 18,
+                                                    "endLineno": 62,
+                                                    "endColno": 28
                                                 }
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    "uid": "e80d1107-bd76-4d80-9e78-85aff97482cf",
+                                    "uid": "d9d41383-c97b-4f55-b360-abb96f614578",
                                     "type": "functional",
                                     "name": "if",
                                     "args": [
@@ -3168,13 +4156,20 @@
                                                     "startColno": 9,
                                                     "endLineno": 64,
                                                     "endColno": 17
+                                                },
+                                                "valueMeta": {
+                                                    "type": "VALUE",
+                                                    "startLineno": 64,
+                                                    "startColno": 21,
+                                                    "endLineno": 64,
+                                                    "endColno": 41
                                                 }
                                             }
                                         }
                                     ],
                                     "body": [
                                         {
-                                            "uid": "6dbd89c3-4276-4fa6-83c1-1cf62e0ef791",
+                                            "uid": "3ebe5591-adfa-487d-af66-e21111381bba",
                                             "type": "cmd",
                                             "command": "clearCart",
                                             "args": [
@@ -3190,13 +4185,20 @@
                                                             "startColno": 13,
                                                             "endLineno": 66,
                                                             "endColno": 16
+                                                        },
+                                                        "valueMeta": {
+                                                            "type": "VALUE",
+                                                            "startLineno": 66,
+                                                            "startColno": 20,
+                                                            "endLineno": 66,
+                                                            "endColno": 32
                                                         }
                                                     }
                                                 }
                                             ]
                                         },
                                         {
-                                            "uid": "dd5a4aa7-f85d-486e-bc6c-cdf4d5cf41ad",
+                                            "uid": "bab46bd7-3c99-4849-89d8-6646c928b08e",
                                             "type": "cmd",
                                             "command": "visitShop",
                                             "args": []
@@ -3212,13 +4214,13 @@
         ]
     },
     {
-        "uid": "82f183cc-b2a7-42ef-94ed-2b9e1d4873f4",
+        "uid": "4a9fd783-8b40-4cdc-ad0d-2659287b5c29",
         "name": "baristaPresentsMenu",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "ee99245e-cee8-4ed4-a994-a3ff411d6a16",
+                "uid": "3fc30d96-d004-44fc-b9d0-839eb6a26c71",
                 "name": "terminal_display",
                 "type": "legacy_primitives",
                 "args": [
@@ -3234,6 +4236,13 @@
                                 "startColno": 9,
                                 "endLineno": 74,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 74,
+                                "startColno": 17,
+                                "endLineno": 74,
+                                "endColno": 20
                             }
                         }
                     }
@@ -3259,13 +4268,13 @@
         ]
     },
     {
-        "uid": "f4aa48c9-90b2-4ea4-bcc6-02ce07a95ca7",
+        "uid": "d1e60387-79c6-40ed-be33-01f653c1161f",
         "name": "acceptChoice",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "e879ec66-25b1-4b41-abc7-eb50701c7fd4",
+                "uid": "88b392df-1574-4d11-a6ca-c950790b3e7c",
                 "name": "terminal_input",
                 "type": "legacy_primitive",
                 "args": [
@@ -3281,6 +4290,13 @@
                                 "startColno": 9,
                                 "endLineno": 80,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 80,
+                                "startColno": 17,
+                                "endLineno": 80,
+                                "endColno": 30
                             }
                         }
                     }
@@ -3314,7 +4330,7 @@
                 "errMsg": []
             },
             {
-                "uid": "27120f7c-e6d7-418d-abc4-e0326d6dc336",
+                "uid": "779673e6-af08-4b49-a99e-59ba8fc7ec3f",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -3330,6 +4346,13 @@
                                 "startColno": 11,
                                 "endLineno": 82,
                                 "endColno": 15
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 82,
+                                "startColno": 17,
+                                "endLineno": 82,
+                                "endColno": 30
                             }
                         }
                     }
@@ -3353,13 +4376,13 @@
         ]
     },
     {
-        "uid": "d15a4ea4-701d-440b-a6e2-688be7a8db19",
+        "uid": "798d9398-043d-4c44-bbd1-7710c191a2b8",
         "name": "addCoffeeToCart",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "6700044f-42af-43c9-85d5-ad1d3a26fca5",
+                "uid": "a72e3f50-277d-4131-a4f7-58840a034b8a",
                 "name": "insert_at_end_of_list",
                 "type": "computable_primitive",
                 "args": [
@@ -3375,6 +4398,13 @@
                                 "startColno": 9,
                                 "endLineno": 87,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 87,
+                                "startColno": 17,
+                                "endLineno": 87,
+                                "endColno": 24
                             }
                         }
                     },
@@ -3390,6 +4420,13 @@
                                 "startColno": 9,
                                 "endLineno": 88,
                                 "endColno": 12
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 88,
+                                "startColno": 16,
+                                "endLineno": 88,
+                                "endColno": 19
                             }
                         }
                     }
@@ -3437,13 +4474,13 @@
         ]
     },
     {
-        "uid": "5ea72b80-0da8-4591-9d39-902d2a7cf223",
+        "uid": "17137d9e-dd3b-4be6-978d-64f6eb19c4db",
         "name": "addBagelToCart",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "4e643223-9959-4651-a938-3e6b0ea36c58",
+                "uid": "13992128-5f71-4a44-9033-7003f8077d86",
                 "name": "insert_at_end_of_list",
                 "type": "computable_primitive",
                 "args": [
@@ -3459,6 +4496,13 @@
                                 "startColno": 9,
                                 "endLineno": 94,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 94,
+                                "startColno": 17,
+                                "endLineno": 94,
+                                "endColno": 23
                             }
                         }
                     },
@@ -3474,6 +4518,13 @@
                                 "startColno": 9,
                                 "endLineno": 95,
                                 "endColno": 12
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 95,
+                                "startColno": 16,
+                                "endLineno": 95,
+                                "endColno": 19
                             }
                         }
                     }
@@ -3521,13 +4572,13 @@
         ]
     },
     {
-        "uid": "b687ccfe-ffb7-4cc1-a1e5-c490c53bd6ff",
+        "uid": "f5d441d5-249d-4545-a898-7a29765b613b",
         "name": "displayCart",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "c2955fc4-c4e9-48a6-8261-53b16bc0a096",
+                "uid": "d2d531b5-570c-4ed5-8201-4ecd3e51dd52",
                 "name": "terminal_display",
                 "type": "legacy_primitives",
                 "args": [
@@ -3543,6 +4594,13 @@
                                 "startColno": 9,
                                 "endLineno": 101,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 101,
+                                "startColno": 17,
+                                "endLineno": 101,
+                                "endColno": 20
                             }
                         }
                     }
@@ -3568,13 +4626,13 @@
         ]
     },
     {
-        "uid": "9319b591-f582-486c-b829-fe630e1b3406",
+        "uid": "af9195c7-5202-4d9f-bd3e-22d8e450ebe4",
         "name": "clearCart",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "6ef18e8b-c207-41eb-8825-cccced96c05b",
+                "uid": "bf7631c4-ed42-4789-9b24-73f28b5dd350",
                 "name": "clear_list",
                 "type": "computable_primitive",
                 "args": [
@@ -3590,6 +4648,13 @@
                                 "startColno": 9,
                                 "endLineno": 107,
                                 "endColno": 12
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 107,
+                                "startColno": 16,
+                                "endLineno": 107,
+                                "endColno": 19
                             }
                         }
                     }
@@ -3631,13 +4696,13 @@
         ]
     },
     {
-        "uid": "908d5e92-4a92-4d19-bb78-d404f77a8c7c",
+        "uid": "18ac1692-b488-4d3e-b93f-6150d608717b",
         "name": "Cart",
         "type": "participant",
         "errMsg": [],
         "body": [
             {
-                "uid": "b6282982-e04c-4d71-8f1f-561ae6308c9e",
+                "uid": "63f09e72-bfc6-4124-9485-74575210826e",
                 "name": "structural_type",
                 "type": "meta_primitive",
                 "args": [
@@ -3653,6 +4718,13 @@
                                 "startColno": 9,
                                 "endLineno": 3,
                                 "endColno": 12
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 3,
+                                "startColno": 15,
+                                "endLineno": 3,
+                                "endColno": 20
                             }
                         }
                     }
@@ -3672,7 +4744,7 @@
                 "errMsg": []
             },
             {
-                "uid": "2c612a7b-0130-4121-b5e3-b0f339bf3e0b",
+                "uid": "9d857b13-2062-4288-a2d7-8cc9f7b0aeac",
                 "name": "list_contains",
                 "type": "meta_primitive",
                 "args": [
@@ -3691,6 +4763,13 @@
                                 "startColno": 9,
                                 "endLineno": 6,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 6,
+                                "startColno": 17,
+                                "endLineno": 6,
+                                "endColno": 35
                             }
                         }
                     }
@@ -3714,13 +4793,13 @@
         ]
     },
     {
-        "uid": "c469bd41-9681-4083-8d96-3e6c70e17851",
+        "uid": "cc684eb5-bb4d-435d-bffa-273345ee6ebe",
         "name": "checkIfUserChoseBagel",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "e7f34ddd-dc02-4a85-a29c-9c2e8c0d575e",
+                "uid": "90a27f9f-469e-4ea8-8f9f-c8fd8c461da5",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -3736,6 +4815,13 @@
                                 "startColno": 9,
                                 "endLineno": 3,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 3,
+                                "startColno": 17,
+                                "endLineno": 3,
+                                "endColno": 32
                             }
                         }
                     },
@@ -3751,6 +4837,13 @@
                                 "startColno": 9,
                                 "endLineno": 4,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 4,
+                                "startColno": 18,
+                                "endLineno": 4,
+                                "endColno": 28
                             }
                         }
                     },
@@ -3766,6 +4859,13 @@
                                 "startColno": 9,
                                 "endLineno": 5,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 5,
+                                "startColno": 18,
+                                "endLineno": 5,
+                                "endColno": 24
                             }
                         }
                     }
@@ -3797,7 +4897,7 @@
                 "errMsg": []
             },
             {
-                "uid": "f25269a5-fd50-44a2-be9d-ffc2576db6cb",
+                "uid": "1cf6311a-d6b5-49ef-99b3-5a664add6964",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -3805,7 +4905,15 @@
                         "arg": null,
                         "type": "name",
                         "value": "user_chose_bagel",
-                        "meta": {}
+                        "meta": {
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 7,
+                                "startColno": 11,
+                                "endLineno": 7,
+                                "endColno": 26
+                            }
+                        }
                     }
                 ],
                 "definition": {
@@ -3827,13 +4935,13 @@
         ]
     },
     {
-        "uid": "67105b34-362e-433a-9254-189864257ffb",
+        "uid": "71898110-d25a-4181-ba9d-bc4eb4952c7e",
         "name": "checkIfUserChoseCoffee",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "7bdc8963-999e-4810-8a72-c6b485ef28e8",
+                "uid": "2a48cd36-d6f7-415c-93f9-e8a3e67b2a20",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -3849,6 +4957,13 @@
                                 "startColno": 9,
                                 "endLineno": 12,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 12,
+                                "startColno": 17,
+                                "endLineno": 12,
+                                "endColno": 37
                             }
                         }
                     },
@@ -3864,6 +4979,13 @@
                                 "startColno": 9,
                                 "endLineno": 13,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 13,
+                                "startColno": 18,
+                                "endLineno": 13,
+                                "endColno": 28
                             }
                         }
                     },
@@ -3879,6 +5001,13 @@
                                 "startColno": 9,
                                 "endLineno": 14,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 14,
+                                "startColno": 18,
+                                "endLineno": 14,
+                                "endColno": 25
                             }
                         }
                     }
@@ -3910,7 +5039,7 @@
                 "errMsg": []
             },
             {
-                "uid": "f0614107-92a4-433d-8734-f02912f35a6d",
+                "uid": "b33e4a3c-83e7-4f6a-b04f-a2ce5cde5056",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -3918,7 +5047,15 @@
                         "arg": null,
                         "type": "name",
                         "value": "user_chose_coffee",
-                        "meta": {}
+                        "meta": {
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 16,
+                                "startColno": 11,
+                                "endLineno": 16,
+                                "endColno": 27
+                            }
+                        }
                     }
                 ],
                 "definition": {
@@ -3940,13 +5077,13 @@
         ]
     },
     {
-        "uid": "04958d00-eb23-492e-8d1e-7d7eb76d7b35",
+        "uid": "8198fd09-263b-4aaf-bcff-0d15e322b328",
         "name": "checkIfUserChoseDisplayCart",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "4dd2111c-3b4b-4644-bdd5-e322144ecb07",
+                "uid": "0bb4f89b-f0e7-4e18-8c99-5235a2f18034",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -3962,6 +5099,13 @@
                                 "startColno": 9,
                                 "endLineno": 21,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 21,
+                                "startColno": 17,
+                                "endLineno": 21,
+                                "endColno": 44
                             }
                         }
                     },
@@ -3977,6 +5121,13 @@
                                 "startColno": 9,
                                 "endLineno": 22,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 22,
+                                "startColno": 18,
+                                "endLineno": 22,
+                                "endColno": 28
                             }
                         }
                     },
@@ -3992,6 +5143,13 @@
                                 "startColno": 9,
                                 "endLineno": 23,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 23,
+                                "startColno": 18,
+                                "endLineno": 23,
+                                "endColno": 23
                             }
                         }
                     }
@@ -4023,7 +5181,7 @@
                 "errMsg": []
             },
             {
-                "uid": "b97087d6-0150-4496-af1f-757ae84bd790",
+                "uid": "c07c4788-2188-49d7-9538-d05bf97d76f6",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -4031,7 +5189,15 @@
                         "arg": null,
                         "type": "name",
                         "value": "did_user_choose_display_cart",
-                        "meta": {}
+                        "meta": {
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 25,
+                                "startColno": 11,
+                                "endLineno": 25,
+                                "endColno": 38
+                            }
+                        }
                     }
                 ],
                 "definition": {
@@ -4053,13 +5219,13 @@
         ]
     },
     {
-        "uid": "9f6f5b6e-df80-4004-a27a-27058d5cce32",
+        "uid": "adbb3a7e-cf59-4136-8901-c63ab7780e52",
         "name": "checkIfUserChoseClearCart",
         "type": "behavior",
         "errMsg": [],
         "body": [
             {
-                "uid": "9da4ef2d-47c4-47c3-9ea5-6c9312b2712c",
+                "uid": "620716c9-7190-40d4-80e6-8405d9616e4a",
                 "name": "equals",
                 "type": "computable_primitive",
                 "args": [
@@ -4075,6 +5241,13 @@
                                 "startColno": 9,
                                 "endLineno": 30,
                                 "endColno": 13
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 30,
+                                "startColno": 17,
+                                "endLineno": 30,
+                                "endColno": 42
                             }
                         }
                     },
@@ -4090,6 +5263,13 @@
                                 "startColno": 9,
                                 "endLineno": 31,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 31,
+                                "startColno": 18,
+                                "endLineno": 31,
+                                "endColno": 28
                             }
                         }
                     },
@@ -4105,6 +5285,13 @@
                                 "startColno": 9,
                                 "endLineno": 32,
                                 "endColno": 14
+                            },
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 32,
+                                "startColno": 18,
+                                "endLineno": 32,
+                                "endColno": 24
                             }
                         }
                     }
@@ -4136,7 +5323,7 @@
                 "errMsg": []
             },
             {
-                "uid": "81b17f1c-b528-4eb6-9583-f41eb74bab50",
+                "uid": "a7afc8bc-1fc6-4c58-ad69-f5b8a0bdf622",
                 "name": "yield",
                 "type": "meta_primitive",
                 "args": [
@@ -4144,7 +5331,15 @@
                         "arg": null,
                         "type": "name",
                         "value": "did_user_choose_clear_cart",
-                        "meta": {}
+                        "meta": {
+                            "valueMeta": {
+                                "type": "VALUE",
+                                "startLineno": 34,
+                                "startColno": 11,
+                                "endLineno": 34,
+                                "endColno": 36
+                            }
+                        }
                     }
                 ],
                 "definition": {
