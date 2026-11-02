@@ -134,7 +134,7 @@ export class ArgsParser {
             [, arg, value] = match;
             meta = {
                 argMeta: tokens[0],
-                valueMeta: this.gatherValueMetaInformation(tokens.splice(0))
+                valueMeta: this.gatherValueMetaInformation(tokens.splice(2))
             }
         } else {;
             arg = null;
@@ -190,6 +190,6 @@ export class ArgsParser {
      * Gather the value meta information by grouping the tokens.
      */
     gatherValueMetaInformation (tokens) {
-        
+
     }
 }
