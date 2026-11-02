@@ -5,6 +5,7 @@ export class Node {
         this.type = classified.type;
         this.args = classified.args;
         this.definition = classified.definition;
+        this.relativePath = classified.relativePath;
         this.errMsg = [];
         this.validate();
     }

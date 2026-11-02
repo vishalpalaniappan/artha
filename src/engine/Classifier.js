@@ -33,6 +33,7 @@ export class Classifier {
      */
     process(files) {
         for (const f of files) {
+            this.currRelativePath = f.relativePath;
             const nodes = this.visitBody(f.ast.body);
             this.classifiedNodes = [
                 ...this.classifiedNodes, ...nodes
@@ -64,7 +65,8 @@ export class Classifier {
             return {
                 type: "behavior",
                 name: node.behaviorName,
-                args: node.args
+                args: node.args,
+                relativePath: this.currRelativePath
             }
         }
 
@@ -72,7 +74,8 @@ export class Classifier {
             return {
                 type: "participant",
                 name: node.name,
-                args: node.args
+                args: node.args,
+                relativePath: this.currRelativePath
             }
         }
 
@@ -83,7 +86,8 @@ export class Classifier {
                     type: "behavior",
                     name: node.command,
                     args: node.args,
-                    definition: foundBehavior
+                    definition: foundBehavior,
+                    relativePath: this.currRelativePath
                 }
             }
 
@@ -93,7 +97,8 @@ export class Classifier {
                     type: foundPrimitive.type,
                     name: foundPrimitive.name,
                     args: node.args,
-                    definition: foundPrimitive
+                    definition: foundPrimitive,
+                    relativePath: this.currRelativePath
                 }
             }
         }
@@ -104,7 +109,8 @@ export class Classifier {
                 type: "functional",
                 name: "if",
                 args: node.args,
-                definition: foundPrimitive
+                definition: foundPrimitive,
+                relativePath: this.currRelativePath
             }
         }
 
