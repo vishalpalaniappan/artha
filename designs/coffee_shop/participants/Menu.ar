@@ -2,5 +2,7 @@ participant Menu() {
     structural_type(
         type= "string"
     )
-    value("Choose from: 1.Coffee 2.Bagel, 3.View, 4.Clear.")
+    value(
+        value = "Choose from: 1.Coffee 2.Bagel, 3.View, 4.Clear."
+    )
 }

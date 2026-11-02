@@ -82,27 +82,27 @@ behavior acceptChoice() {
     yield(value=terminal_input)
 }
 
-behavior addCoffeeToCart(cart) {
+behavior addCoffeeToCart(cart = cart) {
     insert_at_end_of_list(
         value = "Coffee", 
         list = cart
     )
 }
 
-behavior addBagelToCart(cart) {
+behavior addBagelToCart(cart = cart) {
     insert_at_end_of_list(
         value = "Bagel", 
         list = cart
     )
 }
 
-behavior displayCart(cart) {
+behavior displayCart(cart = cart) {
     terminal_display(
         value = cart
     )
 }
 
-behavior clearCart(cart) {
+behavior clearCart(cart = cart) {
     clear_list(
         list = cart
     )
