@@ -1,0 +1,2307 @@
+{
+    "meta": {
+        "entry": "coffee_shop.ar",
+        "atomic_behavior": "coffeeShop",
+        "version": "v0.0"
+    },
+    "data": [
+        {
+            "fullPath": "designs/coffee_shop/coffee_shop.ar",
+            "name": "coffee_shop.ar",
+            "relativePath": "coffee_shop.ar",
+            "content": "import(file = \"includes/user_choice.ar\")\nimport(file = \"participants/Cart.ar\")\n\nbehavior coffeeShop() {\n    introduce(\n        alias= shopping_cart, \n        role= cart\n    )\n    introduce(\n        alias= menu, \n        role= menu,\n        participant= menu\n    )\n    visitShop()\n}\n\nbehavior visitShop() {\n    baristaPresentsMenu()\n\n    acceptChoice(\n        alias = user_choice\n    )\n\n    checkIfUserChoseCoffee(\n        alias = user_chose_coffee,\n        choice = user_choice\n    )\n    if (condition = user_chose_coffee) {\n        addCoffeeToCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n\n\n    checkIfUserChoseBagel(\n        alias = user_chose_bagel,\n        choice = user_choice\n    )\n    if (condition = user_chose_bagel) {\n        addBagelToCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n\n\n    checkIfUserChoseDisplayCart(\n        alias = user_chose_display_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_display_cart) {\n        displayCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n\n\n    checkIfUserChoseClearCart(\n        alias = user_chose_clear_cart,\n        choice = user_choice\n    )\n    if (condition = user_chose_clear_cart) {\n        clearCart(\n            cart = shopping_cart\n        )\n        visitShop()\n    }\n}\n\nbehavior baristaPresentsMenu() {\n    terminal_display(\n        value = menu\n    )\n}\n\nbehavior acceptChoice() {\n    terminal_input(\n        alias = terminal_input\n    )\n    yield(value=terminal_input)\n}\n\nbehavior addCoffeeToCart(cart = cart) {\n    insert_at_end_of_list(\n        value = \"Coffee\", \n        list = cart\n    )\n}\n\nbehavior addBagelToCart(cart = cart) {\n    insert_at_end_of_list(\n        value = \"Bagel\", \n        list = cart\n    )\n}\n\nbehavior displayCart(cart = cart) {\n    terminal_display(\n        value = cart\n    )\n}\n\nbehavior clearCart(cart = cart) {\n    clear_list(\n        list = cart\n    )\n}\n\n",
+            "ast": {
+                "type": "root",
+                "body": [
+                    {
+                        "uid": "9608ed89-7300-420b-a839-2e1c776f299c",
+                        "meta": {
+                            "command": {
+                                "type": "IDENTIFIER",
+                                "value": "import",
+                                "startLineno": 1,
+                                "startColno": 1,
+                                "endLineno": 1,
+                                "endColno": 6
+                            }
+                        },
+                        "type": "cmd",
+                        "command": "import",
+                        "args": [
+                            {
+                                "arg": "file",
+                                "type": "string",
+                                "value": "includes/user_choice.ar",
+                                "meta": {
+                                    "argMeta": {
+                                        "type": "IDENTIFIER",
+                                        "value": "file",
+                                        "startLineno": 1,
+                                        "startColno": 8,
+                                        "endLineno": 1,
+                                        "endColno": 11
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 1,
+                                        "startColno": 15,
+                                        "endLineno": 1,
+                                        "endColno": 39
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "9bf2e280-0c26-4154-9d19-c2580e546968",
+                        "meta": {
+                            "command": {
+                                "type": "IDENTIFIER",
+                                "value": "import",
+                                "startLineno": 2,
+                                "startColno": 1,
+                                "endLineno": 2,
+                                "endColno": 6
+                            }
+                        },
+                        "type": "cmd",
+                        "command": "import",
+                        "args": [
+                            {
+                                "arg": "file",
+                                "type": "string",
+                                "value": "participants/Cart.ar",
+                                "meta": {
+                                    "argMeta": {
+                                        "type": "IDENTIFIER",
+                                        "value": "file",
+                                        "startLineno": 2,
+                                        "startColno": 8,
+                                        "endLineno": 2,
+                                        "endColno": 11
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 2,
+                                        "startColno": 15,
+                                        "endLineno": 2,
+                                        "endColno": 36
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "1ac8f56c-29d4-486f-9b2c-322966bc80b6",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 4,
+                                "startColno": 1,
+                                "endLineno": 4,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "coffeeShop",
+                                "startLineno": 4,
+                                "startColno": 10,
+                                "endLineno": 4,
+                                "endColno": 19
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [],
+                        "behaviorName": "coffeeShop",
+                        "body": [
+                            {
+                                "uid": "418e20b3-39f9-4c69-be43-e12278145151",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "introduce",
+                                        "startLineno": 5,
+                                        "startColno": 5,
+                                        "endLineno": 5,
+                                        "endColno": 13
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "introduce",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "shopping_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 6,
+                                                "startColno": 9,
+                                                "endLineno": 6,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 6,
+                                                "startColno": 16,
+                                                "endLineno": 6,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "role",
+                                        "type": "name",
+                                        "value": "cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "role",
+                                                "startLineno": 7,
+                                                "startColno": 9,
+                                                "endLineno": 7,
+                                                "endColno": 12
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 7,
+                                                "startColno": 15,
+                                                "endLineno": 7,
+                                                "endColno": 18
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "66891636-1e49-412c-87f8-452fa3c7489d",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "introduce",
+                                        "startLineno": 9,
+                                        "startColno": 5,
+                                        "endLineno": 9,
+                                        "endColno": 13
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "introduce",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "menu",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 10,
+                                                "startColno": 9,
+                                                "endLineno": 10,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 10,
+                                                "startColno": 16,
+                                                "endLineno": 10,
+                                                "endColno": 19
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "role",
+                                        "type": "name",
+                                        "value": "menu",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "role",
+                                                "startLineno": 11,
+                                                "startColno": 9,
+                                                "endLineno": 11,
+                                                "endColno": 12
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 11,
+                                                "startColno": 15,
+                                                "endLineno": 11,
+                                                "endColno": 18
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "participant",
+                                        "type": "name",
+                                        "value": "menu",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "participant",
+                                                "startLineno": 12,
+                                                "startColno": 9,
+                                                "endLineno": 12,
+                                                "endColno": 19
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 12,
+                                                "startColno": 22,
+                                                "endLineno": 12,
+                                                "endColno": 25
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "be40fa14-75f4-4ce8-a0ec-ef0bed729f77",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "visitShop",
+                                        "startLineno": 14,
+                                        "startColno": 5,
+                                        "endLineno": 14,
+                                        "endColno": 13
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "visitShop",
+                                "args": []
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "5dc9e52f-581e-4d14-b20d-1224e1d90158",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 17,
+                                "startColno": 1,
+                                "endLineno": 17,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "visitShop",
+                                "startLineno": 17,
+                                "startColno": 10,
+                                "endLineno": 17,
+                                "endColno": 18
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [],
+                        "behaviorName": "visitShop",
+                        "body": [
+                            {
+                                "uid": "2f3db332-05bb-4bcc-849d-e7c112db11dd",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "baristaPresentsMenu",
+                                        "startLineno": 18,
+                                        "startColno": 5,
+                                        "endLineno": 18,
+                                        "endColno": 23
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "baristaPresentsMenu",
+                                "args": []
+                            },
+                            {
+                                "uid": "c36228c4-7266-4526-84b9-cbec3dfde65e",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "acceptChoice",
+                                        "startLineno": 20,
+                                        "startColno": 5,
+                                        "endLineno": 20,
+                                        "endColno": 16
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "acceptChoice",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 21,
+                                                "startColno": 9,
+                                                "endLineno": 21,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 21,
+                                                "startColno": 17,
+                                                "endLineno": 21,
+                                                "endColno": 27
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "27b5ed3c-1e86-4b59-9a0f-d8e292c27748",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "checkIfUserChoseCoffee",
+                                        "startLineno": 24,
+                                        "startColno": 5,
+                                        "endLineno": 24,
+                                        "endColno": 26
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "checkIfUserChoseCoffee",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "user_chose_coffee",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 25,
+                                                "startColno": 9,
+                                                "endLineno": 25,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 25,
+                                                "startColno": 17,
+                                                "endLineno": 25,
+                                                "endColno": 33
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "choice",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "choice",
+                                                "startLineno": 26,
+                                                "startColno": 9,
+                                                "endLineno": 26,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 26,
+                                                "startColno": 18,
+                                                "endLineno": 26,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "4afa6248-ecc7-46db-a6ba-3bab1dd257f5",
+                                "meta": {
+                                    "keyword": {
+                                        "type": "IDENTIFIER",
+                                        "value": "if",
+                                        "startLineno": 28,
+                                        "startColno": 5,
+                                        "endLineno": 28,
+                                        "endColno": 6
+                                    }
+                                },
+                                "type": "functional",
+                                "name": "if",
+                                "args": [
+                                    {
+                                        "arg": "condition",
+                                        "type": "name",
+                                        "value": "user_chose_coffee",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "condition",
+                                                "startLineno": 28,
+                                                "startColno": 9,
+                                                "endLineno": 28,
+                                                "endColno": 17
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 28,
+                                                "startColno": 21,
+                                                "endLineno": 28,
+                                                "endColno": 37
+                                            }
+                                        }
+                                    }
+                                ],
+                                "body": [
+                                    {
+                                        "uid": "7a9e5179-b623-4b8b-b2aa-8ced596c62be",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "addCoffeeToCart",
+                                                "startLineno": 29,
+                                                "startColno": 9,
+                                                "endLineno": 29,
+                                                "endColno": 23
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "addCoffeeToCart",
+                                        "args": [
+                                            {
+                                                "arg": "cart",
+                                                "type": "name",
+                                                "value": "shopping_cart",
+                                                "meta": {
+                                                    "argMeta": {
+                                                        "type": "IDENTIFIER",
+                                                        "value": "cart",
+                                                        "startLineno": 30,
+                                                        "startColno": 13,
+                                                        "endLineno": 30,
+                                                        "endColno": 16
+                                                    },
+                                                    "valueMeta": {
+                                                        "type": "VALUE",
+                                                        "startLineno": 30,
+                                                        "startColno": 20,
+                                                        "endLineno": 30,
+                                                        "endColno": 32
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "uid": "7fdb1393-f365-48f5-a959-f5f4aee34af9",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "visitShop",
+                                                "startLineno": 32,
+                                                "startColno": 9,
+                                                "endLineno": 32,
+                                                "endColno": 17
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "visitShop",
+                                        "args": []
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "94669e77-cdfa-4bad-8e2b-7d5beb8cd24a",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "checkIfUserChoseBagel",
+                                        "startLineno": 36,
+                                        "startColno": 5,
+                                        "endLineno": 36,
+                                        "endColno": 25
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "checkIfUserChoseBagel",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "user_chose_bagel",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 37,
+                                                "startColno": 9,
+                                                "endLineno": 37,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 37,
+                                                "startColno": 17,
+                                                "endLineno": 37,
+                                                "endColno": 32
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "choice",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "choice",
+                                                "startLineno": 38,
+                                                "startColno": 9,
+                                                "endLineno": 38,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 38,
+                                                "startColno": 18,
+                                                "endLineno": 38,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "79b05a3f-09f2-4675-88f8-efd21a4e706a",
+                                "meta": {
+                                    "keyword": {
+                                        "type": "IDENTIFIER",
+                                        "value": "if",
+                                        "startLineno": 40,
+                                        "startColno": 5,
+                                        "endLineno": 40,
+                                        "endColno": 6
+                                    }
+                                },
+                                "type": "functional",
+                                "name": "if",
+                                "args": [
+                                    {
+                                        "arg": "condition",
+                                        "type": "name",
+                                        "value": "user_chose_bagel",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "condition",
+                                                "startLineno": 40,
+                                                "startColno": 9,
+                                                "endLineno": 40,
+                                                "endColno": 17
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 40,
+                                                "startColno": 21,
+                                                "endLineno": 40,
+                                                "endColno": 36
+                                            }
+                                        }
+                                    }
+                                ],
+                                "body": [
+                                    {
+                                        "uid": "9c16ae69-9235-4f86-a808-cd328f785848",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "addBagelToCart",
+                                                "startLineno": 41,
+                                                "startColno": 9,
+                                                "endLineno": 41,
+                                                "endColno": 22
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "addBagelToCart",
+                                        "args": [
+                                            {
+                                                "arg": "cart",
+                                                "type": "name",
+                                                "value": "shopping_cart",
+                                                "meta": {
+                                                    "argMeta": {
+                                                        "type": "IDENTIFIER",
+                                                        "value": "cart",
+                                                        "startLineno": 42,
+                                                        "startColno": 13,
+                                                        "endLineno": 42,
+                                                        "endColno": 16
+                                                    },
+                                                    "valueMeta": {
+                                                        "type": "VALUE",
+                                                        "startLineno": 42,
+                                                        "startColno": 20,
+                                                        "endLineno": 42,
+                                                        "endColno": 32
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "uid": "488f8b33-4a2e-4774-aa32-c577cfd4e4c1",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "visitShop",
+                                                "startLineno": 44,
+                                                "startColno": 9,
+                                                "endLineno": 44,
+                                                "endColno": 17
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "visitShop",
+                                        "args": []
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "37527af6-f2ab-4cf4-9f4f-f72114411edb",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "checkIfUserChoseDisplayCart",
+                                        "startLineno": 48,
+                                        "startColno": 5,
+                                        "endLineno": 48,
+                                        "endColno": 31
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "checkIfUserChoseDisplayCart",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "user_chose_display_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 49,
+                                                "startColno": 9,
+                                                "endLineno": 49,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 49,
+                                                "startColno": 17,
+                                                "endLineno": 49,
+                                                "endColno": 39
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "choice",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "choice",
+                                                "startLineno": 50,
+                                                "startColno": 9,
+                                                "endLineno": 50,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 50,
+                                                "startColno": 18,
+                                                "endLineno": 50,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "3196adf3-5dbe-495e-8a61-e55e9aaf1201",
+                                "meta": {
+                                    "keyword": {
+                                        "type": "IDENTIFIER",
+                                        "value": "if",
+                                        "startLineno": 52,
+                                        "startColno": 5,
+                                        "endLineno": 52,
+                                        "endColno": 6
+                                    }
+                                },
+                                "type": "functional",
+                                "name": "if",
+                                "args": [
+                                    {
+                                        "arg": "condition",
+                                        "type": "name",
+                                        "value": "user_chose_display_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "condition",
+                                                "startLineno": 52,
+                                                "startColno": 9,
+                                                "endLineno": 52,
+                                                "endColno": 17
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 52,
+                                                "startColno": 21,
+                                                "endLineno": 52,
+                                                "endColno": 43
+                                            }
+                                        }
+                                    }
+                                ],
+                                "body": [
+                                    {
+                                        "uid": "6b3de562-d3aa-4341-8136-6ba0eda7fa8f",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "displayCart",
+                                                "startLineno": 53,
+                                                "startColno": 9,
+                                                "endLineno": 53,
+                                                "endColno": 19
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "displayCart",
+                                        "args": [
+                                            {
+                                                "arg": "cart",
+                                                "type": "name",
+                                                "value": "shopping_cart",
+                                                "meta": {
+                                                    "argMeta": {
+                                                        "type": "IDENTIFIER",
+                                                        "value": "cart",
+                                                        "startLineno": 54,
+                                                        "startColno": 13,
+                                                        "endLineno": 54,
+                                                        "endColno": 16
+                                                    },
+                                                    "valueMeta": {
+                                                        "type": "VALUE",
+                                                        "startLineno": 54,
+                                                        "startColno": 20,
+                                                        "endLineno": 54,
+                                                        "endColno": 32
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "uid": "f31b3203-32de-43e0-bef0-bcc4de65337b",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "visitShop",
+                                                "startLineno": 56,
+                                                "startColno": 9,
+                                                "endLineno": 56,
+                                                "endColno": 17
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "visitShop",
+                                        "args": []
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "369a1b32-3a16-4ab2-abc4-c72fbac1d6a7",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "checkIfUserChoseClearCart",
+                                        "startLineno": 60,
+                                        "startColno": 5,
+                                        "endLineno": 60,
+                                        "endColno": 29
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "checkIfUserChoseClearCart",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "user_chose_clear_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 61,
+                                                "startColno": 9,
+                                                "endLineno": 61,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 61,
+                                                "startColno": 17,
+                                                "endLineno": 61,
+                                                "endColno": 37
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "choice",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "choice",
+                                                "startLineno": 62,
+                                                "startColno": 9,
+                                                "endLineno": 62,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 62,
+                                                "startColno": 18,
+                                                "endLineno": 62,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "8f80d83a-00c5-4ca8-b4ea-811f6938c697",
+                                "meta": {
+                                    "keyword": {
+                                        "type": "IDENTIFIER",
+                                        "value": "if",
+                                        "startLineno": 64,
+                                        "startColno": 5,
+                                        "endLineno": 64,
+                                        "endColno": 6
+                                    }
+                                },
+                                "type": "functional",
+                                "name": "if",
+                                "args": [
+                                    {
+                                        "arg": "condition",
+                                        "type": "name",
+                                        "value": "user_chose_clear_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "condition",
+                                                "startLineno": 64,
+                                                "startColno": 9,
+                                                "endLineno": 64,
+                                                "endColno": 17
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 64,
+                                                "startColno": 21,
+                                                "endLineno": 64,
+                                                "endColno": 41
+                                            }
+                                        }
+                                    }
+                                ],
+                                "body": [
+                                    {
+                                        "uid": "9e73746d-b33b-4623-ad61-1246268c387f",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "clearCart",
+                                                "startLineno": 65,
+                                                "startColno": 9,
+                                                "endLineno": 65,
+                                                "endColno": 17
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "clearCart",
+                                        "args": [
+                                            {
+                                                "arg": "cart",
+                                                "type": "name",
+                                                "value": "shopping_cart",
+                                                "meta": {
+                                                    "argMeta": {
+                                                        "type": "IDENTIFIER",
+                                                        "value": "cart",
+                                                        "startLineno": 66,
+                                                        "startColno": 13,
+                                                        "endLineno": 66,
+                                                        "endColno": 16
+                                                    },
+                                                    "valueMeta": {
+                                                        "type": "VALUE",
+                                                        "startLineno": 66,
+                                                        "startColno": 20,
+                                                        "endLineno": 66,
+                                                        "endColno": 32
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "uid": "1f92449a-0bd2-4888-8bd9-aef889d04862",
+                                        "meta": {
+                                            "command": {
+                                                "type": "IDENTIFIER",
+                                                "value": "visitShop",
+                                                "startLineno": 68,
+                                                "startColno": 9,
+                                                "endLineno": 68,
+                                                "endColno": 17
+                                            }
+                                        },
+                                        "type": "cmd",
+                                        "command": "visitShop",
+                                        "args": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "6d612470-1353-4876-915b-839b10a10b72",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 72,
+                                "startColno": 1,
+                                "endLineno": 72,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "baristaPresentsMenu",
+                                "startLineno": 72,
+                                "startColno": 10,
+                                "endLineno": 72,
+                                "endColno": 28
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [],
+                        "behaviorName": "baristaPresentsMenu",
+                        "body": [
+                            {
+                                "uid": "efba272b-22d4-476e-ae6b-1c462a4e9e95",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "terminal_display",
+                                        "startLineno": 73,
+                                        "startColno": 5,
+                                        "endLineno": 73,
+                                        "endColno": 20
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "terminal_display",
+                                "args": [
+                                    {
+                                        "arg": "value",
+                                        "type": "name",
+                                        "value": "menu",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value",
+                                                "startLineno": 74,
+                                                "startColno": 9,
+                                                "endLineno": 74,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 74,
+                                                "startColno": 17,
+                                                "endLineno": 74,
+                                                "endColno": 20
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "9ac1aa8c-fe62-433a-9f95-1c2b9df1583c",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 78,
+                                "startColno": 1,
+                                "endLineno": 78,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "acceptChoice",
+                                "startLineno": 78,
+                                "startColno": 10,
+                                "endLineno": 78,
+                                "endColno": 21
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [],
+                        "behaviorName": "acceptChoice",
+                        "body": [
+                            {
+                                "uid": "a9ce4c07-171e-4f90-b156-285bdc1ca380",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "terminal_input",
+                                        "startLineno": 79,
+                                        "startColno": 5,
+                                        "endLineno": 79,
+                                        "endColno": 18
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "terminal_input",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "terminal_input",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 80,
+                                                "startColno": 9,
+                                                "endLineno": 80,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 80,
+                                                "startColno": 17,
+                                                "endLineno": 80,
+                                                "endColno": 30
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "b0747699-b931-47db-a696-7f923197e090",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "yield",
+                                        "startLineno": 82,
+                                        "startColno": 5,
+                                        "endLineno": 82,
+                                        "endColno": 9
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "yield",
+                                "args": [
+                                    {
+                                        "arg": "value",
+                                        "type": "name",
+                                        "value": "terminal_input",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value",
+                                                "startLineno": 82,
+                                                "startColno": 11,
+                                                "endLineno": 82,
+                                                "endColno": 15
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 82,
+                                                "startColno": 17,
+                                                "endLineno": 82,
+                                                "endColno": 30
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "fa5fe872-cefe-4d1f-82f4-cc69cb4c9bfc",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 85,
+                                "startColno": 1,
+                                "endLineno": 85,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "addCoffeeToCart",
+                                "startLineno": 85,
+                                "startColno": 10,
+                                "endLineno": 85,
+                                "endColno": 24
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": "cart",
+                                "type": "name",
+                                "value": "cart",
+                                "meta": {
+                                    "argMeta": {
+                                        "type": "IDENTIFIER",
+                                        "value": "cart",
+                                        "startLineno": 85,
+                                        "startColno": 26,
+                                        "endLineno": 85,
+                                        "endColno": 29
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 85,
+                                        "startColno": 33,
+                                        "endLineno": 85,
+                                        "endColno": 36
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "addCoffeeToCart",
+                        "body": [
+                            {
+                                "uid": "29dc13e4-02b1-4914-823b-4f79967c3d6e",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "insert_at_end_of_list",
+                                        "startLineno": 86,
+                                        "startColno": 5,
+                                        "endLineno": 86,
+                                        "endColno": 25
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "insert_at_end_of_list",
+                                "args": [
+                                    {
+                                        "arg": "value",
+                                        "type": "string",
+                                        "value": "Coffee",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value",
+                                                "startLineno": 87,
+                                                "startColno": 9,
+                                                "endLineno": 87,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 87,
+                                                "startColno": 17,
+                                                "endLineno": 87,
+                                                "endColno": 24
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "list",
+                                        "type": "name",
+                                        "value": "cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "list",
+                                                "startLineno": 88,
+                                                "startColno": 9,
+                                                "endLineno": 88,
+                                                "endColno": 12
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 88,
+                                                "startColno": 16,
+                                                "endLineno": 88,
+                                                "endColno": 19
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "d4d17388-740a-4653-b42a-f1de1435cb3c",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 92,
+                                "startColno": 1,
+                                "endLineno": 92,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "addBagelToCart",
+                                "startLineno": 92,
+                                "startColno": 10,
+                                "endLineno": 92,
+                                "endColno": 23
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": "cart",
+                                "type": "name",
+                                "value": "cart",
+                                "meta": {
+                                    "argMeta": {
+                                        "type": "IDENTIFIER",
+                                        "value": "cart",
+                                        "startLineno": 92,
+                                        "startColno": 25,
+                                        "endLineno": 92,
+                                        "endColno": 28
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 92,
+                                        "startColno": 32,
+                                        "endLineno": 92,
+                                        "endColno": 35
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "addBagelToCart",
+                        "body": [
+                            {
+                                "uid": "dd8b6866-5cfa-4886-bd9b-465eb3f0a55c",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "insert_at_end_of_list",
+                                        "startLineno": 93,
+                                        "startColno": 5,
+                                        "endLineno": 93,
+                                        "endColno": 25
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "insert_at_end_of_list",
+                                "args": [
+                                    {
+                                        "arg": "value",
+                                        "type": "string",
+                                        "value": "Bagel",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value",
+                                                "startLineno": 94,
+                                                "startColno": 9,
+                                                "endLineno": 94,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 94,
+                                                "startColno": 17,
+                                                "endLineno": 94,
+                                                "endColno": 23
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "list",
+                                        "type": "name",
+                                        "value": "cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "list",
+                                                "startLineno": 95,
+                                                "startColno": 9,
+                                                "endLineno": 95,
+                                                "endColno": 12
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 95,
+                                                "startColno": 16,
+                                                "endLineno": 95,
+                                                "endColno": 19
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "8da95010-e81d-4a0a-a106-6be7c062b608",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 99,
+                                "startColno": 1,
+                                "endLineno": 99,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "displayCart",
+                                "startLineno": 99,
+                                "startColno": 10,
+                                "endLineno": 99,
+                                "endColno": 20
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": "cart",
+                                "type": "name",
+                                "value": "cart",
+                                "meta": {
+                                    "argMeta": {
+                                        "type": "IDENTIFIER",
+                                        "value": "cart",
+                                        "startLineno": 99,
+                                        "startColno": 22,
+                                        "endLineno": 99,
+                                        "endColno": 25
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 99,
+                                        "startColno": 29,
+                                        "endLineno": 99,
+                                        "endColno": 32
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "displayCart",
+                        "body": [
+                            {
+                                "uid": "ab7fd4bf-269c-433b-9628-c6db9622039c",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "terminal_display",
+                                        "startLineno": 100,
+                                        "startColno": 5,
+                                        "endLineno": 100,
+                                        "endColno": 20
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "terminal_display",
+                                "args": [
+                                    {
+                                        "arg": "value",
+                                        "type": "name",
+                                        "value": "cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value",
+                                                "startLineno": 101,
+                                                "startColno": 9,
+                                                "endLineno": 101,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 101,
+                                                "startColno": 17,
+                                                "endLineno": 101,
+                                                "endColno": 20
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "ea679437-832f-4d88-8e10-7ae170844e26",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 105,
+                                "startColno": 1,
+                                "endLineno": 105,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "clearCart",
+                                "startLineno": 105,
+                                "startColno": 10,
+                                "endLineno": 105,
+                                "endColno": 18
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": "cart",
+                                "type": "name",
+                                "value": "cart",
+                                "meta": {
+                                    "argMeta": {
+                                        "type": "IDENTIFIER",
+                                        "value": "cart",
+                                        "startLineno": 105,
+                                        "startColno": 20,
+                                        "endLineno": 105,
+                                        "endColno": 23
+                                    },
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 105,
+                                        "startColno": 27,
+                                        "endLineno": 105,
+                                        "endColno": 30
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "clearCart",
+                        "body": [
+                            {
+                                "uid": "fd6c204a-51ae-4409-8931-7ca181800d19",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "clear_list",
+                                        "startLineno": 106,
+                                        "startColno": 5,
+                                        "endLineno": 106,
+                                        "endColno": 14
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "clear_list",
+                                "args": [
+                                    {
+                                        "arg": "list",
+                                        "type": "name",
+                                        "value": "cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "list",
+                                                "startLineno": 107,
+                                                "startColno": 9,
+                                                "endLineno": 107,
+                                                "endColno": 12
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 107,
+                                                "startColno": 16,
+                                                "endLineno": 107,
+                                                "endColno": 19
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullPath": "designs/coffee_shop/participants/Cart.ar",
+            "name": "Cart.ar",
+            "relativePath": "participants/Cart.ar",
+            "content": "participant Cart() {\n    structural_type(\n        type= \"list\"\n    )\n    list_contains(\n        values= [\"Coffee\", \"Bagel\"]\n    )\n}",
+            "ast": {
+                "type": "root",
+                "body": [
+                    {
+                        "uid": "3836386c-c9ac-49e3-9c8c-8adce1ce6f69",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "participant",
+                                "startLineno": 1,
+                                "startColno": 1,
+                                "endLineno": 1,
+                                "endColno": 11
+                            },
+                            "participantName": {
+                                "type": "IDENTIFIER",
+                                "value": "Cart",
+                                "startLineno": 1,
+                                "startColno": 13,
+                                "endLineno": 1,
+                                "endColno": 16
+                            }
+                        },
+                        "type": "participant",
+                        "parsedArgs": [],
+                        "name": "Cart",
+                        "body": [
+                            {
+                                "uid": "65778a04-bdd0-4daf-94a9-38bc2f3d23e4",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "structural_type",
+                                        "startLineno": 2,
+                                        "startColno": 5,
+                                        "endLineno": 2,
+                                        "endColno": 19
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "structural_type",
+                                "args": [
+                                    {
+                                        "arg": "type",
+                                        "type": "string",
+                                        "value": "list",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "type",
+                                                "startLineno": 3,
+                                                "startColno": 9,
+                                                "endLineno": 3,
+                                                "endColno": 12
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 3,
+                                                "startColno": 15,
+                                                "endLineno": 3,
+                                                "endColno": 20
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "93c93b56-ff27-4345-859e-ab1855faf45a",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "list_contains",
+                                        "startLineno": 5,
+                                        "startColno": 5,
+                                        "endLineno": 5,
+                                        "endColno": 17
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "list_contains",
+                                "args": [
+                                    {
+                                        "arg": "values",
+                                        "type": "list",
+                                        "value": [
+                                            "Coffee",
+                                            "Bagel"
+                                        ],
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "values",
+                                                "startLineno": 6,
+                                                "startColno": 9,
+                                                "endLineno": 6,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 6,
+                                                "startColno": 17,
+                                                "endLineno": 6,
+                                                "endColno": 35
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullPath": "designs/coffee_shop/includes/user_choice.ar",
+            "name": "user_choice.ar",
+            "relativePath": "includes/user_choice.ar",
+            "content": "behavior checkIfUserChoseBagel (user_choice) {\n    equals(\n        alias = user_chose_bagel,\n        value1 = user_choice,\n        value2 = \"Bagel\"\n    )\n    yield(user_chose_bagel)\n}\n\nbehavior checkIfUserChoseCoffee (user_choice) {\n    equals(\n        alias = did_user_chose_coffee,\n        value1 = user_choice,\n        value2 = \"Coffee\"\n    )\n    yield(user_chose_coffee)\n}\n\nbehavior checkIfUserChoseDisplayCart (user_choice) {\n    equals(\n        alias = did_user_choose_display_cart,\n        value1 = user_choice,\n        value2 = \"View\"\n    )\n    yield(did_user_choose_display_cart)\n}\n\nbehavior checkIfUserChoseClearCart (user_choice) {\n    equals(\n        alias = did_user_choose_clear_cart,\n        value1 = user_choice,\n        value2 = \"Clear\"\n    )\n    yield(did_user_choose_clear_cart)\n}",
+            "ast": {
+                "type": "root",
+                "body": [
+                    {
+                        "uid": "356964f7-bee7-4861-8d5e-2b8fa9285c9d",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 1,
+                                "startColno": 1,
+                                "endLineno": 1,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "checkIfUserChoseBagel",
+                                "startLineno": 1,
+                                "startColno": 10,
+                                "endLineno": 1,
+                                "endColno": 30
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": null,
+                                "type": "name",
+                                "value": "user_choice",
+                                "meta": {
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 1,
+                                        "startColno": 33,
+                                        "endLineno": 1,
+                                        "endColno": 43
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "checkIfUserChoseBagel",
+                        "body": [
+                            {
+                                "uid": "804a0a30-731a-4516-95d5-15d4d608c364",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "equals",
+                                        "startLineno": 2,
+                                        "startColno": 5,
+                                        "endLineno": 2,
+                                        "endColno": 10
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "equals",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "user_chose_bagel",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 3,
+                                                "startColno": 9,
+                                                "endLineno": 3,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 3,
+                                                "startColno": 17,
+                                                "endLineno": 3,
+                                                "endColno": 32
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value1",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value1",
+                                                "startLineno": 4,
+                                                "startColno": 9,
+                                                "endLineno": 4,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 4,
+                                                "startColno": 18,
+                                                "endLineno": 4,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value2",
+                                        "type": "string",
+                                        "value": "Bagel",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value2",
+                                                "startLineno": 5,
+                                                "startColno": 9,
+                                                "endLineno": 5,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 5,
+                                                "startColno": 18,
+                                                "endLineno": 5,
+                                                "endColno": 24
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "2ea3274d-9560-47d2-9203-0866e734f4de",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "yield",
+                                        "startLineno": 7,
+                                        "startColno": 5,
+                                        "endLineno": 7,
+                                        "endColno": 9
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "yield",
+                                "args": [
+                                    {
+                                        "arg": null,
+                                        "type": "name",
+                                        "value": "user_chose_bagel",
+                                        "meta": {
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 7,
+                                                "startColno": 11,
+                                                "endLineno": 7,
+                                                "endColno": 26
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "ba355289-e100-43f5-9299-89e22f176927",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 10,
+                                "startColno": 1,
+                                "endLineno": 10,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "checkIfUserChoseCoffee",
+                                "startLineno": 10,
+                                "startColno": 10,
+                                "endLineno": 10,
+                                "endColno": 31
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": null,
+                                "type": "name",
+                                "value": "user_choice",
+                                "meta": {
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 10,
+                                        "startColno": 34,
+                                        "endLineno": 10,
+                                        "endColno": 44
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "checkIfUserChoseCoffee",
+                        "body": [
+                            {
+                                "uid": "c65a3dbd-9579-44c3-8588-d5940d1f995b",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "equals",
+                                        "startLineno": 11,
+                                        "startColno": 5,
+                                        "endLineno": 11,
+                                        "endColno": 10
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "equals",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "did_user_chose_coffee",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 12,
+                                                "startColno": 9,
+                                                "endLineno": 12,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 12,
+                                                "startColno": 17,
+                                                "endLineno": 12,
+                                                "endColno": 37
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value1",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value1",
+                                                "startLineno": 13,
+                                                "startColno": 9,
+                                                "endLineno": 13,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 13,
+                                                "startColno": 18,
+                                                "endLineno": 13,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value2",
+                                        "type": "string",
+                                        "value": "Coffee",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value2",
+                                                "startLineno": 14,
+                                                "startColno": 9,
+                                                "endLineno": 14,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 14,
+                                                "startColno": 18,
+                                                "endLineno": 14,
+                                                "endColno": 25
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "daeeb7bf-24ff-46b3-9d96-d766cac386dd",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "yield",
+                                        "startLineno": 16,
+                                        "startColno": 5,
+                                        "endLineno": 16,
+                                        "endColno": 9
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "yield",
+                                "args": [
+                                    {
+                                        "arg": null,
+                                        "type": "name",
+                                        "value": "user_chose_coffee",
+                                        "meta": {
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 16,
+                                                "startColno": 11,
+                                                "endLineno": 16,
+                                                "endColno": 27
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "dd63044d-f77d-47e6-88af-a4da9fed973f",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 19,
+                                "startColno": 1,
+                                "endLineno": 19,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "checkIfUserChoseDisplayCart",
+                                "startLineno": 19,
+                                "startColno": 10,
+                                "endLineno": 19,
+                                "endColno": 36
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": null,
+                                "type": "name",
+                                "value": "user_choice",
+                                "meta": {
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 19,
+                                        "startColno": 39,
+                                        "endLineno": 19,
+                                        "endColno": 49
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "checkIfUserChoseDisplayCart",
+                        "body": [
+                            {
+                                "uid": "584e86e9-8477-47f8-a940-a6cc5adf38db",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "equals",
+                                        "startLineno": 20,
+                                        "startColno": 5,
+                                        "endLineno": 20,
+                                        "endColno": 10
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "equals",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "did_user_choose_display_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 21,
+                                                "startColno": 9,
+                                                "endLineno": 21,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 21,
+                                                "startColno": 17,
+                                                "endLineno": 21,
+                                                "endColno": 44
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value1",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value1",
+                                                "startLineno": 22,
+                                                "startColno": 9,
+                                                "endLineno": 22,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 22,
+                                                "startColno": 18,
+                                                "endLineno": 22,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value2",
+                                        "type": "string",
+                                        "value": "View",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value2",
+                                                "startLineno": 23,
+                                                "startColno": 9,
+                                                "endLineno": 23,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 23,
+                                                "startColno": 18,
+                                                "endLineno": 23,
+                                                "endColno": 23
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "adc96ef7-19f1-46a1-9dd0-c9858752cac2",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "yield",
+                                        "startLineno": 25,
+                                        "startColno": 5,
+                                        "endLineno": 25,
+                                        "endColno": 9
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "yield",
+                                "args": [
+                                    {
+                                        "arg": null,
+                                        "type": "name",
+                                        "value": "did_user_choose_display_cart",
+                                        "meta": {
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 25,
+                                                "startColno": 11,
+                                                "endLineno": 25,
+                                                "endColno": 38
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uid": "ad3a9691-2acc-40e5-87ac-b19c44a36f4c",
+                        "meta": {
+                            "keyword": {
+                                "type": "IDENTIFIER",
+                                "value": "behavior",
+                                "startLineno": 28,
+                                "startColno": 1,
+                                "endLineno": 28,
+                                "endColno": 8
+                            },
+                            "behaviorName": {
+                                "type": "IDENTIFIER",
+                                "value": "checkIfUserChoseClearCart",
+                                "startLineno": 28,
+                                "startColno": 10,
+                                "endLineno": 28,
+                                "endColno": 34
+                            }
+                        },
+                        "type": "behavior",
+                        "parsedArgs": [
+                            {
+                                "arg": null,
+                                "type": "name",
+                                "value": "user_choice",
+                                "meta": {
+                                    "valueMeta": {
+                                        "type": "VALUE",
+                                        "startLineno": 28,
+                                        "startColno": 37,
+                                        "endLineno": 28,
+                                        "endColno": 47
+                                    }
+                                }
+                            }
+                        ],
+                        "behaviorName": "checkIfUserChoseClearCart",
+                        "body": [
+                            {
+                                "uid": "a0bed3f2-4156-4a88-9f88-aa295f33918f",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "equals",
+                                        "startLineno": 29,
+                                        "startColno": 5,
+                                        "endLineno": 29,
+                                        "endColno": 10
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "equals",
+                                "args": [
+                                    {
+                                        "arg": "alias",
+                                        "type": "name",
+                                        "value": "did_user_choose_clear_cart",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "alias",
+                                                "startLineno": 30,
+                                                "startColno": 9,
+                                                "endLineno": 30,
+                                                "endColno": 13
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 30,
+                                                "startColno": 17,
+                                                "endLineno": 30,
+                                                "endColno": 42
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value1",
+                                        "type": "name",
+                                        "value": "user_choice",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value1",
+                                                "startLineno": 31,
+                                                "startColno": 9,
+                                                "endLineno": 31,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 31,
+                                                "startColno": 18,
+                                                "endLineno": 31,
+                                                "endColno": 28
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "arg": "value2",
+                                        "type": "string",
+                                        "value": "Clear",
+                                        "meta": {
+                                            "argMeta": {
+                                                "type": "IDENTIFIER",
+                                                "value": "value2",
+                                                "startLineno": 32,
+                                                "startColno": 9,
+                                                "endLineno": 32,
+                                                "endColno": 14
+                                            },
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 32,
+                                                "startColno": 18,
+                                                "endLineno": 32,
+                                                "endColno": 24
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "uid": "9567160b-fd50-4d53-8d11-5898fac77a49",
+                                "meta": {
+                                    "command": {
+                                        "type": "IDENTIFIER",
+                                        "value": "yield",
+                                        "startLineno": 34,
+                                        "startColno": 5,
+                                        "endLineno": 34,
+                                        "endColno": 9
+                                    }
+                                },
+                                "type": "cmd",
+                                "command": "yield",
+                                "args": [
+                                    {
+                                        "arg": null,
+                                        "type": "name",
+                                        "value": "did_user_choose_clear_cart",
+                                        "meta": {
+                                            "valueMeta": {
+                                                "type": "VALUE",
+                                                "startLineno": 34,
+                                                "startColno": 11,
+                                                "endLineno": 34,
+                                                "endColno": 36
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

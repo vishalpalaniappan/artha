@@ -1,0 +1,121 @@
+wip
+
+I will be reworking this implementation to use simplified syntax (rather than verbose narratives). The objective is to establish the meaning to be able to reason about it and synthesize it, this can be done in a more efficient way. I can create verbose narratives from the simplified syntax. 
+
+
+## Exploration of Syntax - WIP
+
+From the meaning shown below, it is possible to construct a meaningful narrative. 
+
+meaning of coffee_shop {
+    create Cart
+    visit_shop()
+}
+
+meaning of visit_shop() {
+    barista_presents_menu()
+    accept_choice(user_choice)
+    
+    if (user_chose_coffee(user_choice)) {
+        add_coffee_to_cart()
+        visit_shop()
+    } else if (user_chose_bagel(user_choice)) {
+        add_bagel_to_cart()
+        visit_shop()
+    } else if (user_chose_clear_cart(user_choice)) {
+        clear_cart()
+        visit_shop()
+    } else if (user_chose_checkout(user_choice)) {
+        checkout()
+        visit_shop()   
+    } else if (user_chose_terminate_transaction(user_choice)) {
+        terminate_transaction()
+    }
+}
+
+meaning of barista_presents_menu() {
+    display(menu)
+}
+
+meaning of accept_choice() {
+    accept_input(choice)
+    yield(choice)
+}
+
+meaning of add_coffee_to_cart() {
+    insert(cart, "Coffee")
+}
+
+meaning of add_bagel_to_cart() {
+    insert(cart, "Bagel")
+}
+
+meaning of clear_cart() {
+    clear(cart)
+}
+
+meaning of terminate_transaction() {
+    clear(cart)
+    display("Goodbye.")
+}
+
+
+# State of world
+
+meaning of user_chose_coffee(user_choice) {
+    equals(is_coffee, user_choice, "Coffee")
+    yield(is_coffee)
+}
+
+meaning of user_chose_bagel(user_choice) {
+    equals(is_bagel, user_choice, "Bagel")
+    yield(is_bagel) 
+}
+
+meaning of user_chose_clear_cart(user_choice) {
+    equals(is_clear, user_choice, "clear")
+    yield(is_clear)
+}
+
+meaning of user_chose_checkout(user_choice) {
+    equals(is_checkout, user_choice, "checkout")
+    yield(is_checkout)
+}
+
+meaning of user_chose_terminate_transaction(user_choice) {
+    equals(is_terminate, user_choice, "terminate")
+    yield(is_terminate)
+}
+
+# Particiants Syntax
+
+meaning of Cart {
+    structure_type(list)
+    role_type(cart)
+    contains(food_item)
+}
+
+meaning of Coffee {
+    structure_type(object)
+    role_type(food_item)
+
+    attribute("cost", "float", 1.00)
+    attribute("currency", "string", "CAD")
+}
+
+meaning of Bagel {
+    structure_type(object)
+    role_type(food_item)
+
+    attribute("cost", "float", 2.00)
+    attribute("currency", "string", "CAD")
+}
+
+# Checkout
+
+WIP
+- Get items from cart
+- Add cost of each item to total cost
+- Display cost
+- Accept payment
+- Confirm Transaction

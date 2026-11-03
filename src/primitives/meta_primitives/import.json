@@ -1,0 +1,16 @@
+{
+    "name": "import",
+    "type": "meta_primitive",
+    "description":"Imports file into meaning (artha, txt, json etc) and provides optional alias. The alias will be useful for cases where a JSON file is imported and used in the files meaning.",
+    "syntax": "import",
+    "attributes": [
+        {
+            "name": "file",
+            "required": true
+        },
+        {
+            "name": "alias",
+            "required": false
+        }
+    ]
+}

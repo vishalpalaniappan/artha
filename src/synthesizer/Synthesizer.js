@@ -1,0 +1,87 @@
+import { ast, parse } from "py-ast";
+
+/**
+ * Synthesizes the specified meaning into a python program.
+ * 
+ * The computable and legacy primitives provide a realization of their meaning and
+ * the functional primitives connect them together. The meta primitives can also inform
+ * the synthesis (for example, the structural type meaning) as well as be used for the
+ * reasoning. 
+ * 
+ * This process realizes the meaning as a python program. Since the meaning has
+ * been fully reasoned about, all known failures have been eliminated. The synthesized
+ * implementation is instrumented with the necessary information needed to replay the 
+ * execution. As a result, when a failure does occur, it is automatically diagnosed and
+ * this leads to root cause analysis that expands the meaning and the world is reasoned
+ * about once again to ensure that all known failures are eliminated. 
+ * 
+ * CLP enables the necessary diagnostic data to be losslessly preserved by leveraging the
+ * meaning of the data (which includes its structural type among other features that can
+ * be exploited to optimize the compression).
+ * 
+ */
+export class Synthesizer {
+    constructor (meaning) {
+        this.meaning = meaning;
+        this.implementation = "";
+        this.walk();
+        console.log(this.implementation)
+    }
+
+    walk () {
+        this.implementation += "# Primitives are in meaning form, still need to be processed, this is blocking things out." + "\n";
+        this.implementation += "# I also want to add a world state manager to store participants when introducing or modifying" + "\n";
+        this.implementation += "# Also need to import the realization of computable and legacy primitives" + "\n";
+        this.implementation += "# WIP: Need to iterate a bunch to fully realize the meaning as an executable implementation." + "\n";
+        for (const node of this.meaning) {
+            if (node.type === "behavior") {
+                this.implementBehavior(node);
+            }
+        }
+    }
+
+    implementBehavior (behavior) {
+        const args = (behavior?.args)?behavior.args.map((a) => a.value).join(","):"";
+        const syntax = `def ${behavior.name}(${args}):`
+        this.implementation = this.implementation + syntax + "\n";
+
+        for (const node of behavior.body) {
+            if (node.type.includes("primitive")) {
+                this.implementation += "    " + this.implementPrimitive(node) + "\n";
+            }
+            if (node.type == "behavior") {
+                this.implementation += "    " + this.implementCompositeBehaviorCall(node) + "\n";
+            }
+        }
+
+        this.implementation = this.implementation + "\n";
+    }
+
+    implementPrimitive (primitive) {
+        // wip 
+        let args, syntax;
+
+        if (primitive.name === "yield") {
+            syntax = `return ${primitive.args[0].value}`
+            return syntax;
+        }
+
+        const foundAlias = primitive.args.find((p) => p.arg === "alias");
+        if (foundAlias) {
+            const updatedArgs = primitive.args.filter((p) => p.arg !== "alias");
+            args = (updatedArgs)?updatedArgs.map((a) => a.value).join(","):"";
+            syntax = `${foundAlias.value} = ${primitive.name}(${args})`
+        } else {
+            args = (primitive?.args)?primitive.args.map((a) => a.value).join(","):"";
+            syntax = `${primitive.name}(${args})`;
+        }
+
+        return syntax
+    }
+
+    implementCompositeBehaviorCall(composite) {
+        const args = (composite?.args)?composite.args.map((a) => a.value).join(","):"";
+        const syntax = `${composite.name}(${args})`
+        return syntax
+    }
+}
